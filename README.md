@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Quadcopter
 
@@ -51,3 +52,7 @@ Insert gif or link to demo, I'll use my youtube acc
 
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
+=======
+# Quadcopter
+ QuadCopter Project
+>>>>>>> b8f72aa1cf0cfd2e2f25031971b9a2c6e1df1ca8
