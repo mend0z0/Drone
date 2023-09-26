@@ -1,2 +1,2 @@
-# QuadCopter
+# Quadcopter
  QuadCopter Project
