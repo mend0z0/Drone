@@ -1,21 +1,27 @@
 # Quadcopter
 
-This project is a drone that equipped with four motors (Quadcopter). This project mainly focuses on control system but also has other fancy features like camera, clusterability, and autonomous driving. This project would be used for capstone Centennial college project.
+This project is a drone that equipped with four motors (Quadcopter). This project mainly focuses on control system but also has other fancy features like video streaming, clusterability, and autonomous driving. This project would be used for capstone Centennial college project.
 
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Small size and Lightweight
+- Very silent flight
+- Fast maneuverability
+- 3MP camera
+- Clusterability
+- Autonomous driving
 
 
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
+**Application:** Qt
 
-**Server:** Node, Express
+**MCU:** STM32U545 (Cortex®-M33)
+
+**Firmware:** FreeRTOS
+
+**Wireless Connectivity Protocol:** MQTT
 
 
 ## Roadmap
