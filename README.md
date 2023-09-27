@@ -1,6 +1,6 @@
 # Quadcopter
 
-A brief description of what this project does and who it's for
+This project is a drone that equipped with four motors (Quadcopter). This project mainly focuses on control system but also has other fancy features like camera, clusterability, and autonomous driving. This project would be used for capstone Centennial college project.
 
 
 ## Features
