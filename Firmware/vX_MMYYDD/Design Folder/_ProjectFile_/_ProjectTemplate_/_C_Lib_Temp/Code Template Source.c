@@ -1,10 +1,10 @@
 /****************************************************************************************************
-*					©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+*					Copyright 20xx Siavash Taher Parvar All Rights Reserved
 *
-*				Project Name:
-*		  @Brief Description:
-*				 File Status:	DRAFT
-*						(DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*   Project Name:
+*   @Brief Description:
+*   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
 *	File Name:	xxxx.c
 *	Version:	xx
 *	Revision:	xx
@@ -21,16 +21,20 @@
 *	@Detailed Description:
 *
 *
-*
+*	*********************************  Hardware Info  **********************************************
+*   Name:
+*   Version:
 *	*********************************  Processor Info **********************************************
-*	Processor:					x-Bits
-*	Clock Frequency:	00.000	xHz
-*	RAM/SRAM Size:		00.00	MBytes
-*	Flash Size:			00.00	MBytes
-*	Cache Size:			00.00	MBytes
+*	Processor:          x-Bits
+*	Clock Frequency:    00.000	xHz
+*	RAM/SRAM Size:      00.00	MBytes
+*	Flash Size:         00.00	MBytes
+*	Cache Size:         00.00	MBytes
 *	***********************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
-*	Headers = SCREAMIN_SNAKE_CASE		Const Variables = SCREAMING_SNAKE_CASE		Macros = SCREAMING_SNAKE_CASE
+*	Headers = SCREAMIN_SNAKE_CASE
+*   Macros = SCREAMING_SNAKE_CASE
+*   Const Variables = SCREAMING_SNAKE_CASE
 *	Functions = PascalCase				Initialize Functions = _lower_case
 *	Struct = lower_case					Struct.members = camelCase
 *	Enum = lower_case					Enum Members = SNAKE_CASE
@@ -38,7 +42,6 @@
 *	*********************************** Contact Info ***********************************************
 *	Author:	Siavash Taher Parvar
 *	Email:  s.taherparvar@gmail.com
-*	Github: github.com/mend0z0
 *						CONFIDENTIAL DOCUMENT, DO NOT DISTRIBUTE
 ****************************************************************************************************/
 
@@ -51,7 +54,7 @@
 *****************************************************************************************************/
 
 /****************************************************************************************************
-**************************     STATIC FUNCTIONS DECLARATION      ************************************
+***********************     STATIC/LOCAL FUNCTIONS DECLARATION      *********************************
 *****************************************************************************************************/
 
 /****************************************************************************************************
@@ -59,11 +62,22 @@
 *****************************************************************************************************/
 
 /****************************************************************************************************
-*				©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+****************************         STATIC FUNTIONS         ****************************************
+*****************************************************************************************************/
+
+/***************************************************************************************************/
+/**********************************                             ************************************/
+/********************   Copyright 20xx Siavash Taher Parvar All Rights Reserved   ******************/
+/********************                     END OF THE CODE                         ******************/
+/**********************************                             ************************************/
+/***************************************************************************************************/
+
+/*                                   GLOBAL FUNCTION TEMPLATE                                      */
+
+/****************************************************************************************************
+*   @Brief Description:
+*   Function Status: 	DRAFT   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
 *
-*		 @Brief Description:
-*			Function Status: 	DRAFT
-*					(DRAFT , PRILIMINARY, CHECKED, RELEASED)
 *	************************************************************************************************
 *	Author:		Siavash Taher Parvar					Checked By:
 *	Date:		mm/dd/yyyy
@@ -85,22 +99,14 @@
 *	************************************************************************************************
 *	Revision History (Description, author, date: mm/dd/yyyy)
 *
-*	************************************************************************************************
-*	License: Private License (Contact for more info.)
-*	Email: s.taherparvar@gmail.com
 ****************************************************************************************************/
 
+/*                               STATIC/LOCAL FUNCTION TEMPLATE                                    */
 
 /****************************************************************************************************
-****************************         STATIC FUNTIONS         ****************************************
-*****************************************************************************************************/
-
-/****************************************************************************************************
-*				©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+*   @Brief Description:
+*   Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
-*		 @Brief Description:
-*			Function Status: 	DRAFT
-*					(DRAFT , PRILIMINARY, CHECKED, RELEASED)
 *	************************************************************************************************
 *	Author:		Siavash Taher Parvar					Checked By:
 *	Date:		mm/dd/yyyy
@@ -108,7 +114,7 @@
 *	Revision:	xx
 *	************************************************************************************************
 *	Function Name:
-*	Function Scope:			Local(static)
+*	Function Scope:         Local(static)
 *	Function Parameters:
 *	Function Return Type:
 *	************************************************************************************************
@@ -122,11 +128,7 @@
 *	************************************************************************************************
 *	Revision History (Description, author, date: mm/dd/yyyy)
 *
-*	************************************************************************************************
-*	License: Private License (Contact for more info.)
-*	Email: s.taherparvar@gmail.com
 ****************************************************************************************************/
 
-
-/**************************   (C)SIAVASH TAHER PARVAR ALL RIGHTS RESERVED   ************************/
+/********************   Copyright 20xx Siavash Taher Parvar All Rights Reserved   ******************/
 /************************************     END OF THE FILE      *************************************/

@@ -1,5 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;					©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+;					Copyright 20xx Siavash Taher Parvar All Rights Reserved
 ;
 ;				Project Name:
 ;		  @Brief Description:
@@ -39,7 +39,6 @@
 ;	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; Contact Info ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;	Author:	Siavash Taher Parvar
 ;	Email:  s.taherparvar@gmail.com
-;	Github: github.com/mend0z0
 ;						CONFIDENTIAL DOCUMENT, DO NOT DISTRIBUTE
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -48,7 +47,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;				©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+;				Copyright 20xx Siavash Taher Parvar All Rights Reserved
 ;
 ;		 @Brief Description:
 ;			Function Status: 	DRAFT
@@ -85,7 +84,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;				©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+;				Copyright 20xx Siavash Taher Parvar All Rights Reserved
 ;
 ;		 @Brief Description:
 ;			Function Status: 	DRAFT
@@ -130,7 +129,7 @@ section .bss		;r/w space	This is automatically initialized to zero, meaning the 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;				©2022 - 2032 Siavash Taher Parvar All Rights Reserved.
+;				Copyright 20xx Siavash Taher Parvar All Rights Reserved
 ;
 ;		 @Brief Description:
 ;			Function Status: 	DRAFT
@@ -164,5 +163,5 @@ section		.text		;r/o code	This is the program's executable machine code (it's bi
 
 	
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;   (C)SIAVASH TAHER PARVAR ALL RIGHTS RESERVED   ;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;   Copyright 20xx Siavash Taher Parvar All Rights Reserved   ;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;     END OF THE FILE      ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
