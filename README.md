@@ -23,12 +23,55 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 
 **Wireless Connectivity Protocol:** MQTT
 
+**Interconnection protocol: CANBus
+
 
 ## Roadmap
 
-- Additional browser support
+### ESC sub-project
+- Designing ESC Hardware
+	BLDC driver circuitry
+	BLDC Voltage & Current measurement circuitry
+	MCU circuitry
+	CANBus circuitry
+	Power-supply circuitry
 
-- Add more integrations
+- Developing ESC Firmware
+	Peripherals: ADC, CANBus, PWM/DAC, ...
+	A driver code for running BLDC correctly.
+	A control loop implementation for RPM speed stability.
+	A driver code for CANBus peripheral and establishing a protocol for communication.
+	Improving the code for reaching the maximum speed and the most silent spin.
+	
+- Troubleshooting/Debugging ESC project
+
+### Flight Controller sub-project
+- Designing Flight Controller Hardware
+	IMU sensor circuitry
+	Wifi module circuitry
+	Camera module circuitry	
+	CANBus circuitry
+	MCU circuitry
+	Power supply circuitry
+
+- Developing Flight Controller Firmware
+	Peripherals: CANBus, SPI, ...
+	A driver code for IMU Sensor.
+	A driver for commanding the motors over CANBus.
+	Implementing control loop for drone stability.
+	A driver code for Wifi Module.
+	A driver code for MQTT protocol over Wifi.
+	Implementing running basic instruction over MQTT and tuning the control loop.
+	A driver code for camera module.
+	Displaying camera picture on written app with QT.
+
+- Troubleshooting/Debugging Flight Controller project
+
+### Radio Control sub-project
+- Developing an application with QT
+- Implementing MQTT protocol with QT
+- Send/Receive basic commands to/from drone
+- Displaying the received data from camera module
 
 
 ## Documentation
