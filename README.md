@@ -29,24 +29,24 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 ## Roadmap
 
 ### ESC sub-project
-- Designing ESC Hardware
+- **Designing ESC Hardware**
 	1. BLDC driver circuitry
 	1. BLDC Voltage & Current measurement circuitry
 	1. MCU circuitry
 	1. CANBus circuitry
 	1. Power-supply circuitry
 
-- Developing ESC Firmware
+- **Developing ESC Firmware**
 	1. Initializing FreeRTOS and accessing to the required peripherals (ADC, CANBus, PWM/DAC, ...)
 	1. A driver code for running BLDC correctly.
 	1. A control loop implementation for RPM speed stability.
 	1. A driver code for CANBus peripheral and establishing a protocol for communication.
 	Improving the code for reaching the maximum speed and the most silent spin.
 	
-- Troubleshooting/Debugging ESC project
+- **Troubleshooting/Debugging ESC project**
 
 ### Flight Controller sub-project
-- Designing Flight Controller Hardware
+- **Designing Flight Controller Hardware**
 	1. IMU sensor circuitry
 	1. Wifi module circuitry
 	1. Camera module circuitry	
@@ -54,7 +54,7 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 	1. MCU circuitry
 	1. Power supply circuitry
 
-- Developing Flight Controller Firmware
+- **Developing Flight Controller Firmware**
 	1. Initializing FreeRTOS and accessing to the required peripherals (CANBus, SPI, ...)
 	1. A driver code for IMU Sensor.
 	1. A driver for commanding the motors over CANBus.
@@ -65,13 +65,13 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 	1. A driver code for camera module.
 	1. Displaying camera picture on written app with QT.
 
-- Troubleshooting/Debugging Flight Controller project
+- **Troubleshooting/Debugging Flight Controller project**
 
 ### Radio Control sub-project
-- Developing an application with QT
-- Implementing MQTT protocol with QT
-- Send/Receive basic commands to/from drone
-- Displaying the received data from camera module
+	1. Developing an application with QT
+	1. Implementing MQTT protocol with QT
+	1. Send/Receive basic commands to/from drone
+	1. Displaying the received data from camera module
 
 
 ## Documentation
