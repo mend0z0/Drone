@@ -23,47 +23,47 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 
 **Wireless Connectivity Protocol:** MQTT
 
-**Interconnection protocol: CANBus
+**Interconnection protocol:** CANBus
 
 
 ## Roadmap
 
 ### ESC sub-project
 - Designing ESC Hardware
-	BLDC driver circuitry
-	BLDC Voltage & Current measurement circuitry
-	MCU circuitry
-	CANBus circuitry
-	Power-supply circuitry
+1-	BLDC driver circuitry
+1-	BLDC Voltage & Current measurement circuitry
+1-	MCU circuitry
+1-	CANBus circuitry
+1-	Power-supply circuitry
 
 - Developing ESC Firmware
-	Peripherals: ADC, CANBus, PWM/DAC, ...
-	A driver code for running BLDC correctly.
-	A control loop implementation for RPM speed stability.
-	A driver code for CANBus peripheral and establishing a protocol for communication.
+1-	Peripherals: ADC, CANBus, PWM/DAC, ...
+1-	A driver code for running BLDC correctly.
+1-	A control loop implementation for RPM speed stability.
+1-	A driver code for CANBus peripheral and establishing a protocol for communication.
 	Improving the code for reaching the maximum speed and the most silent spin.
 	
 - Troubleshooting/Debugging ESC project
 
 ### Flight Controller sub-project
 - Designing Flight Controller Hardware
-	IMU sensor circuitry
-	Wifi module circuitry
-	Camera module circuitry	
-	CANBus circuitry
-	MCU circuitry
-	Power supply circuitry
+1-	IMU sensor circuitry
+1-	Wifi module circuitry
+1-	Camera module circuitry	
+1-	CANBus circuitry
+1-	MCU circuitry
+1-	Power supply circuitry
 
 - Developing Flight Controller Firmware
-	Peripherals: CANBus, SPI, ...
-	A driver code for IMU Sensor.
-	A driver for commanding the motors over CANBus.
-	Implementing control loop for drone stability.
-	A driver code for Wifi Module.
-	A driver code for MQTT protocol over Wifi.
-	Implementing running basic instruction over MQTT and tuning the control loop.
-	A driver code for camera module.
-	Displaying camera picture on written app with QT.
+1-	Peripherals: CANBus, SPI, ...
+1-	A driver code for IMU Sensor.
+1-	A driver for commanding the motors over CANBus.
+1-	Implementing control loop for drone stability.
+1-	A driver code for Wifi Module.
+1-	A driver code for MQTT protocol over Wifi.
+1-	Implementing running basic instruction over MQTT and tuning the control loop.
+1-	A driver code for camera module.
+1-	Displaying camera picture on written app with QT.
 
 - Troubleshooting/Debugging Flight Controller project
 
