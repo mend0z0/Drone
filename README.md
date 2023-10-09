@@ -37,8 +37,7 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 	1. Power-supply circuitry
 
 - Developing ESC Firmware
-	1. Peripherals: ADC, CANBus, PWM/DAC, ...
-	1. Initializing FreeRTOS and accessing to the required peripherals
+	1. Initializing FreeRTOS and accessing to the required peripherals (ADC, CANBus, PWM/DAC, ...)
 	1. A driver code for running BLDC correctly.
 	1. A control loop implementation for RPM speed stability.
 	1. A driver code for CANBus peripheral and establishing a protocol for communication.
@@ -56,8 +55,7 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 	1. Power supply circuitry
 
 - Developing Flight Controller Firmware
-	1. Peripherals: CANBus, SPI, ...
-	1. Initializing FreeRTOS and accessing to the required peripherals
+	1. Initializing FreeRTOS and accessing to the required peripherals (CANBus, SPI, ...)
 	1. A driver code for IMU Sensor.
 	1. A driver for commanding the motors over CANBus.
 	1. Implementing control loop for drone stability.
