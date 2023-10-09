@@ -68,10 +68,11 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 - **Troubleshooting/Debugging Flight Controller project**
 
 ### Radio Control sub-project
-	1.Developing an application with QT
-	1.Implementing MQTT protocol with QT
-	1.Send/Receive basic commands to/from drone
-	1.Displaying the received data from camera module
+- ** Developing an application with QT**
+	1. Developing an application with QT
+	1. Implementing MQTT protocol with QT
+	1. Send/Receive basic commands to/from drone
+	1. Displaying the received data from camera module
 
 
 ## Documentation
