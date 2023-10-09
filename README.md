@@ -69,8 +69,9 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 
 ### Radio Control sub-project
 - **Developing an application with QT**
-	1. Developing an application with QT
+	1. Connecting to Wifi and establishing a communcation with that
 	1. Implementing MQTT protocol with QT
+	1. A windown and organizing the buttons/graphical parts
 	1. Send/Receive basic commands to/from drone
 	1. Displaying the received data from camera module
 
