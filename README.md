@@ -47,12 +47,12 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 
 ### Flight Controller sub-project
 - Designing Flight Controller Hardware
-	1 IMU sensor circuitry
-	1 Wifi module circuitry
-	1 Camera module circuitry	
-	1 CANBus circuitry
-	1 MCU circuitry
-	1 Power supply circuitry
+	1. IMU sensor circuitry
+	1. Wifi module circuitry
+	1. Camera module circuitry	
+	1. CANBus circuitry
+	1. MCU circuitry
+	1. Power supply circuitry
 
 - Developing Flight Controller Firmware
 1-	Peripherals: CANBus, SPI, ...
