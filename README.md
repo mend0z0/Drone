@@ -1,4 +1,4 @@
-# IN PROGRESS
+# PROJECT IS IN PROGRESS...
 
 # Quadcopter
 
