@@ -27,6 +27,12 @@ This project is a drone that equipped with four motors (Quadcopter). This projec
 
 **Interconnection protocol:** CANBus
 
+## Latest update
+
+
+``
+Working on ESC circuit
+``
 
 ## Roadmap
 
