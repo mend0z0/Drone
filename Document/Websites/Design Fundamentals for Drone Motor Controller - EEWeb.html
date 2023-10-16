@@ -1,0 +1,1916 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/ -->
+<html lang="en-US" class="no-js no-svg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<meta name="description" content="The ability to control the motors’ speed and rotation is the design key of &lt;a href=&quot;https://www.powerelectronicsnews.com/?s=drone&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;drones&lt;/a&gt;, making the electronic sp" />-->
+<meta name="keywords" content="Drone, ESC, Motor Control">
+<meta name="author" content="EEWeb">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<!-- OLYTICS -->
+
+	<link rel="stylesheet" href="./Design Fundamentals for Drone Motor Controller - EEWeb_files/olytics.css" media="all" onload="this.media=&#39;all&#39;">
+		<script type="text/javascript" async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/js"></script><script type="text/javascript" async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/js(1)"></script><script type="text/javascript" async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/analytics.js.download"></script><script async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/gtm.js.download"></script><script async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/gtm.js(1).download"></script><script async="" id="olyticsImport" type="text/javascript" data-oid="eeed6a1c8d2f4363a5a1204c00fbd258" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/olytics.min.js.download"></script><script>
+// akam-sw.js install script version 1.3.6
+"serviceWorker"in navigator&&"find"in[]&&function(){var e=new Promise(function(e){"complete"===document.readyState||!1?e():(window.addEventListener("load",function(){e()}),setTimeout(function(){"complete"!==document.readyState&&e()},1e4))}),n=window.akamServiceWorkerInvoked,r="1.3.6";if(n)aka3pmLog("akam-setup already invoked");else{window.akamServiceWorkerInvoked=!0,window.aka3pmLog=function(){window.akamServiceWorkerDebug&&console.log.apply(console,arguments)};function o(e){(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"sm.sw.s":e,"sm.sw.v":r}])}var i="/akam-sw.js",a=new Map;navigator.serviceWorker.addEventListener("message",function(e){var n,r,o=e.data;if(o.isAka3pm)if(o.command){var i=(n=o.command,(r=a.get(n))&&r.length>0?r.shift():null);i&&i(e.data.response)}else if(o.commandToClient)switch(o.commandToClient){case"enableDebug":window.akamServiceWorkerDebug||(window.akamServiceWorkerDebug=!0,aka3pmLog("Setup script debug enabled via service worker message"),v());break;case"boomerangMQ":o.payload&&(window.BOOMR_mq=window.BOOMR_mq||[]).push(o.payload)}aka3pmLog("akam-sw message: "+JSON.stringify(e.data))});var t=function(e){return new Promise(function(n){var r,o;r=e.command,o=n,a.has(r)||a.set(r,[]),a.get(r).push(o),navigator.serviceWorker.controller&&(e.isAka3pm=!0,navigator.serviceWorker.controller.postMessage(e))})},c=function(e){return t({command:"navTiming",navTiming:e})},s=null,m={},d=function(){var e=i;return s&&(e+="?othersw="+encodeURIComponent(s)),function(e,n){return new Promise(function(r,i){aka3pmLog("Registering service worker with URL: "+e),navigator.serviceWorker.register(e,n).then(function(e){aka3pmLog("ServiceWorker registration successful with scope: ",e.scope),r(e),o(1)}).catch(function(e){aka3pmLog("ServiceWorker registration failed: ",e),o(0),i(e)})})}(e,m)},g=navigator.serviceWorker.__proto__.register;if(navigator.serviceWorker.__proto__.register=function(n,r){return n.includes(i)?g.call(this,n,r):(aka3pmLog("Overriding registration of service worker for: "+n),s=new URL(n,window.location.href),m=r,navigator.serviceWorker.controller?new Promise(function(n,r){var o=navigator.serviceWorker.controller.scriptURL;if(o.includes(i)){var a=encodeURIComponent(s);o.includes(a)?(aka3pmLog("Cancelling registration as we already integrate other SW: "+s),navigator.serviceWorker.getRegistration().then(function(e){n(e)})):e.then(function(){aka3pmLog("Unregistering existing 3pm service worker"),navigator.serviceWorker.getRegistration().then(function(e){e.unregister().then(function(){return d()}).then(function(e){n(e)}).catch(function(e){r(e)})})})}else aka3pmLog("Cancelling registration as we already have akam-sw.js installed"),navigator.serviceWorker.getRegistration().then(function(e){n(e)})}):g.call(this,n,r))},navigator.serviceWorker.controller){var u=navigator.serviceWorker.controller.scriptURL;u.includes("/akam-sw.js")||u.includes("/akam-sw-preprod.js")||u.includes("/threepm-sw.js")||(aka3pmLog("Detected existing service worker. Removing and re-adding inside akam-sw.js"),s=new URL(u,window.location.href),e.then(function(){navigator.serviceWorker.getRegistration().then(function(e){m={scope:e.scope},e.unregister(),d()})}))}else e.then(function(){window.akamServiceWorkerPreprod&&(i="/akam-sw-preprod.js"),d()});if(window.performance){var w=window.performance.timing,l=w.responseEnd-w.responseStart;c(l)}e.then(function(){t({command:"pageLoad"})});var k=!1;function v(){window.akamServiceWorkerDebug&&!k&&(k=!0,aka3pmLog("Initializing debug functions at window scope"),window.aka3pmInjectSwPolicy=function(e){return t({command:"updatePolicy",policy:e})},window.aka3pmDisableInjectedPolicy=function(){return t({command:"disableInjectedPolicy"})},window.aka3pmDeleteInjectedPolicy=function(){return t({command:"deleteInjectedPolicy"})},window.aka3pmGetStateAsync=function(){return t({command:"getState"})},window.aka3pmDumpState=function(){aka3pmGetStateAsync().then(function(e){aka3pmLog(JSON.stringify(e,null,"\t"))})},window.aka3pmInjectTiming=function(e){return c(e)},window.aka3pmUpdatePolicyFromNetwork=function(){return t({command:"pullPolicyFromNetwork"})})}v()}}();</script>
+<script type="text/javascript">
+		/*olytics 3.0*/
+			window.olytics||(window.olytics=[]),window.olytics.methods=["fire","confirm"],window.olytics.factory=function(i){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(i),window.olytics.push(t),window.olytics}};for(var i=0;i<window.olytics.methods.length;i++){var method=window.olytics.methods[i];window.olytics[method]=window.olytics.factory(method)}olytics.load=function(i){if(!document.getElementById("olyticsImport")){window.a=window.olytics;var t=document.createElement("script");t.async=!0,t.id="olyticsImport",t.type="text/javascript";var o="";void 0!==i&&void 0!==i.oid&&(o=i.oid),t.setAttribute("data-oid",o),t.src="https://olytics.omeda.com/olytics/js/v3/p/olytics.min.js",t.addEventListener("load",function(t){for(olytics.initialize({Olytics:i});window.a.length>0;){var o=window.a.shift(),s=o.shift();olytics[s]&&olytics[s].apply(olytics,o)}},!1);var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}},olytics.load({oid:"eeed6a1c8d2f4363a5a1204c00fbd258"});
+		</script>
+
+
+
+	<script>
+		olytics.fire(
+			{
+				behaviorId: '',
+				category: "Design Zones,Digital Design,Embedded Systems,Featured,Power Design,Slider Article",
+				tag: "Drone,ESC,Motor Control"			}
+		);
+	</script>
+
+
+	        <link rel="stylesheet" type="text/css" href="./Design Fundamentals for Drone Motor Controller - EEWeb_files/htlbid.css">
+	
+<!-- END OLYTICS -->
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Design Fundamentals for Drone Motor Controller - EEWeb</title>
+	<meta name="description" content="The ability to control the motors’ speed and rotation is the design key of drones, making the electronic speed control (ESC) module an added value and a">
+	<link rel="canonical" href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Design Fundamentals for Drone Motor Controller - EEWeb">
+	<meta property="og:description" content="The ability to control the motors’ speed and rotation is the design key of drones, making the electronic speed control (ESC) module an added value and a">
+	<meta property="og:url" content="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/">
+	<meta property="og:site_name" content="EEWeb">
+	<meta property="article:publisher" content="https://www.facebook.com/EEWeb">
+	<meta property="article:published_time" content="2021-01-08T13:26:03+00:00">
+	<meta property="article:modified_time" content="2021-01-12T07:30:16+00:00">
+	<meta property="og:image" content="https://www.eeweb.com/wp-content/uploads/drone-main-eeweb-design.jpg?fit=5566%2C3000">
+	<meta property="og:image:width" content="5566">
+	<meta property="og:image:height" content="3000">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta name="author" content="EEWeb">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@ee_web">
+	<meta name="twitter:site" content="@ee_web">
+	<meta name="twitter:label1" content="Written by">
+	<meta name="twitter:data1" content="EEWeb">
+	<meta name="twitter:label2" content="Est. reading time">
+	<meta name="twitter:data2" content="10 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"NewsArticle","@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#article","isPartOf":{"@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/"},"author":[{"@id":"https://www.eeweb.com/#/schema/person/4da8a9ca4c7492e01cc5de6ade3fe3a2"}],"headline":"Design Fundamentals for Drone Motor Controller","datePublished":"2021-01-08T13:26:03+00:00","dateModified":"2021-01-12T07:30:16+00:00","mainEntityOfPage":{"@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/"},"wordCount":1946,"commentCount":0,"publisher":{"@id":"https://www.eeweb.com/#organization"},"image":{"@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#primaryimage"},"thumbnailUrl":"https://www.eeweb.com/wp-content/uploads/drone-main-eeweb-design.jpg?fit=5566%2C3000","keywords":["Drone","ESC","Motor Control"],"articleSection":["Design Zones","Digital Design","Embedded Systems","Featured","Power Design","Slider Article"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#respond"]}]},{"@type":"WebPage","@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/","url":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/","name":"Design Fundamentals for Drone Motor Controller - EEWeb","isPartOf":{"@id":"https://www.eeweb.com/#website"},"primaryImageOfPage":{"@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#primaryimage"},"image":{"@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#primaryimage"},"thumbnailUrl":"https://www.eeweb.com/wp-content/uploads/drone-main-eeweb-design.jpg?fit=5566%2C3000","datePublished":"2021-01-08T13:26:03+00:00","dateModified":"2021-01-12T07:30:16+00:00","description":"The ability to control the motors’ speed and rotation is the design key of drones, making the electronic speed control (ESC) module an added value and a","breadcrumb":{"@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#primaryimage","url":"https://www.eeweb.com/wp-content/uploads/drone-main-eeweb-design.jpg?fit=5566%2C3000","contentUrl":"https://www.eeweb.com/wp-content/uploads/drone-main-eeweb-design.jpg?fit=5566%2C3000","width":5566,"height":3000},{"@type":"BreadcrumbList","@id":"https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.eeweb.com/"},{"@type":"ListItem","position":2,"name":"Design Fundamentals for Drone Motor Controller"}]},{"@type":"WebSite","@id":"https://www.eeweb.com/#website","url":"https://www.eeweb.com/","name":"EEWeb","description":"Electrical Engineering News, Resources, and Community | EEWeb Community","publisher":{"@id":"https://www.eeweb.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.eeweb.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.eeweb.com/#organization","name":"EEWeb","url":"https://www.eeweb.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.eeweb.com/#/schema/logo/image/","url":"https://www.eeweb.com/wp-content/uploads/EEWeb-2.png?fit=1200%2C675","contentUrl":"https://www.eeweb.com/wp-content/uploads/EEWeb-2.png?fit=1200%2C675","width":1200,"height":675,"caption":"EEWeb"},"image":{"@id":"https://www.eeweb.com/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/EEWeb","https://twitter.com/ee_web","https://www.linkedin.com/company/eeweb.com"]},{"@type":"Person","@id":"https://www.eeweb.com/#/schema/person/4da8a9ca4c7492e01cc5de6ade3fe3a2","name":"EEWeb","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.eeweb.com/#/schema/person/image/f57dbbe00a0000b8c391e640c2d413de","url":"https://secure.gravatar.com/avatar/e55d454389f07bdfe6a4df1116fa9ef6?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/e55d454389f07bdfe6a4df1116fa9ef6?s=96&d=mm&r=g","caption":"EEWeb"},"description":"EEWEB","url":"https://www.eeweb.com/author/acadmin/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="https://stats.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="EEWeb » Design Fundamentals for Drone Motor Controller Comments Feed" href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/feed/">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.eeweb.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="all-css-0" href="./Design Fundamentals for Drone Motor Controller - EEWeb_files/saved_resource" type="text/css" media="all">
+<style id="wp-block-library-inline-css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="all-css-4" href="./Design Fundamentals for Drone Motor Controller - EEWeb_files/saved_resource(1)" type="text/css" media="all">
+<script id="cookie-law-info-js-extra">
+var Cli_Data = {"nn_cookie_ids":["welcomeAdsCookie"],"cookielist":[],"non_necessary_cookies":[],"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#61a229","button_1_button_hover":"#4e8221","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#dedfe0","button_3_button_hover":"#b2b2b3","button_3_link_colour":"#333333","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#dedfe0","button_4_button_hover":"#b2b2b3","button_4_link_colour":"#333333","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#333333","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+var log_object = {"ajax_url":"https:\/\/www.eeweb.com\/wp-admin\/admin-ajax.php"};
+</script>
+<script type="text/javascript" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/saved_resource(2)"></script><script id="responsive-lightbox-js-before" type="text/javascript">
+var rlArgs = {"script":"swipebox","selector":"lightbox","customEvents":"","activeGalleries":true,"animation":true,"hideCloseButtonOnMobile":false,"removeBarsOnMobile":false,"hideBars":true,"hideBarsDelay":5000,"videoMaxWidth":1080,"useSVG":true,"loopAtEnd":false,"woocommerce_gallery":false,"ajaxurl":"https:\/\/www.eeweb.com\/wp-admin\/admin-ajax.php","nonce":"09a82c4968","preview":false,"postId":291859,"scriptExtension":false};
+</script>
+<script src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/front.js.download" id="responsive-lightbox-js"></script>
+<script type="text/javascript" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/pintra-redirect.js.download"></script><link rel="https://api.w.org/" href="https://www.eeweb.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.eeweb.com/wp-json/wp/v2/posts/291859"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.eeweb.com/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.3.2">
+<link rel="shortlink" href="https://www.eeweb.com/?p=291859">
+<link rel="alternate" type="application/json+oembed" href="https://www.eeweb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.eeweb.com%2Fdesign-fundamentals-for-drone-motor-controller%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.eeweb.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.eeweb.com%2Fdesign-fundamentals-for-drone-motor-controller%2F&amp;format=xml">
+	<style>img#wpstats{display:none}</style>
+		<link rel="icon" href="https://www.eeweb.com/wp-content/uploads/cropped-favicon.png?fit=32%2C32" sizes="32x32">
+<link rel="icon" href="https://www.eeweb.com/wp-content/uploads/cropped-favicon.png?fit=192%2C192" sizes="192x192">
+<link rel="apple-touch-icon" href="https://www.eeweb.com/wp-content/uploads/cropped-favicon.png?fit=180%2C180">
+<meta name="msapplication-TileImage" content="https://www.eeweb.com/wp-content/uploads/cropped-favicon.png?fit=270%2C270">
+		<style type="text/css" id="wp-custom-css">
+			article .wp-caption.alignright {
+	float: right;
+}
+
+main {
+	overflow: hidden;
+}		</style>
+		
+<style>
+
+.ads-modal {
+    position: fixed;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    display: none
+}
+
+.ads-modal.active {
+    opacity: 1;
+    display: block
+}
+
+.ads-modal .content {
+    position: absolute;
+    opacity: 1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 640px;
+    margin: -300px auto 0
+}
+
+.ads-modal .content.animate {
+    display: block
+}
+
+.ads-modal .content .timer-description {
+    background: #000;
+    padding: 0px 0 5px 5px;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    width: 260px;
+    color: #fff;
+    text-align: right;
+    line-height: 26px;
+    padding-right: 31px
+}
+
+.ads-modal .content .close {
+    background: url(../images/close-x.png);
+    width: 23px;
+    height: 23px;
+    display: block;
+    opacity: 1;
+    margin-left: 9px;
+    float: none;
+    position: absolute;
+    top: 0px;
+    right: 0px
+}
+
+.ads-modal .content .ad-wrapper {
+    display: block
+}
+
+.ads-modal .content .ad-wrapper .continue-to-site {
+    display: block
+}
+
+.ads-modal .content .ad-wrapper .continue-to-site .continue-link {
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #fff;
+    padding: 12px;
+    display: inline-block;
+    font-style: italic;
+    text-decoration: none;
+    float: right;
+    cursor: pointer
+}
+
+.ads-modal .content .ad-wrapper .continue-to-site .continue-link:hover {
+    opacity: 0.8
+}
+
+.ads-modal .content .ad-wrapper .continue-to-site .continue-link i {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 5px
+}
+
+.ads-modal .content .ad-wrapper #ad-welcome {
+    margin-top: 20px
+}
+
+.adzone, .ad-solo {
+    overflow: hidden;
+    padding: 14px 0;
+    text-align: center;
+    background: #F6F6F6;
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+}
+
+.adzone .billboard-wrap, .ad-solo .billboard-wrap {
+    margin: 0 auto;
+    display: table;
+    padding-top: 18px;
+}
+
+.adzone .ad-title, .ad-solo .ad-title, .full-width-ads .ad-title {
+    text-align: center;
+    color: gray;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.full-width-ads {
+    overflow: hidden;
+    position: relative;
+    /*z-index: 1;*/
+    width: 100%;
+    padding: 30px 15px;
+    text-align: center;
+    background: #F6F6F6;
+    border-bottom: 1px solid #dfdfdf;
+    border-top: 1px solid #dfdfdf;
+}
+
+#ad-leaderboard {
+    display: inline-block;
+}
+
+div .fluid-ad-single {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 0 !important;
+}
+
+#div-gpt-ad-fluid {
+    margin-top: 30px;
+    padding: 0 !important;
+    margin-bottom: -15px;
+    display: block !important;
+}
+
+.sidebar .adzone {
+    background: #eeeeee;
+    padding: 20px 0 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#ad-divs-container .ad-channel-category {
+    margin-bottom: 15px;
+}
+
+</style>
+
+
+<script>
+
+        
+
+
+        </script>
+
+
+	<script async="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/htlbid.js.download"></script>
+
+	<script>
+
+        var cat_array = [];
+		        cat_array.push('Design Zones');
+		        cat_array.push('Digital Design');
+		        cat_array.push('Embedded Systems');
+		        cat_array.push('Featured');
+		        cat_array.push('Power Design');
+		        cat_array.push('Slider Article');
+		
+        window.htlbid = window.htlbid || {};
+        htlbid.cmd = htlbid.cmd || [];
+
+        htlbid.cmd.push(function () {
+            htlbid.layout('universal');
+			
+	        htlbid.setTargeting('kw', ["drone","esc","motor_control","digital_design"]);
+
+			            htlbid.setTargeting('post_id', '291859');
+            htlbid.setTargeting('aid', '291859');
+			
+			            htlbid.setTargeting('is_home', 'no');
+			
+	        
+            htlbid.setTargeting('category', cat_array);
+        });
+	</script>
+
+
+<script>
+    dmpDataLayer = [{
+        "title": "Design Fundamentals for Drone Motor Controller",
+        "pageType": "Design Article",
+        "section": ["Digital Design"],
+        "keywords": ["drone","esc","motor control","Digital Design"]        
+    }];
+</script>
+<script>
+    dataLayer = [{ Author: "EEWeb", Section: ["Digital Design"], PageType: "Design Article", PubDate: "20210108" }];
+</script>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TZ4Z542");
+</script>
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-NMNZ3NH");
+</script>
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"true","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-c57e6dbb-2dbe-4805-aa0f-1c697f8c6923","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"true","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="UHZS9-U92AB-P4UZD-US9C8-VNWF9",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"UHZS9-U92AB-P4UZD-US9C8-VNWF9";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="true"=="true"?1:0,t="",a="jrcydbqxzhhauzjkdkqq-f-e8e92620a-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"640740","ak.ai":parseInt("415198",10),"ak.ol":"0","ak.cr":13,"ak.ipv":4,"ak.proto":"h2","ak.rid":"13277583","ak.r":45836,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"76.69.129.0","ak.cport":52554,"ak.gh":"23.58.127.196","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1697258145","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==dN4OOldjV75YBC7DwVfOlXSNXXuGv4x0lbdPZDzYj3uyub33cRL84UsI9W9EnQwNJ9D5LseAxgGkVUA5KMt1qctO+E1OBQY/Iu1lPe6v4oH4Wel/rTfBxRNNJYVmY5JD5OCHCfvbDlkT9gHU5YkBISel2j2yfj2TaLvW+TbTQ9ExatYJ+r/bvl49TTxpWk8VeCqU8uq3qkOBog1+NSF5PWrX3IsRPVpZWCILVziLRGyY/THAmLUK7pW2CRvHH5dyUKTszDmJtuMmSwymD9/DP6u8H7+OQhJE/l6X3byxCtauUlCly1syaMXmEvqmASHqhmPKEW9F4LKSegZjSuqqiQE0334zxMlRyMqBovV7we/AAk8kpkSTOieBL0SxiitDiledf1PQbvx6+SCMhCRMoQjP5NioMreMSStJSBKtJKI=","ak.pv":"149","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><link href="./Design Fundamentals for Drone Motor Controller - EEWeb_files/UHZS9-U92AB-P4UZD-US9C8-VNWF9" rel="preload" as="script"><script>bazadebezolkohpepadr="1361660413"</script><script type="text/javascript" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/51294a80" defer=""></script><script src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/wp-emoji-release.min.js.download" defer=""></script><script id="boomr-scr-as" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/UHZS9-U92AB-P4UZD-US9C8-VNWF9" async=""></script><script src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/f(4).txt" async=""></script><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><script src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/f(5).txt" async=""></script><link id="dnsprefetchlink" rel="dns-prefetch" href="https://jrcydbqxzhhauzjkdkqq-f-e8e92620a-clientnsv4-s.akamaihd.net/"></head>
+
+<body class="post-template-default single single-post postid-291859 single-format-standard section-articles scroll" data-new-gr-c-s-check-loaded="14.1131.0" data-gr-ext-installed="">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe
+	src="https://www.googletagmanager.com/ns.html?id=GTM-TZ4Z542"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><noscript><iframe
+	src="https://www.googletagmanager.com/ns.html?id=GTM-NMNZ3NH"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+        <div class="overlay-cover"></div>
+
+	<!-- Interstitial AD -->
+<div class="htlad-EEWeb_interstitial"><div class="htl-ad" id="htlad-1" data-unit="EEWeb/EEWeb_Interstitial" name="htlunit-EEWeb_interstitial" data-lazy-pixels="350" data-sizes="0x0:1x1|800x0:1x1" data-prebid="0x0:|800x0:"><div class="htl-ad-gpt" id="htlad-1-gpt"></div></div></div>
+	<div id="wallpaper_image">
+		<div id="outermain">
+			<div id="main">
+
+			</div>
+		</div>
+	</div>
+
+	<div class="headers">
+		<header id="header1">
+		<div id="header1wrap" style="display: flex; margin: 0 auto; max-width: 1200px">
+			<div id="nav-aspencore" style="width: 195px; height: 35px; border-right: 1px solid #e3e3e5">
+				<div id="aspencore-network">
+				Aspencore Network
+				</div>
+
+
+
+				<div class="nav-aspencore-box">
+				<ul id="menu-aspencore-network" class="menu-aspencore-network">
+									<li>
+						<a>
+							News &amp; Analysis						</a>
+
+						<div class="aspencore-networks-pane">
+							<div class="aspencore-networks-scroll">
+								<ul style="width: 888px">
+																	<li>
+										<a href="https://www.eetimes.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-eetimes.png?fit=182,86" alt="EE Times">
+										</a>
+
+										<p>News the global electronics community can trust</p>
+									</li>
+																		<li>
+										<a href="http://www.powerelectronicsnews.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-powerelectronicsnews.png?fit=182,86" alt="Power Electronics News">
+										</a>
+
+										<p>The trusted news source for power-conscious design engineers</p>
+									</li>
+																		<li>
+										<a href="http://www.ebnonline.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-ebn.png?fit=182,86" alt="EBN">
+										</a>
+
+										<p>Supply chain news for the electronics industry</p>
+									</li>
+																		<li>
+										<a href="http://www.elektroda.pl/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-elektroda.png?fit=182,86" alt="Elektroda PL">
+										</a>
+
+										<p>The can't-miss forum engineers and hobbyists</p>
+									</li>
+																	</ul>
+							</div>
+						</div>
+					</li>
+										<li>
+						<a>
+							Products						</a>
+
+						<div class="aspencore-networks-pane">
+							<div class="aspencore-networks-scroll">
+								<ul style="width: 666px">
+																	<li>
+										<a href="http://www.eem.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-eem.png?fit=182,86" alt="EEM.com">
+										</a>
+
+										<p>The electronic components resource for engineers and purchasers</p>
+									</li>
+																		<li>
+										<a href="http://www.datasheets.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-datasheets2.png?fit=182,86" alt="DataSheets.com">
+										</a>
+
+										<p>Design engineer' search engine for electronic components</p>
+									</li>
+																		<li>
+										<a href="http://www.electronicproducts.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-electronicsproducts.png?fit=182,86" alt="Electronic Products">
+										</a>
+
+										<p>Product news that empowers design decisions</p>
+									</li>
+																	</ul>
+							</div>
+						</div>
+					</li>
+										<li>
+						<a>
+							Design						</a>
+
+						<div class="aspencore-networks-pane">
+							<div class="aspencore-networks-scroll">
+								<ul style="width: 1110px">
+																	<li>
+										<a href="http://www.techonline.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-techonline.png?fit=182,86" alt="TechOnline">
+										</a>
+
+										<p>The educational resource for the global engineering community</p>
+									</li>
+																		<li>
+										<a href="http://www.electronics-tutorials.ws/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-electronicstutorials.png?fit=182,86" alt="Electronic Tutorials">
+										</a>
+
+										<p>The learning center for future and novice engineers</p>
+									</li>
+																		<li>
+										<a href="http://www.edn.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-edn.png?fit=182,86" alt="EDN">
+										</a>
+
+										<p>The design site for electronics engineers and engineering managers</p>
+									</li>
+																		<li>
+										<a href="http://www.electroschematics.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-electroschematics.png?fit=182,86" alt="Electroschematics">
+										</a>
+
+										<p>Where makers and hobbyists share projects</p>
+									</li>
+																		<li>
+										<a href="http://www.embedded.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-embedded.png?fit=182,86" alt="Embedded.com">
+										</a>
+
+										<p>The design site for hardware software, and firmware engineers</p>
+									</li>
+																	</ul>
+							</div>
+						</div>
+					</li>
+										<li>
+						<a>
+							Tools						</a>
+
+						<div class="aspencore-networks-pane">
+							<div class="aspencore-networks-scroll">
+								<ul style="width: 1554px">
+																	<li>
+										<a href="https://www.eeweb.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-eeweb.png?fit=182,86" alt="EEWeb">
+										</a>
+
+										<p>Where electronics engineers discover the latest tools</p>
+									</li>
+																		<li>
+										<a href="http://www.pcbweb.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-pcbweb.png?fit=182,86" alt="PCB Web">
+										</a>
+
+										<p>Hardware design made easy</p>
+									</li>
+																		<li>
+										<a href="http://schematics.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-schematics.png?fit=182,86" alt="Schematics.com">
+										</a>
+
+										<p>Brings you all the tools to tackle projects big and small - combining real-world components with online collaboration</p>
+									</li>
+																		<li>
+										<a href="http://www.partsim.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-partsim.png?fit=182,86" alt="PartSim">
+										</a>
+
+										<p>Circuit simulation made easy</p>
+									</li>
+																		<li>
+										<a href="http://www.schematics.io/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-schematics-170616-061500.png?fit=182,86" alt="Schematics.io">
+										</a>
+
+										<p>A free online environment where users can create, edit, and share electrical schematics, or convert between popular file formats like Eagle, Altium, and OrCAD.</p>
+									</li>
+																		<li>
+										<a href="https://www.transim.com/Products/Engage" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-engage.png?fit=182,86" alt="Engage">
+										</a>
+
+										<p>Transform your product pages with embeddable schematic, simulation, and 3D content modules while providing interactive user experiences for your customers.</p>
+									</li>
+																		<li>
+										<a href="http://www.transim.com/iot" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-productadvisor.png?fit=182,86" alt="IoT Product Advisor">
+										</a>
+
+										<p>Find the IoT board you’ve been searching for using this interactive solution space to help you visualize the product selection process and showcase important trade-off decisions.</p>
+									</li>
+																	</ul>
+							</div>
+						</div>
+					</li>
+										<li>
+						<a>
+							About Us						</a>
+
+						<div class="aspencore-networks-pane">
+							<div class="aspencore-networks-scroll">
+								<ul style="width: 666px">
+																	<li>
+										<a href="http://www.aspencore.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-aspencore-logo-color-195x92.png?fit=182,86" alt="Aspencore">
+										</a>
+
+										<p>A worldwide innovation hub servicing component manufacturers and distributors with unique marketing solutions</p>
+									</li>
+																		<li>
+										<a href="https://www.siliconexpert.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-silicon-expert.png?fit=182,86" alt="Silicon Expert">
+										</a>
+
+										<p>SiliconExpert provides engineers with the data and insight they need to remove risk from the supply chain.</p>
+									</li>
+																		<li>
+										<a href="https://www.transim.com/" target="_blank">
+											<img src="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" data-src="https://www.eeweb.com/wp-content/uploads/media-brand-transim.png?fit=182,86" alt="Transim">
+										</a>
+
+										<p>Transim powers many of the tools engineers use every day on manufacturers' websites and can develop solutions for any company.</p>
+									</li>
+																	</ul>
+							</div>
+						</div>
+					</li>
+									</ul>
+				</div>
+			</div>
+
+			<div style="display: flex; padding: 10px 15px">
+				<div id="just-posted">
+				Just Posted
+				</div>
+
+								<a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/" id="just-posted-link">Impact of Quantum Computing on Next-Generation Chip Development</a>
+
+			</div>
+
+			<div id="social-media" style="margin-left: auto">
+				<ul>
+					<li>
+						<a href="https://twitter.com/ee_web" target="_blank" title="twitter">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li>
+						<a href="https://www.facebook.com/EEWeb" target="_blank" title="facebook">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/eeweb.com/" target="_blank" title="linkedin">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="social-icon-google-news-header">
+                        <a href="https://news.google.com/publications/CAAqBwgKMPrjtAswh__LAw?ceid=US:en&amp;oc=3" target="_blank" title="Google News">
+                            <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/top-google-icon.png">
+                        </a>
+                    </li>
+					<li class="social-icon-apple-news-header">
+                        <a href="https://apple.news/TYoxJnSmuQxuVuuMSfDbySg" target="_blank" title="Apple News">
+                            <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/top-apple-icon1.png">
+                        </a>
+                    </li>
+					<li>
+						<a href="https://www.eeweb.com/rss-feeds" title="rss">
+							<i class="fa fa-rss" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+            <div class="login-buttons">
+
+                    <div class="loginlinks" style="padding: 8px 15px; border-left: 1px solid #e3e3e5">
+            <a href="https://login.aspencore.com/d045a02d-767d-4f3f-80d7-695dce25d142/login/authorize?response_type=code&amp;scope=openid%20email%20profile&amp;client_id=77a9eca0-6136-4fab-8096-d4c1f69ded7f&amp;state=17dcc35c4b43dff2572346ad6612b7fb&amp;redirect_uri=https%3A%2F%2Fwww.eeweb.com%2Fopenid-connect-authorize" class="login" style="font-weight: 600;">Sign in</a>
+            <a href="https://login.aspencore.com/d045a02d-767d-4f3f-80d7-695dce25d142/login/authorize?response_type=code&amp;scope=openid%20email%20profile&amp;client_id=77a9eca0-6136-4fab-8096-d4c1f69ded7f&amp;state=3275ef48b63860cd4b06334f00f56100&amp;redirect_uri=https%3A%2F%2Fwww.eeweb.com%2Fopenid-connect-authorize" class="register" style="font-weight: 400;">or register</a>
+        </div>
+        </div>
+
+			<div style="position: relative; padding: 8px 15px; border-left: 1px solid #e3e3e5; text-transform: uppercase; color: #152c4c; cursor: pointer; font-size: 13px; font-weight: 900;">
+				<a href="https://aspencore.dragonforms.com/EEWebSubscribe" target="_blank" style="color: #152c4c; text-decoration: none">Newsletter</a>
+			</div>
+		</div>
+		</header>
+
+        <script>
+            jQuery(document).ready(function () {
+                wp.ajax.post( "get_login_buttons", {} ).done(function(response) {
+                    jQuery('.login-buttons').append(JSON.parse(response))
+                });
+            })
+        </script>
+
+		<header id="header2">
+
+
+			<div id="menu-wrapper">
+				<div style="position: absolute; top: 0px; left: -1000px; width: 1000px; height: 100%; background: #152c4c">
+				</div>
+				<div id="eeweb-logo" style="display: flex; align-items: center; background: #152c4c">
+					<a href="https://www.eeweb.com/">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 222.8 55.8" fill="#fff"><path d="M1.4 2.5h28.2v9.6H11.2v9.4h18.5V31H11.2v13.6h18.5v9.7H1.4V2.5zM36.1 2.5h28.2v9.6H45.9v9.4h18.5V31H45.9v13.6h18.5v9.7H36.1V2.5zM70.8 2.5h5.3l10.6 37.3 14.8-37.3h1.1l14.7 37.3L128 2.5h5.3l-14.9 51.7h-1L102 15.1 86.4 54.2h-1L70.8 2.5zM169.5 41.5l4.1 2.2c-1.4 2.7-2.9 4.8-4.7 6.5-1.8 1.6-3.8 2.9-6 3.7-2.2.9-4.8 1.3-7.6 1.3-6.2 0-11.1-2-14.6-6.1s-5.3-8.7-5.3-13.9c0-4.9 1.5-9.2 4.5-13 3.8-4.8 8.8-7.2 15.2-7.2 6.5 0 11.7 2.5 15.6 7.4 2.8 3.5 4.2 7.9 4.2 13.1h-34.4c.1 4.4 1.5 8.1 4.3 10.9 2.7 2.8 6.1 4.3 10.2 4.3 1.9 0 3.8-.3 5.7-1 1.8-.7 3.4-1.6 4.7-2.7s2.6-3 4.1-5.5zm0-10.3c-.7-2.6-1.6-4.7-2.9-6.3-1.3-1.6-2.9-2.8-5-3.8s-4.2-1.4-6.5-1.4c-3.8 0-7 1.2-9.7 3.6-2 1.8-3.5 4.4-4.5 7.9h28.6zM181.7 54.2v-53h4.9v21.3c2.1-2.5 4.4-4.4 6.9-5.7 2.6-1.3 5.3-1.9 8.4-1.9 5.4 0 10 2 13.9 5.9 3.8 3.9 5.7 8.7 5.7 14.3 0 5.5-1.9 10.3-5.8 14.2-3.9 3.9-8.5 5.9-13.9 5.9-3.1 0-5.9-.7-8.5-2s-4.8-3.3-6.7-6v7h-4.9zm19.7-3.8c2.7 0 5.3-.7 7.6-2s4.2-3.2 5.5-5.7c1.4-2.4 2.1-5 2.1-7.7s-.7-5.3-2.1-7.8-3.2-4.4-5.6-5.7-4.8-2.1-7.5-2.1-5.2.7-7.7 2.1-4.3 3.2-5.6 5.5c-1.3 2.3-1.9 4.9-1.9 7.8 0 4.4 1.5 8.1 4.4 11.1 3 3 6.5 4.5 10.8 4.5z"></path></svg>					</a>
+				</div>
+
+				
+				<div class="menu-top-menu-container"><div id="searchform-wrapper"><h2 class="header-text"><label for="s">Search EEWeb</label></h2>
+<form method="get" id="searchform" action="https://www.eeweb.com/">
+<div>
+<input type="text" value="" name="s" id="s" placeholder="I am looking for...">
+<input type="submit" id="searchsubmit" name="submit" value="Search">
+</div>
+</form></div><ul id="more-menu"><li><a href="https://www.eeweb.com/about-us">About Us</a></li><li><a href="https://aspencore.dragonforms.com/loading.do?omedasite=eewebsubscribe" target="_blank">Newsletters</a></li><li style="margin: 0 0 10px; width: 100%; height: 2px; background: #0C2C52"></li><li><a href="https://login.aspencore.com/d045a02d-767d-4f3f-80d7-695dce25d142/login/authorize?response_type=code&amp;scope=openid%20email%20profile&amp;client_id=77a9eca0-6136-4fab-8096-d4c1f69ded7f&amp;state=81e27876e30f72bb4cdb225fe06f53a8&amp;redirect_uri=https%3A%2F%2Fwww.eeweb.com%2Fopenid-connect-authorize">login</a></li><li><a href="https://login.aspencore.com/d045a02d-767d-4f3f-80d7-695dce25d142/login/authorize?response_type=code&amp;scope=openid%20email%20profile&amp;client_id=77a9eca0-6136-4fab-8096-d4c1f69ded7f&amp;state=22a33d9b351d66b3c5bbc23508dab89e&amp;redirect_uri=https%3A%2F%2Fwww.eeweb.com%2Fopenid-connect-authorize">register</a></li></ul><ul id="top-menu" class="menu"><li id="menu-item-64824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64824"><a>Tools</a>
+<ul class="sub-menu">
+	<li id="menu-item-64825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64825"><a>PCB Tools</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64826" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64826"><a>Schematic Capture &amp; Layout</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64827" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64827"><a target="_blank" rel="noopener" href="http://www.pcbweb.com/">PCBWeb</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64828" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64828"><a>Trace Width Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64829" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64829"><a href="https://www.eeweb.com/tools/internal-trace-width-calculator-pcb/">Internal</a></li>
+			<li id="menu-item-64830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64830"><a href="https://www.eeweb.com/tools/external-pcb-trace-width/">External</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64831" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64831"><a>Trace Current Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64832"><a href="https://www.eeweb.com/tools/internal-pcb-trace-max-current/">Internal</a></li>
+			<li id="menu-item-64833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64833"><a href="https://www.eeweb.com/tools/external-pcb-trace-max-current/">External</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64834" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64834"><a>Trace Resistance Calculator</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64835"><a href="https://www.eeweb.com/tools/trace-resistance/">Internal/External</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64836" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64836"><a>Impedance Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-290462" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290462"><a href="https://www.eeweb.com/tools/microstrip/">Microstrip</a></li>
+			<li id="menu-item-290471" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290471"><a href="https://www.eeweb.com/tools/embedded-microstrip-impedance/">Embedded Microstrip</a></li>
+			<li id="menu-item-290481" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290481"><a href="https://www.eeweb.com/tools/symmetric-stripline-impedance/">Symmetric Stripline</a></li>
+			<li id="menu-item-290489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290489"><a href="https://www.eeweb.com/tools/asymmetric-stripline-impedance/">Asymmetric Stripline</a></li>
+			<li id="menu-item-290469" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290469"><a href="https://www.eeweb.com/tools/wire-microstrip-impedance/">Wire Microstrip</a></li>
+			<li id="menu-item-290473" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290473"><a href="https://www.eeweb.com/tools/wire-stripline-impedance/">Wire Stripline</a></li>
+			<li id="menu-item-290466" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290466"><a href="https://www.eeweb.com/tools/edge-coupled-microstrip-impedance/">Edge-Coupled Microstrip</a></li>
+			<li id="menu-item-290476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290476"><a href="https://www.eeweb.com/tools/edge-coupled-stripline-impedance/">Edge-Coupled Stripline</a></li>
+			<li id="menu-item-290478" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290478"><a href="https://www.eeweb.com/tools/broadside-coupled-stripline-impedance/">Broadside Coupled Stripline</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-64846" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64846"><a>RF Tools</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64847" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64847"><a>Impedance Circuit Solvers</a>
+		<ul class="sub-menu">
+			<li id="menu-item-290093" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290093"><a href="https://www.eeweb.com/tools/l-match/">L-Match</a></li>
+			<li id="menu-item-290092" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290092"><a href="https://www.eeweb.com/tools/pi-match/">Pi-Match</a></li>
+			<li id="menu-item-290091" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290091"><a href="https://www.eeweb.com/tools/t-match/">T-Match</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64852" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64852"><a>Cable Impedance Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-290532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290532"><a href="https://www.eeweb.com/tools/coax">Coax</a></li>
+			<li id="menu-item-290533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290533"><a href="https://www.eeweb.com/tools/twisted-pair">Twisted Pair</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64855"><a>Crosstalk Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-290399" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290399"><a href="https://www.eeweb.com/tools/microstrip-2">Microstrip</a></li>
+			<li id="menu-item-290398" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290398"><a href="https://www.eeweb.com/tools/stripline">Stripline</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64858"><a>Converters</a>
+		<ul class="sub-menu">
+			<li id="menu-item-290094" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-290094"><a href="https://www.eeweb.com/tools/rf-unit-converter/">RF Unit Converter</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-64860" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64860"><a>Schematic Tools</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64861"><a>Simulator</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64862"><a target="_blank" rel="noopener" href="http://www.partsim.com/">Online SPICE Simulator</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64863" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64863"><a>Converter/Viewer</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64864" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64864"><a target="_blank" rel="noopener" href="https://www.schematics.io/">Schematic Converter/Viewer</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64865" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64865"><a>Online Schematic Capture</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64866" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64866"><a target="_blank" rel="noopener" href="http://www.schematics.com/">Schematic Capture Tool</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-64867" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64867"><a>Passive Tools</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64868" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64868"><a>Resistor Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64869" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64869"><a href="https://www.eeweb.com/tools/4-band-resistor-calculator/">4-Band</a></li>
+			<li id="menu-item-64870" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64870"><a href="https://www.eeweb.com/tools/5-band-resistor-calculator/">5-Band</a></li>
+			<li id="menu-item-64871" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64871"><a href="https://www.eeweb.com/tools/6-band-resistor-calculator/">6-Band</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64872" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64872"><a>Resistance Tables</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64873" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64873"><a href="https://www.eeweb.com/tools/resistor-tables/">Standard Values</a></li>
+		</ul>
+</li>
+		<li id="menu-item-64874" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64874"><a>Inductance Calculators</a>
+		<ul class="sub-menu">
+			<li id="menu-item-289315" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-289315"><a href="https://www.eeweb.com/tools/magnetic-field-calculator/">Magnetic Field Calculator</a></li>
+			<li id="menu-item-64875" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64875"><a href="https://www.eeweb.com/tools/wire-self-inductance-calculator/">Wire Self Inductance</a></li>
+			<li id="menu-item-64876" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64876"><a href="https://www.eeweb.com/tools/parallel-wire-inductance/">Parallel Wires</a></li>
+			<li id="menu-item-64877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64877"><a href="https://www.eeweb.com/tools/coax-inductance/">Coax</a></li>
+			<li id="menu-item-64878" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64878"><a href="https://www.eeweb.com/tools/wire-over-plane-inductance/">Wire over Plane</a></li>
+			<li id="menu-item-64879" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64879"><a href="https://www.eeweb.com/tools/loop-inductance/">Loop</a></li>
+			<li id="menu-item-64880" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64880"><a href="https://www.eeweb.com/tools/rectangle-loop-inductance/">Rectangle Loop</a></li>
+			<li id="menu-item-64881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64881"><a href="https://www.eeweb.com/tools/coil-inductance/">Coil</a></li>
+			<li id="menu-item-64882" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64882"><a href="https://www.eeweb.com/tools/broadside-trace-inductance/">Broadside-Coupled Traces</a></li>
+			<li id="menu-item-64883" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64883"><a href="https://www.eeweb.com/tools/edge-coupled-trace-inductance/">Edge-Coupled Traces</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-64884" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64884"><a>Extras</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64885"><a>Graph Paper</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64886" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64886"><a href="https://www.eeweb.com/tools/engineering-graph-paper/">Engineering Paper (Printable PDF)</a></li>
+			<li id="menu-item-64887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64887"><a href="https://www.eeweb.com/tools/log-log-graph-paper/">Log-Log Graph Paper (PDF Download)</a></li>
+			<li id="menu-item-64888" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64888"><a href="https://www.eeweb.com/tools/semi-log-graph-paper/">Semi-Log Graph Paper (PDF Download)</a></li>
+			<li id="menu-item-64889" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64889"><a href="https://www.eeweb.com/tools/smith-chart/">Smith Chart Graph Paper (PDF Download)</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-64890" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64890"><a>Math Help</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64891" class="hide menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64891"><a>Math Help</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64892" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64892"><a href="https://www.eeweb.com/tools/math-help/">Math Reference Sheets Overview</a></li>
+			<li id="menu-item-64893" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64893"><a href="https://www.eeweb.com/tools/algebra-reference-sheet/">Algebra Reference Sheet</a></li>
+			<li id="menu-item-64894" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64894"><a href="https://www.eeweb.com/tools/geometry-reference-sheet/">Geometry Reference Sheet</a></li>
+			<li id="menu-item-64895" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64895"><a href="https://www.eeweb.com/tools/trigonometry-definition-reference-sheet/">Trigonometry Definitions and Functions</a></li>
+			<li id="menu-item-64896" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64896"><a href="https://www.eeweb.com/tools/trigonometry-laws-and-identities-sheet/">Trigonometry Rules, Laws, and Identities</a></li>
+			<li id="menu-item-64897" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64897"><a href="https://www.eeweb.com/tools/calculus-derivatives-and-limits-reference-sheet/">Calculus Derivatives, Rules, and Limits</a></li>
+			<li id="menu-item-64898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64898"><a href="https://www.eeweb.com/tools/calculus-integrals-sheet/">Calculus Integrals Reference Sheet</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-64899" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64899"><a>Math Calculators</a>
+	<ul class="sub-menu">
+		<li id="menu-item-64900" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64900"><a>Calculator</a>
+		<ul class="sub-menu">
+			<li id="menu-item-64901" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64901"><a href="https://www.eeweb.com/tools/basic-calculator/">Online Basic Calculator</a></li>
+			<li id="menu-item-64902" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64902"><a href="https://www.eeweb.com/tools/online-scientific-calculator/">Scientific Calculator</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+<a href="https://www.eeweb.com/tools-landing" class="menu_view_all_tools">View All Tools</a></ul>
+</li>
+<li id="menu-item-64907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64907"><a>Forums &amp; Community</a>
+<ul class="sub-menu">
+	<li id="menu-item-64908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64908"><a href="https://www.eeweb.com/forums">Forums</a></li>
+	<li id="menu-item-64911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64911"><a href="https://www.eeweb.com/experts">Experts</a></li>
+	<li id="menu-item-64909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64909"><a href="https://www.eeweb.com/members">Members</a></li>
+	<li id="menu-item-64910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64910"><a href="https://www.eeweb.com/tech-communities">Tech Communities</a></li>
+</ul>
+</li>
+<li id="menu-item-64912" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64912"><a>Design &amp; Components</a>
+<ul class="sub-menu">
+	<li id="menu-item-64913" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64913"><a href="https://www.eeweb.com/category/design-zones/analog-design/">Analog Design</a></li>
+	<li id="menu-item-64914" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64914"><a href="https://www.eeweb.com/category/design-zones/rf-design/">RF Design</a></li>
+	<li id="menu-item-64915" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-64915"><a href="https://www.eeweb.com/category/design-zones/power-design/">Power Design</a></li>
+	<li id="menu-item-64916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64916"><a href="https://www.eeweb.com/category/design-zones/connectors/">Connectors</a></li>
+	<li id="menu-item-64917" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-64917"><a href="https://www.eeweb.com/category/design-zones/digital-design/">Digital Design</a></li>
+	<li id="menu-item-64918" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-64918"><a href="https://www.eeweb.com/category/design-zones/embedded-systems/">Embedded Systems</a></li>
+	<li id="menu-item-301099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-301099"><a href="https://www.eeweb.com/category/design-zones/general/">General</a></li>
+	<li id="menu-item-64919" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64919"><a href="https://www.eeweb.com/category/design-zones/test-and-measurement/">Test &amp; Measurement</a></li>
+	<li id="menu-item-64920" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64920"><a href="https://www.eeweb.com/category/design-zones/electromechanical/">Electromechanical</a></li>
+	<li id="menu-item-64921" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64921"><a href="https://www.eeweb.com/category/design-zones/passive-components/">Passive Components</a></li>
+	<li id="menu-item-64922" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64922"><a href="https://www.eeweb.com/category/design-zones/sensors/">Sensors</a></li>
+	<li id="menu-item-64923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64923"><a href="https://www.eeweb.com/design-library">Design Library</a></li>
+</ul>
+</li>
+<li id="menu-item-64925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-64925"><a>Projects &amp; Videos</a>
+<ul class="sub-menu">
+	<li id="menu-item-64926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64926"><a href="https://www.eeweb.com/news">News</a></li>
+	<li id="menu-item-64927" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64927"><a href="https://www.eeweb.com/member-projects">Projects</a></li>
+	<li id="menu-item-64931" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64931"><a href="https://www.eeweb.com/extreme-circuits">Extreme Circuits</a></li>
+	<li id="menu-item-64932" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64932"><a href="https://www.eeweb.com/category/videos/">Videos</a></li>
+	<li id="menu-item-64935" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-64935"><a href="https://www.eeweb.com/category/magazines/">Magazines Archive</a></li>
+	<li id="menu-item-296809" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-296809"><a href="https://www.eeweb.com/category/design-contest/">Design Contest</a></li>
+</ul>
+</li>
+<li id="menu-item-64937" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64937"><a href="https://www.eeweb.com/articles">Articles</a></li>
+</ul></div>
+				<div class="right-items">
+					<div id="btn-search" class="btn-search"></div>
+
+					<div class="btn-hamburger-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+
+				<div id="more-items">
+					<a class="dots">
+						<i></i><i></i><i></i>
+					</a>
+					<div>
+						<a href="https://www.eeweb.com/about-us">
+							About Us
+						</a>
+						<a href="https://aspencore.dragonforms.com/loading.do?omedasite=eewebsubscribe" target="_blank">
+							Newsletters
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		</header><!-- #masthead -->
+	</div>
+
+	<script>
+
+		jQuery(document).ready(function() {
+			jQuery('#top-menu > li').click(function() {
+				if (!jQuery(this).hasClass('active')) {
+					jQuery('#top-menu > li').removeClass('active')
+					jQuery(this).addClass('active')
+				} else {
+					jQuery('#top-menu > li').removeClass('active')
+				}
+
+			})
+
+			function openMenu() {
+				jQuery('.btn-hamburger-menu').addClass('open')
+				jQuery('.menu-top-menu-container').addClass('active');
+			}
+
+			function closeMenu() {
+				jQuery('.btn-search').removeClass('close-icn')
+
+				jQuery('.btn-hamburger-menu').removeClass('open')
+
+				jQuery('.menu-top-menu-container').removeClass('active');
+				jQuery('#searchform-wrapper').removeClass('active');
+				jQuery('#more-menu').removeClass('active');
+				jQuery('#top-menu').removeClass('active');
+			}
+
+			jQuery('.btn-search').click(function() {
+				if (jQuery('#searchform-wrapper').hasClass('active')) {
+					closeMenu()
+				} else {
+					closeMenu()
+
+					jQuery('.btn-search').addClass('close-icn')
+
+					jQuery('.menu-top-menu-container').addClass('active');
+
+					jQuery('#searchform-wrapper').addClass('active');
+				}
+			})
+
+			jQuery('.btn-hamburger-menu').click(function() {
+				if (!jQuery('.btn-hamburger-menu').hasClass('open')) {
+					closeMenu()
+
+					jQuery('.btn-hamburger-menu').addClass('open')
+
+					jQuery('.menu-top-menu-container').addClass('active');
+
+					if (window.innerWidth < 768) {
+						jQuery('#searchform-wrapper').addClass('active');
+					}
+
+					jQuery('#more-menu').addClass('active');
+					jQuery('#top-menu').addClass('active');
+				} else {
+					closeMenu()
+				}
+
+			})
+
+			jQuery('#top-menu > li').click(function() {
+				if (window.innerWidth >= 1024) {
+					return;
+				}
+
+				if (this.getElementsByTagName('a')[0].innerHTML == 'Tools') {
+					window.location.href = '/tools-landing';
+					return;
+				}
+
+				ul = this.getElementsByTagName('ul')[0]
+
+				items = ul.getElementsByTagName('li')
+
+				var links = []
+
+				for (i = 0; i < items.length; i++) {
+					link = items[i].getElementsByTagName('a')[0]
+
+					links.push({ 'href': link.href, 'innerHTML': link.innerHTML })
+				}
+
+				var submenuoverlay = document.createElement('div')
+				submenuoverlay.id = 'top-menu-floating-submenu-overlay'
+				submenuoverlay.addEventListener('click', function() {
+					document.body.removeChild(submenuoverlay)
+					document.body.style.overflow = 'visible'
+				})
+
+				submenucontainer = document.createElement('div')
+				submenucontainer.id = 'top-menu-floating-submenu'
+				submenucontainer.addEventListener('click', function(event) {
+					event.stopPropagation()
+				})
+
+				closebtn = document.createElement('div')
+				closebtn.className = 'closebtn'
+				closebtn.innerHTML = '&times;'
+				closebtn.addEventListener('click', function() {
+					document.body.removeChild(submenuoverlay)
+					document.body.style.overflow = 'visible'
+				})
+				submenucontainer.append(closebtn)
+
+				submenuheading = document.createElement('h4')
+				submenuheading.innerHTML = this.getElementsByTagName('a')[0].innerHTML
+				submenucontainer.append(submenuheading)
+
+				submenu = document.createElement('ul')
+
+				for (i = 0; i < links.length; i++) {
+					cell = document.createElement('li')
+
+					nl = document.createElement('a')
+					nl.href = links[i].href
+					nl.innerHTML = links[i].innerHTML
+
+					cell.append(nl)
+
+					submenu.append(cell)
+				}
+
+				submenucontainer.append(submenu)
+				submenuoverlay.append(submenucontainer)
+
+				document.body.append(submenuoverlay)
+				document.body.style.overflow = 'hidden'
+			})
+
+			jQuery('#more-items .dots').click(function() {
+				if (!jQuery('#more-items').hasClass('active')) {
+					jQuery('#more-items').removeClass('active')
+					jQuery('#more-items').addClass('active')
+				} else {
+					jQuery('#more-items').removeClass('active')
+				}
+
+			})
+		})
+
+	</script>
+
+	<div class="container" style="grid-area: main; margin: 0 auto; max-width: 1200px">
+
+	<script>
+
+	if ( navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1 ) {
+		document.write('<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>')
+	}
+
+	</script>
+
+
+
+<div class="ad-solo">
+	<div class="billboard-wrap">
+    <div class="htlad-EEWeb_billboard"><div class="htl-ad" id="htlad-2" data-unit="EEWeb" name="htlunit-EEWeb_billboard" data-eager="" data-sizes="0x0:320x50|800x0:970x250" data-prebid="0x0:|800x0:"><div class="htl-ad-gpt htl-size-970x250" id="htlad-2-gpt" data-google-query-id="CJ7xg7rb9IEDFTVUCQkdtDoLog"><div id="google_ads_iframe_/74317539/EEWeb_0__container__" style="border: 0pt none; margin: auto; text-align: center; width: 970px; height: 250px;"><iframe frameborder="0" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/container.html" id="google_ads_iframe_/74317539/EEWeb_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="970" height="250" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div></div></div>
+		<div class="ad-title">Advertisement</div>
+	</div>
+</div>
+<div class="main-sidebar-layout">
+	<main>
+		
+
+			<article id="post-291859" class="box" style="margin-bottom: 20px; padding: 10px 30px 30px">
+								<div class="meta-description">
+						<a href="https://www.eeweb.com/category/design-zones/digital-design/" class="category-link">
+		<span class="icon icon-digital-design"></span>
+		<span class="title">Digital Design</span>
+	</a>
+					</div>
+				<hr>
+					
+
+				<h1>Design Fundamentals for Drone Motor Controller</h1>
+				<div class="below-title">
+
+					<div class="by-line">
+													By
+							
+							<a href="https://www.eeweb.com/author/acadmin/" title="Posts by EEWeb" class="author url fn" rel="author">EEWeb</a>
+							
+							| 
+
+							Friday, January 8, 2021											
+					</div>
+
+					<div class="social-media-sharing clearfix">
+						<div class="social-media-counter">
+							<span class="share-number">
+								<a class="addthis_counter addthis_bubble_style"></a>
+							</span>
+							<span class="share-text">shares</span>
+						</div>
+						<div class="addthis_toolbox addthis_default_style addthis_32x32_style  social-media-wrap">
+							<ul>
+								<li class="sharing-icon facebook">
+									<a class="addthis_button_facebook">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="sharing-icon twitter">
+									<a class="addthis_button_twitter">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="sharing-icon google">
+									<a class="addthis_button_google">
+										<i class="fa fa-google-plus" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li class="sharing-icon addthis">
+									<a class="addthis_button_compact">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+							<script>var addthis_config={"data_track_addressbar":false};</script>
+							<script src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/addthis_widget.js.download"></script>
+						</div>
+					</div>
+
+				</div>
+
+				<br>
+
+
+				<div class="article-body"><p>The ability to control the motors’ speed and rotation is the design key of <a href="https://www.powerelectronicsnews.com/?s=drone" target="_blank" rel="noopener">drones</a>, making the electronic speed control (ESC) module an added value and a fundamental part of a drone.&nbsp;In this article, we will look at the key elements to consider when designing an ESC and the market’s development solutions. The design of an ESC requires a careful evaluation and analysis of characteristics that can be summarised as follows:</p><ul>
+<li>Battery installed on the drone;</li>
+<li>Motors: the ESCs must be able to handle the amps needed for the motor to run smoothly, supported by the appropriately sized battery;</li>
+<li>Propeller: your choice of the propeller will also set up the power of your ESC. Will your drone run 3-, 4-, 5- or 6-inch propellers? What kind of performance would you like, and therefore what type of propeller pitch will you use?</li>
+<li>Voltage: choose the DC/DC converter configuration to power the ESC correctly.</li>
+<li>Firmware: ESCs receive an acceleration signal from the flight controller. An electronic speed drone controller uses on-board MCUs and therefore requires firmware to control the hardware.</li>
+<li>Dimensions and weight, and available budget;</li>
+</ul><p>The use of drones is growing steadily, and applications range from the commercial to the military sector. Most drones are powered by brushless DC motors, which require appropriate and constant regulation of both speed and direction of rotation. An ESC performs these functions and includes a power supply stage, a current-sensing circuit, a microcontroller, and a communication interface with the flight control system.</p><p>Drones must have a high level of stability and efficiency to be able to perform the applications for which they were designed successfully; this allows them to operate even in the most critical and adverse weather conditions. In the specific case of drones driven by electric motors and powered by batteries (by far the most common solution, leaving the military sector aside, of course), the longest possible operation period must be ensured for each full battery pack charge.</p><p>One of the main advantages of drones is that they can be operated remotely, flying over areas that would be too difficult, dangerous, or uncomfortable to reach by a person. Commercial applications include agriculture, plant and building monitoring (security, video surveillance, and prevention), and even the delivery of parcels, medicines, or other essential goods. Many believe that the introduction of drones has been a revolution and the effects will become even more evident in the coming years. Large companies such as Amazon and Facebook have been betting on the enormous potential offered by drones from the outset, developing programs in which unmanned aerial vehicles (UAVs) are used to deliver products and provide internet connectivity in remote and inaccessible locations, respectively.</p><h2><strong>Motor control</strong></h2><p>Two types of brushless motors can be installed on drones: brushless direct current motors (BLDCs) and brushless alternating current motors (BLACs), also known as permanent magnet synchronous motors (PMSMs). The choice of which type of motor to use is influenced by the control algorithm chosen, which can be either trapezoidal control or field-oriented control (FOC). The trapezoidal motor control algorithm has the following main characteristics:</p><ul>
+<li>Motor control based on a six-phase switching sequence</li>
+<li>Detection of the magnetic angle of the rotor, used to set the correct angle; each step corresponds to a 60°angle</li>
+<li>In sensorless control systems, the switching angle is estimated by measuring the back EMF phase voltage</li>
+</ul><p>The FOC control algorithm, on the other hand, has the following features:</p><ul>
+<li>Motor control by means of sinusoidal phase voltages or currents (FOC)</li>
+<li>Rotor angle detection with a minimum accuracy of 1° to 5°, which ensures that the algorithm is always able to deliver maximum torque</li>
+</ul><p>In sensorless control systems, the magnetic angle of the motor is estimated from the motor phase voltages and currents. Its position is determined by monitoring certain electrical parameters of the motor and without the use of additional sensors. The most common type used in drones is the brushless DC motor due to its small size, relatively low cost, and high durability and robustness.</p><p>Most drones have at least four motors, the four-motor version being the most used. The ESC is responsible for controlling each motor speed, and therefore, the most common drone architecture involves the dedicated use of an ESC for each motor. All ESCs must be able to communicate with each other, either directly or indirectly, through the flight controller, so as to have easy control of the drone. The direction of each motor rotation is also important: In a quadricopter, one pair of motors turns in one direction, while the other turns in the opposite direction.</p><p>The motor control technique most commonly used by ESC manufacturers is field-oriented control, a technique that controls motor torque and speed. When implemented correctly, FOC can handle even rapid acceleration changes without generating instability, allowing the drone to perform complex maneuvers while maximizing efficiency.</p><p>The block diagram in Figure 1 below shows an FOC architecture that includes the following components:</p><ul>
+<li>Current controller consisting of two integral proportional controllers</li>
+<li>Optional external loop speed controller and reference current generator</li>
+<li>Clarke, Park, and inverse Park transforms for conversion from stationary to rotating synchronous frames</li>
+<li>A space vector modulator algorithm to transform vα and vβ commands into pulse-width–modulation signals applied to stator windings</li>
+<li>Protection and auxiliary functions, including startup and shutdown logic</li>
+<li>Optional observer to estimate the angular position of the rotor if sensorless control is desired</li>
+</ul><div id="attachment_291860" style="width: 479px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/figure1-eeweb-design-2021/" rel="attachment wp-att-291860"><img aria-describedby="caption-attachment-291860" decoding="async" fetchpriority="high" class=" wp-image-291860" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/figure1-eeweb-design-2021.jpg" alt="Figure 1: Block diagram of field-oriented control (Source: Mathworks)" width="469" height="264" srcset="https://www.eeweb.com/wp-content/uploads/figure1-eeweb-design-2021.jpg?resize=469%2C264?w=1200 1200w, https://www.eeweb.com/wp-content/uploads/figure1-eeweb-design-2021.jpg?resize=469%2C264?w=300 300w, https://www.eeweb.com/wp-content/uploads/figure1-eeweb-design-2021.jpg?resize=469%2C264?w=768 768w, https://www.eeweb.com/wp-content/uploads/figure1-eeweb-design-2021.jpg?resize=469%2C264?w=1024 1024w, https://www.eeweb.com/wp-content/uploads/figure1-eeweb-design-2021.jpg?resize=469%2C264?w=600 600w, https://www.eeweb.com/wp-content/uploads/figure1-eeweb-design-2021.jpg?resize=469%2C264?w=128 128w" sizes="(max-width: 469px) 100vw, 469px"></a><p id="caption-attachment-291860" class="wp-caption-text">Figure 1: Block diagram of field-oriented control (Source: Mathworks)</p></div><p>Motor control engineers designing an FOC perform several tasks, including developing the controller architecture with two PI controllers for the current loop, optimizing all PI controllers’ gains to meet performance requirements, and designing a space vector modulator to control PWM.</p><p>Once the control algorithm is chosen (trapezoidal or FOC), the next step is to choose between an open-loop or closed-loop control system. In open-loop control, the synchronous motor (BLDC or BLAC) is driven via a control signal and is assumed to follow the commanded control action. In the closed-loop control system, the circuit is able to check whether the motor is moving as intended. If it is not, the control system automatically compensates for the over-or under-movement by reducing or increasing the current.</p><p>When using a closed-loop or open-loop (sensorless) control system, currents and voltages must be measured to be used as feedback signals. Figure 2 shows a typical measurement setup, suitable for both trapezoidal and sinusoidal control systems. By using trapezoidal control with a sensorless algorithm, the three-phase voltages are used by the sensorless algorithm to calculate the rotor angle.</p><p>&nbsp;</p><div id="attachment_291926" style="width: 821px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/?attachment_id=291926" rel="attachment wp-att-291861"><img aria-describedby="caption-attachment-291926" decoding="async" class="wp-image-291926 " src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/figure2-eeweb-design-2021-1.jpg" alt="Figure 2: ESC with sensorless motor control. On the right is the High-Speed Sensorless-FOC Reference Design for Drone ESCs by Texas Instruments, and on the left is its block diagram. (Source: Texas Instruments)" width="693" height="208" srcset="https://www.eeweb.com/wp-content/uploads/figure2-eeweb-design-2021-1.jpg?resize=811%2C243?w=1692 1692w, https://www.eeweb.com/wp-content/uploads/figure2-eeweb-design-2021-1.jpg?resize=811%2C243?w=300 300w, https://www.eeweb.com/wp-content/uploads/figure2-eeweb-design-2021-1.jpg?resize=811%2C243?w=768 768w, https://www.eeweb.com/wp-content/uploads/figure2-eeweb-design-2021-1.jpg?resize=811%2C243?w=1024 1024w, https://www.eeweb.com/wp-content/uploads/figure2-eeweb-design-2021-1.jpg?resize=811%2C243?w=1536 1536w, https://www.eeweb.com/wp-content/uploads/figure2-eeweb-design-2021-1.jpg?resize=811%2C243?w=600 600w" sizes="(max-width: 811px) 100vw, 811px"></a><p id="caption-attachment-291926" class="wp-caption-text">Figure 2: ESC with sensorless motor control. On the right is the High-Speed Sensorless-FOC Reference Design for Drone ESCs by Texas Instruments, and on the left is its block diagram. (Source: Texas Instruments)</p></div><h2><strong>Quadcopter dynamics</strong></h2><p>The mechanical simplicity and aerodynamic stability of drones are linked to the coordinated use of motors and their maneuvers. In a quadcopter, the pair of motors positioned on the diagonal of the structure turns in the same direction but in the opposite direction to the other two motors. If all four motors turn at the same speed, the drone can climb, descend, or remain in level flight. If the diagonal pair turns faster than the other, the drone rotates around its center of gravity and remains in the same horizontal plane (Figure 3).</p><p>&nbsp;</p><div id="attachment_291862" style="width: 374px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/figure3-eeweb-design-2021/" rel="attachment wp-att-291862"><img aria-describedby="caption-attachment-291862" decoding="async" class=" wp-image-291862" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/figure3-eeweb-design-2021.jpg" alt="Figure 3: Drones use different combinations of rotor speeds to perform maneuvers (Source: STMicroelectronics)" width="364" height="144" srcset="https://www.eeweb.com/wp-content/uploads/figure3-eeweb-design-2021.jpg?resize=364%2C144?w=500 500w, https://www.eeweb.com/wp-content/uploads/figure3-eeweb-design-2021.jpg?resize=364%2C144?w=300 300w" sizes="(max-width: 364px) 100vw, 364px"></a><p id="caption-attachment-291862" class="wp-caption-text">Figure 3: Drones use different combinations of rotor speeds to perform maneuvers. (Source: STMicroelectronics)</p></div><p>&nbsp;</p><p>If you change the head (or tail) rotor’s speed, the drone will point up or down like a fixed-wing aircraft diving down. Left or right torque adjustment will cause the drone to roll, causing it to rotate about its axis. It is up to the flight control system of the drone to change the appropriate rotor’s speed to achieve the flight altitude required to complete the desired maneuver.</p><p>For a control engineer, speed correction is a common control loop feedback problem that is solved with a proportional, integral, derivative (PID) controller.</p><h2><strong>Designing an ESC</strong></h2><p>Designing an ESC for drones requires high-quality components specifically designed to control high RPM motors (12,000+ RPM). Texas Instruments has developed a family of MCUs, called InstaSPIN, that simplifies the design of three-phase motor control applications. InstaSPIN-FOC, suitable for sensorless systems, features a fast software encoder with torque and speed control suitable for any three-phase motor. InstaSPIN-MOTION is aimed at sensorless systems and provides position, speed, and torque control for any three-phase motor.</p><p>A complete reference design for these scopes is provided by TI and consists of InstaSPIN-FOC and InstaSPIN-MOTION motor control technologies. The platform includes a 32-bit TI C2000 InstaSPIN microcontroller. It allows developers to identify, automatically adjust, and control a three-phase motor, quickly providing a stable and functional motor control system.</p><p>STMicroelectronics offers a complete ESC reference design, implementing a sensorless FOC algorithm. The STEVAL-ESC001V1 ESC reference design is suitable for entry-level commercial drone designs and drives any three-phase brushless motor (or PMSM) powered by 6S LiPo battery packs or any equivalent DC power supply, up to 30 A peak current. STEVAL-ESC001V1 allows designers to quickly develop their application thanks to a complete pre-configured firmware package (STSW-ESC001V1), implementing a sensorless field-oriented controlled algorithm with three-shunt current reading, speed control, and full active braking. The STSW-ESC001V1 firmware/software package plus the STM32 PMSM FOC software development kit MC library allows optimizing the ESC design by acting on the FOC parameters embedded in an STM32 MCU and exploits the ST motor profiler to quickly retrieve the relevant motor parameters. ST’s sensorless FOC algorithm can be adapted to any three-phase BLDC or PMSM motor application, providing longer flight times and optimal dynamic performance (Figures 4 and 5).</p><p>&nbsp;</p><div id="attachment_291863" style="width: 622px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/figure4-eeweb-design-2021/" rel="attachment wp-att-291863"><img aria-describedby="caption-attachment-291863" decoding="async" loading="lazy" class=" wp-image-291863" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/figure4-eeweb-design-2021.jpg" alt="Figure 4: Block diagram of ST&#39;s STEVAL-ESC001V1 solution (Source: STMicroelectronics)" width="612" height="299" srcset="https://www.eeweb.com/wp-content/uploads/figure4-eeweb-design-2021.jpg?resize=612%2C299?w=1192 1192w, https://www.eeweb.com/wp-content/uploads/figure4-eeweb-design-2021.jpg?resize=612%2C299?w=300 300w, https://www.eeweb.com/wp-content/uploads/figure4-eeweb-design-2021.jpg?resize=612%2C299?w=768 768w, https://www.eeweb.com/wp-content/uploads/figure4-eeweb-design-2021.jpg?resize=612%2C299?w=1024 1024w, https://www.eeweb.com/wp-content/uploads/figure4-eeweb-design-2021.jpg?resize=612%2C299?w=600 600w" sizes="(max-width: 612px) 100vw, 612px"></a><p id="caption-attachment-291863" class="wp-caption-text">Figure 4: Block diagram of ST’s STEVAL-ESC001V1 solution (Source: STMicroelectronics)</p></div><p>&nbsp;</p><div id="attachment_291929" style="width: 463px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/?attachment_id=291929" rel="attachment wp-att-291864"><img aria-describedby="caption-attachment-291929" decoding="async" loading="lazy" class="wp-image-291929 " src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/figure5-eeweb-design-2021-2.jpg" alt="Figure 5: ST’s STEVAL-ESC001V1 board (Source: STMicroelectronics)" width="453" height="229" srcset="https://www.eeweb.com/wp-content/uploads/figure5-eeweb-design-2021-2.jpg?resize=453%2C229?w=760 760w, https://www.eeweb.com/wp-content/uploads/figure5-eeweb-design-2021-2.jpg?resize=453%2C229?w=300 300w, https://www.eeweb.com/wp-content/uploads/figure5-eeweb-design-2021-2.jpg?resize=453%2C229?w=600 600w" sizes="(max-width: 453px) 100vw, 453px" data-recalc-dims="1"></a><p id="caption-attachment-291929" class="wp-caption-text">Figure 5: ST’s STEVAL-ESC001V1 board (Source: STMicroelectronics)</p></div><p>&nbsp;</p><div id="attachment_291928" style="width: 499px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/esc-application-st/" rel="attachment wp-att-291928"><img aria-describedby="caption-attachment-291928" decoding="async" loading="lazy" class=" wp-image-291928" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/esc-application-st.jpg" alt="Figure 6: System structure overview (Source: STMicroelectronics)" width="489" height="497" srcset="https://www.eeweb.com/wp-content/uploads/esc-application-st.jpg?resize=489%2C497?w=637 637w, https://www.eeweb.com/wp-content/uploads/esc-application-st.jpg?resize=489%2C497?w=295 295w, https://www.eeweb.com/wp-content/uploads/esc-application-st.jpg?resize=489%2C497?w=600 600w" sizes="(max-width: 489px) 100vw, 489px" data-recalc-dims="1"></a><p id="caption-attachment-291928" class="wp-caption-text">Figure 6: System structure overview with STEVAL-ESC001V1 board (Source: STMicroelectronics)</p></div><p>&nbsp;</p><div id="attachment_291930" style="width: 605px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/bottom-top-eeweb-ee/" rel="attachment wp-att-291930"><img aria-describedby="caption-attachment-291930" decoding="async" loading="lazy" class=" wp-image-291930" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/bottom-top-eeweb-ee.jpg" alt="Figure 7: STEVAL-ESC001V1 board with details (Source: STMicroelectronics)" width="595" height="561" srcset="https://www.eeweb.com/wp-content/uploads/bottom-top-eeweb-ee.jpg?resize=595%2C561?w=761 761w, https://www.eeweb.com/wp-content/uploads/bottom-top-eeweb-ee.jpg?resize=595%2C561?w=300 300w, https://www.eeweb.com/wp-content/uploads/bottom-top-eeweb-ee.jpg?resize=595%2C561?w=600 600w" sizes="(max-width: 595px) 100vw, 595px" data-recalc-dims="1"></a><p id="caption-attachment-291930" class="wp-caption-text">Figure 7: STEVAL-ESC001V1 board with details (Source: STMicroelectronics)</p></div><p>The <a href="https://www.eeweb.com/hovergames-drone-kit-enhances-creativity/" target="_blank" rel="noopener">HoverGames</a> drone development platform is a modular and flexible NXP hardware/software solution that can be used to build any autonomous vehicle, from drones and rovers to UAVs. The development kit is essentially based on a microprocessor with Linux and Open CV and various accompanying sensors to guide the flight.</p><p>The flight controller ensures that the drone remains stable. The board is open-source with the possibility to insert other external sensors to optimize operations according to the functionality.</p><div id="attachment_291933" style="width: 564px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/block-kinetis/" rel="attachment wp-att-291933"><img aria-describedby="caption-attachment-291933" decoding="async" loading="lazy" class=" wp-image-291933" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/block-kinetis.jpg" alt="Figure 8: block diagram of RDDRONE-FMUK66 flight unit (Source: NXP)" width="554" height="340" srcset="https://www.eeweb.com/wp-content/uploads/block-kinetis.jpg?resize=554%2C340?w=842 842w, https://www.eeweb.com/wp-content/uploads/block-kinetis.jpg?resize=554%2C340?w=300 300w, https://www.eeweb.com/wp-content/uploads/block-kinetis.jpg?resize=554%2C340?w=768 768w, https://www.eeweb.com/wp-content/uploads/block-kinetis.jpg?resize=554%2C340?w=600 600w" sizes="(max-width: 554px) 100vw, 554px" data-recalc-dims="1"></a><p id="caption-attachment-291933" class="wp-caption-text">Figure 8: block diagram of RDDRONE-FMUK66 flight unit (Source: NXP)</p></div><p>A LiPo battery and country-specific telemetry radio must be implemented using one of the IoT connections. For a full functionality of the kit, you will need to select which of the two available telemetry radios to purchase. Through telemetry, you can have a live connection to the vehicle during flight and can see the status of the drone during flight, load, and control autonomous waypoints and make any necessary changes. Telemetry data is sent to the control station but also stored onboard in the flight unit.</p><p>Kit components also include DC-to-DC power module, GPS NEO-M8N module with mount, safety switch, buzzer, bright RGB status LED, SEGGER J-Link EDU Mini/FTDI USB-TTL-3V3 cable/debug breakout board with cable, BLDC brushless motors 2212 920 kV, and ESC motor controllers 40 A OPTO (Figure 9).</p><div id="attachment_291932" style="width: 776px" class="wp-caption aligncenter"><a href="https://www.eeweb.com/?attachment_id=291932" rel="attachment wp-att-291865"><img aria-describedby="caption-attachment-291932" decoding="async" loading="lazy" class="wp-image-291932 " src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/figure6-eeweb-design-2021-1.jpg" alt="Figure 8: RDDRONE-FMUK66 flight unit - top view. On the left the serial interface, and in the middle the processor Kinetis (Source: NXP)" width="766" height="267" srcset="https://www.eeweb.com/wp-content/uploads/figure6-eeweb-design-2021-1.jpg?resize=766%2C267?w=1469 1469w, https://www.eeweb.com/wp-content/uploads/figure6-eeweb-design-2021-1.jpg?resize=766%2C267?w=300 300w, https://www.eeweb.com/wp-content/uploads/figure6-eeweb-design-2021-1.jpg?resize=766%2C267?w=768 768w, https://www.eeweb.com/wp-content/uploads/figure6-eeweb-design-2021-1.jpg?resize=766%2C267?w=1024 1024w, https://www.eeweb.com/wp-content/uploads/figure6-eeweb-design-2021-1.jpg?resize=766%2C267?w=600 600w" sizes="(max-width: 766px) 100vw, 766px" data-recalc-dims="1"></a><p id="caption-attachment-291932" class="wp-caption-text">Figure 9: RDDRONE-FMUK66 flight unit – Top view: on the left the serial interface, and in the middle the processor Kinetis (Source: NXP)</p></div><p></p>
+</div>
+				
+										<a href="https://www.eeweb.com/tag/drone/" class="tag-link"><span class="glyphicon glyphicon-tag">Drone</span></a>
+												<a href="https://www.eeweb.com/tag/esc/" class="tag-link"><span class="glyphicon glyphicon-tag">ESC</span></a>
+												<a href="https://www.eeweb.com/tag/motor-control/" class="tag-link"><span class="glyphicon glyphicon-tag">Motor Control</span></a>
+						
+				<div class="fluid-ad-single">
+ <div class="htlad-EEWeb_fluid"><div class="htl-ad" id="htlad-3" data-unit="EEWeb" name="htlunit-EEWeb_fluid" data-lazy-pixels="350" data-sizes="0x0:fluid|800x0:fluid" data-prebid="0x0:|800x0:"><div class="htl-ad-gpt" id="htlad-3-gpt"></div></div></div>
+    <div class="ad-title">Advertisement</div>
+</div>				
+				
+			</article><!-- #post-## -->
+
+
+		    <section class="box related-links" style="margin-bottom: 20px">
+    <h2 class="section-heading">Other Related Topics<span class="fa arrow fa-angle-up expand-contract-button" onclick="expand_contract_button(document.getElementById(&#39;related-links-panel&#39;))"></span></h2>
+    <div id="related-links-panel" style="padding: 10px 25px">
+        <ul>
+                    <li><a href="https://www.eeweb.com/impact-of-quantum-computing-on-next-generation-chip-development/">Impact of Quantum Computing on Next-Generation Chip Development</a></li>
+                        <li><a href="https://www.eeweb.com/sound-navigation-and-ranging/">Sound Navigation And Ranging</a></li>
+                        <li><a href="https://www.eeweb.com/raspberry-pi-5-a-game-changer-in-performance-and-features-everything-you-need-to-know/">Raspberry Pi 5: A Game-Changer in Performance and Features - Everything You Need to Know</a></li>
+                        <li><a href="https://www.eeweb.com/test-data-management-in-automation-framework-everything-you-should-know/">Test Data Management in Automation Framework: Everything You Should Know</a></li>
+                    </ul>
+    </div>
+    </section>
+        <section class="box comment-content">
+        <h2 class="section-heading">Join the Conversation!<span class="fa arrow fa-angle-up expand-contract-button" onclick="expand_contract_button(document.getElementById(&#39;comments-panel&#39;))"></span></h2>
+        <div id="comments-panel" style="padding: 15px 20px">
+        
+<div id="comments" class="comments-area">
+
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Add Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.eeweb.com/design-fundamentals-for-drone-motor-controller/#respond" style="display:none;">Cancel reply</a></small></h3><p class="must-log-in">You must be <a href="https://www.eeweb.com/wp-login.php?redirect_to=https%3A%2F%2Fwww.eeweb.com%2Fdesign-fundamentals-for-drone-motor-controller%2F">logged in</a> to post a comment.</p>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed</a>.</p>
+</div><!-- #comments -->
+        </div>
+    </section>
+    
+<script>
+	function expand_contract_button(elem) {
+		elem.style.display = (elem.style.display == 'none') ? 'block' : 'none';
+	}
+</script>	</main><!-- #main -->
+
+	<div class="sidebar">			
+	
+<section class="box" style="margin-bottom: 25px">
+    <div class="adzone clearfix">
+        <div id="ad-divs-container">
+            <div class="htlad-EEWeb_digital-1 ad-channel-category"><div class="htl-ad" id="htlad-4" data-unit="EEWeb_digital" name="htlunit-EEWeb_digital-1" data-lazy-pixels="350" data-sizes="0x0:300x250|800x0:300x250" data-prebid="0x0:|800x0:"><div class="htl-ad-gpt" id="htlad-4-gpt"></div></div></div>
+            <div class="htlad-EEWeb_digital-2 ad-channel-category"><div class="htl-ad" id="htlad-5" data-unit="EEWeb_digital" name="htlunit-EEWeb_digital-2" data-lazy-pixels="350" data-sizes="0x0:300x250|800x0:300x250" data-prebid="0x0:|800x0:"><div class="htl-ad-gpt" id="htlad-5-gpt"></div></div></div>
+        <div class="ad-title">Advertisement</div>
+    </div>
+</div></section>
+
+
+<section class="box recent-comments" style="margin-bottom: 25px; max-width: 380px; overflow: hidden">
+
+		<div class="head-title">
+		Most Recent Comments
+		</div>
+
+		<ul class="author-list" id="author-list" style="margin-top: 0px; padding: 10px 5px 0px 5px">
+						<li onmouseover="show_comment(event, 0)"><img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/mp.min.svg" alt="Lwayla" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 1)"><img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/mp.min.svg" alt="SiaGomez" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 2)"><img alt="emavoow" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/861205e87a08cc02563053d43dbae201.jpeg" class="avatar avatar-38 photo" height="38" width="38" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 3)"><img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/mp.min.svg" alt="khalilbosco" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 4)"><img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/mp.min.svg" alt="Unted1960" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 5)"><img width="38" height="38" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/maurizio.png" class="avatar avatar-38 photo wp-post-image" alt="" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 6)"><img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/mp.min.svg" alt="franco stella" loading="lazy"></li>
+								<li onmouseover="show_comment(event, 7)"><img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/mp.min.svg" alt="Uraptor" loading="lazy"></li>
+						</ul>
+
+		<div>
+		<img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/quote-left.svg" alt="quote" style="float: left; margin: 0 10px 5px 10px; width: 50px; height: 45px">
+
+		<ul class="comment-list" id="comment-list" style="padding: 0 10px 10px">
+					<li>
+				<div class="author">
+					<a>Lwayla</a>
+				</div>
+				<div class="date">
+					2023-10-09 04:19:47				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/?post_type=topic&amp;p=306863" style="color: #333; text-decoration: none">
+					The internal resistance of lithium-ion batteries remains relatively consistent throughout the charging cycle, showing a gradual decline in power from 270 mW at 0% state-of-charge to 250 mW at 70%, following an asymptotic curve. The most significant changes occur between 0% and 30% state-of-charge. In contrast, lead-acid batteries experience an increase in resistivity as they discharge.
+
+
+
+
+...
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>SiaGomez</a>
+				</div>
+				<div class="date">
+					2023-10-04 02:28:10				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/?post_type=topic&amp;p=304104" style="color: #333; text-decoration: none">
+					Using Ohm's law (V = I * R), you can calculate the current flowing through the circuit:
+
+For the 50-watt lamp:
+
+Resistance (R1) = (Voltage (V))^2 / Power (P) = (240V)^2 / 50W = 1152 ohms
+For the 100-watt lamp:
+
+Resistance (R2) = (240V)^2 / 100W = 576 ohms
+Total Resistance (R_total) = R1 + R2 = 1152 ohms + 576 ohms = 1728 ohms
+
+Now, to find the total current (I) flowing through the circuit:
+
+Total Current (I) = Voltage (V) / Total Resistance (R_total) = 240V / 1728 ohms = 0.1389 A (approximately 0.139 A or 139 mA)...
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>emavoow</a>
+				</div>
+				<div class="date">
+					2023-10-03 03:27:06				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/?post_type=topic&amp;p=308170" style="color: #333; text-decoration: none">
+					In summary, older fuel sensors had non-linear resistive wires that attempted to match the irregular shape of fuel tanks but weren't very accurate. Cheaper vehicle gauges were typically only precise when the tank was full or empty.
+
+For a solution, I recommend digitizing the output of the new sensor, using a lookup table (LUT) to convert it back to analog form. This method can provide reasonable accuracy. Alternatively, you can use a processor with a simple program that emulates a LUT by performing linear interpolation between defined breakpoints.
+
+
+
+
+...
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>khalilbosco</a>
+				</div>
+				<div class="date">
+					2023-09-27 07:56:02				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/?post_type=topic&amp;p=293302" style="color: #333; text-decoration: none">
+					Based on the 3 wires you describe for your temperature sensor, it does sound like you likely have a RTD (Resistance Temperature Detector) rather than a thermocouple. Here are a few points that indicate it is probably a RTD: RTDs usually have 3 wires - two for the sensor loop current and a third for compensation. Thermocouples only need two wires. You mentioned two white wires - RTDs often use the same wire color for the main sensor leads. Thermocouples use different metals. The third red wire is likely the compensation lead that RTDs use to account for lead resistance...
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>Unted1960</a>
+				</div>
+				<div class="date">
+					2023-09-21 08:19:23				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/?post_type=topic&amp;p=308928" style="color: #333; text-decoration: none">
+					Integrating renewable energy sources, such as solar and wind, into conventional electrical grids poses several technical challenges. Here are some key obstacles and potential solutions: Intermittency: Renewable energy sources like solar and wind are intermittent, meaning their availability can vary significantly depending on weather conditions. This intermittency can make it difficult to balance supply and demand on the grid. One way to address intermittency is through energy storage systems, such as batteries or pumped hydro storage. These systems can store excess energy produced during periods of high generation and release it when demand is high or when renewable sources are...
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>Maurizio Di Paolo Emilio</a>
+				</div>
+				<div class="date">
+					2023-09-21 08:14:50				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/diy-side-scan-sonar/#comment-12016" style="color: #333; text-decoration: none">
+					Hi Franco, I try to search on the web if there is a new link......
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>franco stella</a>
+				</div>
+				<div class="date">
+					2023-09-20 22:04:50				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/diy-side-scan-sonar/#comment-12015" style="color: #333; text-decoration: none">
+					Hi Maurizio,
+
+I am desperately looking to get info about this DIY low frequencies side scan sonar project , the link does t seems to work, thanks :)...
+					</a>
+				</div>
+			</li>
+						<li>
+				<div class="author">
+					<a>Uraptor</a>
+				</div>
+				<div class="date">
+					2023-09-11 12:07:38				</div>
+				<div class="content">
+					<a href="https://www.eeweb.com/?post_type=topic&amp;p=308655" style="color: #333; text-decoration: none">
+					An interesting application is an 'elephant ear' for detecting infra-sound produced by wind turbines.
+
+You need a sturdy 1mX1m frame with a plastic membrane stretched across it. Use an ultrasonic distance measuring device (e.g. HC-SR04) to capture membrane vibration. Software controls ultrasonic TX pulse rate and use a FFT algorithm to separate RX vibration data into wind turbine infra-sound components and random wind speed components....
+					</a>
+				</div>
+			</li>
+					</ul>
+		</div>
+
+	</section>
+
+	
+<script>
+
+function show_comment(event, id) {
+	authors = document.getElementById('author-list').getElementsByTagName('li');
+	comments = document.getElementById('comment-list').getElementsByTagName('li');
+
+	for (var i = 0; i < comments.length; i++) {
+		authors[i].style.borderColor = (i == id) ? '#007EFF' : '#ccc';
+		comments[i].style.display = (i == id) ? 'block' : 'none';
+	}
+}
+
+</script><section class="box category-list" style="margin-bottom: 25px">
+
+    <h2>Browse by Categories</h2>
+
+	    <div style="padding: 15px 20px">
+
+        <ul>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/analog-design">
+						Analog Design (504)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/batteries-and-power-supplies">
+						Batteries and Power Supplies (867)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/design-zones">
+						Design Zones (375)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/digital-design">
+						Digital Design (529)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/embedded-systems">
+						Embedded Systems (1217)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/featured">
+						Featured (6048)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/general">
+						General (1730)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/industry-videos">
+						Industry Videos (785)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/power-design">
+						Power Design (1509)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/slider-article">
+						Slider Article (866)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/standard">
+						Standard (1532)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/category/standard-and-specialty-logic">
+						Standard and Specialty Logic (413)                    </a>
+                </li>
+			        </ul>
+    </div>
+
+</section>
+
+<section class="box category-list">
+
+    <h2>Browse by Topics</h2>
+
+	    <div style="padding: 15px 20px">
+
+        <ul>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/analog">
+						Analog (171)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/automotive">
+						Automotive (195)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/controller">
+						Controller (181)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/design">
+						Design (424)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/electronics">
+						Electronics (198)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/embedded">
+						Embedded (188)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/iot">
+						IoT (167)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/led">
+						LED (300)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/mcu">
+						MCU (203)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/power">
+						Power (790)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/sensor">
+						Sensor (327)                    </a>
+                </li>
+			                <li>
+                    <a href="https://www.eeweb.com/articles/tag/voltage">
+						Voltage (193)                    </a>
+                </li>
+			            <li>
+                <a href="https://www.eeweb.com/articles/tag//topics/"><strong>List of Topics</strong></a>
+            </li>
+        </ul>
+
+    </div>
+
+</section>	</div>
+
+</div><!-- .wrap -->
+
+
+
+
+
+
+
+
+	</div>
+
+	<div class="full-width-ads">
+<div class="htlad-EEWeb_leaderboard"><div class="htl-ad" id="htlad-6" data-unit="EEWeb" name="htlunit-EEWeb_leaderboard" data-lazy-pixels="350" data-sizes="0x0:320x60|800x0:728x90" data-prebid="0x0:|800x0:"><div class="htl-ad-gpt" id="htlad-6-gpt"></div></div></div>
+    <div class="ad-title">Advertisement</div>
+</div>
+	<footer id="footer1" class="site-footer" role="contentinfo">
+		<div id="footer1wrap" style="position: relative; margin: 0 auto; max-width: 1200px">
+		<div id="footermenu">
+			<div class="col1">
+				<h2 class="network-title">Aspencore Network</h2>
+				<div>
+					<div>
+						<h3>Products:</h3>
+						<ul>
+							<li><a target="_blank" href="https://www.electronicproducts.com/">Electronic Products</a></li>
+							<li><a target="_blank" href="https://www.datasheets.com/">Datasheets.com</a></li>
+							<li><a target="_blank" href="https://www.techonline.com/">TechOnline</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>News &amp; Analysis:</h3>
+						<ul>
+							<li><a target="_blank" href="https://www.eetimes.com/">EE Times</a></li>
+							<li>
+							<img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/special-projects.svg" alt="Special Projects" loading="lazy" style="margin-top: 10px; width: 120px">
+							</li>
+							<li><a target="_blank" href="https://www.eetimes.eu/">EE Times Europe</a></li>
+							<li><a target="_blank" href="https://www.powerelectronicsnews.com/">Power Electronics News</a></li>
+							<li><a target="_blank" href="https://epsnews.com/">EPSNews</a></li>
+							<li><a target="_blank" href="https://www.elektroda.pl/">Elektroda.pl</a></li>
+							<li><a target="_blank" href="https://iot.eetimes.com/">IoT Times</a></li>
+							<li><a target="_blank" href="https://thechannelist.com/">The Channelist</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>Design:</h3>
+						<ul>
+							<li><a target="_blank" href="https://www.edn.com/">EDN</a></li>
+							<li><a target="_blank" href="https://www.electroschematics.com/">Electroschematics</a></li>
+							<li><a target="_blank" href="https://www.electronics-tutorials.ws/">Electronics-Tutorials</a></li>
+							<li><a target="_blank" href="https://www.planetanalog.com/">Planet Analog</a></li>
+							<li><a target="_blank" href="https://www.embedded.com/">Embedded</a></li>
+							<li><a target="_blank" href="https://www.embedded-know-how.com/">Embedded Know How</a></li>
+							<li><a target="_blank" href="https://electronics-know-how.com/">Electronics Know How</a></li>
+							<li><a target="_blank" href="https://iot-design-zone.com/">IOT Design Zone</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h3>Tools:</h3>
+						<ul>
+							<li><a target="_blank" href="https://www.eeweb.com/">EEWEB</a></li>
+							<li><a target="_blank" href="https://www.partsim.com/">PartSim</a></li>
+							<!-- <li><a target="_blank" href="https://www.orderpcbs.com/">OrderPCBs</a></li> -->
+							<li><a target="_blank" href="https://www.transim.com/iot">Product Advisor</a></li>
+							<li><a target="_blank" href="https://schematics.com/">Schematics.com</a></li>
+							<li><a target="_blank" href="https://www.schematics.io/">Schematics.io</a></li>
+							<li><a target="_blank" href="https://www.transim.com/Products/Engage">Engage</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col2">
+				<div>
+					<h2>Global Network</h2>
+					<ul>
+						<li><a target="_blank" href="https://www.eetasia.com/">EE Times Asia</a></li>
+						<li><a target="_blank" href="https://www.eet-china.com/">EE Times China</a></li>
+						<li><a target="_blank" href="https://www.eetindia.co.in/">EE Times India</a></li>
+						<li><a target="_blank" href="https://www.eettaiwan.com/">EE Times Taiwan</a></li>
+						<li><a target="_blank" href="https://eetimes.jp/">EE Times Japan</a></li>
+						<li><a target="_blank" href="https://www.ednasia.com/">EDN Asia</a></li>
+						<li><a target="_blank" href="https://www.edntaiwan.com/">EDN Taiwan</a></li>
+						<li><a target="_blank" href="https://www.esmchina.com/">ESM China</a></li>
+						<li><a target="_blank" href="https://www.ednchina.com/">EDN China</a></li>
+						<li><a target="_blank" href="https://ednjapan.com/">EDN Japan</a></li>
+					</ul>
+				</div>
+
+				<div>
+					<div>
+						<h2>For Advertisers</h2>
+						<ul>
+                            <li><a href="https://aspencore.com/contact" target="_blank">Contact Sales</a></li>
+                            <li><a href="https://aspencore.com/media-guide-request/" target="_blank">Media Guide Request</a></li>
+						</ul>
+					</div>
+
+                    <div>
+                        <h2>Connect With Us</h2>
+                        <ul class="footerBlock">
+                            <!--FACEBOOK-->
+                            <li class="footerBlock-item">
+                                <div class="social-icon-footer">
+                                    <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/facebook-icon.png">
+                                </div>
+                                <a target="_blank" href="https://www.facebook.com/EEWeb" class="footerblock-link">
+                                    Facebook</a>
+                            </li>
+                            <!--TWITTER-->
+                            <li class="footerBlock-item">
+                                <div class="social-icon-footer">
+                                    <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/twitter-icon.png">
+                                </div>
+                                <a target="_blank" href="https://twitter.com/ee_web" class="footerblock-link">
+                                    Twitter</a>
+                            </li>
+                            <!--LINKEDIN-->
+                            <li class="footerBlock-item">
+                                <div class="social-icon-footer">
+                                    <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/linkedin-icon.png">
+                                </div>
+                                <a target="_blank" href="https://www.linkedin.com/company/eeweb.com/" class="footerblock-link">
+                                    LinkedIn</a>
+                            </li>
+							<!--GOOGLE NEWS-->
+                            <li class="footerBlock-item">
+                                <div class="social-icon-footer">
+                                    <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/google-icon.png">
+                                </div>
+                                <a target="_blank" href="https://news.google.com/publications/CAAqBwgKMPrjtAswh__LAw?ceid=US:en&amp;oc=3" class="footerblock-link">
+                                    Google News</a>
+                            </li>
+							<!--APPLE NEWS-->
+							<li class="footerBlock-item">
+                                <div class="social-icon-footer">
+                                    <img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/apple-icon.png">
+                                </div>
+                                <a target="_blank" href="https://apple.news/TYoxJnSmuQxuVuuMSfDbySg" class="footerblock-link">
+                                    Apple News</a>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+			</div>
+		</div>
+
+		<a href="https://www.aspencore.com/" target="_blank" id="aspencore-logo">
+			<div class="aspencoreLogo">
+				<img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/aspencore-logo.svg" alt="https://www.aspencore.com/" loading="lazy">
+			</div>
+		</a>
+		</div><!-- .wrap -->
+	</footer><!-- #colophon -->
+
+	<footer id="footer2" style="background: #525153">
+	<div id="footer2wrap" style="margin: 0 auto; max-width: 1200px">
+		<div class="links">
+			<a href="https://aspencore.com/contact" target="_blank">Contact Us</a>
+			<a href="https://aspencore.com/" target="_blank">About Us</a>
+			<a href="https://www.aspencore.com/privacy-policy" target="_blank">Privacy Policy</a>
+			<a href="https://aspencore.dragonforms.com/loading.do?omedasite=dns" target="_blank" class="legalFooter-link">California Do Not Sell</a>
+			<a href="https://www.aspencore.com/terms-of-use" target="_blank">Terms of Use</a>
+			<a href="https://www.eeweb.com/sitemap">Site Map</a>
+			<a href="https://aspencore.dragonforms.com/loading.do?omedasite=eewebsubscribe" target="_blank">Newsletters</a>
+			<!-- California Do Not Sell -->
+		</div>
+		<div class="copyright">
+		All contents are Copyright © 2023 <a href="https://www.aspencore.com/" target="_blank">by AspenCore,</a> Inc. All Rights Reserved
+		</div>
+	</div>
+	</footer>
+
+<!--googleoff: all--><div id="cookie-law-info-bar" data-nosnippet="true" data-cli-style="cli-style-v2" style="background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); font-family: inherit; bottom: 0px; position: fixed; display: block;"><span><div class="cli-bar-container cli-style-v2"><div class="cli-bar-message">We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Accept All”, you consent to the use of ALL the cookies. However, you may visit "Cookie Settings" to provide a controlled consent.</div><div class="cli-bar-btn_container"><a role="button" class="medium cli-plugin-button cli-plugin-main-button cli_settings_button" style="margin: 0px 5px 0px 0px; color: rgb(51, 51, 51); background-color: rgb(222, 223, 224);">Cookie Settings</a><a id="wt-cli-accept-all-btn" role="button" data-cli_action="accept_all" class="wt-cli-element medium cli-plugin-button wt-cli-accept-all-btn cookie_action_close_header cli_action_button" style="color: rgb(255, 255, 255); background-color: rgb(97, 162, 41);">Accept All</a></div></div></span></div><div id="cookie-law-info-again" style="display: none; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); position: fixed; font-family: inherit; width: auto; bottom: 0px; right: 100px;" data-nosnippet="true"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+	<div class="cli-modal-content cli-bar-popup">
+		  <button type="button" class="cli-modal-close" id="cliModalClose">
+			<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+			<span class="wt-cli-sr-only">Close</span>
+		  </button>
+		  <div class="cli-modal-body">
+			<div class="cli-container-fluid cli-tab-container">
+	<div class="cli-row">
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+			<div class="cli-privacy-overview">
+				<h4>Privacy Overview</h4>				<div class="cli-privacy-content">
+					<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities...</div>
+				</div>
+				<a class="cli-privacy-readmore" aria-label="Show more" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			</div>
+		</div>
+		<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+												<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+								Necessary							</a>
+															<div class="wt-cli-necessary-checkbox">
+									<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+									<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+								</div>
+								<span class="cli-necessary-caption">Always Enabled</span>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="necessary">
+								<div class="wt-cli-cookie-description">
+									Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
+<table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Duration</th><th class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr></tbody></table>								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+								Functional							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox" data-id="checkbox-functional">
+									<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Functional</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="functional">
+								<div class="wt-cli-cookie-description">
+									Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+								Performance							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox" data-id="checkbox-performance">
+									<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Performance</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="performance">
+								<div class="wt-cli-cookie-description">
+									Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+								Analytics							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox" data-id="checkbox-analytics">
+									<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Analytics</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="analytics">
+								<div class="wt-cli-cookie-description">
+									Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+								Advertisement							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox" data-id="checkbox-advertisement">
+									<label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Advertisement</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="advertisement">
+								<div class="wt-cli-cookie-description">
+									Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+								</div>
+							</div>
+						</div>
+					</div>
+																	<div class="cli-tab-section">
+						<div class="cli-tab-header">
+							<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+								Others							</a>
+															<div class="cli-switch">
+									<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox" data-id="checkbox-others">
+									<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Others</span></label>
+								</div>
+													</div>
+						<div class="cli-tab-content">
+							<div class="cli-tab-pane cli-fade" data-id="others">
+								<div class="wt-cli-cookie-description">
+									Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
+								</div>
+							</div>
+						</div>
+					</div>
+										</div>
+	</div>
+</div>
+		  </div>
+		  <div class="cli-modal-footer">
+			<div class="wt-cli-element cli-container-fluid cli-tab-container">
+				<div class="cli-row">
+					<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+						
+															<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+													</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--><link rel="stylesheet" id="all-css-2" href="./Design Fundamentals for Drone Motor Controller - EEWeb_files/cookie-law-info-table.css" type="text/css" media="all">
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script id="gdatt-attachments-js-extra">
+var gdbbPressAttachmentsInit = {"max_files":"4","are_you_sure":"This operation is not reversible. Are you sure?"};
+</script>
+<script id="dco-comment-attachment-js-extra">
+var dco_ca = {"commenting_form_not_found":"The commenting form not found."};
+</script>
+<script type="text/javascript" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/saved_resource(3)"></script><script defer="" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/e-202341.js.download" id="jetpack-stats-js"></script>
+<script id="jetpack-stats-js-after" type="text/javascript">
+_stq = window._stq || [];
+_stq.push([ "view", {v:'ext',blog:'160390218',post:'291859',tz:'-4',srv:'www.eeweb.com',hp:'vip',j:'1:12.6.2'} ]);
+_stq.push([ "clickTrackerInit", "160390218", "291859" ]);
+</script>
+
+
+<script>
+
+	jQuery(document).ready(function () {
+		jQuery('<a href="/tools-landing" class="menu_view_all_tools">View All Tools</a>').appendTo('#top-menu > li:first-child > .sub-menu');
+	});
+
+</script>
+
+<script>
+
+	function header_scroll() {
+
+		if (window.pageYOffset > 70) {
+			document.body.classList.add('scroll')
+		} else {
+			document.body.classList.remove('scroll')
+		}
+	}
+
+	window.addEventListener('scroll', function() {
+		header_scroll();
+	})
+
+	window.addEventListener('load', function() {
+		header_scroll();
+	})
+
+	document.getElementById('aspencore-network').addEventListener('mouseover', function () {
+		var images = document.getElementById('menu-aspencore-network').getElementsByTagName('img')
+
+		for (var i = 0; i < images.length; i++) {
+			images[i].src = images[i].dataset.src;
+		}
+	})
+
+</script>
+
+
+<noscript><img src="https://www.eeweb.com/akam/13/pixel_51294a80?a=dD04ZDE4MTZkZWE5YzNjNTVkODBlMzVkZWJhOGRkYmY0ODYyM2Y0NWI0JmpzPW9mZg==" style="visibility: hidden; position: absolute; left: -999px; top: -999px;" /></noscript>
+
+<img src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/g.gif" alt="" width="6" height="5" id="wpstats"><iframe name="__uspapiLocator" style="display: none;" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/saved_resource(4).html"></iframe><script type="text/javascript" id="">try{document.querySelector("#form-search-tool").addEventListener("change",google_tag_manager["rm"]["7894778"](5),!0)}catch(a){};</script><iframe src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/container(1).html" style="visibility: hidden; display: none;"></iframe><iframe src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/aframe.html" width="0" height="0" style="display: none;"></iframe><img width="0" height="0" src="./Design Fundamentals for Drone Motor Controller - EEWeb_files/1x1-pixel.png" alt="." style="height: 0px; width: 0px; border: 0px; display: none;"></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

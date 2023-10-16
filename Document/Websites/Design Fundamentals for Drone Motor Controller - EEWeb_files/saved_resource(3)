@@ -1,0 +1,64 @@
+!function(){function t(){if(this.complete){const e=this.getAttribute("data-lazy-src");if(e&&this.src!==e)return void this.addEventListener("onload",t);const n=this.width,d=this.height;n&&n>0&&d&&d>0&&(this.setAttribute("width",n),this.setAttribute("height",d),i(this))}else this.addEventListener("onload",t)}var e=function(){const e=document.querySelectorAll("img[data-recalc-dims]");for(let i=0;i<e.length;i++)t.call(e[i])},i=function(t){t.removeAttribute("data-recalc-dims"),t.removeAttribute("scale")};"undefined"!=typeof window&&"undefined"!=typeof document&&("loading"===document.readyState?document.addEventListener("DOMContentLoaded",e):e()),document.body.addEventListener("is.post-load",e)}();;
+/*! This file is auto-generated */
+window.wp=window.wp||{},function(s){var t="undefined"==typeof _wpUtilSettings?{}:_wpUtilSettings;wp.template=_.memoize(function(e){var n,a={evaluate:/<#([\s\S]+?)#>/g,interpolate:/\{\{\{([\s\S]+?)\}\}\}/g,escape:/\{\{([^\}]+?)\}\}(?!\})/g,variable:"data"};return function(t){if(document.getElementById("tmpl-"+e))return(n=n||_.template(s("#tmpl-"+e).html(),a))(t);throw new Error("Template not found: #tmpl-"+e)}}),wp.ajax={settings:t.ajax||{},post:function(t,e){return wp.ajax.send({data:_.isObject(t)?t:_.extend(e||{},{action:t})})},send:function(a,t){var e,n;return _.isObject(a)?t=a:(t=t||{}).data=_.extend(t.data||{},{action:a}),t=_.defaults(t||{},{type:"POST",url:wp.ajax.settings.url,context:this}),(e=(n=s.Deferred(function(n){t.success&&n.done(t.success),t.error&&n.fail(t.error),delete t.success,delete t.error,n.jqXHR=s.ajax(t).done(function(t){var e;"1"!==t&&1!==t||(t={success:!0}),_.isObject(t)&&!_.isUndefined(t.success)?(e=this,n.done(function(){a&&a.data&&"query-attachments"===a.data.action&&n.jqXHR.hasOwnProperty("getResponseHeader")&&n.jqXHR.getResponseHeader("X-WP-Total")?e.totalAttachments=parseInt(n.jqXHR.getResponseHeader("X-WP-Total"),10):e.totalAttachments=0}),n[t.success?"resolveWith":"rejectWith"](this,[t.data])):n.rejectWith(this,[t])}).fail(function(){n.rejectWith(this,arguments)})})).promise()).abort=function(){return n.jqXHR.abort(),this},e}}}(jQuery);;
+/*! This file is auto-generated */
+window.addComment=function(v){var I,C,h,E=v.document,b={commentReplyClass:"comment-reply-link",commentReplyTitleId:"reply-title",cancelReplyId:"cancel-comment-reply-link",commentFormId:"commentform",temporaryFormId:"wp-temp-form-div",parentIdFieldId:"comment_parent",postIdFieldId:"comment_post_ID"},e=v.MutationObserver||v.WebKitMutationObserver||v.MozMutationObserver,r="querySelector"in E&&"addEventListener"in v,n=!!E.documentElement.dataset;function t(){d(),e&&new e(o).observe(E.body,{childList:!0,subtree:!0})}function d(e){if(r&&(I=g(b.cancelReplyId),C=g(b.commentFormId),I)){I.addEventListener("touchstart",l),I.addEventListener("click",l);function t(e){if((e.metaKey||e.ctrlKey)&&13===e.keyCode)return C.removeEventListener("keydown",t),e.preventDefault(),C.submit.click(),!1}C&&C.addEventListener("keydown",t);for(var n,d=function(e){var t=b.commentReplyClass;e&&e.childNodes||(e=E);e=E.getElementsByClassName?e.getElementsByClassName(t):e.querySelectorAll("."+t);return e}(e),o=0,i=d.length;o<i;o++)(n=d[o]).addEventListener("touchstart",a),n.addEventListener("click",a)}}function l(e){var t,n,d=g(b.temporaryFormId);d&&h&&(g(b.parentIdFieldId).value="0",t=d.textContent,d.parentNode.replaceChild(h,d),this.style.display="none",n=(d=(d=g(b.commentReplyTitleId))&&d.firstChild)&&d.nextSibling,d&&d.nodeType===Node.TEXT_NODE&&t&&(n&&"A"===n.nodeName&&n.id!==b.cancelReplyId&&(n.style.display=""),d.textContent=t),e.preventDefault())}function a(e){var t=g(b.commentReplyTitleId),t=t&&t.firstChild.textContent,n=this,d=m(n,"belowelement"),o=m(n,"commentid"),i=m(n,"respondelement"),r=m(n,"postid"),n=m(n,"replyto")||t;d&&o&&i&&r&&!1===v.addComment.moveForm(d,o,i,r,n)&&e.preventDefault()}function o(e){for(var t=e.length;t--;)if(e[t].addedNodes.length)return void d()}function m(e,t){return n?e.dataset[t]:e.getAttribute("data-"+t)}function g(e){return E.getElementById(e)}return r&&"loading"!==E.readyState?t():r&&v.addEventListener("DOMContentLoaded",t,!1),{init:d,moveForm:function(e,t,n,d,o){var i,r,l,a,m,c,s,e=g(e),n=(h=g(n),g(b.parentIdFieldId)),y=g(b.postIdFieldId),p=g(b.commentReplyTitleId),u=(p=p&&p.firstChild)&&p.nextSibling;if(e&&h&&n){void 0===o&&(o=p&&p.textContent),a=h,m=b.temporaryFormId,c=g(m),s=(s=g(b.commentReplyTitleId))?s.firstChild.textContent:"",c||((c=E.createElement("div")).id=m,c.style.display="none",c.textContent=s,a.parentNode.insertBefore(c,a)),d&&y&&(y.value=d),n.value=t,I.style.display="",e.parentNode.insertBefore(h,e.nextSibling),p&&p.nodeType===Node.TEXT_NODE&&(u&&"A"===u.nodeName&&u.id!==b.cancelReplyId&&(u.style.display="none"),p.textContent=o),I.onclick=function(){return!1};try{for(var f=0;f<C.elements.length;f++)if(i=C.elements[f],r=!1,"getComputedStyle"in v?l=v.getComputedStyle(i):E.documentElement.currentStyle&&(l=i.currentStyle),(i.offsetWidth<=0&&i.offsetHeight<=0||"hidden"===l.visibility)&&(r=!0),"hidden"!==i.type&&!i.disabled&&!r){i.focus();break}}catch(e){}return!1}}}}(window);;
+!function(a,t,n,e){t.wp=t.wp||{},t.wp.gdatt=t.wp.gdatt||{},t.wp.gdatt.attachments={init:function(){a("form#new-post").attr("enctype","multipart/form-data"),a(n).on("click",".d4p-bba-actions a",function(t){return confirm(gdbbPressAttachmentsInit.are_you_sure)}),a(n).on("click",".d4p-attachment-addfile",function(t){t.preventDefault();var n=a(".bbp-attachments-form input[type=file]").length,e=parseInt(gdbbPressAttachmentsInit.max_files);n<e&&a(this).before('<input type="file" size="40" name="d4p_attachment[]"><br/>'),e<=n+1&&a(this).remove()})}},a(n).ready(function(){wp.gdatt.attachments.init()})}(jQuery,window,document);;
+document.addEventListener( 'DOMContentLoaded', function () {
+	try {
+		const form = document.querySelector( '#respond form' );
+		if ( form ) {
+			// This is a dirty method, but there is no hook in WordPress to add attributes to the commenting form.
+			form.setAttribute( 'enctype', 'multipart/form-data' );
+
+			const attachmentArea = document.querySelector(
+				'.comment-form-attachment'
+			);
+			if ( attachmentArea ) {
+				attachmentArea.addEventListener( 'dragenter', dragEnter );
+				attachmentArea.addEventListener( 'dragover', dragOver );
+				attachmentArea.addEventListener( 'dragleave', dragLeave );
+				attachmentArea.addEventListener( 'drop', drop );
+
+				let counter = 0;
+
+				function dragEnter( e ) {
+					e.preventDefault();
+
+					counter++;
+					attachmentArea.classList.add( 'dragenter' );
+				}
+
+				function dragOver( e ) {
+					e.preventDefault();
+				}
+
+				function dragLeave( e ) {
+					e.preventDefault();
+
+					counter--;
+					if ( 0 === counter ) {
+						attachmentArea.classList.remove( 'dragenter' );
+					}
+				}
+
+				function drop( e ) {
+					e.preventDefault();
+
+					document.querySelector(
+						'.comment-form-attachment__input'
+					).files = e.dataTransfer.files;
+					counter = 0;
+					attachmentArea.classList.remove( 'dragenter' );
+				}
+			}
+		} else {
+			// eslint-disable-next-line no-undef
+			throw new Error( dco_ca.commenting_form_not_found );
+		}
+	} catch ( e ) {
+		// eslint-disable-next-line no-console
+		console.log( e );
+	}
+} );
+;
