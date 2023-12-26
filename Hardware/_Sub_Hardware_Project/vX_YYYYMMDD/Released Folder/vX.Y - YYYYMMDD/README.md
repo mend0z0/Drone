@@ -32,20 +32,17 @@
 		_DRL_MAP_Prj_vXY.gbr
 
 	2. Gerber:
-		_GBR_Top_SilkScreen_Prj_vXY.gto
-		_GBR_Top_Mask_Prj_vXY.gts
-		_GBR_Top_Cu_Prj_vXY.gtl
-		-----------------------------------
-		_GBR_In1_Cu_Prj_vXY.g2
-		_GBR_In2_Cu_Prj_vXY.g3
-		_GBR_In3_Cu_Prj_vXY.g4
-		_GBR_In4_Cu_Prj_vXY.g5
-		-----------------------------------
-		_GBR_Bottom_Cu_Prj_vXY.gbl
-		_GBR_Bottom_Mask_Prj_vXY.gbs
-		_GBR_Bottom_SilkScreen_Prj_vXY.gbo
-		-----------------------------------
-		_GBR_EdgeCut_Prj_vXY.gml
+		1. _GBR_Top_SilkScreen_Prj_vXY.gto
+		2. _GBR_Top_Mask_Prj_vXY.gts
+		3. _GBR_Top_Cu_Prj_vXY.gtl
+		4. _GBR_In1_Cu_Prj_vXY.g2
+		5. _GBR_In2_Cu_Prj_vXY.g3
+		6. _GBR_In3_Cu_Prj_vXY.g4
+		7. _GBR_In4_Cu_Prj_vXY.g5
+		8. _GBR_Bottom_Cu_Prj_vXY.gbl
+		9. _GBR_Bottom_Mask_Prj_vXY.gbs
+		10. _GBR_Bottom_SilkScreen_Prj_vXY.gbo
+		11. _GBR_EdgeCut_Prj_vXY.gml
 
 	3. Stackup Information:
 		_STACKUP_Prj_vXY.csv
