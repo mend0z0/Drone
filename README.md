@@ -82,7 +82,7 @@ Description...
 
 ![Hardware_RadioController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_RadioController_v1.0.svg)
 
-![Hardware_LoRaWANController](https://github.com/mend0z0/)
+![Hardware_LoRaWANController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_LoRaWANController_v1.0.svg)
 
 ![Hardware_USBToLoRaWAN](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_USBToLoRaWAN_v1.0.svg)
 
