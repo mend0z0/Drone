@@ -38,7 +38,7 @@
 *	Pointer Variables = p_camelCase
 *	*********************************** Contact Info ***********************************************
 *	Author: Siavash Taher Parvar
-*	Github: www.github.com/Mend0z0
+*	GitHub: www.github.com/Mend0z0
 ****************************************************************************************************/
 #ifndef CODETEMPLATEHEADER_H_
 #define CODETEMPLATEHEADER_H_

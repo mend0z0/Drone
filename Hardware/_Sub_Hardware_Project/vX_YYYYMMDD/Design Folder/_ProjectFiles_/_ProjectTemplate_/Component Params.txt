@@ -1,0 +1,108 @@
+Component Params
+
+Reference Designator:
+Value: 
+Footprint:
+Package:
+
+Datasheet:
+Description:
+
+Part Number (Manufacturer)
+Manufacturer
+
+Part Number (Vendor)
+Vendor 
+Purchase Link:
+
+SCH CHECK: SCH (N/A) / SCH (CHECKED)
+PCB CHECk: PCB (N/A) / PCB (CHECKED)
+
+----------------------------------------------------------------
+Part Number (Manufacturer)
+Package
+
+Manufacturer
+Part Number (Vendor)
+Vendor
+PCB CHECK
+
+SCH (N/A)
+Digikey
+PCB (N/A)
+
+---------------------------------------------------------------
+
+Description
+Part Number (Manufacturer)
+Link
+SCH CHECK
+Package
+Manufacturer
+Part Number (Vendor)
+Vendor
+PCB CHECK
+
+---------------------------------------------------------------
+
+
+
+Component Symbol name
+
+ANT_PN_FREQ_PWR_GAIN_PACKAGE
+Value: Freq_Pwr_Gain
+
+Symbol name: CAP_Type_value_voltage_tempcoef_package
+		Value: value_voltage_tempcoef
+
+		ECAP: CAP_Type_Value_Voltage_Tolerance_package-size
+		Value: Value_voltage_tolerance
+
+		TCAP: CAP_TANT_Value_voltage_ESR_package
+		Value: Value_voltage_ESR
+
+
+CONN_type_pos_dir_package(TECHNOLOGY-PITCH)
+Value: type_pos(CxR)_side/angle_pitch
+PACKAGE: TECHNOLOGY_RA/VERT
+
+DIODE_Type_PN_Voltage_current_package
+	Value: PN_VOLTAGE_Current
+
+	LED_Color_Voltage_current_wavelength_pakcage
+	Value: Color_voltage_current
+
+	TVS_PN_VStandoff_VBR_MAX CUR()_PACKAGE
+	Value: TVS_voltage_current
+
+
+Fuse_type_PN_ihold_itr_max voltage_package
+Value: Type_Current_Voltage_Resistance
+
+IC_Type_PN_Func_extra-info_Package
+Value: PN
+
+IND_value_current_DCR_self-resonant_package
+Value: Value_current_DCR
+IND_CMC_PN_VALUE_CURRENT_DCR_PACKAGE
+Value: Value_current
+
+Q_Type_PN_Model_voltage_current_pwr_Package
+Value: PN
+
+RELAY_TYPE_PN_CIRCUIT_VOLTAGE_CURRENT_PACKAGE
+Value: Type_Circuit_voltage_Current
+
+RES_VALUE_PWR_TOLERANCE_Package
+Value: value_pwr_tolerance
+
+SW_TYPE_PN_VOLTAGE_CURRENT_DIR_PACKAGE
+Value: Type_No/Nc
+
+VDR_TYPE_PN_AC VOLTAGE_DC VOLTAGE_CURRENT_PACKAGE (SIZE)
+Value: PN_AC VOLTAGE_CURRENT
+
+XTAL_PN_FREQ_PPM_CAPACITANCE_PACKAGE
+Value: Freq_ppm_Capacitance
+
+
