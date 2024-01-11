@@ -7,7 +7,7 @@ Latest update, or process that is going through
 ``
 
 
-# QuadCopter
+# Quadcopter
 
 Description...
 
