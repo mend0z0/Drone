@@ -2,7 +2,7 @@
 ## Latest update
 
 ``
-Latest update, or process that is going through
+Some mechanical and electronic components have been bought. Going to write the OS for Flight controller part...
 ``
 
 # Quadcopter
