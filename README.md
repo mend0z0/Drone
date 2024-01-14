@@ -7,7 +7,7 @@ Some mechanical and electronic components have been bought. Going to write the O
 
 # Quadcopter
 
-Briefly describing, quadcopter is a type of drone that consists of four motors and the idea is to fly remotly over the ground surface at a pre-determined distance. Our project goal is to acquire four motors that can carry and fly a chasie. The effort, at the first place, is to stablize the chassie in the air. Also, In contrast to traditional drone remote controller, the goal of this project is to control the drone by an application that is running on a PC/Raspberry pi.
+Briefly, a quadcopter is a type of drone that consists of four motors and the idea is to fly remotely over the ground surface at a pre-determined distance. Our project goal is to acquire four motors that can carry and fly a chassis. The effort, in the first place, is to stabilize the chassis in the air. Also, In contrast to the traditional drone remote controller, the goal of this project is to control the drone with an application that is running on a PC/Raspberry Pi.
 
 ## Features
 
