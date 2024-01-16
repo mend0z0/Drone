@@ -9,6 +9,10 @@ Some mechanical and electronic components have been bought. Going to write the O
 
 Briefly, a quadcopter is a type of drone that consists of four motors and the idea is to fly remotely over the ground surface at a pre-determined distance. Our project goal is to acquire four motors that can carry and fly a chassis. The effort, in the first place, is to stabilize the chassis in the air. Also, In contrast to the traditional drone remote controller, the goal of this project is to control the drone with an application that is running on a PC/Raspberry Pi.
 
+## Category
+
+__Robotics__
+
 ## Features
 
 - Mini size
