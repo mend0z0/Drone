@@ -129,6 +129,12 @@ __Robotics__
 
 ![_ASMView_Bottom_USBToLoRaWAN](https://github.com/mend0z0)
 
+### Mechanical CAD View
+![_CADView_MECH](https://github.com/mend0z0)
+
+### Final Device
+![_QUADCOPTER_](https://github.com/mend0z0)
+
 ### Application
 ![App Screenshot](https://github.com/mend0z0)
 
