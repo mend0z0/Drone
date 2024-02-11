@@ -11,7 +11,7 @@ Quadcopter application to-do list
     - The number on the left top side of camera represents (This the drone number/overall number of present drone)
     - Remove trailing zero before the number it should be like 1/50 not 01/50
     - Open a new Tab for Record and Picture for defining the path the pic should be saved
-    -
+    - Update the status of each drone while switching in between
     - 
 - #### Important (List the works that efficient and optimized functionality of project depends on these tasks):
     - 
