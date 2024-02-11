@@ -75,7 +75,7 @@ __Robotics__
 
 - **IDE:** Qt6
 - **Operating System:** Linux/Windows
-- **Platform:**: Raspberry Pi 400
+- **Device:** Raspberry Pi 400
 
 ### Mechanical
 
