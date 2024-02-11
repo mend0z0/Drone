@@ -73,10 +73,14 @@ __Robotics__
 
 ### Application
 
-- **Application:** Qt6
+- **IDE:** Qt6
 - **Operating System:** Linux/Windows
 - **Platform:**: Raspberry Pi 400
 
+### Mechanical
+
+- **CAD:** SolidEdge
+- **Printing Method:** 3D Printing
 
 ## Block Diagrams
 
