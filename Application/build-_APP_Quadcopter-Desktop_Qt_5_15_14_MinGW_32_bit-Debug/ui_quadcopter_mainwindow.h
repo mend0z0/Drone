@@ -19,6 +19,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSlider>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
@@ -45,16 +46,18 @@ public:
     QSpacerItem *horizontalSpacer_3;
     QPushButton *pushButton_3;
     QSpacerItem *verticalSpacer;
+    QSpacerItem *horizontalSpacer_9;
     QSpacerItem *horizontalSpacer_4;
+    QSlider *verticalSlider;
     QPushButton *pushButton_6;
     QSpacerItem *horizontalSpacer_7;
+    QSpacerItem *horizontalSpacer_6;
     QSpacerItem *horizontalSpacer_8;
     QSpacerItem *horizontalSpacer_5;
     QSpacerItem *verticalSpacer_4;
     QPushButton *pushButton_5;
     QDial *dial;
     QSpacerItem *verticalSpacer_2;
-    QSpacerItem *horizontalSpacer_6;
     QGridLayout *gridLayout;
     QPushButton *pushButton_7;
     QPushButton *pushButton_8;
@@ -66,33 +69,33 @@ public:
     {
         if (Quadcopter_MainWindow->objectName().isEmpty())
             Quadcopter_MainWindow->setObjectName(QString::fromUtf8("Quadcopter_MainWindow"));
-        Quadcopter_MainWindow->resize(1108, 692);
+        Quadcopter_MainWindow->resize(1056, 666);
         centralwidget = new QWidget(Quadcopter_MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(121, 441, 88, 24));
+        pushButton->setGeometry(QRect(90, 430, 88, 24));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(478, 441, 75, 24));
+        pushButton_2->setGeometry(QRect(447, 430, 75, 24));
         graphicsView = new QGraphicsView(centralwidget);
         graphicsView->setObjectName(QString::fromUtf8("graphicsView"));
-        graphicsView->setGeometry(QRect(40, 20, 640, 480));
+        graphicsView->setGeometry(QRect(9, 9, 640, 480));
         plainTextEdit = new QPlainTextEdit(centralwidget);
         plainTextEdit->setObjectName(QString::fromUtf8("plainTextEdit"));
-        plainTextEdit->setGeometry(QRect(40, 510, 1041, 121));
+        plainTextEdit->setGeometry(QRect(9, 499, 1041, 121));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(50, 30, 91, 41));
+        label->setGeometry(QRect(19, 19, 111, 61));
         pushButton_9 = new QPushButton(centralwidget);
         pushButton_9->setObjectName(QString::fromUtf8("pushButton_9"));
-        pushButton_9->setGeometry(QRect(240, 441, 75, 24));
+        pushButton_9->setGeometry(QRect(209, 430, 75, 24));
         pushButton_10 = new QPushButton(centralwidget);
         pushButton_10->setObjectName(QString::fromUtf8("pushButton_10"));
-        pushButton_10->setGeometry(QRect(359, 441, 75, 24));
+        pushButton_10->setGeometry(QRect(328, 430, 75, 24));
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(690, 20, 391, 481));
+        widget->setGeometry(QRect(659, 9, 391, 481));
         gridLayout_4 = new QGridLayout(widget);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
@@ -129,9 +132,24 @@ public:
 
         gridLayout_2->addItem(verticalSpacer, 2, 3, 1, 1);
 
+        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_9, 3, 8, 1, 1);
+
         horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_2->addItem(horizontalSpacer_4, 1, 5, 1, 1);
+
+        verticalSlider = new QSlider(widget);
+        verticalSlider->setObjectName(QString::fromUtf8("verticalSlider"));
+        verticalSlider->setMaximum(300);
+        verticalSlider->setOrientation(Qt::Vertical);
+        verticalSlider->setInvertedAppearance(false);
+        verticalSlider->setInvertedControls(false);
+        verticalSlider->setTickPosition(QSlider::TicksAbove);
+        verticalSlider->setTickInterval(10);
+
+        gridLayout_2->addWidget(verticalSlider, 1, 7, 6, 1);
 
         pushButton_6 = new QPushButton(widget);
         pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
@@ -139,11 +157,15 @@ public:
 
         gridLayout_2->addWidget(pushButton_6, 5, 3, 1, 1);
 
-        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_7 = new QSpacerItem(20, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_2->addItem(horizontalSpacer_7, 3, 2, 1, 1);
 
-        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        horizontalSpacer_6 = new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_6, 3, 6, 1, 1);
+
+        horizontalSpacer_8 = new QSpacerItem(20, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         gridLayout_2->addItem(horizontalSpacer_8, 3, 4, 1, 1);
 
@@ -175,10 +197,6 @@ public:
         verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
 
         gridLayout_2->addItem(verticalSpacer_2, 4, 3, 1, 1);
-
-        horizontalSpacer_6 = new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_6, 3, 6, 1, 1);
 
 
         gridLayout_4->addLayout(gridLayout_2, 2, 0, 1, 1);
@@ -221,7 +239,7 @@ public:
         pushButton_10->raise();
         menubar = new QMenuBar(Quadcopter_MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1108, 22));
+        menubar->setGeometry(QRect(0, 0, 1056, 22));
         Quadcopter_MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(Quadcopter_MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
