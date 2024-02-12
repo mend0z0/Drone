@@ -16,7 +16,7 @@ __Robotics__
 ## Features
 
 - Mini size
-- 3MP Camera
+- VGA Camera
 - Long and short wireless connection
 - OTA Programming
 
@@ -25,15 +25,9 @@ __Robotics__
 
 ### Hardware
 
-#### FlightController
-- **MCU:** STM32U545
-- **Connection:** SPI, I2C, UART, QSPI
-- **PCB Layers:** 6Layers (Controlled Impedance)
-- **CAD:** KiCAD
-
-#### RadioController
-- **MCU:** ATSAM4SD
-- **Connection:** SPI, HSMCI, USB2.0
+#### DroneController
+- **MCU:** STM32U575
+- **Connection:** SPI, I2C, UART, QSPI, DCMI
 - **PCB Layers:** 6Layers (Controlled Impedance)
 - **CAD:** KiCAD
 
@@ -51,15 +45,10 @@ __Robotics__
 
 ### Firmware
 
-#### FlightController
+#### DroneController
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
-
-#### RadioController
-- **OS:** FreeRTOS
-- **Programming Language:** C Languagae
-- **IDE:** Atmel Studio
 
 #### LoRaWANController
 - **OS:** FreeRTOS
