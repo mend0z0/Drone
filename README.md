@@ -25,15 +25,10 @@ __Robotics__
 
 ### Hardware
 
-#### DroneController
-- **MCU:** STM32U575
+#### DroneController (Flight, Radio,and LoRaWAN Controller)
+- **MCU (Flight, Radio):** STM32U575
+- **MCU (LoRaWAN):** STM32WLE5
 - **Connection:** SPI, I2C, UART, QSPI, DCMI
-- **PCB Layers:** 6Layers (Controlled Impedance)
-- **CAD:** KiCAD
-
-#### LoRaWANController
-- **MCU:** STM32WLE5
-- **Connection:** UART
 - **PCB Layers:** 6Layers (Controlled Impedance)
 - **CAD:** KiCAD
 
@@ -45,17 +40,12 @@ __Robotics__
 
 ### Firmware
 
-#### DroneController
+#### DroneController (Flight, Radio,and LoRaWAN Controller)
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
 
-#### LoRaWANController
-- **OS:** FreeRTOS
-- **Programming Language:** C Languagae
-- **IDE:** STM32CubeIDE
-
-#### USBToLoRaWAN
+#### USBToLoRaWAN 
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
@@ -63,7 +53,7 @@ __Robotics__
 ### Application
 
 - **IDE:** Qt6
-- **Operating System:** Linux/Windows
+- **Operating System:** Raspberry Pi OS (64-bit)
 - **Device:** Raspberry Pi 400
 
 ### Mechanical
