@@ -15,9 +15,9 @@ Quadcopter application to-do list
     - QoS is always 2, and the topics are like Drone1, Drone2, and so on... .
     - Drone 0 is home, so each drone will connect to drone0 to get a drone number
     - About data retaining, set the disconnect message once the drone is disconnected...
-    - 
-    - 
-    - 
+    - Use unsubscribe for unsubscribing... (like when you try to switch between cameras
+    - Use sentMessage signal to make sure the data has been sent
+    - Use publish to send the data in QByteArray
     - 
 - #### Important (List the works that efficient and optimized functionality of project depends on these tasks):
     - 

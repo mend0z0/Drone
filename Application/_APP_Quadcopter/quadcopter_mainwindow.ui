@@ -6,15 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1056</width>
-    <height>666</height>
+    <width>1060</width>
+    <height>673</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Quadcopter_MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_DroneSelectPrevious">
     <property name="geometry">
      <rect>
       <x>90</x>
@@ -27,7 +27,7 @@
      <string>Previous Drone</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="pushButton_DroneSelectNext">
     <property name="geometry">
      <rect>
       <x>447</x>
@@ -40,7 +40,7 @@
      <string>Next Drone</string>
     </property>
    </widget>
-   <widget class="QGraphicsView" name="graphicsView">
+   <widget class="QGraphicsView" name="graphicsView_DroneCameraView">
     <property name="geometry">
      <rect>
       <x>9</x>
@@ -50,7 +50,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QPlainTextEdit" name="plainTextEdit">
+   <widget class="QPlainTextEdit" name="plainTextEdit_DiagnosticText">
     <property name="geometry">
      <rect>
       <x>9</x>
@@ -60,7 +60,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="label_NumberOfDrones">
     <property name="geometry">
      <rect>
       <x>19</x>
@@ -73,7 +73,7 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;00/00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_9">
+   <widget class="QPushButton" name="pushButton_DroneCameraRecord">
     <property name="geometry">
      <rect>
       <x>209</x>
@@ -86,7 +86,7 @@
      <string>Record</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_10">
+   <widget class="QPushButton" name="pushButton_DroneCameraSnapshot">
     <property name="geometry">
      <rect>
       <x>328</x>
@@ -99,7 +99,7 @@
      <string>Picture</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>659</x>
@@ -112,7 +112,7 @@
      <item row="2" column="0">
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="1" column="3">
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="pushButton_MoveForward">
          <property name="font">
           <font>
            <family>Calibri</family>
@@ -167,7 +167,7 @@
         </spacer>
        </item>
        <item row="3" column="1">
-        <widget class="QPushButton" name="pushButton_3">
+        <widget class="QPushButton" name="pushButton_MoveLeft">
          <property name="font">
           <font>
            <family>Calibri</family>
@@ -219,7 +219,7 @@
         </spacer>
        </item>
        <item row="1" column="7" rowspan="6">
-        <widget class="QSlider" name="verticalSlider">
+        <widget class="QSlider" name="verticalSlider_Throttle">
          <property name="maximum">
           <number>300</number>
          </property>
@@ -241,7 +241,7 @@
         </widget>
        </item>
        <item row="5" column="3">
-        <widget class="QPushButton" name="pushButton_6">
+        <widget class="QPushButton" name="pushButton_MoveReverse">
          <property name="font">
           <font>
            <family>Calibri</family>
@@ -249,7 +249,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Backward</string>
+          <string>Reverse</string>
          </property>
         </widget>
        </item>
@@ -328,7 +328,7 @@
         </spacer>
        </item>
        <item row="3" column="5">
-        <widget class="QPushButton" name="pushButton_5">
+        <widget class="QPushButton" name="pushButton_MoveRight">
          <property name="font">
           <font>
            <family>Calibri</family>
@@ -341,7 +341,7 @@
         </widget>
        </item>
        <item row="3" column="3">
-        <widget class="QDial" name="dial">
+        <widget class="QDial" name="dial_AdjustDirection">
          <property name="maximum">
           <number>360</number>
          </property>
@@ -380,7 +380,7 @@
      <item row="0" column="0">
       <layout class="QGridLayout" name="gridLayout">
        <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton_7">
+        <widget class="QPushButton" name="pushButton_ConnectServer">
          <property name="font">
           <font>
            <family>Calibri</family>
@@ -393,7 +393,7 @@
         </widget>
        </item>
        <item row="0" column="1">
-        <widget class="QPushButton" name="pushButton_8">
+        <widget class="QPushButton" name="pushButton_ConnectLoRaWAN">
          <property name="font">
           <font>
            <family>Calibri</family>
@@ -425,27 +425,21 @@
      </item>
     </layout>
    </widget>
-   <zorder>graphicsView</zorder>
-   <zorder>pushButton</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>pushButton_3</zorder>
-   <zorder>pushButton_4</zorder>
-   <zorder>pushButton_5</zorder>
-   <zorder>pushButton_6</zorder>
-   <zorder>dial</zorder>
-   <zorder>pushButton_7</zorder>
-   <zorder>pushButton_8</zorder>
-   <zorder>plainTextEdit</zorder>
-   <zorder>label</zorder>
-   <zorder>pushButton_9</zorder>
-   <zorder>pushButton_10</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>graphicsView_DroneCameraView</zorder>
+   <zorder>pushButton_DroneSelectPrevious</zorder>
+   <zorder>pushButton_DroneSelectNext</zorder>
+   <zorder>plainTextEdit_DiagnosticText</zorder>
+   <zorder>label_NumberOfDrones</zorder>
+   <zorder>pushButton_DroneCameraRecord</zorder>
+   <zorder>pushButton_DroneCameraSnapshot</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1056</width>
+     <width>1060</width>
      <height>22</height>
     </rect>
    </property>
