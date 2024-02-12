@@ -86,23 +86,6 @@ __Robotics__
 
 ![SystemDesign](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_SYS_QuadCopter_v1.0.svg)
 
-![Hardware_FlightController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_FlightController_v1.0.svg)
-
-![Hardware_RadioController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_RadioController_v1.0.svg)
-
-![Hardware_LoRaWANController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_LoRaWANController_v1.0.svg)
-
-![Hardware_USBToLoRaWAN](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_HW_USBToLoRaWAN_v1.0.svg)
-
-![Firmware_FlightController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_FW_FlightController_v1.0.svg)
-
-![Firmware_RadioController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_FW_RadioController_v1.0.svg)
-
-![Firmware_LoRaWANController](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_FW_LoraWANController_v1.0.svg)
-
-![Firmware_USBToLoRaWAN](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_FW_USBToLoRaWAN_v1.0.svg)
-
-
 ## Screenshots
 
 ### Hardware
