@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/ -->
+<html prefix="" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width">
+<title>Mosquitto Debian repository | Eclipse Mosquitto</title>
+<link href="./Mosquitto Debian repository _ Eclipse Mosquitto_files/rst.css" rel="stylesheet" type="text/css">
+<link href="./Mosquitto Debian repository _ Eclipse Mosquitto_files/code.css" rel="stylesheet" type="text/css">
+<link href="./Mosquitto Debian repository _ Eclipse Mosquitto_files/bulma.css" rel="stylesheet" type="text/css">
+<link href="./Mosquitto Debian repository _ Eclipse Mosquitto_files/local.css" rel="stylesheet" type="text/css">
+<link href="./Mosquitto Debian repository _ Eclipse Mosquitto_files/man.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#3c5280">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://mosquitto.org/rss.xml">
+<link rel="canonical" href="https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/">
+<link rel="icon" href="https://mosquitto.org/favicon-16x16.png" sizes="16x16">
+<link rel="icon" href="https://mosquitto.org/favicon-32x32.png" sizes="32x32">
+<!--[if lt IE 9]><script src="../../../../assets/js/html5.js"></script><![endif]--><!-- Eclipse Foundation cookie consent: --><link rel="stylesheet" type="text/css" href="./Mosquitto Debian repository _ Eclipse Mosquitto_files/cookieconsent.min.css">
+<script type="text/javascript" async="" src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/js"></script><script src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/default.min.js.download"></script><!-- Global site tag (gtag.js) - Google Analytics --><script async="" src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/js(1)"></script><script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+  			gtag('config', 'UA-11832660-3');
+	</script><link rel="prev" href="https://mosquitto.org/blog/2012/12/libmosquitto-go-bindings/" title="libmosquitto Go bindings" type="text/html">
+<link rel="next" href="https://mosquitto.org/blog/2013/01/version-1-1-1-released/" title="Version 1.1.1 released" type="text/html">
+<meta property="og:site_name" content="Eclipse Mosquitto">
+<meta property="og:title" content="Mosquitto Debian repository">
+<meta property="og:url" content="https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/">
+<meta property="og:description" content="On a previous post I described how to make mosquitto debian packages. This
+turned out to be a bit problematic, so I&#39;ve now put up an experimental debian
+repository for mosquitto. It includes packages ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2013-01-10T22:43:37Z">
+<meta property="article:tag" content="Packaging">
+<style></style></head>
+<body class="layout-documentation page-grid" data-new-gr-c-s-check-loaded="14.1154.0" data-gr-ext-installed=""><div class="cc-revoke cc-bottom cc-animate cc-color-override-1434350510" style="display: none;">Cookie settings</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-opt-in cc-theme-block cc-bottom cc-color-override-1434350510 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Some Eclipse Foundation pages use cookies to better serve you when you return to the site. You can set your browser to notify you before you receive a cookie or turn off cookies. If you do so, however, some areas of some sites may not function properly. To read Eclipse Foundation Privacy Policy <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.eclipse.org/legal/privacy.php" rel="noopener noreferrer nofollow" target="_blank">click here.</a></span><div class="cc-compliance cc-highlight"><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Decline</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Allow cookies</a></div><!--googleon: all--></div>
+    
+    <header id="header"><script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  // Get all "navbar-burger" elements
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(function ($el) {
+      $el.addEventListener('click', function () {
+
+        // Get the target from the "data-target" attribute
+        var target = $el.dataset.target;
+        var $target = document.getElementById(target);
+
+        // Toggle the class on both the "navbar-burger" and the "navbar-menu"
+        $el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});</script><div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation"><div class="navbar-brand">
+        <a class="navbar-item" href="https://mosquitto.org/">
+          <img src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/mosquitto-text-side-28.png" alt="Mosquitto: An Open Source MQTT Server" width="139" height="28"></a>
+        <a class="navbar-item" href="https://eclipse.org/">
+          <img src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/eclipse_logo_colour.png" alt="The Eclipse Foundation"></a>
+        <a class="navbar-item" href="https://cedalo.com/mqtt-broker-pro-mosquitto">
+          <img src="./Mosquitto Debian repository _ Eclipse Mosquitto_files/cedalo.png" alt="Cedalo Gmbh"></a>
+        <button class="button navbar-burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="navbar-menu" id="navMenu">
+        <div class="navbar-end">
+
+                <a class="navbar-item" href="https://mosquitto.org/">Home</a>
+                <a class="navbar-item" href="https://mosquitto.org/blog/">Blog</a>
+                <a class="navbar-item" href="https://mosquitto.org/download/">Download</a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">Documentation</a>
+        <div class="navbar-dropdown">
+                     <a class="navbar-item" href="https://mosquitto.org/documentation/">All</a>
+                     <a class="navbar-item" href="https://mosquitto.org/roadmap/">Roadmap</a>
+                     <a class="navbar-item" href="https://mosquitto.org/api/">API</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/libmosquitto-3.html">libmosquitto</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto-8.html">mosquitto</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto-conf-5.html">mosquitto.conf</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto_ctrl-1.html">mosquitto_ctrl</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto_ctrl_dynsec-1.html">mosquitto_ctrl_dynsec</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto_passwd-1.html">mosquitto_passwd</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto_pub-1.html">mosquitto_pub</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto_rr-1.html">mosquitto_rr</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto_sub-1.html">mosquitto_sub</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mosquitto-tls-7.html">mosquitto-tls</a>
+                     <a class="navbar-item" href="https://mosquitto.org/man/mqtt-7.html">mqtt</a>
+        </div>
+      </div>
+    
+    
+
+        </div>
+      </div>
+       </nav><hr style="margin-top: 0rem">
+</div>
+
+        
+    <section class="hero"><div class="hero-body is-paddingless">
+      <div class="container has-text-centered">
+        <h1 class="title" itemprop="headline name">Mosquitto Debian repository</h1>
+      </div>
+    </div>
+    <hr></section></header><div class="container">
+         <main id="content"><article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><div class="metadata">
+            <p class="dateline">
+        <a href="https://mosquitto.org/blog/2013/01/mosquitto-debian-repository/" rel="bookmark"><time class="published dt-published" datetime="2013-01-10T22:43:37Z" itemprop="datePublished" title="2013-01-10 22:43">2013-01-10 22:43</time></a>
+      </p>
+            
+
+        </div>
+        
+
+    </header><div class="content">
+    <p>On a previous post I described <a href="https://mosquitto.org/blog/2012/11/making-mosquitto-packages-for-debian-yourself/">how to make mosquitto debian packages</a>. This
+turned out to be a bit problematic, so I've now put up an experimental debian
+repository for mosquitto. It includes packages for the i386, amd64, armel and
+raspberry pi (raspbian armhf ) architectures.</p>
+<p>It's worth repeating that this is experimental - there are package changes that
+haven't been vetted by a Debian developer so it's possible something will
+break. I've tested myself and had no problems so far.</p>
+<p>To use the new repository you should first import the repository package
+signing key:</p>
+<div class="code"><pre class="code literal-block">wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+sudo apt-key add mosquitto-repo.gpg.key
+</pre></div>
+
+<p>Then make the repository available to apt:</p>
+<div class="code"><pre class="code literal-block">cd /etc/apt/sources.list.d/
+</pre></div>
+
+<p>Then one of the following, depending on which version of debian you are using:</p>
+<div class="code"><pre class="code literal-block">sudo wget http://repo.mosquitto.org/debian/mosquitto-jessie.list
+sudo wget http://repo.mosquitto.org/debian/mosquitto-stretch.list
+sudo wget http://repo.mosquitto.org/debian/mosquitto-buster.list
+</pre></div>
+
+<p>Then update apt information:</p>
+<div class="code"><pre class="code literal-block">apt-get update
+</pre></div>
+
+<p>And discover what mosquitto packages are available:</p>
+<div class="code"><pre class="code literal-block">apt-cache search mosquitto
+</pre></div>
+
+<p>Or just install:</p>
+<div class="code"><pre class="code literal-block">apt-get install mosquitto
+</pre></div>
+    </div>
+    <aside class="postpromonav"><nav><ul itemprop="keywords" class="tags">
+<li><a class="tag p-category" href="https://mosquitto.org/blog/categories/packaging/" rel="tag">Packaging</a></li>
+        </ul>
+<ul class="pager hidden-print">
+<li class="previous">
+                <a href="https://mosquitto.org/blog/2012/12/libmosquitto-go-bindings/" rel="prev" title="libmosquitto Go bindings">Previous post</a>
+            </li>
+            <li class="next">
+                <a href="https://mosquitto.org/blog/2013/01/version-1-1-1-released/" rel="next" title="Version 1.1.1 released">Next post</a>
+            </li>
+        </ul></nav></aside></article></main>
+</div>
+    
+  <footer id="footer" class="finalfooter"><div class="container">
+      <div class="content has-text-centered">
+        <div class="footerlink is-centered">
+          <a href="http://www.eclipse.org/">Eclipse Home</a>
+          <a href="http://marketplace.eclipse.org/">Market Place</a>
+          <a href="http://www.planeteclipse.org/">Eclipse Planet</a>
+          <a href="https://eclipse.org/security/">Eclipse Security</a>
+          <a href="http://www.eclipse.org/legal/privacy.php">Privacy Policy</a>
+          <a href="http://www.eclipse.org/legal/termsofuse.php">Terms of Use</a>
+          <a href="http://www.eclipse.org/legal/copyright.php">Copyright Agent</a>
+          <a href="http://www.eclipse.org/legal/">Legal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

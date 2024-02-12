@@ -1,4 +1,8 @@
-QT       += core gui
+QT  += core gui
+QT  += serialport
+QT  += network
+QT  += multimedia
+QT  += mqtt
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,12 +14,15 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    mqttclient.cpp \
     quadcopter_mainwindow.cpp
 
 HEADERS += \
+    mqttclient.h \
     quadcopter_mainwindow.h
 
 FORMS += \
+    mqttclient.ui \
     quadcopter_mainwindow.ui
 
 # Default rules for deployment.

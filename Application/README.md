@@ -12,6 +12,12 @@ Quadcopter application to-do list
     - Remove trailing zero before the number it should be like 1/50 not 01/50
     - Open a new Tab for Record and Picture for defining the path the pic should be saved
     - Update the status of each drone while switching in between
+    - QoS is always 2, and the topics are like Drone1, Drone2, and so on... .
+    - Drone 0 is home, so each drone will connect to drone0 to get a drone number
+    - About data retaining, set the disconnect message once the drone is disconnected...
+    - 
+    - 
+    - 
     - 
 - #### Important (List the works that efficient and optimized functionality of project depends on these tasks):
     - 
