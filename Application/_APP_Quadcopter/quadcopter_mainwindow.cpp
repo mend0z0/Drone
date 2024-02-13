@@ -6,9 +6,9 @@ Quadcopter_MainWindow::Quadcopter_MainWindow(QWidget *parent)
     , ui(new Ui::Quadcopter_MainWindow)
 {
     ui->setupUi(this);
-    qcopterConsole->ObjectsDisable();       //I should disable them at first, so they have a valid state.
+    //qcopterConsole->ObjectsDisable();       //I should disable them at first, so they have a valid state.
 
-    ConnectFunctions();
+    //ConnectFunctions();
 
 }
 
@@ -19,12 +19,12 @@ Quadcopter_MainWindow::~Quadcopter_MainWindow()
 
 void Quadcopter_MainWindow::MQTTConsole()
 {
-    qcopterConsole->exec();
+    //qcopterConsole->exec();
 }
 
 void Quadcopter_MainWindow::PlainTextUpdate(QString data)
 {
-    ui->plainTextEdit_DiagnosticText->appendPlainText(data);
+    ui->plainTextEdit_LogPanel->appendPlainText(data);
 }
 
 void Quadcopter_MainWindow::ConnectFunctions()

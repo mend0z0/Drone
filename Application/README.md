@@ -18,6 +18,17 @@ Quadcopter application to-do list
     - Use unsubscribe for unsubscribing... (like when you try to switch between cameras
     - Use sentMessage signal to make sure the data has been sent
     - Use publish to send the data in QByteArray
+    - LogPanel BG = Black, Text = Green (dark green), font Arial, size probably 8 or 7, adding time (hh:mm:ss)
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     - 
 - #### Important (List the works that efficient and optimized functionality of project depends on these tasks):
     - 

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Pictures/Logo/MEND0Z0 LOGO_simple.png</file>
+    </qresource>
+</RCC>

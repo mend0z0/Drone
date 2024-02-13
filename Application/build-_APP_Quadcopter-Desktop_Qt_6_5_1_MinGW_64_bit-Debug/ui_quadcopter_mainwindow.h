@@ -20,8 +20,6 @@
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
-#include <QtWidgets/QSpacerItem>
-#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -33,211 +31,217 @@ public:
     QPushButton *pushButton_DroneSelectPrevious;
     QPushButton *pushButton_DroneSelectNext;
     QGraphicsView *graphicsView_DroneCameraView;
-    QPlainTextEdit *plainTextEdit_DiagnosticText;
     QLabel *label_NumberOfDrones;
-    QPushButton *pushButton_DroneCameraRecord;
     QPushButton *pushButton_DroneCameraSnapshot;
-    QWidget *layoutWidget;
-    QGridLayout *gridLayout_4;
-    QGridLayout *gridLayout_2;
-    QPushButton *pushButton_MoveForward;
-    QSpacerItem *horizontalSpacer_2;
-    QSpacerItem *horizontalSpacer;
-    QSpacerItem *horizontalSpacer_3;
-    QPushButton *pushButton_MoveLeft;
-    QSpacerItem *verticalSpacer;
-    QSpacerItem *horizontalSpacer_9;
-    QSpacerItem *horizontalSpacer_4;
     QSlider *verticalSlider_Throttle;
+    QPushButton *pushButton_ConnectLoRaWAN;
+    QPushButton *pushButton_MoveForward;
+    QPushButton *pushButton_MoveLeft;
     QPushButton *pushButton_MoveReverse;
-    QSpacerItem *horizontalSpacer_7;
-    QSpacerItem *horizontalSpacer_6;
-    QSpacerItem *horizontalSpacer_8;
-    QSpacerItem *horizontalSpacer_5;
-    QSpacerItem *verticalSpacer_4;
     QPushButton *pushButton_MoveRight;
     QDial *dial_AdjustDirection;
-    QSpacerItem *verticalSpacer_2;
-    QGridLayout *gridLayout;
+    QWidget *layoutWidget;
+    QGridLayout *gridLayout_3;
+    QGridLayout *gridLayout_2;
     QPushButton *pushButton_ConnectServer;
-    QPushButton *pushButton_ConnectLoRaWAN;
-    QSpacerItem *verticalSpacer_3;
+    QLabel *label_MQTTTopic;
+    QLabel *label_MQTTQoS;
+    QPlainTextEdit *plainTextEdit_LogPanel;
+    QPushButton *pushButton_SaveLogFile;
+    QGraphicsView *graphicsView_Camera3;
+    QGraphicsView *graphicsView_Camera4;
+    QGraphicsView *graphicsView_Camera2;
+    QGraphicsView *graphicsView_Camera1;
+    QGraphicsView *graphicsView_Camera0;
+    QLabel *label_Logo;
     QMenuBar *menubar;
-    QStatusBar *statusbar;
 
     void setupUi(QMainWindow *Quadcopter_MainWindow)
     {
         if (Quadcopter_MainWindow->objectName().isEmpty())
             Quadcopter_MainWindow->setObjectName("Quadcopter_MainWindow");
-        Quadcopter_MainWindow->resize(1060, 673);
+        Quadcopter_MainWindow->setEnabled(true);
+        Quadcopter_MainWindow->resize(1162, 628);
+        QPalette palette;
+        QBrush brush(QColor(248, 248, 248, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush);
+        Quadcopter_MainWindow->setPalette(palette);
         centralwidget = new QWidget(Quadcopter_MainWindow);
         centralwidget->setObjectName("centralwidget");
         pushButton_DroneSelectPrevious = new QPushButton(centralwidget);
         pushButton_DroneSelectPrevious->setObjectName("pushButton_DroneSelectPrevious");
-        pushButton_DroneSelectPrevious->setGeometry(QRect(90, 430, 88, 24));
+        pushButton_DroneSelectPrevious->setGeometry(QRect(360, 440, 88, 24));
         pushButton_DroneSelectNext = new QPushButton(centralwidget);
         pushButton_DroneSelectNext->setObjectName("pushButton_DroneSelectNext");
-        pushButton_DroneSelectNext->setGeometry(QRect(447, 430, 75, 24));
+        pushButton_DroneSelectNext->setGeometry(QRect(590, 440, 75, 24));
         graphicsView_DroneCameraView = new QGraphicsView(centralwidget);
         graphicsView_DroneCameraView->setObjectName("graphicsView_DroneCameraView");
-        graphicsView_DroneCameraView->setGeometry(QRect(9, 9, 640, 480));
-        plainTextEdit_DiagnosticText = new QPlainTextEdit(centralwidget);
-        plainTextEdit_DiagnosticText->setObjectName("plainTextEdit_DiagnosticText");
-        plainTextEdit_DiagnosticText->setGeometry(QRect(9, 499, 1041, 121));
+        graphicsView_DroneCameraView->setGeometry(QRect(229, 9, 651, 481));
+        graphicsView_DroneCameraView->setFrameShape(QFrame::NoFrame);
         label_NumberOfDrones = new QLabel(centralwidget);
         label_NumberOfDrones->setObjectName("label_NumberOfDrones");
-        label_NumberOfDrones->setGeometry(QRect(19, 19, 111, 61));
-        pushButton_DroneCameraRecord = new QPushButton(centralwidget);
-        pushButton_DroneCameraRecord->setObjectName("pushButton_DroneCameraRecord");
-        pushButton_DroneCameraRecord->setGeometry(QRect(209, 430, 75, 24));
+        label_NumberOfDrones->setGeometry(QRect(230, 10, 91, 51));
         pushButton_DroneCameraSnapshot = new QPushButton(centralwidget);
         pushButton_DroneCameraSnapshot->setObjectName("pushButton_DroneCameraSnapshot");
-        pushButton_DroneCameraSnapshot->setGeometry(QRect(328, 430, 75, 24));
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(659, 9, 391, 481));
-        gridLayout_4 = new QGridLayout(layoutWidget);
-        gridLayout_4->setObjectName("gridLayout_4");
-        gridLayout_4->setContentsMargins(0, 0, 0, 0);
-        gridLayout_2 = new QGridLayout();
-        gridLayout_2->setObjectName("gridLayout_2");
-        pushButton_MoveForward = new QPushButton(layoutWidget);
-        pushButton_MoveForward->setObjectName("pushButton_MoveForward");
-        QFont font;
-        font.setFamilies({QString::fromUtf8("Calibri")});
-        font.setPointSize(14);
-        pushButton_MoveForward->setFont(font);
-
-        gridLayout_2->addWidget(pushButton_MoveForward, 1, 3, 1, 1);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_2, 5, 1, 1, 1);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer, 5, 5, 1, 1);
-
-        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_3, 1, 1, 1, 1);
-
-        pushButton_MoveLeft = new QPushButton(layoutWidget);
-        pushButton_MoveLeft->setObjectName("pushButton_MoveLeft");
-        pushButton_MoveLeft->setFont(font);
-
-        gridLayout_2->addWidget(pushButton_MoveLeft, 3, 1, 1, 1);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_2->addItem(verticalSpacer, 2, 3, 1, 1);
-
-        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_9, 3, 8, 1, 1);
-
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_4, 1, 5, 1, 1);
-
-        verticalSlider_Throttle = new QSlider(layoutWidget);
+        pushButton_DroneCameraSnapshot->setGeometry(QRect(480, 440, 75, 24));
+        verticalSlider_Throttle = new QSlider(centralwidget);
         verticalSlider_Throttle->setObjectName("verticalSlider_Throttle");
+        verticalSlider_Throttle->setEnabled(true);
+        verticalSlider_Throttle->setGeometry(QRect(822, 17, 41, 461));
         verticalSlider_Throttle->setMaximum(300);
         verticalSlider_Throttle->setOrientation(Qt::Vertical);
         verticalSlider_Throttle->setInvertedAppearance(false);
         verticalSlider_Throttle->setInvertedControls(false);
-        verticalSlider_Throttle->setTickPosition(QSlider::TicksAbove);
+        verticalSlider_Throttle->setTickPosition(QSlider::TicksBothSides);
         verticalSlider_Throttle->setTickInterval(10);
-
-        gridLayout_2->addWidget(verticalSlider_Throttle, 1, 7, 6, 1);
-
-        pushButton_MoveReverse = new QPushButton(layoutWidget);
+        pushButton_ConnectLoRaWAN = new QPushButton(centralwidget);
+        pushButton_ConnectLoRaWAN->setObjectName("pushButton_ConnectLoRaWAN");
+        pushButton_ConnectLoRaWAN->setGeometry(QRect(900, 10, 209, 31));
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Calibri Light")});
+        font.setPointSize(14);
+        pushButton_ConnectLoRaWAN->setFont(font);
+        pushButton_MoveForward = new QPushButton(centralwidget);
+        pushButton_MoveForward->setObjectName("pushButton_MoveForward");
+        pushButton_MoveForward->setGeometry(QRect(970, 172, 75, 31));
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Calibri")});
+        font1.setPointSize(14);
+        pushButton_MoveForward->setFont(font1);
+        pushButton_MoveLeft = new QPushButton(centralwidget);
+        pushButton_MoveLeft->setObjectName("pushButton_MoveLeft");
+        pushButton_MoveLeft->setGeometry(QRect(888, 244, 75, 31));
+        pushButton_MoveLeft->setFont(font1);
+        pushButton_MoveReverse = new QPushButton(centralwidget);
         pushButton_MoveReverse->setObjectName("pushButton_MoveReverse");
-        pushButton_MoveReverse->setFont(font);
-
-        gridLayout_2->addWidget(pushButton_MoveReverse, 5, 3, 1, 1);
-
-        horizontalSpacer_7 = new QSpacerItem(20, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_7, 3, 2, 1, 1);
-
-        horizontalSpacer_6 = new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_6, 3, 6, 1, 1);
-
-        horizontalSpacer_8 = new QSpacerItem(20, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_8, 3, 4, 1, 1);
-
-        horizontalSpacer_5 = new QSpacerItem(20, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_5, 3, 0, 1, 1);
-
-        verticalSpacer_4 = new QSpacerItem(20, 60, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        gridLayout_2->addItem(verticalSpacer_4, 6, 3, 1, 1);
-
-        pushButton_MoveRight = new QPushButton(layoutWidget);
+        pushButton_MoveReverse->setGeometry(QRect(970, 317, 75, 31));
+        pushButton_MoveReverse->setFont(font1);
+        pushButton_MoveRight = new QPushButton(centralwidget);
         pushButton_MoveRight->setObjectName("pushButton_MoveRight");
-        pushButton_MoveRight->setFont(font);
-
-        gridLayout_2->addWidget(pushButton_MoveRight, 3, 5, 1, 1);
-
-        dial_AdjustDirection = new QDial(layoutWidget);
+        pushButton_MoveRight->setGeometry(QRect(1077, 244, 75, 31));
+        pushButton_MoveRight->setFont(font1);
+        dial_AdjustDirection = new QDial(centralwidget);
         dial_AdjustDirection->setObjectName("dial_AdjustDirection");
+        dial_AdjustDirection->setGeometry(QRect(970, 210, 100, 100));
         dial_AdjustDirection->setMaximum(360);
         dial_AdjustDirection->setSingleStep(10);
         dial_AdjustDirection->setValue(180);
         dial_AdjustDirection->setTracking(true);
         dial_AdjustDirection->setWrapping(true);
         dial_AdjustDirection->setNotchesVisible(true);
-
-        gridLayout_2->addWidget(dial_AdjustDirection, 3, 3, 1, 1);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout_2->addItem(verticalSpacer_2, 4, 3, 1, 1);
-
-
-        gridLayout_4->addLayout(gridLayout_2, 2, 0, 1, 1);
-
-        gridLayout = new QGridLayout();
-        gridLayout->setObjectName("gridLayout");
+        layoutWidget = new QWidget(centralwidget);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(10, 10, 211, 591));
+        gridLayout_3 = new QGridLayout(layoutWidget);
+        gridLayout_3->setObjectName("gridLayout_3");
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        gridLayout_2 = new QGridLayout();
+        gridLayout_2->setObjectName("gridLayout_2");
         pushButton_ConnectServer = new QPushButton(layoutWidget);
         pushButton_ConnectServer->setObjectName("pushButton_ConnectServer");
         pushButton_ConnectServer->setFont(font);
 
-        gridLayout->addWidget(pushButton_ConnectServer, 0, 0, 1, 1);
+        gridLayout_2->addWidget(pushButton_ConnectServer, 0, 0, 1, 1);
 
-        pushButton_ConnectLoRaWAN = new QPushButton(layoutWidget);
-        pushButton_ConnectLoRaWAN->setObjectName("pushButton_ConnectLoRaWAN");
-        pushButton_ConnectLoRaWAN->setFont(font);
+        label_MQTTTopic = new QLabel(layoutWidget);
+        label_MQTTTopic->setObjectName("label_MQTTTopic");
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Calibri Light")});
+        label_MQTTTopic->setFont(font2);
 
-        gridLayout->addWidget(pushButton_ConnectLoRaWAN, 0, 1, 1, 1);
+        gridLayout_2->addWidget(label_MQTTTopic, 1, 0, 1, 1);
+
+        label_MQTTQoS = new QLabel(layoutWidget);
+        label_MQTTQoS->setObjectName("label_MQTTQoS");
+        label_MQTTQoS->setFont(font2);
+
+        gridLayout_2->addWidget(label_MQTTQoS, 2, 0, 1, 1);
 
 
-        gridLayout_4->addLayout(gridLayout, 0, 0, 1, 1);
+        gridLayout_3->addLayout(gridLayout_2, 0, 0, 1, 1);
 
-        verticalSpacer_3 = new QSpacerItem(40, 120, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        plainTextEdit_LogPanel = new QPlainTextEdit(layoutWidget);
+        plainTextEdit_LogPanel->setObjectName("plainTextEdit_LogPanel");
+        plainTextEdit_LogPanel->setFrameShape(QFrame::NoFrame);
+        plainTextEdit_LogPanel->setFrameShadow(QFrame::Sunken);
+        plainTextEdit_LogPanel->setTabChangesFocus(false);
 
-        gridLayout_4->addItem(verticalSpacer_3, 1, 0, 1, 1);
+        gridLayout_3->addWidget(plainTextEdit_LogPanel, 1, 0, 1, 1);
 
+        pushButton_SaveLogFile = new QPushButton(layoutWidget);
+        pushButton_SaveLogFile->setObjectName("pushButton_SaveLogFile");
+        pushButton_SaveLogFile->setFont(font);
+
+        gridLayout_3->addWidget(pushButton_SaveLogFile, 2, 0, 1, 1);
+
+        graphicsView_Camera3 = new QGraphicsView(centralwidget);
+        graphicsView_Camera3->setObjectName("graphicsView_Camera3");
+        graphicsView_Camera3->setGeometry(QRect(620, 500, 128, 96));
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(graphicsView_Camera3->sizePolicy().hasHeightForWidth());
+        graphicsView_Camera3->setSizePolicy(sizePolicy);
+        graphicsView_Camera3->setFrameShape(QFrame::NoFrame);
+        graphicsView_Camera4 = new QGraphicsView(centralwidget);
+        graphicsView_Camera4->setObjectName("graphicsView_Camera4");
+        graphicsView_Camera4->setGeometry(QRect(750, 500, 128, 96));
+        sizePolicy.setHeightForWidth(graphicsView_Camera4->sizePolicy().hasHeightForWidth());
+        graphicsView_Camera4->setSizePolicy(sizePolicy);
+        graphicsView_Camera4->setFrameShape(QFrame::NoFrame);
+        graphicsView_Camera2 = new QGraphicsView(centralwidget);
+        graphicsView_Camera2->setObjectName("graphicsView_Camera2");
+        graphicsView_Camera2->setGeometry(QRect(490, 500, 128, 96));
+        sizePolicy.setHeightForWidth(graphicsView_Camera2->sizePolicy().hasHeightForWidth());
+        graphicsView_Camera2->setSizePolicy(sizePolicy);
+        graphicsView_Camera2->setFrameShape(QFrame::NoFrame);
+        graphicsView_Camera1 = new QGraphicsView(centralwidget);
+        graphicsView_Camera1->setObjectName("graphicsView_Camera1");
+        graphicsView_Camera1->setEnabled(true);
+        graphicsView_Camera1->setGeometry(QRect(360, 500, 128, 96));
+        sizePolicy.setHeightForWidth(graphicsView_Camera1->sizePolicy().hasHeightForWidth());
+        graphicsView_Camera1->setSizePolicy(sizePolicy);
+        graphicsView_Camera1->setFrameShape(QFrame::NoFrame);
+        graphicsView_Camera0 = new QGraphicsView(centralwidget);
+        graphicsView_Camera0->setObjectName("graphicsView_Camera0");
+        graphicsView_Camera0->setGeometry(QRect(230, 500, 128, 96));
+        sizePolicy.setHeightForWidth(graphicsView_Camera0->sizePolicy().hasHeightForWidth());
+        graphicsView_Camera0->setSizePolicy(sizePolicy);
+        graphicsView_Camera0->setFrameShape(QFrame::NoFrame);
+        graphicsView_Camera0->setFrameShadow(QFrame::Plain);
+        label_Logo = new QLabel(centralwidget);
+        label_Logo->setObjectName("label_Logo");
+        label_Logo->setGeometry(QRect(950, 500, 131, 91));
+        label_Logo->setPixmap(QPixmap(QString::fromUtf8(":/Pictures/Logo/MEND0Z0 LOGO_simple.png")));
+        label_Logo->setScaledContents(true);
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
+        graphicsView_Camera3->raise();
+        graphicsView_Camera4->raise();
+        graphicsView_Camera2->raise();
+        graphicsView_Camera1->raise();
+        graphicsView_Camera0->raise();
+        pushButton_MoveForward->raise();
+        pushButton_MoveLeft->raise();
+        pushButton_MoveReverse->raise();
+        pushButton_MoveRight->raise();
+        dial_AdjustDirection->raise();
         layoutWidget->raise();
         graphicsView_DroneCameraView->raise();
         pushButton_DroneSelectPrevious->raise();
         pushButton_DroneSelectNext->raise();
-        plainTextEdit_DiagnosticText->raise();
         label_NumberOfDrones->raise();
-        pushButton_DroneCameraRecord->raise();
         pushButton_DroneCameraSnapshot->raise();
+        verticalSlider_Throttle->raise();
+        pushButton_ConnectLoRaWAN->raise();
+        label_Logo->raise();
         menubar = new QMenuBar(Quadcopter_MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1060, 22));
+        menubar->setGeometry(QRect(0, 0, 1162, 22));
         Quadcopter_MainWindow->setMenuBar(menubar);
-        statusbar = new QStatusBar(Quadcopter_MainWindow);
-        statusbar->setObjectName("statusbar");
-        Quadcopter_MainWindow->setStatusBar(statusbar);
 
         retranslateUi(Quadcopter_MainWindow);
 
@@ -249,15 +253,18 @@ public:
         Quadcopter_MainWindow->setWindowTitle(QCoreApplication::translate("Quadcopter_MainWindow", "Quadcopter_MainWindow", nullptr));
         pushButton_DroneSelectPrevious->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Previous Drone", nullptr));
         pushButton_DroneSelectNext->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Next Drone", nullptr));
-        label_NumberOfDrones->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\">00/00</span></p></body></html>", nullptr));
-        pushButton_DroneCameraRecord->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Record", nullptr));
+        label_NumberOfDrones->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:24pt;\">--/--</span></p></body></html>", nullptr));
         pushButton_DroneCameraSnapshot->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Picture", nullptr));
+        pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Connect LoRaWAN", nullptr));
         pushButton_MoveForward->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Forward", nullptr));
         pushButton_MoveLeft->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Left", nullptr));
         pushButton_MoveReverse->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Reverse", nullptr));
         pushButton_MoveRight->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Right", nullptr));
         pushButton_ConnectServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Connect Server", nullptr));
-        pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Connect LoRaWAN", nullptr));
+        label_MQTTTopic->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:16pt;\">  Topic: </span></p></body></html>", nullptr));
+        label_MQTTQoS->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:16pt;\"> QoS:</span></p></body></html>", nullptr));
+        pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
+        label_Logo->setText(QString());
     } // retranslateUi
 
 };
