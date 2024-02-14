@@ -110,7 +110,15 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_Pictures.cpp
 release/qrc_Pictures.cpp: ../_APP_Quadcopter/Pictures.qrc \
 		C:/Qt/6.5.1/mingw_64/bin/rcc.exe \
-		../Pictures/Logo/MEND0Z0\ LOGO_simple.png
+		../Pictures/Disconnected\ Camera\ BG\ Picture.jpg \
+		../Pictures/TV\ noise.png \
+		../Pictures/Logo/MEND0Z0\ LOGO_simple.png \
+		../Pictures/Icons/Circle_Empty.png \
+		../Pictures/Icons/CameraPrevious.png \
+		../Pictures/Icons/Compass.png \
+		../Pictures/Icons/CameraNext.png \
+		../Pictures/Icons/Circle_FilledGreen.png \
+		../Pictures/Icons/CameraShutter.png
 	C:\Qt\6.5.1\mingw_64\bin\rcc.exe -name Pictures --no-zstd ..\_APP_Quadcopter\Pictures.qrc -o release\qrc_Pictures.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -1296,9 +1304,6 @@ release/quadcopter_mainwindow.o: ../_APP_Quadcopter/quadcopter_mainwindow.cpp ..
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qlabel.h \
 		C:/Qt/6.5.1/mingw_64/include/QtGui/qpicture.h \
 		C:/Qt/6.5.1/mingw_64/include/QtGui/qtextdocument.h \
-		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QMenuBar \
-		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qmenubar.h \
-		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qmenu.h \
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QPlainTextEdit \
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qplaintextedit.h \
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qtextedit.h \
@@ -1314,6 +1319,7 @@ release/quadcopter_mainwindow.o: ../_APP_Quadcopter/quadcopter_mainwindow.cpp ..
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qabstractbutton.h \
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QSlider \
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QSpacerItem \
 		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\quadcopter_mainwindow.o ..\_APP_Quadcopter\quadcopter_mainwindow.cpp
 
