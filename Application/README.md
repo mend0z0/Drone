@@ -20,7 +20,7 @@ Quadcopter application to-do list
     - Use publish to send the data in QByteArray
     - LogPanel BG = Black, Text = Green (dark green), font Arial, size probably 8 or 7, adding time (hh:mm:ss)
     - LoRaWAN should be configured first, the SSID and password for quadcopter will be provided via LoRa connection
-    - 
+    - Ping the server ip first so to make sure it responds
     - 
     - 
     - 
