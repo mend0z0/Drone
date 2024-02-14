@@ -1,0 +1,11 @@
+#Configuration fiel for mend0z0_server
+
+#The password for this username is QCOPTER_MEND0Z0
+user QCOPTER_MEND0Z0
+
+#To be able to connect to this server, you need to go through authentication, the username and pass is mentioned before in this document
+allow_anonymos false
+
+#Port 3667 for Information Exchange
+#Port 1883 is for MQTT
+listener 3667
