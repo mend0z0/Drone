@@ -7,9 +7,10 @@
 #include <QByteArray>
 #include <QMessageBox>
 #include <QMqttClient>
+#include <QMqttMessage>
 
-#define MQTT_DEFAULT_HOSTNAME       "qcopter.mosquitto.org"
-#define MQTT_DEFAULT_PORT           1883
+#define MQTT_DEFAULT_HOSTNAME       "192.168.0.148"
+#define MQTT_DEFAULT_PORT           3667
 #define MQTT_DEFAULT_USERNAME       "QCOPTER_MEND0Z0"
 #define MQTT_DEFAULT_PASSWORD       "QCOPTER_MEND0Z0"
 #define MQTT_DEFAULT_TOPIC          "QCOPTER0"
@@ -30,20 +31,26 @@ class MQTTClient : public QDialog
 public:
     explicit MQTTClient(QWidget *parent = nullptr);
     ~MQTTClient();
+    void ObjectsInit( void );
 
-    void ObjectsDisable( void );
+Q_SIGNALS:
+    void connected();
+    void disconnected();
+    void messageReceived(const QByteArray &message, const QMqttTopicName &topic = QMqttTopicName());
+    void messageStatusChanged(qint32 id, QMqtt::MessageStatus s, const QMqttMessageStatusProperties &properties);
+    void messageSent(qint32 id);
+    void pingResponseReceived();
+    void brokerSessionRestored();
 
 signals:
     void QCopter_Connected( void );
     void QCopter_Disconnected( void );
-    void QCopter_NewMessage( QString data );
 
 private slots:
     void mqttConnect( void );
     void mqttPanelClose( void );
     void mqttDisconnect( void );
     void mqttSubscribeDefault( void );
-    void mqttReceivedMessages( QMqttMessage &msg );
 
 public slots:
     void mqttSubscribe( uint8_t topicIndex );
@@ -63,10 +70,11 @@ private:
         QString messages;                       //This will hold any messages that come in.
     }mqtt_client;
 
-    QMqttClient *qcopter_mqttClient;
+    QMqttClient *qcopter_mqttClient = new QMqttClient(this);;
 
-    void ObjectsInit( void );
+    void ParamInit( void );
     void ObjectsEnable( void );
+    void ObjectsDisable( void );
     void ConnectFunctions( void );
     void DisonnectFunctions( void );
 };

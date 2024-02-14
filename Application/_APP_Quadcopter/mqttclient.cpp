@@ -6,8 +6,7 @@ MQTTClient::MQTTClient(QWidget *parent) :
     ui(new Ui::MQTTClient)
 {
     ui->setupUi(this);
-
-    ObjectsInit();  //if this UI appears it means the application is already disconnected and now we should connect again
+    ParamInit();
 }
 
 MQTTClient::~MQTTClient()
@@ -17,28 +16,38 @@ MQTTClient::~MQTTClient()
 
 void MQTTClient::mqttConnect()
 {
-    //going through setting parameters and trying to connect to the mosquito server
-    qcopter_mqttClient = new QMqttClient(this);
-    qcopter_mqttClient->setHostname(ui->label_mqttHostname->text());
-    qcopter_mqttClient->setPort(static_cast<quint16>(ui->lineEdit_mqttPort->text().toInt()));
-    qcopter_mqttClient->setUsername(ui->lineEdit_mqttUsername->text());
-    qcopter_mqttClient->setPassword(ui->lineEdit_mqttPassword->text());
-    qcopter_mqttClient->connectToHost();
-
     ObjectsDisable();
+
+    //going through setting parameters and trying to connect to the mosquito server
+
+    qDebug() << "1- HostName: " << ui->lineEdit_mqttHostName->text();
+    qcopter_mqttClient->setHostname(ui->lineEdit_mqttHostName->text());
+
+    qDebug() << "2- Port: " << static_cast<quint16>(ui->lineEdit_mqttPort->text().toInt());
+    qcopter_mqttClient->setPort(static_cast<quint16>(ui->lineEdit_mqttPort->text().toInt()));
+
+    qDebug() << "3- Username: " << ui->lineEdit_mqttUsername->text();
+    qcopter_mqttClient->setUsername(ui->lineEdit_mqttUsername->text());
+
+    qDebug() << "4- Password: " << ui->lineEdit_mqttPassword->text();
+    qcopter_mqttClient->setPassword(ui->lineEdit_mqttPassword->text());
+
+    qcopter_mqttClient->connectToHost();
 }
 
 void MQTTClient::mqttPanelClose()
 {
+    mqttDisconnect();
     ObjectsDisable();
+    DisonnectFunctions();
     close();
 }
 
 void MQTTClient::mqttDisconnect()
 {
     //This here will disconnect mqtt only when it's been connected before!
-    DisonnectFunctions();
-    emit QCopter_Disconnected();
+    ObjectsEnable();
+
 }
 
 void MQTTClient::mqttSubscribeDefault()
@@ -51,15 +60,7 @@ void MQTTClient::mqttSubscribeDefault()
         return;
     }
     //if everything went well we emit connect signal and will close the page.
-    emit QCopter_Connected();
     mqttPanelClose();
-}
-
-void MQTTClient::mqttReceivedMessages(QMqttMessage &msg)
-{
-    mqtt_client.messages.clear();
-    mqtt_client.messages.append(msg.payload());
-    emit QCopter_NewMessage(mqtt_client.messages);
 }
 
 void MQTTClient::mqttSubscribe(uint8_t topicIndex)
@@ -75,7 +76,7 @@ void MQTTClient::mqttSubscribe(uint8_t topicIndex)
     // I need to figure out how to notify if a drone is disconnected, there are some ways of that retaining thing, but I'll check later about it.
 }
 
-void MQTTClient::ObjectsInit(void)
+void MQTTClient::ParamInit()
 {
     mqtt_client.hostname.append(MQTT_DEFAULT_HOSTNAME);
     mqtt_client.port = MQTT_DEFAULT_PORT;
@@ -89,10 +90,25 @@ void MQTTClient::ObjectsInit(void)
     ui->lineEdit_mqttPort->setText(QString::number(mqtt_client.port));
     ui->lineEdit_mqttUsername->setText(mqtt_client.username);
     ui->lineEdit_mqttPassword->setText(mqtt_client.password);
+}
+
+void MQTTClient::ObjectsInit(void)
+{
+    mqtt_client.hostname.clear();
+    mqtt_client.hostname.append(ui->lineEdit_mqttHostName->text());
+
+    mqtt_client.port = static_cast<quint16>(ui->lineEdit_mqttPort->text().toInt());
+
+    mqtt_client.username.clear();
+    mqtt_client.username.append(ui->lineEdit_mqttUsername->text());
+
+    mqtt_client.password.clear();
+    mqtt_client.password.append(ui->lineEdit_mqttPassword->text());
 
     //Change the color of edit lines to gray..
-    ConnectFunctions();
+
     ObjectsEnable();
+    ConnectFunctions();
 }
 
 void MQTTClient::ObjectsEnable()
@@ -101,6 +117,8 @@ void MQTTClient::ObjectsEnable()
     ui->lineEdit_mqttPort->setEnabled(true);
     ui->lineEdit_mqttUsername->setEnabled(true);
     ui->lineEdit_mqttPassword->setEnabled(true);
+
+    ui->pushButton_mqttConnect->setEnabled(true);
 }
 
 void MQTTClient::ObjectsDisable()
@@ -109,15 +127,16 @@ void MQTTClient::ObjectsDisable()
     ui->lineEdit_mqttPort->setDisabled(true);
     ui->lineEdit_mqttUsername->setDisabled(true);
     ui->lineEdit_mqttPassword->setDisabled(true);
+
+    ui->pushButton_mqttConnect->setDisabled(true);
 }
 
 void MQTTClient::ConnectFunctions()
 {
     connect(ui->pushButton_mqttConnect, SIGNAL(clicked(bool)), this, SLOT(mqttConnect()));
     connect(ui->pushButton_mqttCancel, SIGNAL(clicked(bool)), this, SLOT(mqttPanelClose()));
-    connect(qcopter_mqttClient, SIGNAL(connected()), this, SLOT(mqttSubscribe()));
+    connect(qcopter_mqttClient, SIGNAL(connected()), this, SLOT(mqttSubscribeDefault()));
     connect(qcopter_mqttClient, SIGNAL(disconnected()), this, SLOT(mqttDisconnect()));
-    connect(qcopter_mqttClient, SIGNAL(messageReceived(QByteArray,QMqttTopicName)), this, SLOT(mqttReceivedMessages(QMqttMessage)));
 }
 
 void MQTTClient::DisonnectFunctions()

@@ -27,7 +27,7 @@ public:
     QGridLayout *gridLayout_5;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout;
-    QLabel *label_mqttHostname;
+    QLabel *label_mqttHostName;
     QLabel *label_mqttPort;
     QLabel *label_mqttUsername;
     QLabel *label_mqttPassword;
@@ -55,10 +55,10 @@ public:
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout = new QGridLayout();
         gridLayout->setObjectName("gridLayout");
-        label_mqttHostname = new QLabel(layoutWidget);
-        label_mqttHostname->setObjectName("label_mqttHostname");
+        label_mqttHostName = new QLabel(layoutWidget);
+        label_mqttHostName->setObjectName("label_mqttHostName");
 
-        gridLayout->addWidget(label_mqttHostname, 0, 0, 1, 1);
+        gridLayout->addWidget(label_mqttHostName, 0, 0, 1, 1);
 
         label_mqttPort = new QLabel(layoutWidget);
         label_mqttPort->setObjectName("label_mqttPort");
@@ -97,6 +97,7 @@ public:
 
         lineEdit_mqttPassword = new QLineEdit(layoutWidget);
         lineEdit_mqttPassword->setObjectName("lineEdit_mqttPassword");
+        lineEdit_mqttPassword->setEchoMode(QLineEdit::Password);
 
         gridLayout_2->addWidget(lineEdit_mqttPassword, 3, 0, 1, 1);
 
@@ -130,7 +131,7 @@ public:
     void retranslateUi(QDialog *MQTTClient)
     {
         MQTTClient->setWindowTitle(QCoreApplication::translate("MQTTClient", "Dialog", nullptr));
-        label_mqttHostname->setText(QCoreApplication::translate("MQTTClient", "Hostname: ", nullptr));
+        label_mqttHostName->setText(QCoreApplication::translate("MQTTClient", "Hostname: ", nullptr));
         label_mqttPort->setText(QCoreApplication::translate("MQTTClient", "Port: ", nullptr));
         label_mqttUsername->setText(QCoreApplication::translate("MQTTClient", "Username:", nullptr));
         label_mqttPassword->setText(QCoreApplication::translate("MQTTClient", "Password:", nullptr));

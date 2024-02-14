@@ -28,7 +28,7 @@
       <item row="0" column="0">
        <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="0">
-         <widget class="QLabel" name="label_mqttHostname">
+         <widget class="QLabel" name="label_mqttHostName">
           <property name="text">
            <string>Hostname: </string>
           </property>
@@ -69,7 +69,11 @@
          <widget class="QLineEdit" name="lineEdit_mqttUsername"/>
         </item>
         <item row="3" column="0">
-         <widget class="QLineEdit" name="lineEdit_mqttPassword"/>
+         <widget class="QLineEdit" name="lineEdit_mqttPassword">
+          <property name="echoMode">
+           <enum>QLineEdit::Password</enum>
+          </property>
+         </widget>
         </item>
        </layout>
       </item>

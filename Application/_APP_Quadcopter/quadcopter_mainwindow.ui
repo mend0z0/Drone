@@ -135,7 +135,7 @@
       <x>340</x>
       <y>20</y>
       <width>71</width>
-      <height>61</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="font">
@@ -619,7 +619,7 @@ background-color: rgb(209, 209, 209);</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Camera 1&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_Camera1_2">
+   <widget class="QLabel" name="label_Camera2">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -635,7 +635,7 @@ background-color: rgb(209, 209, 209);</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Camera 2&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_Camera1_3">
+   <widget class="QLabel" name="label_Camera3">
     <property name="geometry">
      <rect>
       <x>590</x>
@@ -651,7 +651,7 @@ background-color: rgb(209, 209, 209);</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Camera 3&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_Camera1_4">
+   <widget class="QLabel" name="label_Camera4">
     <property name="geometry">
      <rect>
       <x>720</x>
@@ -667,7 +667,7 @@ background-color: rgb(209, 209, 209);</string>
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Camera 4&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_Camera1_5">
+   <widget class="QLabel" name="label_Camera5">
     <property name="geometry">
      <rect>
       <x>850</x>
@@ -2395,10 +2395,10 @@ background-color: rgb(209, 209, 209);</string>
    </widget>
    <zorder>label_Compass</zorder>
    <zorder>pushButton_MoveForward</zorder>
-   <zorder>label_Camera1_5</zorder>
-   <zorder>label_Camera1_4</zorder>
-   <zorder>label_Camera1_3</zorder>
-   <zorder>label_Camera1_2</zorder>
+   <zorder>label_Camera5</zorder>
+   <zorder>label_Camera4</zorder>
+   <zorder>label_Camera3</zorder>
+   <zorder>label_Camera2</zorder>
    <zorder>label_Camera1</zorder>
    <zorder>graphicsView_DroneCameraView</zorder>
    <zorder>graphicsView_Camera3</zorder>

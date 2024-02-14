@@ -2,7 +2,13 @@
 #define QUADCOPTER_MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QDebug>
+#include <QString>
+#include <QByteArray>
+#include <QDateTime>
+#include <QFont>
+#include <QPalette>
+#include <QColor>
 #include <mqttclient.h>
 
 QT_BEGIN_NAMESPACE
@@ -19,7 +25,7 @@ public:
 
 private slots:
     void MQTTConsole(void);
-    void PlainTextUpdate( QString data );
+    void MQTTReceivedMsg( QByteArray data, QMqttTopicName topic);
 
 private:
     Ui::Quadcopter_MainWindow *ui;
