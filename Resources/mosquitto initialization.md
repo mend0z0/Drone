@@ -3,8 +3,11 @@
 
 
 
-1- sudo apt update && sudo apt upgrade
-2- 
+  1- sudo apt update && sudo apt upgrade
+  2- sudo apt install mosquitto
+
+  1- sudo apt remove mosquitto  --> remove mosquitto but conf wont be removed
+  1- sudo apt purge mosquitto    --> remove mosquitto completely
 
 
 
