@@ -5,7 +5,7 @@ A brief description of this todo list belongs to what project
 ## Tasks
 
 - #### MUST to DO (List the works that proper working of project depends on these tasks):
-    - 
+    - Increase the thickness to minimum 5 mm. edges can be done with 2mm chamfer.
     -
     - 
 - #### Important (List the works that efficient and optimized functionality of project depends on these tasks):
