@@ -6,99 +6,125 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>370</width>
-    <height>193</height>
+    <width>380</width>
+    <height>199</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QLabel" name="label_gif">
+   <property name="geometry">
+    <rect>
+     <x>127</x>
+     <y>20</y>
+     <width>110</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>351</width>
-     <height>171</height>
+     <x>20</x>
+     <y>20</y>
+     <width>341</width>
+     <height>111</height>
     </rect>
    </property>
-   <layout class="QGridLayout" name="gridLayout_5">
+   <layout class="QGridLayout" name="gridLayout_3">
     <item row="0" column="0">
-     <layout class="QGridLayout" name="gridLayout_3">
+     <layout class="QGridLayout" name="gridLayout">
       <item row="0" column="0">
-       <layout class="QGridLayout" name="gridLayout">
-        <item row="0" column="0">
-         <widget class="QLabel" name="label_mqttHostName">
-          <property name="text">
-           <string>Hostname: </string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_mqttPort">
-          <property name="text">
-           <string>Port: </string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_mqttUsername">
-          <property name="text">
-           <string>Username:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QLabel" name="label_mqttPassword">
-          <property name="text">
-           <string>Password:</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+       <widget class="QLabel" name="label_mqttHostName">
+        <property name="text">
+         <string>Hostname: </string>
+        </property>
+       </widget>
       </item>
-      <item row="0" column="1">
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <widget class="QLineEdit" name="lineEdit_mqttHostName"/>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLineEdit" name="lineEdit_mqttPort"/>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLineEdit" name="lineEdit_mqttUsername"/>
-        </item>
-        <item row="3" column="0">
-         <widget class="QLineEdit" name="lineEdit_mqttPassword">
-          <property name="echoMode">
-           <enum>QLineEdit::Password</enum>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_mqttPort">
+        <property name="text">
+         <string>Port: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_mqttUsername">
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_mqttPassword">
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
-    <item row="1" column="0">
-     <layout class="QGridLayout" name="gridLayout_4">
-      <item row="0" column="0">
-       <widget class="QPushButton" name="pushButton_mqttCancel">
-        <property name="text">
-         <string>Cancel</string>
+    <item row="0" column="1">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEdit_mqttUsername"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLineEdit" name="lineEdit_mqttPassword">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
         </property>
        </widget>
       </item>
-      <item row="0" column="1">
-       <widget class="QPushButton" name="pushButton_mqttConnect">
-        <property name="text">
-         <string>Connect</string>
-        </property>
-       </widget>
+      <item row="0" column="0">
+       <widget class="QLineEdit" name="lineEdit_mqttHostName"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLineEdit" name="lineEdit_mqttPort"/>
       </item>
      </layout>
     </item>
    </layout>
   </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>341</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_mqttCancel">
+      <property name="text">
+       <string>Close</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_mqttConnect">
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>label_gif</zorder>
+  <zorder>layoutWidget</zorder>
  </widget>
  <resources/>
  <connections/>

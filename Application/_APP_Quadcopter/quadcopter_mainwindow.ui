@@ -68,6 +68,9 @@
   <property name="windowTitle">
    <string>Quadcopter_MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton_DroneSelectPrevious">
     <property name="geometry">
@@ -79,7 +82,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/Pictures/Icons/CameraPrevious.png);</string>
+     <string notr="true">image: url(:/Resources/Icons/CameraPrevious.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -104,7 +107,7 @@
      </size>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/Pictures/Icons/CameraNext.png);</string>
+     <string notr="true">image: url(:/Resources/Icons/CameraNext.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -120,7 +123,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Pictures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::VLine</enum>
@@ -164,7 +167,7 @@ background-color: rgb(209, 209, 209);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/Pictures/Icons/CameraShutter.png);</string>
+     <string notr="true">image: url(:/Resources/Icons/CameraShutter.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -219,6 +222,12 @@ background-color: rgb(209, 209, 209);</string>
       <pointsize>14</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Resources/Textures/steel texture_2.jpg);</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -237,6 +246,12 @@ background-color: rgb(209, 209, 209);</string>
       <family>Calibri</family>
       <pointsize>14</pointsize>
      </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Resources/Textures/steel texture_2.jpg);</string>
     </property>
     <property name="text">
      <string/>
@@ -257,6 +272,12 @@ background-color: rgb(209, 209, 209);</string>
       <pointsize>14</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Resources/Textures/steel texture_2.jpg);</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -276,6 +297,12 @@ background-color: rgb(209, 209, 209);</string>
       <pointsize>14</pointsize>
      </font>
     </property>
+    <property name="cursor">
+     <cursorShape>OpenHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Resources/Textures/steel texture_2.jpg);</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -288,6 +315,9 @@ background-color: rgb(209, 209, 209);</string>
       <width>65</width>
       <height>65</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>CrossCursor</cursorShape>
     </property>
     <property name="styleSheet">
      <string notr="true"/>
@@ -354,6 +384,9 @@ background-color: rgb(209, 209, 209);</string>
            <family>Calibri Light</family>
            <pointsize>10</pointsize>
           </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
          </property>
          <property name="text">
           <string>Connect LoRaWAN</string>
@@ -422,7 +455,8 @@ background-color: rgb(209, 209, 209);</string>
      <item row="3" column="0">
       <widget class="QPlainTextEdit" name="plainTextEdit_LogPanel">
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(50, 50, 50);</string>
+        <string notr="true">background-color: rgb(50, 50, 50);
+color: rgb(74, 148, 0);</string>
        </property>
        <property name="frameShape">
         <enum>QFrame::StyledPanel</enum>
@@ -469,7 +503,7 @@ background-color: rgb(209, 209, 209);</string>
      </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Pictures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -494,7 +528,7 @@ background-color: rgb(209, 209, 209);</string>
      </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Pictures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -519,7 +553,7 @@ background-color: rgb(209, 209, 209);</string>
      </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Pictures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -547,7 +581,7 @@ background-color: rgb(209, 209, 209);</string>
      </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Pictures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -572,7 +606,7 @@ background-color: rgb(209, 209, 209);</string>
      </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Pictures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -590,11 +624,14 @@ background-color: rgb(209, 209, 209);</string>
       <height>91</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Logo/MEND0Z0 LOGO_simple.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Logo/MEND0Z0 LOGO_simple.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -696,7 +733,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -715,7 +752,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -734,7 +771,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -753,7 +790,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -772,7 +809,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -791,7 +828,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -810,7 +847,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -829,7 +866,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -848,7 +885,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -867,7 +904,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -886,7 +923,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -905,7 +942,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -924,7 +961,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -943,7 +980,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -962,7 +999,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -981,7 +1018,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1000,7 +1037,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1019,7 +1056,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1038,7 +1075,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1057,7 +1094,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1076,7 +1113,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1095,7 +1132,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1114,7 +1151,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1133,7 +1170,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1152,7 +1189,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1171,7 +1208,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1190,7 +1227,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1209,7 +1246,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1228,7 +1265,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1247,7 +1284,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1266,7 +1303,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1285,7 +1322,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1304,7 +1341,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1323,7 +1360,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1342,7 +1379,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1361,7 +1398,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1380,7 +1417,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1399,7 +1436,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1418,7 +1455,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1437,7 +1474,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1456,7 +1493,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1475,7 +1512,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1494,7 +1531,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1513,7 +1550,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1532,7 +1569,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1551,7 +1588,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1570,7 +1607,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1589,7 +1626,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1608,7 +1645,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1627,7 +1664,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1646,7 +1683,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1665,7 +1702,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1684,7 +1721,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1703,7 +1740,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1722,7 +1759,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1741,7 +1778,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1760,7 +1797,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1779,7 +1816,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1798,7 +1835,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1817,7 +1854,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1836,7 +1873,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1855,7 +1892,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1874,7 +1911,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1893,7 +1930,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1912,7 +1949,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1931,7 +1968,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1950,7 +1987,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1969,7 +2006,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -1988,7 +2025,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2007,7 +2044,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2022,14 +2059,11 @@ background-color: rgb(209, 209, 209);</string>
       <height>10</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/Pictures/Icons/Circle_FilledGreen.png);</string>
-    </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_FilledGreen.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2048,7 +2082,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_FilledGreen.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2067,7 +2101,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_FilledGreen.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2086,7 +2120,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_FilledGreen.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2105,7 +2139,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_FilledGreen.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2124,7 +2158,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2143,7 +2177,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2162,7 +2196,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2181,7 +2215,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2200,7 +2234,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2219,7 +2253,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2238,7 +2272,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2257,7 +2291,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2276,7 +2310,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2295,7 +2329,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2314,7 +2348,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2333,7 +2367,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2352,7 +2386,7 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Circle_Empty.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Textures/Circle_Empty.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -2387,12 +2421,13 @@ background-color: rgb(209, 209, 209);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="Pictures.qrc">:/Pictures/Icons/Compass.png</pixmap>
+     <pixmap resource="Resources.qrc">:/Resources/Icons/Compass.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
+   <zorder>pushButton_MoveLeft</zorder>
    <zorder>label_Compass</zorder>
    <zorder>pushButton_MoveForward</zorder>
    <zorder>label_Camera5</zorder>
@@ -2406,7 +2441,6 @@ background-color: rgb(209, 209, 209);</string>
    <zorder>graphicsView_Camera2</zorder>
    <zorder>graphicsView_Camera1</zorder>
    <zorder>graphicsView_Camera0</zorder>
-   <zorder>pushButton_MoveLeft</zorder>
    <zorder>pushButton_MoveReverse</zorder>
    <zorder>pushButton_MoveRight</zorder>
    <zorder>dial_AdjustDirection</zorder>
@@ -2509,7 +2543,7 @@ background-color: rgb(209, 209, 209);</string>
   </widget>
  </widget>
  <resources>
-  <include location="Pictures.qrc"/>
+  <include location="Resources.qrc"/>
  </resources>
  <connections/>
 </ui>

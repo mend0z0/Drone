@@ -8,6 +8,9 @@
 #include <QMessageBox>
 #include <QMqttClient>
 #include <QMqttMessage>
+#include <QProcess>
+#include <QPalette>
+#include <QMovie>
 
 #define MQTT_DEFAULT_HOSTNAME       "192.168.0.148"
 #define MQTT_DEFAULT_PORT           3667
@@ -43,14 +46,18 @@ Q_SIGNALS:
     void brokerSessionRestored();
 
 signals:
+    void ProcessMsgs( QByteArray data, QString topic);
     void QCopter_Connected( void );
     void QCopter_Disconnected( void );
 
 private slots:
+    void mqttParamSet( void );
     void mqttConnect( void );
     void mqttPanelClose( void );
     void mqttDisconnect( void );
     void mqttSubscribeDefault( void );
+
+    bool PingResult();
 
 public slots:
     void mqttSubscribe( uint8_t topicIndex );
@@ -70,13 +77,23 @@ private:
         QString messages;                       //This will hold any messages that come in.
     }mqtt_client;
 
-    QMqttClient *qcopter_mqttClient = new QMqttClient(this);;
+    QPalette buttonPalette;
+    QMovie  *connectionWaitGif = new QMovie(this);
+
+    QProcess *pingProcess = new QProcess();
+    QMessageBox *mqttMessageBox = new QMessageBox(this);
+    QMqttClient *qcopter_mqttClient = new QMqttClient(this);
 
     void ParamInit( void );
     void ObjectsEnable( void );
     void ObjectsDisable( void );
     void ConnectFunctions( void );
     void DisonnectFunctions( void );
+
+    void PingMQTTBroker( QString ipAddr );
+
+    void GifLoading( bool cmd );
+
 };
 
 #endif // MQTTCLIENT_H

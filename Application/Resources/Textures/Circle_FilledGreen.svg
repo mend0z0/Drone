@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg182"
+   width="106"
+   height="107"
+   viewBox="0 0 106 107"
+   sodipodi:docname="Circle_FilledGreen.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="Circle_FilledGreen.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs186">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient2980">
+      <stop
+         style="stop-color:#00ff30;stop-opacity:1;"
+         offset="0.27606177"
+         id="stop2976" />
+      <stop
+         style="stop-color:#959595;stop-opacity:1;"
+         offset="1"
+         id="stop2978" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2956"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2954" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient974">
+      <stop
+         style="stop-color:#11ef39;stop-opacity:1;"
+         offset="0.44208494"
+         id="stop970" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop972" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient974"
+       id="radialGradient976"
+       cx="53.434639"
+       cy="53.946598"
+       fx="53.434639"
+       fy="53.946598"
+       r="45.445584"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient2980"
+       id="radialGradient2982"
+       cx="53.434639"
+       cy="53.946598"
+       fx="53.434639"
+       fy="53.946598"
+       r="45.445584"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="namedview184"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.8831776"
+     inkscape:cx="54.472727"
+     inkscape:cy="46.383732"
+     inkscape:window-width="3200"
+     inkscape:window-height="1261"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g188" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g188"
+     style="fill:url(#radialGradient976);stroke:#000000;stroke-opacity:1;stroke-width:3.77952756;stroke-dasharray:none;fill-opacity:1">
+    <circle
+       style="fill:url(#radialGradient2982);fill-rule:evenodd;stroke:#000000;stroke-width:3.77952756;stroke-linecap:square;stroke-linejoin:round;paint-order:stroke fill markers;stroke-opacity:1;stroke-dasharray:none;fill-opacity:1"
+       id="path352"
+       cx="53.434639"
+       cy="53.946598"
+       r="43.55582"
+       inkscape:export-filename="Circle_FilledGreen.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

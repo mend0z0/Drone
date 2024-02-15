@@ -377,7 +377,7 @@ Makefile: ../_APP_Quadcopter/_APP_Quadcopter.pro C:/Qt/6.5.1/mingw_64/mkspecs/wi
 		C:/Qt/6.5.1/mingw_64/lib/Qt6Core.prl \
 		C:/Qt/6.5.1/mingw_64/lib/Qt6EntryPoint.prl \
 		C:/Qt/6.5.1/mingw_64/mkspecs/features/build_pass.prf \
-		../_APP_Quadcopter/Pictures.qrc
+		../_APP_Quadcopter/Resources.qrc
 	$(QMAKE) -o Makefile ..\_APP_Quadcopter\_APP_Quadcopter.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 C:/Qt/6.5.1/mingw_64/mkspecs/features/spec_pre.prf:
 C:/Qt/6.5.1/mingw_64/mkspecs/features/device_config.prf:
@@ -686,7 +686,7 @@ C:/Qt/6.5.1/mingw_64/lib/Qt6Network.prl:
 C:/Qt/6.5.1/mingw_64/lib/Qt6Core.prl:
 C:/Qt/6.5.1/mingw_64/lib/Qt6EntryPoint.prl:
 C:/Qt/6.5.1/mingw_64/mkspecs/features/build_pass.prf:
-../_APP_Quadcopter/Pictures.qrc:
+../_APP_Quadcopter/Resources.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\_APP_Quadcopter\_APP_Quadcopter.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

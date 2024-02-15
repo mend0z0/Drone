@@ -43,6 +43,7 @@ void Quadcopter_MainWindow::ConnectFunctions()
 {
     connect(ui->pushButton_ConnectServer, SIGNAL(clicked(bool)), this, SLOT(MQTTConsole()));
     connect(qcopterConsole, SIGNAL(messageReceived(QByteArray,QMqttTopicName)), this, SLOT(MQTTReceivedMsg(QByteArray,QMqttTopicName)));
+    connect(qcopterConsole, SIGNAL(ProcessMsgs(QByteArray,QString)), this, SLOT(MQTTReceivedMsg(QByteArray,QMqttTopicName)));
 
 }
 

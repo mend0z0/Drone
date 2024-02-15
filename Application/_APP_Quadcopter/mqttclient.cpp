@@ -14,13 +14,13 @@ MQTTClient::~MQTTClient()
     delete ui;
 }
 
-void MQTTClient::mqttConnect()
+void MQTTClient::mqttParamSet( void )
 {
     ObjectsDisable();
 
     //going through setting parameters and trying to connect to the mosquito server
 
-    qDebug() << "1- HostName: " << ui->lineEdit_mqttHostName->text();
+    qDebug() << "1- HostName: " << ui->lineEdit_mqttHostName->text().trimmed();
     qcopter_mqttClient->setHostname(ui->lineEdit_mqttHostName->text());
 
     qDebug() << "2- Port: " << static_cast<quint16>(ui->lineEdit_mqttPort->text().toInt());
@@ -32,11 +32,18 @@ void MQTTClient::mqttConnect()
     qDebug() << "4- Password: " << ui->lineEdit_mqttPassword->text();
     qcopter_mqttClient->setPassword(ui->lineEdit_mqttPassword->text());
 
-    qcopter_mqttClient->connectToHost();
+    //pinging the host to see if it's existed in the network.
+    PingMQTTBroker( ui->lineEdit_mqttHostName->text());
+}
+
+void MQTTClient::mqttConnect()
+{
+
 }
 
 void MQTTClient::mqttPanelClose()
 {
+    pingProcess->kill();
     mqttDisconnect();
     ObjectsDisable();
     DisonnectFunctions();
@@ -52,15 +59,47 @@ void MQTTClient::mqttDisconnect()
 
 void MQTTClient::mqttSubscribeDefault()
 {
+
     //now we need to subscribe
     auto subscription = qcopter_mqttClient->subscribe( mqtt_client.topic, mqtt_client.QoS);
 
     if(!subscription){
-        QMessageBox::critical(this, "Error", QString::number(qcopter_mqttClient->error()));
+        mqttMessageBox->critical(this, "Error", QString::number(qcopter_mqttClient->error()));
+        mqttMessageBox->exec();
         return;
+    }
+    else{
+        ui->pushButton_mqttConnect->setText("Connected");
+        buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::green);
+        ui->pushButton_mqttConnect->setPalette(buttonPalette);
     }
     //if everything went well we emit connect signal and will close the page.
     mqttPanelClose();
+}
+
+bool MQTTClient::PingResult()
+{
+    QByteArray pingResults;
+
+    pingResults.append(pingProcess->readAll());
+    pingProcess->terminate();
+
+    GifLoading(0);
+
+    qDebug().noquote() << pingResults;
+
+    if(pingResults.contains("Approximate round trip times in milli-seconds:"))
+    {
+        qDebug() << "YESSSS....";
+        //if we could ping the hostIP then we send the connect to host, otherwise we display an error
+        qcopter_mqttClient->connectToHost();
+    }
+    else if(pingResults.contains("Destination host unreachable."))
+    {
+        mqttMessageBox->critical(this, "Error", "The Selected IP Broker is Unreachable \r\n");
+        mqttMessageBox->exec();
+        ObjectsEnable();            //opening the boxes for another try
+    }
 }
 
 void MQTTClient::mqttSubscribe(uint8_t topicIndex)
@@ -105,7 +144,15 @@ void MQTTClient::ObjectsInit(void)
     mqtt_client.password.clear();
     mqtt_client.password.append(ui->lineEdit_mqttPassword->text());
 
-    //Change the color of edit lines to gray..
+    ui->pushButton_mqttConnect->setText("Connect");
+    buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::white);
+    ui->pushButton_mqttConnect->setPalette(buttonPalette);
+
+    connectionWaitGif->setFileName("D:/Projects/STP/Quadcopter/Application/Resources/Gifs/connectionLoading.gif");
+    connectionWaitGif->setFormat("gif");
+    qDebug() << connectionWaitGif->isValid();
+    ui->label_gif->setMovie(connectionWaitGif);
+    ui->label_gif->setVisible(false);
 
     ObjectsEnable();
     ConnectFunctions();
@@ -133,10 +180,11 @@ void MQTTClient::ObjectsDisable()
 
 void MQTTClient::ConnectFunctions()
 {
-    connect(ui->pushButton_mqttConnect, SIGNAL(clicked(bool)), this, SLOT(mqttConnect()));
+    connect(ui->pushButton_mqttConnect, SIGNAL(clicked(bool)), this, SLOT(mqttParamSet()));
     connect(ui->pushButton_mqttCancel, SIGNAL(clicked(bool)), this, SLOT(mqttPanelClose()));
     connect(qcopter_mqttClient, SIGNAL(connected()), this, SLOT(mqttSubscribeDefault()));
     connect(qcopter_mqttClient, SIGNAL(disconnected()), this, SLOT(mqttDisconnect()));
+    connect(pingProcess, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(PingResult()));
 }
 
 void MQTTClient::DisonnectFunctions()
@@ -145,4 +193,50 @@ void MQTTClient::DisonnectFunctions()
     disconnect(ui->pushButton_mqttCancel, SIGNAL(clicked(bool)), this, SLOT(close()));
     disconnect(qcopter_mqttClient, SIGNAL(connected()), this, SLOT(mqttSubscribeDefault()));
     disconnect(qcopter_mqttClient, SIGNAL(disconnected()), this, SLOT(mqttDisconnect()));
+}
+
+void MQTTClient::PingMQTTBroker(QString ipAddr)
+{
+    QString processCmd = "ping -n 4 " + ipAddr;     //ping the host ip for 4 times.
+    qDebug() << "Running " << processCmd;
+
+    pingProcess->startCommand(processCmd);
+
+    GifLoading(1);
+}
+
+void MQTTClient::GifLoading(bool cmd)
+{
+    if(cmd){
+
+        ui->label_mqttHostName->setVisible(false);
+        ui->label_mqttPort->setVisible(false);
+        ui->label_mqttUsername->setVisible(false);
+        ui->label_mqttPassword->setVisible(false);
+
+        ui->lineEdit_mqttHostName->setVisible(false);
+        ui->lineEdit_mqttPort->setVisible(false);
+        ui->lineEdit_mqttUsername->setVisible(false);
+        ui->lineEdit_mqttPassword->setVisible(false);
+
+
+        ui->label_gif->setVisible(true);
+        ui->label_gif->raise();
+        connectionWaitGif->start();
+    }
+    else{
+
+        ui->label_mqttHostName->setVisible(true);
+        ui->label_mqttPort->setVisible(true);
+        ui->label_mqttUsername->setVisible(true);
+        ui->label_mqttPassword->setVisible(true);
+
+        ui->lineEdit_mqttHostName->setVisible(true);
+        ui->lineEdit_mqttPort->setVisible(true);
+        ui->lineEdit_mqttUsername->setVisible(true);
+        ui->lineEdit_mqttPassword->setVisible(true);
+
+        ui->label_gif->setVisible(false);
+        connectionWaitGif->stop();
+    }
 }

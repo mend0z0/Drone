@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../Resources/Textures/Circle_Empty.png</file>
+        <file>../Resources/Textures/Circle_FilledGreen.png</file>
+        <file>../Resources/Textures/Disconnected Camera BG Picture.jpg</file>
+        <file>../Resources/Textures/steel texture.jpg</file>
+        <file>../Resources/Textures/steel texture_1.jpg</file>
+        <file>../Resources/Textures/steel texture_2.jpg</file>
+        <file>../Resources/Logo/MEND0Z0 LOGO_simple.png</file>
+        <file>../Resources/Icons/CameraNext.png</file>
+        <file>../Resources/Icons/CameraPrevious.png</file>
+        <file>../Resources/Icons/CameraShutter.png</file>
+        <file>../Resources/Icons/Compass.png</file>
+        <file>../Resources/Gifs/connectionLoading.gif</file>
+    </qresource>
+</RCC>
