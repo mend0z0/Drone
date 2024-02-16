@@ -42,12 +42,12 @@ public:
     QWidget *layoutWidget;
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout_2;
-    QLabel *label_MQTTStatus;
-    QLabel *label_MQTTTopic;
     QPushButton *pushButton_ConnectLoRaWAN;
-    QLabel *label_MQTTQoS;
-    QPushButton *pushButton_ConnectServer;
+    QLabel *label_MQTTStatus;
     QSpacerItem *verticalSpacer_3;
+    QPushButton *pushButton_ConnectServer;
+    QLabel *label_MQTTTopic;
+    QLabel *label_MQTTQoS;
     QSpacerItem *verticalSpacer;
     QPlainTextEdit *plainTextEdit_LogPanel;
     QPushButton *pushButton_SaveLogFile;
@@ -255,54 +255,51 @@ public:
         dial_AdjustDirection->setNotchesVisible(false);
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(990, 10, 282, 601));
+        layoutWidget->setGeometry(QRect(990, 10, 285, 601));
         gridLayout_3 = new QGridLayout(layoutWidget);
         gridLayout_3->setObjectName("gridLayout_3");
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName("gridLayout_2");
-        label_MQTTStatus = new QLabel(layoutWidget);
-        label_MQTTStatus->setObjectName("label_MQTTStatus");
-        QFont font2;
-        font2.setFamilies({QString::fromUtf8("Calibri Light")});
-        label_MQTTStatus->setFont(font2);
-
-        gridLayout_2->addWidget(label_MQTTStatus, 5, 1, 1, 1);
-
-        label_MQTTTopic = new QLabel(layoutWidget);
-        label_MQTTTopic->setObjectName("label_MQTTTopic");
-        label_MQTTTopic->setFont(font2);
-
-        gridLayout_2->addWidget(label_MQTTTopic, 3, 1, 1, 1);
-
         pushButton_ConnectLoRaWAN = new QPushButton(layoutWidget);
         pushButton_ConnectLoRaWAN->setObjectName("pushButton_ConnectLoRaWAN");
-        QFont font3;
-        font3.setFamilies({QString::fromUtf8("Calibri Light")});
-        font3.setPointSize(10);
-        pushButton_ConnectLoRaWAN->setFont(font3);
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Calibri Light")});
+        font2.setPointSize(12);
+        pushButton_ConnectLoRaWAN->setFont(font2);
         pushButton_ConnectLoRaWAN->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_2->addWidget(pushButton_ConnectLoRaWAN, 1, 1, 1, 1);
 
-        label_MQTTQoS = new QLabel(layoutWidget);
-        label_MQTTQoS->setObjectName("label_MQTTQoS");
-        label_MQTTQoS->setFont(font2);
+        label_MQTTStatus = new QLabel(layoutWidget);
+        label_MQTTStatus->setObjectName("label_MQTTStatus");
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Calibri Light")});
+        label_MQTTStatus->setFont(font3);
 
-        gridLayout_2->addWidget(label_MQTTQoS, 4, 1, 1, 1);
-
-        pushButton_ConnectServer = new QPushButton(layoutWidget);
-        pushButton_ConnectServer->setObjectName("pushButton_ConnectServer");
-        QFont font4;
-        font4.setFamilies({QString::fromUtf8("Calibri Light")});
-        font4.setPointSize(12);
-        pushButton_ConnectServer->setFont(font4);
-
-        gridLayout_2->addWidget(pushButton_ConnectServer, 1, 2, 1, 1);
+        gridLayout_2->addWidget(label_MQTTStatus, 8, 0, 1, 1);
 
         verticalSpacer_3 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
-        gridLayout_2->addItem(verticalSpacer_3, 6, 1, 1, 1);
+        gridLayout_2->addItem(verticalSpacer_3, 8, 1, 1, 1);
+
+        pushButton_ConnectServer = new QPushButton(layoutWidget);
+        pushButton_ConnectServer->setObjectName("pushButton_ConnectServer");
+        pushButton_ConnectServer->setFont(font2);
+
+        gridLayout_2->addWidget(pushButton_ConnectServer, 1, 0, 1, 1);
+
+        label_MQTTTopic = new QLabel(layoutWidget);
+        label_MQTTTopic->setObjectName("label_MQTTTopic");
+        label_MQTTTopic->setFont(font3);
+
+        gridLayout_2->addWidget(label_MQTTTopic, 6, 0, 1, 1);
+
+        label_MQTTQoS = new QLabel(layoutWidget);
+        label_MQTTQoS->setObjectName("label_MQTTQoS");
+        label_MQTTQoS->setFont(font3);
+
+        gridLayout_2->addWidget(label_MQTTQoS, 7, 0, 1, 1);
 
 
         gridLayout_3->addLayout(gridLayout_2, 1, 0, 1, 1);
@@ -323,10 +320,10 @@ public:
 
         pushButton_SaveLogFile = new QPushButton(layoutWidget);
         pushButton_SaveLogFile->setObjectName("pushButton_SaveLogFile");
-        QFont font5;
-        font5.setFamilies({QString::fromUtf8("Calibri Light")});
-        font5.setPointSize(14);
-        pushButton_SaveLogFile->setFont(font5);
+        QFont font4;
+        font4.setFamilies({QString::fromUtf8("Calibri Light")});
+        font4.setPointSize(14);
+        pushButton_SaveLogFile->setFont(font4);
 
         gridLayout_3->addWidget(pushButton_SaveLogFile, 4, 0, 1, 1);
 
@@ -978,11 +975,11 @@ public:
         pushButton_MoveLeft->setText(QString());
         pushButton_MoveReverse->setText(QString());
         pushButton_MoveRight->setText(QString());
+        pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Search Drones", nullptr));
         label_MQTTStatus->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Status: N/A</span></p></body></html>", nullptr));
-        label_MQTTTopic->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Topic: N/A</span></p></body></html>", nullptr));
-        pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Connect LoRaWAN", nullptr));
-        label_MQTTQoS->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">QoS: N/A</span></p></body></html>", nullptr));
         pushButton_ConnectServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Connect Server", nullptr));
+        label_MQTTTopic->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Topic: N/A</span></p></body></html>", nullptr));
+        label_MQTTQoS->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">QoS: N/A</span></p></body></html>", nullptr));
         plainTextEdit_LogPanel->setPlainText(QString());
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
         label_Logo->setText(QString());

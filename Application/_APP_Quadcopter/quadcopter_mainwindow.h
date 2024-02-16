@@ -25,7 +25,18 @@ public:
 
 private slots:
     void MQTTConsole(void);
-    void MQTTReceivedMsg( QByteArray data, QMqttTopicName topic);
+    void MQTTReceivedMsg(QMqttMessage msg);
+
+    void ButtonForward( void );
+    void ButtonReverse( void );
+    void ButtonLeft( void );
+    void ButtonRight( void );
+
+    void DialCompass( int value );
+
+    void DroneSelectNext( void );
+    void DroneSelectPrevious( void );
+    void ButtonCameraShutter( void );
 
 private:
     Ui::Quadcopter_MainWindow *ui;

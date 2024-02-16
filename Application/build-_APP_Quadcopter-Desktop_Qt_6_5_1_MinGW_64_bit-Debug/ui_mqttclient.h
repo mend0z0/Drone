@@ -39,7 +39,7 @@ public:
     QWidget *layoutWidget1;
     QGridLayout *gridLayout_4;
     QPushButton *pushButton_mqttCancel;
-    QPushButton *pushButton_mqttConnect;
+    QPushButton *pushButton_mqttConnect_Disconnect;
 
     void setupUi(QDialog *MQTTClient)
     {
@@ -119,14 +119,14 @@ public:
 
         gridLayout_4->addWidget(pushButton_mqttCancel, 0, 0, 1, 1);
 
-        pushButton_mqttConnect = new QPushButton(layoutWidget1);
-        pushButton_mqttConnect->setObjectName("pushButton_mqttConnect");
+        pushButton_mqttConnect_Disconnect = new QPushButton(layoutWidget1);
+        pushButton_mqttConnect_Disconnect->setObjectName("pushButton_mqttConnect_Disconnect");
 
-        gridLayout_4->addWidget(pushButton_mqttConnect, 0, 1, 1, 1);
+        gridLayout_4->addWidget(pushButton_mqttConnect_Disconnect, 0, 1, 1, 1);
 
-        layoutWidget1->raise();
+        layoutWidget->raise();
         label_gif->raise();
-        layoutWidget1->raise();
+        layoutWidget->raise();
 
         retranslateUi(MQTTClient);
 
@@ -142,7 +142,7 @@ public:
         label_mqttUsername->setText(QCoreApplication::translate("MQTTClient", "Username:", nullptr));
         label_mqttPassword->setText(QCoreApplication::translate("MQTTClient", "Password:", nullptr));
         pushButton_mqttCancel->setText(QCoreApplication::translate("MQTTClient", "Close", nullptr));
-        pushButton_mqttConnect->setText(QCoreApplication::translate("MQTTClient", "Connect", nullptr));
+        pushButton_mqttConnect_Disconnect->setText(QCoreApplication::translate("MQTTClient", "Connect", nullptr));
     } // retranslateUi
 
 };

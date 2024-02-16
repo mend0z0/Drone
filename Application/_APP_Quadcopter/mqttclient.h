@@ -8,6 +8,7 @@
 #include <QMessageBox>
 #include <QMqttClient>
 #include <QMqttMessage>
+#include <QMqttSubscription>
 #include <QProcess>
 #include <QPalette>
 #include <QMovie>
@@ -39,28 +40,29 @@ public:
 Q_SIGNALS:
     void connected();
     void disconnected();
-    void messageReceived(const QByteArray &message, const QMqttTopicName &topic = QMqttTopicName());
     void messageStatusChanged(qint32 id, QMqtt::MessageStatus s, const QMqttMessageStatusProperties &properties);
     void messageSent(qint32 id);
     void pingResponseReceived();
     void brokerSessionRestored();
+    void messageReceived(QMqttMessage msg);
 
 signals:
-    void ProcessMsgs( QByteArray data, QString topic);
     void QCopter_Connected( void );
     void QCopter_Disconnected( void );
 
 private slots:
     void mqttParamSet( void );
-    void mqttConnect( void );
-    void mqttPanelClose( void );
-    void mqttDisconnect( void );
-    void mqttSubscribeDefault( void );
 
+    void mqttConnectDisconnectButton( void );
+    void mqttPanelClose( void );
+
+    void mqttSubscribeDefault( void );
+    void mqttDisconnected( void );
     bool PingResult();
 
 public slots:
-    void mqttSubscribe( uint8_t topicIndex );
+    void mqttSubscribeSwitch( uint8_t topicIndex );
+    void mqttSendMsg(QByteArray msg);
 
 
 private:
@@ -71,7 +73,7 @@ private:
         quint16 port;                           //This will hold the mqtt broker port number (It's by default 1883)
         QString username;                       //This will hold the username we should use to connect to the mqtt broker
         QString password;                       //This will hold the password we should use to connect to the mqtt broker
-        QMqttTopicFilter topic;                //This will hold the topic that we need to publish and subscribe to
+        QMqttTopicName topic;                //This will hold the topic that we need to publish and subscribe to
         quint8  QoS;                            //This will hold the QoS level which is 2 (Garantee the data will be sent)
         bool  numberOfTopic[MQTT_TOPIC_MAX];    //This will hold the number of drone that is connected to the mqtt broker
         QString messages;                       //This will hold any messages that come in.
@@ -88,7 +90,6 @@ private:
     void ObjectsEnable( void );
     void ObjectsDisable( void );
     void ConnectFunctions( void );
-    void DisonnectFunctions( void );
 
     void PingMQTTBroker( QString ipAddr );
 
