@@ -49,6 +49,7 @@ Q_SIGNALS:
 signals:
     void QCopter_Connected( void );
     void QCopter_Disconnected( void );
+    void QCopter_NewMessage( QMqttMessage msg);
 
 private slots:
     void mqttParamSet( void );
@@ -59,6 +60,7 @@ private slots:
     void mqttSubscribeDefault( void );
     void mqttDisconnected( void );
     bool PingResult();
+    void mqttNewReceivedMessage(QMqttMessage msg);
 
 public slots:
     void mqttSubscribeSwitch( uint8_t topicIndex );

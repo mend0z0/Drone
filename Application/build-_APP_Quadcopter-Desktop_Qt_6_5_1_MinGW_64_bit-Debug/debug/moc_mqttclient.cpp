@@ -56,12 +56,14 @@ static constexpr auto qt_meta_stringdata_CLASSMQTTClientENDCLASS = QtMocHelpers:
     "msg",
     "QCopter_Connected",
     "QCopter_Disconnected",
+    "QCopter_NewMessage",
     "mqttParamSet",
     "mqttConnectDisconnectButton",
     "mqttPanelClose",
     "mqttSubscribeDefault",
     "mqttDisconnected",
     "PingResult",
+    "mqttNewReceivedMessage",
     "mqttSubscribeSwitch",
     "uint8_t",
     "topicIndex",
@@ -69,7 +71,7 @@ static constexpr auto qt_meta_stringdata_CLASSMQTTClientENDCLASS = QtMocHelpers:
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMQTTClientENDCLASS_t {
-    uint offsetsAndSizes[56];
+    uint offsetsAndSizes[60];
     char stringdata0[11];
     char stringdata1[10];
     char stringdata2[1];
@@ -88,16 +90,18 @@ struct qt_meta_stringdata_CLASSMQTTClientENDCLASS_t {
     char stringdata15[4];
     char stringdata16[18];
     char stringdata17[21];
-    char stringdata18[13];
-    char stringdata19[28];
-    char stringdata20[15];
-    char stringdata21[21];
-    char stringdata22[17];
-    char stringdata23[11];
-    char stringdata24[20];
-    char stringdata25[8];
-    char stringdata26[11];
-    char stringdata27[12];
+    char stringdata18[19];
+    char stringdata19[13];
+    char stringdata20[28];
+    char stringdata21[15];
+    char stringdata22[21];
+    char stringdata23[17];
+    char stringdata24[11];
+    char stringdata25[23];
+    char stringdata26[20];
+    char stringdata27[8];
+    char stringdata28[11];
+    char stringdata29[12];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMQTTClientENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -121,16 +125,18 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMQTTClientENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(206, 3),  // "msg"
         QT_MOC_LITERAL(210, 17),  // "QCopter_Connected"
         QT_MOC_LITERAL(228, 20),  // "QCopter_Disconnected"
-        QT_MOC_LITERAL(249, 12),  // "mqttParamSet"
-        QT_MOC_LITERAL(262, 27),  // "mqttConnectDisconnectButton"
-        QT_MOC_LITERAL(290, 14),  // "mqttPanelClose"
-        QT_MOC_LITERAL(305, 20),  // "mqttSubscribeDefault"
-        QT_MOC_LITERAL(326, 16),  // "mqttDisconnected"
-        QT_MOC_LITERAL(343, 10),  // "PingResult"
-        QT_MOC_LITERAL(354, 19),  // "mqttSubscribeSwitch"
-        QT_MOC_LITERAL(374, 7),  // "uint8_t"
-        QT_MOC_LITERAL(382, 10),  // "topicIndex"
-        QT_MOC_LITERAL(393, 11)   // "mqttSendMsg"
+        QT_MOC_LITERAL(249, 18),  // "QCopter_NewMessage"
+        QT_MOC_LITERAL(268, 12),  // "mqttParamSet"
+        QT_MOC_LITERAL(281, 27),  // "mqttConnectDisconnectButton"
+        QT_MOC_LITERAL(309, 14),  // "mqttPanelClose"
+        QT_MOC_LITERAL(324, 20),  // "mqttSubscribeDefault"
+        QT_MOC_LITERAL(345, 16),  // "mqttDisconnected"
+        QT_MOC_LITERAL(362, 10),  // "PingResult"
+        QT_MOC_LITERAL(373, 22),  // "mqttNewReceivedMessage"
+        QT_MOC_LITERAL(396, 19),  // "mqttSubscribeSwitch"
+        QT_MOC_LITERAL(416, 7),  // "uint8_t"
+        QT_MOC_LITERAL(424, 10),  // "topicIndex"
+        QT_MOC_LITERAL(435, 11)   // "mqttSendMsg"
     },
     "MQTTClient",
     "connected",
@@ -150,12 +156,14 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMQTTClientENDCLASS_t qt_meta_st
     "msg",
     "QCopter_Connected",
     "QCopter_Disconnected",
+    "QCopter_NewMessage",
     "mqttParamSet",
     "mqttConnectDisconnectButton",
     "mqttPanelClose",
     "mqttSubscribeDefault",
     "mqttDisconnected",
     "PingResult",
+    "mqttNewReceivedMessage",
     "mqttSubscribeSwitch",
     "uint8_t",
     "topicIndex",
@@ -171,33 +179,35 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMQTTClientENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      17,   14, // methods
+      19,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       9,       // signalCount
+      10,       // signalCount
 
  // signals: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  116,    2, 0x06,    1 /* Public */,
-       3,    0,  117,    2, 0x06,    2 /* Public */,
-       4,    3,  118,    2, 0x06,    3 /* Public */,
-      10,    1,  125,    2, 0x06,    7 /* Public */,
-      11,    0,  128,    2, 0x06,    9 /* Public */,
-      12,    0,  129,    2, 0x06,   10 /* Public */,
-      13,    1,  130,    2, 0x06,   11 /* Public */,
-      16,    0,  133,    2, 0x06,   13 /* Public */,
-      17,    0,  134,    2, 0x06,   14 /* Public */,
+       1,    0,  128,    2, 0x06,    1 /* Public */,
+       3,    0,  129,    2, 0x06,    2 /* Public */,
+       4,    3,  130,    2, 0x06,    3 /* Public */,
+      10,    1,  137,    2, 0x06,    7 /* Public */,
+      11,    0,  140,    2, 0x06,    9 /* Public */,
+      12,    0,  141,    2, 0x06,   10 /* Public */,
+      13,    1,  142,    2, 0x06,   11 /* Public */,
+      16,    0,  145,    2, 0x06,   13 /* Public */,
+      17,    0,  146,    2, 0x06,   14 /* Public */,
+      18,    1,  147,    2, 0x06,   15 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      18,    0,  135,    2, 0x08,   15 /* Private */,
-      19,    0,  136,    2, 0x08,   16 /* Private */,
-      20,    0,  137,    2, 0x08,   17 /* Private */,
-      21,    0,  138,    2, 0x08,   18 /* Private */,
-      22,    0,  139,    2, 0x08,   19 /* Private */,
-      23,    0,  140,    2, 0x08,   20 /* Private */,
-      24,    1,  141,    2, 0x0a,   21 /* Public */,
-      27,    1,  144,    2, 0x0a,   23 /* Public */,
+      19,    0,  150,    2, 0x08,   17 /* Private */,
+      20,    0,  151,    2, 0x08,   18 /* Private */,
+      21,    0,  152,    2, 0x08,   19 /* Private */,
+      22,    0,  153,    2, 0x08,   20 /* Private */,
+      23,    0,  154,    2, 0x08,   21 /* Private */,
+      24,    0,  155,    2, 0x08,   22 /* Private */,
+      25,    1,  156,    2, 0x08,   23 /* Private */,
+      26,    1,  159,    2, 0x0a,   25 /* Public */,
+      29,    1,  162,    2, 0x0a,   27 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
@@ -209,6 +219,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMQTTClientENDCLASS[] = {
     QMetaType::Void, 0x80000000 | 14,   15,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 14,   15,
 
  // slots: parameters
     QMetaType::Void,
@@ -217,7 +228,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMQTTClientENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Bool,
-    QMetaType::Void, 0x80000000 | 25,   26,
+    QMetaType::Void, 0x80000000 | 14,   15,
+    QMetaType::Void, 0x80000000 | 27,   28,
     QMetaType::Void, QMetaType::QByteArray,   15,
 
        0        // eod
@@ -255,6 +267,9 @@ Q_CONSTINIT const QMetaObject MQTTClient::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'QCopter_Disconnected'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'QCopter_NewMessage'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QMqttMessage, std::false_type>,
         // method 'mqttParamSet'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'mqttConnectDisconnectButton'
@@ -267,6 +282,9 @@ Q_CONSTINIT const QMetaObject MQTTClient::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'PingResult'
         QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'mqttNewReceivedMessage'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QMqttMessage, std::false_type>,
         // method 'mqttSubscribeSwitch'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<uint8_t, std::false_type>,
@@ -292,21 +310,37 @@ void MQTTClient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 6: _t->messageReceived((*reinterpret_cast< std::add_pointer_t<QMqttMessage>>(_a[1]))); break;
         case 7: _t->QCopter_Connected(); break;
         case 8: _t->QCopter_Disconnected(); break;
-        case 9: _t->mqttParamSet(); break;
-        case 10: _t->mqttConnectDisconnectButton(); break;
-        case 11: _t->mqttPanelClose(); break;
-        case 12: _t->mqttSubscribeDefault(); break;
-        case 13: _t->mqttDisconnected(); break;
-        case 14: { bool _r = _t->PingResult();
+        case 9: _t->QCopter_NewMessage((*reinterpret_cast< std::add_pointer_t<QMqttMessage>>(_a[1]))); break;
+        case 10: _t->mqttParamSet(); break;
+        case 11: _t->mqttConnectDisconnectButton(); break;
+        case 12: _t->mqttPanelClose(); break;
+        case 13: _t->mqttSubscribeDefault(); break;
+        case 14: _t->mqttDisconnected(); break;
+        case 15: { bool _r = _t->PingResult();
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 15: _t->mqttSubscribeSwitch((*reinterpret_cast< std::add_pointer_t<uint8_t>>(_a[1]))); break;
-        case 16: _t->mqttSendMsg((*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[1]))); break;
+        case 16: _t->mqttNewReceivedMessage((*reinterpret_cast< std::add_pointer_t<QMqttMessage>>(_a[1]))); break;
+        case 17: _t->mqttSubscribeSwitch((*reinterpret_cast< std::add_pointer_t<uint8_t>>(_a[1]))); break;
+        case 18: _t->mqttSendMsg((*reinterpret_cast< std::add_pointer_t<QByteArray>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         switch (_id) {
         default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
         case 6:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QMqttMessage >(); break;
+            }
+            break;
+        case 9:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 0:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QMqttMessage >(); break;
+            }
+            break;
+        case 16:
             switch (*reinterpret_cast<int*>(_a[1])) {
             default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
             case 0:
@@ -379,6 +413,13 @@ void MQTTClient::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
                 return;
             }
         }
+        {
+            using _t = void (MQTTClient::*)(QMqttMessage );
+            if (_t _q_method = &MQTTClient::QCopter_NewMessage; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 9;
+                return;
+            }
+        }
     }
 }
 
@@ -401,13 +442,13 @@ int MQTTClient::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 17)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 19;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 17)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 17;
+        _id -= 19;
     }
     return _id;
 }
@@ -467,5 +508,12 @@ void MQTTClient::QCopter_Connected()
 void MQTTClient::QCopter_Disconnected()
 {
     QMetaObject::activate(this, &staticMetaObject, 8, nullptr);
+}
+
+// SIGNAL 9
+void MQTTClient::QCopter_NewMessage(QMqttMessage _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 9, _a);
 }
 QT_WARNING_POP

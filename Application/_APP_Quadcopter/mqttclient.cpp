@@ -91,6 +91,11 @@ bool MQTTClient::PingResult()
     }
 }
 
+void MQTTClient::mqttNewReceivedMessage(QMqttMessage msg)
+{
+    emit QCopter_NewMessage(msg);
+}
+
 void MQTTClient::mqttSendMsg(QByteArray msg)
 {
     qcopter_mqttClient->publish( mqtt_client.topic, msg, mqtt_client.QoS, false);
@@ -112,14 +117,20 @@ void MQTTClient::mqttSubscribeDefault()
     //now we need to subscribe
     auto subscription = qcopter_mqttClient->subscribe( mqtt_client.topic.name(), mqtt_client.QoS);
 
+    qDebug() << "Topic: " << mqtt_client.topic.name() << " & QoS: " << mqtt_client.QoS;
+    qDebug() << "Subscription status: " << subscription;
+
     if(!subscription){
        mqttMessageBox->critical(this, "Error", "The console can't subscribe");
     }
     else{
-        ui->pushButton_mqttConnect_Disconnect->setEnabled(true);
-        ui->pushButton_mqttConnect_Disconnect->setText("Disconnect");
-        buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::green);
-        ui->pushButton_mqttConnect_Disconnect->setPalette(buttonPalette);
+       //qcopter_mqttSubscription(subscription);
+       connect(subscription, SIGNAL(messageReceived(QMqttMessage)), this, SLOT(mqttNewReceivedMessage(QMqttMessage)));
+
+       ui->pushButton_mqttConnect_Disconnect->setEnabled(true);
+       ui->pushButton_mqttConnect_Disconnect->setText("Disconnect");
+       buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::green);
+       ui->pushButton_mqttConnect_Disconnect->setPalette(buttonPalette);
     }
 }
 

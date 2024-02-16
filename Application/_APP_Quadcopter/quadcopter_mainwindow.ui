@@ -123,7 +123,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true"/>
     </property>
     <property name="frameShape">
      <enum>QFrame::VLine</enum>
@@ -132,13 +132,13 @@
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label_NumberOfDrones">
+   <widget class="QLabel" name="label_Time">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>860</x>
       <y>20</y>
-      <width>71</width>
-      <height>71</height>
+      <width>111</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="font">
@@ -147,11 +147,11 @@
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-image: url(:/Pictures/Icons/Circle_Empty.png);
-background-color: rgb(209, 209, 209);</string>
+     <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; color:#000000;&quot;&gt;--/--&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:22pt; color:#ffffff;&quot;&gt;00:00:00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -179,10 +179,10 @@ background-color: rgb(209, 209, 209);</string>
     </property>
     <property name="geometry">
      <rect>
-      <x>930</x>
+      <x>350</x>
       <y>30</y>
       <width>41</width>
-      <height>441</height>
+      <height>451</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -347,7 +347,7 @@ background-color: rgb(209, 209, 209);</string>
       <x>990</x>
       <y>10</y>
       <width>285</width>
-      <height>601</height>
+      <height>611</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
@@ -491,7 +491,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>720</x>
-      <y>510</y>
+      <y>520</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -501,9 +501,6 @@ color: rgb(74, 148, 0);</string>
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -516,7 +513,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>850</x>
-      <y>510</y>
+      <y>520</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -526,9 +523,6 @@ color: rgb(74, 148, 0);</string>
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -541,7 +535,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>590</x>
-      <y>510</y>
+      <y>520</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -551,9 +545,6 @@ color: rgb(74, 148, 0);</string>
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -569,7 +560,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>510</y>
+      <y>520</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -579,9 +570,6 @@ color: rgb(74, 148, 0);</string>
       <horstretch>0</horstretch>
       <verstretch>0</verstretch>
      </sizepolicy>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -594,7 +582,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>510</y>
+      <y>520</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -606,7 +594,7 @@ color: rgb(74, 148, 0);</string>
      </sizepolicy>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/Resources/Textures/Disconnected Camera BG Picture.jpg);</string>
+     <string notr="true"/>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -641,7 +629,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>490</y>
+      <y>500</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -660,7 +648,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>490</y>
+      <y>500</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -676,7 +664,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>590</x>
-      <y>490</y>
+      <y>500</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -692,7 +680,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>720</x>
-      <y>490</y>
+      <y>500</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -708,7 +696,7 @@ color: rgb(74, 148, 0);</string>
     <property name="geometry">
      <rect>
       <x>850</x>
-      <y>490</y>
+      <y>500</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -2427,6 +2415,108 @@ color: rgb(74, 148, 0);</string>
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLabel" name="label_DroneCameraView">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>651</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Camera1_2">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>520</y>
+      <width>124</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Camera2_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>520</y>
+      <width>124</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Camera3_2">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>520</y>
+      <width>124</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Camera5_2">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>520</y>
+      <width>124</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Camera4_2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>520</y>
+      <width>124</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_Camera5_2</zorder>
+   <zorder>label_Camera4_2</zorder>
+   <zorder>label_Camera3_2</zorder>
+   <zorder>label_Camera2_2</zorder>
+   <zorder>label_Camera1_2</zorder>
+   <zorder>label_DroneCameraView</zorder>
    <zorder>pushButton_MoveLeft</zorder>
    <zorder>label_Compass</zorder>
    <zorder>pushButton_MoveForward</zorder>
@@ -2447,7 +2537,7 @@ color: rgb(74, 148, 0);</string>
    <zorder>layoutWidget</zorder>
    <zorder>pushButton_DroneSelectPrevious</zorder>
    <zorder>pushButton_DroneSelectNext</zorder>
-   <zorder>label_NumberOfDrones</zorder>
+   <zorder>label_Time</zorder>
    <zorder>pushButton_DroneCameraSnapshot</zorder>
    <zorder>verticalSlider_Throttle</zorder>
    <zorder>label_Logo</zorder>

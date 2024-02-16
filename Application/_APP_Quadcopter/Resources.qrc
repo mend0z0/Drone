@@ -12,5 +12,6 @@
         <file>../Resources/Icons/CameraShutter.png</file>
         <file>../Resources/Icons/Compass.png</file>
         <file>../Resources/Gifs/connectionLoading.gif</file>
+        <file>../Resources/Gifs/LostConnection.gif</file>
     </qresource>
 </RCC>

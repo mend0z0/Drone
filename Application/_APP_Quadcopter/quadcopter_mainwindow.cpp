@@ -7,7 +7,30 @@ Quadcopter_MainWindow::Quadcopter_MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    lostConnectionGif->setFileName("D:/Projects/STP/Quadcopter/Application/Resources/Gifs/LostConnection.gif");
+    lostConnectionGif->setFormat("gif");
+    qDebug() << lostConnectionGif->isValid();
+    ui->label_DroneCameraView->setMovie(lostConnectionGif);
+    ui->label_DroneCameraView->setVisible(false);
+    ui->label_Camera1_2->setMovie(lostConnectionGif);
+    ui->label_Camera1_2->setVisible(false);
+    ui->label_Camera2_2->setMovie(lostConnectionGif);
+    ui->label_Camera2_2->setVisible(false);
+    ui->label_Camera3_2->setMovie(lostConnectionGif);
+    ui->label_Camera3_2->setVisible(false);
+    ui->label_Camera4_2->setMovie(lostConnectionGif);
+    ui->label_Camera4_2->setVisible(false);
+    ui->label_Camera5_2->setMovie(lostConnectionGif);
+    ui->label_Camera5_2->setVisible(false);
+
     ConnectFunctions();
+
+    NoisyTVGifControl(true, 1);
+    NoisyTVGifControl(true, 2);
+    NoisyTVGifControl(true, 3);
+    NoisyTVGifControl(true, 4);
+    NoisyTVGifControl(true, 5);
+    NoisyTVGifControl(true, 6);
 
 }
 
@@ -25,15 +48,14 @@ void Quadcopter_MainWindow::MQTTConsole()
 
 void Quadcopter_MainWindow::MQTTReceivedMsg(QMqttMessage msg)
 {
+    QString tempMsg;
     QPalette mqttTxtPallete;
     mqttTxtPallete.setColor( foregroundRole(), QColor(0,255,0));
     ui->plainTextEdit_LogPanel->setPalette(mqttTxtPallete);
     QDateTime qcopterCurrentDateTime = QDateTime::currentDateTime();
     //add time and date to the received data
-    ui->plainTextEdit_LogPanel->appendPlainText(qcopterCurrentDateTime.toString("yyyy-MM-dd HH:mm:ss"));
-    ui->plainTextEdit_LogPanel->appendPlainText(": ");
-    ui->plainTextEdit_LogPanel->appendPlainText(msg.payload());
-    ui->plainTextEdit_LogPanel->appendPlainText("\r\n");
+    tempMsg.append(qcopterCurrentDateTime.toString("yyyy-MM-dd HH:mm:ss") + ": " + msg.payload());
+    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
 
     ui->label_MQTTTopic->setText("Topic: " + msg.topic().name());
 
@@ -109,6 +131,117 @@ void Quadcopter_MainWindow::ConnectFunctions()
     connect(ui->pushButton_DroneSelectPrevious, SIGNAL(clicked(bool)), this, SLOT(DroneSelectPrevious()));
     connect(ui->pushButton_DroneCameraSnapshot, SIGNAL(clicked(bool)), this, SLOT(ButtonCameraShutter()));
 
-    connect(qcopterConsole, SIGNAL(messageReceived(QMqttMessage)), this, SLOT(MQTTReceivedMsg(QMqttMessage)));
+    connect(qcopterConsole, SIGNAL(QCopter_NewMessage(QMqttMessage)), this, SLOT(MQTTReceivedMsg(QMqttMessage)));
+}
+
+void Quadcopter_MainWindow::NoisyTVGifControl(bool cmd, uint8_t screenNumber)
+{
+
+    switch (screenNumber)
+    {
+    case 1:
+        if(cmd)
+        {
+            ui->graphicsView_DroneCameraView->setVisible(false);
+
+            ui->label_DroneCameraView->setVisible(true);
+            lostConnectionGif->start();
+        }
+        else
+        {
+            ui->graphicsView_DroneCameraView->setVisible(true);
+
+            ui->label_DroneCameraView->setVisible(false);
+            lostConnectionGif->stop();
+        }
+        break;
+    case 2:
+        if(cmd)
+        {
+            ui->graphicsView_Camera0->setVisible(false);
+
+            ui->label_Camera1_2->setVisible(true);
+            //ui->label_MainScreen->raise();
+            lostConnectionGif->start();
+        }
+        else
+        {
+            ui->graphicsView_Camera0->setVisible(true);
+
+            ui->label_Camera1_2->setVisible(false);
+            lostConnectionGif->stop();
+        }
+        break;
+    case 3:
+        if(cmd)
+        {
+            ui->graphicsView_Camera1->setVisible(false);
+
+            ui->label_Camera2_2->setVisible(true);
+            //ui->label_MainScreen->raise();
+            lostConnectionGif->start();
+        }
+        else
+        {
+            ui->graphicsView_Camera1->setVisible(true);
+
+            ui->label_Camera2_2->setVisible(false);
+            lostConnectionGif->stop();
+        }
+        break;
+    case 4:
+        if(cmd)
+        {
+            ui->graphicsView_Camera2->setVisible(false);
+
+            ui->label_Camera3_2->setVisible(true);
+            //ui->label_MainScreen->raise();
+            lostConnectionGif->start();
+        }
+        else
+        {
+            ui->graphicsView_Camera2->setVisible(true);
+
+            ui->label_Camera3_2->setVisible(false);
+            lostConnectionGif->stop();
+        }
+        break;
+    case 5:
+        if(cmd)
+        {
+            ui->graphicsView_Camera3->setVisible(false);
+
+            ui->label_Camera4_2->setVisible(true);
+            //ui->label_MainScreen->raise();
+            lostConnectionGif->start();
+        }
+        else
+        {
+            ui->graphicsView_Camera3->setVisible(true);
+
+            ui->label_Camera4_2->setVisible(false);
+            lostConnectionGif->stop();
+        }
+        break;
+    case 6:
+        if(cmd)
+        {
+            ui->graphicsView_Camera4->setVisible(false);
+
+            ui->label_Camera5_2->setVisible(true);
+            //ui->label_MainScreen->raise();
+            lostConnectionGif->start();
+        }
+        else
+        {
+            ui->graphicsView_Camera4->setVisible(true);
+
+            ui->label_Camera5_2->setVisible(false);
+            lostConnectionGif->stop();
+        }
+        break;
+    default:
+        break;
+    }
 }
 

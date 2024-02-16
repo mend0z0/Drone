@@ -10,6 +10,7 @@
 #include <QPalette>
 #include <QColor>
 #include <mqttclient.h>
+#include <QMovie>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
@@ -43,8 +44,12 @@ private:
 
     MQTTClient *qcopterConsole = new MQTTClient();
 
+    QMovie  *lostConnectionGif = new QMovie(this);
+
     void ConnectFunctions( void );
     void DisconnectFunctions( void );
+
+    void NoisyTVGifControl( bool cmd, uint8_t screenNumber);
 
 };
 #endif // QUADCOPTER_MAINWINDOW_H

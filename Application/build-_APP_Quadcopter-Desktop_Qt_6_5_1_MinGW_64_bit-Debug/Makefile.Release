@@ -116,6 +116,7 @@ release/qrc_Resources.cpp: ../_APP_Quadcopter/Resources.qrc \
 		../Resources/Icons/CameraNext.png \
 		../Resources/Icons/CameraShutter.png \
 		../Resources/Gifs/connectionLoading.gif \
+		../Resources/Gifs/LostConnection.gif \
 		../Resources/Textures/Circle_Empty.png \
 		../Resources/Textures/steel\ texture_1.jpg \
 		../Resources/Textures/Disconnected\ Camera\ BG\ Picture.jpg \
