@@ -25,14 +25,14 @@ __Robotics__
 
 ### Hardware
 
-#### DroneController (Flight, Radio,and LoRaWAN Controller)
-- **MCU (Flight, Radio):** STM32U575
-- **MCU (LoRaWAN):** STM32WLE5
+#### DroneController (Flight & Radio Controller)
+- **MCU (Flight Controller):** STM32U575
+- **MCU (Radio Controller):** STM32WLE5
 - **Connection:** SPI, I2C, UART, QSPI, DCMI, PWM
 - **PCB Layers:** 6Layers (Controlled Impedance)
 - **CAD:** KiCAD
 
-#### USBToLoRaWAN
+#### LoRaWAN Gateway
 - **MCU:** STM32WLE5
 - **Connection:** UART, USB2.0
 - **PCB Layers:** 2Layer/s (None-controlled Impedance)
@@ -40,12 +40,12 @@ __Robotics__
 
 ### Firmware
 
-#### DroneController (Flight, Radio,and LoRaWAN Controller)
+#### DroneController (Flight & Radio Controller)
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
 
-#### USBToLoRaWAN 
+#### LoRaWAN Gateway
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
