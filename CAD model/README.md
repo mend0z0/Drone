@@ -1,16 +1,14 @@
-# _SUB_Mechanical_Project
+# _SUB_Mechanical_Quadcopter
 
 - What is this Mechanical Design? 
 - Where would be located?
 
 ## Features
 
-- __Material:__ 
-- __How to be build:__
-- __Overall Dimensions:__
+- __Material:__ PLA
+- __Overall Dimensions:__ 90x90 mm
+- __Manufacturing Method:__ 3D printing
 
-## Picture
+## Picture (Latest Version)
 
-![Latest Version_Top](https://github.com/mend0z0)
-
-![Latest Version_Bottom](https://github.com/mend0z0)
+![Latest Version](https://github.com/mend0z0)
