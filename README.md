@@ -59,7 +59,7 @@ __Robotics__
 ### Mechanical
 
 - **CAD:** Solid Edge
-- **Printing Method:** 3D Printing
+- **Manufacturing Method:** 3D Printing
 
 ## Block Diagrams
 
