@@ -99,7 +99,7 @@ __Robotics__
 ![_CADView_MECH](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Hardware%20Pictures/CAD%20View%20Mechanical/_CADView_MECH_Quadcopter_v1.0.png)
 
 ### Final Device
-![_QUADCOPTER_](https://github.com/mend0z0)
+![_QUADCOPTER_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Hardware%20Pictures/Assembled%20Hardware/_Quadcopter_v1.0.jpeg)
 
 ### Application
 ![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Applicaiton%20Screenshot/_APP_Quadcopter_v1.0.png)
