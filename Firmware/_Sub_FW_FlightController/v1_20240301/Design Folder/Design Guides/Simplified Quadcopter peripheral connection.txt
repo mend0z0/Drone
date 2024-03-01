@@ -2,7 +2,7 @@ BMI160: I2C -> DMA (1 MHz)
 
 Radio Controller: USART -> DMA (115200)
 
-Motors: PWM 
+Motors: DMA -> PWM 
 
 Camera: DCMI -> DMA -> QSPI -> DMA -> SPI
 
