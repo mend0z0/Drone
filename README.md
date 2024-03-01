@@ -65,61 +65,26 @@ __Robotics__
 
 ![SystemDesign](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_SYS_QuadCopter_v1.0.svg)
 
-## Screenshots
+## Glamour Shots
 
-### Hardware
-
-#### CAD View
-
-![_CADView_Drone](https://github.com/mend0z0)
-
-![_CADView_USBToLoRaWAN](https://github.com/mend0z0)
-
-#### 3D_View
-
-![_3DView_Top_Drone](https://github.com/mend0z0)
-
-![_3DView_Bottom_Drone](https://github.com/mend0z0)
-
-![_3DView_Top_USBToLoRaWAN](https://github.com/mend0z0)
-
-![_3DView_Bottom_USBToLoRaWAN](https://github.com/mend0z0)
- 
-#### Assembled Hardware
-
-![_ASMView_Top_Drone](https://github.com/mend0z0)
-
-![_ASMView_Bottom_Drone](https://github.com/mend0z0)
-
-![_ASMView_Top_USBToLoRaWAN](https://github.com/mend0z0)
-
-![_ASMView_Bottom_USBToLoRaWAN](https://github.com/mend0z0)
-
-### Mechanical CAD View
-![_CADView_MECH](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Hardware%20Pictures/CAD%20View%20Mechanical/_CADView_MECH_Quadcopter_v1.0.png)
+|![_ASMView_Top_Quadcopter](https://github.com/mend0z0)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0)|![_MECH_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Hardware%20Pictures/Assembled%20Hardware/_Quadcopter_v1.0.jpeg)|![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Applicaiton%20Screenshot/_APP_Quadcopter_v1.0.png)|
+|:--:| :--:| :--:| :--: |
+| PCB Top View | PCB Bottom View | Frame View | Application View |
 
 ### Final Device
-![_QUADCOPTER_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Hardware%20Pictures/Assembled%20Hardware/_Quadcopter_v1.0.jpeg)
-
-### Application
-![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Media%20Content/Applicaiton%20Screenshot/_APP_Quadcopter_v1.0.png)
 
 
 ## Demo
 
-Insert gif or link to demo, it'll be my youtube channel
-
-## LOGO
-
-![Logo](https://github.com/mend0z0/Quadcopter/blob/main/Logo.png)
-
+Not ready yet for demo...
 
 ## Author
 
 - [@Siavash Taher Parvar](https://www.linkedin.com/in/mend0z0)
 
-
 ## Support
 
-[Support Link](https://github.com/sponsors/mend0z0)
+- [Support Link](https://github.com/sponsors/mend0z0)
+
+![Logo](https://github.com/mend0z0/Quadcopter/blob/main/Logo.png)
 
