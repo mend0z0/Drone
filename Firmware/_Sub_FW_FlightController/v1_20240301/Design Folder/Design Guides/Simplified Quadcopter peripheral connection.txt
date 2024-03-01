@@ -1,6 +1,6 @@
-BMI160: I2C -> DMA (1 MHz)
+BMI160: I2C <-> DMA (1 MHz)
 
-Radio Controller: USART -> DMA (115200)
+Radio Controller: USART <-> DMA (115200)
 
 Motors: DMA -> PWM 
 
