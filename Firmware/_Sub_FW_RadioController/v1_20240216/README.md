@@ -1,0 +1,1 @@
+## Firmware Block Diagram (Latest Release)
