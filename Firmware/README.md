@@ -1,8 +1,8 @@
-# _SUB_FW_FlightController
+## _SUB_FW_FlightController
 
 What is this firmware for?
 
-## Specification
+### Specification
 
 - __MCU :__ 	STM32U575
 - __OS:__ 		FreeRTOS
@@ -12,11 +12,11 @@ What is this firmware for?
 		
 ------------------------------------------------------------------------------------------------------
 
-# _SUB_FW_RadioController
+## _SUB_FW_RadioController
 
 What is this firmware for?
 
-## Specification
+### Specification
 
 - __MCU :__ 	STM32WLE5
 - __OS:__ 		FreeRTOS
@@ -27,11 +27,11 @@ What is this firmware for?
 		
 ------------------------------------------------------------------------------------------------------
 
-# _SUB_FW_LoRaWANGateway
+## _SUB_FW_LoRaWANGateway
 
 What is this firmware for?
 
-## Specification
+### Specification
 
 - __MCU :__ 	STM32WLE5
 - __OS:__ 		FreeRTOS
