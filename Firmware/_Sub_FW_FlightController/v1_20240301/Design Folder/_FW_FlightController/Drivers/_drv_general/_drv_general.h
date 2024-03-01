@@ -4,10 +4,10 @@
 *   @Brief Description:
 *   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
-*	File Name:	xxxx.h
+*	File Name:	_drv_general.h
 *	Version:	01
 *	Revision:	00
-*	Date:		2024/03/dd
+*	Date:		2024/03/01
 *	License:	Open-source
 *	******************************** Project Description *******************************************
 *	@Detailed Description:
@@ -22,10 +22,11 @@
 *   Name:       _HW_FlightController
 *   Version:    v1.0
 *	*********************************  Processor Info **********************************************
-*	Processor:          STM32U575 (Cortex®-M33) 32-Bits
+*	Processor:          STM32U575 (Cortexï¿½-M33) 32-Bits
 *	Clock Frequency:    160.00	MHz
-*	RAM/SRAM Size:      784.00	KBytes
+*	RAM Size:           784.00	KBytes
 *	Flash Size:         2.00	MBytes
+*   SRAM Size:          16.00   KBytes
 *	***********************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
 *	Headers = SCREAMIN_SNAKE_CASE
@@ -39,11 +40,12 @@
 *	Author: Siavash Taher Parvar
 *	GitHub: www.github.com/Mend0z0
 ****************************************************************************************************/
-#ifndef CODETEMPLATEHEADER_H_
-#define CODETEMPLATEHEADER_H_
+#ifndef _DRV_GENERAL_H_
+#define _DRV_GENERAL_H_
 /****************************************************************************************************
 ****************************       HEADERS DECLARATION       ****************************************
 *****************************************************************************************************/
+#include "main.h"
 
 /****************************************************************************************************
 ****************************        MACRO DECLARATION         ***************************************
@@ -58,7 +60,7 @@
 *****************************************************************************************************/
 
 
-#endif /* CODETEMPLATEHEADER_H_  */
+#endif /* _DRV_GENERAL_H_  */
 
 /****************************************************************************************************
 *	Revision History (Description (author, date: yyyy/mm/dd))
