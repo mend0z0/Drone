@@ -24,8 +24,9 @@
 *	*********************************  Processor Info **********************************************
 *	Processor:          STM32U575 (Cortex®-M33) 32-Bits
 *	Clock Frequency:    160.00	MHz
-*	RAM/SRAM Size:      784.00	KBytes
+*	RAM Size:           784.00	KBytes
 *	Flash Size:         2.00	MBytes
+*   SRAM Size:          16.00   KBytes
 *	***********************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
 *	Headers = SCREAMIN_SNAKE_CASE
