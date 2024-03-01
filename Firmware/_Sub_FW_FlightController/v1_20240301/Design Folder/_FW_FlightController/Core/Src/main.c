@@ -1,188 +1,127 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+/****************************************************************************************************
+*
+*   Project Name:       Quadcopter._FW_FlightController
+*   @Brief Description:
+*   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*	File Name:	main.c
+*	Version:	01
+*	Revision:	00
+*	Date:		2024/03/01
+*	License:	Open-source
+*	******************************** Project Description *******************************************
+*	@Detailed Description:
+*
+*
+*
+*	******************************** File Description *******************************************
+*	@Detailed Description:
+*
+*
+*	*********************************  Hardware Info  **********************************************
+*   Name:       _HW_FlightController
+*   Version:    v1.0
+*	*********************************  Processor Info **********************************************
+*	Processor:          STM32U575 (Cortex®-M33) 32-Bits
+*	Clock Frequency:    160.00	MHz
+*	RAM Size:           784.00	KBytes
+*	Flash Size:         2.00	MBytes
+*   SRAM Size:          16.00   KBytes
+*	***********************************  Case Style  ***********************************************
+*	Local Variables = camelCase			Global Variables = g_camelCase
+*	Headers = SCREAMIN_SNAKE_CASE
+*   Macros = SCREAMING_SNAKE_CASE
+*   Const Variables = SCREAMING_SNAKE_CASE
+*	Functions = PascalCase				Initialize Functions = _lower_case
+*	Struct = lower_case					Struct.members = camelCase
+*	Enum = lower_case					Enum Members = SNAKE_CASE
+*	Pointer Variables = p_camelCase
+*	*********************************** Contact Info ***********************************************
+*	Author:	Siavash Taher Parvar
+*	GitHub: github.com/Mend0z0
+****************************************************************************************************/
+
+/****************************************************************************************************
+****************************       HEADERS DECLARATION       ****************************************
+*****************************************************************************************************/
 #include "main.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+/****************************************************************************************************
+****************************   CONST VARIABLES DECLARATION    ***************************************
+*****************************************************************************************************/
 
-/* USER CODE END Includes */
+/****************************************************************************************************
+****************************   GLOB. VARIABLES DECLARATION    ***************************************
+*****************************************************************************************************/
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
+/****************************************************************************************************
+***********************     STATIC/LOCAL FUNCTIONS DECLARATION      *********************************
+*****************************************************************************************************/
 
-/* USER CODE END PTD */
+/****************************************************************************************************
+****************************         GLOBAL FUNTIONS         ****************************************
+*****************************************************************************************************/
 
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
+/****************************************************************************************************
+****************************         STATIC FUNTIONS         ****************************************
+*****************************************************************************************************/
 
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
-void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
-
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+	_init_general();
 
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
+	while (1)
+	{
+	}
 }
 
-/**
-  * @brief System Clock Configuration
-  * @retval None
-  */
-void SystemClock_Config(void)
-{
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+/***************************************************************************************************/
+/**********************************                             ************************************/
+/********************                     END OF THE CODE                         ******************/
+/**********************************                             ************************************/
+/***************************************************************************************************/
 
-  /** Configure the main internal regulator output voltage
-  */
-  if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1) != HAL_OK)
-  {
-    Error_Handler();
-  }
+/*                                   GLOBAL FUNCTION TEMPLATE                                      */
 
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLMBOOST = RCC_PLLMBOOST_DIV1;
-  RCC_OscInitStruct.PLL.PLLM = 4;
-  RCC_OscInitStruct.PLL.PLLN = 80;
-  RCC_OscInitStruct.PLL.PLLP = 2;
-  RCC_OscInitStruct.PLL.PLLQ = 2;
-  RCC_OscInitStruct.PLL.PLLR = 2;
-  RCC_OscInitStruct.PLL.PLLRGE = RCC_PLLVCIRANGE_0;
-  RCC_OscInitStruct.PLL.PLLFRACN = 0;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
+/****************************************************************************************************
+*   @Brief Description:
+*   Function Status: 	DRAFT   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*
+*	************************************************************************************************
+*	Function Name:
+*	Function Scope:			Global
+*	Function Parameters:
+*	Function Return Type:
+*	************************************************************************************************
+*   Function Parameters Description:
+*   Function Return Type Description:
+*   Comments should be added in front of each line. (This line should be deleted)
+*	************************************************************************************************
+*	Revision History (Description, author, date: yyyy/mm/dd)
+*
+****************************************************************************************************/
 
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
-                              |RCC_CLOCKTYPE_PCLK3;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB3CLKDivider = RCC_HCLK_DIV1;
+/*                               STATIC/LOCAL FUNCTION TEMPLATE                                    */
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-}
+/****************************************************************************************************
+*   @Brief Description:
+*   Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*	************************************************************************************************
+*	Function Name:
+*	Function Scope:         Local(static)
+*	Function Parameters:
+*	Function Return Type:
+*	************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   Function Parameters Description:
+*   Function Return Type Description:
+*   Comments should be added in front of each line. (This line should be deleted)
+*	************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
 
-/* USER CODE BEGIN 4 */
+/************************************     END OF THE FILE      *************************************/
 
-/* USER CODE END 4 */
 
-/**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
-void Error_Handler(void)
-{
-  /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
-  /* USER CODE END Error_Handler_Debug */
-}
-
-#ifdef  USE_FULL_ASSERT
-/**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
-void assert_failed(uint8_t *file, uint32_t line)
-{
-  /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
-     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-  /* USER CODE END 6 */
-}
-#endif /* USE_FULL_ASSERT */
