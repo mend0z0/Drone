@@ -22,11 +22,14 @@
 *   Name:       _HW_FlightController
 *   Version:    v1.0
 *	*********************************  Processor Info **********************************************
-*	Processor:          STM32U575 (Cortex�-M33) 32-Bits
-*	Clock Frequency:    160.00	MHz
-*	RAM Size:           784.00	KBytes
-*	Flash Size:         2.00	MBytes
-*   SRAM Size:          16.00   KBytes
+*	Processor:          STM32U575ZIT6QU (Cortex�-M33) 32-Bits
+*	Clock Frequency:    160.00		MHz
+*	RAM Size:           784.00		KBytes
+*	Flash Size:         2.00		MBytes
+*   SRAM1 Size:         192.00   	KBytes
+*   SRAM2 Size:         64.00   	KBytes
+*   SRAM3 Size:         512.00   	KBytes
+*   SRAM4 Size:         16.00   	KBytes
 *	***********************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
 *	Headers = SCREAMIN_SNAKE_CASE
@@ -59,22 +62,23 @@
 **************************     GLOBAL FUNCTIONS DECLARATION      ************************************
 *****************************************************************************************************/
 
+/****************************************************************************************************
+*   @Brief Description:	Configuring general peripherals like RCC and so on...
+*   Function Status: 	PRILIMINARY   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*
+*	************************************************************************************************
+*	Function Name:			_init_General()
+*	Function Scope:			Global
+*	Function Parameters:	void
+*	Function Return Type:	void
+*	************************************************************************************************/
+void _init_General( void );
 
 #endif /* _DRV_GENERAL_H_  */
 
 /****************************************************************************************************
 *	Revision History (Description (author, date: yyyy/mm/dd))
 *
-****************************************************************************************************/
-
-/*                                 FUNCTION DECLARATION TEMPLATE                                   */
-/****************************************************************************************************
-*   @Brief Description:
-*
-*	************************************************************************************************
-*	Function Name:
-*	Function Parameters:
-*	Function Return Type:
 ****************************************************************************************************/
 
 /************************************     END OF THE FILE      *************************************/
