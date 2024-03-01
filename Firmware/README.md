@@ -2,8 +2,7 @@
 
 What is this firmware for?
 
-
-## Features
+## Specification
 
 - __MCU :__ 	STM32U575
 - __OS:__ 		FreeRTOS
@@ -17,8 +16,7 @@ What is this firmware for?
 
 What is this firmware for?
 
-
-## Features
+## Specification
 
 - __MCU :__ 	STM32WLE5
 - __OS:__ 		FreeRTOS
@@ -33,8 +31,7 @@ What is this firmware for?
 
 What is this firmware for?
 
-
-## Features
+## Specification
 
 - __MCU :__ 	STM32WLE5
 - __OS:__ 		FreeRTOS
