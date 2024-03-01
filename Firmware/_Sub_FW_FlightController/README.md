@@ -1,7 +1,4 @@
-# Version History
+## Version History Roadmap
 
-A brief description of this version history belongs to what project
-
-## Roadmap
-
-- __vX_YYYYMMDD :__ Describe what's this version and what's the difference between this and previous version.
+- __v1_20240301 :__ 
+	- It's the first version.
