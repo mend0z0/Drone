@@ -67,7 +67,7 @@ __Robotics__
 
 ## Glamour Shots
 
-|![_ASMView_Top_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.png)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Bottom_Quadcopter_v1.0.png)|![_MECH_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_MECH_Quadcopter_v1.0.jpeg)|![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_APP_Quadcopter_v1.0.png)|
+|![_ASMView_Top_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Bottom_Quadcopter_v1.0.svg)|![_MECH_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_MECH_Quadcopter_v1.0.svg)|![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_APP_Quadcopter_v1.0.svg)|
 |:--:| :--:| :--:| :--: |
 | PCB Top View | PCB Bottom View | Frame View | Application View |
 
