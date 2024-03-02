@@ -59,11 +59,7 @@ const uint32_t LPUART1_IRQ_PRIORITY = 1;	// LPUART1 interrupt vector priority.
 ****************************   GLOB. VARIABLES DECLARATION    ***************************************
 *****************************************************************************************************/
 
-struct{
-	uint8_t recievedData[LPUART_BUFFER_SIZE];
-	uint8_t transmittedData[LPUART_BUFFER_SIZE];
-}lpuart;
-
+struct lpuart_buffer lpuart1;
 
 /****************************************************************************************************
 ***********************     STATIC/LOCAL FUNCTIONS DECLARATION      *********************************
@@ -96,30 +92,26 @@ static void _init_LPUART1( void );
 *	Function Return Type:	void
 *	************************************************************************************************
 *	@Detailed Description: (Do numbering and tag the number to each part of code)
-*   Function Parameters Description:
-*   Function Return Type Description:
-*   Comments should be added in front of each line. (This line should be deleted)
+*   Function Parameters Description:	void
+*   Function Return Type Description:	void
 *	************************************************************************************************
 *	Revision History (Description (author, date: yyyy/mm/dd))
 *
 ****************************************************************************************************/
 static void _init_GPIO( void )
 {
-	// PA2 = LPUART1_TX
-	// PA3 = LPUART1_RX
-
 	RCC->AHB2ENR1 |= 	RCC_AHB2ENR1_GPIOAEN;		// IO port A clock enabled
 
-	GPIOA->MODER |= 	GPIO_MODER_ODR3_1 | 		// Alternate function mode
-						GPIO_MODER_ODR2_1			// Alternate function mode
+	GPIOA->MODER |= 	GPIO_MODER_ODR3_1 | 		// Alternate function mode - PA2 = LPUART1_TX
+						GPIO_MODER_ODR2_1			// Alternate function mode - PA3 = LPUART1_RX
 						;
 
 	GPIOA->OSPEEDR |= 	GPIO_OSPEEDR_OSPEED3_0 |	// Medium speed
 						GPIO_OSPEEDR_OSPEED2_0		// Medium speed
 						;
 
-	GPIOA->AFR[0] |= 	GPIO_AFRL_AFSEL3_3 |		// AF8
-						GPIO_AFRL_AFSEL2_3			// AF8
+	GPIOA->AFR[0] |= 	GPIO_AFRL_AFSEL3_3 |		// AF8 - PA2 = LPUART1_TX
+						GPIO_AFRL_AFSEL2_3			// AF8 - PA3 = LPUART1_RX
 						;
 }
 
@@ -134,9 +126,8 @@ static void _init_GPIO( void )
 *	Function Return Type:	void
 *	************************************************************************************************
 *	@Detailed Description: (Do numbering and tag the number to each part of code)
-*   Function Parameters Description:
-*   Function Return Type Description:
-*   Comments should be added in front of each line. (This line should be deleted)
+*   Function Parameters Description:	void
+*   Function Return Type Description:	void
 *	************************************************************************************************
 *	Revision History (Description (author, date: yyyy/mm/dd))
 *
@@ -159,7 +150,7 @@ static void _init_LPDMA( void )
 	LPDMA1_Channel0->CTR1 |= DMA_CTR1_DINC;						// destination incrementing single
 
 	LPDMA1_Channel0->CSAR = &LPUART1->RDR;						// source address
-	LPDMA1_Channel0->CDAR = &lpuart.recievedData[0];			// destination address
+	LPDMA1_Channel0->CDAR = &lpuart1.recievedData[0];			// destination address
 
 	LPDMA1_Channel0->CCR |= DMA_CCR_EN;							// write: enable channel, read: channel enabled
 
@@ -170,7 +161,7 @@ static void _init_LPDMA( void )
 
 	LPDMA1_Channel1->CTR2 |= ((1UL) << DMA_CTR2_REQSEL_Pos);	// lpuart1_tx_dma
 
-	LPDMA1_Channel1->CSAR = &lpuart.transmittedData[0];			// source address
+	LPDMA1_Channel1->CSAR = &lpuart1.transmittedData[0];			// source address
 	LPDMA1_Channel1->CDAR = &LPUART1->TDR;						// destination address
 
 	LPDMA1_Channel1->CCR |= DMA_CCR_EN;							// write: enable channel, read: channel enabled
@@ -201,6 +192,13 @@ static void _init_LPUART1( void )
 	if(initFlag == true)
 	{
 		return;												// If we have initialized it before then we'll exit from the function.
+	}
+
+	//Clearing the buffer memory
+	for(uint16_t cnt = 0; cnt < LPUART_BUFFER_SIZE; ++cnt)
+	{
+		lpuart1.transmittedData[cnt] = 0;
+		lpuart1.recievedData[cnt] = 0;
 	}
 
 	// LPUART1 kernel clock source.
