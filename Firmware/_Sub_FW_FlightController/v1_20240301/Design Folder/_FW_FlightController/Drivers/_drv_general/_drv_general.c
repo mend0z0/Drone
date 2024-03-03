@@ -1,45 +1,45 @@
 /****************************************************************************************************
 *
-*   Project Name:       Quadcopter._FW_FlightController
-*   @Brief Description:
-*   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*   	Project Name:       Quadcopter._FW_FlightController
+*   	@Brief Description:
+*   	File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
 *	File Name:	_drv_general.c
 *	Version:	01
 *	Revision:	00
 *	Date:		2024/03/01
 *	License:	Open-source
-*	******************************** Project Description *******************************************
+********************************* Project Description *******************************************
 *	@Detailed Description:
 *
 *
 *
-*	******************************** File Description *******************************************
+********************************* File Description *******************************************
 *	@Detailed Description:
 *
 *
-*	*********************************  Hardware Info  **********************************************
-*   Name:       _HW_FlightController
-*   Version:    v1.0
-*	*********************************  Processor Info **********************************************
+**********************************  Hardware Info  **********************************************
+*   	Name:       _HW_FlightController
+*   	Version:    v1.0
+**********************************  Processor Info **********************************************
 *	Processor:          STM32U575ZIT6QU (Cortex�-M33) 32-Bits
-*	Clock Frequency:    160.00		MHz
-*	RAM Size:           784.00		KBytes
-*	Flash Size:         2.00		MBytes
-*   SRAM1 Size:         192.00   	KBytes
-*   SRAM2 Size:         64.00   	KBytes
-*   SRAM3 Size:         512.00   	KBytes
-*   SRAM4 Size:         16.00   	KBytes
-*	***********************************  Case Style  ***********************************************
+*	Clock Frequency:    160.00	MHz
+*	RAM Size:           784.00	KBytes
+*	Flash Size:         2.00	MBytes
+*   	SRAM1 Size:         192.00   	KBytes
+*   	SRAM2 Size:         64.00   	KBytes
+*   	SRAM3 Size:         512.00   	KBytes
+*   	SRAM4 Size:         16.00   	KBytes
+************************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
 *	Headers = SCREAMIN_SNAKE_CASE
-*   Macros = SCREAMING_SNAKE_CASE
-*   Const Variables = SCREAMING_SNAKE_CASE
+*   	Macros = SCREAMING_SNAKE_CASE
+*   	Const Variables = SCREAMING_SNAKE_CASE
 *	Functions = PascalCase				Initialize Functions = _lower_case
-*	Struct = lower_case					Struct.members = camelCase
-*	Enum = lower_case					Enum Members = SNAKE_CASE
+*	Struct = lower_case				Struct.members = camelCase
+*	Enum = lower_case				Enum Members = SNAKE_CASE
 *	Pointer Variables = p_camelCase
-*	*********************************** Contact Info ***********************************************
+************************************ Contact Info ***********************************************
 *	Author:	Siavash Taher Parvar
 *	GitHub: github.com/Mend0z0
 ****************************************************************************************************/
@@ -68,18 +68,18 @@ void _init_Systick( void );
 *****************************************************************************************************/
 
 /****************************************************************************************************
-*   @Brief Description:	Configuring general peripherals like RCC and so on...
-*   Function Status: 	PRILIMINARY   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*   	@Brief Description:	Configuring general peripherals like RCC and so on...
+*   	Function Status: 	PRILIMINARY   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
 *
-*	************************************************************************************************
+*************************************************************************************************
 *	Function Name:			_init_General()
 *	Function Scope:			Global
 *	Function Parameters:	void
 *	Function Return Type:	void
-*	************************************************************************************************
-*   Function Parameters Description:
-*   Function Return Type Description:
-*	************************************************************************************************
+*************************************************************************************************
+*   	Function Parameters Description:
+*   	Function Return Type Description:
+*************************************************************************************************
 *	Revision History (Description, author, date: yyyy/mm/dd)
 *
 ****************************************************************************************************/
@@ -89,7 +89,29 @@ void _init_General( void )
 	_init_Systick(160000000); // Configure systick clock with 160MHz input clock
 }
 
-
+/****************************************************************************************************
+*   	@Brief Description:	This function will fill an array with defined input value
+*   	Function Status: 	PRILIMINARY   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:		ArrayFill()
+*	Function Scope:		Global
+*	Function Parameters:	uint8_t *array, uint16_t bufferSize, uint8_t value
+*	Function Return Type:	void
+*************************************************************************************************
+*   	Function Parameters Description:  pointer to array, buffer size, and the desire value you want fill the array with.
+*   	Function Return Type Description: void
+*************************************************************************************************
+*	Revision History (Description, author, date: yyyy/mm/dd)
+*
+****************************************************************************************************/
+void ArrayFill( uint8_t *array, uint16_t bufferSize, uint8_t value)
+{
+  while(--bufferSize)
+    {
+      *(array + bufferSize) = value;
+    }
+}
 
 /****************************************************************************************************
 ****************************         STATIC FUNTIONS         ****************************************
@@ -167,19 +189,18 @@ void _init_Systick( uint32_t inputClock )
 /*                                   GLOBAL FUNCTION TEMPLATE                                      */
 
 /****************************************************************************************************
-*   @Brief Description:
-*   Function Status: 	DRAFT   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*   	@Brief Description:
+*   	Function Status: 	DRAFT   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
 *
-*	************************************************************************************************
+*************************************************************************************************
 *	Function Name:
 *	Function Scope:			Global
 *	Function Parameters:
 *	Function Return Type:
-*	************************************************************************************************
-*   Function Parameters Description:
-*   Function Return Type Description:
-*   Comments should be added in front of each line. (This line should be deleted)
-*	************************************************************************************************
+*************************************************************************************************
+*   	Function Parameters Description:
+*   	Function Return Type Description:
+*************************************************************************************************
 *	Revision History (Description, author, date: yyyy/mm/dd)
 *
 ****************************************************************************************************/
@@ -187,20 +208,19 @@ void _init_Systick( uint32_t inputClock )
 /*                               STATIC/LOCAL FUNCTION TEMPLATE                                    */
 
 /****************************************************************************************************
-*   @Brief Description:
-*   Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*   	@Brief Description:
+*   	Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
-*	************************************************************************************************
+*************************************************************************************************
 *	Function Name:
 *	Function Scope:         Local(static)
 *	Function Parameters:
 *	Function Return Type:
-*	************************************************************************************************
+*************************************************************************************************
 *	@Detailed Description: (Do numbering and tag the number to each part of code)
-*   Function Parameters Description:
-*   Function Return Type Description:
-*   Comments should be added in front of each line. (This line should be deleted)
-*	************************************************************************************************
+*   	Function Parameters Description:
+*   	Function Return Type Description:
+*************************************************************************************************
 *	Revision History (Description (author, date: yyyy/mm/dd))
 *
 ****************************************************************************************************/
