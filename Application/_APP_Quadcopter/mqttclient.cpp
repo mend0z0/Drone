@@ -98,6 +98,7 @@ void MQTTClient::mqttNewReceivedMessage(QMqttMessage msg)
 
 void MQTTClient::mqttSendMsg(QByteArray msg)
 {
+    qDebug() << "MQTT: " << msg;
     qcopter_mqttClient->publish( mqtt_client.topic, msg, mqtt_client.QoS, false);
 }
 
