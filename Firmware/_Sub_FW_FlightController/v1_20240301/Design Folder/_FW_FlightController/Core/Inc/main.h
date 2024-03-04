@@ -32,6 +32,7 @@ extern "C" {
 #include "stdint.h"
 #include "_drv_general.h"
 #include "_drv_lpuart1.h"
+#include "../../Drivers/_drv_TIM3/_drv_TIM3.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */

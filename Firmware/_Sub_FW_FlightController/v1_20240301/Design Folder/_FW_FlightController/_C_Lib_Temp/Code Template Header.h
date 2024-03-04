@@ -1,13 +1,13 @@
 /****************************************************************************************************
 *
-*   Project Name:
+*   Project Name:       Quadcopter._FW_FlightController
 *   @Brief Description:
 *   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
 *	File Name:	xxxx.h
-*	Version:	xx
-*	Revision:	xx
-*	Date:		yyyy/mm/dd
+*	Version:	01
+*	Revision:	00
+*	Date:		2024/03/dd
 *	License:	Open-source
 *	******************************** Project Description *******************************************
 *	@Detailed Description:
@@ -19,14 +19,14 @@
 *
 *
 *	*********************************  Hardware Info  **********************************************
-*   Name:
-*   Version:
+*   Name:       _HW_FlightController
+*   Version:    v1.0
 *	*********************************  Processor Info **********************************************
-*	Processor:                  x-Bits
-*	Clock Frequency:    00.00   MHz
-*	RAM Size:           00.00   MBytes
-*	Flash Size:         00.00   MBytes
-*	Cache Size:         00.00   MBytes
+*	Processor:          STM32U575 (Cortex®-M33) 32-Bits
+*	Clock Frequency:    160.00	MHz
+*	RAM Size:           784.00	KBytes
+*	Flash Size:         2.00	MBytes
+*   SRAM Size:          16.00   KBytes
 *	***********************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
 *	Headers = SCREAMIN_SNAKE_CASE
@@ -52,6 +52,10 @@
 
 /****************************************************************************************************
 ****************************   DEFINED VARIABLES DECLARATION    *************************************
+*****************************************************************************************************/
+
+/****************************************************************************************************
+****************************   		STRUCT DECLARATION  		*************************************
 *****************************************************************************************************/
 
 /****************************************************************************************************

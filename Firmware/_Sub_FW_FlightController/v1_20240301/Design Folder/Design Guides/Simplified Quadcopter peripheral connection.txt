@@ -6,4 +6,15 @@ Motors: DMA -> PWM
 
 Camera: DCMI -> DMA -> QSPI -> DMA -> SPI
 
+Battery: ADC -> DMA
+
+Temp comes from BMI160
+
+Humedity: I2C <-> DMA
+
+I'll find a sensor for humedity :D
+
+Battery, temperature, humedity -> each minute update
+
+speed, displacement, height -> each second update
   

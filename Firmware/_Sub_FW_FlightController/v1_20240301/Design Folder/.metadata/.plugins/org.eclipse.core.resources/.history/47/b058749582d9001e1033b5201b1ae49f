@@ -1,0 +1,365 @@
+/****************************************************************************************************
+*
+*   	Project Name:       Quadcopter._FW_FlightController
+*   	@Brief Description:
+*   	File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*	File Name:	_drv_TIM3.c
+*	Version:	01
+*	Revision:	00
+*	Date:		2024/03/02
+*	License:	Open-source
+********************************* Project Description *******************************************
+*	@Detailed Description:
+*
+*
+*
+********************************* File Description *******************************************
+*	@Detailed Description:
+*
+*
+**********************************  Hardware Info  **********************************************
+*   	Name:       _HW_FlightController
+*   	Version:    v1.0
+**********************************  Processor Info **********************************************
+*	Processor:          STM32U575ZIT6QU (Cortex�-M33) 32-Bits
+*	Clock Frequency:    160.00	MHz
+*	RAM Size:           784.00	KBytes
+*	Flash Size:         2.00	MBytes
+*   	SRAM1 Size:         192.00   	KBytes
+*   	SRAM2 Size:         64.00   	KBytes
+*   	SRAM3 Size:         512.00   	KBytes
+*   	SRAM4 Size:         16.00   	KBytes
+************************************  Case Style  ***********************************************
+*	Local Variables = camelCase			Global Variables = g_camelCase
+*	Headers = SCREAMIN_SNAKE_CASE
+*   	Macros = SCREAMING_SNAKE_CASE
+*   	Const Variables = SCREAMING_SNAKE_CASE
+*	Functions = PascalCase				Initialize Functions = _lower_case
+*	Struct = lower_case				Struct.members = camelCase
+*	Enum = lower_case				Enum Members = SNAKE_CASE
+*	Pointer Variables = p_camelCase
+************************************ Contact Info ***********************************************
+*	Author:	Siavash Taher Parvar
+*	GitHub: github.com/Mend0z0
+****************************************************************************************************/
+
+/****************************************************************************************************
+****************************       HEADERS DECLARATION       ****************************************
+*****************************************************************************************************/
+#include "_drv_TIM3.h"
+
+/****************************************************************************************************
+****************************   CONST VARIABLES DECLARATION    ***************************************
+*****************************************************************************************************/
+
+const uint16_t TIM3_PRESCALER = 37;		// This value will create a 64Hz signal with 16bits resolution from Fclk = 160 MHz
+const uint16_t TIM3_ARR_RESET_VALUE = 0XFFFF;	// This will determine the resolution that I set it to 16bits
+const uint8_t TIM3_UPD_DMA = 65;		// GPDMA request
+const uint8_t TIM3_BURST_NO = 5;		// This is the number of burst requests that we'll issue from TIM3 to DMA
+
+/****************************************************************************************************
+****************************   GLOB. VARIABLES DECLARATION    ***************************************
+*****************************************************************************************************/
+
+struct timx_vars tim3;
+
+/****************************************************************************************************
+***********************     STATIC/LOCAL FUNCTIONS DECLARATION      *********************************
+*****************************************************************************************************/
+
+void GPDMA1_Channel0_IRQHandler( void )
+{
+  tim3.timUpdateAvailable = true;
+}
+
+static void _init_GPIO( void );
+static void _init_GPDMA( void );
+static void GPDMAEnable( uint8_t channel, uint16_t buffSize);
+static void _init_TIM3( void );
+
+/****************************************************************************************************
+****************************         GLOBAL FUNTIONS         ****************************************
+*****************************************************************************************************/
+
+/****************************************************************************************************
+*   	@Brief Description: 	Updating CCR DMA holder registers
+*   	Function Status: 	PRILIMINARY   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:		TIM3Update()
+*	Function Scope:		Global
+*	Function Parameters:	__IO uint16_t *ccrValues
+*	Function Return Type:	void
+*************************************************************************************************
+*   	Function Parameters Description:  Input values to update CCR registers and changing PWM pulse width
+*   	Function Return Type Description: void
+*************************************************************************************************
+*	Revision History (Description, author, date: yyyy/mm/dd)
+*
+****************************************************************************************************/
+void TIM3Update( __IO uint16_t *ccrValues )
+{
+  if(timUpdateAvailable == false)	// check if it's ready for new value.
+    {
+      return;
+    }
+  tim3.timUpdateAvailable = false;
+
+  _init_TIM3();
+
+  tim3.ccrValue[0] = *(ccrValues + 0);
+  tim3.ccrValue[1] = *(ccrValues + 1);
+  tim3.ccrValue[2] = *(ccrValues + 2);
+  tim3.ccrValue[3] = *(ccrValues + 3);
+
+  GPDMAEnable();
+}
+
+
+/****************************************************************************************************
+****************************         STATIC FUNTIONS         ****************************************
+*****************************************************************************************************/
+
+/****************************************************************************************************
+*   	@Brief Description: 	Configure GPIO ports
+*   	Function Status: 	PRELIMINARY   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:		_init_GPIO()
+*	Function Scope:         Local(static)
+*	Function Parameters:	void
+*	Function Return Type:	void
+*************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   	Function Parameters Description:  void
+*   	Function Return Type Description: void
+*************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
+static void _init_GPIO( void )
+{
+  static bool initFlag = false;				//This variable will check if LPUART has been initialized or not.
+  if(initFlag == true)
+    {
+      return;						// If we have initialized it before then we'll exit from the function.
+    }
+
+  RCC->AHB2ENR1 |= 	RCC_AHB2ENR1_GPIOAEN 	|	// IO port A clock enabled
+			RCC_AHB2ENR1_GPIOBEN		// IO port B clock enabled
+			;
+
+
+  GPIOA->MODER |=	GPIO_MODER_MODE6_1	|	// Alternate function mode - TIM3_CH1 = PA6
+			GPIO_MODER_MODE7_1		// Alternate function mode - TIM3_CH2 = PA7
+			;
+
+  GPIOB->MODER |= 	GPIO_MODER_MODE0_1	|	// Alternate function mode - TIM3_CH3 = PB0
+			GPIO_MODER_MODE1_1		// Alternate function mode - TIM3_CH4 = PB1
+			;
+
+  GPIOA->AFR[0] |= 	GPIO_AFRL_AFSEL6_1	|	// AF2 - TIM3_CH1 = PA6
+			GPIO_AFRL_AFSEL7_1		// AF2 - TIM3_CH2 = PA7
+			;
+  GPIOB->AFR[0] |= 	GPIO_AFRL_AFSEL0_1	|	// AF2 - TIM3_CH3 = PB0
+			GPIO_AFRL_AFSEL1_1		// AF2 - TIM3_CH4 = PB1
+			;
+
+  initFlag = true;
+}
+
+/****************************************************************************************************
+*   	@Brief Description:
+*   	Function Status: 		DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:		_init_GPDMA()
+*	Function Scope:         Local(static)
+*	Function Parameters:	void
+*	Function Return Type:	void
+*************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   	Function Parameters Description:	void
+*   	Function Return Type Description:	void
+*************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
+static void  _init_GPDMA( void )
+{
+  peripheral to memory -> port 0
+
+
+  memory to peripheral -> port 1
+
+  static bool initFlag = false;							//This variable will check if LPUART has been initialized or not.
+  if(initFlag == true)
+    {
+      return;									// If we have initialized it before then we'll exit from the function.
+    }
+
+  RCC->AHB1ENR |= RCC_AHB1ENR_GPDMA1EN;						// GPDMA1 clock enabled
+
+
+  GPDMA1_Channel0->CCR |= 	DMA_CCR_PRIO_1				|	// low priority, high weight
+				DMA_CCR_TCIE					// transfer complete interrupt enable
+				;
+
+  GPDMA1_Channel0->CTR1 |= 	//(TIM3_BURST_NO << (DMA_CTR1_DBL_1_Pos))	|	// destination burst length minus 1, between 0 and 63
+				//DMA_CTR1_DINC				|	// contiguously incremented burst
+				DMA_CTR1_DDW_LOG2_0			| 	// half-word (2 bytes)
+				(TIM3_BURST_NO << (DMA_CTR1_SBL_1_Pos))	| 	// source burst length minus 1, between 0 and 63
+				DMA_CTR1_SINC				|	// contiguously incremented burst
+				DMA_CTR1_SDW_LOG2_0				// half-word (2 bytes)
+				;
+
+  GPDMA1_Channel0->CTR2 |= 	DMA_CTR2_DREQ	|				// GPDMA hardware request selection
+				(TIM3_UPD_DMA << DMA_CTR2_REQSEL_Pos)		//
+				;
+  //circular mode and 4 transfer each for cc1, cc2, cc3, cc4
+  GPDMA1_Channel0->CSAR = (uint32_t)(&tim3.ccrValue[0]);			// The source
+  GPDMA1_Channel0->CDAR = (uint32_t)(&TIM3->DMAR);				// The destination
+
+
+  initFlag = true;
+}
+
+static void GPDMAEnable( void )
+{
+  GPDMA1_Channel0->CFCR |= 	DMA_CFCR_TCF;	// corresponding TCF flag cleared
+  GPDMA1_Channel0->CCR |=	DMA_CCR_EN;	//  write: enable channel, read: channel enabled
+
+}
+
+/****************************************************************************************************
+*   	@Brief Description: 	Configuring TIM3
+*   	Function Status: 	PRELIMINARY   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:		_init_TIM2()
+*	Function Scope:         Local(static)
+*	Function Parameters:	void
+*	Function Return Type:	void
+*************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   	Function Parameters Description:  void
+*   	Function Return Type Description: void
+*************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
+static void _init_TIM3( void )
+{
+  static bool initFlag = false;								// This variable will check if LPUART has been initialized or not.
+  if(initFlag == true)
+    {
+      return;										// If we have initialized it before then we'll exit from the function.
+    }
+
+  tim3.ccrValue[0] = TIM3_RESET_VALUE_CCR;
+  tim3.ccrValue[1] = TIM3_RESET_VALUE_CCR;
+  tim3.ccrValue[2] = TIM3_RESET_VALUE_CCR;
+  tim3.ccrValue[3] = TIM3_RESET_VALUE_CCR;
+  tim3.timUpdateAvailable = true;
+
+  RCC->APB1ENR1 |= 	RCC_APB1ENR1_TIM3EN;						// TIM3 clock enabled
+
+  _init_GPIO();
+
+  //-------	TIM3 GENERAL
+  TIM3->PSC = 		TIM3_PRESCALER;							// Prescaler value
+
+  TIM3->CR1 |= 		TIM_CR1_ARPE	|						// TIMx_ARR register is buffered
+			TIM_CR1_URS							// Only counter overflow/underflow generates an update interrupt or DMA request if enabled.
+			;
+  TIM3->ARR = 		TIM3_ARR_RESET_VALUE;						// Auto-reload value
+  TIM3->CNT = 		0UL;								// TIM3 counter value
+
+  //-------	CCR
+  TIM3->CCMR1 |= 	TIM_CCMR1_OC1M_2	| TIM_CCMR1_OC1M_1	|		// PWM mode 1 - In upcounting mode, channel 1 is active.
+			TIM_CCMR1_OC1PE							// Preload register on TIMx_CCR1 enabled.
+			;
+  TIM3->CCR1 = 		TIM3_RESET_VALUE_CCR;						// Capture/compare 1 value
+  TIM3->CCER |= 	TIM_CCER_CC1E;							// Capture mode enabled / OC1 signal is output on the corresponding output pin
+
+  TIM3->CCMR1 |= 	TIM_CCMR1_OC2M_2	| TIM_CCMR1_OC2M_1	|		// PWM mode 1 - In upcounting mode, channel 2 is active.
+			TIM_CCMR1_OC2PE							// Preload register on TIMx_CCR2 enabled.
+					;
+  TIM3->CCR2 = 		TIM3_RESET_VALUE_CCR;						// Capture/compare 2 value
+  TIM3->CCER |= 	TIM_CCER_CC2E;							// Capture mode enabled / OC2 signal is output on the corresponding output pin
+
+
+  TIM3->CCMR2 |= 	TIM_CCMR2_OC3M_2	| TIM_CCMR2_OC3M_1	|		// PWM mode 1 - In upcounting mode, channel 3 is active.
+			TIM_CCMR2_OC3PE							// Preload register on TIMx_CCR3 enabled.
+			;
+  TIM3->CCR3 = 		TIM3_RESET_VALUE_CCR;						// Capture/compare 3 value
+  TIM3->CCER |= 	TIM_CCER_CC3E;							// Capture mode enabled / OC3 signal is output on the corresponding output pin
+
+  TIM3->CCMR2 |= 	TIM_CCMR2_OC4M_2	| TIM_CCMR2_OC4M_1	|		// PWM mode 1 - In upcounting mode, channel 4 is active.
+			TIM_CCMR2_OC4PE							// Preload register on TIMx_CCR4 enabled.
+			;
+  TIM3->CCR4 = 		TIM3_RESET_VALUE_CCR;						// Capture/compare 4 value
+  TIM3->CCER |= 	TIM_CCER_CC4E;							// Capture mode enabled / OC4 signal is output on the corresponding output pin
+
+  //-------	DMA
+  //TIM3->CR2 |= 		TIM_CR2_CCDS;							// CCx DMA requests sent when update event occurs
+  TIM3->DIER |=		TIM_DIER_UDE;							// Update DMA request enabled.
+  TIM3->DCR |= 		TIM_DCR_DBSS_0	|						// DMA burst source selection -  Update
+			TIM_DCR_DBL_1	| TIM_DCR_DBL_0	|				// 4 Transfers
+			(((uint32_t)(&TIM3->CCR1) - (uint32_t)(&TIM3->CR1)) >> 2);	// Base address is TIM3.CCR1 and for each DMA burst we'll update CCR1, CCR2, CCR3, and CCR4
+
+  _init_GPDMA();
+
+  TIM3->CR1 |= 	TIM_CR1_EN;								// Counter enabled
+
+  initFlag = true;
+}
+
+
+/***************************************************************************************************/
+/**********************************                             ************************************/
+/********************                     END OF THE CODE                         ******************/
+/**********************************                             ************************************/
+/***************************************************************************************************/
+
+/*                                   GLOBAL FUNCTION TEMPLATE                                      */
+
+/****************************************************************************************************
+*   	@Brief Description:
+*   	Function Status: 	DRAFT   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:
+*	Function Scope:		Global
+*	Function Parameters:
+*	Function Return Type:
+*************************************************************************************************
+*   	Function Parameters Description:
+*   	Function Return Type Description:
+*************************************************************************************************
+*	Revision History (Description, author, date: yyyy/mm/dd)
+*
+****************************************************************************************************/
+
+/*                               STATIC/LOCAL FUNCTION TEMPLATE                                    */
+
+/****************************************************************************************************
+*   	@Brief Description:
+*   	Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*************************************************************************************************
+*	Function Name:
+*	Function Scope:         Local(static)
+*	Function Parameters:
+*	Function Return Type:
+*************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   	Function Parameters Description:
+*   	Function Return Type Description:
+*************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
+
+/************************************     END OF THE FILE      *************************************/
