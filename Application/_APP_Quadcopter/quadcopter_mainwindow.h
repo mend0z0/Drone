@@ -21,6 +21,8 @@
 #include <QVariant>
 #include <QPixmap>
 #include <QImage>
+#include <QTextCharFormat>
+#include <QPen>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
@@ -36,7 +38,10 @@ public:
 
 private slots:
     void MQTTConsole(void);
-    void MQTTReceivedMsg(QMqttMessage msg);
+    void MQTTReceivedMsgGeneral(QMqttMessage msg);
+    void MQTTReceivedMsgStatus(QMqttMessage msg);
+    void MQTTReceivedMsgCommand(QMqttMessage msg);
+    void MQTTSentMsg(QMqttMessage msg);
 
     void ButtonForward( void );
     void ButtonReverse( void );
@@ -63,6 +68,9 @@ private slots:
 private:
     Ui::Quadcopter_MainWindow *ui;
 
+    const qreal fontPointSize = 8;
+    const qreal fontLetterSpacing = (fontPointSize * 12);
+
     MQTTClient *qcopterConsole = new MQTTClient();
     QMovie  *lostConnectionGif = new QMovie(this);
     QTimer *qcopterGeneralTimer = new QTimer(this);
@@ -82,6 +90,10 @@ private:
         QFont clockFont;
         QPixmap PixmapButtonOn;
         QPixmap PixmapButtonOff;
+        QTextCharFormat txtPanelFormatGeneral;
+        QTextCharFormat txtPanelFormatStatus;
+        QTextCharFormat txtPanelFormatCommand;
+        QPen txtBrush;
         bool lockPanel;
     }qcopter;
 

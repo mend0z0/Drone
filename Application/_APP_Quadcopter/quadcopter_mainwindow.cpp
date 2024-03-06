@@ -55,25 +55,81 @@ void Quadcopter_MainWindow::MQTTConsole()
     qcopterConsole->exec();
 }
 
-void Quadcopter_MainWindow::MQTTReceivedMsg(QMqttMessage msg)
+void Quadcopter_MainWindow::MQTTReceivedMsgGeneral(QMqttMessage msg)
 {
     QString tempMsg;
-    QPalette mqttTxtPallete;
+    qcopter.time = QDateTime::currentDateTime();
+
+    qcopter.txtPanelFormatGeneral.setFont(QFont("Courier"));
+    qcopter.txtPanelFormatGeneral.setFontLetterSpacing(fontLetterSpacing);
+    qcopter.txtPanelFormatGeneral.setFontPointSize(fontPointSize);
+    qcopter.txtBrush.setColor(QColor(255,255,255));
+    qcopter.txtPanelFormatGeneral.setTextOutline(qcopter.txtBrush);
+    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatGeneral);
+
+    tempMsg.append(qcopter.time.toString(   "yyyy-MM-dd HH:mm:ss") +
+                                            "\n[ Topic: " + msg.topic().name() +
+                                            ", QoS: " + QString::number(msg.qos()) +
+                                            " ]\n" + msg.payload());
+
+    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
+}
+
+void Quadcopter_MainWindow::MQTTReceivedMsgStatus(QMqttMessage msg)
+{
+    QString tempMsg;
     QByteArray tempJsonDataInput = msg.payload();
     qcopter.time = QDateTime::currentDateTime();
 
-    mqttTxtPallete.setColor( foregroundRole(), QColor(0,255,0));
-    ui->plainTextEdit_LogPanel->setPalette(mqttTxtPallete);
+    qcopter.txtPanelFormatStatus.setFont(QFont("Courier"));
+    qcopter.txtPanelFormatStatus.setFontLetterSpacing(fontLetterSpacing);
+    qcopter.txtPanelFormatStatus.setFontPointSize(fontPointSize);
+    qcopter.txtBrush.setColor(QColor(74, 148, 0));
+    qcopter.txtPanelFormatStatus.setTextOutline(qcopter.txtBrush);
+    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatStatus);
 
-    tempMsg.append(qcopter.time.toString("yyyy-MM-dd HH:mm:ss") + ": " + tempJsonDataInput);
+    tempMsg.append(qcopter.time.toString(   "yyyy-MM-dd HH:mm:ss") +
+                                            "\n[ Topic: " + msg.topic().name() +
+                                            ", QoS: " + QString::number(msg.qos()) +
+                                            " ]\n" + tempJsonDataInput);
+
     ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
-
-    ui->label_MQTTTopic->setText("Topic: " + msg.topic().name());
-
-    ui->label_MQTTQoS->setText("QoS: " + QString::number(msg.qos()));
 
     qcopter.jsonDocStatus = QJsonDocument::fromJson(tempJsonDataInput);
     QuadcopterParamUpdate(qcopter.jsonDocStatus.object());
+}
+
+void Quadcopter_MainWindow::MQTTReceivedMsgCommand(QMqttMessage msg)
+{
+    QString tempMsg;
+    qcopter.time = QDateTime::currentDateTime();
+
+    qcopter.txtPanelFormatCommand.setFont(QFont("Courier"));
+    qcopter.txtPanelFormatCommand.setFontLetterSpacing(fontLetterSpacing);
+    qcopter.txtPanelFormatCommand.setFontPointSize(fontPointSize);
+    qcopter.txtBrush.setColor(QColor(255,0,0));
+    qcopter.txtPanelFormatCommand.setTextOutline(qcopter.txtBrush);
+    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatCommand);
+
+    tempMsg.append(qcopter.time.toString(   "yyyy-MM-dd HH:mm:ss") +
+                                            "\n[ Topic: " + msg.topic().name() +
+                                            ", QoS: " + QString::number(msg.qos()) +
+                                            " ]\n" + msg.payload());
+
+    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
+}
+
+void Quadcopter_MainWindow::MQTTSentMsg(QMqttMessage msg)
+{
+    QString tempMsg;
+    QPalette mqttTxtPallete;
+    qcopter.time = QDateTime::currentDateTime();
+
+    mqttTxtPallete.setColor( foregroundRole(), QColor(255,0,0));
+    ui->plainTextEdit_LogPanel->setPalette(mqttTxtPallete);
+
+    tempMsg.append(qcopter.time.toString("yyyy-MM-dd HH:mm:ss") + "->[ Topic: " + msg.topic().name() + ", QoS: " + QString::number(msg.qos()) + " ]"+ ": " + msg.payload());
+    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
 }
 
 void Quadcopter_MainWindow::ButtonForward( void )
@@ -82,7 +138,7 @@ void Quadcopter_MainWindow::ButtonForward( void )
     {
         return;
     }
-    qcopter.jsonObjCommand["Forward"]=1;
+    qcopter.jsonObjCommand["FORWARD"]=1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     //qDebug() << qcopter.jsonDocCommand;
@@ -90,7 +146,7 @@ void Quadcopter_MainWindow::ButtonForward( void )
 
     qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
 
-    qcopter.jsonObjCommand["Forward"] =0;
+    qcopter.jsonObjCommand["FORWARD"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonForward();
@@ -105,7 +161,7 @@ void Quadcopter_MainWindow::ButtonReverse( void )
         return;
     }
 
-    qcopter.jsonObjCommand["Reverse"]=1;
+    qcopter.jsonObjCommand["REVERSE"]=1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     //qDebug() << qcopter.jsonDocCommand;
@@ -113,7 +169,7 @@ void Quadcopter_MainWindow::ButtonReverse( void )
 
     qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
 
-    qcopter.jsonObjCommand["Reverse"]=0;
+    qcopter.jsonObjCommand["REVERSE"]=0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonReverse();
@@ -128,7 +184,7 @@ void Quadcopter_MainWindow::ButtonLeft( void )
         return;
     }
 
-    qcopter.jsonObjCommand["Left"] =1;
+    qcopter.jsonObjCommand["LEFT"] =1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     //qDebug() << qcopter.jsonDocCommand;
@@ -136,7 +192,7 @@ void Quadcopter_MainWindow::ButtonLeft( void )
 
     qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
 
-    qcopter.jsonObjCommand["Left"] =0;
+    qcopter.jsonObjCommand["LEFT"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonLeft();
@@ -151,7 +207,7 @@ void Quadcopter_MainWindow::ButtonRight( void )
         return;
     }
 
-    qcopter.jsonObjCommand["Right"] =1;
+    qcopter.jsonObjCommand["RIGHT"] =1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     //qDebug() << qcopter.jsonDocCommand;
@@ -159,7 +215,7 @@ void Quadcopter_MainWindow::ButtonRight( void )
 
     qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
 
-    qcopter.jsonObjCommand["Right"] =0;
+    qcopter.jsonObjCommand["RIGHT"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonRight();
@@ -522,7 +578,7 @@ void Quadcopter_MainWindow::GeologicalPosition( int value )
         return;
     }
 
-    qcopter.jsonObjCommand["Direction"] = value;
+    qcopter.jsonObjCommand["DIRECT"] = value;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     //qDebug() << qcopter.jsonDocCommand;
@@ -542,7 +598,7 @@ void Quadcopter_MainWindow::Throttle(int value)
 
     ui->lcdNumber_ThrottleValue->display(value);
 
-    qcopter.jsonObjCommand["Height"] = value;
+    qcopter.jsonObjCommand["ELEVATE"] = value;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     //qDebug() << qcopter.jsonDocCommand;
@@ -577,22 +633,22 @@ void Quadcopter_MainWindow::ButtonCameraShutter()
 
 void Quadcopter_MainWindow::QuadcopterParamInit()
 {
-    qcopter.jsonObjStatus.insert("Temperatuer", 0);
-    qcopter.jsonObjStatus.insert("Humedity" , 0);
-    qcopter.jsonObjStatus.insert("Battery" , 0);
-    qcopter.jsonObjStatus.insert("Speed" , 0);
-    qcopter.jsonObjStatus.insert("Displacement" , 0);
-    qcopter.jsonObjStatus.insert("GeologicalPosition" , 0);
-    qcopter.jsonObjStatus.insert("Height", 0);
+    qcopter.jsonObjStatus.insert("TEMP", 0);
+    qcopter.jsonObjStatus.insert("HUMEDITY" , 0);
+    qcopter.jsonObjStatus.insert("BATT" , 0);
+    qcopter.jsonObjStatus.insert("SPEED" , 0);
+    qcopter.jsonObjStatus.insert("DISPLACEMENT" , 0);
+    qcopter.jsonObjStatus.insert("HEIGHT" , 0);
+    qcopter.jsonObjStatus.insert("GEOPOS", 0);
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
 
-    qcopter.jsonObjCommand.insert("Forward",0);
-    qcopter.jsonObjCommand.insert("Reverse",0);
-    qcopter.jsonObjCommand.insert("Left",0);
-    qcopter.jsonObjCommand.insert("Right",0);
-    qcopter.jsonObjCommand.insert("Direction",0);
-    qcopter.jsonObjCommand.insert("Height",0);
+    qcopter.jsonObjCommand.insert("FORWARD",0);
+    qcopter.jsonObjCommand.insert("REVERSE",0);
+    qcopter.jsonObjCommand.insert("LEFT",0);
+    qcopter.jsonObjCommand.insert("RIGHT",0);
+    qcopter.jsonObjCommand.insert("DIRECT",0);
+    qcopter.jsonObjCommand.insert("ELEVATE",0);
 
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
@@ -604,44 +660,44 @@ void Quadcopter_MainWindow::QuadcopterParamInit()
 
 void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
 {
-    if(inputObj.contains("Temperature"))
+    if(inputObj.contains("TEMP"))
     {
-        qcopter.jsonObjStatus["Temperature"] = inputObj["Temperature"];
+        qcopter.jsonObjStatus["TEMP"] = inputObj["TEMP"];
     }
-    if(inputObj.contains("Humedity"))
+    if(inputObj.contains("HUMEDITY"))
     {
-        qcopter.jsonObjStatus["Humedity"] = inputObj["Humedity"];
+        qcopter.jsonObjStatus["HUMEDITY"] = inputObj["HUMEDITY"];
     }
-    if(inputObj.contains("Speed"))
+    if(inputObj.contains("BATT"))
     {
-        qcopter.jsonObjStatus["Speed"] = inputObj["Speed"];
+        qcopter.jsonObjStatus["BATT"] = inputObj["BATT"];
     }
-    if(inputObj.contains("Displacement"))
+    if(inputObj.contains("SPEED"))
     {
-        qcopter.jsonObjStatus["Displacement"] = inputObj["Displacement"];
+        qcopter.jsonObjStatus["SPEED"] = inputObj["SPEED"];
     }
-    if(inputObj.contains("Height"))
+    if(inputObj.contains("DISPLACEMENT"))
     {
-        qcopter.jsonObjStatus["Height"] = inputObj["Height"];
+        qcopter.jsonObjStatus["DISPLACEMENT"] = inputObj["DISPLACEMENT"];
     }
-    if(inputObj.contains("GeologicalPosition"))
+    if(inputObj.contains("HEIGHT"))
     {
-        qcopter.jsonObjStatus["GeologicalPosition"] = inputObj["GeologicalPosition"];
+        qcopter.jsonObjStatus["HEIGHT"] = inputObj["HEIGHT"];
     }
-    if(inputObj.contains("Battery"))
+    if(inputObj.contains("GEOPOS"))
     {
-        qcopter.jsonObjStatus["Battery"] = inputObj["Battery"];
+        qcopter.jsonObjStatus["GEOPOS"] = inputObj["GEOPOS"];
     }
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
 
-    ui->lcdNumber_Temperature->display(qcopter.jsonObjStatus.value("Temperature").toInt());
-    ui->lcdNumber_Humedity->display(qcopter.jsonObjStatus.value("Humedity").toInt());
-    ui->lcdNumber_Battery->display(qcopter.jsonObjStatus.value("Battery").toInt());
-    ui->lcdNumber_Speed->display(qcopter.jsonObjStatus.value("Speed").toInt());
-    ui->lcdNumber_Displacement->display(qcopter.jsonObjStatus.value("Displacement").toInt());
-    ui->lcdNumber_Height->display(qcopter.jsonObjStatus.value("Height").toInt());
-    ui->dial_GeologicalPosition->setValue(qcopter.jsonObjStatus.value("GeologicalPosition").toInt());
+    ui->lcdNumber_Temperature->display(qcopter.jsonObjStatus.value("TEMP").toInt());
+    ui->lcdNumber_Humedity->display(qcopter.jsonObjStatus.value("HUMEDITY").toInt());
+    ui->lcdNumber_Battery->display(qcopter.jsonObjStatus.value("BATT").toInt());
+    ui->lcdNumber_Speed->display(qcopter.jsonObjStatus.value("SPEED").toInt());
+    ui->lcdNumber_Displacement->display(qcopter.jsonObjStatus.value("DISPLACEMENT").toInt());
+    ui->lcdNumber_Height->display(qcopter.jsonObjStatus.value("HEIGHT").toInt());
+    ui->dial_GeologicalPosition->setValue(qcopter.jsonObjStatus.value("GEOPOS").toInt());
 }
 
 void Quadcopter_MainWindow::ClockInit()
@@ -676,7 +732,9 @@ void Quadcopter_MainWindow::ConnectFunctions()
     connect(ui->pushButton_DroneCameraSnapshot, SIGNAL(clicked(bool)), this, SLOT(ButtonCameraShutter()));
     connect(qcopterGeneralTimer, SIGNAL(timeout()), this, SLOT(ClockUpdate()));
 
-    connect(qcopterConsole, SIGNAL(QCopter_NewMessage(QMqttMessage)), this, SLOT(MQTTReceivedMsg(QMqttMessage)));
+    connect(qcopterConsole, SIGNAL(QCopter_NewMsgGeneral(QMqttMessage)), this, SLOT(MQTTReceivedMsgGeneral(QMqttMessage)));
+    connect(qcopterConsole, SIGNAL(QCopter_NewMsgStatus(QMqttMessage)), this, SLOT(MQTTReceivedMsgStatus(QMqttMessage)));
+    connect(qcopterConsole, SIGNAL(QCopter_NewMsgCommand(QMqttMessage)), this, SLOT(MQTTReceivedMsgCommand(QMqttMessage)));
 }
 
 void Quadcopter_MainWindow::NoisyTVGifControl(bool cmd, uint8_t screenNumber)

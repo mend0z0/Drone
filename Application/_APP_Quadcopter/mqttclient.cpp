@@ -68,7 +68,7 @@ void MQTTClient::mqttPanelClose()
 }
 
 
-bool MQTTClient::PingResult()
+void MQTTClient::PingResult()
 {
     QByteArray pingResults;
 
@@ -91,15 +91,25 @@ bool MQTTClient::PingResult()
     }
 }
 
-void MQTTClient::mqttNewReceivedMessage(QMqttMessage msg)
+void MQTTClient::mqttNewReceivedGeneral(QMqttMessage msg)
 {
-    emit QCopter_NewMessage(msg);
+    emit QCopter_NewMsgGeneral(msg);
+}
+
+void MQTTClient::mqttNewReceivedStatus(QMqttMessage msg)
+{
+    emit QCopter_NewMsgStatus(msg);
+}
+
+void MQTTClient::mqttNewReceivedCommand(QMqttMessage msg)
+{
+    emit QCopter_NewMsgCommand(msg);
 }
 
 void MQTTClient::mqttSendMsg(QByteArray msg)
 {
     qDebug() << "MQTT: " << msg;
-    qcopter_mqttClient->publish( mqtt_client.topic, msg, mqtt_client.QoS, false);
+    qcopter_mqttClient->publish( mqtt_client.topicCommand, msg, mqtt_client.QoS, false);
 }
 
 void MQTTClient::PingMQTTBroker(QString ipAddr)
@@ -112,27 +122,66 @@ void MQTTClient::PingMQTTBroker(QString ipAddr)
     GifLoading(true);
 }
 
-
-void MQTTClient::mqttSubscribeDefault()
+void MQTTClient::mqttSubscribtion()
 {
+    bool connectionStatus = false;
+
     //now we need to subscribe
-    auto subscription = qcopter_mqttClient->subscribe( mqtt_client.topic.name(), mqtt_client.QoS);
+    auto subscriptionGeneral = qcopter_mqttClient->subscribe( mqtt_client.topicGeneral.name(), mqtt_client.QoS);
+    auto subscriptionStatus = qcopter_mqttClient->subscribe( mqtt_client.topicStatus.name(), mqtt_client.QoS);
+    auto subscriptionCommand = qcopter_mqttClient->subscribe( mqtt_client.topicCommand.name(), mqtt_client.QoS);
 
-    qDebug() << "Topic: " << mqtt_client.topic.name() << " & QoS: " << mqtt_client.QoS;
-    qDebug() << "Subscription status: " << subscription;
+    qDebug() << "Topic: " << mqtt_client.topicGeneral.name() << " & QoS: " << mqtt_client.QoS;
+    qDebug() << "Subscription status: " << subscriptionGeneral;
 
-    if(!subscription){
-       mqttMessageBox->critical(this, "Error", "The console can't subscribe");
+    qDebug() << "Topic: " << mqtt_client.topicStatus.name() << " & QoS: " << mqtt_client.QoS;
+    qDebug() << "Subscription status: " << subscriptionStatus;
+
+    qDebug() << "Topic: " << mqtt_client.topicCommand.name() << " & QoS: " << mqtt_client.QoS;
+    qDebug() << "Subscription status: " << subscriptionCommand;
+
+    if(!subscriptionGeneral){
+        mqttMessageBox->critical(this, "Error", "The console can't subscribe to General channel");
+        connectionStatus &= false;
     }
     else{
-       //qcopter_mqttSubscription(subscription);
-       connect(subscription, SIGNAL(messageReceived(QMqttMessage)), this, SLOT(mqttNewReceivedMessage(QMqttMessage)));
+        connect(subscriptionGeneral, SIGNAL(messageReceived(QMqttMessage)), this, SLOT(mqttNewReceivedGeneral(QMqttMessage)));
+        connectionStatus = true;
+    }
 
+    if(!subscriptionStatus){
+       mqttMessageBox->critical(this, "Error", "The console can't subscribe to Status channel");
+        connectionStatus &= false;
+    }
+    else{
+       connect(subscriptionStatus, SIGNAL(messageReceived(QMqttMessage)), this, SLOT(mqttNewReceivedStatus(QMqttMessage)));
+       connectionStatus = true;
+    }
+
+    if(!subscriptionCommand){
+       mqttMessageBox->critical(this, "Error", "The console can't subscribe to Command channel");
+       connectionStatus &= false;
+    }
+    else{
+       connect(subscriptionCommand, SIGNAL(messageReceived(QMqttMessage)), this, SLOT(mqttNewReceivedCommand(QMqttMessage)));
+       connectionStatus = true;
+    }
+
+    if(connectionStatus == true)
+    {
        ui->pushButton_mqttConnect_Disconnect->setEnabled(true);
        ui->pushButton_mqttConnect_Disconnect->setText("Disconnect");
        buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::green);
        ui->pushButton_mqttConnect_Disconnect->setPalette(buttonPalette);
     }
+    else
+    {
+       ui->pushButton_mqttConnect_Disconnect->setEnabled(true);
+       ui->pushButton_mqttConnect_Disconnect->setText("Connect");
+       buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::green);
+       ui->pushButton_mqttConnect_Disconnect->setPalette(buttonPalette);
+    }
+
 }
 
 void MQTTClient::mqttDisconnected()
@@ -145,26 +194,15 @@ void MQTTClient::mqttDisconnected()
     mqttMessageBox->critical(this, "Error", "You got disconnected from server");
 }
 
-void MQTTClient::mqttSubscribeSwitch(uint8_t topicIndex)
-{
-    // This will check the topic number
-    // The theory is each drone that is connected new to the server (mqtt broker)
-    // will publish an announcement and then will get an individual number from the Application
-    // then that number will be saved in the bool mqtt_client.numberOfTopic[topicIndex] as true
-    // Once it got disconnected, then that status will switch to false. now the search method will
-    // be simple and it's just starting from 1 to 99 and checking what spot is available and that spot
-    // will be assigned to the new connected drone. By disconnecting, it means drone disconnects from
-    // router (no wireless connection), othewise drone will be active and by switching between drones we only change topic, that's it!
-    // I need to figure out how to notify if a drone is disconnected, there are some ways of that retaining thing, but I'll check later about it.
-}
-
 void MQTTClient::ParamInit()
 {
     mqtt_client.hostname.append(MQTT_DEFAULT_HOSTNAME);
     mqtt_client.port = MQTT_DEFAULT_PORT;
     mqtt_client.username.append(MQTT_DEFAULT_USERNAME);
     mqtt_client.password.append(MQTT_DEFAULT_PASSWORD);
-    mqtt_client.topic.setName(MQTT_DEFAULT_TOPIC);
+    mqtt_client.topicGeneral.setName(MQTT_DEFAULT_TOPIC_GENERAL);
+    mqtt_client.topicStatus.setName(MQTT_DEFAULT_TOPIC_STATUS);
+    mqtt_client.topicCommand.setName(MQTT_DEFAULT_TOPIC_COMMAND);
     mqtt_client.QoS = MQTT_DEFAULT_QoS;
     mqtt_client.numberOfTopic[0] = true;                //The 0 is home that is always true and can't be assigned to individual drone.
 
@@ -247,7 +285,7 @@ void MQTTClient::ConnectFunctions()
     connect(ui->pushButton_mqttConnect_Disconnect, SIGNAL(clicked(bool)), this, SLOT(mqttConnectDisconnectButton()));
     connect(ui->pushButton_mqttCancel, SIGNAL(clicked(bool)), this, SLOT(mqttPanelClose()));
 
-    connect(qcopter_mqttClient, SIGNAL(connected()), this, SLOT(mqttSubscribeDefault()));
+    connect(qcopter_mqttClient, SIGNAL(connected()), this, SLOT(mqttSubscribtion()));
     connect(qcopter_mqttClient, SIGNAL(disconnected()), this, SLOT(mqttDisconnected()));
 
     connect(pingProcess, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(PingResult()));
