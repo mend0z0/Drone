@@ -12,9 +12,9 @@ Temp comes from BMI160
 
 Humedity: I2C <-> DMA
 
-I'll find a sensor for humedity :D
+BME250: I2C <-> DMA (Humidity, Pressure, Temperature)
 
-Battery, temperature, humedity -> each minute update
+Battery, temperature, humedity, pressure -> each minute update
 
 speed, displacement, height -> each second update
   
