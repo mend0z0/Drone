@@ -35,6 +35,7 @@ class Quadcopter_MainWindow : public QMainWindow
 public:
     Quadcopter_MainWindow(QWidget *parent = nullptr);
     ~Quadcopter_MainWindow();
+    const uint8_t QCOPTER_INDEX_MAX = 99;
 
 private slots:
     void MQTTConsole(void);

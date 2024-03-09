@@ -623,6 +623,12 @@ void Quadcopter_MainWindow::DroneSelectNext()
     //and increase the topic value
     //subscribe to the new topic value
     qDebug() << "Next Camera has been pressed";
+    qcopter.index++;
+    if(qcopter.index > QCOPTER_INDEX_MAX)
+    {
+        qcopter.index = QCOPTER_INDEX_MAX;
+    }
+    UpdateDroneIndex(qcopter.index);
 }
 
 void Quadcopter_MainWindow::DroneSelectPrevious()
@@ -631,6 +637,13 @@ void Quadcopter_MainWindow::DroneSelectPrevious()
     //and decrease the topic value
     //subscribe to the new topic value
     qDebug() << "Previous Camera has been pressed";
+
+    if(qcopter.index > 0)
+    {
+        qcopter.index--;
+    }
+    UpdateDroneIndex(qcopter.index);
+
 }
 
 void Quadcopter_MainWindow::ButtonCameraShutter()
@@ -644,6 +657,10 @@ void Quadcopter_MainWindow::UpdateDroneIndex(uint8_t index)
     qcopter.generalLabelsFont.setPixelSize(14);
     ui->label_DronesNumber->setFont(qcopter.generalLabelsFont);
     ui->label_DronesNumber->setText(QString::number(index) + "/NA");
+    qcopter.jsonObjStatus["QCOPTER"] = qcopter.index;
+    qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
+    qcopter.jsonObjCommand["QCOPTER"] = qcopter.index;
+    qcopter.jsonDocCommand.setObject(qcopter.jsonObjStatus);
 }
 
 void Quadcopter_MainWindow::QuadcopterParamInit()
@@ -661,7 +678,7 @@ void Quadcopter_MainWindow::QuadcopterParamInit()
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
 
-    qcopter.jsonObjStatus.insert("QCOPTER", qcopter.index);
+    qcopter.jsonObjCommand.insert("QCOPTER", qcopter.index);
     qcopter.jsonObjCommand.insert("FORWARD",0);
     qcopter.jsonObjCommand.insert("REVERSE",0);
     qcopter.jsonObjCommand.insert("LEFT",0);
@@ -679,6 +696,21 @@ void Quadcopter_MainWindow::QuadcopterParamInit()
 
 void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
 {
+
+    if(!inputObj.contains("QCOPTER"))
+    {
+        qDebug() << "The input status string doesn't contain quadcopter index value";
+        return;
+    }
+    if(inputObj["QCOPTER"].toInt() != qcopter.index)
+    {
+        qDebug() << "We don't get status from this drone at the moment";
+        return;
+    }
+    else
+    {
+        UpdateDroneIndex(inputObj["QCOPTER"].toInt());
+    }
     if(inputObj.contains("TEMP"))
     {
         qcopter.jsonObjStatus["TEMP"] = inputObj["TEMP"];
@@ -706,10 +738,6 @@ void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
     if(inputObj.contains("GEOPOS"))
     {
         qcopter.jsonObjStatus["GEOPOS"] = inputObj["GEOPOS"];
-    }
-    if(inputObj.contains("QCOPTER"))
-    {
-        UpdateDroneIndex(inputObj["QCOPTER"].toInt());
     }
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);

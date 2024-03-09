@@ -308,7 +308,7 @@ void MQTTClient::ConnectFunctions()
 
     connect(pingProcess, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(PingResult()));
 
-    connect(mqttSendTimeout, SIGNAL(timeout()), this, SLOT(mqttSendMsg()));
+    connect(mqttSendTimeout, SIGNAL(timeout()), this, SLOT(MQTTSendTimerTimeout()));
 }
 
 void MQTTClient::GifLoading(bool cmd)
