@@ -1,11 +1,13 @@
-#pragma once
 /********************************************************************************
-** Form generated from reading UI file ''
+** Form generated from reading UI file 'quadcopter_mainwindow.ui'
 **
 ** Created by: Qt User Interface Compiler version 6.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
+
+#ifndef UI_QUADCOPTER_MAINWINDOW_H
+#define UI_QUADCOPTER_MAINWINDOW_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -16,6 +18,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPlainTextEdit>
+#include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpacerItem>
@@ -161,19 +164,20 @@ public:
     QLabel *label_Camera4_2;
     QWidget *layoutWidget1;
     QGridLayout *gridLayout;
+    QLCDNumber *lcdNumber_Height;
     QLCDNumber *lcdNumber_Speed;
-    QLabel *label_Battery;
-    QLabel *label_Displacement;
-    QLabel *label_Humedity;
+    QLCDNumber *lcdNumber_Displacement;
     QLabel *label_Speed;
+    QLabel *label_Displacement;
+    QLabel *label_Height;
+    QLabel *label_Pressure;
+    QLCDNumber *lcdNumber_Pressure;
+    QLabel *label_Humedity;
+    QLCDNumber *lcdNumber_Humedity;
     QLCDNumber *lcdNumber_Temperature;
     QLabel *label_Temperature;
-    QLCDNumber *lcdNumber_Humedity;
-    QLCDNumber *lcdNumber_Displacement;
-    QLabel *label_Height;
-    QLCDNumber *lcdNumber_Height;
-    QLCDNumber *lcdNumber_Battery;
     QLCDNumber *lcdNumber_ThrottleValue;
+    QProgressBar *progressBar_BatteryCharge;
 
     void setupUi(QMainWindow *Quadcopter_MainWindow)
     {
@@ -215,7 +219,7 @@ public:
         graphicsView_DroneCameraView->setFrameShadow(QFrame::Raised);
         label_Time = new QLabel(centralwidget);
         label_Time->setObjectName("label_Time");
-        label_Time->setGeometry(QRect(315, 60, 141, 41));
+        label_Time->setGeometry(QRect(315, 60, 120, 40));
         QFont font;
         font.setFamilies({QString::fromUtf8("Calibri")});
         label_Time->setFont(font);
@@ -330,7 +334,7 @@ public:
         gridLayout_2->addWidget(label_StatusLoRaWANServer, 7, 1, 1, 1);
 
         label_DronesNumber = new QLabel(layoutWidget);
-        label_DronesNumber->setObjectName("label_DroneNumber");
+        label_DronesNumber->setObjectName("label_DronesNumber");
 
         gridLayout_2->addWidget(label_DronesNumber, 8, 1, 1, 1);
 
@@ -901,70 +905,70 @@ public:
         label_Camera4_2->setScaledContents(true);
         layoutWidget1 = new QWidget(centralwidget);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(960, 50, 301, 187));
+        layoutWidget1->setGeometry(QRect(960, 50, 301, 200));
         gridLayout = new QGridLayout(layoutWidget1);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
+        lcdNumber_Height = new QLCDNumber(layoutWidget1);
+        lcdNumber_Height->setObjectName("lcdNumber_Height");
+
+        gridLayout->addWidget(lcdNumber_Height, 8, 1, 1, 1);
+
         lcdNumber_Speed = new QLCDNumber(layoutWidget1);
         lcdNumber_Speed->setObjectName("lcdNumber_Speed");
 
-        gridLayout->addWidget(lcdNumber_Speed, 1, 1, 1, 1);
+        gridLayout->addWidget(lcdNumber_Speed, 2, 1, 1, 1);
 
-        label_Battery = new QLabel(layoutWidget1);
-        label_Battery->setObjectName("label_Battery");
+        lcdNumber_Displacement = new QLCDNumber(layoutWidget1);
+        lcdNumber_Displacement->setObjectName("lcdNumber_Displacement");
+        lcdNumber_Displacement->setSmallDecimalPoint(false);
 
-        gridLayout->addWidget(label_Battery, 4, 0, 1, 1);
-
-        label_Displacement = new QLabel(layoutWidget1);
-        label_Displacement->setObjectName("label_Displacement");
-
-        gridLayout->addWidget(label_Displacement, 2, 1, 1, 1);
-
-        label_Humedity = new QLabel(layoutWidget1);
-        label_Humedity->setObjectName("label_Humedity");
-
-        gridLayout->addWidget(label_Humedity, 2, 0, 1, 1);
+        gridLayout->addWidget(lcdNumber_Displacement, 5, 1, 1, 1);
 
         label_Speed = new QLabel(layoutWidget1);
         label_Speed->setObjectName("label_Speed");
 
         gridLayout->addWidget(label_Speed, 0, 1, 1, 1);
 
-        lcdNumber_Temperature = new QLCDNumber(layoutWidget1);
-        lcdNumber_Temperature->setObjectName("lcdNumber_Temperature");
+        label_Displacement = new QLabel(layoutWidget1);
+        label_Displacement->setObjectName("label_Displacement");
 
-        gridLayout->addWidget(lcdNumber_Temperature, 1, 0, 1, 1);
-
-        label_Temperature = new QLabel(layoutWidget1);
-        label_Temperature->setObjectName("label_Temperature");
-
-        gridLayout->addWidget(label_Temperature, 0, 0, 1, 1);
-
-        lcdNumber_Humedity = new QLCDNumber(layoutWidget1);
-        lcdNumber_Humedity->setObjectName("lcdNumber_Humedity");
-
-        gridLayout->addWidget(lcdNumber_Humedity, 3, 0, 1, 1);
-
-        lcdNumber_Displacement = new QLCDNumber(layoutWidget1);
-        lcdNumber_Displacement->setObjectName("lcdNumber_Displacement");
-        lcdNumber_Displacement->setSmallDecimalPoint(false);
-
-        gridLayout->addWidget(lcdNumber_Displacement, 3, 1, 1, 1);
+        gridLayout->addWidget(label_Displacement, 4, 1, 1, 1);
 
         label_Height = new QLabel(layoutWidget1);
         label_Height->setObjectName("label_Height");
 
-        gridLayout->addWidget(label_Height, 4, 1, 1, 1);
+        gridLayout->addWidget(label_Height, 6, 1, 1, 1);
 
-        lcdNumber_Height = new QLCDNumber(layoutWidget1);
-        lcdNumber_Height->setObjectName("lcdNumber_Height");
+        label_Pressure = new QLabel(layoutWidget1);
+        label_Pressure->setObjectName("label_Pressure");
 
-        gridLayout->addWidget(lcdNumber_Height, 5, 1, 1, 1);
+        gridLayout->addWidget(label_Pressure, 0, 0, 1, 1);
 
-        lcdNumber_Battery = new QLCDNumber(layoutWidget1);
-        lcdNumber_Battery->setObjectName("lcdNumber_Battery");
+        lcdNumber_Pressure = new QLCDNumber(layoutWidget1);
+        lcdNumber_Pressure->setObjectName("lcdNumber_Pressure");
 
-        gridLayout->addWidget(lcdNumber_Battery, 5, 0, 1, 1);
+        gridLayout->addWidget(lcdNumber_Pressure, 2, 0, 1, 1);
+
+        label_Humedity = new QLabel(layoutWidget1);
+        label_Humedity->setObjectName("label_Humedity");
+
+        gridLayout->addWidget(label_Humedity, 6, 0, 1, 1);
+
+        lcdNumber_Humedity = new QLCDNumber(layoutWidget1);
+        lcdNumber_Humedity->setObjectName("lcdNumber_Humedity");
+
+        gridLayout->addWidget(lcdNumber_Humedity, 8, 0, 1, 1);
+
+        lcdNumber_Temperature = new QLCDNumber(layoutWidget1);
+        lcdNumber_Temperature->setObjectName("lcdNumber_Temperature");
+
+        gridLayout->addWidget(lcdNumber_Temperature, 5, 0, 1, 1);
+
+        label_Temperature = new QLabel(layoutWidget1);
+        label_Temperature->setObjectName("label_Temperature");
+
+        gridLayout->addWidget(label_Temperature, 4, 0, 1, 1);
 
         lcdNumber_ThrottleValue = new QLCDNumber(centralwidget);
         lcdNumber_ThrottleValue->setObjectName("lcdNumber_ThrottleValue");
@@ -972,8 +976,13 @@ public:
         lcdNumber_ThrottleValue->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 199);\n"
 "color: rgb(255, 255, 255);"));
         lcdNumber_ThrottleValue->setDigitCount(3);
+        progressBar_BatteryCharge = new QProgressBar(centralwidget);
+        progressBar_BatteryCharge->setObjectName("progressBar_BatteryCharge");
+        progressBar_BatteryCharge->setGeometry(QRect(315, 110, 120, 20));
+        progressBar_BatteryCharge->setValue(24);
+        progressBar_BatteryCharge->setTextVisible(false);
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
-        layoutWidget->raise();
+        layoutWidget1->raise();
         label_Camera5_2->raise();
         label_Camera4_2->raise();
         label_Camera3_2->raise();
@@ -997,7 +1006,7 @@ public:
         pushButton_MoveReverse->raise();
         pushButton_MoveRight->raise();
         dial_GeologicalPosition->raise();
-        layoutWidget->raise();
+        layoutWidget1->raise();
         pushButton_DroneSelectPrevious->raise();
         pushButton_DroneSelectNext->raise();
         label_Time->raise();
@@ -1093,6 +1102,7 @@ public:
         label_B12->raise();
         label_B14->raise();
         lcdNumber_ThrottleValue->raise();
+        progressBar_BatteryCharge->raise();
 
         retranslateUi(Quadcopter_MainWindow);
 
@@ -1222,12 +1232,12 @@ public:
         label_Camera3_2->setText(QString());
         label_Camera5_2->setText(QString());
         label_Camera4_2->setText(QString());
-        label_Battery->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Battery (mV)</span></p></body></html>", nullptr));
-        label_Displacement->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Displacement (cm)</span></p></body></html>", nullptr));
-        label_Humedity->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Humedity (%)</span></p></body></html>", nullptr));
         label_Speed->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Speed (m/s)</span></p></body></html>", nullptr));
-        label_Temperature->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Temperature (</span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#040c28; background-color:#ffffff;\">\302\260</span><span style=\" font-size:12pt;\">C)</span></p></body></html>", nullptr));
+        label_Displacement->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Displacement (cm)</span></p></body></html>", nullptr));
         label_Height->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Height (cm)</span></p></body></html>", nullptr));
+        label_Pressure->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Pressure (Pa)</span></p></body></html>", nullptr));
+        label_Humedity->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Humedity (%)</span></p></body></html>", nullptr));
+        label_Temperature->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Temperature (</span><span style=\" font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#040c28; background-color:#ffffff;\">\302\260</span><span style=\" font-size:12pt;\">C)</span></p></body></html>", nullptr));
     } // retranslateUi
 
 };
@@ -1238,3 +1248,4 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
+#endif // UI_QUADCOPTER_MAINWINDOW_H

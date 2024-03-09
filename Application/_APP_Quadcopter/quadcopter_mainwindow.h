@@ -2,6 +2,7 @@
 #define QUADCOPTER_MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QWidget>
 #include <QDebug>
 #include <QString>
 #include <QByteArray>
@@ -35,7 +36,8 @@ class Quadcopter_MainWindow : public QMainWindow
 public:
     Quadcopter_MainWindow(QWidget *parent = nullptr);
     ~Quadcopter_MainWindow();
-    const uint8_t QCOPTER_INDEX_MAX = 99;
+    const uint8_t QCOPTER_INDEX_MAX = 99UL;
+    const uint16_t QCOPTER_BATTERY_VOLTAGE = 3700UL;
 
 private slots:
     void MQTTConsole(void);
@@ -65,6 +67,7 @@ private slots:
     void DroneSelectPrevious( void );
     void ButtonCameraShutter( void );
     void UpdateDroneIndex( uint8_t index );
+    void UpdateBatteryLevel( uint16_t value );
 
     void QuadcopterParamInit( void );
     void QuadcopterParamUpdate( QJsonObject inputObj );

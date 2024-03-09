@@ -42,6 +42,7 @@ Quadcopter_MainWindow::Quadcopter_MainWindow(QWidget *parent)
     qcopterButtonTimer->start(100); // 100 miliseconds
 
     DisablePanel();
+    MQTTUpdateServerStatus(false);
 }
 
 Quadcopter_MainWindow::~Quadcopter_MainWindow()
@@ -137,16 +138,25 @@ void Quadcopter_MainWindow::MQTTUpdateServerStatus(bool status)
 {
     qcopter.generalLabelsFont.setPixelSize(14);
     ui->label_StatusMQTTServer->setFont(qcopter.generalLabelsFont);
+    ui->label_StatusMQTTServer->setAlignment(Qt::AlignCenter);
     if(status)
     {
         ui->label_StatusMQTTServer->setText("CONNECTED");
-        ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(0, 200, 0)");
+        ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(0, 200, 0);"
+                                                  "border-radius: 10px;"
+                                                  "alignment: center-aligned;"
+                                                  "padding: 6px;"
+                                                  "font: bold");
         EnablePanel();
     }
     else
     {
         ui->label_StatusMQTTServer->setText("DISCONNETED");
-        ui->label_StatusMQTTServer->setStyleSheet("");
+        ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(200, 0, 50);"
+                                                  "border-radius: 10px;"
+                                                  "alignment: center-aligned;"
+                                                  "padding: 5px;"
+                                                  "font: bold");
         DisablePanel();
     }
 }
@@ -663,11 +673,17 @@ void Quadcopter_MainWindow::UpdateDroneIndex(uint8_t index)
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjStatus);
 }
 
+void Quadcopter_MainWindow::UpdateBatteryLevel(uint16_t value)
+{
+    ui->progressBar_BatteryCharge->setValue((value / QCOPTER_BATTERY_VOLTAGE) * 100);
+}
+
 void Quadcopter_MainWindow::QuadcopterParamInit()
 {
     qcopter.index = 0;
 
     qcopter.jsonObjStatus.insert("QCOPTER", qcopter.index);
+    qcopter.jsonObjStatus.insert("PRESSURE", 0);
     qcopter.jsonObjStatus.insert("TEMP", 0);
     qcopter.jsonObjStatus.insert("HUMEDITY" , 0);
     qcopter.jsonObjStatus.insert("BATT" , 0);
@@ -711,6 +727,10 @@ void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
     {
         UpdateDroneIndex(inputObj["QCOPTER"].toInt());
     }
+    if(inputObj.contains("PRESSURE"))
+    {
+        qcopter.jsonObjStatus["PRESSURE"] = inputObj["PRESSURE"];
+    }
     if(inputObj.contains("TEMP"))
     {
         qcopter.jsonObjStatus["TEMP"] = inputObj["TEMP"];
@@ -744,11 +764,12 @@ void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
 
     ui->lcdNumber_Temperature->display(qcopter.jsonObjStatus.value("TEMP").toInt());
     ui->lcdNumber_Humedity->display(qcopter.jsonObjStatus.value("HUMEDITY").toInt());
-    ui->lcdNumber_Battery->display(qcopter.jsonObjStatus.value("BATT").toInt());
+    ui->lcdNumber_Pressure->display(qcopter.jsonObjStatus.value("PRESSURE").toInt());
     ui->lcdNumber_Speed->display(qcopter.jsonObjStatus.value("SPEED").toInt());
     ui->lcdNumber_Displacement->display(qcopter.jsonObjStatus.value("DISPLACEMENT").toInt());
     ui->lcdNumber_Height->display(qcopter.jsonObjStatus.value("HEIGHT").toInt());
     ui->dial_GeologicalPosition->setValue(qcopter.jsonObjStatus.value("GEOPOS").toInt());
+    UpdateBatteryLevel(qcopter.jsonObjStatus.value("BATT").toInt());
 }
 
 void Quadcopter_MainWindow::ClockInit()
@@ -807,7 +828,7 @@ void Quadcopter_MainWindow::EnablePanel()
     ui->verticalSlider_Throttle->setEnabled(true);
 
     ui->lcdNumber_ThrottleValue->setEnabled(true);
-    ui->lcdNumber_Battery->setEnabled(true);
+    ui->lcdNumber_Pressure->setEnabled(true);
     ui->lcdNumber_Displacement->setEnabled(true);
     ui->lcdNumber_Height->setEnabled(true);
     ui->lcdNumber_Speed->setEnabled(true);
@@ -819,7 +840,9 @@ void Quadcopter_MainWindow::EnablePanel()
 void Quadcopter_MainWindow::DisablePanel()
 {
     ui->pushButton_ConnectLoRaWAN->setDisabled(true);
-    ui->pushButton_SaveLogFile->setDisabled(true);
+    //ui->pushButton_SaveLogFile->setDisabled(true);
+    ui->pushButton_SaveLogFile->setStyleSheet("border-radius: 10px;"
+                                              );
     ui->pushButton_MoveForward->setDisabled(true);
     ui->pushButton_MoveReverse->setDisabled(true);
     ui->pushButton_MoveLeft->setDisabled(true);
@@ -828,7 +851,7 @@ void Quadcopter_MainWindow::DisablePanel()
     ui->verticalSlider_Throttle->setDisabled(true);
 
     ui->lcdNumber_ThrottleValue->setDisabled(true);
-    ui->lcdNumber_Battery->setDisabled(true);
+    ui->lcdNumber_Pressure->setDisabled(true);
     ui->lcdNumber_Displacement->setDisabled(true);
     ui->lcdNumber_Height->setDisabled(true);
     ui->lcdNumber_Speed->setDisabled(true);

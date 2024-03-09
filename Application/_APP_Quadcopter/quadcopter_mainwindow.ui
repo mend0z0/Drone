@@ -137,8 +137,8 @@
      <rect>
       <x>315</x>
       <y>60</y>
-      <width>141</width>
-      <height>41</height>
+      <width>120</width>
+      <height>40</height>
      </rect>
     </property>
     <property name="font">
@@ -2518,31 +2518,20 @@ color: rgb(255, 255, 255);</string>
       <x>960</x>
       <y>50</y>
       <width>301</width>
-      <height>187</height>
+      <height>200</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="1" column="1">
-      <widget class="QLCDNumber" name="lcdNumber_Speed"/>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_Battery">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Battery (mV)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
+     <item row="8" column="1">
+      <widget class="QLCDNumber" name="lcdNumber_Height"/>
      </item>
      <item row="2" column="1">
-      <widget class="QLabel" name="label_Displacement">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Displacement (cm)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
+      <widget class="QLCDNumber" name="lcdNumber_Speed"/>
      </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_Humedity">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Humedity (%)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <item row="5" column="1">
+      <widget class="QLCDNumber" name="lcdNumber_Displacement">
+       <property name="smallDecimalPoint">
+        <bool>false</bool>
        </property>
       </widget>
      </item>
@@ -2553,38 +2542,49 @@ color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLCDNumber" name="lcdNumber_Temperature"/>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="label_Temperature">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Temperature (&lt;/span&gt;&lt;span style=&quot; font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#040c28; background-color:#ffffff;&quot;&gt;°&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;C)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLCDNumber" name="lcdNumber_Humedity"/>
-     </item>
-     <item row="3" column="1">
-      <widget class="QLCDNumber" name="lcdNumber_Displacement">
-       <property name="smallDecimalPoint">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
      <item row="4" column="1">
+      <widget class="QLabel" name="label_Displacement">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Displacement (cm)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
       <widget class="QLabel" name="label_Height">
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Height (cm)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
-     <item row="5" column="1">
-      <widget class="QLCDNumber" name="lcdNumber_Height"/>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_Pressure">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Pressure (Pa)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLCDNumber" name="lcdNumber_Pressure"/>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_Humedity">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Humedity (%)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLCDNumber" name="lcdNumber_Humedity"/>
      </item>
      <item row="5" column="0">
-      <widget class="QLCDNumber" name="lcdNumber_Battery"/>
+      <widget class="QLCDNumber" name="lcdNumber_Temperature"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_Temperature">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Temperature (&lt;/span&gt;&lt;span style=&quot; font-family:'Google Sans','arial','sans-serif'; font-size:20px; font-weight:500; color:#040c28; background-color:#ffffff;&quot;&gt;°&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;C)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
@@ -2603,6 +2603,22 @@ color: rgb(255, 255, 255);</string>
     </property>
     <property name="digitCount">
      <number>3</number>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar_BatteryCharge">
+    <property name="geometry">
+     <rect>
+      <x>315</x>
+      <y>110</y>
+      <width>120</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
     </property>
    </widget>
    <zorder>layoutWidget</zorder>
@@ -2725,6 +2741,7 @@ color: rgb(255, 255, 255);</string>
    <zorder>label_B12</zorder>
    <zorder>label_B14</zorder>
    <zorder>lcdNumber_ThrottleValue</zorder>
+   <zorder>progressBar_BatteryCharge</zorder>
   </widget>
  </widget>
  <resources>
