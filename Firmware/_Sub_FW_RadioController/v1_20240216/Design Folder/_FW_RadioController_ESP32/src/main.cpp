@@ -20,7 +20,8 @@ const uint8_t CMD_LEFT = 2U;             // LEFT command index
 const uint8_t CMD_RIGHT = 3U;            // RIGHT command index
 const uint8_t CMD_ELEVATE = 4U;          // ELEVATE command index
 const uint8_t CMD_DIRECT = 5U;           // DIRECT command index
-const uint8_t COMMAND_INDEX_MAX = 6U;    // The total number of commands this radio-controller can decode.
+const uint8_t CMD_QCOPTER = 6U;          // Qcopter index value
+const uint8_t COMMAND_INDEX_MAX = 7U;    // The total number of commands this radio-controller can decode.
 const uint8_t COMMAND_MAX_BUFF = 10U;    // The total number of character that each command can contain.
 
 const char qcopterCommands[COMMAND_INDEX_MAX][COMMAND_MAX_BUFF] = { "\"FORWARD\"",  \
@@ -28,7 +29,8 @@ const char qcopterCommands[COMMAND_INDEX_MAX][COMMAND_MAX_BUFF] = { "\"FORWARD\"
                                                                     "\"LEFT\"",     \
                                                                     "\"RIGHT\"",    \
                                                                     "\"ELEVATE\"",  \
-                                                                    "\"DIRECT\""
+                                                                    "\"DIRECT\"",   \
+                                                                    "\"QCOPTER\""
                                                                   };
 
 const uint8_t STATUS_INITIAL_CODE = 0U;
@@ -39,7 +41,8 @@ const uint8_t STATUS_SPEED = 4U;          // SPEED Status index
 const uint8_t STATUS_DISPLACEMENT = 5U;   // DISPLACEMENT Status index
 const uint8_t STATUS_HEIGHT = 6U;         // HEIGHT Status index
 const uint8_t STATUS_GEOPOS = 7U;         // GEOPOS Status index
-const uint8_t STATUS_INDEX_MAX = 8U;      // The total number of status parameters we'll relay to application.
+const uint8_t STATUS_QCOPTER = 8U;        // Qcopter index value
+const uint8_t STATUS_INDEX_MAX = 9U;      // The total number of status parameters we'll relay to application.
 const uint8_t STATUS_MAX_BUFF = 15U;      // The total number of character that each status can contain.
 
 const uint8_t STATUS_CODE_OFFSET = 3;
@@ -53,7 +56,8 @@ const char qcopterStatus[STATUS_INDEX_MAX][STATUS_MAX_BUFF] = { "0z0",          
                                                                 "\"SPEED\"",        \
                                                                 "\"DISPLACEMENT\"", \
                                                                 "\"HEIGHT\"",       \
-                                                                "\"GEOPOS\""
+                                                                "\"GEOPOS\"",       \
+                                                                "\"QCOPTER\""
                                                               };
 
 
@@ -102,7 +106,16 @@ void setup() {
 uint16_t cnt = 0;
 
 uint8_t commandToBeRelayed[50];
-uint8_t statusReceived[STATUS_ARRAY_MAX_SIZE] = {'0','z','0',0x01,0x0,0x32,0x02,0x00,0x4B,0x03,0x0C,0x3A,0x04,0x00,0x0A,0x05,0x02,0xEE,0x06,0x00,0xA8,0x07,0x01,0x09};
+uint8_t statusReceived[STATUS_ARRAY_MAX_SIZE] = {'0','z','0',                     \
+                                                  STATUS_TEMP,0x0,0x32,           \
+                                                  STATUS_HUMEDITY,0x00,0x4B,      \
+                                                  STATUS_BATT,0x0C,0x3A,          \
+                                                  STATUS_SPEED,0x00,0x0A,         \
+                                                  STATUS_DISPLACEMENT,0x02,0xEE,  \
+                                                  STATUS_HEIGHT,0x00,0xA8,        \
+                                                  STATUS_GEOPOS,0x01,0x09,        \
+                                                  STATUS_QCOPTER, 0x00, 0x00      \
+                                                  };
 char statusTobeSent[250];
 
 void loop() {
@@ -157,78 +170,6 @@ void loop() {
   */
 }
 
-/*
-bool CompareArray( uint8_t *input, uint8_t *sample)
-{
-  uint8_t pointerCnt = 0;
-  bool matchedFlag = false;
-  uint8_t tempSample = *(sample + pointerCnt);
-  uint8_t tempInput = *(input + pointerCnt);
-
-  while(tempSample)
-  {
-    if(tempInput != tempSample)
-    {
-      //Serial.print(*input);
-      //Serial.println("No match");
-      matchedFlag = false;
-      break;
-    }
-    else if(tempInput == tempSample)
-    {
-      matchedFlag = true;
-    }
-    pointerCnt++;
-    tempSample = *(sample + pointerCnt);
-    tempInput = *(input + pointerCnt);
-  }
-  if(matchedFlag == true)
-  {
-    Serial.print((const char *)sample);
-    Serial.print(" Matched: ");
-  }
-  return matchedFlag;
-}
-
-uint8_t JsonParser( uint8_t *inputData, uint8_t *commands[])
-{
-  bool compareStatus = false;
-  uint8_t commandTable[][QCOPTER_CMD_SIZE_MAX] = {"Forward","Reverse","Left","Right","Direction","Height"};
-  
-  Serial.println("Json starts parsing...");
-
-  for(uint8_t cnt = 0; cnt < QCOPTER_CMD_INDEX_MAX; ++cnt)
-  {
-    for(uint16_t i = 0; i < 1024; ++i)
-    {
-      if(*(inputData + i) == 0)
-      {
-        break;
-      }
-      else if(*(inputData + i) == '\"'){
-        i++;  //move to next byte
-        compareStatus = CompareArray(&inputData[i], &commandTable[cnt][0]);
-        if(compareStatus == true)
-        {
-          while(*(inputData + i) != ' ')
-          {
-            i++;
-          }
-          i++;  //this to access the next byte
-          commands[cnt][0] = *(inputData + i);
-          Serial.print(commands[cnt][0]);
-          Serial.println("");
-          compareStatus = false;
-          break;
-        }
-      }
-    }
-  }
-  Serial.println("Json is done...!");
-  return 0;
-}
-
-*/
 
 int8_t JsonParserFindKey(char *inputStr, uint8_t charPos)
 {
@@ -482,6 +423,11 @@ void JsonFormatter( uint8_t *inputArray, char *jsonOutput)
   for(uint8_t cnt = STATUS_CODE_OFFSET; cnt < STATUS_ARRAY_MAX_SIZE; cnt += STATUS_CODE_OFFSET)
   {
     tempVar = *(inputArray + cnt);
+    //this condition will make sure we don't touch any memory area outside of the defined array.
+    if(tempVar >= STATUS_INDEX_MAX)
+    {
+      continue;
+    }
     //Serial.print(&qcopterStatus[tempVar][0]);   // Debug line
     //Serial.println("");                         // Debug line
     JsonFormatterIntToASCII( inputArray, &tempStr[0], (cnt + 1));
