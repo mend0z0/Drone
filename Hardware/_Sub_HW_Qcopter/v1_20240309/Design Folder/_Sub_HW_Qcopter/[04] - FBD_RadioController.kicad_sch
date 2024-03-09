@@ -1,0 +1,347 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3cf1c0e5-d779-4fe9-9d0c-a80210814242")
+	(paper "C")
+	(title_block
+		(comment 2 "DRAFT")
+	)
+	(lib_symbols)
+	(text_box "STM32WLE5"
+		(exclude_from_sim no)
+		(at 283.21 190.5 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1755592d-51d5-422e-89aa-057d445e3982")
+	)
+	(text_box "Flight Controller"
+		(exclude_from_sim no)
+		(at 177.8 190.5 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "34891435-c6dd-4dc6-a457-af894b20d8ce")
+	)
+	(text_box "Antenna"
+		(exclude_from_sim no)
+		(at 330.2 114.3 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4109fea2-ccdf-4b58-aa3f-225d5804158c")
+	)
+	(text_box "RESET Circuit"
+		(exclude_from_sim no)
+		(at 177.8 254 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "79fa4ffe-ddd5-426d-8627-1494a0cff952")
+	)
+	(text_box "ATWIL1000C"
+		(exclude_from_sim no)
+		(at 177.8 114.3 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9f02367c-381c-437d-9015-f84d4728f8d1")
+	)
+	(text_box "USB Connector"
+		(exclude_from_sim no)
+		(at 254 254 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d236df0f-3c1b-4775-a75f-65c49edb8b99")
+	)
+	(sheet
+		(at 342.9 190.5)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "036f860c-85f7-4ad6-9942-a3edc088e744")
+		(property "Sheetname" "Activity LEDs Driver"
+			(at 342.9 189.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0406] - Activity LEDs Driver.kicad_sch"
+			(at 342.9 216.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 292.1 114.3)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2faab146-56a0-4161-9bf2-36499f684d79")
+		(property "Sheetname" "Antenna Driver"
+			(at 292.1 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0404] - Antenna Driver.kicad_sch"
+			(at 292.1 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 254)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4fa085b6-6c8d-4af2-84ac-a5f6c225164c")
+		(property "Sheetname" "USB Connector"
+			(at 254 253.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0403] - USB Connector.kicad_sch"
+			(at 254 279.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 114.3)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "572dcb6a-579b-4867-89b1-35ab8a6f8fad")
+		(property "Sheetname" "ATWIL1000C Driver"
+			(at 215.9 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0405] - ATWIL1000C Driver.kicad_sch"
+			(at 215.9 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 254)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7d707aad-e237-43ec-b9e0-31f445760984")
+		(property "Sheetname" "RESET Circuit"
+			(at 177.8 253.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0402] - RESET Circuit.kicad_sch"
+			(at 177.8 279.9846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 190.5)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ed29e548-608f-4c6d-baf5-be9a7e3f9a1c")
+		(property "Sheetname" "STM32WLE5 Driver"
+			(at 254 189.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0401] - STM32WLE5 Driver.kicad_sch"
+			(at 254 216.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "15")
+				)
+			)
+		)
+	)
+)

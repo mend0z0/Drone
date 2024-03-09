@@ -1,0 +1,804 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a042b1f2-44b3-43ca-b526-8268af8e5954")
+	(paper "C")
+	(title_block
+		(comment 2 "DRAFT")
+	)
+	(lib_symbols)
+	(text_box "STM32U575"
+		(exclude_from_sim no)
+		(at 281.94 177.8 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1d85b094-9757-4c8f-b25b-4092cdabb1aa")
+	)
+	(text_box "BMI160 Driver"
+		(exclude_from_sim no)
+		(at 194.31 152.4 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "31f48d17-2e44-407c-aac4-2af250bbcec0")
+	)
+	(text_box "Radio Controller"
+		(exclude_from_sim no)
+		(at 194.31 304.8 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3423c133-8800-4df0-843a-5655b066c71b")
+	)
+	(text_box "2 X SN74HC595\nDriver"
+		(exclude_from_sim no)
+		(at 381 266.7 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4af3e61e-6c0d-4f58-8279-804c38863f74")
+	)
+	(text_box "DEBUG USART"
+		(exclude_from_sim no)
+		(at 283.21 266.7 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "62ec1180-010f-4b34-a965-b187b021d921")
+	)
+	(text_box "BME280 Driver"
+		(exclude_from_sim no)
+		(at 195.58 190.5 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "69e11735-8191-42fd-822d-31f3e4e22b49")
+	)
+	(text_box "W25Q64 Driver"
+		(exclude_from_sim no)
+		(at 194.31 266.7 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "88fdf4af-c929-4123-b876-ac53a8b469b5")
+	)
+	(text_box "MOTOR Driver"
+		(exclude_from_sim no)
+		(at 372.11 177.8 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "90bebac4-74bf-471f-b832-a393d0af86d9")
+	)
+	(text_box "RESET Circuit"
+		(exclude_from_sim no)
+		(at 194.31 114.3 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9155af20-d56e-48e6-8226-f0e3d6f264ef")
+	)
+	(text_box "LDOs"
+		(exclude_from_sim no)
+		(at 370.84 114.3 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b334d5f6-d41c-4d18-9031-4a2c835b980e")
+	)
+	(text_box "OV2640 Driver"
+		(exclude_from_sim no)
+		(at 194.31 228.6 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "cd3b2bd0-76d5-44ec-a655-c29b536297ec")
+	)
+	(text_box "Battery Voltage Sampler"
+		(exclude_from_sim no)
+		(at 194.31 342.9 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d3f2979d-c9d4-4dbb-9d31-7a56f27b4192")
+	)
+	(text "4"
+		(exclude_from_sim no)
+		(at 206.502 172.974 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "0071fcf1-6e91-45e6-afbf-594346842317")
+	)
+	(text "11"
+		(exclude_from_sim no)
+		(at 205.994 323.596 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "3c30b390-c6f2-475a-a440-1d188cbeb62b")
+	)
+	(text "8"
+		(exclude_from_sim no)
+		(at 207.264 249.936 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "3f82a19f-f185-400a-81cb-87221bd4f4bd")
+	)
+	(text "7"
+		(exclude_from_sim no)
+		(at 394.462 287.02 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "49efb283-eb69-47ea-8b35-66d242672c34")
+	)
+	(text "12"
+		(exclude_from_sim no)
+		(at 204.978 363.982 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "4fc98e5a-f6c7-421b-a77f-a5cc3281e7f9")
+	)
+	(text "3"
+		(exclude_from_sim no)
+		(at 295.656 287.02 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "5a45bb9b-eae4-41ab-8288-970094fa045c")
+	)
+	(text "2"
+		(exclude_from_sim no)
+		(at 207.518 134.366 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "67c66b8f-b47a-43d2-be91-0194097c62dd")
+	)
+	(text "9"
+		(exclude_from_sim no)
+		(at 208.28 285.75 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "b5620ee3-148e-40e0-934c-105f7c75fac2")
+	)
+	(text "5"
+		(exclude_from_sim no)
+		(at 207.772 211.582 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "caea6d9f-2168-4239-baa8-85ba29dd7c46")
+	)
+	(text "10"
+		(exclude_from_sim no)
+		(at 381.508 133.604 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "eb06f8e5-1f56-4b7e-96e4-d790f24e9fd5")
+	)
+	(text "1"
+		(exclude_from_sim no)
+		(at 294.386 198.882 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "eee37d53-3f11-4ad3-929c-09907ea98845")
+	)
+	(text "6"
+		(exclude_from_sim no)
+		(at 385.064 198.12 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "f6f7d5cd-a32b-4d54-974e-1c15e2433966")
+	)
+	(sheet
+		(at 342.9 114.3)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "119678d4-0dae-424c-858e-6cc318d13084")
+		(property "Sheetname" "LDO"
+			(at 342.9 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0309] - LDO.kicad_sch"
+			(at 342.9 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 228.6)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "29d1a133-3303-4c4b-88c1-f88fdc03d51b")
+		(property "Sheetname" "OV2640 Driver"
+			(at 165.1 227.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0307] - OV2640 Driver.kicad_sch"
+			(at 165.1 254.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 177.8)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4eee3e1d-9a89-4293-ad66-a6ef408897f9")
+		(property "Sheetname" "MCU Driver"
+			(at 254 177.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0301] - MCU Driver.kicad_sch"
+			(at 254 203.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 190.5)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7a540dfe-93f1-48cd-8581-75ca2f9935cb")
+		(property "Sheetname" "BME280 Driver"
+			(at 165.1 189.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0305] - BME Driver.kicad_sch"
+			(at 165.1 216.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "23")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 304.8)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7a8ed9fd-5b99-42bb-a1e6-8a0ae04a4a31")
+		(property "Sheetname" "Radio Controller Interface"
+			(at 165.1 304.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0310] - Radio Controller Interface.kicad_sch"
+			(at 165.1 330.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 342.9)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bcf2e24e-a5dc-47a6-bec1-3779f9307521")
+		(property "Sheetname" "Battery Voltage Sampler"
+			(at 165.1 342.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0311] - Battery Voltage Sampler.kicad_sch"
+			(at 165.1 368.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 152.4)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d6ab115a-235e-42ae-89e7-f46f758fee81")
+		(property "Sheetname" "BMI160 Driver"
+			(at 165.1 151.6884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0304] - BMI160 Driver.kicad_sch"
+			(at 165.1 178.3846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 266.7)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e9fb8b8e-a3bc-42c8-a6f2-2206c944e574")
+		(property "Sheetname" "W25Q64 Driver"
+			(at 165.1 265.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0308] - W25Q64 Driver.kicad_sch"
+			(at 165.1 292.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 114.3)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f4333c83-ac26-4a59-b8e2-d2ffea426c50")
+		(property "Sheetname" "RESET Circuit"
+			(at 165.1 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0302] - RESET Circuit.kicad_sch"
+			(at 165.1 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 342.9 177.8)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f53faaca-3dbe-4009-9903-5908d6fb2aee")
+		(property "Sheetname" "Motor Driver"
+			(at 342.9 177.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0305] - Motor Driver.kicad_sch"
+			(at 342.9 203.7846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 266.7)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f5e5781a-d6a9-4487-9ea0-4a6f85347362")
+		(property "Sheetname" "Debug USART"
+			(at 254 265.9884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0303] - Debug USART.kicad_sch"
+			(at 254 292.6846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 342.9 265.43)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fb6a3e3b-62bf-46c5-8e5c-2b17482b433c")
+		(property "Sheetname" "SN74HC595 Driver"
+			(at 342.9 264.7184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0306] - SN74HC595 Driver.kicad_sch"
+			(at 342.9 291.4146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
+					(page "10")
+				)
+			)
+		)
+	)
+)

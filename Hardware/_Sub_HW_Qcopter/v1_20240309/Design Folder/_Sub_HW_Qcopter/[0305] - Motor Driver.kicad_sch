@@ -1,0 +1,21 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ac233891-321d-4aab-8dcc-d875bd9d9ef2")
+	(paper "A4")
+	(title_block
+		(comment 2 "DRAFT")
+	)
+	(lib_symbols)
+	(text "DRV8212DRLR"
+		(exclude_from_sim no)
+		(at 79.502 61.722 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "99b0c2bc-c1e5-4e10-8125-07ea1ad759c8")
+	)
+)

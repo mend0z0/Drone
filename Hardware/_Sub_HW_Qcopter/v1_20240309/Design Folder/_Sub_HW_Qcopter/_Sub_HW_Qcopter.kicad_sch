@@ -1565,6 +1565,44 @@
 		)
 		(uuid "ffe28b43-be42-4dad-9883-b15a59d334cc")
 	)
+	(sheet
+		(at 64.77 118.11)
+		(size 62.23 6.35)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6184e84e-040e-4878-8152-76cf0b949e21")
+		(property "Sheetname" "FBD_Quadcopter"
+			(at 64.77 117.3984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[02] - FBD_Quadcopter.kicad_sch"
+			(at 64.77 125.0446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8"
+					(page "2")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

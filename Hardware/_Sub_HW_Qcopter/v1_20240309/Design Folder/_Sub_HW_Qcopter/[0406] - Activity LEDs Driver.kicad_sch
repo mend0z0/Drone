@@ -1,0 +1,65 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a15bafd6-fbd3-494e-9105-4d16018052b3")
+	(paper "A4")
+	(title_block
+		(comment 2 "DRAFT")
+	)
+	(lib_symbols)
+	(text_box "MQTT Activity LED\n(GREEN)"
+		(exclude_from_sim no)
+		(at 45.72 62.23 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1a887605-8c51-49ac-a2ce-44257b70012a")
+	)
+	(text_box "LoRaWAN Activity LED\n(BLUE)"
+		(exclude_from_sim no)
+		(at 45.72 100.33 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7ceec100-11d2-4272-beb1-0a2aa596e425")
+	)
+	(text_box "UDP Activity LED\n(RED)"
+		(exclude_from_sim no)
+		(at 45.72 24.13 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bd278a32-3263-4180-8314-e703fb899f51")
+	)
+)
