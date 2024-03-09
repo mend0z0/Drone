@@ -42,7 +42,11 @@ private slots:
     void MQTTReceivedMsgStatus(QMqttMessage msg);
     void MQTTReceivedMsgCommand(QMqttMessage msg);
     void MQTTSentMsg(QMqttMessage msg);
+    void MQTTUpdateServerStatus( bool status );
 
+    void ButtonReadDisable( void );
+    void ButtonReadEnable( void );
+    void ButtonReadStatus( void );
     void ButtonForward( void );
     void ButtonReverse( void );
     void ButtonLeft( void );
@@ -59,6 +63,7 @@ private slots:
     void DroneSelectNext( void );
     void DroneSelectPrevious( void );
     void ButtonCameraShutter( void );
+    void UpdateDroneIndex( uint8_t index );
 
     void QuadcopterParamInit( void );
     void QuadcopterParamUpdate( QJsonObject inputObj );
@@ -78,6 +83,8 @@ private:
 
     void ConnectFunctions( void );
     void DisconnectFunctions( void );
+    void EnablePanel( void );
+    void DisablePanel( void );
 
     void NoisyTVGifControl( bool cmd, uint8_t screenNumber);
 
@@ -88,6 +95,7 @@ private:
         QJsonDocument jsonDocStatus;
         QJsonDocument jsonDocCommand;
         QFont clockFont;
+        QFont generalLabelsFont;
         QPixmap PixmapButtonOn;
         QPixmap PixmapButtonOff;
         QTextCharFormat txtPanelFormatGeneral;
@@ -95,6 +103,7 @@ private:
         QTextCharFormat txtPanelFormatCommand;
         QPen txtBrush;
         bool lockPanel;
+        uint8_t index;
     }qcopter;
 
 

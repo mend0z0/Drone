@@ -6,6 +6,9 @@ MQTTClient::MQTTClient(QWidget *parent) :
     ui(new Ui::MQTTClient)
 {
     ui->setupUi(this);
+
+    mqttSendTimeout->start(1000);
+
     ParamInit();
     ConnectFunctions();
 }
@@ -67,7 +70,6 @@ void MQTTClient::mqttPanelClose()
     close();
 }
 
-
 void MQTTClient::PingResult()
 {
     QByteArray pingResults;
@@ -106,10 +108,24 @@ void MQTTClient::mqttNewReceivedCommand(QMqttMessage msg)
     emit QCopter_NewMsgCommand(msg);
 }
 
+void MQTTClient::MQTTSendTimerTimeout()
+{
+    mqtt_client.sendMessageTimeOut = false;
+}
+
 void MQTTClient::mqttSendMsg(QByteArray msg)
 {
+    if(mqtt_client.sendMessageTimeOut == true)
+    {
+        return;
+    }
+
     qDebug() << "MQTT: " << msg;
     qcopter_mqttClient->publish( mqtt_client.topicCommand, msg, mqtt_client.QoS, false);
+
+    mqttSendTimeout->stop();
+    mqttSendTimeout->start(1000);
+    mqtt_client.sendMessageTimeOut = true;
 }
 
 void MQTTClient::PingMQTTBroker(QString ipAddr)
@@ -173,6 +189,7 @@ void MQTTClient::mqttSubscribtion()
        ui->pushButton_mqttConnect_Disconnect->setText("Disconnect");
        buttonPalette.setColor( QPalette::Active, QPalette::Button, Qt::green);
        ui->pushButton_mqttConnect_Disconnect->setPalette(buttonPalette);
+       emit QCopter_MQTTServerStatus(true);
     }
     else
     {
@@ -192,6 +209,7 @@ void MQTTClient::mqttDisconnected()
     ui->pushButton_mqttConnect_Disconnect->setPalette(buttonPalette);
 
     mqttMessageBox->critical(this, "Error", "You got disconnected from server");
+    emit QCopter_MQTTServerStatus(false);
 }
 
 void MQTTClient::ParamInit()
@@ -289,6 +307,8 @@ void MQTTClient::ConnectFunctions()
     connect(qcopter_mqttClient, SIGNAL(disconnected()), this, SLOT(mqttDisconnected()));
 
     connect(pingProcess, SIGNAL(finished(int,QProcess::ExitStatus)), this, SLOT(PingResult()));
+
+    connect(mqttSendTimeout, SIGNAL(timeout()), this, SLOT(mqttSendMsg()));
 }
 
 void MQTTClient::GifLoading(bool cmd)

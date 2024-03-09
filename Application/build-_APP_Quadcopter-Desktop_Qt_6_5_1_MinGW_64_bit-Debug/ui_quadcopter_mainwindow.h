@@ -1,13 +1,11 @@
+#pragma once
 /********************************************************************************
-** Form generated from reading UI file 'quadcopter_mainwindow.ui'
+** Form generated from reading UI file ''
 **
 ** Created by: Qt User Interface Compiler version 6.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
-
-#ifndef UI_QUADCOPTER_MAINWINDOW_H
-#define UI_QUADCOPTER_MAINWINDOW_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -44,11 +42,13 @@ public:
     QGridLayout *gridLayout_3;
     QGridLayout *gridLayout_2;
     QPushButton *pushButton_ConnectLoRaWAN;
-    QLabel *label_MQTTStatus;
-    QSpacerItem *verticalSpacer_3;
-    QPushButton *pushButton_ConnectServer;
+    QLabel *label_Drones;
+    QPushButton *pushButton_ServerSetting;
     QLabel *label_MQTTTopic;
     QLabel *label_MQTTQoS;
+    QLabel *label_StatusMQTTServer;
+    QLabel *label_StatusLoRaWANServer;
+    QLabel *label_DronesNumber;
     QPushButton *pushButton_SaveLogFile;
     QPlainTextEdit *plainTextEdit_LogPanel;
     QLabel *label_QuadcopterConsole;
@@ -293,23 +293,19 @@ public:
 
         gridLayout_2->addWidget(pushButton_ConnectLoRaWAN, 1, 1, 1, 1);
 
-        label_MQTTStatus = new QLabel(layoutWidget);
-        label_MQTTStatus->setObjectName("label_MQTTStatus");
+        label_Drones = new QLabel(layoutWidget);
+        label_Drones->setObjectName("label_Drones");
         QFont font3;
         font3.setFamilies({QString::fromUtf8("Calibri Light")});
-        label_MQTTStatus->setFont(font3);
+        label_Drones->setFont(font3);
 
-        gridLayout_2->addWidget(label_MQTTStatus, 8, 0, 1, 1);
+        gridLayout_2->addWidget(label_Drones, 8, 0, 1, 1);
 
-        verticalSpacer_3 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        pushButton_ServerSetting = new QPushButton(layoutWidget);
+        pushButton_ServerSetting->setObjectName("pushButton_ServerSetting");
+        pushButton_ServerSetting->setFont(font2);
 
-        gridLayout_2->addItem(verticalSpacer_3, 8, 1, 1, 1);
-
-        pushButton_ConnectServer = new QPushButton(layoutWidget);
-        pushButton_ConnectServer->setObjectName("pushButton_ConnectServer");
-        pushButton_ConnectServer->setFont(font2);
-
-        gridLayout_2->addWidget(pushButton_ConnectServer, 1, 0, 1, 1);
+        gridLayout_2->addWidget(pushButton_ServerSetting, 1, 0, 1, 1);
 
         label_MQTTTopic = new QLabel(layoutWidget);
         label_MQTTTopic->setObjectName("label_MQTTTopic");
@@ -322,6 +318,21 @@ public:
         label_MQTTQoS->setFont(font3);
 
         gridLayout_2->addWidget(label_MQTTQoS, 7, 0, 1, 1);
+
+        label_StatusMQTTServer = new QLabel(layoutWidget);
+        label_StatusMQTTServer->setObjectName("label_StatusMQTTServer");
+
+        gridLayout_2->addWidget(label_StatusMQTTServer, 6, 1, 1, 1);
+
+        label_StatusLoRaWANServer = new QLabel(layoutWidget);
+        label_StatusLoRaWANServer->setObjectName("label_StatusLoRaWANServer");
+
+        gridLayout_2->addWidget(label_StatusLoRaWANServer, 7, 1, 1, 1);
+
+        label_DronesNumber = new QLabel(layoutWidget);
+        label_DronesNumber->setObjectName("label_DroneNumber");
+
+        gridLayout_2->addWidget(label_DronesNumber, 8, 1, 1, 1);
 
 
         gridLayout_3->addLayout(gridLayout_2, 3, 0, 1, 1);
@@ -1100,10 +1111,13 @@ public:
         pushButton_MoveReverse->setText(QString());
         pushButton_MoveRight->setText(QString());
         pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Search Drones", nullptr));
-        label_MQTTStatus->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Status: N/A</span></p></body></html>", nullptr));
-        pushButton_ConnectServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Connect Server", nullptr));
-        label_MQTTTopic->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Topic: N/A</span></p></body></html>", nullptr));
-        label_MQTTQoS->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">QoS: N/A</span></p></body></html>", nullptr));
+        label_Drones->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drones</span></p></body></html>", nullptr));
+        pushButton_ServerSetting->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Server Setting", nullptr));
+        label_MQTTTopic->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">MQTT Server:</span></p></body></html>", nullptr));
+        label_MQTTQoS->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">LoRaWAN Server</span></p></body></html>", nullptr));
+        label_StatusMQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
+        label_StatusLoRaWANServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
+        label_DronesNumber->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">N/A</span></p></body></html>", nullptr));
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
         plainTextEdit_LogPanel->setPlainText(QString());
         label_QuadcopterConsole->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Quadcopter - Console</span></p></body></html>", nullptr));
@@ -1224,4 +1238,3 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_QUADCOPTER_MAINWINDOW_H

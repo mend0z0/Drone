@@ -41,6 +41,7 @@ Quadcopter_MainWindow::Quadcopter_MainWindow(QWidget *parent)
     qcopterGeneralTimer->start(500);
     qcopterButtonTimer->start(100); // 100 miliseconds
 
+    DisablePanel();
 }
 
 Quadcopter_MainWindow::~Quadcopter_MainWindow()
@@ -132,12 +133,56 @@ void Quadcopter_MainWindow::MQTTSentMsg(QMqttMessage msg)
     ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
 }
 
+void Quadcopter_MainWindow::MQTTUpdateServerStatus(bool status)
+{
+    qcopter.generalLabelsFont.setPixelSize(14);
+    ui->label_StatusMQTTServer->setFont(qcopter.generalLabelsFont);
+    if(status)
+    {
+        ui->label_StatusMQTTServer->setText("CONNECTED");
+        ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(0, 200, 0)");
+        EnablePanel();
+    }
+    else
+    {
+        ui->label_StatusMQTTServer->setText("DISCONNETED");
+        ui->label_StatusMQTTServer->setStyleSheet("");
+        DisablePanel();
+    }
+}
+
+void Quadcopter_MainWindow::ButtonReadDisable()
+{
+    disconnect(qcopterGeneralTimer, SIGNAL(timeout()), this, SLOT(ButtonReadStatus()));
+}
+
+void Quadcopter_MainWindow::ButtonReadEnable()
+{
+    connect(qcopterGeneralTimer, SIGNAL(timeout()), this, SLOT(ButtonReadStatus()));
+}
+
+void Quadcopter_MainWindow::ButtonReadStatus()
+{
+    if(ui->pushButton_MoveForward->isDown() == true)
+    {
+        ButtonForward();
+    }
+    else if(ui->pushButton_MoveReverse->isDown() == true)
+    {
+        ButtonReverse();
+    }
+    else if(ui->pushButton_MoveLeft->isDown() == true)
+    {
+        ButtonLeft();
+    }
+    else if(ui->pushButton_MoveRight->isDown() == true)
+    {
+        ButtonRight();
+    }
+}
+
 void Quadcopter_MainWindow::ButtonForward( void )
 {
-    if(qcopter.lockPanel == true)
-    {
-        return;
-    }
     qcopter.jsonObjCommand["FORWARD"]=1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
@@ -150,17 +195,10 @@ void Quadcopter_MainWindow::ButtonForward( void )
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonForward();
-
-    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::ButtonReverse( void )
 {
-    if(qcopter.lockPanel == true)
-    {
-        return;
-    }
-
     qcopter.jsonObjCommand["REVERSE"]=1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
@@ -173,17 +211,10 @@ void Quadcopter_MainWindow::ButtonReverse( void )
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonReverse();
-
-    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::ButtonLeft( void )
 {
-    if(qcopter.lockPanel == true)
-    {
-        return;
-    }
-
     qcopter.jsonObjCommand["LEFT"] =1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
@@ -196,17 +227,10 @@ void Quadcopter_MainWindow::ButtonLeft( void )
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonLeft();
-
-    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::ButtonRight( void )
 {
-    if(qcopter.lockPanel == true)
-    {
-        return;
-    }
-
     qcopter.jsonObjCommand["RIGHT"] =1;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
@@ -219,8 +243,6 @@ void Quadcopter_MainWindow::ButtonRight( void )
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
     AnimationButtonRight();
-
-    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::AnimationButtonForward()
@@ -573,11 +595,6 @@ void Quadcopter_MainWindow::AnimationButtonRight()
 
 void Quadcopter_MainWindow::GeologicalPosition( int value )
 {
-    if(qcopter.lockPanel == true)
-    {
-        return;
-    }
-
     qcopter.jsonObjCommand["DIRECT"] = value;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
 
@@ -585,17 +602,10 @@ void Quadcopter_MainWindow::GeologicalPosition( int value )
     //qDebug() << "Compass Degree" << value;
 
     qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
-
-    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::Throttle(int value)
 {
-    if(qcopter.lockPanel == true)
-    {
-        return;
-    }
-
     ui->lcdNumber_ThrottleValue->display(value);
 
     qcopter.jsonObjCommand["ELEVATE"] = value;
@@ -605,8 +615,6 @@ void Quadcopter_MainWindow::Throttle(int value)
     //qDebug() << "Height" << value << "cm";
 
     qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
-
-    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::DroneSelectNext()
@@ -631,8 +639,18 @@ void Quadcopter_MainWindow::ButtonCameraShutter()
     qDebug() << "Shutter Camera has been pressed";
 }
 
+void Quadcopter_MainWindow::UpdateDroneIndex(uint8_t index)
+{
+    qcopter.generalLabelsFont.setPixelSize(14);
+    ui->label_DronesNumber->setFont(qcopter.generalLabelsFont);
+    ui->label_DronesNumber->setText(QString::number(index) + "/NA");
+}
+
 void Quadcopter_MainWindow::QuadcopterParamInit()
 {
+    qcopter.index = 0;
+
+    qcopter.jsonObjStatus.insert("QCOPTER", qcopter.index);
     qcopter.jsonObjStatus.insert("TEMP", 0);
     qcopter.jsonObjStatus.insert("HUMEDITY" , 0);
     qcopter.jsonObjStatus.insert("BATT" , 0);
@@ -643,6 +661,7 @@ void Quadcopter_MainWindow::QuadcopterParamInit()
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
 
+    qcopter.jsonObjStatus.insert("QCOPTER", qcopter.index);
     qcopter.jsonObjCommand.insert("FORWARD",0);
     qcopter.jsonObjCommand.insert("REVERSE",0);
     qcopter.jsonObjCommand.insert("LEFT",0);
@@ -688,6 +707,10 @@ void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
     {
         qcopter.jsonObjStatus["GEOPOS"] = inputObj["GEOPOS"];
     }
+    if(inputObj.contains("QCOPTER"))
+    {
+        UpdateDroneIndex(inputObj["QCOPTER"].toInt());
+    }
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
 
@@ -719,12 +742,18 @@ void Quadcopter_MainWindow::ClockUpdate()
 
 void Quadcopter_MainWindow::ConnectFunctions()
 {
-    connect(ui->pushButton_ConnectServer, SIGNAL(clicked(bool)), this, SLOT(MQTTConsole()));
+    connect(ui->pushButton_ServerSetting, SIGNAL(clicked(bool)), this, SLOT(MQTTConsole()));
 
-    connect(ui->pushButton_MoveForward, SIGNAL(pressed()), this, SLOT(ButtonForward()));
-    connect(ui->pushButton_MoveReverse, SIGNAL(pressed()), this, SLOT(ButtonReverse()));
-    connect(ui->pushButton_MoveLeft, SIGNAL(pressed()), this, SLOT(ButtonLeft()));
-    connect(ui->pushButton_MoveRight, SIGNAL(pressed()), this, SLOT(ButtonRight()));
+    connect(ui->pushButton_MoveForward, SIGNAL(pressed()), this, SLOT(ButtonReadEnable()));
+    connect(ui->pushButton_MoveReverse, SIGNAL(pressed()), this, SLOT(ButtonReadEnable()));
+    connect(ui->pushButton_MoveLeft, SIGNAL(pressed()), this, SLOT(ButtonReadEnable()));
+    connect(ui->pushButton_MoveRight, SIGNAL(pressed()), this, SLOT(ButtonReadEnable()));
+
+    connect(ui->pushButton_MoveForward, SIGNAL(released()), this, SLOT(ButtonReadDisable()));
+    connect(ui->pushButton_MoveReverse, SIGNAL(released()), this, SLOT(ButtonReadDisable()));
+    connect(ui->pushButton_MoveLeft, SIGNAL(released()), this, SLOT(ButtonReadDisable()));
+    connect(ui->pushButton_MoveRight, SIGNAL(released()), this, SLOT(ButtonReadDisable()));
+
     connect(ui->verticalSlider_Throttle, SIGNAL(valueChanged(int)), this, SLOT(Throttle(int)));
     connect(ui->dial_GeologicalPosition, SIGNAL(valueChanged(int)), this, SLOT(GeologicalPosition(int)));
     connect(ui->pushButton_DroneSelectNext, SIGNAL(clicked(bool)), this, SLOT(DroneSelectNext()));
@@ -735,6 +764,49 @@ void Quadcopter_MainWindow::ConnectFunctions()
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgGeneral(QMqttMessage)), this, SLOT(MQTTReceivedMsgGeneral(QMqttMessage)));
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgStatus(QMqttMessage)), this, SLOT(MQTTReceivedMsgStatus(QMqttMessage)));
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgCommand(QMqttMessage)), this, SLOT(MQTTReceivedMsgCommand(QMqttMessage)));
+    connect(qcopterConsole, SIGNAL(QCopter_MQTTServerStatus(bool)), this, SLOT(MQTTUpdateServerStatus(bool)));
+}
+
+void Quadcopter_MainWindow::EnablePanel()
+{
+    ui->pushButton_ConnectLoRaWAN->setEnabled(true);
+    ui->pushButton_SaveLogFile->setEnabled(true);
+    ui->pushButton_MoveForward->setEnabled(true);
+    ui->pushButton_MoveReverse->setEnabled(true);
+    ui->pushButton_MoveLeft->setEnabled(true);
+    ui->pushButton_MoveRight->setEnabled(true);
+    ui->dial_GeologicalPosition->setEnabled(true);
+    ui->verticalSlider_Throttle->setEnabled(true);
+
+    ui->lcdNumber_ThrottleValue->setEnabled(true);
+    ui->lcdNumber_Battery->setEnabled(true);
+    ui->lcdNumber_Displacement->setEnabled(true);
+    ui->lcdNumber_Height->setEnabled(true);
+    ui->lcdNumber_Speed->setEnabled(true);
+    ui->lcdNumber_Temperature->setEnabled(true);
+
+    ui->label_DronesNumber->setEnabled(true);
+}
+
+void Quadcopter_MainWindow::DisablePanel()
+{
+    ui->pushButton_ConnectLoRaWAN->setDisabled(true);
+    ui->pushButton_SaveLogFile->setDisabled(true);
+    ui->pushButton_MoveForward->setDisabled(true);
+    ui->pushButton_MoveReverse->setDisabled(true);
+    ui->pushButton_MoveLeft->setDisabled(true);
+    ui->pushButton_MoveRight->setDisabled(true);
+    ui->dial_GeologicalPosition->setDisabled(true);
+    ui->verticalSlider_Throttle->setDisabled(true);
+
+    ui->lcdNumber_ThrottleValue->setDisabled(true);
+    ui->lcdNumber_Battery->setDisabled(true);
+    ui->lcdNumber_Displacement->setDisabled(true);
+    ui->lcdNumber_Height->setDisabled(true);
+    ui->lcdNumber_Speed->setDisabled(true);
+    ui->lcdNumber_Temperature->setDisabled(true);
+
+    ui->label_DronesNumber->setDisabled(true);
 }
 
 void Quadcopter_MainWindow::NoisyTVGifControl(bool cmd, uint8_t screenNumber)

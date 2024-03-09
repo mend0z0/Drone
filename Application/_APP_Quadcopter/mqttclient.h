@@ -12,6 +12,7 @@
 #include <QProcess>
 #include <QPalette>
 #include <QMovie>
+#include <QTimer>
 
 #define MQTT_DEFAULT_HOSTNAME       "192.168.0.148"
 #define MQTT_DEFAULT_PORT           3667
@@ -54,6 +55,7 @@ signals:
     void QCopter_NewMsgGeneral( QMqttMessage msg );
     void QCopter_NewMsgStatus( QMqttMessage msg );
     void QCopter_NewMsgCommand( QMqttMessage msg );
+    void QCopter_MQTTServerStatus( bool status );
 
 private slots:
     void mqttParamSet( void );
@@ -67,6 +69,8 @@ private slots:
     void mqttNewReceivedGeneral(QMqttMessage msg);
     void mqttNewReceivedStatus(QMqttMessage msg);
     void mqttNewReceivedCommand(QMqttMessage msg);
+
+    void MQTTSendTimerTimeout( void );
 
 public slots:
     void mqttSendMsg(QByteArray msg);
@@ -86,6 +90,7 @@ private:
         quint8  QoS;                            // This will hold the QoS level which is 2 (Garantee the data will be sent)
         bool  numberOfTopic[MQTT_TOPIC_MAX];    // This will hold the number of drone that is connected to the mqtt broker
         QString messages;                       // This will hold any messages that come in.
+        bool sendMessageTimeOut;
     }mqtt_client;
 
     QPalette buttonPalette;
@@ -94,6 +99,8 @@ private:
     QProcess *pingProcess = new QProcess();
     QMessageBox *mqttMessageBox = new QMessageBox(this);
     QMqttClient *qcopter_mqttClient = new QMqttClient(this);
+
+    QTimer *mqttSendTimeout = new QTimer(this);
 
     void ParamInit( void );
     void ObjectsEnable( void );
