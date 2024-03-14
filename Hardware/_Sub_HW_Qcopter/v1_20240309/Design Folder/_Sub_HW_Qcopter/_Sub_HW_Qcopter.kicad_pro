@@ -562,7 +562,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "ANSI C Landscape_SCHDoc_Mend0z0.kicad_wks",
-    "plot_directory": "",
+    "plot_directory": "Output files/Schematic (PDF)/",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -603,7 +603,7 @@
     ],
     [
       "d6ab115a-235e-42ae-89e7-f46f758fee81",
-      "BMI160 Driver"
+      "ICM-20948 Driver"
     ],
     [
       "f53faaca-3dbe-4009-9903-5908d6fb2aee",
@@ -611,7 +611,7 @@
     ],
     [
       "fb6a3e3b-62bf-46c5-8e5c-2b17482b433c",
-      "SN74HC595 Driver"
+      "GPIO Expander"
     ],
     [
       "29d1a133-3303-4c4b-88c1-f88fdc03d51b",
@@ -622,12 +622,12 @@
       "W25Q64 Driver"
     ],
     [
-      "119678d4-0dae-424c-858e-6cc318d13084",
-      "LDO"
+      "89c85fef-530b-4b8e-8624-d86fb53e17b7",
+      "LDO +3V3"
     ],
     [
-      "7a8ed9fd-5b99-42bb-a1e6-8a0ae04a4a31",
-      "Radio Controller Interface"
+      "9dfe4c39-4ceb-4fd2-b56a-1baa2fce7dec",
+      "CHASSIS LED Driver1"
     ],
     [
       "ed29e548-608f-4c6d-baf5-be9a7e3f9a1c",
@@ -636,10 +636,6 @@
     [
       "7d707aad-e237-43ec-b9e0-31f445760984",
       "RESET Circuit"
-    ],
-    [
-      "4fa085b6-6c8d-4af2-84ac-a5f6c225164c",
-      "USB Connector"
     ],
     [
       "2faab146-56a0-4161-9bf2-36499f684d79",
@@ -664,6 +660,78 @@
     [
       "7a540dfe-93f1-48cd-8581-75ca2f9935cb",
       "BME280 Driver"
+    ],
+    [
+      "ca9cd294-4e54-4f83-9259-ff37ab8c6d85",
+      "MECHANICAL PARTS"
+    ],
+    [
+      "c66787b8-a69a-4286-87e1-ab899f33d9d0",
+      "PI4IOE5V9554 Driver"
+    ],
+    [
+      "4aa5fc72-b0e4-468f-a956-77c8e7b00bf8",
+      "PI4IOE5V9554 Driver1"
+    ],
+    [
+      "7ce3b4a8-8ccf-41cc-bcee-c6347bfd94ee",
+      "PI4IOE5V9554 Driver2"
+    ],
+    [
+      "ba209e9f-839d-451e-aedb-3e6072a35610",
+      "DRV8837 Driver"
+    ],
+    [
+      "e5b4fccc-34bf-4d7d-a3fb-9a3fd4a23427",
+      "DRV8837 Driver1"
+    ],
+    [
+      "e02e2a6a-583e-4b9b-a64b-933d32c02f8e",
+      "DRV8837 Driver2"
+    ],
+    [
+      "18b6f30a-cfd9-47dd-912b-fd9e3d81f3b7",
+      "LEDs Driver"
+    ],
+    [
+      "02bdf929-a630-4860-b400-58761f92caaa",
+      "DRV8837 Driver3"
+    ],
+    [
+      "d01f197b-a0f5-41b1-b267-05c3be6c8f44",
+      "CHASSIS LED Driver"
+    ],
+    [
+      "9b435483-0088-4023-8c4e-fad88eb5f6b4",
+      "CHASSIS LED Driver2"
+    ],
+    [
+      "b5f98916-9852-4daa-96f4-3bdba60c13f5",
+      "CHASSIS LED Driver3"
+    ],
+    [
+      "c687d90c-2ade-43f2-9366-cfff9c79456b",
+      "LDO +3V3"
+    ],
+    [
+      "f68d8295-72fb-4a7a-82e7-db0d0a2f4ced",
+      "LDO +3V3"
+    ],
+    [
+      "ccf78d53-405f-4cbf-a00f-81329b3705d6",
+      "LDO +3V3"
+    ],
+    [
+      "82e4bdd4-fd10-4d98-b6d8-ce5d864ae438",
+      "BATTERY CHARGER"
+    ],
+    [
+      "86512584-84de-43e1-b652-f4f460ec7f16",
+      "SMPS DCDC-BOOST +5V"
+    ],
+    [
+      "28fb611e-9be9-40da-a4d5-7a0eb68011b2",
+      "DEBUG UART"
     ]
   ],
   "text_variables": {}

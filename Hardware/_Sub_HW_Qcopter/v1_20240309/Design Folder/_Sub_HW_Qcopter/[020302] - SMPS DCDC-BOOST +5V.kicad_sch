@@ -1,0 +1,4615 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e627faa8-e70a-45ae-a586-d1ebe96a66e1")
+	(paper "C")
+	(title_block
+		(comment 2 "DRAFT")
+	)
+	(lib_symbols
+		(symbol "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4u7F_16V_X7R"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Murata Electronics"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_4.7uF_16V_X7R_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_4.7uF_16V_X7R_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:CAP_CER_680pF_100V_X7R_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "680pF_100V_X7R"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "680 pF ±10% 100V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "KGM15AR72A681KT"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "KYOCERA AVX"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "478-KGM15AR72A681KTTR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM15AR72A681KT/563308"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "680 pF ±10% 100V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_680pF_100V_X7R_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_680pF_100V_X7R_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:DIODE_SCHOTTKY_SK510A-LTP_5A_100V_SMA"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SK510A-LTP"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SMA"
+				(at 2.54 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SK52A-L-SK510A-L(DO-214AC).pdf"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode 100 V 5A Surface Mount DO-214AC (SMA)"
+				(at 2.54 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "SK510A-LTP"
+				(at 2.54 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.ca/en/products/detail/micro-commercial-co/SK510A-LTP/5114130"
+				(at 2.54 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Micro Commercial Co"
+				(at 2.54 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "SK510A-LTPMSTR-ND"
+				(at 2.54 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 2.54 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "SMA"
+				(at 2.54 33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 2.54 30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECk" "PCB (N/A)"
+				(at 2.54 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "SK510A-LTP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DIODE_SCHOTTKY_SK510A-LTP_5A_100V_SMA_0_1"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27) (xy 7.62 0) (xy 5.08 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 1.27) (xy 8.89 2.54) (xy 7.62 2.54) (xy 7.62 -2.54) (xy 6.35 -2.54) (xy 6.35 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DIODE_SCHOTTKY_SK510A-LTP_5A_100V_SMA_1_1"
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:DIODE_TVS_GG040205100N2P_5V_5.5V_8A(8/20us)_D0402"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "GG040205100N2P"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+				(at 2.54 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://datasheets.kyocera-avx.com/AVX-GiGuard.pdf"
+				(at 2.54 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "12V Clamp 8A (8/20µs) Ipp Tvs Diode Surface Mount 0402 (1005 Metric)"
+				(at 2.54 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "GG040205100N2P"
+				(at 2.54 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/GG040205100N2P/6826546"
+				(at 2.54 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "KYOCERA AVX"
+				(at 2.54 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "478-10594-2-ND"
+				(at 2.54 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 2.54 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "D0402"
+				(at 2.54 35.56 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 2.54 33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECk" "PCB (N/A)"
+				(at 2.54 30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "GG040205100N2P"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DIODE_TVS_GG040205100N2P_5V_5.5V_8A(8/20us)_D0402_0_1"
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 3.81 -1.27) (xy 6.35 0) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 2.54) (xy 6.35 1.27) (xy 6.35 -1.27) (xy 7.62 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -1.27) (xy 8.89 1.27) (xy 6.35 0) (xy 8.89 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "DIODE_TVS_GG040205100N2P_5V_5.5V_8A(8/20us)_D0402_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:IC_PMIC_TPS613222ADBVR_SMPS-BOOST_5V_2.5A_SOT-753"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "TPS613222ADBVR"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 2.54 15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps61322"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Boost Switching Regulator IC Positive Fixed 5V 1 Output 2.5A (Switch) SC-74A, SOT-753"
+				(at 2.54 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "TPS613222ADBVR"
+				(at 2.54 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.ca/en/products/detail/texas-instruments/TPS613222ADBVR/8638376?s=N4IgTCBcDaICoAUDKA2AjAZjNgggEQCEA1AJRAF0BfIA"
+				(at 2.54 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 2.54 22.86 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "296-50503-2-ND"
+				(at 2.54 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 2.54 25.4 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "SOT-753"
+				(at 2.54 33.02 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 2.54 30.48 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECk" "PCB (N/A)"
+				(at 2.54 27.94 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "TPS613222ADBVR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IC_PMIC_TPS613222ADBVR_SMPS-BOOST_5V_2.5A_SOT-753_0_0"
+				(polyline
+					(pts
+						(xy 0 -12.7) (xy 20.32 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 0)
+					(end 20.32 -19.05)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "	\nSOT-23-5"
+					(at 10.16 -16.51 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "	\nTPS613222ADBVR"
+					(at 10.16 -13.97 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "IC_PMIC_TPS613222ADBVR_SMPS-BOOST_5V_2.5A_SOT-753_1_1"
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -6.35 180)
+					(length 5.08)
+					(name "N.C."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -2.54 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -10.16 180)
+					(length 5.08)
+					(name "N.C."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:IND_2u2H__2A_0.14R_60MHz_L0806"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "2u2H_2A_0.14R"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+				(at 2.54 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5383/WIP201610S%20L%20Series.pdf"
+				(at 2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "2.2 µH Shielded Wirewound Inductor 2 A 140mOhm Max 0806 (2016 Metric)"
+				(at 2.54 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "WIP201610S-2R2MLDG"
+				(at 2.54 21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.ca/en/products/detail/inpaq-technology-co-ltd/WIP201610S-2R2MLDG/20486865"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "INPAQ Technology Co., Ltd"
+				(at 2.54 24.13 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "3526-WIP201610S-2R2MLDGCT-ND"
+				(at 2.54 19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 2.54 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "L0806"
+				(at 2.54 34.29 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 2.54 31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECk" "PCB (N/A)"
+				(at 2.54 29.21 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "WIP201610S-2R2MLDG"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IND_2u2H__2A_0.14R_60MHz_L0806_0_1"
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 8.89 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.905) (xy 8.89 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 5.715 0.0195)
+					(mid 5.08 0.6353)
+					(end 4.445 0.0195)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.985 0.0195)
+					(mid 6.35 0.6353)
+					(end 5.715 0.0195)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 8.255 0.0195)
+					(mid 7.62 0.6353)
+					(end 6.985 0.0195)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "IND_2u2H__2A_0.14R_60MHz_L0806_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 4.445)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 4.445)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:RES_4R7_1/4W_1%_R0805"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4R7_1/4W_1%"
+				(at 2.54 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+				(at 2.54 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
+				(at 2.54 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "4.7 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
+				(at 2.54 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "RK73H2ATTD4R70F"
+				(at 2.54 21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD4R70F/10234424"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "KOA Speer Electronics, Inc."
+				(at 2.54 24.13 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "2019-RK73H2ATTD4R70FTR-ND"
+				(at 2.54 19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 2.54 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "R0805"
+				(at 2.54 34.29 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 2.54 31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECk" "PCB (N/A)"
+				(at 2.54 29.21 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "RK73H2ATTD4R70F"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES_4R7_1/4W_1%_R0805_0_0"
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 4.445 1.27) (xy 5.715 -1.27) (xy 6.985 1.27) (xy 8.255 -1.27) (xy 8.89 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES_4R7_1/4W_1%_R0805_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 228.6 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04c3186c-0049-4c13-9828-3e389e8d086f")
+	)
+	(junction
+		(at 342.9 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0b1c0143-ae6b-4837-80de-36e9d399bdf2")
+	)
+	(junction
+		(at 177.8 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "203ce78c-7602-4e2a-8bf4-f22285a5225b")
+	)
+	(junction
+		(at 317.5 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22d2fca7-596c-4d55-976f-1d487109ed2d")
+	)
+	(junction
+		(at 152.4 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "243697bd-941c-4d97-8075-f79163bbe4e1")
+	)
+	(junction
+		(at 342.9 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d707d63-87f4-4973-85d1-4c39b2c92c89")
+	)
+	(junction
+		(at 228.6 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72c718d5-d59a-422b-830c-6db37c6c66b1")
+	)
+	(junction
+		(at 317.5 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6d3ff22-928c-4c62-857f-ecb759e9fb71")
+	)
+	(junction
+		(at 317.5 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b40bec59-db9f-4d19-b3f3-2d688acba309")
+	)
+	(junction
+		(at 152.4 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbb4a705-3b2a-4702-8ec6-ce9782be1e0f")
+	)
+	(junction
+		(at 228.6 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6f7b324-ed0f-401d-93a3-c4abc06043e8")
+	)
+	(junction
+		(at 292.1 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8c53a5e-c1a0-4556-8cc2-0283d4e07974")
+	)
+	(junction
+		(at 177.8 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e343522f-3afd-439a-85a0-b19e5f6c0ac1")
+	)
+	(junction
+		(at 393.7 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7a4c00b-7f77-4c36-af95-bb971527d2fd")
+	)
+	(junction
+		(at 368.3 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e7b0c276-a4e6-4a6f-96de-05154866a238")
+	)
+	(junction
+		(at 292.1 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9574e0a-5072-4431-8274-331c4b35bc51")
+	)
+	(junction
+		(at 368.3 228.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edb6f119-9611-4b84-aa06-904b9e81c6d7")
+	)
+	(wire
+		(pts
+			(xy 177.8 222.25) (xy 177.8 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "036b2220-fdb3-4a16-bb20-765eaee5a096")
+	)
+	(wire
+		(pts
+			(xy 139.7 203.2) (xy 152.4 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03ca3e5f-29bd-4d05-a682-0ef2b4cf11bd")
+	)
+	(wire
+		(pts
+			(xy 257.81 162.56) (xy 288.29 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a67ccf8-fbef-48ae-bc97-57d3a4f967eb")
+	)
+	(wire
+		(pts
+			(xy 228.6 210.82) (xy 256.54 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ae89282-1745-4e34-b732-1dbae6a3cae4")
+	)
+	(wire
+		(pts
+			(xy 368.3 219.71) (xy 368.3 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d6fd9a4-cbd0-4e80-a136-6ce29f61b575")
+	)
+	(polyline
+		(pts
+			(xy 198.12 256.54) (xy 198.12 339.09)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "0f03ef22-8fe0-4e2c-922e-05204554fbd6")
+	)
+	(wire
+		(pts
+			(xy 152.4 228.6) (xy 177.8 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "101544d0-2a07-43af-abea-f0876f3406a6")
+	)
+	(polyline
+		(pts
+			(xy 190.5 172.72) (xy 210.82 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d710c59-090c-4e56-a73b-e88a269e3fe1")
+	)
+	(polyline
+		(pts
+			(xy 106.68 171.45) (xy 187.96 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e0863da-48be-46b3-9ba0-9e6a3e506553")
+	)
+	(polyline
+		(pts
+			(xy 107.95 137.16) (xy 107.95 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25fd9cb1-c759-4bdc-af80-f16c8f7ab8bf")
+	)
+	(wire
+		(pts
+			(xy 342.9 228.6) (xy 368.3 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "286a3918-300e-4819-981e-fa71ae804401")
+	)
+	(wire
+		(pts
+			(xy 317.5 175.26) (xy 317.5 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bc700fd-85da-47de-9dd6-ac96641cfb1f")
+	)
+	(polyline
+		(pts
+			(xy 347.98 339.09) (xy 198.12 339.09)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "3036ae84-c1a3-4a10-a5fd-9e3b18411fdb")
+	)
+	(polyline
+		(pts
+			(xy 185.42 168.91) (xy 109.22 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31f98299-e026-493d-bc16-b6af6521f00c")
+	)
+	(wire
+		(pts
+			(xy 393.7 203.2) (xy 419.1 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37022b28-8b6e-416b-8a5a-24e89e242839")
+	)
+	(wire
+		(pts
+			(xy 287.02 207.01) (xy 292.1 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "392cc73f-7c2c-43f4-9491-d80dbd3f7843")
+	)
+	(wire
+		(pts
+			(xy 368.3 207.01) (xy 368.3 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "398130b5-1f01-4c4f-97c5-a7dfdd1bb6ee")
+	)
+	(polyline
+		(pts
+			(xy 185.42 138.43) (xy 185.42 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a0533a7-3a2a-4d93-9975-f062e1ba0e15")
+	)
+	(polyline
+		(pts
+			(xy 186.69 137.16) (xy 186.69 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3acf0c9a-9d5e-4b95-b1bc-9460249b15dc")
+	)
+	(polyline
+		(pts
+			(xy 349.25 255.27) (xy 349.25 340.36)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "3b41664c-7473-4af9-98b7-cc49ec2ef02f")
+	)
+	(wire
+		(pts
+			(xy 317.5 162.56) (xy 300.99 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b9961ed-87cb-4d6e-a635-3d0c3fcc87ae")
+	)
+	(wire
+		(pts
+			(xy 287.02 210.82) (xy 292.1 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fa7f73d-8335-43c3-b65e-f0c9ac7f167e")
+	)
+	(wire
+		(pts
+			(xy 152.4 209.55) (xy 152.4 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "460f81e2-aa85-4e97-999c-fe459b6d1991")
+	)
+	(wire
+		(pts
+			(xy 228.6 228.6) (xy 292.1 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56b078d1-ff09-45a7-bc29-5357da8bab61")
+	)
+	(wire
+		(pts
+			(xy 342.9 208.28) (xy 342.9 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b50e585-17b5-436e-b7bd-4cf3e840ed40")
+	)
+	(polyline
+		(pts
+			(xy 187.96 135.89) (xy 187.96 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d268bc9-3f84-4dc6-a36c-f8c63353bec2")
+	)
+	(polyline
+		(pts
+			(xy 193.04 171.45) (xy 190.5 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62ec34a6-c600-4cce-8357-e16a300973bd")
+	)
+	(polyline
+		(pts
+			(xy 196.85 340.36) (xy 349.25 340.36)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "630dafb9-bc1e-454f-9fe7-9813e7db557c")
+	)
+	(polyline
+		(pts
+			(xy 109.22 138.43) (xy 109.22 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b66ef4c-b648-49fb-9fd0-fb1006e9b951")
+	)
+	(wire
+		(pts
+			(xy 228.6 162.56) (xy 228.6 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d3d5c68-7d11-42c0-831d-9a6f201ee135")
+	)
+	(wire
+		(pts
+			(xy 152.4 222.25) (xy 152.4 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d86fc2b-4c51-4f75-941c-b6a16f544817")
+	)
+	(wire
+		(pts
+			(xy 393.7 203.2) (xy 368.3 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fa4ae32-20aa-4ae0-a743-c0debe8bc4ad")
+	)
+	(wire
+		(pts
+			(xy 228.6 175.26) (xy 228.6 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "714d014f-0922-4ad6-b3f9-681c60cd64a9")
+	)
+	(polyline
+		(pts
+			(xy 106.68 135.89) (xy 106.68 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d64c93f-09eb-4684-9f80-24165fff8470")
+	)
+	(wire
+		(pts
+			(xy 177.8 203.2) (xy 177.8 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8dbe351c-d59f-4ce8-9da8-3fe13165747d")
+	)
+	(polyline
+		(pts
+			(xy 196.85 255.27) (xy 349.25 255.27)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "8f385212-99dd-4d88-bb13-b712e6f0b09e")
+	)
+	(wire
+		(pts
+			(xy 292.1 203.2) (xy 317.5 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920542ea-2177-45df-b1c7-5f09b955489e")
+	)
+	(wire
+		(pts
+			(xy 177.8 228.6) (xy 228.6 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "945f1dd5-f278-40de-ad5a-cb7045fffd02")
+	)
+	(polyline
+		(pts
+			(xy 347.98 256.54) (xy 347.98 339.09)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "9866283a-0874-4846-8e1f-8038706f8b63")
+	)
+	(wire
+		(pts
+			(xy 228.6 228.6) (xy 228.6 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d828db-fe06-4434-87f0-2b61c0b38c38")
+	)
+	(wire
+		(pts
+			(xy 393.7 220.98) (xy 393.7 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ad5c351-d44f-48c1-bef6-c45a9ec17bc4")
+	)
+	(polyline
+		(pts
+			(xy 186.69 170.18) (xy 107.95 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ccdf0ee-05b1-4b63-8c12-e24845578299")
+	)
+	(polyline
+		(pts
+			(xy 190.5 172.72) (xy 191.77 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e1ea5b2-afda-4543-9387-e5da55cc9a79")
+	)
+	(wire
+		(pts
+			(xy 368.3 228.6) (xy 393.7 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9efbe6e8-1ca0-43b4-9c6f-404915ef98b7")
+	)
+	(wire
+		(pts
+			(xy 228.6 175.26) (xy 265.43 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3e5d43b-e941-4332-a031-094dfa294d61")
+	)
+	(wire
+		(pts
+			(xy 317.5 203.2) (xy 317.5 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5ad9367-5f08-4433-9e8d-fd4243adf11b")
+	)
+	(polyline
+		(pts
+			(xy 106.68 135.89) (xy 187.96 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a946b0c9-e700-4ca7-8f51-916a7548bd04")
+	)
+	(wire
+		(pts
+			(xy 317.5 203.2) (xy 342.9 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a96f5ce4-9790-4d80-8a44-443971ff8946")
+	)
+	(wire
+		(pts
+			(xy 292.1 203.2) (xy 292.1 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa59c2ad-a12d-42dd-a163-d8395f01c0c6")
+	)
+	(wire
+		(pts
+			(xy 198.12 203.2) (xy 177.8 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adce2c66-c493-4bf3-adbf-c99e6cce4a8e")
+	)
+	(polyline
+		(pts
+			(xy 199.39 257.81) (xy 346.71 257.81)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "aeae6096-8ccb-4c3f-bd48-2b2d1105c2cb")
+	)
+	(wire
+		(pts
+			(xy 317.5 228.6) (xy 342.9 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b07cbe5c-6da4-4cae-8db1-7099f676bbfc")
+	)
+	(wire
+		(pts
+			(xy 139.7 228.6) (xy 152.4 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5f940d3-5f33-4881-9823-1efb21a7307c")
+	)
+	(wire
+		(pts
+			(xy 342.9 220.98) (xy 342.9 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba90205c-0d9f-473a-9c2c-ef31f3de704d")
+	)
+	(wire
+		(pts
+			(xy 368.3 203.2) (xy 342.9 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb30e0b5-5ef8-4993-9cb2-fa5a37eedaca")
+	)
+	(wire
+		(pts
+			(xy 228.6 203.2) (xy 256.54 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd474da3-b2da-437d-a135-bb1be02fde59")
+	)
+	(polyline
+		(pts
+			(xy 346.71 337.82) (xy 199.39 337.82)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "c332d7e6-eb8f-4338-bb5f-efad5b55399e")
+	)
+	(polyline
+		(pts
+			(xy 196.85 255.27) (xy 196.85 340.36)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "c42925a4-d521-4a3f-99a3-246d456bac18")
+	)
+	(wire
+		(pts
+			(xy 292.1 228.6) (xy 317.5 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7701332-7b4f-4bba-b776-935d28403dac")
+	)
+	(polyline
+		(pts
+			(xy 346.71 257.81) (xy 346.71 337.82)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "cb62b01d-413a-4a7c-a340-c3f6aa214b53")
+	)
+	(wire
+		(pts
+			(xy 152.4 203.2) (xy 177.8 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5b83159-7c9b-45e1-969b-a1c224dce1de")
+	)
+	(polyline
+		(pts
+			(xy 107.95 137.16) (xy 186.69 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6251395-ef00-40f8-873f-2a98215a6a49")
+	)
+	(wire
+		(pts
+			(xy 210.82 203.2) (xy 228.6 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d677d0d5-a7e7-437b-aa2b-22d94bcbf3c7")
+	)
+	(polyline
+		(pts
+			(xy 198.12 256.54) (xy 347.98 256.54)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "d9184ee1-4329-42f6-8ffd-c5d4a808ea26")
+	)
+	(wire
+		(pts
+			(xy 292.1 210.82) (xy 292.1 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd3c9a95-4c5a-4d7a-9257-ad2f32d613eb")
+	)
+	(wire
+		(pts
+			(xy 317.5 203.2) (xy 317.5 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "deaf7c2c-c5ab-4000-9e0c-f701f6d9d6f7")
+	)
+	(wire
+		(pts
+			(xy 393.7 208.28) (xy 393.7 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1368222-1197-44c4-811d-e5b6f00b2f77")
+	)
+	(polyline
+		(pts
+			(xy 199.39 257.81) (xy 199.39 337.82)
+		)
+		(stroke
+			(width 0.5)
+			(type default)
+		)
+		(uuid "ea074b14-a35b-4165-b4e5-8c8d70f602e3")
+	)
+	(wire
+		(pts
+			(xy 278.13 175.26) (xy 317.5 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eda6fe35-1f9f-4518-9adf-ab8df0743d2f")
+	)
+	(wire
+		(pts
+			(xy 287.02 203.2) (xy 292.1 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6de3003-f215-4413-b33b-7102c572f763")
+	)
+	(wire
+		(pts
+			(xy 245.11 162.56) (xy 228.6 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e88df6-e7d5-4c60-8b3c-c720a6127f57")
+	)
+	(polyline
+		(pts
+			(xy 109.22 138.43) (xy 185.42 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6f191b6-411a-45f0-8a6c-2dccb8ecd50e")
+	)
+	(wire
+		(pts
+			(xy 317.5 228.6) (xy 317.5 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9312284-6740-4704-8c91-099920e4e50b")
+	)
+	(rectangle
+		(start 212.09 148.59)
+		(end 331.47 184.15)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid de5e98ef-d0af-4f5d-a415-6c0a5ded4ec0)
+	)
+	(image
+		(at 273.05 299.72)
+		(scale 0.622711)
+		(uuid "703eaf9c-2bcb-420d-beff-1ef6da28c42c")
+		(data "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"
+		)
+	)
+	(text "DESIGN NOTE:"
+		(exclude_from_sim no)
+		(at 110.49 143.51 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "3e1c8b80-2e87-414b-9c69-9bd732572c05")
+	)
+	(text "LAYOUT NOTE:"
+		(exclude_from_sim no)
+		(at 200.66 262.89 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a27d071-a2fd-43c3-9c41-37d4e9464941")
+	)
+	(text "The high switching frequency of TPS61322xx demands a high-speed \nrectifying switch for optimum efficiency. Ensure that the average \nand peak current rating of the diode exceeds the average output \ncurrent and peak inductor current. In addition, the reverse \nbreakdown voltage of the diode must exceed the maximum output\nvoltage of the converter. A snubber circuit consisting of a resistor R1\nand a capacitor C2 is needed if the Schottky diode D1 is soldered. \nThe capacitance of C2 must be larger than triple times of the \ndiode capacitance. The typical value of the resistor R1 is 5 Ω, and the\ntypical value of the capacitor C2 is 120 pF."
+		(exclude_from_sim no)
+		(at 111.76 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "58674fac-dcd3-4485-a6e0-a21665b1bfa6")
+	)
+	(label "TPS_SW"
+		(at 246.38 203.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ab07237-5461-4723-94da-8d589509d5f6")
+	)
+	(hierarchical_label "+V_OUT"
+		(shape output)
+		(at 419.1 203.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4af4c966-1d47-4619-8c6c-57b14777b80b")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 139.7 228.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b5828263-8b4e-44b1-81df-fdc8d9b5d415")
+	)
+	(hierarchical_label "+V_IN"
+		(shape input)
+		(at 139.7 203.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d69fa375-4aa7-4445-b229-cac36efea3f3")
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_680pF_100V_X7R_C0603")
+		(at 300.99 162.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "16c4f87d-74e2-4190-a0b8-98296750c76a")
+		(property "Reference" "C3909"
+			(at 303.784 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "680pF_100V_X7R"
+			(at 280.416 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 297.18 179.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/KGM_X7R.pdf"
+			(at 297.434 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "680 pF ±10% 100V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 297.434 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 285.242 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "KGM15AR72A681KT"
+			(at 297.18 182.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 297.18 186.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "478-KGM15AR72A681KTTR-ND"
+			(at 297.18 184.658 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 297.18 189.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/KGM15AR72A681KT/563308"
+			(at 297.434 174.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 306.07 164.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 306.07 166.624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eb197030-5474-4d1b-9d7e-5d529c671d52")
+		)
+		(pin "2"
+			(uuid "def0675b-c2dc-4b35-b20f-bb08fbc4fc88")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "C3909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:IND_2u2H__2A_0.14R_60MHz_L0806")
+		(at 198.12 203.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "36034b2b-5283-4bdc-82e3-22ae20d7259f")
+		(property "Reference" "L3901"
+			(at 213.614 202.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2u2H_2A_0.14R"
+			(at 190.754 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 200.66 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5383/WIP201610S%20L%20Series.pdf"
+			(at 200.66 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "2.2 µH Shielded Wirewound Inductor 2 A 140mOhm Max 0806 (2016 Metric)"
+			(at 200.66 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "WIP201610S-2R2MLDG"
+			(at 200.66 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.ca/en/products/detail/inpaq-technology-co-ltd/WIP201610S-2R2MLDG/20486865"
+			(at 200.66 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "INPAQ Technology Co., Ltd"
+			(at 200.66 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "3526-WIP201610S-2R2MLDGCT-ND"
+			(at 200.66 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 200.66 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "L0806"
+			(at 195.072 204.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 215.9 204.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECk" "PCB (N/A)"
+			(at 215.9 207.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13ff4c05-ddbe-40d3-8578-c1bf9477db51")
+		)
+		(pin "2"
+			(uuid "4c854405-9060-438c-b972-d4e6a7f065dc")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "L3901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 152.4 209.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c080268-441a-4272-8694-7ac0c55d67b8")
+		(property "Reference" "C3908"
+			(at 154.94 210.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 154.94 213.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 169.164 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 161.544 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 166.37 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 154.94 215.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 171.958 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 176.784 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 174.498 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 179.324 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 164.084 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 154.94 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 154.94 220.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "faf12e9b-d3b3-443d-93dc-a2d76c9656ca")
+		)
+		(pin "1"
+			(uuid "09b1a950-bed2-4d0a-87be-27da48c7b467")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "C3908")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_4R7_1/4W_1%_R0805")
+		(at 257.81 162.56 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4c9b2031-2a8c-499c-92d0-2b1bbb612e72")
+		(property "Reference" "R3901"
+			(at 260.604 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4R7_1/4W_1%"
+			(at 238.252 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 255.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
+			(at 255.27 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 Ohms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
+			(at 255.27 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "RK73H2ATTD4R70F"
+			(at 255.27 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.ca/en/products/detail/koa-speer-electronics-inc/RK73H2ATTD4R70F/10234424"
+			(at 255.27 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
+			(at 255.27 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "2019-RK73H2ATTD4R70FTR-ND"
+			(at 255.27 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 255.27 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0805"
+			(at 242.062 164.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 262.636 164.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECk" "PCB (N/A)"
+			(at 262.636 166.624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e61e709d-c505-45ce-b664-ba7b800672f9")
+		)
+		(pin "2"
+			(uuid "7a33660d-e9b3-47c4-8b9d-a5295bac8c01")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "R3901")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 177.8 209.55 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51f93682-7e08-4ecc-9b97-070923fed562")
+		(property "Reference" "C3907"
+			(at 180.34 210.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 180.34 213.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 194.564 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 186.944 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 191.77 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 180.34 215.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 197.358 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 202.184 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 199.898 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 204.724 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 189.484 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 180.34 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 180.34 220.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "52d1d814-414f-45a5-ab05-d3891ee1787d")
+		)
+		(pin "1"
+			(uuid "932ad13f-a329-45a9-bcc6-e1de98200311")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "C3907")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:DIODE_SCHOTTKY_SK510A-LTP_5A_100V_SMA")
+		(at 265.43 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55711e22-3709-402d-a688-8bfe668fb6e3")
+		(property "Reference" "D3905"
+			(at 280.924 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SK510A-LTP"
+			(at 259.588 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 267.97 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SK52A-L-SK510A-L(DO-214AC).pdf"
+			(at 267.97 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode 100 V 5A Surface Mount DO-214AC (SMA)"
+			(at 267.97 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "SK510A-LTP"
+			(at 267.97 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.ca/en/products/detail/micro-commercial-co/SK510A-LTP/5114130"
+			(at 267.97 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Micro Commercial Co"
+			(at 267.97 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "SK510A-LTPMSTR-ND"
+			(at 267.97 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 267.97 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "SMA"
+			(at 263.398 177.038 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 282.956 176.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECk" "PCB (N/A)"
+			(at 282.956 179.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bd218093-62a4-45b2-9d61-cc4e2b42bd96")
+		)
+		(pin "1"
+			(uuid "42b8fc5c-7f96-45a2-9802-a2c757913d06")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "D3905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 317.5 208.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f943f9e-92c5-4e2b-ba7f-60bd0a3743c4")
+		(property "Reference" "C3904"
+			(at 320.04 209.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 320.04 212.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 334.264 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 326.644 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 331.47 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 320.04 214.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 337.058 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 341.884 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 339.598 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 344.424 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 329.184 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 320.04 217.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 320.04 219.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "69a872e3-2894-4190-ab4e-5305c42b13f6")
+		)
+		(pin "1"
+			(uuid "a7c8a58a-f716-4c8f-9abc-b9acd90a48d0")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "C3904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:DIODE_TVS_GG040205100N2P_5V_5.5V_8A(8/20us)_D0402")
+		(at 368.3 207.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8de50c01-d3fd-4095-9c80-fffdf13db53a")
+		(property "Reference" "D3906"
+			(at 372.11 208.2799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GG040205100N2P"
+			(at 372.11 210.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0402_1005Metric"
+			(at 386.08 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://datasheets.kyocera-avx.com/AVX-GiGuard.pdf"
+			(at 378.46 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12V Clamp 8A (8/20µs) Ipp Tvs Diode Surface Mount 0402 (1005 Metric)"
+			(at 383.54 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GG040205100N2P"
+			(at 391.16 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.ca/en/products/detail/kyocera-avx/GG040205100N2P/6826546"
+			(at 381 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 393.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "478-10594-2-ND"
+			(at 388.62 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 396.24 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "D0402"
+			(at 372.11 213.3599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 372.11 215.8999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECk" "PCB (N/A)"
+			(at 372.11 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "a6606c78-7b42-49db-964a-73dcd236696a")
+		)
+		(pin "2"
+			(uuid "90c03b9c-c0b3-4ab7-be38-f6d3a295d7ea")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "D3906")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 342.9 208.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6cbdb85-f805-432b-8e35-799c92d365fc")
+		(property "Reference" "C3905"
+			(at 345.44 209.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 345.44 212.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 359.664 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 352.044 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 356.87 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 345.44 214.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 362.458 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 367.284 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 364.998 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 369.824 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 354.584 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 345.44 217.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 345.44 219.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "9edd6f0b-c64c-4a2f-9270-5273bf19aec9")
+		)
+		(pin "1"
+			(uuid "d0abc33e-9878-4555-9a37-1d0ea61b8c68")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "C3905")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 393.7 208.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d490458b-b083-4f5c-b12b-5c3825158739")
+		(property "Reference" "C3906"
+			(at 396.24 209.5499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 396.24 212.0899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 410.464 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 402.844 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 407.67 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 396.24 214.6299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 413.258 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 418.084 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 415.798 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 420.624 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 405.384 211.836 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 396.24 217.1699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 396.24 219.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "b593a490-f195-40a6-a445-aecb538ae965")
+		)
+		(pin "1"
+			(uuid "86a18951-bb5e-404b-8843-1ad104b6673e")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "C3906")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:IC_PMIC_TPS613222ADBVR_SMPS-BOOST_5V_2.5A_SOT-753")
+		(at 261.62 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dae70654-437d-40cd-9104-0e373d85d883")
+		(property "Reference" "U3902"
+			(at 271.78 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS613222ADBVR"
+			(at 271.78 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 264.16 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%253A%252F%252Fwww.ti.com%252Flit%252Fgpn%252Ftps61322"
+			(at 264.16 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Boost Switching Regulator IC Positive Fixed 5V 1 Output 2.5A (Switch) SC-74A, SOT-753"
+			(at 264.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "TPS613222ADBVR"
+			(at 264.16 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.ca/en/products/detail/texas-instruments/TPS613222ADBVR/8638376?s=N4IgTCBcDaICoAUDKA2AjAZjNgggEQCEA1AJRAF0BfIA"
+			(at 264.16 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 264.16 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "296-50503-2-ND"
+			(at 264.16 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 264.16 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "SOT-753"
+			(at 271.78 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 271.78 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECk" "PCB (N/A)"
+			(at 271.78 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "735f9f0c-98d3-4a88-b97f-13f9118684cd")
+		)
+		(pin "5"
+			(uuid "94296bbf-116d-4eff-8914-81a8b5367e73")
+		)
+		(pin "2"
+			(uuid "f3ccf0f1-9ac7-4e30-9550-8fe477188333")
+		)
+		(pin "3"
+			(uuid "9105c550-d55a-4a58-b85a-4e477f68a4db")
+		)
+		(pin "4"
+			(uuid "bc955c6a-2965-486e-9cbb-e6c32402fb23")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "U3902")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

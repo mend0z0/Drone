@@ -3,9 +3,2568 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "271b7f3b-f3d3-4f6f-97b4-118967881eb7")
-	(paper "A4")
+	(paper "C")
 	(title_block
 		(comment 2 "DRAFT")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "_SCHLIB_Qcopter:CAP_CER_100nF_16V_X7R_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.302 4.318 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100nF_16V_X7R"
+				(at 3.302 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.556 18.288 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KO8NNNC_Spec.pdf"
+				(at 3.302 9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 3.556 15.494 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.556 36.576 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "CL10B104KO8NNNC"
+				(at 3.556 20.828 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 3.556 26.162 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "1276-1005-2-ND"
+				(at 3.556 23.368 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.556 28.702 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KO8NNNC/3886663"
+				(at 3.302 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.556 31.242 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.556 33.782 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_100nF_16V_X7R_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_100nF_16V_X7R_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:IC_BUFF_SN74LVC1G17DCKR_NON-INV_1BIT_SC-70-5"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SN74LVC1G17DCKR"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g17"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Buffer, Non-Inverting 1 Element 1 Bit per Element Push-Pull Output SC-70-5"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "SC-70-5"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "SN74LVC1G17DCKR"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "296-11934-2-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74LVC1G17DCKR/389053"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "Buffer, Non-Inverting 1 Element 1 Bit per Element Push-Pull Output SC-70-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IC_BUFF_SN74LVC1G17DCKR_NON-INV_1BIT_SC-70-5_1_1"
+				(polyline
+					(pts
+						(xy 0 -12.7) (xy 15.24 -12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -5.08) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -5.08) (xy 12.7 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.096 -6.096) (xy 6.858 -6.096) (xy 6.858 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 -2.54) (xy 5.08 -7.62) (xy 10.16 -5.08) (xy 5.08 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.366 -4.064) (xy 6.096 -4.064) (xy 6.096 -6.096) (xy 5.334 -6.096)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 0)
+					(end 15.24 -17.78)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "SC-70-5"
+					(at 7.874 -16.51 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "SN74LVC1G17"
+					(at 7.62 -14.224 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "N.C."
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -10.16 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -5.08 180)
+					(length 5.08)
+					(name "Y"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:MECH_JUMPER_2POS_J1015"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "JP_2POS"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "N/A"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2POS, J1015"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "J1015"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "N/A"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "N/A"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "N/A"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "N/A"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "N/A"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "JUMPER_2POS_J1015"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_JUMPER_2POS_J1015_0_1"
+				(polyline
+					(pts
+						(xy 6.096 1.016) (xy 6.096 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.604 1.016) (xy 6.604 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.096 1.016)
+					(mid 5.08 0)
+					(end 6.096 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.604 -1.016)
+					(mid 7.62 0)
+					(end 6.604 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MECH_JUMPER_2POS_J1015_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100kR_1/10W_1%"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "R0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Panasonic Electronic Components"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "P100KHTR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES_100kR_1/10W_1%_R0603_0_0"
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 4.445 1.27) (xy 5.715 -1.27) (xy 6.985 1.27) (xy 8.255 -1.27) (xy 8.89 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES_100kR_1/10W_1%_R0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:RES_10kR_1/10W_1%_R0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 3.302 4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10kR_1/10W_1%"
+				(at 3.302 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 3.302 15.748 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+				(at 3.302 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 3.302 13.462 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "R0603"
+				(at 3.302 31.242 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "RMCF0603FT10K0"
+				(at 3.302 18.034 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Stackpole Electronics Inc"
+				(at 3.302 22.352 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "RMCF0603FT10K0TR-ND"
+				(at 3.302 20.066 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.302 24.638 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
+				(at 3.302 10.922 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.302 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.302 28.956 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES_10kR_1/10W_1%_R0603_0_0"
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 4.445 1.27) (xy 5.715 -1.27) (xy 6.985 1.27) (xy 8.255 -1.27) (xy 8.89 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES_10kR_1/10W_1%_R0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 273.05 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fe37643-8811-4a07-8821-c42c22b0bd81")
+	)
+	(junction
+		(at 190.5 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18949717-aaea-48e4-86fd-fbe40635eae4")
+	)
+	(junction
+		(at 241.3 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f7ee7ee-0eb8-4163-bffe-8094cfbc890d")
+	)
+	(junction
+		(at 222.25 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47b0ec95-bd99-486e-a2f7-924594e976e4")
+	)
+	(junction
+		(at 190.5 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e427e29-81f4-460c-ad4b-1030e80165cf")
+	)
+	(junction
+		(at 222.25 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa34b8aa-7e79-4a15-9b01-1984043334b7")
+	)
+	(no_connect
+		(at 238.76 175.26)
+		(uuid "b9c687d9-3145-4d07-8378-240e8867a2f9")
+	)
+	(wire
+		(pts
+			(xy 190.5 153.67) (xy 190.5 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03a6327b-cbba-444c-8c50-e3d596db2449")
+	)
+	(wire
+		(pts
+			(xy 186.69 203.2) (xy 190.5 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "061563cb-9567-407e-a607-5d0d896ab040")
+	)
+	(polyline
+		(pts
+			(xy 140.716 192.278) (xy 140.716 220.218)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3140afab-0222-44b9-b801-944dfbda19ad")
+	)
+	(wire
+		(pts
+			(xy 190.5 203.2) (xy 222.25 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d205c0e-7148-4d83-bdd4-c0c445ca4eb9")
+	)
+	(wire
+		(pts
+			(xy 177.8 177.8) (xy 190.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f6bf8e8-2ea0-4a6a-9605-8b65f514c3c9")
+	)
+	(wire
+		(pts
+			(xy 241.3 182.88) (xy 241.3 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45fcd4d6-f61f-48d8-bd36-5a205d0a00ac")
+	)
+	(wire
+		(pts
+			(xy 273.05 177.8) (xy 273.05 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48192f43-0be2-483a-8843-e533c4ccaed2")
+	)
+	(wire
+		(pts
+			(xy 190.5 195.58) (xy 190.5 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "532d7207-8ecd-4558-8c5f-506f5b7981a0")
+	)
+	(wire
+		(pts
+			(xy 269.24 177.8) (xy 273.05 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b42771-2b89-453e-ae4e-a472c0731a43")
+	)
+	(polyline
+		(pts
+			(xy 141.986 193.548) (xy 141.986 218.948)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ed7e803-e1af-4b17-afb2-754db55d95a6")
+	)
+	(wire
+		(pts
+			(xy 273.05 194.31) (xy 273.05 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63543745-50da-4f12-b92e-2b3ab2ae1e04")
+	)
+	(polyline
+		(pts
+			(xy 317.5 262.89) (xy 191.77 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "657cac5d-c51b-4225-a796-45a8b4bd0448")
+	)
+	(wire
+		(pts
+			(xy 238.76 175.26) (xy 243.84 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e4fe944-cfba-4b25-a60b-058e7513070a")
+	)
+	(wire
+		(pts
+			(xy 172.72 153.67) (xy 190.5 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb58670-93e8-4dde-b27e-40e41f24cde2")
+	)
+	(polyline
+		(pts
+			(xy 168.656 220.218) (xy 140.716 220.218)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72064b03-c5d0-42d0-8c6c-28e58155e263")
+	)
+	(wire
+		(pts
+			(xy 273.05 177.8) (xy 279.4 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "787e11cd-1eb0-4eae-93ea-04bfa654175a")
+	)
+	(polyline
+		(pts
+			(xy 317.5 218.44) (xy 317.5 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c50ea1b-be46-4c81-81b1-f3f0d4c21c89")
+	)
+	(wire
+		(pts
+			(xy 243.84 182.88) (xy 241.3 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d3490e6-3046-4aa2-9555-92910b4d1dca")
+	)
+	(polyline
+		(pts
+			(xy 140.716 192.278) (xy 168.656 192.278)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85f40e49-55ed-4a6e-8d1f-40511a1b6083")
+	)
+	(polyline
+		(pts
+			(xy 191.77 218.44) (xy 317.5 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97c95726-18fe-4367-bd71-6c9ab319db9a")
+	)
+	(wire
+		(pts
+			(xy 222.25 203.2) (xy 222.25 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c55a85a-fa5e-44b1-b7c2-88ab0aa49302")
+	)
+	(polyline
+		(pts
+			(xy 168.656 192.278) (xy 168.656 220.218)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9da5bd7a-dc5d-49b4-b6e5-2c795f9b7eb9")
+	)
+	(polyline
+		(pts
+			(xy 139.446 191.008) (xy 169.926 191.008)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1910a70-236b-426c-bce5-fef42dcfa4fd")
+	)
+	(wire
+		(pts
+			(xy 222.25 180.34) (xy 222.25 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad811261-edc3-4577-a9a9-431fe0b64f4d")
+	)
+	(polyline
+		(pts
+			(xy 139.446 191.008) (xy 139.446 221.488)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5e79628-c4b2-44f3-aa62-277d52355e40")
+	)
+	(wire
+		(pts
+			(xy 190.5 177.8) (xy 190.5 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f2547f-7e04-41fc-81f8-43c326ca8f34")
+	)
+	(polyline
+		(pts
+			(xy 191.77 218.44) (xy 191.77 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbab5cb1-2d6d-4c0f-9e60-416ccc514c33")
+	)
+	(wire
+		(pts
+			(xy 215.9 180.34) (xy 222.25 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf3cb807-8241-4c44-8c30-255d16bef1f3")
+	)
+	(wire
+		(pts
+			(xy 190.5 168.91) (xy 190.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf4dfb19-00c2-4f4b-bb4e-fbaf3d56ae42")
+	)
+	(wire
+		(pts
+			(xy 243.84 180.34) (xy 222.25 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c99aaefd-dfdc-4e98-86a4-3d2812ac4582")
+	)
+	(polyline
+		(pts
+			(xy 167.386 193.548) (xy 167.386 218.948)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb379242-866d-4019-a197-0ce7983b9e69")
+	)
+	(wire
+		(pts
+			(xy 273.05 203.2) (xy 241.3 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddeb1aa5-cae8-48ba-8816-bc5644dc74d0")
+	)
+	(polyline
+		(pts
+			(xy 139.446 221.488) (xy 169.926 221.488)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfb3612b-1183-45a0-a7a6-c3a54de33c8d")
+	)
+	(wire
+		(pts
+			(xy 241.3 203.2) (xy 222.25 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2d908d9-7266-47b2-9741-ac3ff706ab68")
+	)
+	(polyline
+		(pts
+			(xy 169.926 191.008) (xy 169.926 221.488)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8bcb714-11bc-45ad-af28-003e547fba80")
+	)
+	(wire
+		(pts
+			(xy 190.5 177.8) (xy 243.84 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec583aef-f014-4fb8-aece-5dcb7a297348")
+	)
+	(polyline
+		(pts
+			(xy 141.986 193.548) (xy 167.386 193.548)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7d832a-a7d0-4b25-8c2a-f2b942e78d2b")
+	)
+	(polyline
+		(pts
+			(xy 167.386 218.948) (xy 141.986 218.948)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9d3bd7-bb58-4304-bfac-4253f15cd83b")
+	)
+	(image
+		(at 254 242.57)
+		(uuid "28fa0f40-88b0-4b12-b9e3-b87c51acba4c")
+		(data "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"
+			"fUtvGiJ7AAAAAElFTkSuQmCC"
+		)
+	)
+	(text "INFO:"
+		(exclude_from_sim no)
+		(at 193.04 223.52 0)
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.4)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "021bdd3a-be48-4cbf-bd1f-4842f753de72")
+	)
+	(text "To reset the target\nIC just short circuit\nthe jumper and the \noutput will set to zero"
+		(exclude_from_sim no)
+		(at 143.51 208.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cecf826a-3c29-4e9d-a809-ca0a4ed33277")
+	)
+	(text "DESIGN NOTE:"
+		(exclude_from_sim no)
+		(at 143.256 198.628 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea687b8b-ce65-4fc9-9530-b9d0ae2d9a25")
+	)
+	(label "SN74LVC1A_VCC"
+		(at 223.52 180.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7be81c40-ef12-4b65-8278-e8d00a7f4e18")
+	)
+	(label "SN74LVC1A_VCC"
+		(at 172.72 153.67 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c57ea2e9-3492-4f94-8d67-3e0ff33c1308")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 186.69 203.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "054cbe72-2c04-4d7b-b21b-4a7eb2d887c8")
+	)
+	(hierarchical_label "BUFF_IN"
+		(shape input)
+		(at 177.8 177.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "16cf8558-176d-4ee1-8940-b2c03029fd11")
+	)
+	(hierarchical_label "BUFF_OUT"
+		(shape output)
+		(at 279.4 177.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1eb04c46-b15b-4363-adcc-387c261b07d4")
+	)
+	(hierarchical_label "PWR"
+		(shape input)
+		(at 215.9 180.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "928f9ae3-5f93-4be9-b43c-7d6bd1a93505")
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_100nF_16V_X7R_C0603")
+		(at 222.25 186.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b3ac312-6142-4ecf-b8f6-768d5e4ca494")
+		(property "Reference" "C1601"
+			(at 224.79 187.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF_16V_X7R"
+			(at 224.79 190.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 240.538 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KO8NNNC_Spec.pdf"
+			(at 232.156 189.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 237.744 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 224.79 193.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "CL10B104KO8NNNC"
+			(at 243.078 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 248.412 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "1276-1005-2-ND"
+			(at 245.618 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 250.952 190.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KO8NNNC/3886663"
+			(at 234.95 189.992 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 224.79 195.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 224.79 198.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "1d7810e4-1a6c-4a14-b058-68de1d11c076")
+		)
+		(pin "1"
+			(uuid "4b962742-12d8-4e26-9ad7-dfc1b0301945")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/7d707aad-e237-43ec-b9e0-31f445760984"
+					(reference "C1601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:IC_BUFF_SN74LVC1G17DCKR_NON-INV_1BIT_SC-70-5")
+		(at 248.92 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5c1536cf-82a2-4f98-a666-9c1b9c8fb3d6")
+		(property "Reference" "U1601"
+			(at 256.54 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G17DCKR"
+			(at 256.54 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 252.73 155.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g17"
+			(at 252.476 163.576 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Buffer, Non-Inverting 1 Element 1 Bit per Element Push-Pull Output SC-70-5"
+			(at 252.476 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "SC-70-5"
+			(at 256.54 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "SN74LVC1G17DCKR"
+			(at 252.73 153.162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 252.73 148.336 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "296-11934-2-ND"
+			(at 252.73 150.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 252.73 145.796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74LVC1G17DCKR/389053"
+			(at 252.476 161.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 256.54 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 256.54 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a0e5379c-394b-464a-a3c7-9bcfe5acb866")
+		)
+		(pin "3"
+			(uuid "20c5dc8b-d516-4eb2-a8de-4aa5847fd3f7")
+		)
+		(pin "5"
+			(uuid "0e204d2c-f7a9-4857-b041-04c1b76118b8")
+		)
+		(pin "4"
+			(uuid "c101945d-2473-4f4c-bc1d-62173f915b6c")
+		)
+		(pin "1"
+			(uuid "e6f7040c-21c6-417f-a340-030d904d310e")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/7d707aad-e237-43ec-b9e0-31f445760984"
+					(reference "U1601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 273.05 181.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ecf638f-b61d-40c9-91c1-e244415c0c08")
+		(property "Reference" "R1602"
+			(at 275.59 182.8799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 275.59 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 289.814 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 282.194 185.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 287.02 185.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 275.59 187.9599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 292.608 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 297.434 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 295.148 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 299.974 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 284.734 185.166 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 275.59 190.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 275.59 193.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "a081532d-cbf3-403a-ad91-445bcb337cc9")
+		)
+		(pin "2"
+			(uuid "ae8ad190-9c0b-49e0-b74b-e78cab840a24")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/7d707aad-e237-43ec-b9e0-31f445760984"
+					(reference "R1602")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_10kR_1/10W_1%_R0603")
+		(at 190.5 156.21 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bdd1136-6fe7-4225-8fc5-674da3f0263f")
+		(property "Reference" "R1601"
+			(at 193.04 157.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10kR_1/10W_1%"
+			(at 193.04 160.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 206.248 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 199.39 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 203.962 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 193.04 162.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "RMCF0603FT10K0"
+			(at 208.534 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 212.852 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "RMCF0603FT10K0TR-ND"
+			(at 210.566 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 215.138 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
+			(at 201.422 159.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 193.04 165.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 193.04 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "b3da7e52-f00a-4116-9b18-cc820fd8aa48")
+		)
+		(pin "1"
+			(uuid "0e17c4cb-f747-4239-a6c5-6808d0568cb0")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/7d707aad-e237-43ec-b9e0-31f445760984"
+					(reference "R1601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_JUMPER_2POS_J1015")
+		(at 190.5 182.88 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b25d70fb-ab4f-4d7e-a390-1d1f974f4f02")
+		(property "Reference" "JP1601"
+			(at 193.04 184.1499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "JP_2POS"
+			(at 193.04 186.6899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 207.264 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 199.644 186.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2POS, J1015"
+			(at 204.47 186.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "J1015"
+			(at 193.04 189.2299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 210.058 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 214.884 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 212.598 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "N/A"
+			(at 217.424 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "N/A"
+			(at 202.184 186.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 193.04 191.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 193.04 194.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "fa7fa6ac-16d1-4e5b-9966-e896a2efadca")
+		)
+		(pin "1"
+			(uuid "a78610cd-06f4-40e5-a862-6202fa9509b3")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/7d707aad-e237-43ec-b9e0-31f445760984"
+					(reference "JP1601")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

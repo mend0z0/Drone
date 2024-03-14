@@ -3,9 +3,8740 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "0bd9f29b-51df-4064-8538-ad961faebff5")
-	(paper "A4")
+	(paper "C")
 	(title_block
 		(comment 2 "DRAFT")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "_SCHLIB_Qcopter:CAP_CER_12pF_50V_C0G_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "12pF_50V_C0G"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C120J5GACTU"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "12 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "C0603C120J5GAC7867"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "KEMET"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "399-C0603C120J5GAC7867TR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kemet/C0603C120J5GAC7867/411052"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "12 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_12pF_50V_C0G_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_12pF_50V_C0G_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:CAP_CER_1uF_10V_X7R_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1uF_10V_X7R"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "CL10B105KP8NNNC"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "1276-1946-2-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B105KP8NNNC/3887604"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "1 µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_1uF_10V_X7R_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_1uF_10V_X7R_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4u7F_16V_X7R"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Murata Electronics"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_4.7uF_16V_X7R_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_4.7uF_16V_X7R_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:IC_RF TXRX_ATWILC1000B-MU-Y_Wifi_2.4GHz_40-QFN (5x5)"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "ATWILC1000B-MU-Y"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "_PCBLIB_SparkleSplashy:QFN-40-1EP_5x5mm_P0.4mm_EP3.8x3.8mm_ThermalVias"
+				(at 2.794 14.732 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/70005386C.pdf"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "IC RF TxRx + MCU WiFi 802.11b/g/n 2.4GHz 40-VFQFN Exposed Pad"
+				(at 2.54 12.192 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "ATWILC1000B-MU-Y"
+				(at 2.54 17.272 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.ca/en/products/detail/microchip-technology/ATWILC1000B-MU-Y/5638851"
+				(at 2.54 9.906 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 2.54 29.21 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "40-QFN (5x5)"
+				(at 2.286 31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" "Microchip Technology"
+				(at 2.54 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "ATWILC1000B-MU-Y-ND"
+				(at 2.54 19.812 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 2.54 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "PCB CHECk" "PCB (N/A)"
+				(at 2.54 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "IC RF TxRx + MCU WiFi 802.11b/g/n 2.4GHz 40-VFQFN Exposed Pad"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "IC_RF TXRX_ATWILC1000B-MU-Y_Wifi_2.4GHz_40-QFN (5x5)_0_0"
+				(text "40-QFN (5x5)"
+					(at 17.78 -120.65 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "ATWILC1000B-MUT"
+					(at 17.78 -118.11 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "IC_RF TXRX_ATWILC1000B-MU-Y_Wifi_2.4GHz_40-QFN (5x5)_0_1"
+				(polyline
+					(pts
+						(xy 0 -116.84) (xy 35.56 -116.84)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0 0)
+					(end 35.56 -121.92)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "IC_RF TXRX_ATWILC1000B-MU-Y_Wifi_2.4GHz_40-QFN (5x5)_1_1"
+				(pin passive line
+					(at 40.64 -99.06 180)
+					(length 5.08)
+					(name "TP_P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -25.4 180)
+					(length 5.08)
+					(name "GPIO0/HOST_WAKEUP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -27.94 180)
+					(length 5.08)
+					(name "GPIO2/IRQN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -78.74 180)
+					(length 5.08)
+					(name "SD_DAT3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -58.42 180)
+					(length 5.08)
+					(name "SD_DAT2/SPI_RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -78.74 0)
+					(length 5.08)
+					(name "VDDC_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -104.14 0)
+					(length 5.08)
+					(name "VDDIO_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -53.34 180)
+					(length 5.08)
+					(name "SD_DAT1/SPI_SSN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -55.88 180)
+					(length 5.08)
+					(name "SD_DAT0/SPI_TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -60.96 180)
+					(length 5.08)
+					(name "SD_CMD/SPI_SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -81.28 180)
+					(length 5.08)
+					(name "SD_CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -63.5 0)
+					(length 5.08)
+					(name "VDD_RF_RX_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -91.44 0)
+					(length 5.08)
+					(name "VBATT_BUCK_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -53.34 0)
+					(length 5.08)
+					(name "VSW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -55.88 0)
+					(length 5.08)
+					(name "VREG_BUCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -5.08 180)
+					(length 5.08)
+					(name "CHIP_EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -104.14 180)
+					(length 5.08)
+					(name "GPIO1/RTC_CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -15.24 0)
+					(length 5.08)
+					(name "TEST_MODE"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -106.68 0)
+					(length 5.08)
+					(name "VDDIO_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -81.28 0)
+					(length 5.08)
+					(name "VDDC_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -106.68 180)
+					(length 5.08)
+					(name "GPIO3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -109.22 180)
+					(length 5.08)
+					(name "GPIO4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -60.96 0)
+					(length 5.08)
+					(name "VDD_AMS_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -111.76 180)
+					(length 5.08)
+					(name "GPIO5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -114.3 180)
+					(length 5.08)
+					(name "GPIO6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -86.36 180)
+					(length 5.08)
+					(name "I2C_SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -83.82 180)
+					(length 5.08)
+					(name "I2C_SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -2.54 180)
+					(length 5.08)
+					(name "RESETN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "XO_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "XO_P"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -58.42 0)
+					(length 5.08)
+					(name "VDD_SXDIG_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -83.82 0)
+					(length 5.08)
+					(name "VDD_VCO_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -109.22 0)
+					(length 5.08)
+					(name "VDDIO_A_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -66.04 0)
+					(length 5.08)
+					(name "VDD_RF_TX_1V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 40.64 -101.6 180)
+					(length 5.08)
+					(name "TP_N"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -114.3 0)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -96.52 0)
+					(length 5.08)
+					(name "VDD_BATT_PPA_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -93.98 0)
+					(length 5.08)
+					(name "VDD_BATT_PA_3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -25.4 0)
+					(length 5.08)
+					(name "RFIOP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -38.1 0)
+					(length 5.08)
+					(name "RFION"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -12.7 0)
+					(length 5.08)
+					(name "~{SDIO}_SPI_CFG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "100kR_1/10W_1%"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "R0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Panasonic Electronic Components"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "P100KHTR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES_100kR_1/10W_1%_R0603_0_0"
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 4.445 1.27) (xy 5.715 -1.27) (xy 6.985 1.27) (xy 8.255 -1.27) (xy 8.89 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES_100kR_1/10W_1%_R0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:RES_1kR_1/10W_1%_R0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "1kR_1/10W_1%"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "R0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "RMCF0603FT1K00"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Stackpole Electronics Inc"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "RMCF0603FT1K00TR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES_1kR_1/10W_1%_R0603_0_0"
+				(polyline
+					(pts
+						(xy 3.81 0) (xy 4.445 1.27) (xy 5.715 -1.27) (xy 6.985 1.27) (xy 8.255 -1.27) (xy 8.89 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES_1kR_1/10W_1%_R0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:XTAL_ECS-260-12-37B2-CKM-TR_26MHz_10PPM_12pF_4-SMD, No Lead"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X"
+				(at 3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "26MHz_10ppm_12pF"
+				(at 3.81 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+				(at 3.81 19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ecsxtal.com/store/pdf/ECX-1637B2.pdf"
+				(at 3.81 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "26 MHz ±10ppm Crystal 12pF 50 Ohms 4-SMD, No Lead"
+				(at 3.81 16.51 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Manufacturer)" "ECS-260-12-37B2-CKM-TR"
+				(at 3.81 24.13 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Link" "https://www.digikey.com/en/products/detail/ecs-inc/ECS-260-12-37B2-CKM-TR/14663307"
+				(at 3.81 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 34.29 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "4SMD-2016"
+				(at 3.81 36.83 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer" "ECS Inc."
+				(at 3.81 26.67 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "50-ECS-260-12-37B2-CKM-TR-ND"
+				(at 3.81 21.59 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 29.21 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 31.75 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "ECS-260-12-37B2-CKM-TR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XTAL_ECS-260-12-37B2-CKM-TR_26MHz_10PPM_12pF_4-SMD, No Lead_0_1"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 3.81 -3.81) (xy 8.89 -3.81) (xy 8.89 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 2.54) (xy 6.985 2.54) (xy 6.985 -2.54) (xy 5.715 -2.54) (xy 5.715 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "XTAL_ECS-260-12-37B2-CKM-TR_26MHz_10PPM_12pF_4-SMD, No Lead_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 254 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11edb286-a9a1-4b5f-a70e-ddfb28418ba9")
+	)
+	(junction
+		(at 152.4 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14ece2e4-ade8-4945-9b47-cb6702811802")
+	)
+	(junction
+		(at 304.8 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fdd3fe5-f223-4f82-8cd0-01475af8c6da")
+	)
+	(junction
+		(at 127 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "241ea806-1c2a-4420-a8ab-07df44b58246")
+	)
+	(junction
+		(at 469.9 238.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29c9a911-2ddc-40d6-bcb6-01dc4f58c346")
+	)
+	(junction
+		(at 279.4 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a016707-41f2-4abf-bb83-83c3b1fd975a")
+	)
+	(junction
+		(at 353.06 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2c948ebf-5b9f-42bf-bbbc-fd76d0ba9423")
+	)
+	(junction
+		(at 495.3 222.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3164ae5a-dd90-48ff-84e6-97f2aabc3959")
+	)
+	(junction
+		(at 469.9 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "375edc0e-7822-490f-afb0-eb428f3d6c1f")
+	)
+	(junction
+		(at 299.72 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c05bf61-02df-42cd-b3a2-c60a437d58b8")
+	)
+	(junction
+		(at 469.9 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c3c9b07-2e19-4562-9b66-eb7749884fa1")
+	)
+	(junction
+		(at 495.3 241.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "583d02dd-3089-4317-b54a-851e4ffc405a")
+	)
+	(junction
+		(at 495.3 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a194e95-44b9-4fb9-803b-b919ea32d08b")
+	)
+	(junction
+		(at 381 264.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c380151-b580-4cdf-a914-e6595799ff4e")
+	)
+	(junction
+		(at 101.6 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60391e57-edcc-4262-9bc1-bead9a83c059")
+	)
+	(junction
+		(at 330.2 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "694b53da-889b-49ce-b557-9bc72e37b3e1")
+	)
+	(junction
+		(at 469.9 208.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bd891d8-fffe-40d3-a8e8-f5e804c57773")
+	)
+	(junction
+		(at 177.8 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c8435cd-3532-4f52-abc4-e621dfd8d17f")
+	)
+	(junction
+		(at 495.3 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7345d9ea-7f3f-4872-b6d1-9afc9d8200f4")
+	)
+	(junction
+		(at 203.2 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8309662e-1a1b-41a7-8aee-8537f5cb6768")
+	)
+	(junction
+		(at 344.17 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97e2cc6f-a1b7-48ee-b5ce-5ae7ab8d42fe")
+	)
+	(junction
+		(at 228.6 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99d456a9-0ded-417e-962e-d97d26e2375d")
+	)
+	(junction
+		(at 495.3 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a85d85a-e2ab-443c-87cb-b6ec1acbc233")
+	)
+	(junction
+		(at 495.3 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bcde52a-b470-463f-8b15-8f944df4f568")
+	)
+	(junction
+		(at 50.8 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c4c867d0-9e4a-4a6c-944c-789d29d1e8ef")
+	)
+	(junction
+		(at 353.06 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0f750de-a38b-4b9c-a767-4b7c0136bbc3")
+	)
+	(junction
+		(at 355.6 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5188fde-a952-4040-a06b-517f67617654")
+	)
+	(junction
+		(at 76.2 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2fd04d4-58ee-4b42-9365-4bb84bf0cb3a")
+	)
+	(junction
+		(at 381 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9dae8c4-6ce6-4a8a-a694-063146fbf550")
+	)
+	(junction
+		(at 410.21 269.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed3803cd-a4d8-49b4-a389-7234ae5eda31")
+	)
+	(no_connect
+		(at 457.2 256.54)
+		(uuid "2dd97ac0-ea27-4930-8e86-89ed842b1633")
+	)
+	(no_connect
+		(at 457.2 264.16)
+		(uuid "502e1ff1-578b-42bc-9817-a045ac3346c4")
+	)
+	(no_connect
+		(at 457.2 233.68)
+		(uuid "57644f72-5ead-4411-bac5-43fa23706a9f")
+	)
+	(no_connect
+		(at 457.2 259.08)
+		(uuid "70c2a3c7-afa7-4f65-9357-111982b2b12e")
+	)
+	(no_connect
+		(at 457.2 254)
+		(uuid "a0868f9a-41f1-42fa-95d5-7f31794e0551")
+	)
+	(no_connect
+		(at 457.2 269.24)
+		(uuid "b04979b0-699f-4030-b33c-e0a79005f87f")
+	)
+	(no_connect
+		(at 457.2 236.22)
+		(uuid "bd61c5dc-c228-4576-a333-c9155eef8698")
+	)
+	(wire
+		(pts
+			(xy 411.48 264.16) (xy 381 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "002130a8-40ed-493d-993c-4def201a8118")
+	)
+	(wire
+		(pts
+			(xy 469.9 139.7) (xy 469.9 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "002aa044-485d-49d0-a4a1-1352d6965265")
+	)
+	(wire
+		(pts
+			(xy 508 160.02) (xy 495.3 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "003bf471-344a-4b5e-8056-2289c71e7dbf")
+	)
+	(wire
+		(pts
+			(xy 469.9 190.5) (xy 469.9 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02287494-c04b-4f33-88a2-b04c5496b25e")
+	)
+	(wire
+		(pts
+			(xy 177.8 281.94) (xy 203.2 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03b65bc9-cbd3-4a44-8646-11359af0d558")
+	)
+	(wire
+		(pts
+			(xy 50.8 281.94) (xy 76.2 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0532ce96-c6df-440e-9db3-6f0ba498f59f")
+	)
+	(wire
+		(pts
+			(xy 495.3 222.25) (xy 495.3 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0554c370-8fc2-4f03-8d79-acdac2df8780")
+	)
+	(wire
+		(pts
+			(xy 228.6 279.4) (xy 228.6 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0669ee71-8bd3-4382-a4c3-90d3c8629e40")
+	)
+	(wire
+		(pts
+			(xy 304.8 279.4) (xy 304.8 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "092e799b-bb81-47c5-8610-cb45bfe1310f")
+	)
+	(wire
+		(pts
+			(xy 344.17 153.67) (xy 345.44 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b23d2d5-dcf9-4018-854c-0cc0bd0081f2")
+	)
+	(wire
+		(pts
+			(xy 393.7 170.18) (xy 411.48 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f33227-569d-4eea-9a08-2218d3c04a66")
+	)
+	(wire
+		(pts
+			(xy 127 266.7) (xy 127 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11e799f8-e807-45e6-84eb-f3278217a08b")
+	)
+	(wire
+		(pts
+			(xy 228.6 281.94) (xy 254 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12027f79-e7e2-49d9-89c2-a2d3e6db31dc")
+	)
+	(wire
+		(pts
+			(xy 407.67 269.24) (xy 410.21 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1345b1f3-d45f-4eba-b3a5-44525cf9d3bb")
+	)
+	(wire
+		(pts
+			(xy 304.8 251.46) (xy 411.48 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "176964f5-f607-4fea-ba49-358cbc208310")
+	)
+	(wire
+		(pts
+			(xy 25.4 208.28) (xy 411.48 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e10735c-32d7-44f0-a167-10262a658b35")
+	)
+	(wire
+		(pts
+			(xy 495.3 160.02) (xy 469.9 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f3433e4-e668-43c6-a912-c90df1920bc0")
+	)
+	(wire
+		(pts
+			(xy 353.06 144.78) (xy 353.06 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26242555-8a77-4113-ad68-2147bcd428a5")
+	)
+	(wire
+		(pts
+			(xy 152.4 279.4) (xy 152.4 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26c23316-eca0-4e02-a0d9-c041d308325c")
+	)
+	(wire
+		(pts
+			(xy 228.6 238.76) (xy 228.6 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26dc71ee-4995-4c21-ab1f-25d738fe23cf")
+	)
+	(wire
+		(pts
+			(xy 381 157.48) (xy 381 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "283695e0-348f-4b05-9350-87894942c588")
+	)
+	(wire
+		(pts
+			(xy 50.8 279.4) (xy 50.8 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c4740aa-22dc-42d2-bb82-a2f8f8d99fe7")
+	)
+	(wire
+		(pts
+			(xy 50.8 266.7) (xy 50.8 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c5beaee-4abe-4bf9-b22b-effa1e77c708")
+	)
+	(wire
+		(pts
+			(xy 279.4 167.64) (xy 318.77 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e4c22d8-270e-4c33-8f40-a2f935851b8a")
+	)
+	(wire
+		(pts
+			(xy 330.2 152.4) (xy 344.17 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ef993aa-3b37-4580-97f7-c1a81782e5b4")
+	)
+	(wire
+		(pts
+			(xy 381 281.94) (xy 410.21 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff9e5e4-7d12-4568-9f35-101ba9d576c2")
+	)
+	(wire
+		(pts
+			(xy 152.4 266.7) (xy 152.4 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32a3b55a-6b40-403d-9788-fdc4d006a8b4")
+	)
+	(wire
+		(pts
+			(xy 461.01 137.16) (xy 461.01 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32e8813d-a3d3-433c-ad07-ed046e3e33bf")
+	)
+	(wire
+		(pts
+			(xy 495.3 182.88) (xy 508 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33a45359-e122-40d4-a52b-2226d6d04664")
+	)
+	(wire
+		(pts
+			(xy 304.8 266.7) (xy 304.8 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b1bb806-fb77-4311-9be6-b498ce27475c")
+	)
+	(wire
+		(pts
+			(xy 355.6 261.62) (xy 355.6 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "410b6f45-6a86-4742-9378-0142f86072da")
+	)
+	(wire
+		(pts
+			(xy 381 279.4) (xy 381 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42a6feea-7501-4ec9-baa6-3595792c1f59")
+	)
+	(wire
+		(pts
+			(xy 464.82 266.7) (xy 464.82 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45d0e20d-9af3-4dad-97f7-d2d8388e44e3")
+	)
+	(wire
+		(pts
+			(xy 152.4 281.94) (xy 177.8 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "469ed808-c6b6-41d0-90ed-8592fc9957e8")
+	)
+	(wire
+		(pts
+			(xy 495.3 162.56) (xy 495.3 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47bb8e92-a1bc-470b-9654-fa5ca9acd040")
+	)
+	(wire
+		(pts
+			(xy 495.3 143.51) (xy 495.3 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47ec8ef2-1292-46b9-b7e9-a9e887c5b124")
+	)
+	(wire
+		(pts
+			(xy 457.2 215.9) (xy 508 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "493c01bc-304c-49c0-b128-1d1601583b25")
+	)
+	(wire
+		(pts
+			(xy 495.3 222.25) (xy 469.9 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d668c4a-0bca-4720-82aa-db31dec36d73")
+	)
+	(wire
+		(pts
+			(xy 330.2 259.08) (xy 330.2 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50adb74f-280a-4067-bce3-fb9a70bf0b54")
+	)
+	(wire
+		(pts
+			(xy 495.3 241.3) (xy 508 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54e855e6-cb81-45f4-887b-97f9ff93c427")
+	)
+	(wire
+		(pts
+			(xy 318.77 160.02) (xy 299.72 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56438ad0-bea3-49d6-b9dc-f71d68945933")
+	)
+	(wire
+		(pts
+			(xy 495.3 182.88) (xy 495.3 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56cb59d3-9f83-40c6-b0bc-979ef5899cd9")
+	)
+	(wire
+		(pts
+			(xy 127 218.44) (xy 411.48 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b85dc8-2a4d-4484-8a87-b28b5e3f15c6")
+	)
+	(wire
+		(pts
+			(xy 463.55 139.7) (xy 469.9 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "595bb84a-1c96-4da1-a288-8474d81ff7f1")
+	)
+	(wire
+		(pts
+			(xy 279.4 248.92) (xy 411.48 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ac32e90-1cd9-4daa-9d4a-8acaa523d90c")
+	)
+	(wire
+		(pts
+			(xy 411.48 259.08) (xy 330.2 259.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b50bd4d-a833-42fb-9209-bed00f4794a3")
+	)
+	(wire
+		(pts
+			(xy 469.9 162.56) (xy 495.3 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b9752ca-74e1-4184-bf20-15cb1274e739")
+	)
+	(wire
+		(pts
+			(xy 299.72 144.78) (xy 316.23 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e898765-88a9-4251-bb6c-f5175929669c")
+	)
+	(wire
+		(pts
+			(xy 411.48 157.48) (xy 381 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60221869-052a-474c-b46c-3432f89d601e")
+	)
+	(wire
+		(pts
+			(xy 330.2 281.94) (xy 330.2 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63eb7580-5df0-4a44-ac9c-9fcd22cd7471")
+	)
+	(wire
+		(pts
+			(xy 508 222.25) (xy 495.3 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64a1c913-c453-4d67-811a-0a42ba5626ba")
+	)
+	(wire
+		(pts
+			(xy 469.9 238.76) (xy 508 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66064b45-995b-4e23-933f-5fd7c58cf66b")
+	)
+	(wire
+		(pts
+			(xy 76.2 281.94) (xy 101.6 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67d610cf-36ab-4330-a17e-bd4cca8b2358")
+	)
+	(wire
+		(pts
+			(xy 457.2 182.88) (xy 495.3 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69dde533-ea3b-48ef-ac4a-6820cf7a8146")
+	)
+	(wire
+		(pts
+			(xy 304.8 281.94) (xy 330.2 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a05a364-8c7f-4514-aae2-6881d1da4f1d")
+	)
+	(wire
+		(pts
+			(xy 355.6 281.94) (xy 330.2 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7067204a-3540-4b64-adea-c6d870566de1")
+	)
+	(wire
+		(pts
+			(xy 25.4 281.94) (xy 50.8 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7158afff-4cc0-4759-a77b-c9da2d9c7dcf")
+	)
+	(wire
+		(pts
+			(xy 469.9 160.02) (xy 469.9 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71c60ffa-3f96-416d-b223-4a9c0acca994")
+	)
+	(wire
+		(pts
+			(xy 457.2 241.3) (xy 495.3 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "743430a5-6741-412b-88d0-30d362dbeff5")
+	)
+	(wire
+		(pts
+			(xy 381 281.94) (xy 355.6 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7629c92e-5897-4f10-bd04-f7abae3eb554")
+	)
+	(wire
+		(pts
+			(xy 177.8 233.68) (xy 177.8 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76be6bbe-2c62-4d5a-9165-26b83d45e441")
+	)
+	(wire
+		(pts
+			(xy 411.48 236.22) (xy 203.2 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "779ad13f-361a-47bd-a656-684f2cd9250d")
+	)
+	(wire
+		(pts
+			(xy 344.17 151.13) (xy 344.17 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3ba14b-4602-4d8b-9175-86f1a0bed56f")
+	)
+	(wire
+		(pts
+			(xy 469.9 205.74) (xy 469.9 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fa8ee27-7c28-4dbe-b102-03d52e1d6afb")
+	)
+	(wire
+		(pts
+			(xy 101.6 266.7) (xy 101.6 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8188428f-29b7-43b9-9981-2a0f653c34c6")
+	)
+	(wire
+		(pts
+			(xy 411.48 238.76) (xy 228.6 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82a17f5a-cbc3-4815-a13d-28b96c34c3b7")
+	)
+	(wire
+		(pts
+			(xy 254 279.4) (xy 254 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86d6de3c-171f-4c33-a5c8-d92baa880554")
+	)
+	(wire
+		(pts
+			(xy 411.48 261.62) (xy 355.6 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8894ef23-64dc-47b2-8977-e5c69c1774cb")
+	)
+	(wire
+		(pts
+			(xy 279.4 152.4) (xy 299.72 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894a7d8f-c386-4b18-9e4d-b0f30a966124")
+	)
+	(wire
+		(pts
+			(xy 345.44 151.13) (xy 344.17 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a228b1d-0d4e-469b-bc64-4deaf50159d0")
+	)
+	(wire
+		(pts
+			(xy 469.9 180.34) (xy 469.9 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2e4fba-76e9-4fc6-a2df-365dff19dd47")
+	)
+	(wire
+		(pts
+			(xy 482.6 190.5) (xy 469.9 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c5572ef-a57b-4db8-a804-e93dc3bfe7fa")
+	)
+	(wire
+		(pts
+			(xy 381 264.16) (xy 381 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c91e511-7e1d-4bea-a15f-55914649cb42")
+	)
+	(wire
+		(pts
+			(xy 469.9 139.7) (xy 508 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9087bf8f-9290-4828-acb2-d4d607a5b3a0")
+	)
+	(wire
+		(pts
+			(xy 254 246.38) (xy 254 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91e61583-4605-44a7-aa88-85b23f6bca5e")
+	)
+	(wire
+		(pts
+			(xy 457.2 180.34) (xy 469.9 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "924e90d7-f60a-40d6-be4f-54e1da70646b")
+	)
+	(wire
+		(pts
+			(xy 411.48 269.24) (xy 410.21 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97bc9f15-7cc1-4ac9-8f54-9571727197dd")
+	)
+	(wire
+		(pts
+			(xy 495.3 156.21) (xy 495.3 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c8ae899-441e-4472-a8a2-0a2c32e98de6")
+	)
+	(wire
+		(pts
+			(xy 101.6 281.94) (xy 127 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a17170bd-6d7a-4c68-9113-89dae33de2e9")
+	)
+	(wire
+		(pts
+			(xy 127 279.4) (xy 127 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a447db55-b7a5-47ef-9e21-a2bedd6f0f61")
+	)
+	(wire
+		(pts
+			(xy 76.2 266.7) (xy 76.2 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5c58c01-311a-43a9-8054-14ce836815d7")
+	)
+	(wire
+		(pts
+			(xy 279.4 248.92) (xy 279.4 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b1bb42-099e-4d31-ada0-963d71b54496")
+	)
+	(wire
+		(pts
+			(xy 76.2 279.4) (xy 76.2 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a769493d-d1da-491a-b37a-90c9bdd174b2")
+	)
+	(wire
+		(pts
+			(xy 152.4 220.98) (xy 411.48 220.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a94d68b2-f0ae-420d-930d-014a793bbaaf")
+	)
+	(wire
+		(pts
+			(xy 378.46 264.16) (xy 381 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac74fb32-d588-4e9f-b9e6-f4447960d52f")
+	)
+	(wire
+		(pts
+			(xy 495.3 137.16) (xy 461.01 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad4b2f92-fd2b-44fe-8258-4a098ad56e1b")
+	)
+	(wire
+		(pts
+			(xy 411.48 233.68) (xy 177.8 233.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b06cc0e7-17bf-4ee9-acf0-34ee923ffb25")
+	)
+	(wire
+		(pts
+			(xy 495.3 241.3) (xy 495.3 237.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b202b80b-5189-4e58-b2cb-b7c4765d222d")
+	)
+	(wire
+		(pts
+			(xy 203.2 236.22) (xy 203.2 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3b17052-cdf0-47fa-a29f-1f9703cd6a19")
+	)
+	(wire
+		(pts
+			(xy 457.2 266.7) (xy 464.82 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b48f347f-5505-4439-85dd-f4c27f9af128")
+	)
+	(wire
+		(pts
+			(xy 25.4 266.7) (xy 25.4 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5292357-2b67-4473-ab03-827cbf1d4127")
+	)
+	(wire
+		(pts
+			(xy 457.2 213.36) (xy 508 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60518da-d585-4f1a-bb43-021019bc322d")
+	)
+	(wire
+		(pts
+			(xy 469.9 222.25) (xy 469.9 224.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8924f79-4f79-4cff-89f6-2a8d6fb6b7a9")
+	)
+	(wire
+		(pts
+			(xy 410.21 269.24) (xy 410.21 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b93d853c-9d0a-430e-9195-3b24bc481be6")
+	)
+	(wire
+		(pts
+			(xy 101.6 215.9) (xy 411.48 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9929b33-b87f-4a4d-8db0-10be144a472b")
+	)
+	(wire
+		(pts
+			(xy 469.9 237.49) (xy 469.9 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be1d4d1b-16b5-497d-985b-4bcae18caf3f")
+	)
+	(wire
+		(pts
+			(xy 50.8 210.82) (xy 411.48 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf5d452e-0082-4fa6-a6a5-2dccdd9045b8")
+	)
+	(wire
+		(pts
+			(xy 457.2 210.82) (xy 508 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0004e60-6150-40f3-a957-ad3407390b30")
+	)
+	(wire
+		(pts
+			(xy 469.9 238.76) (xy 457.2 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c090ada7-f559-410f-a99f-23c7d4009828")
+	)
+	(wire
+		(pts
+			(xy 411.48 246.38) (xy 254 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c30061a2-a9b3-49e5-956b-dc27915ecc5f")
+	)
+	(wire
+		(pts
+			(xy 469.9 180.34) (xy 508 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4299ce0-8d57-4ed1-9c25-57d0c0292871")
+	)
+	(wire
+		(pts
+			(xy 494.03 269.24) (xy 508 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4617c08-1474-4557-87f8-fcd34c5c92d9")
+	)
+	(wire
+		(pts
+			(xy 328.93 144.78) (xy 353.06 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4b6591c-78ef-4e04-9b0c-8b26b2ff0724")
+	)
+	(wire
+		(pts
+			(xy 279.4 281.94) (xy 304.8 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8d09785-fc57-4c19-9879-fc517d7e3567")
+	)
+	(wire
+		(pts
+			(xy 279.4 279.4) (xy 279.4 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c944ad22-9135-49ec-bc53-07b15a834ce5")
+	)
+	(wire
+		(pts
+			(xy 494.03 261.62) (xy 508 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca537b43-f82f-4ab8-bd35-1ee3f99d1707")
+	)
+	(wire
+		(pts
+			(xy 355.6 279.4) (xy 355.6 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc5e9d5b-067f-4523-be03-e6dcd115b1e6")
+	)
+	(wire
+		(pts
+			(xy 469.9 208.28) (xy 508 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccec949b-1acd-4893-9a6d-91dc5e11482e")
+	)
+	(wire
+		(pts
+			(xy 177.8 279.4) (xy 177.8 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceaa2426-c120-4ac0-8bcb-a1388748bf06")
+	)
+	(wire
+		(pts
+			(xy 299.72 160.02) (xy 299.72 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf6e6f26-6bac-4def-9558-d97b3d894f17")
+	)
+	(wire
+		(pts
+			(xy 331.47 167.64) (xy 411.48 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d005dd4c-c7e3-4f21-b467-dbac746d54c2")
+	)
+	(wire
+		(pts
+			(xy 495.3 137.16) (xy 508 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d093c6a4-c855-45ce-a737-b4db8e297ce8")
+	)
+	(wire
+		(pts
+			(xy 25.4 279.4) (xy 25.4 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3ad8c55-a429-4013-85cc-c0bf7eaf092c")
+	)
+	(wire
+		(pts
+			(xy 127 281.94) (xy 152.4 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3cb45fd-dce3-4ebb-88d9-5338ce1e5153")
+	)
+	(wire
+		(pts
+			(xy 464.82 269.24) (xy 481.33 269.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6cb9fc7-3b65-4192-b5c2-c40bbf3cb9a8")
+	)
+	(wire
+		(pts
+			(xy 469.9 208.28) (xy 457.2 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d77000e9-71e1-42d4-a511-2c7d2fdc9d33")
+	)
+	(wire
+		(pts
+			(xy 495.3 162.56) (xy 508 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7cbd41e-ca10-4c1d-85f1-4af761e503dd")
+	)
+	(wire
+		(pts
+			(xy 353.06 158.75) (xy 353.06 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbde448a-d9ee-4abe-b71a-f477859d1f09")
+	)
+	(wire
+		(pts
+			(xy 411.48 160.02) (xy 353.06 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcae1d1c-229e-4099-9d86-ee28f65c7969")
+	)
+	(wire
+		(pts
+			(xy 469.9 165.1) (xy 469.9 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd9ac26c-8c1d-4c33-8574-fd639bce08f6")
+	)
+	(wire
+		(pts
+			(xy 254 281.94) (xy 279.4 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de379924-efa8-43b5-b6ed-ce4b0a727f2d")
+	)
+	(wire
+		(pts
+			(xy 381 144.78) (xy 353.06 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfbd9bed-67c5-493b-a52c-7b59a57897ec")
+	)
+	(wire
+		(pts
+			(xy 299.72 152.4) (xy 299.72 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e111497e-d80a-4f01-acd1-52bd3f57f8b0")
+	)
+	(wire
+		(pts
+			(xy 331.47 160.02) (xy 353.06 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3aa9a04-9d93-4e19-982b-a9b26a6c671a")
+	)
+	(wire
+		(pts
+			(xy 344.17 152.4) (xy 344.17 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e73fc2d6-387c-44fb-a829-4308377132e8")
+	)
+	(wire
+		(pts
+			(xy 463.55 160.02) (xy 463.55 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edeb7ccc-bd80-4e9b-ba93-c1b2386e9f50")
+	)
+	(wire
+		(pts
+			(xy 457.2 160.02) (xy 463.55 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef0c8f65-3703-4ce3-93fb-8abf855965ad")
+	)
+	(wire
+		(pts
+			(xy 76.2 213.36) (xy 411.48 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1a2ffaa-e22e-4eb2-9b6a-48c213d84348")
+	)
+	(wire
+		(pts
+			(xy 203.2 279.4) (xy 203.2 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f51fbf0d-5f8b-4560-a167-a35349f6e2ad")
+	)
+	(wire
+		(pts
+			(xy 457.2 157.48) (xy 461.01 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f653fcf0-73ff-4333-88af-b4ea548b4b49")
+	)
+	(wire
+		(pts
+			(xy 203.2 281.94) (xy 228.6 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faabf037-0f7b-40cc-b336-7ec414ff842b")
+	)
+	(wire
+		(pts
+			(xy 101.6 279.4) (xy 101.6 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbaf89c3-cb2b-49f7-bbb0-abfa4a573cdc")
+	)
+	(wire
+		(pts
+			(xy 457.2 261.62) (xy 481.33 261.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc07f5d8-4d69-47f8-8c3e-d17120bfaac9")
+	)
+	(rectangle
+		(start 229.87 163.83)
+		(end 275.59 172.72)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 35b50a5a-9564-44ec-8ac2-e9fa6a1e3cd5)
+	)
+	(rectangle
+		(start 466.09 105.41)
+		(end 511.81 130.81)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 509399c3-4ac2-454c-8423-c21c428222e9)
+	)
+	(rectangle
+		(start 466.09 82.55)
+		(end 511.81 104.14)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 87bf32d3-492c-4400-b516-76c7d1f1f486)
+	)
+	(rectangle
+		(start 466.09 256.54)
+		(end 521.97 284.48)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid b39f6419-8414-4e76-9291-d9d4b4464fa5)
+	)
+	(rectangle
+		(start 229.87 149.86)
+		(end 275.59 162.56)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid e46782c2-6b8c-4746-8a7c-e1b09770fd6f)
+	)
+	(text "INFO: (RESETN PIN)\n\n• Active-low hard Reset\n• Assert low to place the device in Reset\nstate\n• Assert high to put the device in Normal\nstate\nand move it out of Reset state\n• Connect to a host output that has\ndefault low at power-up; if the host output\nis tristated, add a 1 MΩ pull-down res"
+		(exclude_from_sim no)
+		(at 467.36 129.54 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1197651b-6bee-4644-969f-27de5e34e4e2")
+	)
+	(text "INFO: (TEST MODE PIN)\n\nTest Mode – User must tie this pin to GND"
+		(exclude_from_sim no)
+		(at 231.14 171.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27e0ffd6-a602-4039-ad3b-a4b6eccac485")
+	)
+	(text "INFO: (SDIO_SPI_CFG)\n\n• Tie to VDDIO through a 1 MΩ resistor to\nenable the SPI interface\n• Tie to GND to enable the SDIO interface"
+		(exclude_from_sim no)
+		(at 231.14 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "402feadd-8f6e-452f-91b2-65fd6751b07b")
+	)
+	(text "INFO: (CHIP_EN PIN)\n\n• Device enable\n• High level enables device, low level places\ndevice in Power-Down mode\n• Connect to a host output that has default\nlow at power-up; if the host output is\ntristated, add a 1 MΩ pull-down resistor to\nensure a low level at power-up"
+		(exclude_from_sim no)
+		(at 467.36 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2bf6bc0-a3fd-418a-962f-115d92716207")
+	)
+	(text "INFO:\n\nUsed only for development debug purposes;\nIt is recommended to add test point for this\npin\n"
+		(exclude_from_sim no)
+		(at 468.884 283.464 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5028c57-ba08-4b48-9c51-9692fc640f36")
+	)
+	(label "ATWILC_+3.3V"
+		(at 397.51 264.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ee9aba9-124b-4ae8-9615-abf4b57e109a")
+	)
+	(label "ATWILC_+3.3V"
+		(at 508 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "16c3f275-5428-447b-b43b-42f41e47035e")
+	)
+	(label "ATWILC_+3.3V"
+		(at 397.51 251.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "176576c1-9b31-4dd0-b256-31ff5aac1c06")
+	)
+	(label "ATWILC_XON"
+		(at 394.97 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24b689fc-faf2-4887-bad9-76e5c92832ba")
+	)
+	(label "ATWILC_+3.3V"
+		(at 397.51 246.38 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "258328d4-15eb-453d-889d-9ab4a2d16cf9")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 238.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27b19e86-b30b-4f29-8fed-19a82dabf869")
+	)
+	(label "ATWILC_+3.3V"
+		(at 482.6 190.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2cef5235-02cb-4e41-b1c2-5a613d536de2")
+	)
+	(label "ATWILC_+3.3V"
+		(at 397.51 248.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ec00243-e0eb-4b47-8557-eff9d1ce4df1")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 220.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32b287f4-3e76-4aed-8a22-284d75e54a2a")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 218.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "331f630a-1884-4ae1-b9f3-04f900070bc6")
+	)
+	(label "ATWILC_~{SDIO}_SPI"
+		(at 393.7 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3c347aad-e9c1-4164-bb79-33ef240302c4")
+	)
+	(label "ATWILC_RXD"
+		(at 508 261.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d2617be-eba3-4d55-83b9-3049b7da94be")
+	)
+	(label "ATWILC_GND"
+		(at 397.51 281.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ffc8c50-6037-4ba8-a841-3bf009bd5c78")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 213.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "464e9ce0-ef0e-4def-b24d-f5f604c03d5e")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 210.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "769f8ae4-4960-4b72-843e-ac9d84458875")
+	)
+	(label "ATWILC_+3.3V"
+		(at 279.4 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a535273-8f4e-409a-80d9-0bce957f5cbf")
+	)
+	(label "ATWILC_+3.3V"
+		(at 397.51 259.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e7276fc-996d-4385-af13-1cfe85acd64f")
+	)
+	(label "ATWILC_GND"
+		(at 393.7 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a05cb8d1-f5b8-46c6-9d7b-60aaf3bcd114")
+	)
+	(label "ATWILC_+3.3V"
+		(at 508 222.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a14061fc-5757-4069-a636-f79091cba9dd")
+	)
+	(label "ATWILC_XOP"
+		(at 394.97 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a2afaaa1-2956-4621-ab82-4417fb828df9")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 215.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a4327286-ee17-4931-977b-aa4f8b0595d8")
+	)
+	(label "ATWILC_GND"
+		(at 330.2 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab728f08-9b09-4af1-b560-7bb5980b375d")
+	)
+	(label "ATWILC_+3.3V"
+		(at 397.51 261.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8d97daa-9d2b-49b4-b4aa-2064050fc958")
+	)
+	(label "ATWILC_TXD"
+		(at 508 269.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d01205d0-fe35-431f-9e98-b8f02ae8f657")
+	)
+	(label "ATWILC_GND"
+		(at 279.4 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1548af0-be59-430b-b5e1-197358d93183")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 208.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de926cf0-ecf6-49d7-8db0-cd4146cfb93b")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 233.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4897a41-4729-48c1-98d9-df6638fe9016")
+	)
+	(label "ATWILC_+1.3V"
+		(at 397.51 236.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f40652d1-5dd5-40ef-bce2-64e5f720924c")
+	)
+	(label "ATWILC_GND"
+		(at 508 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f55ab3eb-f267-43a0-a58a-2957c8713b4d")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape output)
+		(at 508 210.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07b0c811-482a-4a20-b8c3-62b6d53e0e72")
+	)
+	(hierarchical_label "ATWILC_RESETN"
+		(shape input)
+		(at 508 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0cb3db55-70ab-4d22-a437-415aaa464c87")
+	)
+	(hierarchical_label "I2C_SCL"
+		(shape input)
+		(at 508 241.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0d72e670-8763-4218-93aa-467bd8fe36f0")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape input)
+		(at 508 213.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bf70a95-dd10-4d85-96a5-22da773f6ce0")
+	)
+	(hierarchical_label "ATWILC_IRQN"
+		(shape output)
+		(at 508 182.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2d48a8f6-ab46-41b5-aa8e-37c8f06f32e9")
+	)
+	(hierarchical_label "SPI_CS"
+		(shape input)
+		(at 508 208.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2da3ab2b-eab9-48d7-b35d-20882e397d3f")
+	)
+	(hierarchical_label "ATWILC_CHIPN"
+		(shape input)
+		(at 508 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "82bed489-4f49-45b2-8d04-e875a80c7f2d")
+	)
+	(hierarchical_label "+PWR"
+		(shape input)
+		(at 378.46 264.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b1bb02a-ea64-4dad-adea-dfd63be9107a")
+	)
+	(hierarchical_label "I2C_SDA"
+		(shape bidirectional)
+		(at 508 238.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a31630ea-3a26-49a0-b660-2afd4f38aa83")
+	)
+	(hierarchical_label "SPI_SCK"
+		(shape input)
+		(at 508 215.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba3c731b-97c4-492a-925b-e55b8597343a")
+	)
+	(hierarchical_label "ATWILC_WAKEUP"
+		(shape output)
+		(at 508 180.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c665ab91-bb01-4aa2-acdc-6ad211ad26b1")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 407.67 269.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dfcd3a89-2ef2-4ddb-9fc3-d35929905b6f")
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 177.8 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "006eceff-bbd0-4804-b825-0b2497cedcbc")
+		(property "Reference" "C1807"
+			(at 180.34 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 180.34 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 194.564 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 186.944 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 191.77 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 180.34 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 197.358 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 202.184 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 199.898 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 204.724 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 189.484 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 180.34 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 180.34 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "c630b7e4-e290-4aba-a92d-e2de2bcc6287")
+		)
+		(pin "1"
+			(uuid "9ab834c0-429b-4887-8f0f-4af845813f22")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1807")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 152.4 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "07fe5acd-4027-4946-a447-e64ee93be950")
+		(property "Reference" "C1815"
+			(at 154.94 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 154.94 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 169.164 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 161.544 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 166.37 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 154.94 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 171.958 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 176.784 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 174.498 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 179.324 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 164.084 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 154.94 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 154.94 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "5d9a95f1-1850-4b88-8767-5acf84909fca")
+		)
+		(pin "1"
+			(uuid "cf6eda3e-40ff-4d90-8e27-522d90d7f7fd")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1815")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 101.6 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15d2de34-916f-41f7-a3ad-a3e750748756")
+		(property "Reference" "C1813"
+			(at 104.14 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 104.14 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 118.364 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 110.744 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 115.57 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 104.14 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 121.158 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 125.984 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 123.698 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 128.524 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 113.284 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 104.14 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 104.14 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "7bfb8a17-a32f-4da6-83a7-d4b0880e214a")
+		)
+		(pin "1"
+			(uuid "3c1c7c29-c94f-4a5b-8795-bbe1b7b062c0")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1813")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 279.4 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "196f663c-42d1-436c-ba92-030ffa44e64f")
+		(property "Reference" "C1805"
+			(at 281.94 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 281.94 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 296.164 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 288.544 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 293.37 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 281.94 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 298.958 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 303.784 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 301.498 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 306.324 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 291.084 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 281.94 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 281.94 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "14598933-c992-448e-868f-35de5f0de214")
+		)
+		(pin "1"
+			(uuid "2ffb4b44-6bb9-45b3-a052-820c08d81f52")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1805")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 469.9 143.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1afa9b98-0139-4172-8bbf-9b2c7df88b5e")
+		(property "Reference" "R1804"
+			(at 472.44 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 472.44 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 486.664 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 479.044 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 483.87 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 472.44 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 489.458 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 494.284 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 491.998 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 496.824 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 481.584 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 472.44 152.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 472.44 154.9399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "6f56e78a-6a36-48e5-9170-38364b15fde6")
+		)
+		(pin "2"
+			(uuid "fa39402e-a528-4510-9c09-49e11b13761c")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1804")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 304.8 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e2a92ca-f3ed-4672-b3c1-2caf36e25023")
+		(property "Reference" "C1804"
+			(at 307.34 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 307.34 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 321.564 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 313.944 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 318.77 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 307.34 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 324.358 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 329.184 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 326.898 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 331.724 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 316.484 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 307.34 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 307.34 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "57499fa9-a5bc-46f6-b8bc-8a03c691e6f1")
+		)
+		(pin "1"
+			(uuid "fa0477af-0ce4-4865-9811-3267b0794ead")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1804")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_1kR_1/10W_1%_R0603")
+		(at 495.3 224.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46483c8a-277d-4f2f-9092-d30576826089")
+		(property "Reference" "R1808"
+			(at 497.84 226.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1kR_1/10W_1%"
+			(at 497.84 228.5999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 512.064 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 504.444 228.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 509.27 228.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 497.84 231.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "RMCF0603FT1K00"
+			(at 514.858 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 519.684 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "RMCF0603FT1K00TR-ND"
+			(at 517.398 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 522.224 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
+			(at 506.984 228.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 497.84 233.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 497.84 236.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "66ea0f6a-0447-4894-a94c-6f86e821ca29")
+		)
+		(pin "2"
+			(uuid "70f6a91d-db1b-4b2f-83c6-1317a235acf6")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1808")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_1kR_1/10W_1%_R0603")
+		(at 481.33 269.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6437c5a3-1823-406d-9173-371b22a0221c")
+		(property "Reference" "R1810"
+			(at 497.078 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR_1/10W_1%"
+			(at 474.218 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 485.14 252.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 484.886 260.096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 484.886 255.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 478.536 270.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "RMCF0603FT1K00"
+			(at 485.14 249.682 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 485.14 244.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "RMCF0603FT1K00TR-ND"
+			(at 485.14 247.142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 485.14 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
+			(at 484.886 257.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 499.11 270.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 499.11 273.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7c9d4ac4-0f59-4b96-b19a-a155ad3d9a71")
+		)
+		(pin "2"
+			(uuid "4cc246e2-3ece-4f54-82f8-57936d063a83")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1810")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 495.3 143.51 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7128a008-4a3f-4252-86cd-7added373320")
+		(property "Reference" "R1805"
+			(at 497.84 144.7799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 497.84 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 512.064 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 504.444 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 509.27 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 497.84 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 514.858 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 519.684 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 517.398 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 522.224 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 506.984 147.066 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 497.84 152.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 497.84 154.9399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "62bd8abd-a63d-4f75-be88-c822366c68cf")
+		)
+		(pin "2"
+			(uuid "02fdf510-10e9-4a19-a273-5b2ea830ff81")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1805")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 318.77 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72cd9076-9c49-4521-93ba-b636022d4ba6")
+		(property "Reference" "R1801"
+			(at 334.518 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 310.134 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 322.58 150.876 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 322.326 158.496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 322.326 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 315.468 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 322.58 148.082 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 322.58 143.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 322.58 145.542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 322.58 140.716 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 322.326 155.956 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 336.55 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 336.55 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7603ede8-3887-4a54-97eb-1a690824698b")
+		)
+		(pin "2"
+			(uuid "e81b0f2f-879a-4850-8e85-21e483983ca0")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 254 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ac5ee0d-1daf-4fbd-ac47-d4b3b9bce7e6")
+		(property "Reference" "C1806"
+			(at 256.54 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 256.54 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 270.764 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 263.144 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 267.97 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 256.54 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 273.558 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 278.384 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 276.098 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 280.924 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 265.684 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 256.54 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 256.54 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "dc04080b-a161-4c79-b0a6-1a19862bde39")
+		)
+		(pin "1"
+			(uuid "f7f3d238-56aa-4df8-8b77-42d3b5da9ec7")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1806")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_1uF_10V_X7R_C0603")
+		(at 355.6 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e94013d-2ff6-411c-8774-fd9c3e08a13b")
+		(property "Reference" "C1802"
+			(at 358.14 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF_10V_X7R"
+			(at 358.14 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 372.364 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
+			(at 364.744 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 369.57 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 358.14 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "CL10B105KP8NNNC"
+			(at 375.158 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 379.984 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "1276-1946-2-ND"
+			(at 377.698 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 382.524 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B105KP8NNNC/3887604"
+			(at 367.284 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 358.14 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 358.14 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "976b73f0-bb77-4680-88fd-764776e857eb")
+		)
+		(pin "1"
+			(uuid "0f0312bd-8ff8-4624-95f1-4fefc14e4be4")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:XTAL_ECS-260-12-37B2-CKM-TR_26MHz_10PPM_12pF_4-SMD, No Lead")
+		(at 353.06 146.05 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82678817-cd8e-4917-a178-103e880a35d3")
+		(property "Reference" "X1801"
+			(at 358.14 147.3199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "26MHz_10ppm_12pF"
+			(at 358.14 149.8599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+			(at 372.11 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ecsxtal.com/store/pdf/ECX-1637B2.pdf"
+			(at 364.49 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "26 MHz ±10ppm Crystal 12pF 50 Ohms 4-SMD, No Lead"
+			(at 369.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ECS-260-12-37B2-CKM-TR"
+			(at 377.19 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.com/en/products/detail/ecs-inc/ECS-260-12-37B2-CKM-TR/14663307"
+			(at 367.03 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 358.14 152.3999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "4SMD-2016"
+			(at 358.14 154.9399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer" "ECS Inc."
+			(at 379.73 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "50-ECS-260-12-37B2-CKM-TR-ND"
+			(at 374.65 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 382.27 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 358.14 157.4799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3"
+			(uuid "a004df46-d121-47ec-b41d-44c5c9dc4691")
+		)
+		(pin "4"
+			(uuid "62a4f2ab-1553-4c87-abc0-7c9e872e80d1")
+		)
+		(pin "1"
+			(uuid "57ed61a8-61fb-49c9-9f28-5358f2326460")
+		)
+		(pin "2"
+			(uuid "905f8ac1-f11d-465a-81c1-73ff86502537")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "X1801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_12pF_50V_C0G_C0603")
+		(at 328.93 144.78 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "838a9a1a-7735-49fc-85cd-f23546520e8f")
+		(property "Reference" "C1816"
+			(at 331.978 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12pF_50V_C0G"
+			(at 309.118 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 325.12 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C120J5GACTU"
+			(at 325.374 153.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+			(at 325.374 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 313.182 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "C0603C120J5GAC7867"
+			(at 325.12 164.338 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 325.12 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "399-C0603C120J5GAC7867TR-ND"
+			(at 325.12 166.878 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 325.12 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kemet/C0603C120J5GAC7867/411052"
+			(at 325.374 156.464 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 334.01 146.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 334.01 148.844 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "253775f4-840d-41d4-9e4b-a96e39d93d11")
+		)
+		(pin "2"
+			(uuid "de4a5f2e-74e3-46cb-8cac-276c9b7e02c7")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1816")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_1uF_10V_X7R_C0603")
+		(at 330.2 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "840fe997-d0a5-42a8-babd-2aa2518da1c7")
+		(property "Reference" "C1803"
+			(at 332.74 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF_10V_X7R"
+			(at 332.74 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 346.964 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
+			(at 339.344 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 344.17 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 332.74 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "CL10B105KP8NNNC"
+			(at 349.758 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 354.584 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "1276-1946-2-ND"
+			(at 352.298 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 357.124 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B105KP8NNNC/3887604"
+			(at 341.884 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 332.74 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 332.74 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "29bb6101-fb10-454a-b745-43e832f11d17")
+		)
+		(pin "1"
+			(uuid "f26c70ad-e127-4765-9bc3-d2327cd4c1c3")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_12pF_50V_C0G_C0603")
+		(at 331.47 160.02 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b0d7920-c9a0-4976-8a0d-5d952ca611b2")
+		(property "Reference" "C1817"
+			(at 334.518 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12pF_50V_C0G"
+			(at 311.658 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 327.66 176.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C120J5GACTU"
+			(at 327.914 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12 pF ±5% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+			(at 327.914 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 315.722 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "C0603C120J5GAC7867"
+			(at 327.66 179.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 327.66 184.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "399-C0603C120J5GAC7867TR-ND"
+			(at 327.66 182.118 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 327.66 186.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kemet/C0603C120J5GAC7867/411052"
+			(at 327.914 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 336.55 161.544 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 336.55 164.084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d24a5638-41c4-4fae-b868-61fbb68d085c")
+		)
+		(pin "2"
+			(uuid "b32032da-0716-4c7e-8f17-9a52da5df548")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1817")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 469.9 193.04 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c1f646e-9979-4377-b37d-a03282bda539")
+		(property "Reference" "R1806"
+			(at 472.44 194.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 472.44 196.8499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 486.664 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 479.044 196.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 483.87 196.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 472.44 199.3899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 489.458 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 494.284 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 491.998 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 496.824 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 481.584 196.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 472.44 201.9299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 472.44 204.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "4626808c-d882-432f-8c20-0da5931d6ed5")
+		)
+		(pin "2"
+			(uuid "0ecc8d9c-dd8e-466b-a051-d19101e31d33")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1806")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 203.2 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e329f89-0764-4e42-950a-be230034a984")
+		(property "Reference" "C1808"
+			(at 205.74 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 205.74 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 219.964 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 212.344 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 217.17 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 205.74 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 222.758 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 227.584 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 225.298 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 230.124 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 214.884 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 205.74 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 205.74 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "27c2958c-0806-4196-98e7-ea093442bc87")
+		)
+		(pin "1"
+			(uuid "299894db-8da7-442e-8c07-38555b949d44")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1808")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_1kR_1/10W_1%_R0603")
+		(at 481.33 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc83025c-e4e3-471c-bd22-cd8c1d471929")
+		(property "Reference" "R1809"
+			(at 497.078 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1kR_1/10W_1%"
+			(at 474.218 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 485.14 244.856 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 484.886 252.476 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 484.886 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 478.536 263.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "RMCF0603FT1K00"
+			(at 485.14 242.062 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 485.14 237.236 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "RMCF0603FT1K00TR-ND"
+			(at 485.14 239.522 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 485.14 234.696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
+			(at 484.886 249.936 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 499.11 263.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 499.11 265.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a9cad792-d5c0-4b5f-8440-515dbeb4a752")
+		)
+		(pin "2"
+			(uuid "c8e940d9-fa88-4f34-bffb-798a2d086a06")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1809")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_1uF_10V_X7R_C0603")
+		(at 381 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6e78b0a-950c-43ae-83ec-10c77284f3a8")
+		(property "Reference" "C1801"
+			(at 383.54 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF_10V_X7R"
+			(at 383.54 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 397.764 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
+			(at 390.144 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 394.97 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 383.54 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "CL10B105KP8NNNC"
+			(at 400.558 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 405.384 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "1276-1946-2-ND"
+			(at 403.098 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 407.924 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B105KP8NNNC/3887604"
+			(at 392.684 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 383.54 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 383.54 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "4247d818-fb07-4a20-87e6-ea6b73247c08")
+		)
+		(pin "1"
+			(uuid "0e4c6bac-c54c-456d-804e-5d7f5aad5606")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 50.8 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cb20d1a7-de7f-48e7-b1cf-d4b6aabd65d5")
+		(property "Reference" "C1811"
+			(at 53.34 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 53.34 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 67.564 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 59.944 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 64.77 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 53.34 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 70.358 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 75.184 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 72.898 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 77.724 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 62.484 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 53.34 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 53.34 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "a1953670-abb0-4dc4-956e-aac6d437abb5")
+		)
+		(pin "1"
+			(uuid "0d0dc816-d5fb-4c70-b585-891cf8136786")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1811")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 228.6 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd68ea93-7b3a-4f07-be5f-818b3cc5260c")
+		(property "Reference" "C1809"
+			(at 231.14 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 231.14 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 245.364 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 237.744 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 242.57 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 231.14 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 248.158 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 252.984 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 250.698 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 255.524 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 240.284 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 231.14 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 231.14 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "2f4716e0-db36-4296-b5f1-54a0f8e81754")
+		)
+		(pin "1"
+			(uuid "88fdead1-8f6e-4564-8bd4-71e4c73b527c")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1809")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_1kR_1/10W_1%_R0603")
+		(at 469.9 224.79 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cdf8fe54-7219-411d-96cb-21e9d0e68821")
+		(property "Reference" "R1807"
+			(at 472.44 226.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1kR_1/10W_1%"
+			(at 472.44 228.5999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 486.664 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
+			(at 479.044 228.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 483.87 228.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 472.44 231.1399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "RMCF0603FT1K00"
+			(at 489.458 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 494.284 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "RMCF0603FT1K00TR-ND"
+			(at 491.998 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 496.824 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT1K00/1761077"
+			(at 481.584 228.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 472.44 233.6799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 472.44 236.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "6a61fca3-0f79-414c-8156-6e4fa1d073bc")
+		)
+		(pin "2"
+			(uuid "18bb6380-0ce0-4326-ab49-643311ab672c")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1807")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 127 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0b12fe7-b68a-40c9-adb6-fbb7ea0f55ee")
+		(property "Reference" "C1814"
+			(at 129.54 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 129.54 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 143.764 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 136.144 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 140.97 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 129.54 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 146.558 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 151.384 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 149.098 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 153.924 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 138.684 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 129.54 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 129.54 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "725c2ca0-887c-438b-8925-da885f80dd7f")
+		)
+		(pin "1"
+			(uuid "fa560d6a-717a-4d8f-a9da-161dc90101aa")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1814")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 76.2 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d289cdec-de05-45df-babe-4e6ec40519bb")
+		(property "Reference" "C1812"
+			(at 78.74 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 78.74 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 92.964 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 85.344 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 90.17 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 78.74 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 95.758 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 100.584 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 98.298 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 103.124 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 87.884 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 78.74 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 78.74 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "083dabcc-1f08-4ed2-91d1-25b021792c73")
+		)
+		(pin "1"
+			(uuid "8b3ca5f1-a73d-43b2-be1a-8f199a0a5ced")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1812")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
+		(at 25.4 266.7 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db8bb13d-d3d6-4f20-bf7a-29f202aeaaad")
+		(property "Reference" "C1810"
+			(at 27.94 267.9699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4u7F_16V_X7R"
+			(at 27.94 270.5099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 42.164 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
+			(at 34.544 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 39.37 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 27.94 273.0499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
+			(at 44.958 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 49.784 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
+			(at 47.498 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 52.324 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
+			(at 37.084 270.256 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 27.94 275.5899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 27.94 278.1299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "4786ac59-db69-49eb-b0fa-813e38983aa5")
+		)
+		(pin "1"
+			(uuid "075ed735-fb77-4fb5-8f48-a595b2ae9d42")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "C1810")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 469.9 165.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "de7995ab-482e-4b60-8e92-2610a2b477a1")
+		(property "Reference" "R1802"
+			(at 472.44 166.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 472.44 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 486.664 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 479.044 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 483.87 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 472.44 171.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 489.458 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 494.284 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 491.998 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 496.824 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 481.584 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 472.44 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 472.44 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "07f2f101-a7bf-4348-b75b-6f77fe7c2a7d")
+		)
+		(pin "2"
+			(uuid "cbcd06a3-0ccf-407f-bcec-2400d0ad29c5")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:IC_RF TXRX_ATWILC1000B-MU-Y_Wifi_2.4GHz_40-QFN (5x5)")
+		(at 416.56 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9a1b1ad-a9d8-4c76-b4b1-a45716f0c523")
+		(property "Reference" "U1801"
+			(at 434.34 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ATWILC1000B-MU-Y"
+			(at 434.34 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_PCBLIB_SparkleSplashy:QFN-40-1EP_5x5mm_P0.4mm_EP3.8x3.8mm_ThermalVias"
+			(at 419.354 140.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ww1.microchip.com/downloads/aemDocuments/documents/OTH/ProductDocuments/DataSheets/70005386C.pdf"
+			(at 419.1 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "IC RF TxRx + MCU WiFi 802.11b/g/n 2.4GHz 40-VFQFN Exposed Pad"
+			(at 419.1 142.748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ATWILC1000B-MU-Y"
+			(at 419.1 137.668 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.ca/en/products/detail/microchip-technology/ATWILC1000B-MU-Y/5638851"
+			(at 419.1 145.034 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 434.34 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Package" "40-QFN (5x5)"
+			(at 434.34 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Microchip Technology"
+			(at 419.1 132.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "ATWILC1000B-MU-Y-ND"
+			(at 419.1 135.128 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 419.1 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "PCB CHECk" "PCB (N/A)"
+			(at 434.34 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "25"
+			(uuid "b0edb86f-232a-4a1d-9984-c6189933c707")
+		)
+		(pin "1"
+			(uuid "054ea9e8-a2cf-4301-be4b-4fb37a672d1c")
+		)
+		(pin "23"
+			(uuid "0581c277-27dd-4fe8-9cc6-007e4d0f4af0")
+		)
+		(pin "32"
+			(uuid "7e4ee26b-ae88-417e-9bed-1572a3eb5b02")
+		)
+		(pin "29"
+			(uuid "20302d9c-8f98-4ec9-879d-190b6e198bee")
+		)
+		(pin "6"
+			(uuid "e1ede3e0-6c8a-4019-803f-232b532d0c99")
+		)
+		(pin "37"
+			(uuid "909c89f9-d3fa-4cc3-a4ee-59e742020cfc")
+		)
+		(pin "33"
+			(uuid "d4edf388-32ed-472c-b3f7-c2753b769944")
+		)
+		(pin "22"
+			(uuid "e085221c-aa29-422e-82eb-cbc38dd6156b")
+		)
+		(pin "26"
+			(uuid "1b9846cd-eb45-4c6b-94d8-aa3402330f2f")
+		)
+		(pin "10"
+			(uuid "873ac957-ca51-4bc3-994d-4ec63f36435f")
+		)
+		(pin "14"
+			(uuid "a154c614-017e-4523-a761-e574aaea0ad9")
+		)
+		(pin "2"
+			(uuid "246853dd-9fea-416a-883a-909519aed9de")
+		)
+		(pin "34"
+			(uuid "be927899-560c-4038-8213-98f4ceb59d88")
+		)
+		(pin "40"
+			(uuid "6c480ee4-ef81-4a8c-866b-59d07d872c3e")
+		)
+		(pin "31"
+			(uuid "14083f02-9581-4990-a5e0-46cf3f34e6e0")
+		)
+		(pin "15"
+			(uuid "fb2355b1-1d8d-4ba1-b81f-c2a907995004")
+		)
+		(pin "19"
+			(uuid "7ee1b836-16fd-40b8-b01f-e03f7a8f8be2")
+		)
+		(pin "11"
+			(uuid "bd977f35-5150-4b30-917f-35f121e8af46")
+		)
+		(pin "8"
+			(uuid "01e46fb0-f560-4430-bc0e-a7bb0d36a548")
+		)
+		(pin "12"
+			(uuid "d8c7819e-229f-4e48-88b4-9cfe956a7bbc")
+		)
+		(pin "28"
+			(uuid "6e63d9ca-d850-43a1-8c26-62e0febde0f4")
+		)
+		(pin "20"
+			(uuid "664b213d-9f0e-453c-ace8-80e711f3ae10")
+		)
+		(pin "35"
+			(uuid "70451fc0-26bb-424e-980d-c4c5159f1605")
+		)
+		(pin "38"
+			(uuid "d7e6f8da-3935-4c38-b638-8b86fe3b73e4")
+		)
+		(pin "4"
+			(uuid "040a1de3-dc7a-4e42-aa77-ee053e3a1a48")
+		)
+		(pin "7"
+			(uuid "c2bb9e5e-ff7b-4a7c-8abe-47131ed23009")
+		)
+		(pin "24"
+			(uuid "c9330c8e-bfc2-493c-981d-ef0bef8b4175")
+		)
+		(pin "3"
+			(uuid "b316c0c0-2bb3-4d69-9dfc-80162eba4fcd")
+		)
+		(pin "5"
+			(uuid "06a34b4f-849f-4445-9bf9-d7a5e07656ee")
+		)
+		(pin "17"
+			(uuid "8c55dbe9-acb9-453f-bb6d-84b6d0425d3d")
+		)
+		(pin "41"
+			(uuid "15bb5c05-1818-49f4-b9da-cfba90b6ed5a")
+		)
+		(pin "30"
+			(uuid "1c0a96c0-87f1-45fc-895b-56457369a2dc")
+		)
+		(pin "39"
+			(uuid "c53b9f85-d46b-4080-94cd-a72126ff233d")
+		)
+		(pin "18"
+			(uuid "59631584-491a-4621-85e7-99f2dada6763")
+		)
+		(pin "27"
+			(uuid "7550b6c9-a633-48bc-a0d0-0dc41eed29c1")
+		)
+		(pin "16"
+			(uuid "c6c65e88-f84f-4522-b310-9267b0c5c2b6")
+		)
+		(pin "9"
+			(uuid "1cb6f145-d7a1-4b2d-8565-003b300a26bd")
+		)
+		(pin "13"
+			(uuid "0e722063-0442-45a9-a3a0-8abd14850f92")
+		)
+		(pin "36"
+			(uuid "7bbc9bc2-9fe0-40c3-b064-e112f1dd0908")
+		)
+		(pin "21"
+			(uuid "10c90b05-861f-4d3e-9b0d-45f6f67f8d3a")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "U1801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603")
+		(at 495.3 165.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f96d20e5-8d33-46d7-9090-1776763ffcc1")
+		(property "Reference" "R1803"
+			(at 497.84 166.3699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100kR_1/10W_1%"
+			(at 497.84 168.9099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 512.064 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
+			(at 504.444 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 509.27 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "R0603"
+			(at 497.84 171.4499 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "ERJ-3EKF1003V"
+			(at 514.858 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Panasonic Electronic Components"
+			(at 519.684 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "P100KHTR-ND"
+			(at 517.398 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 522.224 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/panasonic-electronic-components/ERJ-3EKF1003V/196075"
+			(at 506.984 168.656 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 497.84 173.9899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 497.84 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "9fc8513c-8505-4cae-ba7a-442c69dcf429")
+		)
+		(pin "2"
+			(uuid "a4e6a3ef-e0c3-4ec4-858e-65965a8b6cf8")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/572dcb6a-579b-4867-89b1-35ab8a6f8fad"
+					(reference "R1803")
+					(unit 1)
+				)
+			)
+		)
+	)
 )

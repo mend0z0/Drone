@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "8.0")
 	(uuid "6667e9f2-acf5-480a-ba60-820054d767b0")
-	(paper "A4")
+	(paper "C")
 	(title_block
 		(comment 2 "DRAFT")
 	)

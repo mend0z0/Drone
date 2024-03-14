@@ -1,0 +1,30 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "b24dada9-8287-4080-8ef7-6ef9c96b7f8c")
+	(paper "C")
+	(title_block
+		(comment 2 "DRAFT")
+	)
+	(lib_symbols)
+	(text_box "4xLED 5MM BLUE\n4xLED HOLDER BLACK 5MM\n\n1 m WIRE\n4xJST 1.27mm FEMALE HEADER\n\n1xBATTERY 3.7V\n\n\n1xFRAME\n4xCORELESS MOTORS 0716\n4xM3x3MM STAND OFF\n4xM3 PHILLIPS SCREW\n4xM3 NUTS\n\n1xPCB 50x50 MM2 4LAYERs IMPEDANCE CONTROLLED\n\n\n1x OV2640 CAMERA MODULE \n\n\n4x mounting holes"
+		(exclude_from_sim no)
+		(at 121.92 130.81 0)
+		(size 138.43 161.29)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left top)
+		)
+		(uuid "50aae9ed-0057-4339-9f27-167777ff9ae8")
+	)
+)

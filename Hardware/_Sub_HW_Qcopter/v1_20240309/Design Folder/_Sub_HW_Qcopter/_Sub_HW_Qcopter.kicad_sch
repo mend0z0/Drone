@@ -1603,6 +1603,44 @@
 			)
 		)
 	)
+	(sheet
+		(at 63.5 207.01)
+		(size 63.5 6.35)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ca9cd294-4e54-4f83-9259-ff37ab8c6d85")
+		(property "Sheetname" "MECHANICAL PARTS"
+			(at 63.5 206.2984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[03] - MECHANICAL PARTS.kicad_sch"
+			(at 63.5 213.9446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8"
+					(page "24")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

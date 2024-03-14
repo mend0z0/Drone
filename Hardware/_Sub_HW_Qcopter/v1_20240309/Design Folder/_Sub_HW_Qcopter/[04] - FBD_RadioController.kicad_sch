@@ -8,9 +8,379 @@
 		(comment 2 "DRAFT")
 	)
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 217.17 152.4) (xy 254 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0256ee1a-f480-4a24-a681-3c4ee383f856")
+	)
+	(wire
+		(pts
+			(xy 307.34 238.76) (xy 279.4 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b281cf-c0bf-4b77-b4a0-484cec33f2f0")
+	)
+	(wire
+		(pts
+			(xy 279.4 185.42) (xy 330.2 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f36309d-aa53-4611-a324-716bcb0703f0")
+	)
+	(wire
+		(pts
+			(xy 217.17 157.48) (xy 254 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "153f8834-f061-4084-a3ba-34d884b70ec6")
+	)
+	(wire
+		(pts
+			(xy 177.8 222.25) (xy 190.5 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19428c3d-a28b-40b7-aae5-3098e858ce10")
+	)
+	(wire
+		(pts
+			(xy 279.4 203.2) (xy 330.2 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38f8605c-4870-496b-8124-10906b6a0ae3")
+	)
+	(wire
+		(pts
+			(xy 317.5 264.16) (xy 330.2 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b69c83b-23b9-4a11-aa10-61f03420ae6b")
+	)
+	(wire
+		(pts
+			(xy 317.5 176.53) (xy 330.2 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42cd84cc-9039-41da-9157-ce66d56a7ec9")
+	)
+	(wire
+		(pts
+			(xy 279.4 241.3) (xy 304.8 241.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "431ba283-1837-4963-a4b9-fae4b7f6f4a4")
+	)
+	(wire
+		(pts
+			(xy 177.8 262.89) (xy 190.5 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4804f677-9387-432b-853a-03ac0086c057")
+	)
+	(wire
+		(pts
+			(xy 217.17 146.05) (xy 254 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56d88bb2-48ed-419b-a62f-49c77d30ec14")
+	)
+	(wire
+		(pts
+			(xy 307.34 252.73) (xy 330.2 252.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aa641c2-6b1d-4e33-ac6e-3378bbd8b8cb")
+	)
+	(wire
+		(pts
+			(xy 309.88 236.22) (xy 309.88 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67594dcc-bd00-4554-bfad-f2384662763a")
+	)
+	(wire
+		(pts
+			(xy 304.8 241.3) (xy 304.8 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71596b38-db9f-45b2-8573-c0789d496dde")
+	)
+	(wire
+		(pts
+			(xy 279.4 205.74) (xy 330.2 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71e19aaf-08bc-4db5-91d2-5c7ae9ee5799")
+	)
+	(wire
+		(pts
+			(xy 215.9 222.25) (xy 254 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "726bf641-bcc9-412c-bec4-3aa3b84828ca")
+	)
+	(wire
+		(pts
+			(xy 217.17 167.64) (xy 254 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "749abd81-f34b-48a3-b246-a48b09f95c03")
+	)
+	(wire
+		(pts
+			(xy 215.9 256.54) (xy 254 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76af409b-014a-434a-9ed0-b22ec57624b5")
+	)
+	(wire
+		(pts
+			(xy 215.9 251.46) (xy 254 251.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881928b9-9519-43a0-82f1-293a6cbecfb0")
+	)
+	(wire
+		(pts
+			(xy 317.5 219.71) (xy 330.2 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f8ab020-1027-4234-b15a-261e06c42f69")
+	)
+	(wire
+		(pts
+			(xy 309.88 248.92) (xy 330.2 248.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9443916c-0e15-4f4a-a3fb-96e23da1af27")
+	)
+	(wire
+		(pts
+			(xy 279.4 187.96) (xy 330.2 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94dfbfbc-4a9c-4450-8fa3-781bed2e4856")
+	)
+	(wire
+		(pts
+			(xy 279.4 190.5) (xy 330.2 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd43ae2-ee9c-493a-a9f6-4091f3772607")
+	)
+	(wire
+		(pts
+			(xy 279.4 198.12) (xy 330.2 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3573647-4e63-4019-b073-1b843795d20f")
+	)
+	(wire
+		(pts
+			(xy 279.4 210.82) (xy 330.2 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ae3fc4-ffc8-44a2-9734-c0396b797e97")
+	)
+	(wire
+		(pts
+			(xy 217.17 165.1) (xy 254 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acd427e7-8429-4ad4-9f90-b1b8575b0ee4")
+	)
+	(wire
+		(pts
+			(xy 279.4 193.04) (xy 330.2 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aefa909e-be82-4a53-9e99-2da089171a89")
+	)
+	(wire
+		(pts
+			(xy 177.8 214.63) (xy 190.5 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be501702-e03c-4579-ac3c-48a95c7ef639")
+	)
+	(wire
+		(pts
+			(xy 304.8 256.54) (xy 330.2 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3ca8465-7c89-45fe-854b-26723f5f4670")
+	)
+	(wire
+		(pts
+			(xy 307.34 252.73) (xy 307.34 238.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd51e586-b1db-4251-a590-7a706531caa3")
+	)
+	(wire
+		(pts
+			(xy 177.8 229.87) (xy 190.5 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd7c5560-6a17-4859-b198-d6314ee80e22")
+	)
+	(wire
+		(pts
+			(xy 217.17 160.02) (xy 254 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8d47c41-a0a6-4821-ab34-0245e64ff988")
+	)
+	(wire
+		(pts
+			(xy 241.3 264.16) (xy 254 264.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e28ad9b9-1990-4420-b7b7-8d7af794a952")
+	)
+	(wire
+		(pts
+			(xy 217.17 154.94) (xy 254 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea9be5dd-97bb-483b-b0e6-749946126005")
+	)
+	(wire
+		(pts
+			(xy 279.4 236.22) (xy 309.88 236.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efb340d9-f966-4337-92d0-a1a2c4cbffa9")
+	)
+	(wire
+		(pts
+			(xy 279.4 213.36) (xy 330.2 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa633397-b5ae-486a-964a-4e4fb50ec57f")
+	)
+	(wire
+		(pts
+			(xy 279.4 200.66) (xy 330.2 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcbb8cfd-cf1f-48f8-a496-e05e9b40dfd5")
+	)
 	(text_box "STM32WLE5"
 		(exclude_from_sim no)
-		(at 283.21 190.5 0)
+		(at 254 88.9 0)
 		(size 25.4 25.4)
 		(stroke
 			(width 0)
@@ -28,7 +398,7 @@
 	)
 	(text_box "Flight Controller"
 		(exclude_from_sim no)
-		(at 177.8 190.5 0)
+		(at 139.7 172.72 0)
 		(size 25.4 25.4)
 		(stroke
 			(width 0)
@@ -46,7 +416,7 @@
 	)
 	(text_box "Antenna"
 		(exclude_from_sim no)
-		(at 330.2 114.3 0)
+		(at 381 139.7 0)
 		(size 25.4 25.4)
 		(stroke
 			(width 0)
@@ -64,7 +434,7 @@
 	)
 	(text_box "RESET Circuit"
 		(exclude_from_sim no)
-		(at 177.8 254 0)
+		(at 139.7 209.55 0)
 		(size 25.4 25.4)
 		(stroke
 			(width 0)
@@ -82,7 +452,7 @@
 	)
 	(text_box "ATWIL1000C"
 		(exclude_from_sim no)
-		(at 177.8 114.3 0)
+		(at 381 177.8 0)
 		(size 25.4 25.4)
 		(stroke
 			(width 0)
@@ -98,26 +468,205 @@
 		)
 		(uuid "9f02367c-381c-437d-9015-f84d4728f8d1")
 	)
-	(text_box "USB Connector"
-		(exclude_from_sim no)
-		(at 254 254 0)
-		(size 25.4 25.4)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
+	(label "GND"
+		(at 177.8 229.87 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(uuid "d236df0f-3c1b-4775-a75f-65c49edb8b99")
+		(uuid "5777d73b-03bd-469c-8e59-7e29a07990fd")
+	)
+	(label "GND"
+		(at 245.11 264.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a03c3391-5319-4c66-8d2c-d60400dee2db")
+	)
+	(label "+3V3_2"
+		(at 242.57 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac854552-c3d6-46c9-babb-739b56d20e51")
+	)
+	(label "+3V3_2"
+		(at 177.8 214.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ac898522-05f5-4b00-bd5e-07ecb1e9ef58")
+	)
+	(label "GND"
+		(at 317.5 264.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c2e762eb-a244-427b-8302-cf43f54243b3")
+	)
+	(label "GND"
+		(at 317.5 219.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6c50159-4cce-4955-a0fb-cf06637cb61e")
+	)
+	(label "GND"
+		(at 177.8 262.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3fd7510-6a1d-4204-8a0b-2800c74ce6b3")
+	)
+	(hierarchical_label "FLIGHT_CTR_SPI_CLK"
+		(shape input)
+		(at 217.17 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "477ecedc-0dd9-4986-a530-c84d9bec4d0e")
+	)
+	(hierarchical_label "FLIGHT_CTR_SPI_MISO"
+		(shape output)
+		(at 217.17 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "700d67a0-3738-409e-b438-67b14a82d960")
+	)
+	(hierarchical_label "FLIGHT_CTR_SPI_NSS"
+		(shape input)
+		(at 217.17 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a6a73c7b-dafe-4682-bde8-d26b4c250c45")
+	)
+	(hierarchical_label "+3V3_3"
+		(shape input)
+		(at 317.5 176.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad1bd182-7e12-48d4-8b5d-c31200aaddd5")
+	)
+	(hierarchical_label "FLIGHT_CTR_UART_RX"
+		(shape output)
+		(at 217.17 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf40e0e3-4b5a-46c7-8466-52bb1dc467ad")
+	)
+	(hierarchical_label "FLIGHT_CTR_UART_TX"
+		(shape input)
+		(at 217.17 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c840b8b3-b9aa-4991-9ffe-3ec38b72b9d8")
+	)
+	(hierarchical_label "+3V3_2"
+		(shape input)
+		(at 217.17 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d5a2f07e-ff5c-45e4-b5fe-d2690fe85eba")
+	)
+	(hierarchical_label "GND"
+		(shape passive)
+		(at 241.3 264.16 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "da74db89-2cc9-4df4-b846-1172487188a7")
+	)
+	(hierarchical_label "RESET_IN"
+		(shape input)
+		(at 177.8 222.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3952e47-6114-49f1-a568-ddea19a964b1")
+	)
+	(hierarchical_label "FLIGHT_CTR_SPI_MOSI"
+		(shape input)
+		(at 217.17 160.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f1663ac8-8dc9-445d-ad90-3ca70a86e040")
 	)
 	(sheet
-		(at 342.9 190.5)
+		(at 330.2 241.3)
 		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -129,7 +678,7 @@
 		)
 		(uuid "036f860c-85f7-4ad6-9942-a3edc088e744")
 		(property "Sheetname" "Activity LEDs Driver"
-			(at 342.9 189.7884 0)
+			(at 330.2 240.5884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -138,13 +687,53 @@
 			)
 		)
 		(property "Sheetfile" "[0406] - Activity LEDs Driver.kicad_sch"
-			(at 342.9 216.4846 0)
+			(at 330.2 267.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "GND" passive
+			(at 330.2 264.16 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "fdffc36b-5b13-4a94-8e1b-87ba08795076")
+		)
+		(pin "LED_SIG_GREEN" input
+			(at 330.2 252.73 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "128c49f6-f671-4d6f-a3d8-781ceb227845")
+		)
+		(pin "LED_SIG_RED" input
+			(at 330.2 256.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c17f197a-bd58-441a-a2b7-2d9626f92fed")
+		)
+		(pin "LED_SIG_BLUE" input
+			(at 330.2 248.92 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a9720dfc-95a4-45e7-a7f7-ed8464acca5b")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -155,7 +744,75 @@
 		)
 	)
 	(sheet
-		(at 292.1 114.3)
+		(at 190.5 241.3)
+		(size 25.4 25.4)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "28fb611e-9be9-40da-a4d5-7a0eb68011b2")
+		(property "Sheetname" "DEBUG UART"
+			(at 190.5 240.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[020203] - DEBUG UART.kicad_sch"
+			(at 190.5 267.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "UART_TX" input
+			(at 215.9 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dc2e2781-8533-4752-a881-3755b1d7aef0")
+		)
+		(pin "UART_RX" output
+			(at 215.9 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "08ca84fd-d16e-4d1d-b7bf-efa03c49642b")
+		)
+		(pin "GND" passive
+			(at 190.5 262.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b6043755-32e7-466e-b697-52d7a564d51e")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
+					(page "40")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 330.2 139.7)
 		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -167,7 +824,7 @@
 		)
 		(uuid "2faab146-56a0-4161-9bf2-36499f684d79")
 		(property "Sheetname" "Antenna Driver"
-			(at 292.1 113.5884 0)
+			(at 330.2 138.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -176,7 +833,7 @@
 			)
 		)
 		(property "Sheetfile" "[0404] - Antenna Driver.kicad_sch"
-			(at 292.1 140.2846 0)
+			(at 330.2 165.6846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -193,46 +850,8 @@
 		)
 	)
 	(sheet
-		(at 254 254)
-		(size 25.4 25.4)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "4fa085b6-6c8d-4af2-84ac-a5f6c225164c")
-		(property "Sheetname" "USB Connector"
-			(at 254 253.2884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "[0403] - USB Connector.kicad_sch"
-			(at 254 279.9846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795"
-					(page "17")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 215.9 114.3)
-		(size 25.4 25.4)
+		(at 330.2 172.72)
+		(size 25.4 50.8)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -243,7 +862,7 @@
 		)
 		(uuid "572dcb6a-579b-4867-89b1-35ab8a6f8fad")
 		(property "Sheetname" "ATWIL1000C Driver"
-			(at 215.9 113.5884 0)
+			(at 330.2 172.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -252,13 +871,133 @@
 			)
 		)
 		(property "Sheetfile" "[0405] - ATWIL1000C Driver.kicad_sch"
-			(at 215.9 140.2846 0)
+			(at 330.2 224.1046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "ATWILC_IRQN" output
+			(at 330.2 193.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "eb4f04a2-ef88-4b92-aa78-db3efdbdbdbc")
+		)
+		(pin "ATWILC_WAKEUP" output
+			(at 330.2 190.5 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e927032b-6fde-45e1-9f78-501f2ff9885e")
+		)
+		(pin "I2C_SCL" input
+			(at 330.2 213.36 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a46481e5-20f0-47ca-a111-1e1478bda0cd")
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 330.2 210.82 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "25837e61-a238-4fce-96e4-6cfcaf787b1a")
+		)
+		(pin "SPI_MISO" output
+			(at 330.2 203.2 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3dfd73d0-1cec-4a38-87bb-e345007e270d")
+		)
+		(pin "SPI_MOSI" input
+			(at 330.2 205.74 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "58907826-23b1-47ce-b07b-a04b885dccce")
+		)
+		(pin "SPI_CS" input
+			(at 330.2 198.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5122b9e9-238d-4338-8706-3f77982d0b56")
+		)
+		(pin "SPI_SCK" input
+			(at 330.2 200.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cf64f795-96ee-475d-a78b-8eefc94f8c50")
+		)
+		(pin "GND" passive
+			(at 330.2 219.71 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b96f8e76-81c5-4b9c-aea5-8a326e698a90")
+		)
+		(pin "ATWILC_RESETN" input
+			(at 330.2 187.96 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "47ba7089-0e7f-4b2f-97e2-4cdc41e4e274")
+		)
+		(pin "ATWILC_CHIPN" input
+			(at 330.2 185.42 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "cb16d278-e1c6-4c82-8c14-b9839fd2fb23")
+		)
+		(pin "+PWR" input
+			(at 330.2 176.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "95a6306f-aa1f-482b-a97f-08441191909b")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -269,7 +1008,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 254)
+		(at 190.5 209.55)
 		(size 25.4 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -281,7 +1020,7 @@
 		)
 		(uuid "7d707aad-e237-43ec-b9e0-31f445760984")
 		(property "Sheetname" "RESET Circuit"
-			(at 177.8 253.2884 0)
+			(at 190.5 208.8384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -290,13 +1029,53 @@
 			)
 		)
 		(property "Sheetfile" "[0402] - RESET Circuit.kicad_sch"
-			(at 177.8 279.9846 0)
+			(at 190.5 235.5346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "BUFF_OUT" output
+			(at 215.9 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8c4f020a-c4cb-4964-b5ed-a687d66051b6")
+		)
+		(pin "BUFF_IN" input
+			(at 190.5 222.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d3a2c2b4-0bac-43a0-a633-cef73c030e88")
+		)
+		(pin "GND" passive
+			(at 190.5 229.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "558b2558-1624-4a24-979b-96363772ed0b")
+		)
+		(pin "PWR" input
+			(at 190.5 214.63 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "78321ee2-f8c1-459f-acee-65bdbb6c7d8e")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -307,8 +1086,8 @@
 		)
 	)
 	(sheet
-		(at 254 190.5)
-		(size 25.4 25.4)
+		(at 254 139.7)
+		(size 25.4 127)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -319,7 +1098,7 @@
 		)
 		(uuid "ed29e548-608f-4c6d-baf5-be9a7e3f9a1c")
 		(property "Sheetname" "STM32WLE5 Driver"
-			(at 254 189.7884 0)
+			(at 254 138.9884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -328,13 +1107,253 @@
 			)
 		)
 		(property "Sheetfile" "[0401] - STM32WLE5 Driver.kicad_sch"
-			(at 254 216.4846 0)
+			(at 254 267.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "+PWR" input
+			(at 254 146.05 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "302c204f-3b1c-4b5a-aea3-c9ee8d81e30e")
+		)
+		(pin "GND" passive
+			(at 254 264.16 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9c0d923e-17aa-4335-b3d5-934ce19a9b1f")
+		)
+		(pin "STM32WLE5_NRESET" input
+			(at 254 222.25 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9ee1c9b5-49cc-41cd-a1ba-801d06715882")
+		)
+		(pin "STM32WLE5_UART1_RX" input
+			(at 254 256.54 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3d17cdc4-20c1-483f-a0dc-f1193584554b")
+		)
+		(pin "STM32WLE5_UART1_TX" output
+			(at 254 251.46 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ce153282-9a5b-4dca-bdc4-9d9496ebbb61")
+		)
+		(pin "STM32WLE5_SPI_SCK" input
+			(at 254 154.94 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5c97347b-1855-48d1-8ec7-3a8537a7bb9d")
+		)
+		(pin "STM32WLE5_SPI_MISO" output
+			(at 254 157.48 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "13f99f95-d13c-40e9-bceb-5fbbc9811e65")
+		)
+		(pin "STM32WLE5_SPI_MOSI" input
+			(at 254 160.02 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d807619c-d27e-491d-bda9-bdd206173798")
+		)
+		(pin "STM32WLE5_PWM_CH3" output
+			(at 279.4 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6fb18955-edf7-4f75-953f-0ef894ef9a3b")
+		)
+		(pin "STM32WLE5_LPUART1_TX" output
+			(at 254 167.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0cfa3e3e-b383-4dad-8c46-ffa4c795bde9")
+		)
+		(pin "STM32WLE5_LPUART1_RX" input
+			(at 254 165.1 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "207916f9-f7d0-4149-869d-c433c0214f77")
+		)
+		(pin "STM32WLE5_SPI_NSS" input
+			(at 254 152.4 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ea3569d0-053c-420d-b3d9-1fcef15371d6")
+		)
+		(pin "STM32WLE5_PWM_CH1" output
+			(at 279.4 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0979fc11-bf2b-4ae4-867e-00bef534caaa")
+		)
+		(pin "STM32WLE5_PWM_CH2" output
+			(at 279.4 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "44f041dd-8847-40d9-b09a-fcbec1515190")
+		)
+		(pin "STM32WLE5_SPI2_NSS" output
+			(at 279.4 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "05ce10a9-5204-46bd-8210-24ad0b4ecfdd")
+		)
+		(pin "STM32WLE5_SPI2_SCK" output
+			(at 279.4 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a0860f6c-420b-4139-b0df-808df9b8a99f")
+		)
+		(pin "STM32WLE5_I2C2_SDA" bidirectional
+			(at 279.4 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2d865caf-acf0-4a73-8fe8-d60dda602ed5")
+		)
+		(pin "STM32WLE5_SPI2_MOSI" output
+			(at 279.4 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9f1631a7-10e2-4191-929c-7ff168801c9b")
+		)
+		(pin "STM32WLE5_I2C2_SCL" output
+			(at 279.4 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6b3b4b8c-3c9c-42f6-a392-5ceb05799a08")
+		)
+		(pin "STM32WLE5_SPI2_MISO" input
+			(at 279.4 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "48cbebdd-4d26-494d-9e2b-04794b6e64a1")
+		)
+		(pin "ATWILC_IRQN" input
+			(at 279.4 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f6c044a7-2a85-4bc6-9c79-1fa65a004ea4")
+		)
+		(pin "ATWILC_WAKEUP" input
+			(at 279.4 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "dda45a6e-8a93-4b3c-b5fc-9e8b7b519506")
+		)
+		(pin "ATWILC_RESETN" output
+			(at 279.4 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2b4aec47-dd2f-43f1-8257-5093a2e11b09")
+		)
+		(pin "ATWILC_CHIPN" output
+			(at 279.4 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "86660906-fe2d-4d64-a169-9b73ab29b3e6")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"

@@ -16,7 +16,7 @@ Vendor
 Purchase Link:
 
 SCH CHECK: SCH (N/A) / SCH (CHECKED)
-PCB CHECk: PCB (N/A) / PCB (CHECKED)
+PCB CHECK: PCB (N/A) / PCB (CHECKED)
 
 ----------------------------------------------------------------
 Part Number (Manufacturer)
