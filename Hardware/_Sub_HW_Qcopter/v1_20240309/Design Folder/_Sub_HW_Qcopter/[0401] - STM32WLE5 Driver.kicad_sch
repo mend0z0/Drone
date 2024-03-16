@@ -211,6 +211,209 @@
 				)
 			)
 		)
+		(symbol "_SCHLIB_Qcopter:CAP_CER_10pF_50V_C0G_C0603"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "10pF_50V_C0G"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C100K5GACTU"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "10 pF ±10% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "C0603"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "C0603C100K5GAC7867"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "KEMET"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "399-C0603C100K5GAC7867TR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kemet/C0603C100K5GAC7867/2199657"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "10 pF ±10% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_10pF_50V_C0G_C0603_0_0"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_10pF_50V_C0G_C0603_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "_SCHLIB_Qcopter:CAP_CER_1uF_10V_X7R_C0603"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -405,6 +608,220 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:CONN_HDR_1X3_VERT_THD-1.27MM"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "HDR_1X3_THD-1.27MM"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+				(at 3.556 16.256 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/199953/hph1-b-xx-ua-data-sheet.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Connector Header Through Hole 3 position 0.050\" (1.27mm)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "THD-VERT"
+				(at 3.556 33.782 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "HPH1-B-03-UA"
+				(at 3.556 18.542 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Adam Tech"
+				(at 3.556 23.622 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "2057-HPH1-B-03-UA-ND"
+				(at 3.556 21.082 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.556 26.162 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/adam-tech/HPH1-B-03-UA/9831285"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.556 28.702 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.556 31.242 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "Connector Header Through Hole 3 position 0.050\" (1.27mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CONN_HDR_1X3_VERT_THD-1.27MM_1_1"
+				(rectangle
+					(start 5.08 0)
+					(end 12.7 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "HDR 1X3\n1.27MM"
+					(at 9.652 -4.826 900)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1898,6 +2315,269 @@
 				)
 			)
 		)
+		(symbol "_SCHLIB_Qcopter:XTAL_CS06465-32M_32MHz_10pF_4-SMD (2.0X1.6)"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "X"
+				(at 3.556 5.588 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "32MHz_10pF_10ppm"
+				(at 3.81 8.128 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "footrpring"
+				(at 3.81 18.288 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/691/NX2016SA-32M-EXS00A-CS06465_SS.pdf"
+				(at 3.556 10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "32 MHz Crystal 10pF 60 Ohms 4-SMD, No Lead"
+				(at 3.556 15.494 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "4-SMD(2.0X1.6)"
+				(at 3.81 36.83 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "CS06465-32M"
+				(at 3.81 21.082 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "NDK America, Inc."
+				(at 3.81 25.908 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "644-CS06465-32MTR-ND"
+				(at 3.81 23.622 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 28.448 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/ndk-america-inc/CS06465-32M/7645290"
+				(at 3.556 13.208 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 31.496 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 34.036 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "32 MHz Crystal 10pF 60 Ohms 4-SMD, No Lead"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XTAL_CS06465-32M_32MHz_10pF_4-SMD (2.0X1.6)_0_1"
+				(polyline
+					(pts
+						(xy 5.08 1.27) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 3.81) (xy 3.81 -3.81) (xy 8.89 -3.81) (xy 8.89 3.81) (xy 3.81 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.715 2.54) (xy 6.985 2.54) (xy 6.985 -2.54) (xy 5.715 -2.54) (xy 5.715 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "XTAL_CS06465-32M_32MHz_10pF_4-SMD (2.0X1.6)_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 90)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 152.4 218.44)
@@ -1906,10 +2586,22 @@
 		(uuid "050a0917-b4a2-4613-b2c7-91eb690ba48b")
 	)
 	(junction
+		(at 302.26 182.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "136329b9-bd6f-4ed0-8f4f-6b02df92599c")
+	)
+	(junction
 		(at 101.6 218.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3acbb4ae-070c-4698-b757-dae1c1980a2b")
+	)
+	(junction
+		(at 302.26 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4084f15e-721e-4698-aaea-078acef7ced1")
 	)
 	(junction
 		(at 76.2 194.31)
@@ -1954,10 +2646,22 @@
 		(uuid "ac1f8287-13f7-402b-8cb7-d30f323bfc39")
 	)
 	(junction
+		(at 240.03 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e202d32d-8fff-4a5e-8687-32bde316d587")
+	)
+	(junction
 		(at 101.6 194.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e65762f6-3062-40e7-857d-01deeb72d559")
+	)
+	(junction
+		(at 292.1 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd272b1f-1150-4e9a-856b-9fd5f5699e08")
 	)
 	(junction
 		(at 177.8 218.44)
@@ -1966,20 +2670,8 @@
 		(uuid "ff8c5cc9-d83b-41d6-93ee-31a920918e8b")
 	)
 	(no_connect
-		(at 402.59 189.23)
-		(uuid "4138929e-ce5b-4b90-b949-ce04865c477e")
-	)
-	(no_connect
-		(at 402.59 217.17)
-		(uuid "69a23494-4514-4d36-911a-b0931bf91bce")
-	)
-	(no_connect
 		(at 359.41 181.61)
 		(uuid "7ad0a7ce-bbf2-4663-9a47-da269f619087")
-	)
-	(no_connect
-		(at 402.59 232.41)
-		(uuid "8e391301-b252-49ac-b1f0-b88133cc5fc1")
 	)
 	(no_connect
 		(at 359.41 179.07)
@@ -1994,6 +2686,16 @@
 			(type default)
 		)
 		(uuid "04e467d6-e625-42c6-ad02-786e18d9fb47")
+	)
+	(wire
+		(pts
+			(xy 273.05 175.26) (xy 292.1 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ca9d005-2a53-47fe-8f19-87063c850e38")
 	)
 	(wire
 		(pts
@@ -2047,6 +2749,16 @@
 	)
 	(wire
 		(pts
+			(xy 302.26 182.88) (xy 330.2 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "214056ac-1b33-4698-8a14-c6038c7807d7")
+	)
+	(wire
+		(pts
 			(xy 152.4 196.85) (xy 152.4 203.2)
 		)
 		(stroke
@@ -2087,13 +2799,23 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 196.85) (xy 359.41 196.85)
+			(xy 240.03 167.64) (xy 259.08 167.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29c2cb5e-03ae-4555-b6bd-e3ef41aac0a4")
+		(uuid "2d01e30b-be53-4966-8463-e91766244838")
+	)
+	(wire
+		(pts
+			(xy 402.59 160.02) (xy 419.1 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e7b1c46-0b02-4def-8540-5ca8cd296b5a")
 	)
 	(wire
 		(pts
@@ -2107,6 +2829,36 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 199.39) (xy 359.41 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3157f1f0-a430-421d-9d59-fb7b35cb5bd5")
+	)
+	(wire
+		(pts
+			(xy 334.01 226.06) (xy 359.41 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34dc0257-2051-4be1-b4c6-d5e27525a2ca")
+	)
+	(wire
+		(pts
+			(xy 302.26 167.64) (xy 359.41 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36efd10b-5af3-45a9-a330-6e40ffa0551e")
+	)
+	(wire
+		(pts
 			(xy 101.6 215.9) (xy 101.6 218.44)
 		)
 		(stroke
@@ -2114,6 +2866,36 @@
 			(type default)
 		)
 		(uuid "389ad180-48ce-4460-986c-e33bc9a15f55")
+	)
+	(wire
+		(pts
+			(xy 355.6 281.94) (xy 374.65 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d235581-99ce-4392-9ca7-a7626f637364")
+	)
+	(wire
+		(pts
+			(xy 220.98 175.26) (xy 240.03 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e9c70e7-dbfa-4fd6-9741-5c2d58b5df0a")
+	)
+	(wire
+		(pts
+			(xy 152.4 196.85) (xy 359.41 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f10b208-b4d7-404d-82c4-c97e2f674e17")
 	)
 	(wire
 		(pts
@@ -2157,6 +2939,16 @@
 	)
 	(wire
 		(pts
+			(xy 419.1 189.23) (xy 402.59 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48019b04-541d-4daa-a7a1-42d13848aff2")
+	)
+	(wire
+		(pts
 			(xy 355.6 191.77) (xy 355.6 194.31)
 		)
 		(stroke
@@ -2167,6 +2959,26 @@
 	)
 	(wire
 		(pts
+			(xy 355.6 279.4) (xy 374.65 279.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54929f75-2508-4229-a45e-1192d6a1825c")
+	)
+	(wire
+		(pts
+			(xy 402.59 157.48) (xy 419.1 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57ee3eb2-cae4-4ead-86e3-09dd75b632ff")
+	)
+	(wire
+		(pts
 			(xy 419.1 227.33) (xy 402.59 227.33)
 		)
 		(stroke
@@ -2174,16 +2986,6 @@
 			(type default)
 		)
 		(uuid "5d5324bf-bc40-4f35-84bb-6f944a83f4ba")
-	)
-	(wire
-		(pts
-			(xy 330.2 154.94) (xy 359.41 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5dc7be53-ed1e-41d8-90eb-e1f59d8f4b98")
 	)
 	(wire
 		(pts
@@ -2204,6 +3006,16 @@
 			(type default)
 		)
 		(uuid "62425481-eb9f-4c82-bcfc-671b788be0db")
+	)
+	(wire
+		(pts
+			(xy 402.59 154.94) (xy 419.1 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68496927-ca01-4d86-918d-8684c9a86e6a")
 	)
 	(wire
 		(pts
@@ -2257,6 +3069,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.2 154.94) (xy 359.41 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "711403a1-5d92-4876-802e-8b10be10cd02")
+	)
+	(wire
+		(pts
 			(xy 304.8 152.4) (xy 304.8 157.48)
 		)
 		(stroke
@@ -2274,6 +3096,16 @@
 			(type default)
 		)
 		(uuid "7874f9e7-198d-4b60-b7dc-3ed0d6f489c5")
+	)
+	(wire
+		(pts
+			(xy 355.6 276.86) (xy 374.65 276.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a3f364-3051-475c-a152-b0954e9b338a")
 	)
 	(wire
 		(pts
@@ -2307,6 +3139,16 @@
 	)
 	(wire
 		(pts
+			(xy 334.01 212.09) (xy 359.41 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "861a9c20-e6b7-4340-83e6-a80300edb404")
+	)
+	(wire
+		(pts
 			(xy 419.1 207.01) (xy 402.59 207.01)
 		)
 		(stroke
@@ -2337,13 +3179,23 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 194.31) (xy 355.6 194.31)
+			(xy 402.59 162.56) (xy 419.1 162.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "898482fc-d5b0-4e61-859c-0f54c18583d7")
+		(uuid "8af86453-872b-4e6b-87de-3925a6a94166")
+	)
+	(wire
+		(pts
+			(xy 419.1 217.17) (xy 402.59 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b110215-f1b3-4f42-987b-e04d71959b59")
 	)
 	(wire
 		(pts
@@ -2357,6 +3209,16 @@
 	)
 	(wire
 		(pts
+			(xy 330.2 170.18) (xy 330.2 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "904c8474-ea6c-46de-ae6c-23337e97bfe8")
+	)
+	(wire
+		(pts
 			(xy 58.42 218.44) (xy 76.2 218.44)
 		)
 		(stroke
@@ -2364,6 +3226,16 @@
 			(type default)
 		)
 		(uuid "90e04a55-21f6-442b-ae86-6864a3602193")
+	)
+	(wire
+		(pts
+			(xy 271.78 182.88) (xy 302.26 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c8d0fc-53c2-45e2-8de6-d570e8c07ef2")
 	)
 	(wire
 		(pts
@@ -2377,6 +3249,16 @@
 	)
 	(wire
 		(pts
+			(xy 334.01 228.6) (xy 359.41 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d3bc44-4bf2-4cc5-8d92-9b33bbcdc800")
+	)
+	(wire
+		(pts
 			(xy 419.1 179.07) (xy 402.59 179.07)
 		)
 		(stroke
@@ -2384,6 +3266,36 @@
 			(type default)
 		)
 		(uuid "970f96e7-9a32-43c3-860e-d9cb09635d75")
+	)
+	(wire
+		(pts
+			(xy 240.03 182.88) (xy 240.03 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "984cd4fe-0802-4e76-b3fb-e7c48ae78cf0")
+	)
+	(wire
+		(pts
+			(xy 330.2 170.18) (xy 359.41 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ca6aff5-6ba8-43fc-a69d-59d432fde4a0")
+	)
+	(wire
+		(pts
+			(xy 302.26 181.61) (xy 302.26 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d23bae9-cd2c-4457-ad23-698049033b0c")
 	)
 	(wire
 		(pts
@@ -2397,6 +3309,16 @@
 	)
 	(wire
 		(pts
+			(xy 271.78 167.64) (xy 302.26 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0355c2c-40be-43f8-accf-b249e61fbb49")
+	)
+	(wire
+		(pts
 			(xy 203.2 218.44) (xy 177.8 218.44)
 		)
 		(stroke
@@ -2404,6 +3326,16 @@
 			(type default)
 		)
 		(uuid "a06ca6e6-b5a6-4698-af38-cca1a7e9115c")
+	)
+	(wire
+		(pts
+			(xy 292.1 175.26) (xy 292.1 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1427734-1138-4a07-b5aa-0ed18da8bce3")
 	)
 	(wire
 		(pts
@@ -2447,6 +3379,56 @@
 	)
 	(wire
 		(pts
+			(xy 402.59 165.1) (xy 419.1 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ce8108-0c55-45c0-8ca2-634f9dbdef2c")
+	)
+	(wire
+		(pts
+			(xy 334.01 209.55) (xy 359.41 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b42e2db2-d74e-49f1-8804-9f393fd3e386")
+	)
+	(wire
+		(pts
+			(xy 259.08 182.88) (xy 240.03 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb53313a-a100-4a48-8763-aa4a8f84b2c3")
+	)
+	(wire
+		(pts
+			(xy 294.64 176.53) (xy 292.1 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7e676b7-8c43-4339-a243-418cebe44915")
+	)
+	(wire
+		(pts
+			(xy 240.03 175.26) (xy 240.03 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ebbae8-a86e-4874-8425-02b7c11a35ae")
+	)
+	(wire
+		(pts
 			(xy 419.1 181.61) (xy 402.59 181.61)
 		)
 		(stroke
@@ -2454,6 +3436,16 @@
 			(type default)
 		)
 		(uuid "cab43990-4e84-445a-bf80-3308110325bb")
+	)
+	(wire
+		(pts
+			(xy 292.1 176.53) (xy 292.1 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0a19859-d32e-40b3-8493-052ce4b92dfc")
 	)
 	(wire
 		(pts
@@ -2474,6 +3466,26 @@
 			(type default)
 		)
 		(uuid "df222d4c-8e50-4cef-9d1e-65b2c9f69210")
+	)
+	(wire
+		(pts
+			(xy 292.1 173.99) (xy 294.64 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0a756af-683a-4e6b-96b1-331d11ac485d")
+	)
+	(wire
+		(pts
+			(xy 419.1 232.41) (xy 402.59 232.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea926235-20fa-4c51-a581-8ecdf59f0c93")
 	)
 	(wire
 		(pts
@@ -2547,16 +3559,69 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 199.39) (xy 359.41 199.39)
+			(xy 302.26 167.64) (xy 302.26 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f8d3ca10-114e-4e61-aa54-35de40e7d430")
+		(uuid "f370c261-d75a-40ad-ac31-916a12e77247")
+	)
+	(wire
+		(pts
+			(xy 101.6 194.31) (xy 355.6 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa4494a9-224b-491c-9b1b-4ce534a7c6b0")
+	)
+	(rectangle
+		(start 353.06 271.78)
+		(end 411.48 298.45)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 31602a57-8e44-43ef-894c-de3b7d4d7508)
+	)
+	(text "MAKE SURE ABOUT THE CORRECT MCU AS IT HAS A BT AND LOAR THING!!!"
+		(exclude_from_sim no)
+		(at 252.73 100.584 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+			)
+		)
+		(uuid "3de927ad-8e68-4a61-9d05-b0a33d7590bd")
+	)
+	(text "PROG HDR"
+		(exclude_from_sim no)
+		(at 379.476 292.862 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "68ba35af-4f28-4d1a-bf03-4f00d05bd62c")
+	)
+	(label "STM32WLE5_GND"
+		(at 355.6 276.86 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0279c038-ac42-4d7a-bfe9-04b5d1aa8db8")
 	)
 	(label "STM32WLE5_NRST"
-		(at 341.63 154.94 0)
+		(at 334.01 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2566,8 +3631,19 @@
 		)
 		(uuid "1028cb1c-01dd-42cc-9b07-9c4ef40fcad9")
 	)
+	(label "STM32WLE5_OSC-IN"
+		(at 334.01 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ea390b5-2ed0-47ef-906a-c4438a7a642e")
+	)
 	(label "STM32WLE5_VDD"
-		(at 330.2 196.85 0)
+		(at 334.01 196.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2576,6 +3652,17 @@
 			(justify left bottom)
 		)
 		(uuid "28f57047-a325-4088-b8dd-951975912303")
+	)
+	(label "STM32WLE5_+1.55V"
+		(at 334.01 228.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "295b60ca-30b1-4ea7-bdee-67a4c6c1dc0f")
 	)
 	(label "STM32WLE5_GND"
 		(at 342.9 241.3 0)
@@ -2589,7 +3676,7 @@
 		(uuid "29d6896c-ccb4-484b-8867-89c4e93f9b11")
 	)
 	(label "STM32WLE5_VDD"
-		(at 330.2 194.31 0)
+		(at 334.01 194.31 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2598,6 +3685,28 @@
 			(justify left bottom)
 		)
 		(uuid "310872ac-00e4-4ffc-905e-3be92d84c1d3")
+	)
+	(label "STM32WLE5_SWCLK"
+		(at 355.6 279.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3fab9171-6f04-4ce3-8f33-5da8b04bdca6")
+	)
+	(label "STM32WLE5_SWDIO"
+		(at 355.6 281.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54134cc9-ae02-4139-b735-c8bfea0915da")
 	)
 	(label "STM32WLE5_VDD"
 		(at 285.75 133.35 0)
@@ -2611,6 +3720,28 @@
 		(uuid "570087f1-a0c2-4bb3-bf47-56b700d28870")
 	)
 	(label "STM32WLE5_GND"
+		(at 273.05 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5db16e68-401e-4a6f-b12e-27b65f192b6f")
+	)
+	(label "STM32WLE5_OSC-OUT"
+		(at 334.01 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66a2c6a5-514a-450a-907b-3970094890e6")
+	)
+	(label "STM32WLE5_GND"
 		(at 58.42 218.44 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2620,6 +3751,17 @@
 			(justify left bottom)
 		)
 		(uuid "76b4eb1c-1d62-4a9c-be3a-22c3ad957173")
+	)
+	(label "STM32WLE5_+1.55V"
+		(at 334.01 226.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "85dde8cc-8395-477e-b74a-d85f2d82650a")
 	)
 	(label "STM32WLE5_GND"
 		(at 241.3 157.48 0)
@@ -2633,7 +3775,29 @@
 		(uuid "8ff9f523-2da6-4456-bdec-433258d089ad")
 	)
 	(label "STM32WLE5_VDD"
-		(at 330.2 199.39 0)
+		(at 334.01 212.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a3966eff-5391-400a-89fb-c5356576ce34")
+	)
+	(label "STM32WLE5_GND"
+		(at 220.98 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c6cd8eaa-9b37-4201-ae45-fb67e099bf4a")
+	)
+	(label "STM32WLE5_VDD"
+		(at 334.01 199.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2642,6 +3806,17 @@
 			(justify left bottom)
 		)
 		(uuid "f3feb086-8533-457d-bd21-920f3c5468ba")
+	)
+	(label "STM32WLE5_VDD"
+		(at 334.01 209.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fa3de02a-59d9-42db-88d9-fc6585141ff0")
 	)
 	(hierarchical_label "STM32WLE5_UART1_RX"
 		(shape input)
@@ -2691,6 +3866,30 @@
 		)
 		(uuid "2d48a87b-c3a5-4b93-aadb-dc5766a807d7")
 	)
+	(hierarchical_label "STM32WLE5_RFIP"
+		(shape bidirectional)
+		(at 419.1 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "34741d90-56da-4eda-bc8a-4ff9c39b9bcf")
+	)
+	(hierarchical_label "STM32WLE5_RFOHP"
+		(shape bidirectional)
+		(at 419.1 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3c6479b6-15c3-45a6-a3c9-c59c0e9239a1")
+	)
 	(hierarchical_label "STM32WLE5_PWM_CH1"
 		(shape output)
 		(at 419.1 191.77 0)
@@ -2702,6 +3901,18 @@
 			(justify left)
 		)
 		(uuid "3e3ade51-8619-43df-b214-219a46c1d7f6")
+	)
+	(hierarchical_label "STM32WLE5_RFOLP"
+		(shape bidirectional)
+		(at 419.1 160.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "50ce2b96-4f40-4e67-800d-e539dc448c68")
 	)
 	(hierarchical_label "STM32WLE5_I2C2_SDA"
 		(shape bidirectional)
@@ -2763,6 +3974,18 @@
 		)
 		(uuid "771b210e-2a96-416e-b566-ede074282de9")
 	)
+	(hierarchical_label "FE_CTRL1"
+		(shape output)
+		(at 419.1 189.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "77dcc101-9374-4cc3-8a29-0fa8f2e47409")
+	)
 	(hierarchical_label "ATWILC_WAKEUP"
 		(shape input)
 		(at 419.1 207.01 0)
@@ -2786,6 +4009,18 @@
 			(justify left)
 		)
 		(uuid "81a13a39-6da7-435f-a808-83fff86eff3a")
+	)
+	(hierarchical_label "FE_CTRL3"
+		(shape output)
+		(at 419.1 232.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "841b22b9-5894-4d5d-b38e-d4b33e9891a4")
 	)
 	(hierarchical_label "STM32WLE5_SPI_NSS"
 		(shape input)
@@ -2847,6 +4082,18 @@
 		)
 		(uuid "b425727c-5e07-47cd-b7cc-a6911a09260f")
 	)
+	(hierarchical_label "STM32WLE5_VRPA"
+		(shape bidirectional)
+		(at 419.1 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b878731e-2878-44fe-8f58-ebfb3e8f7eb5")
+	)
 	(hierarchical_label "GND"
 		(shape passive)
 		(at 335.28 241.3 180)
@@ -2870,6 +4117,18 @@
 			(justify left)
 		)
 		(uuid "bff64bcf-ebb5-4a62-8d01-bbc972a0d0c1")
+	)
+	(hierarchical_label "FE_CTRL2"
+		(shape output)
+		(at 419.1 217.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3d53bf4-858c-4fd0-88a0-0ffb20711175")
 	)
 	(hierarchical_label "STM32WLE5_PWM_CH3"
 		(shape output)
@@ -2918,6 +4177,18 @@
 			(justify left)
 		)
 		(uuid "f2c84efa-ad1e-4198-9079-84fa57e67150")
+	)
+	(hierarchical_label "STM32WLE5_RFIN"
+		(shape bidirectional)
+		(at 419.1 165.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f3754fda-0ed8-421e-9155-7cf0f13a0e76")
 	)
 	(hierarchical_label "+PWR"
 		(shape input)
@@ -3526,6 +4797,150 @@
 		)
 	)
 	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_10pF_50V_C0G_C0603")
+		(at 271.78 182.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39d65a5e-6326-4cba-b405-3edae13c4944")
+		(property "Reference" "C1508"
+			(at 274.574 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10pF_50V_C0G"
+			(at 252.222 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 267.97 199.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C100K5GACTU"
+			(at 268.224 192.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 pF ±10% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+			(at 268.224 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 256.286 184.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "C0603C100K5GAC7867"
+			(at 267.97 202.438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 267.97 207.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "399-C0603C100K5GAC7867TR-ND"
+			(at 267.97 204.978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 267.97 209.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kemet/C0603C100K5GAC7867/2199657"
+			(at 268.224 194.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 276.86 184.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 276.86 186.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5434537-d70d-4615-bd60-1e061c4fe68d")
+		)
+		(pin "2"
+			(uuid "73b3705b-0cfa-4886-8314-b535f071fd8e")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/ed29e548-608f-4c6d-baf5-be9a7e3f9a1c"
+					(reference "C1508")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_100nF_16V_X7R_C0603")
 		(at 152.4 203.2 270)
 		(unit 1)
@@ -4112,6 +5527,150 @@
 		)
 	)
 	(symbol
+		(lib_id "_SCHLIB_Qcopter:CAP_CER_10pF_50V_C0G_C0603")
+		(at 271.78 167.64 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87429ee4-13f0-4844-b1f5-c293be796159")
+		(property "Reference" "C1507"
+			(at 274.574 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10pF_50V_C0G"
+			(at 252.222 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 267.97 184.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/datasheet/C0603C100K5GACTU"
+			(at 268.224 176.784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 pF ±10% 50V Ceramic Capacitor C0G, NP0 0603 (1608 Metric)"
+			(at 268.224 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 256.286 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "C0603C100K5GAC7867"
+			(at 267.97 187.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 267.97 192.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "399-C0603C100K5GAC7867TR-ND"
+			(at 267.97 189.738 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 267.97 194.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/kemet/C0603C100K5GAC7867/2199657"
+			(at 268.224 179.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 276.86 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 276.86 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf6a5ef4-df29-4de5-8ec7-ef5989b4f9d0")
+		)
+		(pin "2"
+			(uuid "22070148-72e0-4795-af00-47382ac5c76d")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/ed29e548-608f-4c6d-baf5-be9a7e3f9a1c"
+					(reference "C1507")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "_SCHLIB_Qcopter:MECH_JUMPER_2POS_J1015")
 		(at 304.8 139.7 270)
 		(unit 1)
@@ -4262,6 +5821,159 @@
 		)
 	)
 	(symbol
+		(lib_id "_SCHLIB_Qcopter:CONN_HDR_1X3_VERT_THD-1.27MM")
+		(at 374.65 274.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a674866b-f0c1-4500-a5b4-c2f31762f211")
+		(property "Reference" "J1501"
+			(at 388.62 274.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HDR_1X3_THD-1.27MM"
+			(at 388.62 276.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
+			(at 378.206 258.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://app.adam-tech.com/products/download/data_sheet/199953/hph1-b-xx-ua-data-sheet.pdf"
+			(at 378.206 265.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 3 position 0.050\" (1.27mm)"
+			(at 378.206 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "THD-VERT"
+			(at 388.62 279.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "HPH1-B-03-UA"
+			(at 378.206 255.778 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Adam Tech"
+			(at 378.206 250.698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "2057-HPH1-B-03-UA-ND"
+			(at 378.206 253.238 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 378.206 248.158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/adam-tech/HPH1-B-03-UA/9831285"
+			(at 378.206 262.636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 388.62 281.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 388.62 284.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "2"
+			(uuid "947f19e8-5840-4ec4-81b3-48c082996ca0")
+		)
+		(pin "3"
+			(uuid "8dfac3fe-dd5b-4a66-96ce-0e0e4f10b0d2")
+		)
+		(pin "1"
+			(uuid "b347d1c7-bc57-4546-934f-60d9b7a0f9ce")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/ed29e548-608f-4c6d-baf5-be9a7e3f9a1c"
+					(reference "J1501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_100nF_16V_X7R_C0603")
 		(at 101.6 203.2 270)
 		(unit 1)
@@ -4406,6 +6118,162 @@
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/ed29e548-608f-4c6d-baf5-be9a7e3f9a1c"
 					(reference "C1501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:XTAL_CS06465-32M_32MHz_10pF_4-SMD (2.0X1.6)")
+		(at 302.26 168.91 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1a8cc89-90fe-4ef7-9f1e-074c9c0f9f92")
+		(property "Reference" "X1501"
+			(at 307.34 170.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "32MHz_10pF_10ppm"
+			(at 307.34 172.7199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "footrpring"
+			(at 320.548 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/691/NX2016SA-32M-EXS00A-CS06465_SS.pdf"
+			(at 312.928 172.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "32 MHz Crystal 10pF 60 Ohms 4-SMD, No Lead"
+			(at 317.754 172.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "4-SMD(2.0X1.6)"
+			(at 307.34 175.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "CS06465-32M"
+			(at 323.342 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "NDK America, Inc."
+			(at 328.168 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "644-CS06465-32MTR-ND"
+			(at 325.882 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 330.708 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/ndk-america-inc/CS06465-32M/7645290"
+			(at 315.468 172.466 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 307.34 177.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 307.34 180.3399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "4"
+			(uuid "1a3d20cc-32f0-490d-b795-6388d1b4452a")
+		)
+		(pin "2"
+			(uuid "3c8e38af-933e-4b9b-8bb4-3aba2cba6062")
+		)
+		(pin "3"
+			(uuid "74fcafc8-0574-451d-92e3-baffb03829ea")
+		)
+		(pin "1"
+			(uuid "3092131c-bdf8-4990-b861-06b9cf4ac0ce")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/52ef12aa-708a-4c3e-bdcf-f4b54bf97795/ed29e548-608f-4c6d-baf5-be9a7e3f9a1c"
+					(reference "X1501")
 					(unit 1)
 				)
 			)

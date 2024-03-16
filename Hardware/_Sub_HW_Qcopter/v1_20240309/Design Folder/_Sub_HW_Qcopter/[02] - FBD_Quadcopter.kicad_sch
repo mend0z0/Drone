@@ -10,7 +10,7 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 266.7 198.12) (xy 304.8 198.12)
+			(xy 266.7 204.47) (xy 304.8 204.47)
 		)
 		(stroke
 			(width 0)
@@ -40,7 +40,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 135.89) (xy 279.4 114.3)
+			(xy 285.75 135.89) (xy 285.75 106.68)
 		)
 		(stroke
 			(width 0)
@@ -50,7 +50,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 177.8) (xy 304.8 177.8)
+			(xy 266.7 184.15) (xy 304.8 184.15)
 		)
 		(stroke
 			(width 0)
@@ -70,6 +70,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 153.67) (xy 241.3 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37add13f-2676-46bd-b307-2d60af1368d6")
+	)
+	(wire
+		(pts
 			(xy 203.2 143.51) (xy 241.3 143.51)
 		)
 		(stroke
@@ -80,7 +90,17 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 158.75) (xy 241.3 158.75)
+			(xy 203.2 167.64) (xy 241.3 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b9f4703-4c0b-4f85-87a5-e93449a315c4")
+	)
+	(wire
+		(pts
+			(xy 203.2 160.02) (xy 241.3 160.02)
 		)
 		(stroke
 			(width 0)
@@ -90,7 +110,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 156.21) (xy 241.3 156.21)
+			(xy 203.2 157.48) (xy 241.3 157.48)
 		)
 		(stroke
 			(width 0)
@@ -100,7 +120,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 114.3) (xy 228.6 114.3)
+			(xy 285.75 106.68) (xy 222.25 106.68)
 		)
 		(stroke
 			(width 0)
@@ -110,7 +130,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 161.29) (xy 241.3 161.29)
+			(xy 203.2 162.56) (xy 241.3 162.56)
 		)
 		(stroke
 			(width 0)
@@ -120,7 +140,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 182.88) (xy 304.8 182.88)
+			(xy 266.7 189.23) (xy 304.8 189.23)
 		)
 		(stroke
 			(width 0)
@@ -130,7 +150,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 190.5) (xy 304.8 190.5)
+			(xy 266.7 196.85) (xy 304.8 196.85)
 		)
 		(stroke
 			(width 0)
@@ -150,7 +170,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 185.42) (xy 304.8 185.42)
+			(xy 266.7 191.77) (xy 304.8 191.77)
 		)
 		(stroke
 			(width 0)
@@ -180,7 +200,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 167.64) (xy 241.3 167.64)
+			(xy 203.2 172.72) (xy 241.3 172.72)
 		)
 		(stroke
 			(width 0)
@@ -190,7 +210,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 114.3) (xy 228.6 135.89)
+			(xy 203.2 165.1) (xy 241.3 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b47c02d0-4b21-4ac4-bc75-ac061b660d37")
+	)
+	(wire
+		(pts
+			(xy 222.25 106.68) (xy 222.25 135.89)
 		)
 		(stroke
 			(width 0)
@@ -210,7 +240,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 203.2) (xy 304.8 203.2)
+			(xy 292.1 212.09) (xy 304.8 212.09)
 		)
 		(stroke
 			(width 0)
@@ -220,7 +250,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 187.96) (xy 304.8 187.96)
+			(xy 266.7 194.31) (xy 304.8 194.31)
 		)
 		(stroke
 			(width 0)
@@ -230,7 +260,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 195.58) (xy 304.8 195.58)
+			(xy 266.7 201.93) (xy 304.8 201.93)
 		)
 		(stroke
 			(width 0)
@@ -240,7 +270,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 135.89) (xy 203.2 135.89)
+			(xy 222.25 135.89) (xy 203.2 135.89)
 		)
 		(stroke
 			(width 0)
@@ -250,7 +280,7 @@
 	)
 	(wire
 		(pts
-			(xy 304.8 135.89) (xy 279.4 135.89)
+			(xy 304.8 135.89) (xy 285.75 135.89)
 		)
 		(stroke
 			(width 0)
@@ -280,7 +310,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 172.72) (xy 241.3 172.72)
+			(xy 203.2 177.8) (xy 241.3 177.8)
 		)
 		(stroke
 			(width 0)
@@ -290,7 +320,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 203.2) (xy 241.3 203.2)
+			(xy 203.2 210.82) (xy 241.3 210.82)
 		)
 		(stroke
 			(width 0)
@@ -300,7 +330,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 170.18) (xy 241.3 170.18)
+			(xy 203.2 175.26) (xy 241.3 175.26)
 		)
 		(stroke
 			(width 0)
@@ -309,7 +339,7 @@
 		(uuid "fae37232-0c46-4950-a43b-734c7db6ba1c")
 	)
 	(label "GND"
-		(at 292.1 203.2 0)
+		(at 292.1 212.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -320,7 +350,7 @@
 		(uuid "58f55877-1ec9-47b7-8339-d29cac65d83b")
 	)
 	(label "GND"
-		(at 228.6 203.2 0)
+		(at 228.6 210.82 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -361,7 +391,7 @@
 			)
 		)
 		(pin "EN_+3V3_1" input
-			(at 203.2 156.21 0)
+			(at 203.2 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -381,7 +411,7 @@
 			(uuid "1460491a-24c9-401a-88bb-91a5a403b37e")
 		)
 		(pin "EN_+3V3_2" input
-			(at 203.2 158.75 0)
+			(at 203.2 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -391,7 +421,7 @@
 			(uuid "3ac33e34-5542-4fcf-8c58-ba0b94f224d1")
 		)
 		(pin "EN_+3V3_3" input
-			(at 203.2 161.29 0)
+			(at 203.2 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -461,7 +491,7 @@
 			(uuid "8e549131-beae-449b-adae-f18a4da53eda")
 		)
 		(pin "USB_DP" bidirectional
-			(at 203.2 167.64 0)
+			(at 203.2 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -471,7 +501,7 @@
 			(uuid "3653dc3d-39bd-49f3-a278-ac8379a17ecb")
 		)
 		(pin "USB_DM" bidirectional
-			(at 203.2 170.18 0)
+			(at 203.2 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -481,7 +511,7 @@
 			(uuid "35c0865d-1d4e-4264-b820-21fba1587a1f")
 		)
 		(pin "USB_ID" input
-			(at 203.2 172.72 0)
+			(at 203.2 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -491,7 +521,7 @@
 			(uuid "dea9bb38-6171-454b-b40c-e563a37cadfe")
 		)
 		(pin "GND" passive
-			(at 203.2 203.2 0)
+			(at 203.2 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -499,6 +529,36 @@
 				(justify right)
 			)
 			(uuid "d6d71c75-d8ab-4f66-95ff-deae998a15d1")
+		)
+		(pin "EN_+1V3" input
+			(at 203.2 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "5985d04a-ed8d-4bf3-90ec-f6f4aeabefbd")
+		)
+		(pin "EN_+2V8" input
+			(at 203.2 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2ad0378d-e00e-45b9-adf8-ff1be2d610f6")
+		)
+		(pin "VM" output
+			(at 203.2 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2ef4e306-b19d-4fec-b08d-4e1eb1124e2f")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -539,7 +599,7 @@
 			)
 		)
 		(pin "RESET_IN" input
-			(at 304.8 177.8 180)
+			(at 304.8 184.15 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -549,7 +609,7 @@
 			(uuid "3d31f141-0c41-49a2-8d0b-0a33de05887b")
 		)
 		(pin "FLIGHT_CTR_SPI_MOSI" input
-			(at 304.8 190.5 180)
+			(at 304.8 196.85 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -559,7 +619,7 @@
 			(uuid "172071e5-cfcf-448d-8e9d-944c2a5f944c")
 		)
 		(pin "FLIGHT_CTR_SPI_MISO" output
-			(at 304.8 187.96 180)
+			(at 304.8 194.31 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -569,7 +629,7 @@
 			(uuid "828f8ae0-df75-4374-8ed3-ddfb5b1cf3c0")
 		)
 		(pin "FLIGHT_CTR_SPI_CLK" input
-			(at 304.8 185.42 180)
+			(at 304.8 191.77 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -579,7 +639,7 @@
 			(uuid "540bbd98-7a9f-418a-9c0f-11827a345084")
 		)
 		(pin "FLIGHT_CTR_SPI_NSS" input
-			(at 304.8 182.88 180)
+			(at 304.8 189.23 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -589,7 +649,7 @@
 			(uuid "a748f09b-3086-418e-af60-2299bb5abcc5")
 		)
 		(pin "FLIGHT_CTR_UART_TX" input
-			(at 304.8 198.12 180)
+			(at 304.8 204.47 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -599,7 +659,7 @@
 			(uuid "3e492e0e-31fe-4435-b0b7-f3a9c28b3577")
 		)
 		(pin "FLIGHT_CTR_UART_RX" output
-			(at 304.8 195.58 180)
+			(at 304.8 201.93 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -619,7 +679,7 @@
 			(uuid "ec1a3f75-c79a-4998-884a-0c7620efc76e")
 		)
 		(pin "GND" passive
-			(at 304.8 203.2 180)
+			(at 304.8 212.09 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -677,7 +737,7 @@
 			)
 		)
 		(pin "RADIO_CTR_SPI_NSS" output
-			(at 266.7 182.88 0)
+			(at 266.7 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -687,7 +747,7 @@
 			(uuid "7fa3995e-4036-4c5d-a2fc-b9e6effbe21a")
 		)
 		(pin "RADIO_CTR_SPI_MISO" input
-			(at 266.7 187.96 0)
+			(at 266.7 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -697,7 +757,7 @@
 			(uuid "8d59f722-0300-4446-8b62-6785412b8b61")
 		)
 		(pin "RADIO_CTR_SPI_MOSI" output
-			(at 266.7 190.5 0)
+			(at 266.7 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -707,7 +767,7 @@
 			(uuid "25778c2e-44cd-408a-8221-0f82ee1f93b5")
 		)
 		(pin "RADIO_CTR_SPI_CLK" output
-			(at 266.7 185.42 0)
+			(at 266.7 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -717,7 +777,7 @@
 			(uuid "168020cf-0412-46b7-bc7c-d5fae161da12")
 		)
 		(pin "EN_LDO_1" output
-			(at 241.3 156.21 180)
+			(at 241.3 157.48 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -727,7 +787,7 @@
 			(uuid "223bd550-54df-4095-ba97-32dc542cea0d")
 		)
 		(pin "EN_LDO_2" output
-			(at 241.3 158.75 180)
+			(at 241.3 160.02 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -737,7 +797,7 @@
 			(uuid "05c6e132-febf-49f7-886a-22f68e1676e0")
 		)
 		(pin "EN_LDO_3" output
-			(at 241.3 161.29 180)
+			(at 241.3 162.56 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -747,7 +807,7 @@
 			(uuid "d3d216ef-fa85-4e72-bdf3-139a1d5aa8fb")
 		)
 		(pin "RADIO_CTR_RST" output
-			(at 266.7 177.8 0)
+			(at 266.7 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -757,7 +817,7 @@
 			(uuid "cac23da6-b13f-4952-a7a4-f16c3341dabc")
 		)
 		(pin "USB_DP" bidirectional
-			(at 241.3 167.64 180)
+			(at 241.3 172.72 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -767,7 +827,7 @@
 			(uuid "123f0e64-7de5-4732-806f-da89d0477da9")
 		)
 		(pin "USB_DM" bidirectional
-			(at 241.3 170.18 180)
+			(at 241.3 175.26 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -777,7 +837,7 @@
 			(uuid "d57062b2-4a7d-4ffe-889d-a89ab322e5ce")
 		)
 		(pin "USB_ID" bidirectional
-			(at 241.3 172.72 180)
+			(at 241.3 177.8 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -787,7 +847,7 @@
 			(uuid "95bc6892-52b4-451f-92f6-3bd6ebfc2142")
 		)
 		(pin "GND" passive
-			(at 241.3 203.2 180)
+			(at 241.3 210.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -847,7 +907,7 @@
 			(uuid "d28f3da0-8a13-49fe-a634-e78a8294afef")
 		)
 		(pin "RADIO_CTR_UART_RX" output
-			(at 266.7 198.12 0)
+			(at 266.7 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -857,7 +917,7 @@
 			(uuid "000d15c9-76cd-4729-bfae-2e7922339732")
 		)
 		(pin "RADIO_CTR_UART_TX" input
-			(at 266.7 195.58 0)
+			(at 266.7 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -865,6 +925,36 @@
 				(justify right)
 			)
 			(uuid "e4f716ec-bfa0-4b5c-9054-d75c4aea8e05")
+		)
+		(pin "EN_LDO_4" output
+			(at 241.3 165.1 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f8f2931d-902e-494e-b80a-5420dabd61f9")
+		)
+		(pin "EN_LDO_5" output
+			(at 241.3 167.64 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "013955a7-ccf1-4310-9ef5-d150528cdcee")
+		)
+		(pin "VM" input
+			(at 241.3 153.67 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "36f50c87-c656-4db7-bc95-b43a798a75fa")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"

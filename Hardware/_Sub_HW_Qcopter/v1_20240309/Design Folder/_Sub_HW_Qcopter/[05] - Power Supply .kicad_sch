@@ -211,6 +211,202 @@
 				)
 			)
 		)
+		(symbol "_SCHLIB_Qcopter:CONN_HDR_1X2_5A_RA_THD-2.54MM"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "HDR_1X2_5A_THD-RA"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/386/SWR25X-NRTC-Sxx-Rx-BA.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Connector Header Through Hole, Right Angle 2 position 0.100\" (2.54mm)"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "THD-2.54MM"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "SWR25X-NRTC-S02-RB-BA"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Sullins Connector Solutions"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "S9499-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/sullins-connector-solutions/SWR25X-NRTC-S02-RB-BA/2769660"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "Connector Header Through Hole, Right Angle 2 position 0.100\" (2.54mm)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CONN_HDR_1X2_5A_RA_THD-2.54MM_1_1"
+				(rectangle
+					(start 0 0)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(text "HDR 1X2\n2.54 MM"
+					(at 4.318 -3.81 900)
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "_SCHLIB_Qcopter:DIODE_LED_ORANGE_2V_20mA_611nm_LED0603"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -444,6 +640,209 @@
 				)
 				(pin passive line
 					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:FUSE_PTC_PTSLR08058V400_4A_8A_8V_F0805"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "4A_8V_2mR"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-ptslr0805-surface-mount-resettable-fuse-data-sheet.pdf"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "PTC Resettable Fuse 8V 4 A Ih Surface Mount 0805 (2012 Metric), Concave"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "F0805"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "PTSLR08058V400"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Eaton - Electronics Division"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "283-PTSLR08058V400TR-ND"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digikey"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/eaton-electronics-division/PTSLR08058V400/15193511"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "PTC Resettable Fuse 8V 4 A Ih Surface Mount 0805 (2012 Metric), Concave"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FUSE_PTC_PTSLR08058V400_4A_8A_8V_F0805_0_1"
+				(polyline
+					(pts
+						(xy 5.08 0) (xy 7.62 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0.635) (xy 7.62 0.635) (xy 7.62 -0.635) (xy 5.08 -0.635) (xy 5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FUSE_PTC_PTSLR08058V400_4A_8A_8V_F0805_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
 					(length 5.08)
 					(name ""
 						(effects
@@ -1010,6 +1409,233 @@
 				)
 			)
 		)
+		(symbol "_SCHLIB_Qcopter:MECH_JUMPER_2POS_J1015"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 3.556 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "JP_2POS"
+				(at 3.81 6.604 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+				(at 3.81 16.764 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "N/A"
+				(at 3.556 9.144 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2POS, J1015"
+				(at 3.556 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Package" "J1015"
+				(at 3.81 35.306 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number (Manufacturer)" "N/A"
+				(at 3.81 19.558 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "N/A"
+				(at 3.81 24.384 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Part Number (Vendor)" "N/A"
+				(at 3.81 22.098 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "N/A"
+				(at 3.81 26.924 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Purchase Link" "N/A"
+				(at 3.556 11.684 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "SCH CHECK" "SCH (N/A)"
+				(at 3.81 29.972 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "PCB CHECK" "PCB (N/A)"
+				(at 3.81 32.512 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "JUMPER_2POS_J1015"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_JUMPER_2POS_J1015_0_1"
+				(polyline
+					(pts
+						(xy 6.096 1.016) (xy 6.096 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.604 1.016) (xy 6.604 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.096 1.016)
+					(mid 5.08 0)
+					(end 6.096 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 6.604 -1.016)
+					(mid 7.62 0)
+					(end 6.604 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MECH_JUMPER_2POS_J1015_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "_SCHLIB_Qcopter:RES_100kR_1/10W_1%_R0603"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1400,10 +2026,16 @@
 		(uuid "040eef57-235b-469d-bd41-6a80567a89f6")
 	)
 	(junction
-		(at 212.09 269.24)
+		(at 295.91 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3c6f8bed-a590-44bd-ab4f-3cb17ca8ef58")
+		(uuid "0810b22e-53c8-457f-b0fd-6760fbd9b698")
+	)
+	(junction
+		(at 212.09 273.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4763d3c7-6a77-46b5-a492-d4bd40c87c75")
 	)
 	(junction
 		(at 328.93 218.44)
@@ -1412,10 +2044,10 @@
 		(uuid "4765fd5e-aca4-4619-aa82-5e199263b76f")
 	)
 	(junction
-		(at 212.09 273.05)
+		(at 212.09 222.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "54ebc492-d17e-42f1-8f8c-585a59d91d52")
+		(uuid "7a3d756f-62a3-40e2-862c-6158ff10b0e1")
 	)
 	(junction
 		(at 328.93 269.24)
@@ -1428,12 +2060,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "819cc823-cf9b-406e-ac88-2c3b6fe5481e")
-	)
-	(junction
-		(at 212.09 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "877b1c35-577a-475a-8349-e03f259340e4")
 	)
 	(junction
 		(at 290.83 302.26)
@@ -1482,12 +2108,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db729b06-5b45-4545-945f-594adc92453c")
-	)
-	(junction
-		(at 212.09 222.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de0a891f-2d00-42b6-b405-33f2cfa8674a")
 	)
 	(junction
 		(at 212.09 302.26)
@@ -1583,6 +2203,16 @@
 	)
 	(wire
 		(pts
+			(xy 295.91 81.28) (xy 292.1 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bb89486-e628-4238-a69c-b8dfbf6a3280")
+	)
+	(wire
+		(pts
 			(xy 271.78 121.92) (xy 279.4 121.92)
 		)
 		(stroke
@@ -1590,6 +2220,16 @@
 			(type default)
 		)
 		(uuid "1182c1f9-d2b6-470a-bf51-547f27eb7913")
+	)
+	(polyline
+		(pts
+			(xy 262.89 52.07) (xy 262.89 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11d6a2e4-a383-46ab-8d53-d50eaef2b33e")
 	)
 	(wire
 		(pts
@@ -1671,6 +2311,16 @@
 		)
 		(uuid "1f04cd69-f1b9-4e05-83bc-841f37514b9f")
 	)
+	(polyline
+		(pts
+			(xy 233.68 50.8) (xy 233.68 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f66b151-541d-4821-a7a7-dfdad6649143")
+	)
 	(wire
 		(pts
 			(xy 212.09 302.26) (xy 240.03 302.26)
@@ -1680,6 +2330,16 @@
 			(type default)
 		)
 		(uuid "2024f10c-6b39-47b6-a741-0ec6dd6f171f")
+	)
+	(wire
+		(pts
+			(xy 209.55 273.05) (xy 212.09 273.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "205acbdd-2c9d-427b-a426-0647093ac0c9")
 	)
 	(wire
 		(pts
@@ -1693,7 +2353,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 269.24) (xy 176.53 269.24)
+			(xy 176.53 269.24) (xy 242.57 269.24)
 		)
 		(stroke
 			(width 0)
@@ -1730,6 +2390,16 @@
 			(type default)
 		)
 		(uuid "2bd30a37-1e4a-4d8e-bf00-c1296752f5ab")
+	)
+	(polyline
+		(pts
+			(xy 234.95 52.07) (xy 262.89 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bef2e49-a761-47b2-9ecc-888daf0b7366")
 	)
 	(wire
 		(pts
@@ -1783,7 +2453,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 218.44) (xy 212.09 218.44)
+			(xy 176.53 218.44) (xy 242.57 218.44)
 		)
 		(stroke
 			(width 0)
@@ -1800,16 +2470,6 @@
 			(type default)
 		)
 		(uuid "41f9bf82-973b-43d5-8c67-4f9b2f20c2a0")
-	)
-	(wire
-		(pts
-			(xy 212.09 269.24) (xy 212.09 273.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46d94a63-bd4b-4824-94a6-65925d3680fb")
 	)
 	(wire
 		(pts
@@ -1830,16 +2490,6 @@
 			(type default)
 		)
 		(uuid "4d4f0e45-65ce-4964-a119-e240132f3a67")
-	)
-	(wire
-		(pts
-			(xy 242.57 269.24) (xy 212.09 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5059ba78-b533-4573-b59a-858061b338d2")
 	)
 	(wire
 		(pts
@@ -1890,6 +2540,16 @@
 			(type default)
 		)
 		(uuid "57109def-5664-4562-a1c2-5fe4c5506228")
+	)
+	(polyline
+		(pts
+			(xy 234.95 52.07) (xy 234.95 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e34d3a-6307-4a31-931a-f9e656bdecee")
 	)
 	(wire
 		(pts
@@ -1953,6 +2613,36 @@
 	)
 	(wire
 		(pts
+			(xy 295.91 81.28) (xy 307.34 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6af16a0f-bca6-457e-8356-ebcae2fa5007")
+	)
+	(wire
+		(pts
+			(xy 209.55 222.25) (xy 212.09 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dd5b21f-f469-469f-92cd-6ad4a37e077e")
+	)
+	(polyline
+		(pts
+			(xy 233.68 50.8) (xy 264.16 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ecd2d20-a13c-4e26-958e-10e9276eb5b6")
+	)
+	(wire
+		(pts
 			(xy 190.5 165.1) (xy 203.2 165.1)
 		)
 		(stroke
@@ -1983,6 +2673,16 @@
 	)
 	(wire
 		(pts
+			(xy 292.1 78.74) (xy 295.91 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "829801bc-2356-4968-88b1-458ef6375e57")
+	)
+	(wire
+		(pts
 			(xy 240.03 251.46) (xy 290.83 251.46)
 		)
 		(stroke
@@ -1993,13 +2693,13 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 218.44) (xy 212.09 218.44)
+			(xy 320.04 81.28) (xy 330.2 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "85384eaf-2f08-443d-baaf-53ee8ea00861")
+		(uuid "84f7f527-70f1-44b6-ae50-81976d435da3")
 	)
 	(wire
 		(pts
@@ -2023,16 +2723,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 218.44) (xy 212.09 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b75c871-f5f8-4f99-a0fc-ed7f87232077")
-	)
-	(wire
-		(pts
 			(xy 234.95 111.76) (xy 241.3 111.76)
 		)
 		(stroke
@@ -2040,6 +2730,16 @@
 			(type default)
 		)
 		(uuid "8df3fa2e-55db-4649-a72b-fef1255ed46d")
+	)
+	(polyline
+		(pts
+			(xy 264.16 50.8) (xy 264.16 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e9bd869-0281-464e-a086-67ac564dfd64")
 	)
 	(wire
 		(pts
@@ -2143,6 +2843,16 @@
 	)
 	(wire
 		(pts
+			(xy 295.91 88.9) (xy 295.91 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acb73ce8-c166-420f-b2c8-f5679e7e2733")
+	)
+	(wire
+		(pts
 			(xy 114.3 172.72) (xy 127 172.72)
 		)
 		(stroke
@@ -2171,6 +2881,16 @@
 		)
 		(uuid "b6ec41f2-aba3-4e8c-9892-5e3110b487a9")
 	)
+	(polyline
+		(pts
+			(xy 233.68 81.28) (xy 264.16 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba24ea9d-cf9f-4694-b921-956c75429958")
+	)
 	(wire
 		(pts
 			(xy 381 158.75) (xy 393.7 158.75)
@@ -2180,6 +2900,16 @@
 			(type default)
 		)
 		(uuid "bb66baf9-e3b0-4986-9358-8f85c6c5cd4f")
+	)
+	(polyline
+		(pts
+			(xy 262.89 80.01) (xy 234.95 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd773b8d-7e5b-447c-a464-7935f2fe5434")
 	)
 	(wire
 		(pts
@@ -2291,6 +3021,16 @@
 		)
 		(uuid "e5787f86-33be-485d-8a9e-727dc077c76a")
 	)
+	(wire
+		(pts
+			(xy 247.65 88.9) (xy 234.95 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e913a1a1-5404-4997-bdd2-565e23b48f7c")
+	)
 	(polyline
 		(pts
 			(xy 186.69 398.78) (xy 326.39 398.78)
@@ -2300,6 +3040,16 @@
 			(type default)
 		)
 		(uuid "e936322b-7541-454d-b7b2-051615460d94")
+	)
+	(wire
+		(pts
+			(xy 234.95 88.9) (xy 234.95 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb8fa6f0-94c1-4b6a-820a-be8111f9a0da")
 	)
 	(wire
 		(pts
@@ -2330,6 +3080,16 @@
 			(type default)
 		)
 		(uuid "f3b5e405-7482-4fd2-b992-15ff443fb463")
+	)
+	(wire
+		(pts
+			(xy 260.35 88.9) (xy 295.91 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68309c2-3553-4538-9657-768204ec2e9e")
 	)
 	(wire
 		(pts
@@ -2834,6 +3594,37 @@
 			"qBXwfxaXWz7iVyI4AAAAAElFTkSuQmCC"
 		)
 	)
+	(text_box "\n\n\nShort this jumper if you are willing to use the primary battery as a soruce for the motors"
+		(exclude_from_sim no)
+		(at 236.22 53.34 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8e4c7d43-a671-4b69-ba97-3d5456b4ab23")
+	)
+	(text "DESIGN NOTE:"
+		(exclude_from_sim no)
+		(at 237.49 58.42 0)
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e1de1e8-069f-4a00-abee-63f9ed1eba08")
+	)
 	(text "LAYOUT NOTE:"
 		(exclude_from_sim no)
 		(at 190.5 314.96 0)
@@ -3011,6 +3802,17 @@
 		)
 		(uuid "f063baa9-f1c6-4f50-947f-ed65afe7436e")
 	)
+	(label "GND"
+		(at 295.91 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f111c86e-67ea-4afc-aad5-d4b2b669f612")
+	)
 	(label "+5VDC"
 		(at 266.7 158.75 0)
 		(fields_autoplaced yes)
@@ -3069,6 +3871,30 @@
 		)
 		(uuid "247b7d1d-7e69-470c-bbaf-bc5b4dee7940")
 	)
+	(hierarchical_label "EN_+2V8"
+		(shape input)
+		(at 209.55 273.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2b225ff7-3bb6-4c40-b027-2d31714d83b9")
+	)
+	(hierarchical_label "VM"
+		(shape output)
+		(at 330.2 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "428ac85e-d021-424f-a577-9ce334d1e231")
+	)
 	(hierarchical_label "USB_DP"
 		(shape bidirectional)
 		(at 241.3 116.84 0)
@@ -3116,6 +3942,18 @@
 			(justify left)
 		)
 		(uuid "649cf746-ef89-49ee-a458-4282455cb97e")
+	)
+	(hierarchical_label "EN_+1V3"
+		(shape input)
+		(at 209.55 222.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6ee677af-dc64-409d-bba2-c9935d4eb494")
 	)
 	(hierarchical_label "EN_+3V3_1"
 		(shape input)
@@ -4710,6 +5548,295 @@
 		)
 	)
 	(symbol
+		(lib_id "_SCHLIB_Qcopter:CONN_HDR_1X2_5A_RA_THD-2.54MM")
+		(at 287.02 76.2 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70fc1c4f-d827-454e-878b-410379924032")
+		(property "Reference" "J2101"
+			(at 282.194 74.676 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HDR_1X2_5A_THD-RA"
+			(at 289.56 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal"
+			(at 283.21 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/386/SWR25X-NRTC-Sxx-Rx-BA.pdf"
+			(at 283.464 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole, Right Angle 2 position 0.100\" (2.54mm)"
+			(at 283.464 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "THD-2.54MM"
+			(at 285.496 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "SWR25X-NRTC-S02-RB-BA"
+			(at 283.21 56.642 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 283.21 51.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "S9499-ND"
+			(at 283.21 54.102 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 283.21 49.276 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/sullins-connector-solutions/SWR25X-NRTC-S02-RB-BA/2769660"
+			(at 283.464 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 284.48 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 284.48 65.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7872d787-02a3-4458-a96f-5c5a9f401e8e")
+		)
+		(pin "1"
+			(uuid "8f124e98-88ae-4888-98fe-dac48acc8c02")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
+					(reference "J2101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_JUMPER_2POS_J1015")
+		(at 247.65 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8861dd9a-65c2-4c19-95c0-7d5f2fed4ca7")
+		(property "Reference" "JP2101"
+			(at 263.652 87.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "JP_2POS"
+			(at 243.84 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
+			(at 251.46 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 251.206 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2POS, J1015"
+			(at 251.206 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "J1015"
+			(at 244.856 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 251.46 69.342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 251.46 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 251.46 66.802 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "N/A"
+			(at 251.46 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "N/A"
+			(at 251.206 77.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 265.176 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 265.176 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "51c8d112-b937-441d-b63d-d83594cd31ec")
+		)
+		(pin "2"
+			(uuid "69e5ded2-6c80-48c0-80e3-e769c1b5fb35")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
+					(reference "JP2101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_10uF_16V_X5R_C0603")
 		(at 176.53 279.4 270)
 		(unit 1)
@@ -5004,6 +6131,150 @@
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
 					(reference "R2201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:FUSE_PTC_PTSLR08058V400_4A_8A_8V_F0805")
+		(at 307.34 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f47abeeb-432c-4c1b-a026-4fd4a751c140")
+		(property "Reference" "F2101"
+			(at 322.834 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4A_8V_2mR"
+			(at 302.006 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+			(at 311.15 64.516 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.eaton.com/content/dam/eaton/products/electronic-components/resources/data-sheet/eaton-ptslr0805-surface-mount-resettable-fuse-data-sheet.pdf"
+			(at 310.896 72.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "PTC Resettable Fuse 8V 4 A Ih Surface Mount 0805 (2012 Metric), Concave"
+			(at 310.896 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "F0805"
+			(at 304.546 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "PTSLR08058V400"
+			(at 311.15 61.722 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Eaton - Electronics Division"
+			(at 311.15 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "283-PTSLR08058V400TR-ND"
+			(at 311.15 59.182 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 311.15 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/eaton-electronics-division/PTSLR08058V400/15193511"
+			(at 310.896 69.596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 324.866 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 324.866 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7f953086-2a16-4081-8c70-144b99b3146a")
+		)
+		(pin "2"
+			(uuid "de9c7348-b3a6-406e-bde3-363f61fffa95")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
+					(reference "F2101")
 					(unit 1)
 				)
 			)

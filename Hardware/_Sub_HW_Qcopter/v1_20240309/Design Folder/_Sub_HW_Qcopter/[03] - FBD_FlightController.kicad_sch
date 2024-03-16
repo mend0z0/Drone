@@ -10,7 +10,7 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 408.94 227.33) (xy 408.94 142.24)
+			(xy 408.94 231.14) (xy 408.94 142.24)
 		)
 		(stroke
 			(width 0)
@@ -430,17 +430,7 @@
 	)
 	(wire
 		(pts
-			(xy 410.21 80.01) (xy 431.8 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f153656-37bd-4fcd-84a2-85cb5d155324")
-	)
-	(wire
-		(pts
-			(xy 421.64 85.09) (xy 431.8 85.09)
+			(xy 419.1 85.09) (xy 431.8 85.09)
 		)
 		(stroke
 			(width 0)
@@ -470,7 +460,7 @@
 	)
 	(wire
 		(pts
-			(xy 421.64 82.55) (xy 431.8 82.55)
+			(xy 419.1 82.55) (xy 431.8 82.55)
 		)
 		(stroke
 			(width 0)
@@ -480,13 +470,23 @@
 	)
 	(wire
 		(pts
-			(xy 381 218.44) (xy 386.08 218.44)
+			(xy 381 223.52) (xy 386.08 223.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "45b9d3b3-718e-46d9-a9fa-c192b3022df1")
+	)
+	(wire
+		(pts
+			(xy 381 214.63) (xy 386.08 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45cf62ef-cff3-4ca5-9e9f-f91c75cdded1")
 	)
 	(wire
 		(pts
@@ -730,7 +730,7 @@
 	)
 	(wire
 		(pts
-			(xy 406.4 224.79) (xy 406.4 139.7)
+			(xy 406.4 228.6) (xy 406.4 139.7)
 		)
 		(stroke
 			(width 0)
@@ -780,7 +780,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 224.79) (xy 406.4 224.79)
+			(xy 381 228.6) (xy 406.4 228.6)
 		)
 		(stroke
 			(width 0)
@@ -880,7 +880,7 @@
 	)
 	(wire
 		(pts
-			(xy 381 227.33) (xy 408.94 227.33)
+			(xy 381 231.14) (xy 408.94 231.14)
 		)
 		(stroke
 			(width 0)
@@ -1250,6 +1250,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 217.17) (xy 386.08 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e04efef8-6410-4be3-8e3a-88ee005147c0")
+	)
+	(wire
+		(pts
 			(xy 283.21 213.36) (xy 292.1 213.36)
 		)
 		(stroke
@@ -1327,6 +1337,16 @@
 			(type default)
 		)
 		(uuid "eb487746-dad9-4168-922e-81215d086b73")
+	)
+	(wire
+		(pts
+			(xy 419.1 80.01) (xy 431.8 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed3a4a0d-7337-401e-9b1d-3b68602d51cd")
 	)
 	(wire
 		(pts
@@ -1466,7 +1486,7 @@
 	)
 	(text_box "2 X SN74HC595\nDriver"
 		(exclude_from_sim no)
-		(at 315.468 247.65 0)
+		(at 342.138 328.93 0)
 		(size 25.4 25.4)
 		(stroke
 			(width 0)
@@ -1631,7 +1651,7 @@
 	)
 	(text "7"
 		(exclude_from_sim no)
-		(at 328.93 267.97 0)
+		(at 355.6 349.25 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -1709,6 +1729,17 @@
 		)
 		(uuid "f6f7d5cd-a32b-4d54-974e-1c15e2433966")
 	)
+	(label "+3V3_1"
+		(at 419.1 195.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "07fe95e9-e3ec-49b3-86f8-db4b3f7afb8c")
+	)
 	(label "GND"
 		(at 165.1 248.92 0)
 		(fields_autoplaced yes)
@@ -1719,6 +1750,17 @@
 			(justify left bottom)
 		)
 		(uuid "0b85680f-b503-46ee-8121-29b3354808d0")
+	)
+	(label "+3V3_1"
+		(at 419.1 231.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c807f11-7a46-4796-86b6-4f82848fb6c3")
 	)
 	(label "I2C_SCL"
 		(at 292.1 243.84 0)
@@ -1841,17 +1883,6 @@
 		)
 		(uuid "8593bb7a-d674-4baf-a9ac-6b03ec210c50")
 	)
-	(label "+3V3DC"
-		(at 330.2 207.01 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "87b51cd5-cdcc-4440-849a-6fc3e19a8cfc")
-	)
 	(label "GND"
 		(at 165.1 173.99 0)
 		(fields_autoplaced yes)
@@ -1896,6 +1927,17 @@
 		)
 		(uuid "a7dc5e34-dbe5-4167-b9ed-5061dd2b1b32")
 	)
+	(label "+3V3_1"
+		(at 419.1 335.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ab6b55f0-facf-4eba-9031-305a5aa3d7a5")
+	)
 	(label "+3V3DC"
 		(at 243.84 154.94 0)
 		(fields_autoplaced yes)
@@ -1928,17 +1970,6 @@
 			(justify left bottom)
 		)
 		(uuid "d281659d-cf65-4184-9e3b-d8b79ff1f644")
-	)
-	(label "+3V3DC"
-		(at 419.1 335.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d88b335e-62a0-4278-8302-9596fefbe7fe")
 	)
 	(label "ICM_INT"
 		(at 292.1 238.76 0)
@@ -1973,8 +2004,8 @@
 		)
 		(uuid "e391bd45-995a-4dca-9ce0-3a35b097752b")
 	)
-	(label "+3V3DC"
-		(at 419.1 195.58 0)
+	(label "+3V3_1"
+		(at 330.2 207.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1982,7 +2013,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "ece49ec2-48bb-47a3-9f78-42ce00d7ea05")
+		(uuid "ecee4316-38ab-44be-bc92-d58339b69be2")
 	)
 	(label "I2C_SDA"
 		(at 419.1 238.76 0)
@@ -1995,17 +2026,6 @@
 		)
 		(uuid "f1c20b89-f22e-4e4b-8c53-71dbc1a6634d")
 	)
-	(label "+3V3DC"
-		(at 419.1 231.14 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6e3a7fc-1b3f-4341-a4fd-1462eb93f6ea")
-	)
 	(label "GND"
 		(at 165.1 288.29 0)
 		(fields_autoplaced yes)
@@ -2017,8 +2037,8 @@
 		)
 		(uuid "f7e231ec-1c27-4419-b0bf-7cf908cd7d60")
 	)
-	(label "+3V3DC"
-		(at 410.21 80.01 0)
+	(label "+3V3_1"
+		(at 420.37 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2100,6 +2120,18 @@
 		)
 		(uuid "352e634d-a718-418e-a2c2-d7b4c31906de")
 	)
+	(hierarchical_label "EN_LDO_5"
+		(shape output)
+		(at 386.08 217.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3881d3b7-d592-46f1-8fe2-959d4565bf5f")
+	)
 	(hierarchical_label "RADIO_CTR_UART_TX"
 		(shape input)
 		(at 292.1 224.79 0)
@@ -2172,9 +2204,33 @@
 		)
 		(uuid "5905fb4f-2fa3-4c81-97f5-a4b40b4d5f9e")
 	)
+	(hierarchical_label "+3V3_1"
+		(shape input)
+		(at 419.1 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "67ea35da-4cf6-4711-a6f1-f7156d7df33f")
+	)
+	(hierarchical_label "VM"
+		(shape input)
+		(at 419.1 332.74 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "690fb6a4-ca4b-4c4e-a01e-fb6d56d07821")
+	)
 	(hierarchical_label "PWR_+1V3"
 		(shape input)
-		(at 421.64 85.09 180)
+		(at 419.1 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2210,7 +2266,7 @@
 	)
 	(hierarchical_label "RADIO_CTR_RST"
 		(shape output)
-		(at 386.08 218.44 0)
+		(at 386.08 223.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2220,9 +2276,21 @@
 		)
 		(uuid "952b1322-a7ad-4221-85bd-cab2c2dfd608")
 	)
+	(hierarchical_label "EN_LDO_4"
+		(shape output)
+		(at 386.08 214.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a4ba7727-cd5c-4181-9325-bd7151f1bf74")
+	)
 	(hierarchical_label "PWR_+2V8"
 		(shape input)
-		(at 421.64 82.55 180)
+		(at 419.1 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2231,18 +2299,6 @@
 			(justify right)
 		)
 		(uuid "c5610668-6bf6-463d-87ae-5cfcdeb19d2c")
-	)
-	(hierarchical_label "+3V3_1"
-		(shape input)
-		(at 419.1 332.74 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c97fead0-e5c8-49d7-95f3-d3c7c0d2c828")
 	)
 	(hierarchical_label "RADIO_CTR_SPI_CLK"
 		(shape output)
@@ -3857,7 +3913,7 @@
 			)
 		)
 		(pin "RADIO_CTRL_RST" output
-			(at 381 218.44 0)
+			(at 381 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3867,7 +3923,7 @@
 			(uuid "1208ac1e-5710-47b1-bf19-47b05fe6a555")
 		)
 		(pin "OV2640_RST" output
-			(at 381 224.79 0)
+			(at 381 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +3933,7 @@
 			(uuid "e7747553-add2-4389-a907-92c976d74cb2")
 		)
 		(pin "OV2640_PWRDN" output
-			(at 381 227.33 0)
+			(at 381 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4115,6 +4171,26 @@
 				(justify right)
 			)
 			(uuid "c2e41e03-ab4d-4e4a-b8d9-397464e7f96e")
+		)
+		(pin "EN_LDO_4" output
+			(at 381 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c482f124-c038-4ef1-896e-364f50684fa6")
+		)
+		(pin "EN_LDO_5" output
+			(at 381 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "e2c18925-fdbd-46ae-a48c-6d106d5c6ff9")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"

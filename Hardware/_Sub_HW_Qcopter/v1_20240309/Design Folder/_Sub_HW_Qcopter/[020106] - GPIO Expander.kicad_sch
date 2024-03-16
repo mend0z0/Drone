@@ -120,6 +120,16 @@
 	)
 	(wire
 		(pts
+			(xy 363.22 185.42) (xy 372.11 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4091e28c-7a46-4811-a504-0fabd0de8e46")
+	)
+	(wire
+		(pts
 			(xy 220.98 180.34) (xy 241.3 180.34)
 		)
 		(stroke
@@ -177,6 +187,16 @@
 			(type default)
 		)
 		(uuid "7167d79a-bae4-40c2-bbbe-dfbc75888056")
+	)
+	(wire
+		(pts
+			(xy 363.22 187.96) (xy 372.11 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76bb3f89-f320-47a0-8cf1-96f90cc31d6b")
 	)
 	(wire
 		(pts
@@ -438,10 +458,10 @@
 		)
 		(uuid "f54e569e-381f-4666-be2b-c4b4b4c3d597")
 	)
-	(text_box "INFO:\n\nMOTOR CTRL 1\nMOTOR CTRL 2\nMOTOR CTRL 3\nMOTOR CTRL 4\nMOTOR DIR 1\nMOTOR DIR 2\nMOTOR DIR 3\nMOTOR DIR 4\n\nIMU CS\nBME250 CS\nCAMERA PWRDN\nCAMERA RST\nRADIO CONTROLLER RST\nLDO1 RST\nLDO2 RST\nLDO3 RST\n\nCHASSIS LED 1\nCHASSIS LED 2\nCHASSIS LED 3\nCHASSIS LED 4\nDEBUG USART LED TX\nDEBUG USART LED RX"
+	(text_box "INFO:\n\nMOTOR CTRL 1\nMOTOR CTRL 2\nMOTOR CTRL 3\nMOTOR CTRL 4\nMOTOR DIR 1\nMOTOR DIR 2\nMOTOR DIR 3\nMOTOR DIR 4\n\nLDO1 RST\nLDO2 RST\nLDO3 RST\nLDO4 RST\nLDO5 RST\nCAMERA PWRDN\nCAMERA RST\nRADIO CONTROLLER RST\n\nCHASSIS LED 1\nCHASSIS LED 2\nCHASSIS LED 3\nCHASSIS LED 4\nDEBUG USART LED TX\nDEBUG USART LED RX\nIMU CS\nBME250 CS"
 		(exclude_from_sim no)
 		(at 54.864 244.856 0)
-		(size 64.77 109.22)
+		(size 64.77 118.364)
 		(stroke
 			(width 0)
 			(type default)
@@ -459,7 +479,7 @@
 	)
 	(text "GROUP 3"
 		(exclude_from_sim no)
-		(at 110.744 340.36 90)
+		(at 110.744 344.678 90)
 		(effects
 			(font
 				(size 3.81 3.81)
@@ -742,9 +762,9 @@
 		)
 		(uuid "07d56e2b-a07b-441d-b911-c4c4d9ef3807")
 	)
-	(hierarchical_label "OV2640_PWRDN"
+	(hierarchical_label "EN_LDO_5"
 		(shape output)
-		(at 285.75 175.26 0)
+		(at 285.75 180.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -752,7 +772,7 @@
 			)
 			(justify left)
 		)
-		(uuid "0b2e45ea-ea0a-42e9-9066-37673febcf1c")
+		(uuid "170d0880-8123-494a-98c2-61e557219323")
 	)
 	(hierarchical_label "MOTOR_CTRL_1"
 		(shape output)
@@ -768,7 +788,7 @@
 	)
 	(hierarchical_label "OV2640_RST"
 		(shape output)
-		(at 285.75 177.8 0)
+		(at 285.75 185.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -776,31 +796,7 @@
 			)
 			(justify left)
 		)
-		(uuid "2c92de14-921c-420a-9bd4-42fc342bdf6d")
-	)
-	(hierarchical_label "ICM_AD0"
-		(shape output)
-		(at 285.75 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3539b731-47d9-4d19-8d4c-731d2ec675e8")
-	)
-	(hierarchical_label "RADIO_CTRL_RST"
-		(shape output)
-		(at 285.75 180.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4a8e3e05-f90b-40e9-9222-8fb513fd19a3")
+		(uuid "3e2f19dd-278a-4d0f-8f4c-9d000e85feec")
 	)
 	(hierarchical_label "CHASSIS_LED_2"
 		(shape output)
@@ -826,9 +822,9 @@
 		)
 		(uuid "50365b68-a8ab-47c7-94d3-e2b802838b6d")
 	)
-	(hierarchical_label "EN_LDO_1"
+	(hierarchical_label "ICM_AD0"
 		(shape output)
-		(at 285.75 182.88 0)
+		(at 372.11 185.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -836,7 +832,19 @@
 			)
 			(justify left)
 		)
-		(uuid "5f87ad34-41f1-469b-81d2-c4ceee5927b6")
+		(uuid "62e1fcf8-e5c2-4168-8d3b-03dec6593133")
+	)
+	(hierarchical_label "EN_LDO_1"
+		(shape output)
+		(at 285.75 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6630b490-9061-4d64-9d75-cb6f8d1a2418")
 	)
 	(hierarchical_label "+PWR"
 		(shape passive)
@@ -850,9 +858,9 @@
 		)
 		(uuid "6c6afde7-9782-4adc-af99-2f82fa8736a7")
 	)
-	(hierarchical_label "EN_LDO_2"
+	(hierarchical_label "BME280_AD0"
 		(shape output)
-		(at 285.75 185.42 0)
+		(at 372.11 187.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -860,7 +868,7 @@
 			)
 			(justify left)
 		)
-		(uuid "6dee19eb-f8d3-4c79-a241-4351709896ff")
+		(uuid "705f771c-9015-4d48-83d6-23ea7f541cbc")
 	)
 	(hierarchical_label "MOTOR_DIR_1"
 		(shape output)
@@ -898,6 +906,18 @@
 		)
 		(uuid "a26dffde-4efc-4315-963e-b2a6d4e271a9")
 	)
+	(hierarchical_label "EN_LDO_2"
+		(shape output)
+		(at 285.75 172.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba953b8b-d132-4427-9893-7b028710b9b3")
+	)
 	(hierarchical_label "CHASSIS_LED_3"
 		(shape output)
 		(at 372.11 175.26 0)
@@ -910,9 +930,9 @@
 		)
 		(uuid "bffeeb8a-787c-4d66-9773-e41756f0dc7b")
 	)
-	(hierarchical_label "EN_LDO_3"
+	(hierarchical_label "EN_LDO_4"
 		(shape output)
-		(at 285.75 187.96 0)
+		(at 285.75 177.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -920,7 +940,7 @@
 			)
 			(justify left)
 		)
-		(uuid "c3d49015-8e85-487f-af9f-e80fcf3c1bef")
+		(uuid "c05768e9-843a-48b5-8607-039a9add3a64")
 	)
 	(hierarchical_label "MOTOR_CTRL_4"
 		(shape output)
@@ -946,9 +966,9 @@
 		)
 		(uuid "cc3c29ed-f357-40f2-a0c8-68ed7bee99de")
 	)
-	(hierarchical_label "BME280_AD0"
+	(hierarchical_label "OV2640_PWRDN"
 		(shape output)
-		(at 285.75 172.72 0)
+		(at 285.75 182.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -956,7 +976,19 @@
 			)
 			(justify left)
 		)
-		(uuid "d5faa023-1f94-4bd5-8aad-cbd3562e8f45")
+		(uuid "d2a42b6e-b945-4a28-a5b9-10d2a0edf1e1")
+	)
+	(hierarchical_label "RADIO_CTRL_RST"
+		(shape output)
+		(at 285.75 187.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d3bd0341-0b00-4eae-a6f6-c37105dce619")
 	)
 	(hierarchical_label "I2C_SCL"
 		(shape input)
@@ -993,6 +1025,18 @@
 			(justify right)
 		)
 		(uuid "e149d4f8-2c4d-4e6b-a4fe-1fe51cbde3a3")
+	)
+	(hierarchical_label "EN_LDO_3"
+		(shape output)
+		(at 285.75 175.26 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8877cd3-ec59-4ad2-a471-3e55f29535e4")
 	)
 	(hierarchical_label "MOTOR_DIR_3"
 		(shape output)
