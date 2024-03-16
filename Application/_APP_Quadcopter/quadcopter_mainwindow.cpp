@@ -50,6 +50,58 @@ Quadcopter_MainWindow::~Quadcopter_MainWindow()
     delete ui;
 }
 
+void Quadcopter_MainWindow::Quadcopter_MainWindow::keyPressEvent(QKeyEvent *inputCmd)
+{
+    int tempKey = inputCmd->key();
+
+    //qDebug() << tempKey;
+
+    if((tempKey == 'w') || (tempKey == 'W'))
+    {
+        ButtonForward();
+    }
+    else if((tempKey == 's') || (tempKey == 'S'))
+    {
+        ButtonReverse();
+    }
+    else if((tempKey == 'a') || (tempKey == 'A'))
+    {
+        ButtonLeft();
+    }
+    else if((tempKey == 'd') || (tempKey == 'D'))
+    {
+        ButtonRight();
+    }
+    else if((tempKey == 'h') || (tempKey == 'H'))
+    {
+        if(qcopter.jsonObjCommand.value("ELEVATE").toInt() < 300)
+        {
+            Throttle(qcopter.jsonObjCommand.value("ELEVATE").toInt() + 1);
+        }
+    }
+    else if((tempKey == 'c') || (tempKey == 'C'))
+    {
+        if(qcopter.jsonObjCommand.value("ELEVATE").toInt() > 0)
+        {
+            Throttle(qcopter.jsonObjCommand.value("ELEVATE").toInt() - 1);
+        }
+    }
+    else if((tempKey == 'e') || (tempKey == 'E'))
+    {
+        DroneSelectNext();
+    }
+    else if((tempKey == 'q') || (tempKey == 'Q'))
+    {
+        DroneSelectPrevious();
+    }
+    else if((tempKey == 'f') || (tempKey == 'F'))
+    {
+        ButtonCameraShutter();
+    }
+
+
+}
+
 void Quadcopter_MainWindow::MQTTConsole()
 {
     qcopterConsole->ObjectsInit();
@@ -617,6 +669,7 @@ void Quadcopter_MainWindow::GeologicalPosition( int value )
 void Quadcopter_MainWindow::Throttle(int value)
 {
     ui->lcdNumber_ThrottleValue->display(value);
+    ui->verticalSlider_Throttle->setValue(value);
 
     qcopter.jsonObjCommand["ELEVATE"] = value;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);

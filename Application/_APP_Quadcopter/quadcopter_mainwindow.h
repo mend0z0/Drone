@@ -24,6 +24,7 @@
 #include <QImage>
 #include <QTextCharFormat>
 #include <QPen>
+#include <QKeyEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
@@ -38,6 +39,9 @@ public:
     ~Quadcopter_MainWindow();
     const uint8_t QCOPTER_INDEX_MAX = 99UL;
     const uint16_t QCOPTER_BATTERY_VOLTAGE = 3700UL;
+
+protected:
+    void keyPressEvent(QKeyEvent *inputCmd);
 
 private slots:
     void MQTTConsole(void);

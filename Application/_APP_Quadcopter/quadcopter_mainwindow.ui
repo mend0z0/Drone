@@ -479,7 +479,7 @@ color: rgb(255, 255, 255);</string>
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Quadcopter - Console&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Drone - Console&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
      </item>
@@ -2517,7 +2517,7 @@ color: rgb(255, 255, 255);</string>
      <rect>
       <x>960</x>
       <y>50</y>
-      <width>301</width>
+      <width>316</width>
       <height>200</height>
      </rect>
     </property>

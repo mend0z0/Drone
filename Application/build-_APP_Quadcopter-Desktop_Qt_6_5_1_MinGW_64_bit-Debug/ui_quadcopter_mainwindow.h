@@ -905,7 +905,7 @@ public:
         label_Camera4_2->setScaledContents(true);
         layoutWidget1 = new QWidget(centralwidget);
         layoutWidget1->setObjectName("layoutWidget1");
-        layoutWidget1->setGeometry(QRect(960, 50, 301, 200));
+        layoutWidget1->setGeometry(QRect(960, 50, 316, 200));
         gridLayout = new QGridLayout(layoutWidget1);
         gridLayout->setObjectName("gridLayout");
         gridLayout->setContentsMargins(0, 0, 0, 0);
@@ -982,7 +982,7 @@ public:
         progressBar_BatteryCharge->setValue(24);
         progressBar_BatteryCharge->setTextVisible(false);
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
-        layoutWidget1->raise();
+        layoutWidget->raise();
         label_Camera5_2->raise();
         label_Camera4_2->raise();
         label_Camera3_2->raise();
@@ -1006,7 +1006,7 @@ public:
         pushButton_MoveReverse->raise();
         pushButton_MoveRight->raise();
         dial_GeologicalPosition->raise();
-        layoutWidget1->raise();
+        layoutWidget->raise();
         pushButton_DroneSelectPrevious->raise();
         pushButton_DroneSelectNext->raise();
         label_Time->raise();
@@ -1130,7 +1130,7 @@ public:
         label_DronesNumber->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">N/A</span></p></body></html>", nullptr));
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
         plainTextEdit_LogPanel->setPlainText(QString());
-        label_QuadcopterConsole->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Quadcopter - Console</span></p></body></html>", nullptr));
+        label_QuadcopterConsole->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Drone - Console</span></p></body></html>", nullptr));
         label_Logo->setText(QString());
         label_Camera1->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:11pt;\">Camera 1</span></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p></body></html>", nullptr));
         label_Camera2->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:11pt;\">Camera 2</span></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p><p><br/></p></body></html>", nullptr));
