@@ -1237,12 +1237,12 @@
 				)
 			)
 		)
-		(symbol "_SCHLIB_Qcopter:DIODE_LED_RED_2V_20mA_624nm_LED0603"
+		(symbol "_SCHLIB_Qcopter:DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "LED"
-				(at 3.556 5.08 0)
+				(at 3.556 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1250,8 +1250,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "RED_2V_20mA"
-				(at 3.81 7.62 0)
+			(property "Value" "WHITE_3V2_420mcd"
+				(at 3.81 9.398 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1260,7 +1260,7 @@
 				)
 			)
 			(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-				(at 3.81 17.78 0)
+				(at 3.81 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1269,8 +1269,8 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3777/B1931USD-20D000814U1930.pdf"
-				(at 3.556 10.16 0)
+			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3694/B1931TW--20P000314U1930.pdf"
+				(at 3.556 11.938 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1279,8 +1279,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Red 624nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-				(at 3.556 14.986 0)
+			(property "Description" "White LED Indication - Discrete 3.2V 0603 (1608 Metric)"
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1290,7 +1290,7 @@
 				)
 			)
 			(property "Package" "LED0603"
-				(at 3.81 36.322 0)
+				(at 3.81 38.1 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1298,8 +1298,8 @@
 					(justify left)
 				)
 			)
-			(property "Part Number (Manufacturer)" "B1931USD-20D000814U1930"
-				(at 3.81 20.574 0)
+			(property "Part Number (Manufacturer)" "B1931TW--20P000314U1930"
+				(at 3.81 22.352 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1309,7 +1309,7 @@
 				)
 			)
 			(property "Manufacturer" "Harvatek Corporation"
-				(at 3.81 25.4 0)
+				(at 3.81 27.178 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1318,8 +1318,8 @@
 					(hide yes)
 				)
 			)
-			(property "Part Number (Vendor)" "3147-B1931USD-20D000814U1930TR-ND"
-				(at 3.81 23.114 0)
+			(property "Part Number (Vendor)" "3147-B1931TW--20P000314U1930TR-ND"
+				(at 3.81 24.892 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1329,7 +1329,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 27.94 0)
+				(at 3.81 29.718 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1338,8 +1338,8 @@
 					(hide yes)
 				)
 			)
-			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1931USD-20D000814U1930/15861265"
-				(at 3.556 12.7 0)
+			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1931TW-20P000314U1930/14302790"
+				(at 3.556 14.478 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1349,7 +1349,7 @@
 				)
 			)
 			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 30.988 0)
+				(at 3.81 32.766 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1358,7 +1358,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 33.528 0)
+				(at 3.81 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1366,7 +1366,7 @@
 					(justify left)
 				)
 			)
-			(property "ki_keywords" "Red 624nm LED Indication - Discrete 2V 0603 (1608 Metric)"
+			(property "ki_keywords" "White LED Indication - Discrete 3.2V 0603 (1608 Metric)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1375,7 +1375,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "DIODE_LED_RED_2V_20mA_624nm_LED0603_0_1"
+			(symbol "DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603_0_1"
 				(polyline
 					(pts
 						(xy 5.588 1.905) (xy 6.604 2.794)
@@ -1449,7 +1449,7 @@
 					)
 				)
 			)
-			(symbol "DIODE_LED_RED_2V_20mA_624nm_LED0603_1_1"
+			(symbol "DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603_1_1"
 				(pin passive line
 					(at 12.7 0 180)
 					(length 5.08)
@@ -11487,150 +11487,6 @@
 		)
 	)
 	(symbol
-		(lib_id "_SCHLIB_Qcopter:DIODE_LED_RED_2V_20mA_624nm_LED0603")
-		(at 355.6 297.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8d6f16ba-c39c-407d-857d-60d0401738ea")
-		(property "Reference" "LED501"
-			(at 371.856 295.656 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RED_2V_20mA"
-			(at 348.742 295.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 359.41 279.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3777/B1931USD-20D000814U1930.pdf"
-			(at 359.156 287.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Red 624nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 359.156 282.194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Package" "LED0603"
-			(at 351.536 298.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part Number (Manufacturer)" "B1931USD-20D000814U1930"
-			(at 359.41 276.606 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Harvatek Corporation"
-			(at 359.41 271.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "3147-B1931USD-20D000814U1930TR-ND"
-			(at 359.41 274.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 359.41 269.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1931USD-20D000814U1930/15861265"
-			(at 359.156 284.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 373.634 298.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PCB CHECK" "PCB (N/A)"
-			(at 373.634 301.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "4871f13b-2755-4131-bac0-35a13f49c731")
-		)
-		(pin "1"
-			(uuid "a45b31cf-cec1-4945-a5d8-5fce17f94b41")
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/4eee3e1d-9a89-4293-ad66-a6ef408897f9"
-					(reference "LED501")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_12pF_50V_C0G_C0603")
 		(at 153.67 157.48 180)
 		(unit 1)
@@ -12368,6 +12224,150 @@
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/4eee3e1d-9a89-4293-ad66-a6ef408897f9"
 					(reference "C522")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603")
+		(at 355.6 297.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7df417e-aaa6-4e8d-925a-79ae09a0d58f")
+		(property "Reference" "LED502"
+			(at 371.856 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WHITE_3V2_420mcd"
+			(at 346.71 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 359.41 277.622 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3694/B1931TW--20P000314U1930.pdf"
+			(at 359.156 285.242 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "White LED Indication - Discrete 3.2V 0603 (1608 Metric)"
+			(at 359.156 280.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "LED0603"
+			(at 351.79 298.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part Number (Manufacturer)" "B1931TW--20P000314U1930"
+			(at 359.41 274.828 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Harvatek Corporation"
+			(at 359.41 270.002 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "3147-B1931TW--20P000314U1930TR-ND"
+			(at 359.41 272.288 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 359.41 267.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1931TW-20P000314U1930/14302790"
+			(at 359.156 282.702 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 373.38 298.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 373.38 301.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "33ac17ec-dd8e-498b-b772-159ebd3156d6")
+		)
+		(pin "1"
+			(uuid "11632d55-248d-4712-8546-4114b6f862fe")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/4eee3e1d-9a89-4293-ad66-a6ef408897f9"
+					(reference "LED502")
 					(unit 1)
 				)
 			)

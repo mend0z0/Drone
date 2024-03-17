@@ -3638,6 +3638,209 @@
 			)
 		)
 	)
+	(symbol "CAP_CER_470nF_16V_X7R_C0603"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "C"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470nF_16V_X7R"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/app/datasheet/mlcc/upy-gphc_x7r_6_3v-to-250v.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.47 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "C0603"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "CC0603KRX7R7BB474"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "311-1428-2-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/yageo/CC0603KRX7R7BB474/2833593?s=N4IgTCBcDaIMJwAwDZEGYDSAlAGgdizwCEiAWPUkAXQF8g"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "0.47 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CAP_CER_470nF_16V_X7R_C0603_0_0"
+			(polyline
+				(pts
+					(xy 5.08 1.27) (xy 5.08 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 1.27) (xy 7.62 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "CAP_CER_470nF_16V_X7R_C0603_1_1"
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "CAP_CER_47nF_25V_X7R_C0402"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7267,6 +7470,257 @@
 			)
 		)
 		(symbol "DIODE_LED_RED_2V_20mA_624nm_LED0603_1_1"
+			(pin passive line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "LED"
+			(at 3.556 6.858 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "WHITE_3V2_420mcd"
+			(at 3.81 9.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3694/B1931TW--20P000314U1930.pdf"
+			(at 3.556 11.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "White LED Indication - Discrete 3.2V 0603 (1608 Metric)"
+			(at 3.556 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "LED0603"
+			(at 3.81 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "B1931TW--20P000314U1930"
+			(at 3.81 22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Harvatek Corporation"
+			(at 3.81 27.178 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "3147-B1931TW--20P000314U1930TR-ND"
+			(at 3.81 24.892 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 29.718 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1931TW-20P000314U1930/14302790"
+			(at 3.556 14.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 32.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "White LED Indication - Discrete 3.2V 0603 (1608 Metric)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603_0_1"
+			(polyline
+				(pts
+					(xy 5.588 1.905) (xy 6.604 2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.239 1.905) (xy 8.001 2.667)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -1.27) (xy 7.62 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 1.27) (xy 5.08 -1.27) (xy 7.62 0) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.223 3.302) (xy 7.112 2.413) (xy 7.366 3.556) (xy 6.223 3.302)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 3.175) (xy 8.509 2.286) (xy 8.763 3.429) (xy 7.62 3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "DIODE_LED_WHITE_3.2V_20mA_420mcd_LED0603_1_1"
 			(pin passive line
 				(at 12.7 0 180)
 				(length 5.08)
@@ -11235,7 +11689,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -44.45 0)
+				(at -5.08 -43.18 0)
 				(length 5.08)
 				(name "VDD"
 					(effects
@@ -11505,7 +11959,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -59.69 0)
+				(at -5.08 -76.2 0)
 				(length 5.08)
 				(name "VDDPA"
 					(effects
@@ -11577,7 +12031,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -76.2 0)
+				(at -5.08 -64.77 0)
 				(length 5.08)
 				(name "VDDRF1V55"
 					(effects
@@ -11739,7 +12193,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -39.37 0)
+				(at -5.08 -38.1 0)
 				(length 5.08)
 				(name "VBAT"
 					(effects
@@ -11829,7 +12283,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -46.99 0)
+				(at -5.08 -45.72 0)
 				(length 5.08)
 				(name "VDDA"
 					(effects
@@ -11883,7 +12337,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -41.91 0)
+				(at -5.08 -40.64 0)
 				(length 5.08)
 				(name "VDD"
 					(effects
@@ -11901,7 +12355,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -73.66 0)
+				(at -5.08 -62.23 0)
 				(length 5.08)
 				(name "VFBSMPS"
 					(effects
@@ -11937,7 +12391,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -71.12 0)
+				(at -5.08 -59.69 0)
 				(length 5.08)
 				(name "VLXSMPS"
 					(effects
@@ -11955,7 +12409,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -78.74 0)
+				(at -5.08 -86.36 0)
 				(length 5.08)
 				(name "VSSSMPS"
 					(effects
@@ -17758,7 +18212,7 @@
 		(symbol "IC_SWITCH_NX3L1T3157GMZ_SPDT_1C_900mR_6-XSON_0_1"
 			(polyline
 				(pts
-					(xy 4.318 -7.62) (xy 2.54 -7.62)
+					(xy 3.175 -10.16) (xy 4.953 -10.16)
 				)
 				(stroke
 					(width 0)
@@ -17770,7 +18224,7 @@
 			)
 			(polyline
 				(pts
-					(xy 9.398 -10.16) (xy 7.62 -10.16)
+					(xy 3.302 -5.08) (xy 5.08 -5.08)
 				)
 				(stroke
 					(width 0)
@@ -17782,7 +18236,7 @@
 			)
 			(polyline
 				(pts
-					(xy 9.398 -6.35) (xy 7.62 -6.35)
+					(xy 8.636 -7.62) (xy 10.414 -7.62)
 				)
 				(stroke
 					(width 0)
@@ -17808,7 +18262,7 @@
 			)
 			(polyline
 				(pts
-					(xy 4.572 -7.62) (xy 8.128 -9.652)
+					(xy 8.636 -7.62) (xy 4.572 -9.652)
 				)
 				(stroke
 					(width 0)
@@ -17820,7 +18274,7 @@
 			)
 			(polyline
 				(pts
-					(xy 5.715 -8.255) (xy 5.715 -3.81) (xy 2.54 -3.81)
+					(xy 6.985 -8.255) (xy 6.985 -2.54) (xy 3.175 -2.54)
 				)
 				(stroke
 					(width 0)
@@ -17842,7 +18296,7 @@
 				)
 			)
 			(circle
-				(center 4.318 -7.62)
+				(center 4.953 -10.16)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -17853,7 +18307,7 @@
 				)
 			)
 			(circle
-				(center 7.62 -10.16)
+				(center 5.207 -5.08)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -17864,7 +18318,7 @@
 				)
 			)
 			(circle
-				(center 7.62 -6.35)
+				(center 8.636 -7.62)
 				(radius 0.254)
 				(stroke
 					(width 0)
@@ -17891,7 +18345,7 @@
 				)
 			)
 			(pin passive line
-				(at 17.78 -10.16 180)
+				(at -5.08 -10.16 0)
 				(length 5.08)
 				(name "Y1"
 					(effects
@@ -17927,7 +18381,7 @@
 				)
 			)
 			(pin passive line
-				(at 17.78 -6.35 180)
+				(at -5.08 -5.08 0)
 				(length 5.08)
 				(name "Y0"
 					(effects
@@ -17945,7 +18399,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
+				(at 17.78 -7.62 180)
 				(length 5.08)
 				(name "Z"
 					(effects
@@ -17981,7 +18435,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -3.81 0)
+				(at -5.08 -2.54 0)
 				(length 5.08)
 				(name "S"
 					(effects
@@ -18416,6 +18870,233 @@
 			)
 		)
 		(symbol "IND_15nH_560mA_0.172R_3.28GHz_L0402_1_1"
+			(pin passive line
+				(at 0 0 0)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 12.7 0 180)
+				(length 3.81)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "IND_15uH_250mA_0.95Ohm_40MHz_L0805"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "L"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "15uH_250mA_0.95Ohm"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_mlz2012_en.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "15 µH Shielded Multilayer Inductor 250 mA 950mOhm 0805 (2012 Metric)"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "L0805"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "MLZ2012M150WT000"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK Corporation"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "445-6397-2-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/tdk-corporation/MLZ2012M150WT000/2465154"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "15 µH Shielded Multilayer Inductor 250 mA 950mOhm 0805 (2012 Metric)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "IND_15uH_250mA_0.95Ohm_40MHz_L0805_0_1"
+			(arc
+				(start 5.08 0)
+				(mid 4.445 0.6238)
+				(end 3.81 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 0.0113)
+				(mid 5.715 0.6351)
+				(end 5.08 0.0113)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 7.62 0.0113)
+				(mid 6.985 0.6351)
+				(end 6.35 0.0113)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 8.89 0.0113)
+				(mid 8.255 0.6351)
+				(end 7.62 0.0113)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "IND_15uH_250mA_0.95Ohm_40MHz_L0805_1_1"
 			(pin passive line
 				(at 0 0 0)
 				(length 3.81)
