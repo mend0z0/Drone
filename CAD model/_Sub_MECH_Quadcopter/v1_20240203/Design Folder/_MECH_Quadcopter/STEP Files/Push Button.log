@@ -1,0 +1,41 @@
+STEP translation to Solid Edge
+Date: Sunday,March 17,2024 10:30AM
+Source File: D:\Projects\STP\Quadcopter\CAD model\_Sub_MECH_Quadcopter\v1_20240203\Design Folder\_MECH_Quadcopter\STEP Files\Push Button.step
+Author: Unknown
+Organization: Unknown
+Source System: Autodesk Translation Framework v9.7.0.1280
+
+Hardware:
+Processor: 12th Gen Intel(R) Core(TM) i7-12700H
+Operating System: Windows 11 Version:23H2 Build:22631 System Type:64-bit
+Installed Memory: 15.67 GB
+
+Software Information
+Parasolid Version: 35.0.149
+PSBodyShop Version: 35.0.82
+Step Adapter Version: 11.0.82
+Solid Edge Version: 223.00.00.101 x64
+
+Step Import Options
+Import Faceted Bodies: On
+Import Check Bodies: Off
+Import Curves: On
+Import DoNotSave: On
+Import Multiple Bodies As Single Part File: On
+Import Stitch Surfaces: On
+Import Boolean Solids: On
+Make Base Feature: On
+Simplify Geometry: On
+Import Imprint Curves: On
+Import Drive: C:
+Import Stitch Surfaces: On
+Import Surfaces: On
+Import Output Path: D:\Projects\STP\Quadcopter\CAD model\_Sub_MECH_Quadcopter\v1_20240203\Design Folder\_MECH_Quadcopter\STEP Files
+Import Enable Default Output Path: On
+Import PMI: Off
+Import As Internal Components: Off
+Import Path: 
+
+Translating to Parasolid data types...
+Translation process completed
+Total time required to translate and post process:00 : 00 : 01
