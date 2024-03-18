@@ -5,7 +5,15 @@
 	(uuid "e627faa8-e70a-45ae-a586-d1ebe96a66e1")
 	(paper "C")
 	(title_block
-		(comment 2 "DRAFT")
+		(title "Quadcopter")
+		(date "2024-03-17")
+		(rev "01")
+		(company "Mend0z0")
+		(comment 1 "01")
+		(comment 2 "PRELIMINARY")
+		(comment 3 "Siavash Taher Parvar")
+		(comment 8 "N/A")
+		(comment 9 "First Version")
 	)
 	(lib_symbols
 		(symbol "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603"
@@ -1534,6 +1542,102 @@
 				)
 			)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 228.6 228.6)
@@ -2958,18 +3062,6 @@
 		)
 		(uuid "4af4c966-1d47-4619-8c6c-57b14777b80b")
 	)
-	(hierarchical_label "GND"
-		(shape passive)
-		(at 139.7 228.6 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b5828263-8b4e-44b1-81df-fdc8d9b5d415")
-	)
 	(hierarchical_label "+V_IN"
 		(shape input)
 		(at 139.7 203.2 180)
@@ -2991,7 +3083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16c4f87d-74e2-4190-a0b8-98296750c76a")
-		(property "Reference" "C3909"
+		(property "Reference" "C3303"
 			(at 303.784 161.29 0)
 			(effects
 				(font
@@ -3120,7 +3212,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "C3909")
+					(reference "C3303")
 					(unit 1)
 				)
 			)
@@ -3135,7 +3227,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36034b2b-5283-4bdc-82e3-22ae20d7259f")
-		(property "Reference" "L3901"
+		(property "Reference" "L3301"
 			(at 213.614 202.184 0)
 			(effects
 				(font
@@ -3264,7 +3356,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "L3901")
+					(reference "L3301")
 					(unit 1)
 				)
 			)
@@ -3280,7 +3372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c080268-441a-4272-8694-7ac0c55d67b8")
-		(property "Reference" "C3908"
+		(property "Reference" "C3301"
 			(at 154.94 210.8199 90)
 			(effects
 				(font
@@ -3414,7 +3506,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "C3908")
+					(reference "C3301")
 					(unit 1)
 				)
 			)
@@ -3429,7 +3521,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c9b2031-2a8c-499c-92d0-2b1bbb612e72")
-		(property "Reference" "R3901"
+		(property "Reference" "R3301"
 			(at 260.604 161.29 0)
 			(effects
 				(font
@@ -3558,7 +3650,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "R3901")
+					(reference "R3301")
 					(unit 1)
 				)
 			)
@@ -3574,7 +3666,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51f93682-7e08-4ecc-9b97-070923fed562")
-		(property "Reference" "C3907"
+		(property "Reference" "C3302"
 			(at 180.34 210.8199 90)
 			(effects
 				(font
@@ -3708,7 +3800,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "C3907")
+					(reference "C3302")
 					(unit 1)
 				)
 			)
@@ -3723,7 +3815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55711e22-3709-402d-a688-8bfe668fb6e3")
-		(property "Reference" "D3905"
+		(property "Reference" "D3301"
 			(at 280.924 173.99 0)
 			(effects
 				(font
@@ -3852,7 +3944,74 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "D3905")
+					(reference "D3301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 228.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "581f7c2f-c866-4ef0-8029-dedd60644e4b")
+		(property "Reference" "#PWR03301"
+			(at 133.35 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 135.89 228.5999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c957848-857a-480b-892d-f08825177e63")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
+					(reference "#PWR03301")
 					(unit 1)
 				)
 			)
@@ -3868,7 +4027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f943f9e-92c5-4e2b-ba7f-60bd0a3743c4")
-		(property "Reference" "C3904"
+		(property "Reference" "C3304"
 			(at 320.04 209.5499 90)
 			(effects
 				(font
@@ -4002,7 +4161,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "C3904")
+					(reference "C3304")
 					(unit 1)
 				)
 			)
@@ -4018,7 +4177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8de50c01-d3fd-4095-9c80-fffdf13db53a")
-		(property "Reference" "D3906"
+		(property "Reference" "D3302"
 			(at 372.11 208.2799 90)
 			(effects
 				(font
@@ -4152,7 +4311,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "D3906")
+					(reference "D3302")
 					(unit 1)
 				)
 			)
@@ -4168,7 +4327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6cbdb85-f805-432b-8e35-799c92d365fc")
-		(property "Reference" "C3905"
+		(property "Reference" "C3305"
 			(at 345.44 209.5499 90)
 			(effects
 				(font
@@ -4302,7 +4461,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "C3905")
+					(reference "C3305")
 					(unit 1)
 				)
 			)
@@ -4318,7 +4477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d490458b-b083-4f5c-b12b-5c3825158739")
-		(property "Reference" "C3906"
+		(property "Reference" "C3306"
 			(at 396.24 209.5499 90)
 			(effects
 				(font
@@ -4452,7 +4611,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "C3906")
+					(reference "C3306")
 					(unit 1)
 				)
 			)
@@ -4468,7 +4627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dae70654-437d-40cd-9104-0e373d85d883")
-		(property "Reference" "U3902"
+		(property "Reference" "U3301"
 			(at 271.78 187.96 0)
 			(effects
 				(font
@@ -4606,7 +4765,7 @@
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/86512584-84de-43e1-b652-f4f460ec7f16"
-					(reference "U3902")
+					(reference "U3301")
 					(unit 1)
 				)
 			)
