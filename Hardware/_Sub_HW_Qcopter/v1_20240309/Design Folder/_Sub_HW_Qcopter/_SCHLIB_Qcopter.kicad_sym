@@ -4878,7 +4878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:CVILUX_CF35242D0RD-NH"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -4997,7 +4997,7 @@
 		(symbol "CONN_FPC/FFC_24POS_R/A_SMD-0.5MM_1_1"
 			(rectangle
 				(start 0 0)
-				(end 5.08 -63.5)
+				(end 5.08 -68.58)
 				(stroke
 					(width 0)
 					(type default)
@@ -5446,6 +5446,42 @@
 					)
 				)
 			)
+			(pin passive line
+				(at -5.08 -63.5 0)
+				(length 5.08)
+				(name "SH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "SH1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -66.04 0)
+				(length 5.08)
+				(name "SH"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "SH2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 	)
 	(symbol "CONN_HDR_1X2_5A_RA_THD-2.54MM"
@@ -5840,6 +5876,202 @@
 			)
 		)
 	)
+	(symbol "CONN_HDR_1X2_VERT_THD-1.27MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HDR_1X2_VERT"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M50-353.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 2 position 0.050\" (1.27mm)"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "THD-1.27MM"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "M50-3530242"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Harwin Inc."
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "952-3598-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harwin-inc/M50-3530242/7044013"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Connector Header Through Hole 2 position 0.050\" (1.27mm)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_HDR_1X2_VERT_THD-1.27MM_1_1"
+			(rectangle
+				(start 5.08 2.54)
+				(end 12.7 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "HDR 1X2\n1.27 MM"
+				(at 9.398 -1.27 900)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 5.08)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "CONN_HDR_1X3_VERT_THD-1.27MM"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6054,6 +6286,238 @@
 			)
 		)
 	)
+	(symbol "CONN_HDR_1X4_VERT_THD-1.27MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "J"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HDR_1X4_VERT"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/M50-353.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Connector Header Through Hole 4 position 0.050\" (1.27mm)"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "THD-1.27MM"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "M50-3530442"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Harwin Inc."
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "952-3600-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harwin-inc/M50-3530442/7044015"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Connector Header Through Hole 4 position 0.050\" (1.27mm)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_HDR_1X4_VERT_THD-1.27MM_1_1"
+			(rectangle
+				(start 5.08 2.54)
+				(end 12.7 -10.16)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "HDR 1X4\n1.27 MM"
+				(at 9.652 -4.064 900)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 0)
+				(length 5.08)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 0)
+				(length 5.08)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -7.62 0)
+				(length 5.08)
+				(name "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "CONN_RECEPT_RF_50R_6GHz_UMCC"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6076,7 +6540,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:MURATA_MM8030-2610RJ3"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -6155,7 +6619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Purchase Link" "purchase link"
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/MM8030-2610RJ3/3635132?s=N4IgTCBcDaICwE4AMBaArMg7CsKByAIiALoC%2BQA"
 			(at 3.556 11.684 0)
 			(effects
 				(font
@@ -6205,7 +6669,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -5.08 0)
+				(at -5.08 -2.54 0)
 				(length 5.08)
 				(name "SIG"
 					(effects
@@ -6223,7 +6687,25 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
+				(at 15.24 -2.54 180)
+				(length 5.08)
+				(name "SIG"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 15.24 -6.35 180)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -6232,7 +6714,25 @@
 						)
 					)
 				)
-				(number "2"
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -6.35 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6264,7 +6764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_PCBLIB_HotPlate:USB_Micro-B_Amphenol_10118194_Horizontal"
+		(property "Footprint" "_PCBLIB_Qcopter:USB_Micro-B_Amphenol_10118194_Horizontal"
 			(at 2.54 15.24 0)
 			(effects
 				(font
@@ -6495,6 +6995,209 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "DIODE_GEN_TS4148 RCG_75V_100mA_D0603"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "D"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GEN_75V_100mA"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://services.ts.com.tw/storage/resources/datasheet/TS4148%20SERIES_A2301.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode 75 V 100mA Surface Mount 0603"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "D0603"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "TS4148 RCG"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Taiwan Semiconductor Corporation"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "1801-TS4148RCGTR-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/taiwan-semiconductor-corporation/TS4148-RCG/7359811"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Diode 75 V 100mA Surface Mount 0603"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "DIODE_GEN_TS4148 RCG_75V_100mA_D0603_0_1"
+			(polyline
+				(pts
+					(xy 7.62 -1.27) (xy 7.62 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 1.27) (xy 5.08 -1.27) (xy 7.62 0) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "DIODE_GEN_TS4148 RCG_75V_100mA_D0603_1_1"
+			(pin passive line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -12558,7 +13261,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:QFN-16-1EP_3x3mm_P0.5mm_EP1.75x1.75mm_ThermalVias"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -15296,7 +15999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "_PCBLIB_SparkleSplashy:QFN-40-1EP_5x5mm_P0.4mm_EP3.8x3.8mm_ThermalVias"
+		(property "Footprint" "_PCBLIB_Qcopter:QFN-40-1EP_5x5mm_P0.4mm_EP3.8x3.8mm_ThermalVias"
 			(at 2.794 14.732 0)
 			(effects
 				(font
@@ -16218,7 +16921,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:PSON65P250X250X100-8N"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -17141,494 +17844,6 @@
 			)
 		)
 	)
-	(symbol "IC_SR_SN74HC595_SIPO_8bit_16-X1QFN (2.5x2.5)"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "U"
-			(at 3.302 5.588 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SN74HC595BRWNR"
-			(at 3.302 7.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74hc595b"
-			(at 3.302 9.906 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Shift Shift Register 1 Element 8 Bit 16-X1QFN (2.5x2.5)"
-			(at 3.302 14.478 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Manufacturer)" "SN74HC595BRWNR"
-			(at 3.048 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 3.048 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "296-44070-2-ND"
-			(at 3.048 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 3.048 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74HC595BRWNR/5962132"
-			(at 3.302 12.192 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 2.794 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "PCB CHECk" "PCB (N/A)"
-			(at 2.794 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Package" "16-X1QFN (2.5x2.5)"
-			(at 2.794 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "ki_keywords" "Shift Shift Register 1 Element 8 Bit 16-X1QFN (2.5x2.5)"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "IC_SR_SN74HC595_SIPO_8bit_16-X1QFN (2.5x2.5)_1_0"
-			(pin passive line
-				(at -5.08 -22.86 0)
-				(length 5.08)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "17"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(symbol "IC_SR_SN74HC595_SIPO_8bit_16-X1QFN (2.5x2.5)_1_1"
-			(polyline
-				(pts
-					(xy 0 -25.4) (xy 15.24 -25.4)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start 0 0)
-				(end 15.24 -30.48)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(text "16-X1QFN (2.5x2.5)"
-				(at 7.874 -29.21 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(text "SN74HC595B"
-				(at 7.62 -26.924 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -5.08 180)
-				(length 5.08)
-				(name "QB"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -12.7 0)
-				(length 5.08)
-				(name "~{SRCLR}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -10.16 0)
-				(length 5.08)
-				(name "SRCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -7.62 0)
-				(length 5.08)
-				(name "RCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -2.54 0)
-				(length 5.08)
-				(name "~{OE}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -5.08 0)
-				(length 5.08)
-				(name "SER"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -2.54 180)
-				(length 5.08)
-				(name "QA"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "15"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -17.78 0)
-				(length 5.08)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "16"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -7.62 180)
-				(length 5.08)
-				(name "QC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -10.16 180)
-				(length 5.08)
-				(name "QD"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -12.7 180)
-				(length 5.08)
-				(name "QE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -15.24 180)
-				(length 5.08)
-				(name "QF"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -17.78 180)
-				(length 5.08)
-				(name "QG"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -20.32 180)
-				(length 5.08)
-				(name "QH"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -5.08 -20.32 0)
-				(length 5.08)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 20.32 -22.86 180)
-				(length 5.08)
-				(name "QH'"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-	)
 	(symbol "IC_SWITCH_BGS13SN8E6327XTSA1_SP3T_1C_6GHz_PG-TSNP-8-1"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17651,7 +17866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:TSNP-8-1_INF"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -18093,7 +18308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:6-XSON"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -19157,7 +19372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -22086,6 +22301,82 @@
 			)
 		)
 	)
+	(symbol "MECH_FD"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "FD"
+			(at 2.54 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 2.54 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "FIDUCIAL POINT 0.5MM DIA WITH 1MM MASK"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_FD_0_1"
+			(circle
+				(center 3.81 -3.81)
+				(radius 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 3.81 -3.81)
+				(radius 2.8398)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
 	(symbol "MECH_JUMPER_2POS_J1015"
 		(exclude_from_sim no)
 		(in_bom no)
@@ -22304,6 +22595,185 @@
 					)
 				)
 				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_LOGO"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "TXT"
+			(at 2.54 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_PCBLIB_Qcopter:LOGO_Mend0z0"
+			(at 2.54 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 2.54 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_LOGO_0_0"
+			(rectangle
+				(start 0 0)
+				(end 12.7 -12.7)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "MEND0Z0\nLOGO"
+				(at 6.35 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_MH_M3"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(property "Reference" "MH"
+			(at 5.08 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 5.08 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 5.08 10.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_MH_M3_0_1"
+			(circle
+				(center 7.62 0)
+				(radius 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 7.62 0)
+				(radius 2.8398)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "MECH_MH_M3_1_1"
+			(pin passive line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -23802,7 +24272,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "footrpring"
+		(property "Footprint" "_PCBLIB_Qcopter:NX2016SA_NDK"
 			(at 3.81 18.288 0)
 			(effects
 				(font
