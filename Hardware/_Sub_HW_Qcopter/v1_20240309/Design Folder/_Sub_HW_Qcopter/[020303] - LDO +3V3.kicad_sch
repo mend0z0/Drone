@@ -5,7 +5,15 @@
 	(uuid "2606c918-11c0-470a-a0bc-e3cbcfe55edc")
 	(paper "C")
 	(title_block
-		(comment 2 "DRAFT")
+		(title "Quadcopter")
+		(date "2024-03-17")
+		(rev "01")
+		(company "Mend0z0")
+		(comment 1 "01")
+		(comment 2 "PRELIMINARY")
+		(comment 3 "Siavash Taher Parvar")
+		(comment 8 "N/A")
+		(comment 9 "First Version")
 	)
 	(lib_symbols
 		(symbol "_SCHLIB_Qcopter:CAP_CER_10uF_16V_X5R_C0603"
@@ -1116,6 +1124,102 @@
 				)
 			)
 		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 	)
 	(junction
 		(at 177.8 193.04)
@@ -2033,18 +2137,6 @@
 		)
 		(uuid "702fc9d5-db46-44ea-bfb2-4b23d09339b3")
 	)
-	(hierarchical_label "GND"
-		(shape passive)
-		(at 165.1 226.06 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b0260d53-fa6a-416e-8667-198e21ec3b61")
-	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_10uF_16V_X5R_C0603")
 		(at 292.1 195.58 270)
@@ -2055,7 +2147,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19296845-a128-4ed4-8290-6892198c080d")
-		(property "Reference" "C3602"
+		(property "Reference" "C3402"
 			(at 294.64 196.8499 90)
 			(effects
 				(font
@@ -2181,27 +2273,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "20c91b3e-6079-46a0-aa3f-a8d2c8271ce3")
+			(uuid "67dc9298-3ace-4740-a394-41a6d6d9f331")
 		)
 		(pin "2"
-			(uuid "fea32c58-1372-45d1-bbd1-7522835c0fab")
+			(uuid "d0978155-1077-439d-a451-a8be9e40aac4")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
-					(reference "C3602")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/c687d90c-2ade-43f2-9366-cfff9c79456b"
-					(reference "C3603")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/89c85fef-530b-4b8e-8624-d86fb53e17b7"
-					(reference "C1302")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/ccf78d53-405f-4cbf-a00f-81329b3705d6"
-					(reference "C3803")
+					(reference "C3402")
 					(unit 1)
 				)
 			)
@@ -2217,7 +2297,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2922b190-b744-455d-847d-cf5d9f824a9f")
-		(property "Reference" "R3801"
+		(property "Reference" "R3401"
 			(at 215.9 204.4699 90)
 			(effects
 				(font
@@ -2343,27 +2423,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "76fc3dc8-9a9e-48cd-8b11-ef2c3bfacb6d")
+			(uuid "67eda03e-89ec-4456-a455-63a2149d8eb2")
 		)
 		(pin "1"
-			(uuid "ae9f7ab2-73f3-41af-beab-b8be32b71715")
+			(uuid "83b82139-a6c5-454d-8e7b-a8cb7991f9ea")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
-					(reference "R3801")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/c687d90c-2ade-43f2-9366-cfff9c79456b"
-					(reference "R3601")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/89c85fef-530b-4b8e-8624-d86fb53e17b7"
-					(reference "R1301")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/ccf78d53-405f-4cbf-a00f-81329b3705d6"
-					(reference "R3803")
+					(reference "R3401")
 					(unit 1)
 				)
 			)
@@ -2379,7 +2447,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ab0bfbb-13d5-4ce6-a86a-3e72551192ab")
-		(property "Reference" "C3801"
+		(property "Reference" "C3401"
 			(at 180.34 204.4699 90)
 			(effects
 				(font
@@ -2505,27 +2573,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "361f0bf1-20dd-4b4a-96c3-354095301128")
+			(uuid "e24975ea-9047-4dd6-a926-da3b411435f8")
 		)
 		(pin "2"
-			(uuid "f38fdf67-e256-4b37-9c5c-f21126b82937")
+			(uuid "799964f4-9010-40cd-bae8-201bee65edc0")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
-					(reference "C3801")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/c687d90c-2ade-43f2-9366-cfff9c79456b"
-					(reference "C3601")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/89c85fef-530b-4b8e-8624-d86fb53e17b7"
-					(reference "C1301")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/ccf78d53-405f-4cbf-a00f-81329b3705d6"
-					(reference "C3802")
+					(reference "C3401")
 					(unit 1)
 				)
 			)
@@ -2541,7 +2597,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66fb5eaa-7805-4e1c-a07c-6652e1ed4939")
-		(property "Reference" "LED3801"
+		(property "Reference" "LED3401"
 			(at 335.28 212.6614 90)
 			(effects
 				(font
@@ -2667,27 +2723,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "12478450-6153-4fe6-8fcf-2767cf1b5849")
+			(uuid "f09ff511-3356-45f1-85a4-65b31dc9a2b1")
 		)
 		(pin "2"
-			(uuid "4d9ea32d-b4a9-48f5-bece-789e3339c39f")
+			(uuid "d6b58a12-1e57-4add-8d42-feeef8ad822b")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
-					(reference "LED3801")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/c687d90c-2ade-43f2-9366-cfff9c79456b"
-					(reference "LED3601")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/89c85fef-530b-4b8e-8624-d86fb53e17b7"
-					(reference "LED1301")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/ccf78d53-405f-4cbf-a00f-81329b3705d6"
-					(reference "LED3802")
+					(reference "LED3401")
 					(unit 1)
 				)
 			)
@@ -2703,7 +2747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a69034e-9d81-447a-bea0-49dbc0769c37")
-		(property "Reference" "R3802"
+		(property "Reference" "R3402"
 			(at 332.74 196.8499 90)
 			(effects
 				(font
@@ -2829,27 +2873,82 @@
 			)
 		)
 		(pin "2"
-			(uuid "17a616b6-56b2-49aa-8082-b7ae8c99ef22")
+			(uuid "08f7d912-160e-495b-b7fd-d43b1e7c2290")
 		)
 		(pin "1"
-			(uuid "efc3a69b-8456-4b31-9149-d3618f1065c9")
+			(uuid "2f576fc3-9489-4861-8a47-f200e8bb9013")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
-					(reference "R3802")
+					(reference "R3402")
 					(unit 1)
 				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/c687d90c-2ade-43f2-9366-cfff9c79456b"
-					(reference "R3602")
-					(unit 1)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 226.06 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "936db467-8e5a-49bb-b8ba-c2f105c7d41e")
+		(property "Reference" "#PWR03401"
+			(at 158.75 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/89c85fef-530b-4b8e-8624-d86fb53e17b7"
-					(reference "R1302")
-					(unit 1)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 226.0599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/ccf78d53-405f-4cbf-a00f-81329b3705d6"
-					(reference "R3804")
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8cb751b-afa8-47a8-a2a0-e0df9bf07e55")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
+					(reference "#PWR03401")
 					(unit 1)
 				)
 			)
@@ -2865,7 +2964,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df56db26-ba42-48e1-b3c5-ae46c364ab7e")
-		(property "Reference" "U3801"
+		(property "Reference" "U3401"
 			(at 255.27 177.8 0)
 			(effects
 				(font
@@ -2986,36 +3085,24 @@
 			)
 		)
 		(pin "2"
-			(uuid "25ccbf23-4f15-4959-a60f-489274feafb0")
+			(uuid "ec746639-7a70-4ba8-9755-717f502366b0")
 		)
 		(pin "1"
-			(uuid "6a7f5fc5-b1e6-4022-9861-9af633239490")
+			(uuid "15df3fd5-dff2-4b6d-918e-c8daaf12b85e")
 		)
 		(pin "4"
-			(uuid "cdd833e0-4b61-43b7-9cf3-f78d044b5a7e")
+			(uuid "215ccb65-cbf6-4bf2-aa48-7fa6ab1e0cfb")
 		)
 		(pin "5"
-			(uuid "824c4988-0995-46ed-9730-0311aff92f25")
+			(uuid "96a3be74-98eb-4235-9a77-b651605a4693")
 		)
 		(pin "3"
-			(uuid "0a1cdcc4-5512-4150-a4cd-203d5866b88d")
+			(uuid "faa1eb61-a20d-42e0-aa49-bf82b733706f")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/f68d8295-72fb-4a7a-82e7-db0d0a2f4ced"
-					(reference "U3801")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/c687d90c-2ade-43f2-9366-cfff9c79456b"
-					(reference "U3601")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/89c85fef-530b-4b8e-8624-d86fb53e17b7"
-					(reference "U1301")
-					(unit 1)
-				)
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2/ccf78d53-405f-4cbf-a00f-81329b3705d6"
-					(reference "U3802")
+					(reference "U3401")
 					(unit 1)
 				)
 			)
