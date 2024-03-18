@@ -5,7 +5,15 @@
 	(uuid "7b76c15c-a122-4b02-a22e-cad366359bbb")
 	(paper "C")
 	(title_block
-		(comment 2 "DRAFT")
+		(title "Quadcopter")
+		(date "2024-03-17")
+		(rev "01")
+		(company "Mend0z0")
+		(comment 1 "01")
+		(comment 2 "PRELIMINARY")
+		(comment 3 "Siavash Taher Parvar")
+		(comment 8 "N/A")
+		(comment 9 "First Version")
 	)
 	(lib_symbols)
 	(wire
@@ -70,16 +78,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 153.67) (xy 241.3 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37add13f-2676-46bd-b307-2d60af1368d6")
-	)
-	(wire
-		(pts
 			(xy 203.2 143.51) (xy 241.3 143.51)
 		)
 		(stroke
@@ -90,7 +88,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 167.64) (xy 241.3 167.64)
+			(xy 203.2 171.45) (xy 241.3 171.45)
 		)
 		(stroke
 			(width 0)
@@ -100,7 +98,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 160.02) (xy 241.3 160.02)
+			(xy 203.2 163.83) (xy 241.3 163.83)
 		)
 		(stroke
 			(width 0)
@@ -110,7 +108,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 157.48) (xy 241.3 157.48)
+			(xy 203.2 161.29) (xy 241.3 161.29)
 		)
 		(stroke
 			(width 0)
@@ -130,7 +128,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 162.56) (xy 241.3 162.56)
+			(xy 203.2 166.37) (xy 241.3 166.37)
 		)
 		(stroke
 			(width 0)
@@ -147,6 +145,16 @@
 			(type default)
 		)
 		(uuid "67fb16d9-a5cf-42e9-8083-cb62416f7de5")
+	)
+	(wire
+		(pts
+			(xy 203.2 158.75) (xy 241.3 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ce8969b-3ce8-431e-acdc-fb7447ea8cb1")
 	)
 	(wire
 		(pts
@@ -200,7 +208,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 172.72) (xy 241.3 172.72)
+			(xy 203.2 176.53) (xy 241.3 176.53)
 		)
 		(stroke
 			(width 0)
@@ -210,7 +218,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 165.1) (xy 241.3 165.1)
+			(xy 203.2 168.91) (xy 241.3 168.91)
 		)
 		(stroke
 			(width 0)
@@ -237,16 +245,6 @@
 			(type default)
 		)
 		(uuid "b9fc69a6-cca1-4c69-81cc-41c8b88e37ae")
-	)
-	(wire
-		(pts
-			(xy 292.1 212.09) (xy 304.8 212.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd065efb-ec4d-40bb-9374-be191edee6f8")
 	)
 	(wire
 		(pts
@@ -310,7 +308,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 177.8) (xy 241.3 177.8)
+			(xy 203.2 181.61) (xy 241.3 181.61)
 		)
 		(stroke
 			(width 0)
@@ -320,17 +318,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 210.82) (xy 241.3 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f12864ef-3559-47b8-8060-e771127c4ac4")
-	)
-	(wire
-		(pts
-			(xy 203.2 175.26) (xy 241.3 175.26)
+			(xy 203.2 179.07) (xy 241.3 179.07)
 		)
 		(stroke
 			(width 0)
@@ -338,27 +326,65 @@
 		)
 		(uuid "fae37232-0c46-4950-a43b-734c7db6ba1c")
 	)
-	(label "GND"
-		(at 292.1 212.09 0)
-		(fields_autoplaced yes)
+	(text_box "2"
+		(exclude_from_sim no)
+		(at 317.5 128.27 0)
+		(size 11.43 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
 			)
-			(justify left bottom)
 		)
-		(uuid "58f55877-1ec9-47b7-8339-d29cac65d83b")
+		(uuid "8be8429e-32b9-48fe-a2bf-9d7cbc5b73c5")
 	)
-	(label "GND"
-		(at 228.6 210.82 0)
-		(fields_autoplaced yes)
+	(text_box "1"
+		(exclude_from_sim no)
+		(at 254 128.27 0)
+		(size 11.43 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
 			)
-			(justify left bottom)
 		)
-		(uuid "60841f8e-9622-4186-b912-e1032f54ec02")
+		(uuid "93e65fd2-0092-42cf-9039-77bc71e41276")
+	)
+	(text_box "3"
+		(exclude_from_sim no)
+		(at 179.07 128.27 0)
+		(size 11.43 12.7)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 5.08 5.08)
+				(thickness 1.016)
+				(bold yes)
+			)
+		)
+		(uuid "b1dacbb9-8c6e-404a-9233-4cadfc2b7e9a")
 	)
 	(sheet
 		(at 177.8 127)
@@ -381,7 +407,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "[05] - Power Supply .kicad_sch"
+		(property "Sheetfile" "[0203] - Power Supply .kicad_sch"
 			(at 177.8 216.4846 0)
 			(effects
 				(font
@@ -391,7 +417,7 @@
 			)
 		)
 		(pin "EN_+3V3_1" input
-			(at 203.2 157.48 0)
+			(at 203.2 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -411,7 +437,7 @@
 			(uuid "1460491a-24c9-401a-88bb-91a5a403b37e")
 		)
 		(pin "EN_+3V3_2" input
-			(at 203.2 160.02 0)
+			(at 203.2 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -421,7 +447,7 @@
 			(uuid "3ac33e34-5542-4fcf-8c58-ba0b94f224d1")
 		)
 		(pin "EN_+3V3_3" input
-			(at 203.2 162.56 0)
+			(at 203.2 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -491,7 +517,7 @@
 			(uuid "8e549131-beae-449b-adae-f18a4da53eda")
 		)
 		(pin "USB_DP" bidirectional
-			(at 203.2 172.72 0)
+			(at 203.2 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -501,7 +527,7 @@
 			(uuid "3653dc3d-39bd-49f3-a278-ac8379a17ecb")
 		)
 		(pin "USB_DM" bidirectional
-			(at 203.2 175.26 0)
+			(at 203.2 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -511,7 +537,7 @@
 			(uuid "35c0865d-1d4e-4264-b820-21fba1587a1f")
 		)
 		(pin "USB_ID" input
-			(at 203.2 177.8 0)
+			(at 203.2 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -520,18 +546,8 @@
 			)
 			(uuid "dea9bb38-6171-454b-b40c-e563a37cadfe")
 		)
-		(pin "GND" passive
-			(at 203.2 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "d6d71c75-d8ab-4f66-95ff-deae998a15d1")
-		)
 		(pin "EN_+1V3" input
-			(at 203.2 165.1 0)
+			(at 203.2 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -541,7 +557,7 @@
 			(uuid "5985d04a-ed8d-4bf3-90ec-f6f4aeabefbd")
 		)
 		(pin "EN_+2V8" input
-			(at 203.2 167.64 0)
+			(at 203.2 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -550,20 +566,20 @@
 			)
 			(uuid "2ad0378d-e00e-45b9-adf8-ff1be2d610f6")
 		)
-		(pin "VM" output
-			(at 203.2 153.67 0)
+		(pin "LDO_EN" input
+			(at 203.2 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2ef4e306-b19d-4fec-b08d-4e1eb1124e2f")
+			(uuid "759864a1-ea14-4669-b7e7-284d8dca6464")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21"
-					(page "22")
+					(page "5")
 				)
 			)
 		)
@@ -589,7 +605,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "[04] - FBD_RadioController.kicad_sch"
+		(property "Sheetfile" "[0202] - FBD_RadioController.kicad_sch"
 			(at 304.8 216.4846 0)
 			(effects
 				(font
@@ -678,16 +694,6 @@
 			)
 			(uuid "ec1a3f75-c79a-4998-884a-0c7620efc76e")
 		)
-		(pin "GND" passive
-			(at 304.8 212.09 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "1333f3dc-7e1d-4b7e-b1af-3f05146db035")
-		)
 		(pin "+3V3_2" input
 			(at 304.8 133.35 180)
 			(effects
@@ -727,7 +733,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "[03] - FBD_FlightController.kicad_sch"
+		(property "Sheetfile" "[0201] - FBD_FlightController.kicad_sch"
 			(at 241.3 216.4846 0)
 			(effects
 				(font
@@ -777,7 +783,7 @@
 			(uuid "168020cf-0412-46b7-bc7c-d5fae161da12")
 		)
 		(pin "EN_LDO_1" output
-			(at 241.3 157.48 180)
+			(at 241.3 161.29 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -787,7 +793,7 @@
 			(uuid "223bd550-54df-4095-ba97-32dc542cea0d")
 		)
 		(pin "EN_LDO_2" output
-			(at 241.3 160.02 180)
+			(at 241.3 163.83 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -797,7 +803,7 @@
 			(uuid "05c6e132-febf-49f7-886a-22f68e1676e0")
 		)
 		(pin "EN_LDO_3" output
-			(at 241.3 162.56 180)
+			(at 241.3 166.37 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -817,7 +823,7 @@
 			(uuid "cac23da6-b13f-4952-a7a4-f16c3341dabc")
 		)
 		(pin "USB_DP" bidirectional
-			(at 241.3 172.72 180)
+			(at 241.3 176.53 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -827,7 +833,7 @@
 			(uuid "123f0e64-7de5-4732-806f-da89d0477da9")
 		)
 		(pin "USB_DM" bidirectional
-			(at 241.3 175.26 180)
+			(at 241.3 179.07 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -837,7 +843,7 @@
 			(uuid "d57062b2-4a7d-4ffe-889d-a89ab322e5ce")
 		)
 		(pin "USB_ID" bidirectional
-			(at 241.3 177.8 180)
+			(at 241.3 181.61 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -845,16 +851,6 @@
 				(justify left)
 			)
 			(uuid "95bc6892-52b4-451f-92f6-3bd6ebfc2142")
-		)
-		(pin "GND" passive
-			(at 241.3 210.82 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "fb591fab-ec4d-4473-991b-401322842bec")
 		)
 		(pin "BATT_V" input
 			(at 241.3 139.7 180)
@@ -865,16 +861,6 @@
 				(justify left)
 			)
 			(uuid "9052888e-fdad-476c-a3c3-3f50b5a2530b")
-		)
-		(pin "+3V3_1" input
-			(at 241.3 151.13 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8e66df32-904d-44b7-a12b-40d724506233")
 		)
 		(pin "PWR_+1V3" input
 			(at 241.3 143.51 180)
@@ -927,7 +913,7 @@
 			(uuid "e4f716ec-bfa0-4b5c-9054-d75c4aea8e05")
 		)
 		(pin "EN_LDO_4" output
-			(at 241.3 165.1 180)
+			(at 241.3 168.91 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,7 +923,7 @@
 			(uuid "f8f2931d-902e-494e-b80a-5420dabd61f9")
 		)
 		(pin "EN_LDO_5" output
-			(at 241.3 167.64 180)
+			(at 241.3 171.45 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -946,15 +932,25 @@
 			)
 			(uuid "013955a7-ccf1-4310-9ef5-d150528cdcee")
 		)
-		(pin "VM" input
-			(at 241.3 153.67 180)
+		(pin "LDO_EN" output
+			(at 241.3 158.75 180)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "36f50c87-c656-4db7-bc95-b43a798a75fa")
+			(uuid "b833c965-4752-4c52-8bfb-ccdb9d5eb3dc")
+		)
+		(pin "PWR_+3V3_1" input
+			(at 241.3 151.13 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "487f0b99-8b70-4a4e-9f4c-5be5855d806e")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
