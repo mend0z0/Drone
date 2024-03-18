@@ -5,10 +5,478 @@
 	(uuid "b24dada9-8287-4080-8ef7-6ef9c96b7f8c")
 	(paper "C")
 	(title_block
-		(comment 2 "DRAFT")
+		(title "Quadcopter")
+		(date "2024-03-17")
+		(rev "01")
+		(company "Mend0z0")
+		(comment 1 "01")
+		(comment 2 "PRELIMINARY")
+		(comment 3 "Siavash Taher Parvar")
+		(comment 8 "N/A")
+		(comment 9 "First Version")
 	)
-	(lib_symbols)
-	(text_box "4xLED 5MM BLUE\n4xLED HOLDER BLACK 5MM\n\n1 m WIRE\n4xJST 1.27mm FEMALE HEADER\n\n1xBATTERY 3.7V\n\n\n1xFRAME\n4xCORELESS MOTORS 0716\n4xpropeller\n4xM3x3MM STAND OFF\n4xM3 PHILLIPS SCREW\n4xM3 NUTS\n\n1xPCB 50x50 MM2 4LAYERs IMPEDANCE CONTROLLED\n\n\n1x OV2640 CAMERA MODULE \n\n\n4x mounting holes"
+	(lib_symbols
+		(symbol "_SCHLIB_Qcopter:MECH_FD"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FD"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "FIDUCIAL POINT 0.5MM DIA WITH 1MM MASK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_FD_0_1"
+				(circle
+					(center 3.81 -3.81)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 3.81 -3.81)
+					(radius 2.8398)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:MECH_LOGO"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "TXT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "_PCBLIB_Qcopter:LOGO_Mend0z0"
+				(at 2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" "0"
+				(at 2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_LOGO_0_0"
+				(rectangle
+					(start 0 0)
+					(end 12.7 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "MEND0Z0\nLOGO"
+					(at 6.35 -6.35 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "_SCHLIB_Qcopter:MECH_MH_M3"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "MH"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "M3"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MECH_MH_M3_0_1"
+				(circle
+					(center 7.62 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 7.62 0)
+					(radius 2.8398)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "MECH_MH_M3_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 368.3 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "28f922c4-408c-4b28-9dee-1dcf0f00acdd")
+	)
+	(junction
+		(at 381 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5eee196-e291-4e77-a090-23bd5943bcde")
+	)
+	(junction
+		(at 355.6 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e064fe0a-1698-403a-a176-761d6f5a36bd")
+	)
+	(wire
+		(pts
+			(xy 330.2 139.7) (xy 330.2 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "036799aa-b158-420f-862f-74d97ebeb1b3")
+	)
+	(wire
+		(pts
+			(xy 381 137.16) (xy 381 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25da4f34-6a6e-4e57-b15e-7710a0202b85")
+	)
+	(wire
+		(pts
+			(xy 368.3 139.7) (xy 368.3 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b9675af-c759-4684-8eb6-94281e73b22a")
+	)
+	(wire
+		(pts
+			(xy 355.6 139.7) (xy 330.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b99a857-d2ee-4d37-805b-56f89eacba51")
+	)
+	(wire
+		(pts
+			(xy 368.3 139.7) (xy 355.6 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d162776-29d5-4d4f-b3ae-fddf7f51bb1c")
+	)
+	(wire
+		(pts
+			(xy 355.6 137.16) (xy 355.6 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95b5819d-5a02-474a-9664-e641ec016df2")
+	)
+	(wire
+		(pts
+			(xy 406.4 139.7) (xy 381 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4cf8bc3-e99e-4727-a1b3-b29bc52c102a")
+	)
+	(wire
+		(pts
+			(xy 381 139.7) (xy 368.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8c6cde0-b6b2-43b7-8e38-ac991180dd7c")
+	)
+	(wire
+		(pts
+			(xy 406.4 137.16) (xy 406.4 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e43d9c51-4c59-4c71-90c2-658dda66425e")
+	)
+	(text_box "4xLED 5MM BLUE\n4xLED HOLDER BLACK 5MM (FIND THE LINK FROM AMAZON)\n\n1 m WIRE\n4xJST 1.27mm FEMALE HEADER\n\n1xBATTERY 3.7V\n\n\n1xFRAME\n4xCORELESS MOTORS 0716\n4xpropeller\n4xM3x3MM STAND OFF\n4xM3 PHILLIPS SCREW\n4xM3 NUTS\n\n1xPCB 50x50 MM2 4LAYERs IMPEDANCE CONTROLLED\n\n\n1x OV2640 CAMERA MODULE \n\n\n1xPush button (FIND LINK FROM AMAZON)\n\n1x Antenna for LoRa\n"
 		(exclude_from_sim no)
 		(at 121.92 130.81 0)
 		(size 138.43 161.29)
@@ -26,5 +494,687 @@
 			(justify left top)
 		)
 		(uuid "50aae9ed-0057-4339-9f27-167777ff9ae8")
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_MH_M3")
+		(at 355.6 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02101b91-cc3b-4e25-b2d6-6a999c495559")
+		(property "Reference" "MH3802"
+			(at 359.41 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M3"
+			(at 359.41 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 345.44 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 355.6 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a75e507-80db-4fb6-84bd-943d194936f5")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "MH3802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_FD")
+		(at 377.19 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15e2f96d-2920-40a4-963a-44f39b249096")
+		(property "Reference" "FD3803"
+			(at 384.81 154.3049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 384.81 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 379.73 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 377.19 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "FIDUCIAL POINT 0.5MM DIA WITH 1MM MASK"
+			(at 377.19 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "FD3803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_FD")
+		(at 402.59 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c5c9f3c-d5ae-4938-9331-c84f4e57bce7")
+		(property "Reference" "FD3804"
+			(at 410.21 154.3049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 410.21 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 405.13 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 402.59 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "FIDUCIAL POINT 0.5MM DIA WITH 1MM MASK"
+			(at 402.59 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "FD3804")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_MH_M3")
+		(at 330.2 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b8d35ce-c9e8-4335-a4ac-8d525d2cee9b")
+		(property "Reference" "MH3801"
+			(at 334.01 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M3"
+			(at 334.01 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 320.04 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 330.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 330.2 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bcc00722-3f7e-4911-9407-165fede9bc43")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "MH3801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_LOGO")
+		(at 444.5 127 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "73eea644-8409-4011-a765-2b9b69d6ee1c")
+		(property "Reference" "TXT3801"
+			(at 458.47 132.7149 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 458.47 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "_PCBLIB_Qcopter:LOGO_Mend0z0"
+			(at 447.04 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 444.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 444.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 447.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "TXT3801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_MH_M3")
+		(at 381 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c454fe4-06e7-4c84-993a-7b31b883ab28")
+		(property "Reference" "MH3803"
+			(at 384.81 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M3"
+			(at 384.81 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 370.84 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 381 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 381 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7c55243-6214-42bc-99df-65bcd3270cf8")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "MH3803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 368.3 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3439722-8168-48ac-bc8a-d175895b48a0")
+		(property "Reference" "#PWR03801"
+			(at 368.3 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 368.3 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 368.3 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 368.3 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 368.3 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffdd2fad-d4a6-4343-9fcc-f3a0e2efe913")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "#PWR03801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_MH_M3")
+		(at 406.4 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5c875f2-4668-40a5-8891-943f63730cbe")
+		(property "Reference" "MH3804"
+			(at 410.21 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "M3"
+			(at 410.21 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad_TopBottom"
+			(at 396.24 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 406.4 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 406.4 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa8c24bb-d60c-4ea4-852c-a6aee2feacb6")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "MH3804")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_FD")
+		(at 351.79 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf387bb8-1068-4fd1-82cf-a0cac2f80062")
+		(property "Reference" "FD3802"
+			(at 359.41 154.3049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 359.41 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 354.33 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 351.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "FIDUCIAL POINT 0.5MM DIA WITH 1MM MASK"
+			(at 351.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "FD3802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_SCHLIB_Qcopter:MECH_FD")
+		(at 326.39 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d34d62f8-4cee-4f2f-9a00-84543ed254e8")
+		(property "Reference" "FD3801"
+			(at 334.01 154.3049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "~"
+			(at 334.01 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Fiducial:Fiducial_0.5mm_Mask1mm"
+			(at 328.93 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 326.39 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "FIDUCIAL POINT 0.5MM DIA WITH 1MM MASK"
+			(at 326.39 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
+					(reference "FD3801")
+					(unit 1)
+				)
+			)
+		)
 	)
 )
