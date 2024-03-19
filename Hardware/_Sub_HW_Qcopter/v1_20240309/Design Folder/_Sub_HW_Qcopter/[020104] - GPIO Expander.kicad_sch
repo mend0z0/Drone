@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -455,6 +455,18 @@
 		)
 		(uuid "78a8820e-927c-4fb5-a472-e94053d9a236")
 	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 167.386 167.64 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "00c04f20-28b6-4d14-8f43-361c65a9d8a1")
+	)
 	(text "GROUP 3"
 		(exclude_from_sim no)
 		(at 277.622 313.944 90)
@@ -465,6 +477,18 @@
 		)
 		(uuid "038c9d31-67e4-4c94-9e72-963ef1325cd5")
 	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 345.186 167.64 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "4ad9bebc-6e27-45a5-a44d-3f53e1369a2b")
+	)
 	(text "GROUP 2"
 		(exclude_from_sim no)
 		(at 277.368 276.352 90)
@@ -474,6 +498,18 @@
 			)
 		)
 		(uuid "5e7c440f-4fcc-4682-a5d2-37a3ce6f71a0")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 256.794 167.386 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "858763e5-2894-4193-8134-84994aa0748d")
 	)
 	(text "GROUP 1"
 		(exclude_from_sim no)
