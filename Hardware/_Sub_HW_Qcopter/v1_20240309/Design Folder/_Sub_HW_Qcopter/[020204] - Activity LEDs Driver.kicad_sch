@@ -39,7 +39,7 @@
 				)
 			)
 			(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-				(at 3.81 17.78 0)
+				(at 3.556 17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -69,7 +69,7 @@
 				)
 			)
 			(property "Package" "Package"
-				(at 3.81 36.322 0)
+				(at 3.556 36.322 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -78,7 +78,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "B1931NB--20C007614U1930"
-				(at 3.81 20.574 0)
+				(at 3.556 20.574 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -88,7 +88,7 @@
 				)
 			)
 			(property "Manufacturer" "B1931NB--20C007614U1930"
-				(at 3.81 25.4 0)
+				(at 3.556 25.4 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -98,7 +98,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "3147-B1931NB--20C007614U1930TR-ND"
-				(at 3.81 23.114 0)
+				(at 3.556 23.114 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -108,7 +108,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 27.94 0)
+				(at 3.556 27.94 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -127,8 +127,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 30.988 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 30.988 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -137,7 +137,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 33.528 0)
+				(at 3.556 33.528 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -378,7 +378,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 30.988 0)
 				(effects
 					(font
@@ -629,7 +629,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 30.988 0)
 				(effects
 					(font
@@ -880,7 +880,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -1071,7 +1071,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -1617,7 +1617,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 297.18 225.3614 90)
 			(effects
 				(font
@@ -1767,7 +1767,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 259.08 225.3614 90)
 			(effects
 				(font
@@ -1984,7 +1984,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 220.98 225.3614 90)
 			(effects
 				(font
@@ -2134,7 +2134,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 256.54 199.3899 90)
 			(effects
 				(font
@@ -2284,7 +2284,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 294.64 199.3899 90)
 			(effects
 				(font
@@ -2433,7 +2433,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 218.44 199.3899 90)
 			(effects
 				(font
