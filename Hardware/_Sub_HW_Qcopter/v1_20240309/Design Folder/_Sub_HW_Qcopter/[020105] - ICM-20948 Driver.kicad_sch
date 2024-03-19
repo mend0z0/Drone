@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -10582,28 +10582,6 @@
 		)
 		(uuid "af8580f6-ed6f-4a80-a7bc-b9c3c881a0a0")
 	)
-	(label "ICM_GND"
-		(at 232.41 215.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc645caa-c64a-41a5-a078-1f2d1d4dc374")
-	)
-	(label "ICM_GND"
-		(at 180.34 185.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c1c50885-2a3e-42f1-884f-6eab10f89cfb")
-	)
 	(label "ICM_PWR"
 		(at 232.41 191.77 0)
 		(fields_autoplaced yes)
@@ -10662,7 +10640,7 @@
 		(uuid "4bfbd69b-cc3f-45d4-81c4-63b631e73998")
 	)
 	(hierarchical_label "PWR"
-		(shape passive)
+		(shape input)
 		(at 165.1 191.77 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11200,6 +11178,73 @@
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/d6ab115a-235e-42ae-89e7-f46f758fee81"
 					(reference "R1303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 180.34 185.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2dcaf99c-37ad-49c2-8944-1bb12c8cea52")
+		(property "Reference" "#PWR01302"
+			(at 173.99 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 185.4199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 180.34 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9025cf8e-1913-4784-a7eb-214cbec85315")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/d6ab115a-235e-42ae-89e7-f46f758fee81"
+					(reference "#PWR01302")
 					(unit 1)
 				)
 			)
