@@ -39,7 +39,7 @@
 				)
 			)
 			(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
-				(at 3.81 16.764 0)
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -69,7 +69,7 @@
 				)
 			)
 			(property "Package" "THD-1.27MM"
-				(at 3.81 35.306 0)
+				(at 3.556 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -78,7 +78,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "M50-3530242"
-				(at 3.81 19.558 0)
+				(at 3.556 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -88,7 +88,7 @@
 				)
 			)
 			(property "Manufacturer" "Harwin Inc."
-				(at 3.81 24.384 0)
+				(at 3.556 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -98,7 +98,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "952-3598-ND"
-				(at 3.81 22.098 0)
+				(at 3.556 22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -108,7 +108,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
+				(at 3.556 26.924 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -127,8 +127,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 29.972 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 29.972 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -137,7 +137,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
+				(at 3.556 32.512 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -323,7 +323,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -679,7 +679,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 288.29 209.5499 0)
 			(effects
 				(font
@@ -920,7 +920,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 256.54 193.0399 90)
 			(effects
 				(font
