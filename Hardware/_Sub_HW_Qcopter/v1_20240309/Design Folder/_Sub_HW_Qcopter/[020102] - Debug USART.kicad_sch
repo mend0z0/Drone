@@ -127,7 +127,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.556 28.702 0)
 				(effects
 					(font
@@ -341,7 +341,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -816,7 +816,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 279.4 205.7399 0)
 			(effects
 				(font
@@ -965,7 +965,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 240.538 204.47 0)
 			(effects
 				(font
@@ -1109,7 +1109,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 240.538 217.17 0)
 			(effects
 				(font
