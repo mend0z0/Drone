@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -1104,6 +1104,16 @@
 		)
 		(uuid "5858e750-60b2-4b92-907c-bdf68a38295e")
 	)
+	(polyline
+		(pts
+			(xy 199.39 176.53) (xy 203.2 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68574f0c-1cb2-413a-9172-10f395a2660e")
+	)
 	(wire
 		(pts
 			(xy 241.3 154.94) (xy 271.78 154.94)
@@ -1244,6 +1254,49 @@
 		)
 		(uuid "f54b600c-25c1-46af-8f1c-004985313f07")
 	)
+	(rectangle
+		(start 201.93 182.88)
+		(end 204.47 185.42)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6b7f66bd-2eb6-4e31-b48f-e364c8cc018a)
+	)
+	(text_box "\n\nAny input value would be divided by two. As a result the 3.7v battery voltage would be 1.85v once it's fully charged"
+		(exclude_from_sim no)
+		(at 172.72 162.56 0)
+		(size 25.4 16.51)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "fd1cd732-e57d-46b6-ae31-906ac5bf2ebc")
+	)
+	(text "INFO:"
+		(exclude_from_sim no)
+		(at 177.292 165.354 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "c27a74bf-dcc8-41db-b300-21688063797c")
+	)
 	(label "MCP_VIN-"
 		(at 254 180.34 0)
 		(fields_autoplaced yes)
@@ -1302,7 +1355,7 @@
 		(uuid "9d77a8fe-9907-4459-8bd5-bf593478d9d4")
 	)
 	(hierarchical_label "PWR"
-		(shape passive)
+		(shape input)
 		(at 234.95 187.96 180)
 		(fields_autoplaced yes)
 		(effects
