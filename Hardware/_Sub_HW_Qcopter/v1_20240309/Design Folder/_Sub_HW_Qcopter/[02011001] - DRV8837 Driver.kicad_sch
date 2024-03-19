@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -1693,7 +1693,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 165.1) (xy 342.9 168.91)
+			(xy 342.9 165.1) (xy 342.9 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1713,7 +1713,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 186.69) (xy 342.9 186.69)
+			(xy 342.9 180.34) (xy 342.9 181.61)
 		)
 		(stroke
 			(width 0)
@@ -1760,16 +1760,6 @@
 			(type default)
 		)
 		(uuid "f5c9be0e-fb3f-4e6a-812b-7c74838683fb")
-	)
-	(wire
-		(pts
-			(xy 342.9 186.69) (xy 342.9 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fad1a4b2-138f-4984-ad8b-f0c1b6c06656")
 	)
 	(polyline
 		(pts
@@ -3755,17 +3745,6 @@
 		)
 		(uuid "771279f4-788c-4418-99f6-d907291bc45e")
 	)
-	(label "GND"
-		(at 355.6 186.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "79b1cd8d-b164-4daf-8f4c-88eeb6b7de84")
-	)
 	(label "DRV8837_nSLEEP"
 		(at 273.05 186.69 0)
 		(fields_autoplaced yes)
@@ -4144,7 +4123,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_1uF_10V_X7R_C0603")
-		(at 342.9 168.91 270)
+		(at 342.9 167.64 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4153,7 +4132,7 @@
 		(fields_autoplaced yes)
 		(uuid "759696ab-04f2-4ea5-89bf-f80d9c73c69d")
 		(property "Reference" "C2303"
-			(at 345.44 170.1799 90)
+			(at 345.44 168.9099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,7 +4141,7 @@
 			)
 		)
 		(property "Value" "1uF_10V_X7R"
-			(at 345.44 172.7199 90)
+			(at 345.44 171.4499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4171,7 +4150,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 359.664 172.72 0)
+			(at 359.664 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4181,7 +4160,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3584/CL10B105KP8NNNC_Spec.pdf"
-			(at 352.044 172.466 0)
+			(at 352.044 171.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4191,7 +4170,7 @@
 			)
 		)
 		(property "Description" "1 µF ±10% 10V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 356.87 172.466 0)
+			(at 356.87 171.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4201,7 +4180,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 345.44 175.2599 90)
+			(at 345.44 173.9899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4210,7 +4189,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "CL10B105KP8NNNC"
-			(at 362.458 172.72 0)
+			(at 362.458 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,7 +4199,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 367.284 172.72 0)
+			(at 367.284 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4230,7 +4209,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "1276-1946-2-ND"
-			(at 364.998 172.72 0)
+			(at 364.998 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4240,7 +4219,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 369.824 172.72 0)
+			(at 369.824 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4250,7 +4229,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B105KP8NNNC/3887604"
-			(at 354.584 172.466 0)
+			(at 354.584 171.196 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4260,7 +4239,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (N/A)"
-			(at 345.44 177.7999 90)
+			(at 345.44 176.5299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4269,7 +4248,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 345.44 180.3399 90)
+			(at 345.44 179.0699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4461,6 +4440,84 @@
 				)
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/f53faaca-3dbe-4009-9903-5908d6fb2aee/c619c09a-dff9-4fca-a506-4c655ff7bbb5"
 					(reference "C2601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 342.9 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95a1665b-651f-4a9b-a94b-79758ff57938")
+		(property "Reference" "#PWR02303"
+			(at 342.9 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 342.9 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 342.9 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 342.9 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 342.9 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cfa5e10-b954-4839-9e0c-98805171d605")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/f53faaca-3dbe-4009-9903-5908d6fb2aee/ba209e9f-839d-451e-aedb-3e6072a35610"
+					(reference "#PWR02303")
+					(unit 1)
+				)
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/f53faaca-3dbe-4009-9903-5908d6fb2aee/212234b6-f83e-49a3-8d36-7460d73abb0b"
+					(reference "#PWR02403")
+					(unit 1)
+				)
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/f53faaca-3dbe-4009-9903-5908d6fb2aee/38c7732a-8a93-4edd-9a29-ae847e510128"
+					(reference "#PWR02503")
+					(unit 1)
+				)
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/f53faaca-3dbe-4009-9903-5908d6fb2aee/c619c09a-dff9-4fca-a506-4c655ff7bbb5"
+					(reference "#PWR02603")
 					(unit 1)
 				)
 			)
