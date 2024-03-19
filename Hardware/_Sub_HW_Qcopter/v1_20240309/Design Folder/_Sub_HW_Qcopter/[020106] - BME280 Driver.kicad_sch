@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -4415,7 +4415,7 @@
 		(uuid "f0db8fa8-decf-4851-af96-958271ac3d9d")
 	)
 	(hierarchical_label "BME280_A0"
-		(shape bidirectional)
+		(shape input)
 		(at 177.8 160.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4427,7 +4427,7 @@
 		(uuid "347e5235-abcb-43f6-b634-c0661e5394e9")
 	)
 	(hierarchical_label "PWR"
-		(shape passive)
+		(shape input)
 		(at 177.8 163.83 180)
 		(fields_autoplaced yes)
 		(effects
