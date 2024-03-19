@@ -9019,7 +9019,7 @@
 		(uuid "be4432cd-f63c-40b3-a2ba-5187b9c3b1e5")
 	)
 	(hierarchical_label "OTG_USB_ID"
-		(shape bidirectional)
+		(shape output)
 		(at 292.1 154.94 0)
 		(fields_autoplaced yes)
 		(effects
