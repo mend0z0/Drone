@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -127,7 +127,7 @@
 					(justify left)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 2.54 31.75 0)
 				(effects
 					(font
@@ -242,7 +242,7 @@
 				)
 			)
 			(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
-				(at 3.81 16.764 0)
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -272,7 +272,7 @@
 				)
 			)
 			(property "Package" "THD-1.27MM"
-				(at 3.81 35.306 0)
+				(at 3.556 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -281,7 +281,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "M50-3530242"
-				(at 3.81 19.558 0)
+				(at 3.556 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -291,7 +291,7 @@
 				)
 			)
 			(property "Manufacturer" "Harwin Inc."
-				(at 3.81 24.384 0)
+				(at 3.556 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -301,7 +301,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "952-3598-ND"
-				(at 3.81 22.098 0)
+				(at 3.556 22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -311,7 +311,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
+				(at 3.556 26.924 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -330,8 +330,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 29.972 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 29.972 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -340,7 +340,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
+				(at 3.556 32.512 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -438,7 +438,7 @@
 				)
 			)
 			(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-				(at 3.81 16.764 0)
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -468,7 +468,7 @@
 				)
 			)
 			(property "Package" "D0603"
-				(at 3.81 35.306 0)
+				(at 3.556 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -477,7 +477,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "TS4148 RCG"
-				(at 3.81 19.558 0)
+				(at 3.556 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -487,7 +487,7 @@
 				)
 			)
 			(property "Manufacturer" "Taiwan Semiconductor Corporation"
-				(at 3.81 24.384 0)
+				(at 3.556 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -497,7 +497,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "1801-TS4148RCGTR-ND"
-				(at 3.81 22.098 0)
+				(at 3.556 22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -507,7 +507,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
+				(at 3.556 26.924 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -526,8 +526,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 29.972 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 29.972 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -536,7 +536,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
+				(at 3.556 32.512 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -729,7 +729,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 31.496 0)
 				(effects
 					(font
@@ -980,7 +980,7 @@
 					(justify left)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 2.54 30.48 0)
 				(effects
 					(font
@@ -1254,7 +1254,7 @@
 					(justify left)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 2.54 30.48 0)
 				(effects
 					(font
@@ -1528,7 +1528,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -1719,7 +1719,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -3383,7 +3383,7 @@
 	)
 	(text_box "6"
 		(exclude_from_sim no)
-		(at 368.3 163.83 0)
+		(at 368.3 161.29 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -3403,7 +3403,7 @@
 	)
 	(text_box "5"
 		(exclude_from_sim no)
-		(at 292.1 163.83 0)
+		(at 292.1 161.29 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -3423,7 +3423,7 @@
 	)
 	(text_box "4"
 		(exclude_from_sim no)
-		(at 215.9 163.83 0)
+		(at 215.9 161.29 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -3443,7 +3443,7 @@
 	)
 	(text_box "1"
 		(exclude_from_sim no)
-		(at 205.74 111.76 0)
+		(at 205.74 109.22 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -3463,7 +3463,7 @@
 	)
 	(text_box "2"
 		(exclude_from_sim no)
-		(at 285.75 111.76 0)
+		(at 285.75 110.49 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -3483,7 +3483,7 @@
 	)
 	(text_box "3"
 		(exclude_from_sim no)
-		(at 139.7 163.83 0)
+		(at 139.7 161.29 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -3520,6 +3520,42 @@
 		)
 		(uuid "f685698d-c538-4102-95b7-4ce181c9ea3e")
 	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 374.142 176.276 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "09ce66c1-a29c-46f6-bae6-35c4dde63101")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 253.492 236.728 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "3f8935af-858e-4c89-bb03-cf4dc9b8ee19")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 145.288 176.276 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "44394ca4-0358-4699-8487-30e8890d8248")
+	)
 	(text "DESIGN NOTE:"
 		(exclude_from_sim no)
 		(at 26.162 148.59 0)
@@ -3532,6 +3568,30 @@
 		)
 		(uuid "7594639d-c5ec-40ff-a31f-60274a92e0f3")
 	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 297.688 176.276 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "7b1c2ed9-e048-4d15-992d-061dea4c908f")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 221.488 176.276 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "84f59792-da8c-44f5-97fb-045d5a298be0")
+	)
 	(text "LAYOUT NOTE:"
 		(exclude_from_sim no)
 		(at 190.5 314.96 0)
@@ -3543,6 +3603,42 @@
 			(justify left bottom)
 		)
 		(uuid "b9fe68a5-6af5-45c8-ab07-f722ad69993e")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 253.238 289.052 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "baeacceb-34f4-42ae-9189-d5dcb30ad554")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 291.846 125.222 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "cf875f30-f915-4e65-944e-3e80de10737a")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 211.836 124.206 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "d8396bf4-4ac3-46f4-b632-c893b2adbe72")
 	)
 	(label "+5VDC"
 		(at 63.5 158.75 0)
@@ -3727,7 +3823,7 @@
 		)
 		(uuid "507251d4-f600-4eec-9120-48fc881094be")
 	)
-	(hierarchical_label "+2V8OUT"
+	(hierarchical_label "+2V8"
 		(shape output)
 		(at 341.63 269.24 0)
 		(fields_autoplaced yes)
@@ -3811,7 +3907,7 @@
 		)
 		(uuid "d2f79fe3-65eb-4fa0-b092-25674c082bcb")
 	)
-	(hierarchical_label "+1V3OUT"
+	(hierarchical_label "+1V3"
 		(shape output)
 		(at 341.63 218.44 0)
 		(fields_autoplaced yes)
@@ -4016,7 +4112,7 @@
 				)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 254 261.62 0)
 			(effects
 				(font
@@ -4173,7 +4269,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 331.47 280.6699 90)
 			(effects
 				(font
@@ -4323,7 +4419,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 334.01 296.4814 90)
 			(effects
 				(font
@@ -4470,7 +4566,7 @@
 				)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 254 210.82 0)
 			(effects
 				(font
@@ -4627,7 +4723,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 293.37 229.8699 90)
 			(effects
 				(font
@@ -4777,7 +4873,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 331.47 229.8699 90)
 			(effects
 				(font
@@ -4923,7 +5019,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 86.36 168.656 0)
 			(effects
 				(font
@@ -5071,7 +5167,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 179.07 237.4899 90)
 			(effects
 				(font
@@ -5221,7 +5317,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 214.63 288.2899 90)
 			(effects
 				(font
@@ -5371,7 +5467,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 293.37 280.6699 90)
 			(effects
 				(font
@@ -5521,7 +5617,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 334.01 245.6814 90)
 			(effects
 				(font
@@ -5671,7 +5767,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 179.07 288.2899 90)
 			(effects
 				(font
@@ -5817,7 +5913,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 106.426 179.324 0)
 			(effects
 				(font
@@ -6032,7 +6128,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 214.63 237.4899 90)
 			(effects
 				(font
