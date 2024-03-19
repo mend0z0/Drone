@@ -127,7 +127,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.556 31.242 0)
 				(effects
 					(font
@@ -330,7 +330,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -634,7 +634,7 @@
 				(pin passive line
 					(at 25.4 -2.54 180)
 					(length 5.08)
-					(name "AUX_AD"
+					(name "AUX_DA"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -960,7 +960,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.302 26.67 0)
 				(effects
 					(font
@@ -10792,7 +10792,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 194.31 161.2899 90)
 			(effects
 				(font
@@ -10939,7 +10939,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 261.62 165.1 0)
 			(effects
 				(font
@@ -11152,7 +11152,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 226.314 186.69 0)
 			(effects
 				(font
@@ -11367,7 +11367,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 218.44 161.2899 90)
 			(effects
 				(font
@@ -11584,7 +11584,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 182.88 208.2799 90)
 			(effects
 				(font
@@ -11734,7 +11734,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 204.47 208.2799 90)
 			(effects
 				(font
@@ -11884,7 +11884,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 224.79 208.2799 90)
 			(effects
 				(font
