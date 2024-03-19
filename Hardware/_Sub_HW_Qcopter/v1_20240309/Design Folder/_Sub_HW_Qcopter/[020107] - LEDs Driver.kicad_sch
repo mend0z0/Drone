@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -806,12 +806,6 @@
 			)
 		)
 	)
-	(junction
-		(at 224.79 247.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "370f4db5-a89f-4478-b275-50b8ffdca870")
-	)
 	(wire
 		(pts
 			(xy 275.59 203.2) (xy 275.59 207.01)
@@ -854,7 +848,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 245.11) (xy 275.59 247.65)
+			(xy 275.59 257.81) (xy 275.59 261.62)
 		)
 		(stroke
 			(width 0)
@@ -864,17 +858,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 222.25) (xy 275.59 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47b3eb6a-1fa8-4adc-9b02-91d602a29f1f")
-	)
-	(wire
-		(pts
-			(xy 215.9 228.6) (xy 246.38 228.6)
+			(xy 215.9 241.3) (xy 246.38 241.3)
 		)
 		(stroke
 			(width 0)
@@ -884,7 +868,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 228.6) (xy 275.59 232.41)
+			(xy 275.59 241.3) (xy 275.59 245.11)
 		)
 		(stroke
 			(width 0)
@@ -904,7 +888,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 228.6) (xy 275.59 228.6)
+			(xy 259.08 241.3) (xy 275.59 241.3)
 		)
 		(stroke
 			(width 0)
@@ -921,16 +905,6 @@
 			(type default)
 		)
 		(uuid "a1337afc-eada-4b76-92a5-261a5bd60740")
-	)
-	(wire
-		(pts
-			(xy 224.79 247.65) (xy 224.79 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a46307c2-5dfe-402a-abf7-b96ba597810f")
 	)
 	(wire
 		(pts
@@ -951,26 +925,6 @@
 			(type default)
 		)
 		(uuid "dc81ce9e-b9f7-4c6f-b366-ab62dede9898")
-	)
-	(wire
-		(pts
-			(xy 275.59 247.65) (xy 224.79 247.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2a429ec-183e-450e-a36b-6e46ccd154c9")
-	)
-	(wire
-		(pts
-			(xy 217.17 247.65) (xy 224.79 247.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e472b694-788b-4821-9b8a-94f3685d3a4e")
 	)
 	(hierarchical_label "LED_SIG_ORANGE"
 		(shape input)
@@ -1034,7 +988,7 @@
 	)
 	(hierarchical_label "LED_SIG_YELLOW"
 		(shape input)
-		(at 215.9 228.6 180)
+		(at 215.9 241.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1190,16 +1144,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 247.65 270)
+		(at 275.59 222.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a3456ea5-302e-4248-bd5a-1bbfa65ee665")
-		(property "Reference" "#PWR01501"
-			(at 210.82 247.65 0)
+		(uuid "9cbea0a8-d068-4a96-9373-7b6a376c58f5")
+		(property "Reference" "#PWR01502"
+			(at 275.59 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1208,16 +1162,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 213.36 247.6499 90)
+			(at 275.59 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 247.65 0)
+			(at 275.59 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1226,7 +1179,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 247.65 0)
+			(at 275.59 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1235,7 +1188,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 247.65 0)
+			(at 275.59 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5553bd6c-cd26-4a52-bf7c-31f7b5b002b8")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/18b6f30a-cfd9-47dd-912b-fd9e3d81f3b7"
+					(reference "#PWR01502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 275.59 261.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a3456ea5-302e-4248-bd5a-1bbfa65ee665")
+		(property "Reference" "#PWR01501"
+			(at 275.59 267.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 273.558 265.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 275.59 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 275.59 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 275.59 261.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1257,7 +1276,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:RES_470R_1/10W_1%_R0603")
-		(at 246.38 228.6 0)
+		(at 246.38 241.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1265,7 +1284,7 @@
 		(dnp no)
 		(uuid "b0567564-2d65-40a4-b569-d6dd98fbe9ce")
 		(property "Reference" "R1502"
-			(at 262.382 227.076 0)
+			(at 262.382 239.776 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1273,7 +1292,7 @@
 			)
 		)
 		(property "Value" "470R_1/10W_1%"
-			(at 238.252 227.33 0)
+			(at 238.252 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1281,7 +1300,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 250.19 211.836 0)
+			(at 250.19 224.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1291,7 +1310,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/usa-en/product-2-2176339-1.datasheet.pdf"
-			(at 249.936 219.456 0)
+			(at 249.936 232.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1301,7 +1320,7 @@
 			)
 		)
 		(property "Description" "470 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 249.936 214.63 0)
+			(at 249.936 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1311,7 +1330,7 @@
 			)
 		)
 		(property "Package" "R0603"
-			(at 243.332 230.124 0)
+			(at 243.332 242.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1319,7 +1338,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "CRGCQ0603F470R"
-			(at 250.19 209.042 0)
+			(at 250.19 221.742 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1329,7 +1348,7 @@
 			)
 		)
 		(property "Manufacturer" "TE Connectivity Passive Product"
-			(at 250.19 204.216 0)
+			(at 250.19 216.916 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1339,7 +1358,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "A129684TR-ND"
-			(at 250.19 206.502 0)
+			(at 250.19 219.202 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1349,7 +1368,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 250.19 201.676 0)
+			(at 250.19 214.376 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1359,7 +1378,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/te-connectivity-passive-product/CRGCQ0603F470R/8576286"
-			(at 249.936 216.916 0)
+			(at 249.936 229.616 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,7 +1388,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (N/A)"
-			(at 264.414 230.124 0)
+			(at 264.414 242.824 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1377,7 +1396,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 264.414 232.664 0)
+			(at 264.414 245.364 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1401,7 +1420,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:DIODE_LED_YELLOW_2V_20mA_590nm_LED0603")
-		(at 275.59 232.41 270)
+		(at 275.59 245.11 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1410,7 +1429,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9006ac2-bc7f-4def-9bbf-47006c44fe55")
 		(property "Reference" "LED1502"
-			(at 280.67 234.2514 90)
+			(at 280.67 246.9514 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1419,7 +1438,7 @@
 			)
 		)
 		(property "Value" "YELLOW_2V_20mA"
-			(at 280.67 236.7914 90)
+			(at 280.67 249.4914 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1428,7 +1447,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 294.64 235.712 0)
+			(at 294.64 248.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1438,7 +1457,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/katalog/datasheet/150060YS75000.pdf"
-			(at 287.02 235.458 0)
+			(at 287.02 248.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1448,7 +1467,7 @@
 			)
 		)
 		(property "Description" "Yellow 590nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 291.846 235.458 0)
+			(at 291.846 248.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1458,7 +1477,7 @@
 			)
 		)
 		(property "Package" "LED0603"
-			(at 280.67 239.3314 90)
+			(at 280.67 252.0314 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,7 +1486,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "150060YS75000"
-			(at 297.434 235.712 0)
+			(at 297.434 248.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1477,7 +1496,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 302.26 235.712 0)
+			(at 302.26 248.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,7 +1506,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "732-4981-2-ND"
-			(at 299.974 235.712 0)
+			(at 299.974 248.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1497,7 +1516,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 304.8 235.712 0)
+			(at 304.8 248.412 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1507,7 +1526,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/150060YS75000/4489909"
-			(at 289.56 235.458 0)
+			(at 289.56 248.158 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1517,7 +1536,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (N/A)"
-			(at 280.67 241.8714 90)
+			(at 280.67 254.5714 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1526,7 +1545,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 280.67 244.4114 90)
+			(at 280.67 257.1114 90)
 			(effects
 				(font
 					(size 1.27 1.27)
