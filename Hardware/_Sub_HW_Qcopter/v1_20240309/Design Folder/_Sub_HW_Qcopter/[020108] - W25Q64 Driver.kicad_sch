@@ -127,7 +127,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -330,7 +330,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.556 29.464 0)
 				(effects
 					(font
@@ -416,7 +416,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at -5.08 -10.16 0)
 					(length 5.08)
 					(name "IO1"
 						(effects
@@ -434,7 +434,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -10.16 0)
+					(at -5.08 -12.7 0)
 					(length 5.08)
 					(name "IO2"
 						(effects
@@ -470,7 +470,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -7.62 0)
 					(length 5.08)
 					(name "IO0"
 						(effects
@@ -488,7 +488,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -15.24 0)
+					(at -5.08 -5.08 0)
 					(length 5.08)
 					(name "CLK"
 						(effects
@@ -506,7 +506,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -12.7 0)
+					(at -5.08 -15.24 0)
 					(length 5.08)
 					(name "IO3"
 						(effects
@@ -654,7 +654,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.302 26.67 0)
 				(effects
 					(font
@@ -871,7 +871,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 184.15) (xy 242.57 184.15)
+			(xy 215.9 186.69) (xy 242.57 186.69)
 		)
 		(stroke
 			(width 0)
@@ -951,7 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 189.23) (xy 242.57 189.23)
+			(xy 215.9 179.07) (xy 242.57 179.07)
 		)
 		(stroke
 			(width 0)
@@ -961,7 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 186.69) (xy 242.57 186.69)
+			(xy 215.9 189.23) (xy 242.57 189.23)
 		)
 		(stroke
 			(width 0)
@@ -981,7 +981,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 179.07) (xy 242.57 179.07)
+			(xy 215.9 181.61) (xy 242.57 181.61)
 		)
 		(stroke
 			(width 0)
@@ -1051,7 +1051,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 181.61) (xy 242.57 181.61)
+			(xy 215.9 184.15) (xy 242.57 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4059,7 +4059,7 @@
 		(uuid "4a6f6dca-f38d-4af6-93d5-8bb5d9fee4c8")
 	)
 	(label "W25Q64_IO2"
-		(at 226.06 184.15 0)
+		(at 226.06 186.69 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4081,7 +4081,7 @@
 		(uuid "568a7d62-66ad-4c02-b703-0e7d672d1e75")
 	)
 	(label "W25Q64_IO1"
-		(at 226.06 181.61 0)
+		(at 226.06 184.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4092,7 +4092,7 @@
 		(uuid "57754b91-bad6-493f-9776-84bfe4bee738")
 	)
 	(label "W25Q64_IO3"
-		(at 226.06 186.69 0)
+		(at 226.06 189.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4103,7 +4103,7 @@
 		(uuid "9243091c-aad2-4c79-9726-4f3999fc3350")
 	)
 	(label "W25Q64_CLK"
-		(at 226.06 189.23 0)
+		(at 226.06 179.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4114,7 +4114,7 @@
 		(uuid "c65e91af-3b0a-4aad-bb7d-f11098be7a2b")
 	)
 	(label "W25Q64_IO0"
-		(at 226.06 179.07 0)
+		(at 226.06 181.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4126,7 +4126,7 @@
 	)
 	(hierarchical_label "QSPI_IO0"
 		(shape bidirectional)
-		(at 215.9 179.07 180)
+		(at 215.9 181.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4138,7 +4138,7 @@
 	)
 	(hierarchical_label "QSPI_IO3"
 		(shape bidirectional)
-		(at 215.9 186.69 180)
+		(at 215.9 189.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4150,7 +4150,7 @@
 	)
 	(hierarchical_label "QSPI_IO1"
 		(shape bidirectional)
-		(at 215.9 181.61 180)
+		(at 215.9 184.15 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4162,7 +4162,7 @@
 	)
 	(hierarchical_label "QSPI_IO2"
 		(shape bidirectional)
-		(at 215.9 184.15 180)
+		(at 215.9 186.69 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4198,7 +4198,7 @@
 	)
 	(hierarchical_label "QSPI_CLK"
 		(shape input)
-		(at 215.9 189.23 180)
+		(at 215.9 179.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4325,7 +4325,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 226.06 204.4699 90)
 			(effects
 				(font
@@ -4359,6 +4359,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 217.17 210.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "762a1ce0-4902-4b12-9863-4923affa28cb")
+		(property "Reference" "#PWR02001"
+			(at 210.82 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 210.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 217.17 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8585a720-0acb-4168-b179-853aabcc5e43")
+		)
+		(instances
+			(project "_Sub_HW_Qcopter"
+				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/e9fb8b8e-a3bc-42c8-a6f2-2206c944e574"
+					(reference "#PWR02001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "_SCHLIB_Qcopter:IC_MEM_W25Q64JVSSIQ_64MBIT_NOR_QSPI/SPI_8-SOIC")
 		(at 247.65 173.99 0)
 		(unit 1)
@@ -4367,7 +4434,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3fcd2575-2403-4b77-8df8-3be9816f546b")
+		(uuid "7f2d0c37-2cb9-46e3-bb15-f33b6c2d510e")
 		(property "Reference" "U2001"
 			(at 264.16 184.1499 0)
 			(effects
@@ -4475,7 +4542,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 264.16 191.7699 0)
 			(effects
 				(font
@@ -4493,101 +4560,34 @@
 				(justify left)
 			)
 		)
+		(pin "4"
+			(uuid "193a4d33-3b75-4f38-a762-092e3384954f")
+		)
 		(pin "7"
-			(uuid "04452850-cfe3-4390-800e-3d1f13daf809")
+			(uuid "501498dc-3509-4372-ae51-1492a35799fa")
 		)
 		(pin "8"
-			(uuid "2827f13e-06a8-4ebf-87e2-e64f5f9d9fc5")
+			(uuid "d3ff51b3-eccc-4f6b-8529-2031c7694b40")
 		)
 		(pin "2"
-			(uuid "c4b19f1b-8d77-40ae-b534-400474a38263")
-		)
-		(pin "4"
-			(uuid "8f23d32b-2cc1-4c78-b9e5-428e590b9691")
-		)
-		(pin "3"
-			(uuid "aeef5e89-736f-4c8a-a95f-f73b1c2669b6")
-		)
-		(pin "6"
-			(uuid "43e0da46-f08e-4578-8691-54a7c3c71c10")
-		)
-		(pin "1"
-			(uuid "006f4202-ec29-4f37-94e1-a3a4b7b89a4c")
+			(uuid "7706f97b-b0e5-41ec-8392-f834d3ee899d")
 		)
 		(pin "5"
-			(uuid "fdc683dc-11f9-4330-b419-17c8be7bdac9")
+			(uuid "dc35c2ad-4709-45f7-a0c6-06e45810ef26")
+		)
+		(pin "1"
+			(uuid "b88ac618-8e23-4c2e-a263-7b6b64332eb3")
+		)
+		(pin "3"
+			(uuid "524c3280-bcc3-4218-88b6-a24cc8716e63")
+		)
+		(pin "6"
+			(uuid "78e49b41-dc31-4bd3-aea8-dbd4d6a7c5b4")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/e9fb8b8e-a3bc-42c8-a6f2-2206c944e574"
 					(reference "U2001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 217.17 210.82 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "762a1ce0-4902-4b12-9863-4923affa28cb")
-		(property "Reference" "#PWR02001"
-			(at 210.82 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 210.8199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 217.17 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 217.17 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8585a720-0acb-4168-b179-853aabcc5e43")
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a/e9fb8b8e-a3bc-42c8-a6f2-2206c944e574"
-					(reference "#PWR02001")
 					(unit 1)
 				)
 			)
@@ -4710,7 +4710,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 222.25 167.6399 90)
 			(effects
 				(font
