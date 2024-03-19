@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-18")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -1415,7 +1415,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 193.04) (xy 292.1 195.58)
+			(xy 292.1 193.04) (xy 292.1 203.2)
 		)
 		(stroke
 			(width 0)
@@ -1545,7 +1545,7 @@
 	)
 	(wire
 		(pts
-			(xy 292.1 208.28) (xy 292.1 226.06)
+			(xy 292.1 215.9) (xy 292.1 226.06)
 		)
 		(stroke
 			(width 0)
@@ -2139,7 +2139,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_10uF_16V_X5R_C0603")
-		(at 292.1 195.58 270)
+		(at 292.1 203.2 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2148,7 +2148,7 @@
 		(fields_autoplaced yes)
 		(uuid "19296845-a128-4ed4-8290-6892198c080d")
 		(property "Reference" "C3402"
-			(at 294.64 196.8499 90)
+			(at 294.64 204.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2157,7 +2157,7 @@
 			)
 		)
 		(property "Value" "10uF_16V_X5R"
-			(at 294.64 199.3899 90)
+			(at 294.64 207.0099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2166,7 +2166,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 308.61 198.12 0)
+			(at 308.61 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2176,7 +2176,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRT188R61C106KE13-01.pdf"
-			(at 300.99 198.12 0)
+			(at 300.99 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2186,7 +2186,7 @@
 			)
 		)
 		(property "Description" "10 µF ±10% 16V Ceramic Capacitor X5R 0603 (1608 Metric)"
-			(at 306.07 198.12 0)
+			(at 306.07 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2196,7 +2196,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRT188R61C106KE13J"
-			(at 313.69 198.12 0)
+			(at 313.69 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2206,7 +2206,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRT188R61C106KE13J/13904802"
-			(at 303.53 198.12 0)
+			(at 303.53 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2216,7 +2216,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 316.23 198.12 0)
+			(at 316.23 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2226,7 +2226,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRT188R61C106KE13JTR-ND"
-			(at 311.15 198.12 0)
+			(at 311.15 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2236,7 +2236,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 318.77 198.12 0)
+			(at 318.77 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2246,7 +2246,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 294.64 201.9299 90)
+			(at 294.64 209.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2255,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (N/A)"
-			(at 294.64 204.4699 90)
+			(at 294.64 212.0899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2264,7 +2264,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 294.64 207.0099 90)
+			(at 294.64 214.6299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
