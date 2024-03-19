@@ -127,7 +127,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -235,7 +235,7 @@
 				)
 			)
 			(property "Footprint" "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical"
-				(at 3.81 16.764 0)
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -265,7 +265,7 @@
 				)
 			)
 			(property "Package" "THD_VERT"
-				(at 3.81 35.306 0)
+				(at 3.556 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -274,7 +274,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "10114829-10102LF"
-				(at 3.81 19.558 0)
+				(at 3.556 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -284,7 +284,7 @@
 				)
 			)
 			(property "Manufacturer" "Amphenol ICC (FCI)"
-				(at 3.81 24.384 0)
+				(at 3.556 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -294,7 +294,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "609-4383-2-ND"
-				(at 3.81 22.098 0)
+				(at 3.556 22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -304,7 +304,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
+				(at 3.556 26.924 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -323,8 +323,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 29.972 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 29.972 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -333,7 +333,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
+				(at 3.556 32.512 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -431,7 +431,7 @@
 				)
 			)
 			(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-				(at 3.81 16.764 0)
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -461,7 +461,7 @@
 				)
 			)
 			(property "Package" "F0805"
-				(at 3.81 35.306 0)
+				(at 3.556 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -470,7 +470,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "PTSLR08058V400"
-				(at 3.81 19.558 0)
+				(at 3.556 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -480,7 +480,7 @@
 				)
 			)
 			(property "Manufacturer" "Eaton - Electronics Division"
-				(at 3.81 24.384 0)
+				(at 3.556 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -490,7 +490,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "283-PTSLR08058V400TR-ND"
-				(at 3.81 22.098 0)
+				(at 3.556 22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -500,7 +500,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
+				(at 3.556 26.924 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -519,8 +519,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 29.972 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 29.972 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -529,7 +529,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
+				(at 3.556 32.512 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -722,7 +722,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -1810,7 +1810,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 137.16 115.824 0)
 			(effects
 				(font
@@ -1958,7 +1958,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 306.07 137.1599 0)
 			(effects
 				(font
@@ -2104,7 +2104,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 140.716 154.178 0)
 			(effects
 				(font
@@ -2248,7 +2248,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 183.896 130.81 0)
 			(effects
 				(font
@@ -2463,7 +2463,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 306.07 162.5599 0)
 			(effects
 				(font
@@ -2613,7 +2613,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 306.07 187.9599 0)
 			(effects
 				(font
@@ -2763,7 +2763,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 306.07 213.3599 0)
 			(effects
 				(font
