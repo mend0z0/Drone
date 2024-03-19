@@ -127,7 +127,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.556 31.242 0)
 				(effects
 					(font
@@ -330,7 +330,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -445,7 +445,7 @@
 				)
 			)
 			(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
-				(at 3.81 16.764 0)
+				(at 3.556 16.764 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -475,7 +475,7 @@
 				)
 			)
 			(property "Package" "8-WSON (2x2) "
-				(at 3.81 35.306 0)
+				(at 3.556 35.306 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -484,7 +484,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "DRV8837CDSGR"
-				(at 3.81 19.558 0)
+				(at 3.556 19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -494,7 +494,7 @@
 				)
 			)
 			(property "Manufacturer" "Texas Instruments"
-				(at 3.81 24.384 0)
+				(at 3.556 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -504,7 +504,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "296-47205-2-ND"
-				(at 3.81 22.098 0)
+				(at 3.556 22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -514,7 +514,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
+				(at 3.556 26.924 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -533,8 +533,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.81 29.972 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.556 29.972 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -543,7 +543,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
+				(at 3.556 32.512 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -655,7 +655,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -17.78 0)
+					(at -5.08 -15.24 0)
 					(length 5.08)
 					(name "GND"
 						(effects
@@ -727,7 +727,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -15.24 0)
+					(at -5.08 -12.7 0)
 					(length 5.08)
 					(name "VCC"
 						(effects
@@ -737,6 +737,24 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -17.78 0)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -857,7 +875,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -1132,13 +1150,19 @@
 		)
 	)
 	(junction
-		(at 266.7 199.39)
+		(at 266.7 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4037e9e0-5752-4def-86d4-00deac5a5c9c")
+		(uuid "06706df7-727b-4078-a58a-9090fc5a3b53")
 	)
 	(junction
-		(at 266.7 223.52)
+		(at 287.02 201.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c552a3e-72a9-4f0c-b213-1efd8637bca4")
+	)
+	(junction
+		(at 266.7 215.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "801817c8-12d7-4b80-bc8e-ccaecae3e775")
@@ -1180,16 +1204,6 @@
 			(type default)
 		)
 		(uuid "04d5d9d0-395d-449c-99e2-2bf25748a296")
-	)
-	(wire
-		(pts
-			(xy 290.83 199.39) (xy 266.7 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08c58656-e0c4-4c92-8a39-9587c0038533")
 	)
 	(polyline
 		(pts
@@ -1243,7 +1257,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 199.39) (xy 266.7 199.39)
+			(xy 254 196.85) (xy 266.7 196.85)
 		)
 		(stroke
 			(width 0)
@@ -1343,13 +1357,33 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 223.52) (xy 266.7 215.9)
+			(xy 290.83 199.39) (xy 287.02 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dde7dda-a4d6-4919-863c-11bdb9b35131")
+	)
+	(wire
+		(pts
+			(xy 266.7 215.9) (xy 266.7 213.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4f83f24e-fd04-4ef5-a9d4-1c7024a3845c")
+	)
+	(wire
+		(pts
+			(xy 287.02 199.39) (xy 287.02 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50ad2e87-98f3-4221-9ca5-3f7c6ebb8b10")
 	)
 	(wire
 		(pts
@@ -1380,6 +1414,16 @@
 			(type default)
 		)
 		(uuid "5e49eda9-81a8-45d4-9f0f-816b0247bc11")
+	)
+	(wire
+		(pts
+			(xy 290.83 196.85) (xy 266.7 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e52259d-b42f-407a-8cf4-beaf32c8b1a6")
 	)
 	(polyline
 		(pts
@@ -1503,7 +1547,7 @@
 	)
 	(wire
 		(pts
-			(xy 255.27 223.52) (xy 266.7 223.52)
+			(xy 255.27 215.9) (xy 266.7 215.9)
 		)
 		(stroke
 			(width 0)
@@ -1561,16 +1605,6 @@
 		)
 		(uuid "a17677da-a511-4ed1-bf1d-2f57cb7fe1cc")
 	)
-	(wire
-		(pts
-			(xy 266.7 199.39) (xy 266.7 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6960b5f-fb7d-44a7-a03c-c7b783fc135f")
-	)
 	(polyline
 		(pts
 			(xy 501.65 181.61) (xy 388.62 181.61)
@@ -1603,7 +1637,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 223.52) (xy 266.7 223.52)
+			(xy 287.02 215.9) (xy 266.7 215.9)
 		)
 		(stroke
 			(width 0)
@@ -1640,6 +1674,16 @@
 			(type default)
 		)
 		(uuid "c19d68e2-c7cd-47ed-a1fe-9abb8cae2eb3")
+	)
+	(wire
+		(pts
+			(xy 266.7 196.85) (xy 266.7 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5245e82-a976-46af-8483-1cf58a306778")
 	)
 	(polyline
 		(pts
@@ -1703,7 +1747,7 @@
 	)
 	(wire
 		(pts
-			(xy 287.02 201.93) (xy 287.02 223.52)
+			(xy 287.02 201.93) (xy 287.02 215.9)
 		)
 		(stroke
 			(width 0)
@@ -3702,7 +3746,7 @@
 		(uuid "16638490-8ada-4558-a28c-813d6c04f73c")
 	)
 	(label "PWR"
-		(at 254 199.39 0)
+		(at 254 196.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3875,7 +3919,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 255.27 223.52 270)
+		(at 255.27 215.9 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3884,7 +3928,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f0a1706-e9cd-4787-b461-286a85a80e5c")
 		(property "Reference" "#PWR02302"
-			(at 248.92 223.52 0)
+			(at 248.92 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +3937,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 251.46 223.5199 90)
+			(at 251.46 215.8999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +3946,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 223.52 0)
+			(at 255.27 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3911,7 +3955,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 255.27 223.52 0)
+			(at 255.27 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +3964,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 255.27 223.52 0)
+			(at 255.27 215.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4066,7 +4110,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 213.36 181.61 0)
 			(effects
 				(font
@@ -4238,7 +4282,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 345.44 176.5299 90)
 			(effects
 				(font
@@ -4400,7 +4444,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 180.34 212.0899 90)
 			(effects
 				(font
@@ -4525,7 +4569,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_100nF_16V_X7R_C0603")
-		(at 266.7 203.2 270)
+		(at 266.7 200.66 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4534,7 +4578,7 @@
 		(fields_autoplaced yes)
 		(uuid "96661d91-642a-429f-90c8-ef9329dab98e")
 		(property "Reference" "C2302"
-			(at 269.24 204.4699 90)
+			(at 269.24 201.9299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4543,7 +4587,7 @@
 			)
 		)
 		(property "Value" "100nF_16V_X7R"
-			(at 269.24 207.0099 90)
+			(at 269.24 204.4699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4552,7 +4596,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 284.988 206.756 0)
+			(at 284.988 204.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4562,7 +4606,7 @@
 			)
 		)
 		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10B104KO8NNNC_Spec.pdf"
-			(at 276.606 206.502 0)
+			(at 276.606 203.962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4572,7 +4616,7 @@
 			)
 		)
 		(property "Description" "0.1 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 282.194 206.756 0)
+			(at 282.194 204.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4582,7 +4626,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 269.24 209.5499 90)
+			(at 269.24 207.0099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4591,7 +4635,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "CL10B104KO8NNNC"
-			(at 287.528 206.756 0)
+			(at 287.528 204.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4601,7 +4645,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 292.862 206.756 0)
+			(at 292.862 204.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4611,7 +4655,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "1276-1005-2-ND"
-			(at 290.068 206.756 0)
+			(at 290.068 204.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4621,7 +4665,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 295.402 206.756 0)
+			(at 295.402 204.216 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4675,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KO8NNNC/3886663"
-			(at 279.4 206.502 0)
+			(at 279.4 203.962 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,8 +4684,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 269.24 212.0899 90)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 269.24 209.5499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +4694,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 269.24 214.6299 90)
+			(at 269.24 212.0899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4878,7 +4922,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 304.8 179.07 0)
 			(effects
 				(font
@@ -4917,6 +4961,9 @@
 		)
 		(pin "6"
 			(uuid "c04eb024-d728-40e1-bd53-238b42a8d728")
+		)
+		(pin "9"
+			(uuid "c8851843-a32d-4a70-b3b6-56f093ce9515")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
