@@ -822,16 +822,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 447.04 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/ca9cd294-4e54-4f83-9259-ff37ab8c6d85"
