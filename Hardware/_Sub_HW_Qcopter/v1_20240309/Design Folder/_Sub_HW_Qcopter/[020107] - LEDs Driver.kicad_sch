@@ -127,7 +127,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 31.496 0)
 				(effects
 					(font
@@ -290,7 +290,7 @@
 				)
 			)
 			(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-				(at 3.302 19.05 0)
+				(at 3.048 19.05 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -320,7 +320,7 @@
 				)
 			)
 			(property "Package" "LED0603"
-				(at 3.302 37.592 0)
+				(at 3.048 37.592 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -329,7 +329,7 @@
 				)
 			)
 			(property "Part Number (Manufacturer)" "150060YS75000"
-				(at 3.302 21.844 0)
+				(at 3.048 21.844 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -339,7 +339,7 @@
 				)
 			)
 			(property "Manufacturer" "Würth Elektronik"
-				(at 3.302 26.67 0)
+				(at 3.048 26.67 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -349,7 +349,7 @@
 				)
 			)
 			(property "Part Number (Vendor)" "732-4981-2-ND"
-				(at 3.302 24.384 0)
+				(at 3.048 24.384 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -359,7 +359,7 @@
 				)
 			)
 			(property "Vendor" "Digikey"
-				(at 3.302 29.21 0)
+				(at 3.048 29.21 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -378,8 +378,8 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
-				(at 3.302 32.258 0)
+			(property "SCH CHECK" "SCH (CHECKED)"
+				(at 3.048 32.258 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -388,7 +388,7 @@
 				)
 			)
 			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.302 34.798 0)
+				(at 3.048 34.798 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -629,7 +629,7 @@
 					(hide yes)
 				)
 			)
-			(property "SCH CHECK" "SCH (N/A)"
+			(property "SCH CHECK" "SCH (CHECKED)"
 				(at 3.81 29.972 0)
 				(effects
 					(font
@@ -1111,7 +1111,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 264.414 204.724 0)
 			(effects
 				(font
@@ -1387,7 +1387,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 264.414 242.824 0)
 			(effects
 				(font
@@ -1535,7 +1535,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 280.67 254.5714 90)
 			(effects
 				(font
@@ -1685,7 +1685,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 280.67 216.4714 90)
 			(effects
 				(font
