@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -9547,6 +9547,17 @@
 		)
 		(uuid "295b60ca-30b1-4ea7-bdee-67a4c6c1dc0f")
 	)
+	(label "STM32WLE5_BOOT0"
+		(at 336.55 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30c3825e-4813-4aad-ba2d-e68fff286b3d")
+	)
 	(label "STM32WLE5_VDD"
 		(at 337.82 193.04 0)
 		(fields_autoplaced yes)
@@ -9783,7 +9794,7 @@
 		(uuid "2d48a87b-c3a5-4b93-aadb-dc5766a807d7")
 	)
 	(hierarchical_label "STM32WLE5_RFIP"
-		(shape bidirectional)
+		(shape input)
 		(at 431.8 162.56 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9795,7 +9806,7 @@
 		(uuid "34741d90-56da-4eda-bc8a-4ff9c39b9bcf")
 	)
 	(hierarchical_label "STM32WLE5_RFOHP"
-		(shape bidirectional)
+		(shape output)
 		(at 431.8 157.48 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9831,7 +9842,7 @@
 		(uuid "4dce6871-d2c4-4bba-b6b7-0427dc150ecc")
 	)
 	(hierarchical_label "STM32WLE5_RFOLP"
-		(shape bidirectional)
+		(shape output)
 		(at 431.8 160.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -9998,8 +10009,8 @@
 		)
 		(uuid "b425727c-5e07-47cd-b7cc-a6911a09260f")
 	)
-	(hierarchical_label "STM32WLE5_VRPA"
-		(shape bidirectional)
+	(hierarchical_label "STM32WLE5_VR_PA"
+		(shape output)
 		(at 431.8 154.94 0)
 		(fields_autoplaced yes)
 		(effects
@@ -10083,7 +10094,7 @@
 		(uuid "f2c84efa-ad1e-4198-9079-84fa57e67150")
 	)
 	(hierarchical_label "STM32WLE5_RFIN"
-		(shape bidirectional)
+		(shape input)
 		(at 431.8 165.1 0)
 		(fields_autoplaced yes)
 		(effects
