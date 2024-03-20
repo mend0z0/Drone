@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -1240,7 +1240,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 254) (xy 279.4 256.54)
+			(xy 279.4 254) (xy 279.4 257.81)
 		)
 		(stroke
 			(width 0)
@@ -9067,7 +9067,7 @@
 		(uuid "075e7025-f8a6-485d-bfd1-1460fec83ebe")
 	)
 	(hierarchical_label "OV2460_+2V8DC"
-		(shape passive)
+		(shape input)
 		(at 219.71 173.99 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9091,7 +9091,7 @@
 		(uuid "09abc8a4-417c-4a85-b6c2-cfe4836309c3")
 	)
 	(hierarchical_label "OV2460_+3V3DC"
-		(shape passive)
+		(shape input)
 		(at 219.71 191.77 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9295,7 +9295,7 @@
 		(uuid "d72d8fff-81ed-4fd5-b902-3dba5864472b")
 	)
 	(hierarchical_label "OV2460_+1V3DC"
-		(shape passive)
+		(shape input)
 		(at 219.71 189.23 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9957,7 +9957,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 279.4 256.54 0)
+		(at 279.4 257.81 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9966,7 +9966,7 @@
 		(fields_autoplaced yes)
 		(uuid "7ef564d4-b796-4761-8f7d-f9171910bad0")
 		(property "Reference" "#PWR02105"
-			(at 279.4 262.89 0)
+			(at 279.4 264.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9975,7 +9975,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 279.4 261.62 0)
+			(at 279.4 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9983,7 +9983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 279.4 256.54 0)
+			(at 279.4 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9992,7 +9992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 256.54 0)
+			(at 279.4 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10001,7 +10001,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 279.4 256.54 0)
+			(at 279.4 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
