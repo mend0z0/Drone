@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -48,7 +48,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 168.91) (xy 228.6 168.91)
+			(xy 203.2 168.91) (xy 228.6 168.91)
 		)
 		(stroke
 			(width 0)
@@ -128,7 +128,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 173.99) (xy 228.6 173.99)
+			(xy 203.2 173.99) (xy 228.6 173.99)
 		)
 		(stroke
 			(width 0)
@@ -148,7 +148,7 @@
 	)
 	(wire
 		(pts
-			(xy 321.31 137.16) (xy 330.2 137.16)
+			(xy 317.5 137.16) (xy 330.2 137.16)
 		)
 		(stroke
 			(width 0)
@@ -238,7 +238,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 166.37) (xy 228.6 166.37)
+			(xy 203.2 166.37) (xy 228.6 166.37)
 		)
 		(stroke
 			(width 0)
@@ -258,7 +258,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 177.8) (xy 228.6 177.8)
+			(xy 203.2 177.8) (xy 228.6 177.8)
 		)
 		(stroke
 			(width 0)
@@ -288,7 +288,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 171.45) (xy 228.6 171.45)
+			(xy 203.2 171.45) (xy 228.6 171.45)
 		)
 		(stroke
 			(width 0)
@@ -308,7 +308,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 180.34) (xy 228.6 180.34)
+			(xy 203.2 180.34) (xy 228.6 180.34)
 		)
 		(stroke
 			(width 0)
@@ -348,8 +348,8 @@
 	)
 	(text_box "4"
 		(exclude_from_sim no)
-		(at 342.9 189.23 0)
-		(size 11.43 12.7)
+		(at 344.17 187.96 0)
+		(size 10.16 11.43)
 		(stroke
 			(width 0)
 			(type default)
@@ -368,7 +368,7 @@
 	)
 	(text_box "3"
 		(exclude_from_sim no)
-		(at 342.9 148.59 0)
+		(at 342.9 140.97 0)
 		(size 11.43 12.7)
 		(stroke
 			(width 0)
@@ -446,8 +446,68 @@
 		)
 		(uuid "94b0b9eb-db87-447f-949b-8de0a0257096")
 	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 348.742 155.956 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "4cd2ac11-4353-456d-be10-e5350177bdd0")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 254 215.9 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "972f7611-c8fe-4e91-b6fd-d15470b15489")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 348.742 201.676 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "9a3b6b91-639f-4cfe-9409-3f81179baa20")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 348.742 254.762 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "ece2a28a-4f6a-4878-abea-b402685a337a")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 186.436 237.744 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "f0246362-0aa9-4bdd-aaa6-4cd62e362aa2")
+	)
 	(label "+3V3_2"
-		(at 321.31 137.16 0)
+		(at 317.5 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -470,7 +530,7 @@
 	)
 	(hierarchical_label "FLIGHT_CTR_SPI_CLK"
 		(shape input)
-		(at 201.93 168.91 180)
+		(at 203.2 168.91 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -482,7 +542,7 @@
 	)
 	(hierarchical_label "FLIGHT_CTR_SPI_MISO"
 		(shape output)
-		(at 201.93 171.45 180)
+		(at 203.2 171.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -494,7 +554,7 @@
 	)
 	(hierarchical_label "FLIGHT_CTR_SPI_NSS"
 		(shape input)
-		(at 201.93 166.37 180)
+		(at 203.2 166.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -518,7 +578,7 @@
 	)
 	(hierarchical_label "FLIGHT_CTR_UART_RX"
 		(shape output)
-		(at 201.93 180.34 180)
+		(at 203.2 180.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -530,7 +590,7 @@
 	)
 	(hierarchical_label "FLIGHT_CTR_UART_TX"
 		(shape input)
-		(at 201.93 177.8 180)
+		(at 203.2 177.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -566,7 +626,7 @@
 	)
 	(hierarchical_label "FLIGHT_CTR_SPI_MOSI"
 		(shape input)
-		(at 201.93 173.99 180)
+		(at 203.2 173.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -732,16 +792,6 @@
 				(justify left top)
 			)
 		)
-		(pin "RFO_LP" bidirectional
-			(at 330.2 144.78 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d72ea34c-0268-475c-8543-8c6beff11219")
-		)
 		(pin "VR_PA" input
 			(at 330.2 139.7 180)
 			(effects
@@ -751,26 +801,6 @@
 				(justify left)
 			)
 			(uuid "ff07aa5d-3ce5-4a17-bbc5-d50129a80f2f")
-		)
-		(pin "RFI_P" bidirectional
-			(at 330.2 147.32 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4ff8c58b-d35d-4aa2-b65d-d6fc07e6f30d")
-		)
-		(pin "RFI_N" bidirectional
-			(at 330.2 149.86 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "2dff077a-8e81-4da9-92f9-69f0e7d0822f")
 		)
 		(pin "FE_CTRL2" input
 			(at 330.2 157.48 180)
@@ -802,16 +832,6 @@
 			)
 			(uuid "3fc12350-44e8-49a7-9f2b-af88b1df3fdd")
 		)
-		(pin "RFO_HP" bidirectional
-			(at 330.2 142.24 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "da5564ff-e698-4d32-a9a2-e2b0f8e8a80b")
-		)
 		(pin "+PWR" input
 			(at 330.2 137.16 180)
 			(effects
@@ -821,6 +841,46 @@
 				(justify left)
 			)
 			(uuid "c86af44c-5af7-4df0-8d0f-3651d0495651")
+		)
+		(pin "RFO_HP" input
+			(at 330.2 142.24 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1a43460c-9ea2-4b52-9efa-a94661c425a9")
+		)
+		(pin "RFI_P" output
+			(at 330.2 147.32 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c7c23a5f-796c-4c24-9c59-0026fa05f233")
+		)
+		(pin "RFO_LP" input
+			(at 330.2 144.78 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "63dcb2e2-cc01-4aa4-9778-61ccd9dc0659")
+		)
+		(pin "RFI_N" output
+			(at 330.2 149.86 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6f205548-5a49-4f84-9e0b-37277c1aa164")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -1228,56 +1288,6 @@
 			)
 			(uuid "86660906-fe2d-4d64-a169-9b73ab29b3e6")
 		)
-		(pin "STM32WLE5_RFIN" bidirectional
-			(at 279.4 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "57c1a56d-5aae-4410-a129-4c321fa0463e")
-		)
-		(pin "STM32WLE5_RFIP" bidirectional
-			(at 279.4 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "132dcd7d-9262-4e77-aa08-35b13a74a1ba")
-		)
-		(pin "STM32WLE5_RFOHP" bidirectional
-			(at 279.4 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c8ffcb7a-b49a-4771-8cef-eddd23e79c36")
-		)
-		(pin "STM32WLE5_RFOLP" bidirectional
-			(at 279.4 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "521b343a-86ac-4b9a-9da1-defb1613f925")
-		)
-		(pin "STM32WLE5_VRPA" bidirectional
-			(at 279.4 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "6417db90-9a56-44c5-805f-6e6e5fc0a575")
-		)
 		(pin "FE_CTRL1" output
 			(at 279.4 154.94 0)
 			(effects
@@ -1317,6 +1327,56 @@
 				(justify left)
 			)
 			(uuid "69c95ac5-9903-43e1-bb89-8d381631232a")
+		)
+		(pin "STM32WLE5_VR_PA" output
+			(at 279.4 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2dfc7a93-d9ce-465e-b33c-645babaeeaa5")
+		)
+		(pin "STM32WLE5_RFOHP" output
+			(at 279.4 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "edd2250c-75b2-4e4c-ace5-446d66e2a9f1")
+		)
+		(pin "STM32WLE5_RFOLP" output
+			(at 279.4 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b0561122-89ec-41c5-b085-f916e3f01b4a")
+		)
+		(pin "STM32WLE5_RFIP" input
+			(at 279.4 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d73ad741-d751-4bf7-a9e2-eae6d4245c1b")
+		)
+		(pin "STM32WLE5_RFIN" input
+			(at 279.4 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c3c6bc5e-a7a2-4d8d-b126-7b12205f27aa")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
