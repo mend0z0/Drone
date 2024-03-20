@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -5433,12 +5433,6 @@
 		(uuid "72f0f19f-f9a9-4020-8e5c-8d8da3bbb6d6")
 	)
 	(junction
-		(at 165.1 185.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "974ea70c-621d-4af8-856e-5a4eb73b0347")
-	)
-	(junction
 		(at 123.19 254)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5485,6 +5479,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ebac7202-b25a-4002-bdcf-62e9c9bd68bb")
+	)
+	(junction
+		(at 168.91 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f478080e-c415-4ffb-b630-8dd0f45c24ef")
 	)
 	(junction
 		(at 123.19 278.13)
@@ -5704,7 +5704,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 185.42) (xy 165.1 215.9)
+			(xy 168.91 185.42) (xy 168.91 215.9)
 		)
 		(stroke
 			(width 0)
@@ -5801,16 +5801,6 @@
 			(type default)
 		)
 		(uuid "4dbee84a-f2eb-423b-afcf-69613d5b29c7")
-	)
-	(wire
-		(pts
-			(xy 152.4 185.42) (xy 165.1 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f65fc57-d23a-4b3c-8ab4-7afbb41b0103")
 	)
 	(wire
 		(pts
@@ -6074,7 +6064,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 215.9) (xy 152.4 215.9)
+			(xy 168.91 215.9) (xy 152.4 215.9)
 		)
 		(stroke
 			(width 0)
@@ -6181,6 +6171,16 @@
 			(type default)
 		)
 		(uuid "91814d4e-28ce-4edf-afa2-deff7c16a72d")
+	)
+	(wire
+		(pts
+			(xy 168.91 185.42) (xy 173.99 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a7550ea-84fe-4bd6-9c21-ec3343909e31")
 	)
 	(wire
 		(pts
@@ -6664,7 +6664,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 185.42) (xy 173.99 185.42)
+			(xy 152.4 185.42) (xy 168.91 185.42)
 		)
 		(stroke
 			(width 0)
@@ -7504,7 +7504,7 @@
 		(uuid "469b0f91-1cf4-46bd-95f2-41f3ffe07c9b")
 	)
 	(hierarchical_label "RFI_P"
-		(shape bidirectional)
+		(shape output)
 		(at 101.6 254 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7516,7 +7516,7 @@
 		(uuid "74a4d57d-6e03-44ea-a273-3a52f36a737f")
 	)
 	(hierarchical_label "RFI_N"
-		(shape bidirectional)
+		(shape output)
 		(at 101.6 278.13 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7540,7 +7540,7 @@
 		(uuid "b3c7cba8-6f18-4ed9-a61b-d272f560edd7")
 	)
 	(hierarchical_label "RFO_LP"
-		(shape bidirectional)
+		(shape input)
 		(at 101.6 215.9 180)
 		(fields_autoplaced yes)
 		(effects
@@ -7552,7 +7552,7 @@
 		(uuid "c03eef25-36e6-4ad2-a6f0-b2b78d58f27c")
 	)
 	(hierarchical_label "RFO_HP"
-		(shape bidirectional)
+		(shape input)
 		(at 101.6 114.3 180)
 		(fields_autoplaced yes)
 		(effects
@@ -12677,7 +12677,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 157.48 217.424 0)
+			(at 160.02 217.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13097,7 +13097,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 157.48 186.69 0)
+			(at 160.02 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
