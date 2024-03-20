@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -5220,7 +5220,7 @@
 		(uuid "05674e17-130c-4d14-a121-c0e22cd34259")
 	)
 	(junction
-		(at 203.2 132.08)
+		(at 190.5 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "090f23bd-06db-4804-856d-1becc60a82eb")
@@ -5470,12 +5470,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d292eed-5fe6-492b-b9f1-ae904b7a7155")
-	)
-	(junction
-		(at 198.12 196.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a62d366c-15a2-498d-abf7-216e94d53d92")
 	)
 	(junction
 		(at 179.07 218.44)
@@ -5793,16 +5787,6 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 196.85) (xy 218.44 196.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bd0d5b1-def8-4448-8271-118fec5208ea")
-	)
-	(wire
-		(pts
 			(xy 121.92 355.6) (xy 99.06 355.6)
 		)
 		(stroke
@@ -5823,7 +5807,7 @@
 	)
 	(polyline
 		(pts
-			(xy 33.02 71.12) (xy 124.46 71.12)
+			(xy 25.4 88.9) (xy 116.84 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6053,16 +6037,6 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 132.08) (xy 236.22 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23f26ed7-1ad9-4972-b5cd-249b7aa0cef0")
-	)
-	(wire
-		(pts
 			(xy 198.12 252.73) (xy 236.22 252.73)
 		)
 		(stroke
@@ -6193,7 +6167,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 68.58) (xy 132.08 68.58)
+			(xy 114.3 68.58) (xy 132.08 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6213,7 +6187,7 @@
 	)
 	(polyline
 		(pts
-			(xy 33.02 71.12) (xy 33.02 104.14)
+			(xy 25.4 88.9) (xy 25.4 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6343,7 +6317,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 297.18) (xy 379.73 297.18)
+			(xy 368.3 297.18) (xy 392.43 297.18)
 		)
 		(stroke
 			(width 0)
@@ -6493,7 +6467,7 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 104.14) (xy 33.02 104.14)
+			(xy 116.84 121.92) (xy 25.4 121.92)
 		)
 		(stroke
 			(width 0)
@@ -6533,7 +6507,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 114.3) (xy 203.2 116.84)
+			(xy 190.5 114.3) (xy 190.5 116.84)
 		)
 		(stroke
 			(width 0)
@@ -6563,7 +6537,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 129.54) (xy 203.2 132.08)
+			(xy 190.5 129.54) (xy 190.5 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7133,7 +7107,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 114.3) (xy 203.2 114.3)
+			(xy 176.53 114.3) (xy 190.5 114.3)
 		)
 		(stroke
 			(width 0)
@@ -7223,6 +7197,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 132.08) (xy 236.22 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "992cff84-15bd-4e9e-a2a2-9eadfacb93e8")
+	)
+	(wire
+		(pts
 			(xy 198.12 283.21) (xy 198.12 284.48)
 		)
 		(stroke
@@ -7243,7 +7227,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 85.09) (xy 218.44 85.09)
+			(xy 190.5 85.09) (xy 215.9 85.09)
 		)
 		(stroke
 			(width 0)
@@ -7353,7 +7337,17 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 132.08) (xy 180.34 132.08)
+			(xy 114.3 85.09) (xy 132.08 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aad5e1ed-ec06-41da-bb6c-4090a2005142")
+	)
+	(wire
+		(pts
+			(xy 140.97 132.08) (xy 167.64 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7363,7 +7357,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 132.08) (xy 203.2 132.08)
+			(xy 180.34 132.08) (xy 190.5 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7403,7 +7397,7 @@
 	)
 	(polyline
 		(pts
-			(xy 124.46 71.12) (xy 124.46 104.14)
+			(xy 116.84 88.9) (xy 116.84 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7793,7 +7787,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 129.54) (xy 236.22 129.54)
+			(xy 215.9 129.54) (xy 236.22 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7833,7 +7827,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 85.09) (xy 218.44 129.54)
+			(xy 215.9 85.09) (xy 215.9 129.54)
 		)
 		(stroke
 			(width 0)
@@ -8158,7 +8152,7 @@
 		(uuid c5c28e0e-9693-4c03-b674-5cede12b77aa)
 	)
 	(image
-		(at 78.74 88.9)
+		(at 71.12 106.68)
 		(scale 0.713505)
 		(uuid "897bf181-30e4-4755-828c-9eb13c214ef5")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAb8AAACCCAYAAADWgMa1AAAAAXNSR0IArs4c6QAAAARnQU1BAACx"
@@ -8306,7 +8300,7 @@
 	)
 	(text "INFO:"
 		(exclude_from_sim no)
-		(at 35.306 75.184 0)
+		(at 27.686 92.964 0)
 		(effects
 			(font
 				(size 2 2)
@@ -8329,7 +8323,7 @@
 	)
 	(text "I2C Pull-up Resistors"
 		(exclude_from_sim no)
-		(at 376.428 176.784 0)
+		(at 378.206 177.038 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -8347,17 +8341,6 @@
 			(justify left bottom)
 		)
 		(uuid "0a07cdb1-6ca4-475d-aa60-fbf5dfb19139")
-	)
-	(label "STM32U5_GND"
-		(at 218.44 196.85 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "121cd710-71e0-4f67-b255-ca6b3fced5ef")
 	)
 	(label "STM32U5_VCC"
 		(at 406.4 172.72 0)
@@ -8415,7 +8398,7 @@
 		(uuid "72c0eff5-400b-40a2-9ab2-8a293add845d")
 	)
 	(label "STM32U5_VCC"
-		(at 116.84 68.58 0)
+		(at 114.3 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8591,7 +8574,7 @@
 		(uuid "f660f049-5bdc-4aaf-9f69-99e2790b8ccc")
 	)
 	(label "SWRST"
-		(at 147.32 85.09 0)
+		(at 114.3 85.09 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8624,7 +8607,7 @@
 		(uuid "fd7d8c31-3c97-43c4-8f5c-5e328b759fd0")
 	)
 	(label "STM32U5_VCC"
-		(at 189.23 114.3 0)
+		(at 176.53 114.3 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8862,7 +8845,7 @@
 		)
 		(uuid "6cb3d05a-282b-4a7f-a051-a82f754d7d3f")
 	)
-	(hierarchical_label "ADC_A0"
+	(hierarchical_label "ADC1_IN1"
 		(shape input)
 		(at 292.1 218.44 0)
 		(fields_autoplaced yes)
@@ -9103,7 +9086,7 @@
 		(uuid "dbbe65c5-e3e8-4851-b25d-6cb31dcf69fd")
 	)
 	(hierarchical_label "PWR"
-		(shape passive)
+		(shape input)
 		(at 88.9 336.55 180)
 		(fields_autoplaced yes)
 		(effects
@@ -9984,7 +9967,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 379.73 297.18 90)
+		(at 392.43 297.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9993,7 +9976,7 @@
 		(fields_autoplaced yes)
 		(uuid "12142129-46d1-4555-8082-346f68c887e1")
 		(property "Reference" "#PWR0616"
-			(at 386.08 297.18 0)
+			(at 398.78 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10002,7 +9985,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 383.54 297.1801 90)
+			(at 396.24 297.1801 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10011,7 +9994,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 379.73 297.18 0)
+			(at 392.43 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10020,7 +10003,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 379.73 297.18 0)
+			(at 392.43 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10029,7 +10012,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 379.73 297.18 0)
+			(at 392.43 297.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10201,7 +10184,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:RES_10kR_1/10W_1%_R0603")
-		(at 193.04 132.08 180)
+		(at 180.34 132.08 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10209,7 +10192,7 @@
 		(dnp no)
 		(uuid "1bb9a220-4269-46c2-94b2-2c500c3178d4")
 		(property "Reference" "R603"
-			(at 195.58 130.81 0)
+			(at 182.88 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10217,7 +10200,7 @@
 			)
 		)
 		(property "Value" "10kR_1/10W_1%"
-			(at 172.212 130.81 0)
+			(at 159.512 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10225,7 +10208,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 189.738 147.828 0)
+			(at 177.038 147.828 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10235,7 +10218,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.seielect.com/catalog/sei-rmcf_rmcp.pdf"
-			(at 189.738 140.97 0)
+			(at 177.038 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10245,7 +10228,7 @@
 			)
 		)
 		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 189.738 145.542 0)
+			(at 177.038 145.542 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10255,7 +10238,7 @@
 			)
 		)
 		(property "Package" "R0603"
-			(at 177.546 133.604 0)
+			(at 164.846 133.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10263,7 +10246,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "RMCF0603FT10K0"
-			(at 189.738 150.114 0)
+			(at 177.038 150.114 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10273,7 +10256,7 @@
 			)
 		)
 		(property "Manufacturer" "Stackpole Electronics Inc"
-			(at 189.738 154.432 0)
+			(at 177.038 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10283,7 +10266,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "RMCF0603FT10K0TR-ND"
-			(at 189.738 152.146 0)
+			(at 177.038 152.146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10293,7 +10276,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 189.738 156.718 0)
+			(at 177.038 156.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10303,7 +10286,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K0/1761235"
-			(at 189.738 143.002 0)
+			(at 177.038 143.002 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10313,7 +10296,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 198.12 133.604 0)
+			(at 187.96 133.604 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10321,7 +10304,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 198.12 136.144 0)
+			(at 185.42 136.144 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12324,7 +12307,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 153.67 132.08 270)
+		(at 140.97 132.08 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12333,7 +12316,7 @@
 		(fields_autoplaced yes)
 		(uuid "53a0a1e2-62f5-43b2-96c9-f8100b4819be")
 		(property "Reference" "#PWR0605"
-			(at 147.32 132.08 0)
+			(at 134.62 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12342,7 +12325,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 149.86 132.0799 90)
+			(at 137.16 132.0799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12351,7 +12334,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 132.08 0)
+			(at 140.97 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12360,7 +12343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 132.08 0)
+			(at 140.97 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12369,7 +12352,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 153.67 132.08 0)
+			(at 140.97 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12674,7 +12657,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:MECH_JUMPER_2POS_J1015")
-		(at 203.2 116.84 270)
+		(at 190.5 116.84 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12683,7 +12666,7 @@
 		(fields_autoplaced yes)
 		(uuid "62d9da45-6025-4f47-9dab-028c04ce0e85")
 		(property "Reference" "JP601"
-			(at 205.74 118.1099 90)
+			(at 193.04 118.1099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12692,7 +12675,7 @@
 			)
 		)
 		(property "Value" "JP_2POS"
-			(at 205.74 120.6499 90)
+			(at 193.04 120.6499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12701,7 +12684,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm"
-			(at 219.964 120.65 0)
+			(at 207.264 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12711,7 +12694,7 @@
 			)
 		)
 		(property "Datasheet" "N/A"
-			(at 212.344 120.396 0)
+			(at 199.644 120.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12721,7 +12704,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2POS, J1015"
-			(at 217.17 120.396 0)
+			(at 204.47 120.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12731,7 +12714,7 @@
 			)
 		)
 		(property "Package" "J1015"
-			(at 205.74 123.1899 90)
+			(at 193.04 123.1899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12740,7 +12723,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "N/A"
-			(at 222.758 120.65 0)
+			(at 210.058 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12750,7 +12733,7 @@
 			)
 		)
 		(property "Manufacturer" "N/A"
-			(at 227.584 120.65 0)
+			(at 214.884 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12760,7 +12743,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "N/A"
-			(at 225.298 120.65 0)
+			(at 212.598 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12770,7 +12753,7 @@
 			)
 		)
 		(property "Vendor" "N/A"
-			(at 230.124 120.65 0)
+			(at 217.424 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12780,7 +12763,7 @@
 			)
 		)
 		(property "Purchase Link" "N/A"
-			(at 214.884 120.396 0)
+			(at 202.184 120.396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12790,7 +12773,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 205.74 125.7299 90)
+			(at 193.04 125.7299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12799,7 +12782,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 205.74 128.2699 90)
+			(at 193.04 128.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
