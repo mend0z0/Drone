@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -75,16 +75,6 @@
 			(type default)
 		)
 		(uuid "159a2b00-d996-4859-8522-4e6cf7bbc7ea")
-	)
-	(wire
-		(pts
-			(xy 381 309.88) (xy 431.8 309.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c999364-1b63-416d-a333-907e2b9cf02c")
 	)
 	(wire
 		(pts
@@ -208,6 +198,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 317.5) (xy 431.8 317.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37846498-8934-4a84-8e43-721a85738de0")
+	)
+	(wire
+		(pts
 			(xy 381 167.64) (xy 393.7 167.64)
 		)
 		(stroke
@@ -328,16 +328,6 @@
 	)
 	(wire
 		(pts
-			(xy 381 302.26) (xy 431.8 302.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a06c659-bfff-4f67-aa0d-9c7184039af1")
-	)
-	(wire
-		(pts
 			(xy 381 241.3) (xy 431.8 241.3)
 		)
 		(stroke
@@ -348,7 +338,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 335.28) (xy 431.8 335.28)
+			(xy 283.21 342.9) (xy 431.8 342.9)
 		)
 		(stroke
 			(width 0)
@@ -428,16 +418,6 @@
 	)
 	(wire
 		(pts
-			(xy 381 317.5) (xy 431.8 317.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "824c48e8-ab53-4685-8a02-63855c244e90")
-	)
-	(wire
-		(pts
 			(xy 283.21 119.38) (xy 431.8 119.38)
 		)
 		(stroke
@@ -455,16 +435,6 @@
 			(type default)
 		)
 		(uuid "87625a0d-86ec-4bef-9a20-41a460c72353")
-	)
-	(wire
-		(pts
-			(xy 381 312.42) (xy 431.8 312.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c582941-a862-450c-b34a-ca5919cc5cf1")
 	)
 	(wire
 		(pts
@@ -488,6 +458,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 323.85) (xy 431.8 323.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d664c8-4d26-47d3-a39d-00450521cd33")
+	)
+	(wire
+		(pts
 			(xy 165.1 270.51) (xy 177.8 270.51)
 		)
 		(stroke
@@ -495,26 +475,6 @@
 			(type default)
 		)
 		(uuid "9844b852-54d8-4239-a24d-9deeafb3eb69")
-	)
-	(wire
-		(pts
-			(xy 381 314.96) (xy 431.8 314.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0ac0bc6-ea28-41d5-bc74-bf257f92d2dd")
-	)
-	(wire
-		(pts
-			(xy 381 304.8) (xy 431.8 304.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a52927e9-cf65-41df-9611-e3be57a29409")
 	)
 	(wire
 		(pts
@@ -558,6 +518,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 302.26) (xy 431.8 302.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7891eb6-afbb-41d7-9c91-4daf304796a2")
+	)
+	(wire
+		(pts
 			(xy 381 267.97) (xy 431.8 267.97)
 		)
 		(stroke
@@ -578,16 +548,6 @@
 	)
 	(wire
 		(pts
-			(xy 381 320.04) (xy 431.8 320.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba406771-ad6c-4099-a2fa-71ad42bd831d")
-	)
-	(wire
-		(pts
 			(xy 283.21 224.79) (xy 292.1 224.79)
 		)
 		(stroke
@@ -598,7 +558,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 330.2) (xy 431.8 330.2)
+			(xy 283.21 337.82) (xy 431.8 337.82)
 		)
 		(stroke
 			(width 0)
@@ -628,6 +588,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 321.31) (xy 431.8 321.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c41e8e3a-404f-475d-ac16-e62e138d4f72")
+	)
+	(wire
+		(pts
 			(xy 203.2 205.74) (xy 254 205.74)
 		)
 		(stroke
@@ -638,7 +608,17 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 337.82) (xy 431.8 337.82)
+			(xy 381 311.15) (xy 431.8 311.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8913952-ca13-407a-a8a7-6f91b5eba69d")
+	)
+	(wire
+		(pts
+			(xy 283.21 345.44) (xy 431.8 345.44)
 		)
 		(stroke
 			(width 0)
@@ -678,6 +658,16 @@
 	)
 	(wire
 		(pts
+			(xy 381 304.8) (xy 431.8 304.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1d77aaf-5986-4d6d-95b4-ae49717ba11e")
+	)
+	(wire
+		(pts
 			(xy 283.21 241.3) (xy 342.9 241.3)
 		)
 		(stroke
@@ -685,6 +675,26 @@
 			(type default)
 		)
 		(uuid "d3da8ef2-4cdf-4f4f-8e98-246da4161668")
+	)
+	(wire
+		(pts
+			(xy 381 308.61) (xy 431.8 308.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8fbb580-f648-44ea-bfb8-bf035be0ee9a")
+	)
+	(wire
+		(pts
+			(xy 381 314.96) (xy 431.8 314.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde45e16-8fd7-4b61-876c-81cbadac0ea7")
 	)
 	(wire
 		(pts
@@ -738,16 +748,6 @@
 	)
 	(wire
 		(pts
-			(xy 381 307.34) (xy 431.8 307.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6e003a0-4f65-4616-bc64-00d56b6d2252")
-	)
-	(wire
-		(pts
 			(xy 203.2 279.4) (xy 254 279.4)
 		)
 		(stroke
@@ -778,7 +778,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 332.74) (xy 431.8 332.74)
+			(xy 283.21 340.36) (xy 431.8 340.36)
 		)
 		(stroke
 			(width 0)
@@ -1055,6 +1055,126 @@
 			)
 		)
 		(uuid "e98305f1-f4f0-44a3-9032-5493d5484f2e")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 185.928 179.07 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "34bd50a4-385f-408c-b94a-e6878a9c868c")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 190.246 288.544 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "3663af88-8e20-4f1c-86f0-a49b06d68e96")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 187.198 212.344 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "423e5760-1f2b-4274-ae12-fc211821a399")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 457.2 213.36 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "645a13e3-6ac4-455e-a531-9113863e0217")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 360.68 166.37 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "6db65b0d-d5a5-4c1a-a7bc-e40269025d2f")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 457.2 322.58 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "8607373c-54bc-4e96-b541-a879bedf499a")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 456.946 247.396 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "ac3ebd65-c0f8-41a7-bee0-b3c6c528cf21")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 267.716 196.85 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "c8b0b520-d547-4cad-ba79-c02e4ba4d17c")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 458.47 120.65 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "e566a11e-2476-4515-93ee-a6b9bde74169")
+	)
+	(text "CHECKED"
+		(exclude_from_sim no)
+		(at 457.2 279.4 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+				(thickness 0.381)
+				(bold yes)
+			)
+		)
+		(uuid "e92ad84b-89bf-4d95-9d9a-62b659dd511f")
 	)
 	(label "+3V3_1"
 		(at 419.1 195.58 0)
@@ -1341,7 +1461,7 @@
 		(uuid "46f21570-6acf-41d5-aae7-6994a13109b0")
 	)
 	(hierarchical_label "USB_ID"
-		(shape bidirectional)
+		(shape output)
 		(at 241.3 96.52 180)
 		(fields_autoplaced yes)
 		(effects
@@ -1674,16 +1794,6 @@
 			)
 			(uuid "5202cfcd-d0fe-456a-b65d-ab2f9052bd58")
 		)
-		(pin "OV2460_+2V8DC" passive
-			(at 431.8 82.55 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "01605019-f66e-4abb-b82c-d86299009389")
-		)
 		(pin "OV2460_HREF" input
 			(at 431.8 96.52 180)
 			(effects
@@ -1713,26 +1823,6 @@
 				(justify left)
 			)
 			(uuid "c48fa15c-abc4-4613-a0f3-82ddbb69fa9a")
-		)
-		(pin "OV2460_+3V3DC" passive
-			(at 431.8 80.01 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "f0f8fad7-733c-4924-bf19-a2a3b1cb86a4")
-		)
-		(pin "OV2460_+1V3DC" passive
-			(at 431.8 85.09 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "d55fdd7f-ab41-4596-aa65-a38742ba4b45")
 		)
 		(pin "OV2460_STROBE" output
 			(at 431.8 135.89 180)
@@ -1844,6 +1934,36 @@
 			)
 			(uuid "8df5531a-fec4-4d4c-b942-a5fb37afaded")
 		)
+		(pin "OV2460_+2V8DC" input
+			(at 431.8 82.55 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6599b36f-5199-46ae-aadb-514bf73954a8")
+		)
+		(pin "OV2460_+1V3DC" input
+			(at 431.8 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9db707c5-edc0-4226-bc5d-54f5124cd28f")
+		)
+		(pin "OV2460_+3V3DC" input
+			(at 431.8 80.01 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a4b0da2c-712d-4dbb-aab7-679c81134084")
+		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
@@ -1854,7 +1974,7 @@
 	)
 	(sheet
 		(at 254 76.2)
-		(size 29.21 266.7)
+		(size 29.21 279.4)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1874,23 +1994,13 @@
 			)
 		)
 		(property "Sheetfile" "[020101] - STM32U575 Driver.kicad_sch"
-			(at 254 343.4846 0)
+			(at 254 356.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
-		)
-		(pin "PWR" passive
-			(at 254 81.28 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "aafac2b0-5f9f-482e-8ae3-4619f31098e1")
 		)
 		(pin "QSPI_D3" bidirectional
 			(at 254 176.53 180)
@@ -1903,7 +2013,7 @@
 			(uuid "00c86917-7ee0-4c5b-89cf-c67fdb185c98")
 		)
 		(pin "TIM3_CH1" output
-			(at 283.21 330.2 0)
+			(at 283.21 337.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1923,7 +2033,7 @@
 			(uuid "5d1bb8fd-5cc9-426a-8a65-5408eb050492")
 		)
 		(pin "TIM3_CH2" output
-			(at 283.21 332.74 0)
+			(at 283.21 340.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1933,7 +2043,7 @@
 			(uuid "628db5cb-4575-4e98-b006-1252a8bde9a2")
 		)
 		(pin "TIM3_CH3" output
-			(at 283.21 335.28 0)
+			(at 283.21 342.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1963,7 +2073,7 @@
 			(uuid "1de27848-cf4e-4ebd-96c5-2906ffad22ab")
 		)
 		(pin "TIM3_CH4" output
-			(at 283.21 337.82 0)
+			(at 283.21 345.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2011,16 +2121,6 @@
 				(justify right)
 			)
 			(uuid "fc267d0c-ae35-4756-bb6c-7bf9f36b8e21")
-		)
-		(pin "ADC_A0" input
-			(at 254 279.4 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "c2903371-f3f2-4477-883f-2de773fc61b6")
 		)
 		(pin "I2C2_SDA" bidirectional
 			(at 283.21 130.81 0)
@@ -2262,16 +2362,6 @@
 			)
 			(uuid "686ca29e-79d4-41d6-9322-265f3f130e0c")
 		)
-		(pin "OTG_USB_ID" bidirectional
-			(at 254 96.52 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "8a6a6caa-1d1a-4cad-a1bf-2b4313cb50b6")
-		)
 		(pin "OTG_USB_DM" bidirectional
 			(at 254 93.98 180)
 			(effects
@@ -2322,6 +2412,36 @@
 			)
 			(uuid "d2d76a23-d61d-4443-9db6-922ef8efd279")
 		)
+		(pin "OTG_USB_ID" output
+			(at 254 96.52 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f234d9cf-7bff-496e-82c8-62badfd3ab32")
+		)
+		(pin "PWR" input
+			(at 254 81.28 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "605cd495-4e2b-4a4f-873c-8f4ef7249f0e")
+		)
+		(pin "ADC1_IN1" input
+			(at 254 279.4 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d8bb4a6a-501f-41f8-8c7b-4f2f004c3ab2")
+		)
 		(instances
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/e826979f-4a88-401c-bba5-a1c30231907a"
@@ -2370,16 +2490,6 @@
 			)
 			(uuid "d33dddb5-3b67-4343-8033-b1a416eb4331")
 		)
-		(pin "BME280_A0" bidirectional
-			(at 431.8 241.3 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "bd3a65c9-4af0-4dbf-9c58-2fc827bc1381")
-		)
 		(pin "BME280_SDA" bidirectional
 			(at 431.8 238.76 180)
 			(effects
@@ -2390,7 +2500,7 @@
 			)
 			(uuid "0387b3e9-0728-42c8-bd31-aed2bd179708")
 		)
-		(pin "PWR" passive
+		(pin "PWR" input
 			(at 431.8 231.14 180)
 			(effects
 				(font
@@ -2398,7 +2508,17 @@
 				)
 				(justify left)
 			)
-			(uuid "5c73a2e7-67a7-450c-b202-d1e375adf1d8")
+			(uuid "b1ab6f8f-9328-4d56-b2b8-502283c67798")
+		)
+		(pin "BME280_A0" input
+			(at 431.8 241.3 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8b9fa88e-868e-4f4b-b6c8-26f64d16a05d")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -2458,7 +2578,7 @@
 			)
 			(uuid "f4db2e73-85e7-4509-a942-acb9bcb4befc")
 		)
-		(pin "PWR" passive
+		(pin "PWR" input
 			(at 177.8 270.51 180)
 			(effects
 				(font
@@ -2466,7 +2586,7 @@
 				)
 				(justify left)
 			)
-			(uuid "c3f2b503-8771-482f-8bf0-6000fcd17a77")
+			(uuid "dde81436-08f7-4a40-8f74-0ba7a66daca4")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -2505,16 +2625,6 @@
 				)
 				(justify left top)
 			)
-		)
-		(pin "PWR" passive
-			(at 431.8 195.58 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "918d3526-f626-4a91-a17c-6d96fc43e1e3")
 		)
 		(pin "ICM_AD0" input
 			(at 431.8 209.55 180)
@@ -2555,6 +2665,16 @@
 				(justify left)
 			)
 			(uuid "5b7dc767-6cd9-43ed-9e4f-b9bcd02baee7")
+		)
+		(pin "PWR" input
+			(at 431.8 195.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "129a1f8c-db83-4652-9c65-fc12c82f53a0")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -2654,7 +2774,7 @@
 			)
 			(uuid "ebfa29aa-0194-48ee-aacd-e4e7a267300a")
 		)
-		(pin "PWR" passive
+		(pin "PWR" input
 			(at 177.8 161.29 180)
 			(effects
 				(font
@@ -2662,7 +2782,7 @@
 				)
 				(justify left)
 			)
-			(uuid "5a759d6e-a790-4c6d-a2a9-9e05ce4ca5ef")
+			(uuid "f6438a66-fa67-4924-bd44-265996f93f54")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
@@ -2674,7 +2794,7 @@
 	)
 	(sheet
 		(at 431.8 289.56)
-		(size 38.1 52.07)
+		(size 38.1 66.04)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2694,7 +2814,7 @@
 			)
 		)
 		(property "Sheetfile" "[020110] - Motor Driver.kicad_sch"
-			(at 431.8 342.2146 0)
+			(at 431.8 356.1846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2703,7 +2823,7 @@
 			)
 		)
 		(pin "MOTO_DIR_4" input
-			(at 431.8 320.04 180)
+			(at 431.8 323.85 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2713,7 +2833,7 @@
 			(uuid "fe8635d6-ffc0-4c0e-bd40-01e00ef3a911")
 		)
 		(pin "MOTO_DIR_3" input
-			(at 431.8 314.96 180)
+			(at 431.8 317.5 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2723,7 +2843,7 @@
 			(uuid "1cbf2da6-e141-4ffe-8805-24cd954880e3")
 		)
 		(pin "MOTOR_EN_4" input
-			(at 431.8 317.5 180)
+			(at 431.8 321.31 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2733,7 +2853,7 @@
 			(uuid "8ce40f2a-e9a4-4150-b13f-88dd3b9e51fb")
 		)
 		(pin "MOTO_PWM_3" input
-			(at 431.8 335.28 180)
+			(at 431.8 342.9 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +2863,7 @@
 			(uuid "0b09f08a-5646-445d-bfdd-d32381f1c1bf")
 		)
 		(pin "MOTOR_EN_3" input
-			(at 431.8 312.42 180)
+			(at 431.8 314.96 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2753,7 +2873,7 @@
 			(uuid "9ad61094-ff72-4334-b320-f118411bc450")
 		)
 		(pin "MOTO_PWM_4" input
-			(at 431.8 337.82 180)
+			(at 431.8 345.44 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2783,7 +2903,7 @@
 			(uuid "f9044f9d-6de6-4ce1-87cf-a413d6c91041")
 		)
 		(pin "MOTO_PWM_1" input
-			(at 431.8 330.2 180)
+			(at 431.8 337.82 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +2923,7 @@
 			(uuid "851f836f-a212-4d43-a12c-a39153f2ce6e")
 		)
 		(pin "MOTO_DIR_2" input
-			(at 431.8 309.88 180)
+			(at 431.8 311.15 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2813,7 +2933,7 @@
 			(uuid "07ecef4b-d0e6-482c-8e75-4c5920f0c9f3")
 		)
 		(pin "MOTOR_EN_2" input
-			(at 431.8 307.34 180)
+			(at 431.8 308.61 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2823,7 +2943,7 @@
 			(uuid "5bc7a231-d75d-44b8-a2f5-479f89818cd9")
 		)
 		(pin "MOTO_PWM_2" input
-			(at 431.8 332.74 180)
+			(at 431.8 340.36 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2910,7 +3030,7 @@
 	)
 	(sheet
 		(at 342.9 140.97)
-		(size 38.1 182.88)
+		(size 38.1 189.23)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2930,7 +3050,7 @@
 			)
 		)
 		(property "Sheetfile" "[020104] - GPIO Expander.kicad_sch"
-			(at 342.9 324.4346 0)
+			(at 342.9 330.7846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +3179,7 @@
 			(uuid "2f87b757-e4ea-4284-9ad4-370244a58a0f")
 		)
 		(pin "MOTOR_DIR_2" output
-			(at 381 307.34 0)
+			(at 381 311.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3069,7 +3189,7 @@
 			(uuid "2b10953a-099e-4acf-b626-f99a2ccfebdd")
 		)
 		(pin "MOTOR_CTRL_2" output
-			(at 381 309.88 0)
+			(at 381 308.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3079,7 +3199,7 @@
 			(uuid "c80ea7d3-f92b-4998-a7ec-e8cce1809e2e")
 		)
 		(pin "MOTOR_DIR_3" output
-			(at 381 312.42 0)
+			(at 381 317.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3089,7 +3209,7 @@
 			(uuid "714fb277-772d-4d3c-bf66-294ad2c55fca")
 		)
 		(pin "MOTOR_CTRL_1" output
-			(at 381 304.8 0)
+			(at 381 302.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3099,7 +3219,7 @@
 			(uuid "6fd381a3-7d13-4386-97dc-717c6e1488f7")
 		)
 		(pin "MOTOR_CTRL_4" output
-			(at 381 320.04 0)
+			(at 381 321.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3119,7 +3239,7 @@
 			(uuid "f9193619-9c8c-47ff-88bd-793a660f6c4e")
 		)
 		(pin "MOTOR_DIR_1" output
-			(at 381 302.26 0)
+			(at 381 304.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3129,7 +3249,7 @@
 			(uuid "e8b3cf82-f48e-4acf-b691-a3d4d14ce8b6")
 		)
 		(pin "MOTOR_DIR_4" output
-			(at 381 317.5 0)
+			(at 381 323.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3147,16 +3267,6 @@
 				(justify left)
 			)
 			(uuid "0cc594e8-e831-46b6-a551-ef88a4f5fe30")
-		)
-		(pin "+PWR" passive
-			(at 342.9 144.78 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "65c8ad73-18a4-4744-b229-1bd78ea8e8fe")
 		)
 		(pin "I2C_SCL" input
 			(at 342.9 243.84 180)
@@ -3207,6 +3317,16 @@
 				(justify right)
 			)
 			(uuid "e2c18925-fdbd-46ae-a48c-6d106d5c6ff9")
+		)
+		(pin "+PWR" input
+			(at 342.9 144.78 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1c12b1e5-2c0b-4364-ae74-54dd2835cd7b")
 		)
 		(instances
 			(project "_Sub_HW_Qcopter"
