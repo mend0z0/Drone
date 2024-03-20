@@ -6,11 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Quadcopter")
-		(date "2024-03-17")
+		(date "2024-03-20")
 		(rev "01")
 		(company "Mend0z0")
 		(comment 1 "01")
-		(comment 2 "PRELIMINARY")
+		(comment 2 "CHECKED")
 		(comment 3 "Siavash Taher Parvar")
 		(comment 8 "N/A")
 		(comment 9 "First Version")
@@ -4243,22 +4243,16 @@
 		)
 	)
 	(junction
+		(at 25.4 254)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03f5aac6-6875-4a1b-8876-1bf364de206a")
+	)
+	(junction
 		(at 262.89 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11edb286-a9a1-4b5f-a70e-ddfb28418ba9")
-	)
-	(junction
-		(at 161.29 281.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "14ece2e4-ade8-4945-9b47-cb6702811802")
-	)
-	(junction
-		(at 161.29 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16fce01c-3a82-418a-abbf-d3e556ba148f")
 	)
 	(junction
 		(at 313.69 281.94)
@@ -4267,22 +4261,10 @@
 		(uuid "1fdd3fe5-f223-4f82-8cd0-01475af8c6da")
 	)
 	(junction
-		(at 161.29 254)
+		(at 165.1 254)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "20a192b0-dfd9-45f9-961b-05bc5ae1028f")
-	)
-	(junction
-		(at 135.89 281.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "241ea806-1c2a-4420-a8ab-07df44b58246")
-	)
-	(junction
-		(at 379.73 180.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24a10b60-400e-4521-b420-51553beff0a9")
+		(uuid "224b24a4-4342-4978-aa78-6c91635027c9")
 	)
 	(junction
 		(at 478.79 238.76)
@@ -4309,7 +4291,7 @@
 		(uuid "3164ae5a-dd90-48ff-84e6-97f2aabc3959")
 	)
 	(junction
-		(at 335.28 184.15)
+		(at 332.74 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36837cfa-fc3b-4a75-8641-7cea1ae35b68")
@@ -4339,12 +4321,6 @@
 		(uuid "3c3c9b07-2e19-4562-9b66-eb7749884fa1")
 	)
 	(junction
-		(at 34.29 210.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4990f525-20aa-4333-a76f-82914f180498")
-	)
-	(junction
 		(at 364.49 261.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4357,7 +4333,7 @@
 		(uuid "583d02dd-3089-4317-b54a-851e4ffc405a")
 	)
 	(junction
-		(at 294.64 246.38)
+		(at 298.45 246.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5c0259ac-b3ed-4b6a-882b-a42e46b23248")
@@ -4369,16 +4345,10 @@
 		(uuid "5c380151-b580-4cdf-a914-e6595799ff4e")
 	)
 	(junction
-		(at 110.49 281.94)
+		(at 165.1 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "60391e57-edcc-4262-9bc1-bead9a83c059")
-	)
-	(junction
-		(at 34.29 254)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63a982d9-e3b3-4224-9ff0-2b9d8da132a1")
+		(uuid "60acf287-6082-406f-8c79-037c6f865d78")
 	)
 	(junction
 		(at 241.3 184.15)
@@ -4405,16 +4375,22 @@
 		(uuid "6c8435cd-3532-4f52-abc4-e621dfd8d17f")
 	)
 	(junction
-		(at 313.69 256.54)
+		(at 88.9 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6e5a084e-c539-4209-ae75-f90b7fe33b31")
+		(uuid "794e47a4-11d8-43e9-b13f-910669f36c67")
 	)
 	(junction
 		(at 101.6 254)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "79f43438-4e01-41c7-bb63-8b939ace10ad")
+	)
+	(junction
+		(at 165.1 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8245ce68-03f9-4a36-aee7-bbe9d09fc60b")
 	)
 	(junction
 		(at 212.09 281.94)
@@ -4459,10 +4435,16 @@
 		(uuid "9bcde52a-b470-463f-8b15-8f944df4f568")
 	)
 	(junction
-		(at 332.74 184.15)
+		(at 330.2 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c864c48-0d43-4264-9968-dd0baafa07fb")
+	)
+	(junction
+		(at 25.4 210.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1e3fa74-f7f3-4da4-a0b6-9f35326f70d4")
 	)
 	(junction
 		(at 393.7 220.98)
@@ -4483,16 +4465,10 @@
 		(uuid "ac66cb9b-201a-410d-bbc4-a0f2bc5ef17c")
 	)
 	(junction
-		(at 294.64 248.92)
+		(at 298.45 248.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b22e715f-f325-4fd6-821d-35782a9e0c0c")
-	)
-	(junction
-		(at 336.55 248.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b9a8058a-e530-4cf1-a5bc-cdc19759e5df")
 	)
 	(junction
 		(at 504.19 163.83)
@@ -4501,10 +4477,16 @@
 		(uuid "bcbaf48d-db2a-4c0b-a187-79d6abf8bc24")
 	)
 	(junction
-		(at 59.69 281.94)
+		(at 50.8 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c4c867d0-9e4a-4a6c-944c-789d29d1e8ef")
+		(uuid "be59ab13-96ce-4e18-b263-f75945554371")
+	)
+	(junction
+		(at 139.7 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c09c1418-18c5-4f17-adaf-7b4472d750a4")
 	)
 	(junction
 		(at 361.95 160.02)
@@ -4513,22 +4495,34 @@
 		(uuid "d0f750de-a38b-4b9c-a767-4b7c0136bbc3")
 	)
 	(junction
+		(at 114.3 281.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3f984d8-59e1-4b30-87e6-6974c8c295c3")
+	)
+	(junction
+		(at 313.69 256.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d417ecbd-01af-4fe0-b82c-e00e3bffefba")
+	)
+	(junction
 		(at 364.49 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5188fde-a952-4040-a06b-517f67617654")
 	)
 	(junction
+		(at 381 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d88ab95e-d08b-4c69-9e50-c03ce8aa8f9f")
+	)
+	(junction
 		(at 419.1 281.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "deae8925-ff2d-4914-b123-6c7ce3c4d83d")
-	)
-	(junction
-		(at 85.09 281.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e2fd04d4-58ee-4b42-9365-4bb84bf0cb3a")
 	)
 	(junction
 		(at 389.89 281.94)
@@ -4543,7 +4537,7 @@
 		(uuid "eedb312e-3dd0-44e0-b06e-a0d92e1d5aa2")
 	)
 	(junction
-		(at 379.73 193.04)
+		(at 381 193.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef2b47c7-6dd3-4039-b746-90d913b1c6f0")
@@ -4553,6 +4547,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb76b517-dad0-4e3c-993e-8f258cf668b6")
+	)
+	(junction
+		(at 355.6 248.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff98ab56-344b-4577-b593-ccc984824141")
 	)
 	(no_connect
 		(at 466.09 256.54)
@@ -4614,6 +4614,16 @@
 	)
 	(wire
 		(pts
+			(xy 313.69 256.54) (xy 313.69 266.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0119a9cf-a960-4a62-9b8b-2c00e9a9d745")
+	)
+	(wire
+		(pts
 			(xy 478.79 190.5) (xy 478.79 193.04)
 		)
 		(stroke
@@ -4644,16 +4654,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 281.94) (xy 85.09 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0532ce96-c6df-440e-9db3-6f0ba498f59f")
-	)
-	(wire
-		(pts
 			(xy 504.19 222.25) (xy 504.19 224.79)
 		)
 		(stroke
@@ -4664,7 +4664,17 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 196.85) (xy 379.73 193.04)
+			(xy 381 180.34) (xy 394.97 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05622a2c-5eca-47ad-8e0f-0576e34eec6d")
+	)
+	(wire
+		(pts
+			(xy 381 196.85) (xy 381 193.04)
 		)
 		(stroke
 			(width 0)
@@ -4684,7 +4694,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 254) (xy 34.29 210.82)
+			(xy 25.4 254) (xy 25.4 210.82)
 		)
 		(stroke
 			(width 0)
@@ -4714,7 +4724,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 184.15) (xy 332.74 172.72)
+			(xy 330.2 184.15) (xy 330.2 172.72)
 		)
 		(stroke
 			(width 0)
@@ -4754,13 +4764,23 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 254) (xy 135.89 266.7)
+			(xy 139.7 254) (xy 139.7 266.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "139ca4b8-0503-4a44-a396-242ba6ffb99b")
+	)
+	(wire
+		(pts
+			(xy 165.1 281.94) (xy 186.69 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a52183-714d-46f3-a6f3-27504f0b0bdd")
 	)
 	(wire
 		(pts
@@ -4774,7 +4794,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 184.15) (xy 332.74 184.15)
+			(xy 292.1 184.15) (xy 330.2 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4784,7 +4804,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 180.34) (xy 355.6 180.34)
+			(xy 332.74 180.34) (xy 353.06 180.34)
 		)
 		(stroke
 			(width 0)
@@ -4794,27 +4814,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 248.92) (xy 336.55 248.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "249f7f6c-01ea-4881-acf7-4743201d6b7d")
-	)
-	(wire
-		(pts
-			(xy 368.3 180.34) (xy 379.73 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "257a1944-26a7-4df9-ac1b-9ee0d4691b01")
-	)
-	(wire
-		(pts
-			(xy 101.6 254) (xy 110.49 254)
+			(xy 101.6 254) (xy 114.3 254)
 		)
 		(stroke
 			(width 0)
@@ -4834,7 +4834,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 193.04) (xy 394.97 193.04)
+			(xy 381 193.04) (xy 394.97 193.04)
 		)
 		(stroke
 			(width 0)
@@ -4844,7 +4844,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 279.4) (xy 161.29 281.94)
+			(xy 165.1 279.4) (xy 165.1 281.94)
 		)
 		(stroke
 			(width 0)
@@ -4874,7 +4874,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 172.72) (xy 379.73 172.72)
+			(xy 365.76 172.72) (xy 381 172.72)
 		)
 		(stroke
 			(width 0)
@@ -4884,7 +4884,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 172.72) (xy 379.73 180.34)
+			(xy 381 172.72) (xy 381 180.34)
 		)
 		(stroke
 			(width 0)
@@ -4894,7 +4894,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 254) (xy 59.69 266.7)
+			(xy 50.8 254) (xy 50.8 266.7)
 		)
 		(stroke
 			(width 0)
@@ -4904,7 +4904,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 279.4) (xy 59.69 281.94)
+			(xy 50.8 279.4) (xy 50.8 281.94)
 		)
 		(stroke
 			(width 0)
@@ -4914,7 +4914,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 266.7) (xy 34.29 254)
+			(xy 25.4 266.7) (xy 25.4 254)
 		)
 		(stroke
 			(width 0)
@@ -4974,7 +4974,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 184.15) (xy 304.8 184.15)
+			(xy 241.3 184.15) (xy 279.4 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5014,13 +5014,13 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 254) (xy 59.69 254)
+			(xy 139.7 281.94) (xy 165.1 281.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3ed0cd0c-ac38-4f50-8b8e-0cd21b5118d2")
+		(uuid "3bb4a2c6-c7e7-46e3-998d-4d3cc9b82afe")
 	)
 	(wire
 		(pts
@@ -5051,16 +5051,6 @@
 			(type default)
 		)
 		(uuid "45d0e20d-9af3-4dad-97f7-d2d8388e44e3")
-	)
-	(wire
-		(pts
-			(xy 161.29 281.94) (xy 186.69 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "469ed808-c6b6-41d0-90ed-8592fc9957e8")
 	)
 	(wire
 		(pts
@@ -5124,13 +5114,23 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 180.34) (xy 394.97 180.34)
+			(xy 365.76 180.34) (xy 381 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4f221376-3fe5-4663-9804-f2fa07b474f6")
+	)
+	(wire
+		(pts
+			(xy 88.9 281.94) (xy 114.3 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5004e590-6e10-4420-a789-cc581e6a5c4d")
 	)
 	(wire
 		(pts
@@ -5164,6 +5164,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 210.82) (xy 420.37 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54215733-4050-4334-ba2d-e0e4284b3959")
+	)
+	(wire
+		(pts
 			(xy 504.19 241.3) (xy 516.89 241.3)
 		)
 		(stroke
@@ -5194,7 +5204,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 218.44) (xy 149.86 218.44)
+			(xy 165.1 218.44) (xy 393.7 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56f19e75-a007-4ee4-9140-d753598ef0a3")
+	)
+	(wire
+		(pts
+			(xy 149.86 218.44) (xy 165.1 218.44)
 		)
 		(stroke
 			(width 0)
@@ -5224,7 +5244,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 184.15) (xy 337.82 184.15)
+			(xy 332.74 184.15) (xy 335.28 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5274,7 +5294,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 196.85) (xy 332.74 196.85)
+			(xy 353.06 196.85) (xy 330.2 196.85)
 		)
 		(stroke
 			(width 0)
@@ -5304,7 +5324,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 254) (xy 161.29 266.7)
+			(xy 165.1 254) (xy 165.1 266.7)
 		)
 		(stroke
 			(width 0)
@@ -5321,16 +5341,6 @@
 			(type default)
 		)
 		(uuid "677e6e63-c16b-4e9d-a7ed-72533dd7ab6e")
-	)
-	(wire
-		(pts
-			(xy 85.09 281.94) (xy 110.49 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67d610cf-36ab-4330-a17e-bd4cca8b2358")
 	)
 	(wire
 		(pts
@@ -5364,7 +5374,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 210.82) (xy 34.29 205.74)
+			(xy 25.4 210.82) (xy 25.4 205.74)
 		)
 		(stroke
 			(width 0)
@@ -5384,7 +5394,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 196.85) (xy 379.73 196.85)
+			(xy 365.76 196.85) (xy 381 196.85)
 		)
 		(stroke
 			(width 0)
@@ -5394,7 +5404,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 281.94) (xy 59.69 281.94)
+			(xy 25.4 281.94) (xy 50.8 281.94)
 		)
 		(stroke
 			(width 0)
@@ -5424,6 +5434,16 @@
 	)
 	(wire
 		(pts
+			(xy 25.4 254) (xy 50.8 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73974f26-4fba-4168-a406-33ce557e2447")
+	)
+	(wire
+		(pts
 			(xy 466.09 241.3) (xy 504.19 241.3)
 		)
 		(stroke
@@ -5444,7 +5464,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 248.92) (xy 294.64 248.92)
+			(xy 318.77 248.92) (xy 298.45 248.92)
 		)
 		(stroke
 			(width 0)
@@ -5504,7 +5524,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 266.7) (xy 110.49 254)
+			(xy 114.3 266.7) (xy 114.3 254)
 		)
 		(stroke
 			(width 0)
@@ -5654,7 +5674,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 205.74) (xy 323.85 205.74)
+			(xy 25.4 205.74) (xy 317.5 205.74)
 		)
 		(stroke
 			(width 0)
@@ -5684,7 +5704,7 @@
 	)
 	(wire
 		(pts
-			(xy 368.3 187.96) (xy 379.73 187.96)
+			(xy 365.76 187.96) (xy 381 187.96)
 		)
 		(stroke
 			(width 0)
@@ -5724,7 +5744,7 @@
 	)
 	(wire
 		(pts
-			(xy 379.73 187.96) (xy 379.73 193.04)
+			(xy 381 187.96) (xy 381 193.04)
 		)
 		(stroke
 			(width 0)
@@ -5774,23 +5794,13 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 254) (xy 262.89 254)
+			(xy 298.45 254) (xy 262.89 254)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a115d373-56b5-4372-97bb-a91dec6a7682")
-	)
-	(wire
-		(pts
-			(xy 110.49 281.94) (xy 135.89 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a17170bd-6d7a-4c68-9113-89dae33de2e9")
 	)
 	(polyline
 		(pts
@@ -5804,7 +5814,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 279.4) (xy 135.89 281.94)
+			(xy 139.7 254) (xy 165.1 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a333c246-3bf4-45b8-8a80-d11cea95a64f")
+	)
+	(wire
+		(pts
+			(xy 139.7 279.4) (xy 139.7 281.94)
 		)
 		(stroke
 			(width 0)
@@ -5814,7 +5834,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 266.7) (xy 85.09 254)
+			(xy 88.9 266.7) (xy 88.9 254)
 		)
 		(stroke
 			(width 0)
@@ -5824,7 +5844,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 279.4) (xy 85.09 281.94)
+			(xy 88.9 279.4) (xy 88.9 281.94)
 		)
 		(stroke
 			(width 0)
@@ -5834,7 +5854,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 246.38) (xy 294.64 248.92)
+			(xy 298.45 246.38) (xy 298.45 248.92)
 		)
 		(stroke
 			(width 0)
@@ -5884,7 +5904,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 256.54) (xy 313.69 256.54)
+			(xy 355.6 256.54) (xy 313.69 256.54)
 		)
 		(stroke
 			(width 0)
@@ -5944,7 +5964,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 184.15) (xy 335.28 180.34)
+			(xy 332.74 184.15) (xy 332.74 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6004,7 +6024,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 172.72) (xy 355.6 172.72)
+			(xy 330.2 172.72) (xy 353.06 172.72)
 		)
 		(stroke
 			(width 0)
@@ -6024,7 +6044,7 @@
 	)
 	(wire
 		(pts
-			(xy 283.21 246.38) (xy 294.64 246.38)
+			(xy 283.21 246.38) (xy 298.45 246.38)
 		)
 		(stroke
 			(width 0)
@@ -6064,16 +6084,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 210.82) (xy 420.37 210.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf5d452e-0082-4fa6-a6a5-2dccdd9045b8")
-	)
-	(wire
-		(pts
 			(xy 466.09 210.82) (xy 516.89 210.82)
 		)
 		(stroke
@@ -6104,6 +6114,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 281.94) (xy 139.7 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c101e64d-66e7-4254-9e9d-b2806b5a1501")
+	)
+	(wire
+		(pts
 			(xy 393.7 208.28) (xy 420.37 208.28)
 		)
 		(stroke
@@ -6124,7 +6144,7 @@
 	)
 	(wire
 		(pts
-			(xy 420.37 246.38) (xy 294.64 246.38)
+			(xy 420.37 246.38) (xy 298.45 246.38)
 		)
 		(stroke
 			(width 0)
@@ -6184,6 +6204,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 281.94) (xy 88.9 281.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b25c90-c760-4fb9-8f7a-181ed40102ed")
+	)
+	(wire
+		(pts
 			(xy 288.29 281.94) (xy 313.69 281.94)
 		)
 		(stroke
@@ -6224,7 +6254,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 196.85) (xy 332.74 184.15)
+			(xy 330.2 196.85) (xy 330.2 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6304,7 +6334,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 248.92) (xy 419.1 248.92)
+			(xy 331.47 248.92) (xy 355.6 248.92)
 		)
 		(stroke
 			(width 0)
@@ -6324,7 +6354,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 279.4) (xy 34.29 281.94)
+			(xy 25.4 279.4) (xy 25.4 281.94)
 		)
 		(stroke
 			(width 0)
@@ -6334,17 +6364,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 281.94) (xy 161.29 281.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d3cb45fd-dce3-4ebb-88d9-5338ce1e5153")
-	)
-	(wire
-		(pts
-			(xy 161.29 218.44) (xy 161.29 254)
+			(xy 165.1 218.44) (xy 165.1 254)
 		)
 		(stroke
 			(width 0)
@@ -6434,13 +6454,13 @@
 	)
 	(wire
 		(pts
-			(xy 313.69 256.54) (xy 313.69 266.7)
+			(xy 355.6 248.92) (xy 419.1 248.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "deb83f9d-5804-4a2c-a0df-8f3fae0ebb38")
+		(uuid "df6c1ed2-a938-414c-8fda-7b08014791a4")
 	)
 	(wire
 		(pts
@@ -6494,7 +6514,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 254) (xy 101.6 254)
+			(xy 88.9 254) (xy 101.6 254)
 		)
 		(stroke
 			(width 0)
@@ -6504,7 +6524,7 @@
 	)
 	(wire
 		(pts
-			(xy 294.64 248.92) (xy 294.64 254)
+			(xy 298.45 248.92) (xy 298.45 254)
 		)
 		(stroke
 			(width 0)
@@ -6514,7 +6534,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 205.74) (xy 365.76 205.74)
+			(xy 330.2 205.74) (xy 365.76 205.74)
 		)
 		(stroke
 			(width 0)
@@ -6551,26 +6571,6 @@
 			(type default)
 		)
 		(uuid "ef0c8f65-3703-4ce3-93fb-8abf855965ad")
-	)
-	(wire
-		(pts
-			(xy 161.29 218.44) (xy 393.7 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f10ffe6d-dee2-4ee9-a98f-68adc576d956")
-	)
-	(wire
-		(pts
-			(xy 161.29 254) (xy 135.89 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f15c834d-a392-43e0-a827-7cda8dc792c3")
 	)
 	(wire
 		(pts
@@ -6614,7 +6614,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.28 187.96) (xy 335.28 184.15)
+			(xy 332.74 187.96) (xy 332.74 184.15)
 		)
 		(stroke
 			(width 0)
@@ -6644,7 +6644,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 279.4) (xy 110.49 281.94)
+			(xy 114.3 279.4) (xy 114.3 281.94)
 		)
 		(stroke
 			(width 0)
@@ -6664,7 +6664,7 @@
 	)
 	(wire
 		(pts
-			(xy 355.6 187.96) (xy 335.28 187.96)
+			(xy 353.06 187.96) (xy 332.74 187.96)
 		)
 		(stroke
 			(width 0)
@@ -6674,7 +6674,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 248.92) (xy 336.55 256.54)
+			(xy 355.6 248.92) (xy 355.6 256.54)
 		)
 		(stroke
 			(width 0)
@@ -8933,7 +8933,7 @@
 		(uuid "2cef5235-02cb-4e41-b1c2-5a613d536de2")
 	)
 	(label "ATWILC_+1.3V"
-		(at 34.29 205.74 0)
+		(at 25.4 205.74 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9503,7 +9503,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
-		(at 161.29 266.7 270)
+		(at 165.1 266.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9512,7 +9512,7 @@
 		(fields_autoplaced yes)
 		(uuid "07fe5acd-4027-4946-a447-e64ee93be950")
 		(property "Reference" "C3106"
-			(at 163.83 267.9699 90)
+			(at 167.64 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9521,7 +9521,7 @@
 			)
 		)
 		(property "Value" "4u7F_16V_X7R"
-			(at 163.83 270.5099 90)
+			(at 167.64 270.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9530,7 +9530,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 178.054 270.51 0)
+			(at 181.864 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9540,7 +9540,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
-			(at 170.434 270.256 0)
+			(at 174.244 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9550,7 +9550,7 @@
 			)
 		)
 		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 175.26 270.256 0)
+			(at 179.07 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9560,7 +9560,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 163.83 273.0499 90)
+			(at 167.64 273.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9569,7 +9569,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
-			(at 180.848 270.51 0)
+			(at 184.658 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9579,7 +9579,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 185.674 270.51 0)
+			(at 189.484 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9589,7 +9589,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
-			(at 183.388 270.51 0)
+			(at 187.198 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9599,7 +9599,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 188.214 270.51 0)
+			(at 192.024 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9609,7 +9609,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
-			(at 172.974 270.256 0)
+			(at 176.784 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9619,7 +9619,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 163.83 275.5899 90)
+			(at 167.64 275.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9628,7 +9628,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 163.83 278.1299 90)
+			(at 167.64 278.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9803,7 +9803,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
-		(at 110.49 266.7 270)
+		(at 114.3 266.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9812,7 +9812,7 @@
 		(fields_autoplaced yes)
 		(uuid "15d2de34-916f-41f7-a3ad-a3e750748756")
 		(property "Reference" "C3104"
-			(at 113.03 267.9699 90)
+			(at 116.84 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9821,7 +9821,7 @@
 			)
 		)
 		(property "Value" "4u7F_16V_X7R"
-			(at 113.03 270.5099 90)
+			(at 116.84 270.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9830,7 +9830,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 127.254 270.51 0)
+			(at 131.064 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9840,7 +9840,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
-			(at 119.634 270.256 0)
+			(at 123.444 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9850,7 +9850,7 @@
 			)
 		)
 		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 124.46 270.256 0)
+			(at 128.27 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9860,7 +9860,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 113.03 273.0499 90)
+			(at 116.84 273.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9869,7 +9869,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
-			(at 130.048 270.51 0)
+			(at 133.858 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9879,7 +9879,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 134.874 270.51 0)
+			(at 138.684 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9889,7 +9889,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
-			(at 132.588 270.51 0)
+			(at 136.398 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9899,7 +9899,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 137.414 270.51 0)
+			(at 141.224 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9909,7 +9909,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
-			(at 122.174 270.256 0)
+			(at 125.984 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9919,7 +9919,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 113.03 275.5899 90)
+			(at 116.84 275.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9928,7 +9928,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 113.03 278.1299 90)
+			(at 116.84 278.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10691,7 +10691,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:IND_3.3nH_400mA_0.3R_9.5GHz_L0201")
-		(at 355.6 196.85 0)
+		(at 353.06 196.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10699,7 +10699,7 @@
 		(dnp no)
 		(uuid "4040b924-8534-4352-96fc-cf8bfc11fda9")
 		(property "Reference" "L3104"
-			(at 370.84 195.58 0)
+			(at 368.3 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10707,7 +10707,7 @@
 			)
 		)
 		(property "Value" "3n3H_400mA_0.3R"
-			(at 346.964 195.58 0)
+			(at 344.424 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10715,7 +10715,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
-			(at 359.41 180.34 0)
+			(at 356.87 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10725,7 +10725,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/inductor/WLCM0603TG_Series.pdf"
-			(at 359.41 187.96 0)
+			(at 356.87 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10735,7 +10735,7 @@
 			)
 		)
 		(property "Description" "3.3 nH Unshielded Multilayer Inductor 400 mA 300mOhm Max 0201 (0603 Metric)"
-			(at 359.41 182.88 0)
+			(at 356.87 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10745,7 +10745,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "WLCM0603TGB3N3TB"
-			(at 359.41 175.26 0)
+			(at 356.87 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10755,7 +10755,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/WLCM0603TGB3N3TB/14563850"
-			(at 359.41 185.42 0)
+			(at 356.87 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10773,7 +10773,7 @@
 			)
 		)
 		(property "Package" "L0201"
-			(at 353.314 198.374 0)
+			(at 350.774 198.374 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10781,7 +10781,7 @@
 			)
 		)
 		(property "Manufacturer" "Walsin Technology Corporation"
-			(at 359.41 172.72 0)
+			(at 356.87 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10791,7 +10791,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "1292-WLCM0603TGB3N3TBTR-ND"
-			(at 359.41 177.8 0)
+			(at 356.87 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10801,7 +10801,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 359.41 170.18 0)
+			(at 356.87 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10811,7 +10811,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 373.126 200.66 0)
+			(at 370.586 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10835,7 +10835,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:IND_FB_BLM15AG121SN1D_550mA_0.19R_120R@100MHz_L0402")
-		(at 312.42 248.92 0)
+		(at 318.77 248.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10843,7 +10843,7 @@
 		(dnp no)
 		(uuid "43a2d36f-2ce5-4edd-bf8c-5ea92dd9141f")
 		(property "Reference" "FB3104"
-			(at 328.676 247.65 0)
+			(at 335.026 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10851,7 +10851,7 @@
 			)
 		)
 		(property "Value" "FB_550mA_0.19R"
-			(at 304.546 247.65 0)
+			(at 310.896 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10859,7 +10859,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 316.23 232.156 0)
+			(at 322.58 232.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10869,7 +10869,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.murata.com/en-us/products/productdata/8796740059166/ENFA0018.pdf"
-			(at 315.976 239.776 0)
+			(at 322.326 239.776 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10879,7 +10879,7 @@
 			)
 		)
 		(property "Description" "120 Ohms @ 100 MHz 1 Ferrite Bead 0402 (1005 Metric) 550mA 190mOhm"
-			(at 315.976 234.95 0)
+			(at 322.326 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10889,7 +10889,7 @@
 			)
 		)
 		(property "Package" "L0402"
-			(at 309.626 250.444 0)
+			(at 315.976 250.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10897,7 +10897,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "BLM15AG121SN1D"
-			(at 316.23 229.362 0)
+			(at 322.58 229.362 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10907,7 +10907,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 316.23 224.536 0)
+			(at 322.58 224.536 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10917,7 +10917,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-1005-2-ND"
-			(at 316.23 226.822 0)
+			(at 322.58 226.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10927,7 +10927,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 316.23 221.996 0)
+			(at 322.58 221.996 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10937,7 +10937,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/BLM15AG121SN1D/584216?s=N4IgTCBcDaIEYBsC2BGArAQwOYrCgzgHYogC6AvkA"
-			(at 315.976 237.236 0)
+			(at 322.326 237.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10947,7 +10947,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 330.2 250.444 0)
+			(at 336.55 250.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10955,7 +10955,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 330.2 252.984 0)
+			(at 336.55 252.984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11273,7 +11273,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_1pF_50V_C0G_C0201")
-		(at 368.3 172.72 180)
+		(at 365.76 172.72 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11281,7 +11281,7 @@
 		(dnp no)
 		(uuid "4b7be1dc-8747-48fa-8776-fc8a55402fa5")
 		(property "Reference" "C3119"
-			(at 371.094 171.45 0)
+			(at 368.554 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11289,7 +11289,7 @@
 			)
 		)
 		(property "Value" "1pF_50V_C0G"
-			(at 349.504 171.45 0)
+			(at 346.964 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11297,7 +11297,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 365.76 189.23 0)
+			(at 363.22 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11307,7 +11307,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Taiyo%20Yuden%20PDFs%20URL%20links/UMK063CG010CTHF_SS.pdf"
-			(at 365.76 181.61 0)
+			(at 363.22 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11317,7 +11317,7 @@
 			)
 		)
 		(property "Description" "1 pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"
-			(at 365.76 186.69 0)
+			(at 363.22 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11327,7 +11327,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "UMK063CG010CTHF"
-			(at 365.76 194.31 0)
+			(at 363.22 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11337,7 +11337,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/taiyo-yuden/UMK063CG010CTHF/4811142"
-			(at 365.76 184.15 0)
+			(at 363.22 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11355,7 +11355,7 @@
 			)
 		)
 		(property "Package" "C0201"
-			(at 353.06 174.244 0)
+			(at 350.52 174.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11363,7 +11363,7 @@
 			)
 		)
 		(property "Manufacturer" "Taiyo Yuden"
-			(at 365.76 196.85 0)
+			(at 363.22 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11373,7 +11373,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "587-3776-2-ND"
-			(at 365.76 191.77 0)
+			(at 363.22 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11383,7 +11383,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 365.76 199.39 0)
+			(at 363.22 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11393,7 +11393,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 373.126 176.784 0)
+			(at 370.586 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11417,7 +11417,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_1pF_50V_C0G_C0201")
-		(at 355.6 187.96 0)
+		(at 353.06 187.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11425,7 +11425,7 @@
 		(dnp no)
 		(uuid "5eb607a5-4719-4c6a-b796-f6de90d078c7")
 		(property "Reference" "C3117"
-			(at 371.094 186.69 0)
+			(at 368.554 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11433,7 +11433,7 @@
 			)
 		)
 		(property "Value" "1pF_50V_C0G"
-			(at 349.504 186.436 0)
+			(at 346.964 186.436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11441,7 +11441,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 358.14 171.45 0)
+			(at 355.6 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11451,7 +11451,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Taiyo%20Yuden%20PDFs%20URL%20links/UMK063CG010CTHF_SS.pdf"
-			(at 358.14 179.07 0)
+			(at 355.6 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11461,7 +11461,7 @@
 			)
 		)
 		(property "Description" "1 pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"
-			(at 358.14 173.99 0)
+			(at 355.6 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11471,7 +11471,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "UMK063CG010CTHF"
-			(at 358.14 166.37 0)
+			(at 355.6 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11481,7 +11481,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/taiyo-yuden/UMK063CG010CTHF/4811142"
-			(at 358.14 176.53 0)
+			(at 355.6 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11499,7 +11499,7 @@
 			)
 		)
 		(property "Package" "C0201"
-			(at 353.06 189.484 0)
+			(at 350.52 189.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11507,7 +11507,7 @@
 			)
 		)
 		(property "Manufacturer" "Taiyo Yuden"
-			(at 358.14 163.83 0)
+			(at 355.6 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11517,7 +11517,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "587-3776-2-ND"
-			(at 358.14 168.91 0)
+			(at 355.6 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11527,7 +11527,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 358.14 161.29 0)
+			(at 355.6 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11537,7 +11537,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 373.126 192.024 0)
+			(at 370.586 192.024 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11705,7 +11705,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_1pF_50V_C0G_C0201")
-		(at 317.5 184.15 180)
+		(at 292.1 184.15 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11713,7 +11713,7 @@
 		(dnp no)
 		(uuid "65a7a755-c3be-4a4d-b25c-a2a2517272b1")
 		(property "Reference" "C3115"
-			(at 320.04 182.88 0)
+			(at 294.64 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11721,7 +11721,7 @@
 			)
 		)
 		(property "Value" "1pF_50V_C0G"
-			(at 298.704 182.88 0)
+			(at 273.304 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11729,7 +11729,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
-			(at 314.96 200.66 0)
+			(at 289.56 200.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11739,7 +11739,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Taiyo%20Yuden%20PDFs%20URL%20links/UMK063CG010CTHF_SS.pdf"
-			(at 314.96 193.04 0)
+			(at 289.56 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11749,7 +11749,7 @@
 			)
 		)
 		(property "Description" "1 pF ±0.25pF 50V Ceramic Capacitor C0G, NP0 0201 (0603 Metric)"
-			(at 314.96 198.12 0)
+			(at 289.56 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11759,7 +11759,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "UMK063CG010CTHF"
-			(at 314.96 205.74 0)
+			(at 289.56 205.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11769,7 +11769,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/taiyo-yuden/UMK063CG010CTHF/4811142"
-			(at 314.96 195.58 0)
+			(at 289.56 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11779,7 +11779,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 322.072 185.674 0)
+			(at 299.212 185.674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11787,7 +11787,7 @@
 			)
 		)
 		(property "Package" "C0201"
-			(at 302.26 185.674 0)
+			(at 276.86 185.674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11795,7 +11795,7 @@
 			)
 		)
 		(property "Manufacturer" "Taiyo Yuden"
-			(at 314.96 208.28 0)
+			(at 289.56 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11805,7 +11805,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "587-3776-2-ND"
-			(at 314.96 203.2 0)
+			(at 289.56 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11815,7 +11815,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 314.96 210.82 0)
+			(at 289.56 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11825,7 +11825,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 322.072 187.96 0)
+			(at 296.672 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11849,7 +11849,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 337.82 184.15 90)
+		(at 335.28 184.15 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11858,7 +11858,7 @@
 		(fields_autoplaced yes)
 		(uuid "7083e43f-b3ef-4b01-8058-9522a7bcc051")
 		(property "Reference" "#PWR03103"
-			(at 344.17 184.15 0)
+			(at 341.63 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11867,7 +11867,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 341.63 184.1499 90)
+			(at 339.09 184.1499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11876,7 +11876,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 337.82 184.15 0)
+			(at 335.28 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11885,7 +11885,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 337.82 184.15 0)
+			(at 335.28 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11894,7 +11894,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 337.82 184.15 0)
+			(at 335.28 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14052,7 +14052,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:IND_2.2uH_350mA_0.55R_L0402")
-		(at 323.85 205.74 0)
+		(at 317.5 205.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14060,7 +14060,7 @@
 		(dnp no)
 		(uuid "a4f57c71-eb77-4f96-81dd-fd9eca3d0278")
 		(property "Reference" "L3103"
-			(at 339.598 204.47 0)
+			(at 333.248 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14068,7 +14068,7 @@
 			)
 		)
 		(property "Value" "2u2H_350mA_0.55R"
-			(at 314.706 204.47 0)
+			(at 308.356 204.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14076,7 +14076,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
-			(at 326.39 189.23 0)
+			(at 320.04 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14086,7 +14086,7 @@
 			)
 		)
 		(property "Datasheet" "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_decoupling_mlz1005_en.pdf"
-			(at 326.39 196.85 0)
+			(at 320.04 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14096,7 +14096,7 @@
 			)
 		)
 		(property "Description" "2.2 µH Shielded Multilayer Inductor 350 mA 550mOhm 0402 (1005 Metric)"
-			(at 326.39 191.77 0)
+			(at 320.04 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14106,7 +14106,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "MLZ1005M2R2WT000"
-			(at 326.39 184.15 0)
+			(at 320.04 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14116,7 +14116,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.ca/en/products/detail/tdk-corporation/MLZ1005M2R2WT000/2465140?s=N4IgjCBcpgbFoDGUBmBDANgZwKYBoQB7KAbRAGYBOABgHYAOEAqsAVkYF0CAHAFyhABlXgCcAlgDsA5iAC%2BBAEzV6tBCGSR02fEVIgFAOgUACAK0AJEFxB8BAVQljeAeRQBZHGiwBXETjmKyozQ6qiYuATEkGTkrNTGALYAglY8-JAgDk6uHl6%2B-vIgALQKahqi3jpRZKxWsoWl0SAAkgByACJ2AMIAKs4ASqkg8CFiACYCRWDUEGkCTCC8AJ7c-hleyAQAjsvz9UA"
-			(at 326.39 194.31 0)
+			(at 320.04 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14126,7 +14126,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 341.63 207.01 0)
+			(at 335.28 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14134,7 +14134,7 @@
 			)
 		)
 		(property "Package" "L0402"
-			(at 321.056 207.264 0)
+			(at 314.706 207.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14142,7 +14142,7 @@
 			)
 		)
 		(property "Manufacturer" "TDK Corporation"
-			(at 326.39 181.61 0)
+			(at 320.04 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14152,7 +14152,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "445-6381-2-ND"
-			(at 326.39 186.69 0)
+			(at 320.04 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14162,7 +14162,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 326.39 179.07 0)
+			(at 320.04 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14172,7 +14172,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 341.63 209.296 0)
+			(at 335.28 209.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14639,7 +14639,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
-		(at 59.69 266.7 270)
+		(at 50.8 266.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14648,7 +14648,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb20d1a7-de7f-48e7-b1cf-d4b6aabd65d5")
 		(property "Reference" "C3102"
-			(at 62.23 267.9699 90)
+			(at 53.34 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14657,7 +14657,7 @@
 			)
 		)
 		(property "Value" "4u7F_16V_X7R"
-			(at 62.23 270.5099 90)
+			(at 53.34 270.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14666,7 +14666,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 76.454 270.51 0)
+			(at 67.564 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14676,7 +14676,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
-			(at 68.834 270.256 0)
+			(at 59.944 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14686,7 +14686,7 @@
 			)
 		)
 		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 73.66 270.256 0)
+			(at 64.77 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14696,7 +14696,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 62.23 273.0499 90)
+			(at 53.34 273.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14705,7 +14705,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
-			(at 79.248 270.51 0)
+			(at 70.358 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14715,7 +14715,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 84.074 270.51 0)
+			(at 75.184 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14725,7 +14725,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
-			(at 81.788 270.51 0)
+			(at 72.898 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14735,7 +14735,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 86.614 270.51 0)
+			(at 77.724 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14745,7 +14745,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
-			(at 71.374 270.256 0)
+			(at 62.484 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14755,7 +14755,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 62.23 275.5899 90)
+			(at 53.34 275.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14764,7 +14764,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 62.23 278.1299 90)
+			(at 53.34 278.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15006,7 +15006,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
-		(at 135.89 266.7 270)
+		(at 139.7 266.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15015,7 +15015,7 @@
 		(fields_autoplaced yes)
 		(uuid "d0b12fe7-b68a-40c9-adb6-fbb7ea0f55ee")
 		(property "Reference" "C3105"
-			(at 138.43 267.9699 90)
+			(at 142.24 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15024,7 +15024,7 @@
 			)
 		)
 		(property "Value" "4u7F_16V_X7R"
-			(at 138.43 270.5099 90)
+			(at 142.24 270.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15033,7 +15033,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 152.654 270.51 0)
+			(at 156.464 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15043,7 +15043,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
-			(at 145.034 270.256 0)
+			(at 148.844 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15053,7 +15053,7 @@
 			)
 		)
 		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 149.86 270.256 0)
+			(at 153.67 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15063,7 +15063,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 138.43 273.0499 90)
+			(at 142.24 273.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15072,7 +15072,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
-			(at 155.448 270.51 0)
+			(at 159.258 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15082,7 +15082,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 160.274 270.51 0)
+			(at 164.084 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15092,7 +15092,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
-			(at 157.988 270.51 0)
+			(at 161.798 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15102,7 +15102,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 162.814 270.51 0)
+			(at 166.624 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15112,7 +15112,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
-			(at 147.574 270.256 0)
+			(at 151.384 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15122,7 +15122,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 138.43 275.5899 90)
+			(at 142.24 275.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15131,7 +15131,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 138.43 278.1299 90)
+			(at 142.24 278.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15156,7 +15156,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
-		(at 85.09 266.7 270)
+		(at 88.9 266.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15165,7 +15165,7 @@
 		(fields_autoplaced yes)
 		(uuid "d289cdec-de05-45df-babe-4e6ec40519bb")
 		(property "Reference" "C3103"
-			(at 87.63 267.9699 90)
+			(at 91.44 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15174,7 +15174,7 @@
 			)
 		)
 		(property "Value" "4u7F_16V_X7R"
-			(at 87.63 270.5099 90)
+			(at 91.44 270.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15183,7 +15183,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 101.854 270.51 0)
+			(at 105.664 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15193,7 +15193,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
-			(at 94.234 270.256 0)
+			(at 98.044 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15203,7 +15203,7 @@
 			)
 		)
 		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 99.06 270.256 0)
+			(at 102.87 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15213,7 +15213,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 87.63 273.0499 90)
+			(at 91.44 273.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15222,7 +15222,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
-			(at 104.648 270.51 0)
+			(at 108.458 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15232,7 +15232,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 109.474 270.51 0)
+			(at 113.284 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15242,7 +15242,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
-			(at 107.188 270.51 0)
+			(at 110.998 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15252,7 +15252,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 112.014 270.51 0)
+			(at 115.824 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15262,7 +15262,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
-			(at 96.774 270.256 0)
+			(at 100.584 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15272,7 +15272,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 87.63 275.5899 90)
+			(at 91.44 275.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15281,7 +15281,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 87.63 278.1299 90)
+			(at 91.44 278.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15306,7 +15306,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:CAP_CER_4.7uF_16V_X7R_C0603")
-		(at 34.29 266.7 270)
+		(at 25.4 266.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15315,7 +15315,7 @@
 		(fields_autoplaced yes)
 		(uuid "db8bb13d-d3d6-4f20-bf7a-29f202aeaaad")
 		(property "Reference" "C3101"
-			(at 36.83 267.9699 90)
+			(at 27.94 267.9699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15324,7 +15324,7 @@
 			)
 		)
 		(property "Value" "4u7F_16V_X7R"
-			(at 36.83 270.5099 90)
+			(at 27.94 270.5099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15333,7 +15333,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 51.054 270.51 0)
+			(at 42.164 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15343,7 +15343,7 @@
 			)
 		)
 		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
-			(at 43.434 270.256 0)
+			(at 34.544 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15353,7 +15353,7 @@
 			)
 		)
 		(property "Description" "4.7 µF ±10% 16V Ceramic Capacitor X7R 0603 (1608 Metric)"
-			(at 48.26 270.256 0)
+			(at 39.37 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15363,7 +15363,7 @@
 			)
 		)
 		(property "Package" "C0603"
-			(at 36.83 273.0499 90)
+			(at 27.94 273.0499 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15372,7 +15372,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "GRM188Z71C475KE21D"
-			(at 53.848 270.51 0)
+			(at 44.958 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15382,7 +15382,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 58.674 270.51 0)
+			(at 49.784 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15392,7 +15392,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "490-GRM188Z71C475KE21DTR-ND"
-			(at 56.388 270.51 0)
+			(at 47.498 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15402,7 +15402,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 61.214 270.51 0)
+			(at 52.324 270.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15412,7 +15412,7 @@
 			)
 		)
 		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM188Z71C475KE21D/13401930"
-			(at 45.974 270.256 0)
+			(at 37.084 270.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15422,7 +15422,7 @@
 			)
 		)
 		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 36.83 275.5899 90)
+			(at 27.94 275.5899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15431,7 +15431,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 36.83 278.1299 90)
+			(at 27.94 278.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15868,7 +15868,7 @@
 	)
 	(symbol
 		(lib_id "_SCHLIB_Qcopter:IND_3.3nH_400mA_0.3R_9.5GHz_L0201")
-		(at 368.3 180.34 0)
+		(at 365.76 180.34 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15877,7 +15877,7 @@
 		(dnp no)
 		(uuid "ea38e1b3-28ff-480e-92c5-98432f23b4bf")
 		(property "Reference" "L3106"
-			(at 371.094 179.324 0)
+			(at 368.554 179.324 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15885,7 +15885,7 @@
 			)
 		)
 		(property "Value" "3n3H_400mA_0.3R"
-			(at 346.964 179.07 0)
+			(at 344.424 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15893,7 +15893,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
-			(at 364.49 163.83 0)
+			(at 361.95 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15903,7 +15903,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.passivecomponent.com/wp-content/uploads/inductor/WLCM0603TG_Series.pdf"
-			(at 364.49 171.45 0)
+			(at 361.95 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15913,7 +15913,7 @@
 			)
 		)
 		(property "Description" "3.3 nH Unshielded Multilayer Inductor 400 mA 300mOhm Max 0201 (0603 Metric)"
-			(at 364.49 166.37 0)
+			(at 361.95 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15923,7 +15923,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "WLCM0603TGB3N3TB"
-			(at 364.49 158.75 0)
+			(at 361.95 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15933,7 +15933,7 @@
 			)
 		)
 		(property "Link" "https://www.digikey.com/en/products/detail/walsin-technology-corporation/WLCM0603TGB3N3TB/14563850"
-			(at 364.49 168.91 0)
+			(at 361.95 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15951,7 +15951,7 @@
 			)
 		)
 		(property "Package" "L0201"
-			(at 353.314 181.864 0)
+			(at 350.774 181.864 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15959,7 +15959,7 @@
 			)
 		)
 		(property "Manufacturer" "Walsin Technology Corporation"
-			(at 364.49 156.21 0)
+			(at 361.95 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15969,7 +15969,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "1292-WLCM0603TGB3N3TBTR-ND"
-			(at 364.49 161.29 0)
+			(at 361.95 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15979,7 +15979,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 364.49 153.67 0)
+			(at 361.95 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15989,7 +15989,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 373.126 183.388 0)
+			(at 370.586 183.896 0)
 			(effects
 				(font
 					(size 1.27 1.27)
