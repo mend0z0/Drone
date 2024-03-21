@@ -618,257 +618,6 @@
 				)
 			)
 		)
-		(symbol "_SCHLIB_Qcopter:DIODE_LED_ORANGE_2V_20mA_611nm_LED0603"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LED"
-				(at 3.556 5.588 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "ORANGE_2V_20mA"
-				(at 3.81 8.128 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-				(at 3.81 18.288 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3697/B1911UD--20D001014U1930.pdf"
-				(at 3.556 10.668 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "Orange 605nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-				(at 3.556 15.494 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Package" "LED0603"
-				(at 3.81 36.83 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Part Number (Manufacturer)" "B1911UD--20D001014U1930"
-				(at 3.81 21.082 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "Harvatek Corporation"
-				(at 3.81 25.908 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Part Number (Vendor)" "3147-B1911UD--20D001014U1930TR-ND"
-				(at 3.81 23.622 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Vendor" "Digikey"
-				(at 3.81 28.448 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1911UD-20D001014U1930/15519993"
-				(at 3.556 13.208 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "SCH CHECK" "SCH (CHECKED)"
-				(at 3.81 31.496 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 34.036 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "Orange 605nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "DIODE_LED_ORANGE_2V_20mA_611nm_LED0603_0_1"
-				(polyline
-					(pts
-						(xy 5.588 1.905) (xy 6.604 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.239 1.905) (xy 8.001 2.667)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -1.27) (xy 7.62 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 1.27) (xy 5.08 -1.27) (xy 7.62 0) (xy 5.08 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.223 3.302) (xy 7.112 2.413) (xy 7.366 3.556) (xy 6.223 3.302)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 3.175) (xy 8.509 2.286) (xy 8.763 3.429) (xy 7.62 3.175)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "DIODE_LED_ORANGE_2V_20mA_611nm_LED0603_1_1"
-				(pin passive line
-					(at 12.7 0 180)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "_SCHLIB_Qcopter:IC_PMIC_TLV70313DBVR_LDO_1.3V_0.3A_SOT-23-5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1608,197 +1357,6 @@
 				)
 			)
 		)
-		(symbol "_SCHLIB_Qcopter:RES_470R_1/10W_1%_R0603"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 3.556 4.064 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "470R_1/10W_1%"
-				(at 3.81 6.604 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-				(at 3.81 16.764 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.te.com/usa-en/product-2-2176339-1.datasheet.pdf"
-				(at 3.556 9.144 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "470 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
-				(at 3.556 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Package" "R0603"
-				(at 3.81 35.306 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Part Number (Manufacturer)" "CRGCQ0603F470R"
-				(at 3.81 19.558 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "TE Connectivity Passive Product"
-				(at 3.81 24.384 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Part Number (Vendor)" "A129684TR-ND"
-				(at 3.81 22.098 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Vendor" "Digikey"
-				(at 3.81 26.924 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Purchase Link" "https://www.digikey.ca/en/products/detail/te-connectivity-passive-product/CRGCQ0603F470R/8576286"
-				(at 3.556 11.684 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "SCH CHECK" "SCH (CHECKED)"
-				(at 3.81 29.972 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "PCB CHECK" "PCB (N/A)"
-				(at 3.81 32.512 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "ki_keywords" "470 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RES_470R_1/10W_1%_R0603_0_0"
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 4.445 1.27) (xy 5.715 -1.27) (xy 6.985 1.27) (xy 8.255 -1.27) (xy 8.89 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "RES_470R_1/10W_1%_R0603_1_1"
-				(pin passive line
-					(at 0 0 0)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 0 180)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1909,22 +1467,10 @@
 		(uuid "4763d3c7-6a77-46b5-a492-d4bd40c87c75")
 	)
 	(junction
-		(at 328.93 218.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4765fd5e-aca4-4619-aa82-5e199263b76f")
-	)
-	(junction
 		(at 212.09 222.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a3d756f-62a3-40e2-862c-6158ff10b0e1")
-	)
-	(junction
-		(at 328.93 269.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7e3f54fa-64c1-4c65-b38f-329129ad8f8a")
 	)
 	(junction
 		(at 234.95 107.95)
@@ -1937,12 +1483,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8fd59f52-a25b-4a59-a040-a52369ecd3e0")
-	)
-	(junction
-		(at 290.83 302.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "91a4dd1b-e15a-496d-84db-c65b8a4a37cb")
 	)
 	(junction
 		(at 114.3 158.75)
@@ -1973,12 +1513,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b4e41f94-c0df-418b-b99b-f355adafb379")
-	)
-	(junction
-		(at 290.83 251.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b87c285f-4571-45a4-8eb7-7450ff7444cc")
 	)
 	(junction
 		(at 176.53 251.46)
@@ -2047,16 +1581,6 @@
 			(type default)
 		)
 		(uuid "02116ae2-49c3-4e83-aee0-b0282bb6e995")
-	)
-	(wire
-		(pts
-			(xy 328.93 218.44) (xy 328.93 220.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "027490d5-ce39-49e7-a8fe-b6f7599f1b05")
 	)
 	(wire
 		(pts
@@ -2210,16 +1734,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 218.44) (xy 341.63 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27b44c5d-0381-4038-96ef-1317b9c4a636")
-	)
-	(wire
-		(pts
 			(xy 176.53 269.24) (xy 176.53 279.4)
 		)
 		(stroke
@@ -2277,16 +1791,6 @@
 			(type default)
 		)
 		(uuid "353e0245-0f70-4912-be43-c8a10bb26768")
-	)
-	(wire
-		(pts
-			(xy 328.93 284.48) (xy 328.93 287.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bd8651a-6c1c-468c-83cc-431b204aa6f9")
 	)
 	(wire
 		(pts
@@ -2368,16 +1872,6 @@
 		)
 		(uuid "4d4f0e45-65ce-4964-a119-e240132f3a67")
 	)
-	(wire
-		(pts
-			(xy 328.93 251.46) (xy 290.83 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5381e72a-bea3-44d9-8a52-7c5682ce59a7")
-	)
 	(polyline
 		(pts
 			(xy 323.85 309.88) (xy 323.85 396.24)
@@ -2400,23 +1894,13 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 269.24) (xy 341.63 269.24)
+			(xy 290.83 269.24) (xy 341.63 269.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "55951efd-6792-494d-bf60-20484e513964")
-	)
-	(wire
-		(pts
-			(xy 328.93 233.68) (xy 328.93 236.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5aa24856-5f81-4395-a830-4e0dcf4c4274")
 	)
 	(polyline
 		(pts
@@ -2480,7 +1964,7 @@
 	)
 	(wire
 		(pts
-			(xy 290.83 218.44) (xy 328.93 218.44)
+			(xy 290.83 218.44) (xy 341.63 218.44)
 		)
 		(stroke
 			(width 0)
@@ -2550,16 +2034,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 299.72) (xy 328.93 302.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93c3581e-756f-4c13-b3fe-4e482f4fa87b")
-	)
-	(wire
-		(pts
 			(xy 167.64 251.46) (xy 176.53 251.46)
 		)
 		(stroke
@@ -2570,16 +2044,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 302.26) (xy 290.83 302.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "979cbc22-7a6f-4c1e-91e6-860c2fcb5e84")
-	)
-	(wire
-		(pts
 			(xy 176.53 241.3) (xy 176.53 251.46)
 		)
 		(stroke
@@ -2587,16 +2051,6 @@
 			(type default)
 		)
 		(uuid "9adebf3e-3d43-4870-85da-9dd32e61d537")
-	)
-	(wire
-		(pts
-			(xy 290.83 269.24) (xy 328.93 269.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c010f24-8519-47df-a530-58b242df0f3d")
 	)
 	(wire
 		(pts
@@ -2810,16 +2264,6 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 269.24) (xy 328.93 271.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc02081a-aed6-4a13-bc4c-e4193d0123c6")
-	)
-	(wire
-		(pts
 			(xy 234.95 107.95) (xy 279.4 107.95)
 		)
 		(stroke
@@ -2897,16 +2341,6 @@
 			(type default)
 		)
 		(uuid "f3b5e405-7482-4fd2-b992-15ff443fb463")
-	)
-	(wire
-		(pts
-			(xy 328.93 248.92) (xy 328.93 251.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f76889cc-dec1-4b10-9d54-10d228e71b60")
 	)
 	(wire
 		(pts
@@ -4153,306 +3587,6 @@
 		)
 	)
 	(symbol
-		(lib_id "_SCHLIB_Qcopter:RES_470R_1/10W_1%_R0603")
-		(at 328.93 271.78 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1aa4b407-b2b1-4a2e-a68c-6cbc17265144")
-		(property "Reference" "R504"
-			(at 331.47 273.0499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470R_1/10W_1%"
-			(at 331.47 275.5899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 345.694 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/usa-en/product-2-2176339-1.datasheet.pdf"
-			(at 338.074 275.336 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "470 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 342.9 275.336 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Package" "R0603"
-			(at 331.47 278.1299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Part Number (Manufacturer)" "CRGCQ0603F470R"
-			(at 348.488 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TE Connectivity Passive Product"
-			(at 353.314 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "A129684TR-ND"
-			(at 351.028 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 355.854 275.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/te-connectivity-passive-product/CRGCQ0603F470R/8576286"
-			(at 340.614 275.336 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 331.47 280.6699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "PCB CHECK" "PCB (N/A)"
-			(at 331.47 283.2099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "e4fd5db5-f586-48c6-bbe9-e4701730cd5d")
-		)
-		(pin "1"
-			(uuid "f7e960af-5d4d-4220-86dd-511f390bb34f")
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
-					(reference "R504")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_SCHLIB_Qcopter:DIODE_LED_ORANGE_2V_20mA_611nm_LED0603")
-		(at 328.93 287.02 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "31722217-ded7-46c5-bdfe-988411b52f0b")
-		(property "Reference" "LED502"
-			(at 334.01 288.8614 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ORANGE_2V_20mA"
-			(at 334.01 291.4014 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 347.218 290.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3697/B1911UD--20D001014U1930.pdf"
-			(at 339.598 290.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Orange 605nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 344.424 290.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Package" "LED0603"
-			(at 334.01 293.9414 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Part Number (Manufacturer)" "B1911UD--20D001014U1930"
-			(at 350.012 290.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Harvatek Corporation"
-			(at 354.838 290.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "3147-B1911UD--20D001014U1930TR-ND"
-			(at 352.552 290.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 357.378 290.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1911UD-20D001014U1930/15519993"
-			(at 342.138 290.576 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 334.01 296.4814 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "PCB CHECK" "PCB (N/A)"
-			(at 334.01 299.0214 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "890dbe96-fd7e-4022-b02c-3151c1a18f9b")
-		)
-		(pin "1"
-			(uuid "70e1a54f-094d-470a-a2b6-71df3de157a4")
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
-					(reference "LED502")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "_SCHLIB_Qcopter:IC_PMIC_TLV70313DBVR_LDO_1.3V_0.3A_SOT-23-5")
 		(at 247.65 215.9 0)
 		(unit 1)
@@ -4751,156 +3885,6 @@
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
 					(reference "C503")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_SCHLIB_Qcopter:RES_470R_1/10W_1%_R0603")
-		(at 328.93 220.98 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bc1cfd6-13eb-46c3-b337-f08e96da4fa2")
-		(property "Reference" "R503"
-			(at 331.47 222.2499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470R_1/10W_1%"
-			(at 331.47 224.7899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 345.694 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/usa-en/product-2-2176339-1.datasheet.pdf"
-			(at 338.074 224.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "470 Ohms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200, Moisture Resistant Thick Film"
-			(at 342.9 224.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Package" "R0603"
-			(at 331.47 227.3299 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Part Number (Manufacturer)" "CRGCQ0603F470R"
-			(at 348.488 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "TE Connectivity Passive Product"
-			(at 353.314 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "A129684TR-ND"
-			(at 351.028 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 355.854 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/te-connectivity-passive-product/CRGCQ0603F470R/8576286"
-			(at 340.614 224.536 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 331.47 229.8699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "PCB CHECK" "PCB (N/A)"
-			(at 331.47 232.4099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "fff05f75-9987-48a3-b653-b7569b8ec991")
-		)
-		(pin "1"
-			(uuid "ba571f7e-7923-4bf6-9c2d-2781ddf981e8")
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
-					(reference "R503")
 					(unit 1)
 				)
 			)
@@ -5495,156 +4479,6 @@
 			(project "_Sub_HW_Qcopter"
 				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
 					(reference "C504")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_SCHLIB_Qcopter:DIODE_LED_ORANGE_2V_20mA_611nm_LED0603")
-		(at 328.93 236.22 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6d35dcd4-1cdd-44ad-8f11-970f950de82b")
-		(property "Reference" "LED501"
-			(at 334.01 238.0614 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ORANGE_2V_20mA"
-			(at 334.01 240.6014 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 347.218 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/3697/B1911UD--20D001014U1930.pdf"
-			(at 339.598 239.776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Orange 605nm LED Indication - Discrete 2V 0603 (1608 Metric)"
-			(at 344.424 239.776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Package" "LED0603"
-			(at 334.01 243.1414 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Part Number (Manufacturer)" "B1911UD--20D001014U1930"
-			(at 350.012 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Harvatek Corporation"
-			(at 354.838 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "3147-B1911UD--20D001014U1930TR-ND"
-			(at 352.552 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digikey"
-			(at 357.378 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/harvatek-corporation/B1911UD-20D001014U1930/15519993"
-			(at 342.138 239.776 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (CHECKED)"
-			(at 334.01 245.6814 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "PCB CHECK" "PCB (N/A)"
-			(at 334.01 248.2214 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "2"
-			(uuid "f8e0c75c-b6e1-4b68-9b23-f728dabecd88")
-		)
-		(pin "1"
-			(uuid "bab90227-f262-44dc-83fe-0626289313db")
-		)
-		(instances
-			(project "_Sub_HW_Qcopter"
-				(path "/b8703f06-b3da-4de2-b217-f104939b36e8/6184e84e-040e-4878-8152-76cf0b949e21/0ce565c6-f8fe-4174-9716-15fae563dcc2"
-					(reference "LED501")
 					(unit 1)
 				)
 			)
