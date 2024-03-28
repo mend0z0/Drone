@@ -1,0 +1,51 @@
+PCB statistics report
+=====================
+- Date: 3/27/2024 6:51:29 PM
+- Project: _Sub_HW_Qcopter
+- Board name: _Sub_HW_Qcopter
+
+Board
+-----
+- Width: 1964.57 mils
+- Height: 1964.57 mils
+- Area: 3847527.92 mils²
+
+Pads
+----
+- Through hole: 105
+- SMD: 1021
+- Connector: 8
+- NPTH: 0
+
+Vias
+----
+- Through vias: 421
+- Blind/buried: 0
+- Micro vias: 0
+
+Components
+----------
+
+|              | Front Side | Back Side | Total |
+|--------------|------------|-----------|-------|
+|THT:          |          8 |         7 |    15 |
+|SMD:          |        154 |       119 |   273 |
+|Unspecified:  |          8 |         0 |     8 |
+|Total:        |        170 |       126 |   296 |
+
+Drill holes
+-----------
+
+| Count | Shape |      X Size |      Y Size | Plated | Via/Pad | Start Layer | Stop Layer |
+|-------|-------|-------------|-------------|--------|---------|-------------|------------|
+|   373 | Round |   7.87 mils |   7.87 mils |    PTH |     Via |        F.Cu |       B.Cu |
+|    53 | Round |   7.87 mils |   7.87 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|    47 | Round |  11.81 mils |  11.81 mils |    PTH |     Via |        F.Cu |       B.Cu |
+|    24 | Round |  25.59 mils |  25.59 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|    10 | Round |  23.62 mils |  23.62 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|     8 | Round |   9.84 mils |   9.84 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|     4 | Round | 125.98 mils | 125.98 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|     2 |  Slot |  19.69 mils |  45.28 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|     2 |  Slot |  33.46 mils |  21.65 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|     2 | Round |  39.37 mils |  39.37 mils |    PTH |     Pad |        F.Cu |       B.Cu |
+|     1 | Round |  10.00 mils |  10.00 mils |    PTH |     Via |        F.Cu |       B.Cu |
