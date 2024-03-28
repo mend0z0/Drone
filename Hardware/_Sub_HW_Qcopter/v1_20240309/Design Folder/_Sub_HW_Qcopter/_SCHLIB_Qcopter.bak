@@ -74,7 +74,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 31.75 0)
 			(effects
 				(font
@@ -298,7 +298,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -501,7 +501,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -665,7 +665,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -907,7 +907,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.556 31.242 0)
 			(effects
 				(font
@@ -1110,7 +1110,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -1313,7 +1313,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -1516,7 +1516,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -1719,7 +1719,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -1922,7 +1922,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -2086,7 +2086,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -2328,7 +2328,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -2531,7 +2531,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -2734,7 +2734,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -2937,7 +2937,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -3140,7 +3140,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -3343,7 +3343,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -3546,7 +3546,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -3749,7 +3749,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -3952,7 +3952,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -4155,7 +4155,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -4358,7 +4358,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -4561,7 +4561,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -4764,7 +4764,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -4967,7 +4967,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -5595,7 +5595,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -5702,8 +5702,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Hirose:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical"
-			(at 3.81 16.764 0)
+		(property "Footprint" "_PCBLIB_Qcopter:Hirose_DF13-02P-1.25DSA_1x02_P1.25mm_Vertical"
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5733,7 +5733,7 @@
 			)
 		)
 		(property "Package" "THD_VERT"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5742,7 +5742,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "10114829-10102LF"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5752,7 +5752,7 @@
 			)
 		)
 		(property "Manufacturer" "Amphenol ICC (FCI)"
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5762,7 +5762,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "609-4383-2-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5772,7 +5772,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5791,8 +5791,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5801,7 +5801,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5899,7 +5899,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical"
-			(at 3.81 16.764 0)
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5929,7 +5929,7 @@
 			)
 		)
 		(property "Package" "THD-1.27MM"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5938,7 +5938,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "M50-3530242"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5948,7 +5948,7 @@
 			)
 		)
 		(property "Manufacturer" "Harwin Inc."
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5958,7 +5958,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "952-3598-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5968,7 +5968,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5987,8 +5987,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5997,7 +5997,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6183,7 +6183,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.556 28.702 0)
 			(effects
 				(font
@@ -6309,7 +6309,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical"
-			(at 3.81 16.764 0)
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6339,7 +6339,7 @@
 			)
 		)
 		(property "Package" "THD-1.27MM"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6348,7 +6348,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "M50-3530442"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6358,7 +6358,7 @@
 			)
 		)
 		(property "Manufacturer" "Harwin Inc."
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6368,7 +6368,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "952-3600-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6378,7 +6378,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6397,8 +6397,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6407,7 +6407,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6513,6 +6513,188 @@
 						(font
 							(size 1.27 1.27)
 						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "CONN_RECEPT_JST_1X2_VERT_1.25MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "P"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RECEPT_JST_1X2_VERT"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Micro 1.25mm JST 2 Pin Male and Female Connector Plug with 10cm Wire Cable"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "1.25MM"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/Acogedor-Micro-1-25mm-Female-Connector/dp/B07GQY53ZQ/ref=sr_1_9?crid=1NV5TGA5CMQPN&dib=eyJ2IjoiMSJ9.k9eX2Yq-jxVNGACDedyqqqIfMp6tgs9WuuPS15zF67fnlKXKxxWglrNuOCMgIcAah-xVkigkmgy4n3xR8X8t-mzh4vF_AtsO5DbVi-AEG9P07FZrA_eSv3n8RMGW-d-UZpdILo60iF_A_YCyppCNjFp5KkZa_CNaz9nMvYiyQYFAX0UO_6DAMDhtADBAiu5UumKl1lNS2VRzsKU9eatyq02xXlt2jQlpMMDvpkPj-xHCiFBwUBO-HrH6ePFUR33J0_x6hjsUEVIHHvFVOwywVja_L8-lUP-7BDI3cVYNAqs.-A8s6a7Nwf-eWQBKZaKmsm55Y0rpCqFvn6F0GDg7Pf8&dib_tag=se&keywords=JST+Female&qid=1711578301&s=industrial&sprefix=jst+female%2Cindustrial%2C67&sr=1-9"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Micro 1.25mm JST 2 Pin Male and Female Connector Plug with 10cm Wire Cable"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "CONN_RECEPT_JST_1X2_VERT_1.25MM_1_1"
+			(rectangle
+				(start 0 0)
+				(end 2.54 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start 0.762 -1.778)
+				(end 1.016 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 1.524 -1.778)
+				(end 1.778 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(text "1.25MM"
+				(at 1.27 -0.762 0)
+				(effects
+					(font
+						(size 0.381 0.381)
 					)
 				)
 			)
@@ -6629,7 +6811,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -6669,7 +6851,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -3.81 0)
+				(at -5.08 -2.54 0)
 				(length 5.08)
 				(name "SIG"
 					(effects
@@ -6705,7 +6887,7 @@
 				)
 			)
 			(pin passive line
-				(at 15.24 -5.08 180)
+				(at 15.24 -6.35 180)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -6723,7 +6905,7 @@
 				)
 			)
 			(pin passive line
-				(at 15.24 -7.62 180)
+				(at -5.08 -6.35 0)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -6814,7 +6996,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 30.48 0)
 			(effects
 				(font
@@ -7027,7 +7209,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0603_1608Metric"
-			(at 3.81 16.764 0)
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7057,7 +7239,7 @@
 			)
 		)
 		(property "Package" "D0603"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7066,7 +7248,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "TS4148 RCG"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7076,7 +7258,7 @@
 			)
 		)
 		(property "Manufacturer" "Taiwan Semiconductor Corporation"
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7086,7 +7268,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "1801-TS4148RCGTR-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7096,7 +7278,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7115,8 +7297,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7125,7 +7307,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7230,7 +7412,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 3.81 17.78 0)
+			(at 3.556 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7260,7 +7442,7 @@
 			)
 		)
 		(property "Package" "Package"
-			(at 3.81 36.322 0)
+			(at 3.556 36.322 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7269,7 +7451,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "B1931NB--20C007614U1930"
-			(at 3.81 20.574 0)
+			(at 3.556 20.574 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7279,7 +7461,7 @@
 			)
 		)
 		(property "Manufacturer" "B1931NB--20C007614U1930"
-			(at 3.81 25.4 0)
+			(at 3.556 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7289,7 +7471,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "3147-B1931NB--20C007614U1930TR-ND"
-			(at 3.81 23.114 0)
+			(at 3.556 23.114 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7299,7 +7481,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 27.94 0)
+			(at 3.556 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7318,8 +7500,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 30.988 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 30.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7328,7 +7510,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 33.528 0)
+			(at 3.556 33.528 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7569,7 +7751,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 30.988 0)
 			(effects
 				(font
@@ -7820,7 +8002,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 31.496 0)
 			(effects
 				(font
@@ -8071,7 +8253,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 30.988 0)
 			(effects
 				(font
@@ -8234,7 +8416,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8264,7 +8446,7 @@
 			)
 		)
 		(property "Package" "LED0603"
-			(at 3.81 38.1 0)
+			(at 3.556 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8273,7 +8455,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "B1931TW--20P000314U1930"
-			(at 3.81 22.352 0)
+			(at 3.556 22.352 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8283,7 +8465,7 @@
 			)
 		)
 		(property "Manufacturer" "Harvatek Corporation"
-			(at 3.81 27.178 0)
+			(at 3.556 27.178 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8293,7 +8475,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "3147-B1931TW--20P000314U1930TR-ND"
-			(at 3.81 24.892 0)
+			(at 3.556 24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8303,7 +8485,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 29.718 0)
+			(at 3.556 29.718 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8322,8 +8504,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 32.766 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 32.766 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8332,7 +8514,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8485,7 +8667,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 3.302 19.05 0)
+			(at 3.048 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8515,7 +8697,7 @@
 			)
 		)
 		(property "Package" "LED0603"
-			(at 3.302 37.592 0)
+			(at 3.048 37.592 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8524,7 +8706,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "150060YS75000"
-			(at 3.302 21.844 0)
+			(at 3.048 21.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8534,7 +8716,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 3.302 26.67 0)
+			(at 3.048 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8544,7 +8726,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "732-4981-2-ND"
-			(at 3.302 24.384 0)
+			(at 3.048 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8554,7 +8736,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.302 29.21 0)
+			(at 3.048 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8573,8 +8755,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.302 32.258 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.048 32.258 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8583,7 +8765,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.302 34.798 0)
+			(at 3.048 34.798 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8824,7 +9006,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 30.48 0)
 			(effects
 				(font
@@ -9027,7 +9209,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 33.02 0)
 			(effects
 				(font
@@ -9242,7 +9424,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -9357,7 +9539,7 @@
 			)
 		)
 		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
-			(at 3.81 16.764 0)
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9387,7 +9569,7 @@
 			)
 		)
 		(property "Package" "F0805"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9396,7 +9578,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "PTSLR08058V400"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9406,7 +9588,7 @@
 			)
 		)
 		(property "Manufacturer" "Eaton - Electronics Division"
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9416,7 +9598,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "283-PTSLR08058V400TR-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9426,7 +9608,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9445,8 +9627,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9455,7 +9637,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9560,7 +9742,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
-			(at 3.81 16.764 0)
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9590,7 +9772,7 @@
 			)
 		)
 		(property "Package" "SC-70-5"
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9599,7 +9781,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "SN74LVC1G17DCKR"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9609,7 +9791,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9619,7 +9801,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "296-11934-2-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9629,7 +9811,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9648,8 +9830,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9658,7 +9840,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9890,7 +10072,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm_ThermalVias"
-			(at 3.81 16.764 0)
+			(at 3.556 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9920,7 +10102,7 @@
 			)
 		)
 		(property "Package" "8-WSON (2x2) "
-			(at 3.81 35.306 0)
+			(at 3.556 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9929,7 +10111,7 @@
 			)
 		)
 		(property "Part Number (Manufacturer)" "DRV8837CDSGR"
-			(at 3.81 19.558 0)
+			(at 3.556 19.558 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9939,7 +10121,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 3.81 24.384 0)
+			(at 3.556 24.384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9949,7 +10131,7 @@
 			)
 		)
 		(property "Part Number (Vendor)" "296-47205-2-ND"
-			(at 3.81 22.098 0)
+			(at 3.556 22.098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9959,7 +10141,7 @@
 			)
 		)
 		(property "Vendor" "Digikey"
-			(at 3.81 26.924 0)
+			(at 3.556 26.924 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9978,8 +10160,8 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 3.556 29.972 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9988,7 +10170,7 @@
 			)
 		)
 		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
+			(at 3.556 32.512 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10100,7 +10282,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -17.78 0)
+				(at -5.08 -15.24 0)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -10172,7 +10354,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -15.24 0)
+				(at -5.08 -12.7 0)
 				(length 5.08)
 				(name "VCC"
 					(effects
@@ -10182,6 +10364,24 @@
 					)
 				)
 				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -17.78 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -10302,7 +10502,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -12195,7 +12395,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm_ThermalVias"
+		(property "Footprint" "_PCBLIB_Qcopter:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm_ThermalVias"
 			(at 3.81 16.764 0)
 			(effects
 				(font
@@ -12284,7 +12484,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -13350,7 +13550,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -13840,7 +14040,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -14017,6 +14217,345 @@
 			)
 		)
 	)
+	(symbol "IC_LOGIC_SN74LVC1G80DCKR_D FF_INVERTED_1.65V~5.5V_SC-70-5"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74LVC1G80DCKR"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/sces221s/sces221s.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "XOR (Exclusive OR) IC 1 Channel SC-70-5"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "SC-70-5"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "SN74LVC1G80DCKR"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "296-9852-2-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/texas-instruments/SN74LVC1G80DCKR/381334"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Flip Flop 1 Element D-Type 1 Bit Positive Edge 5-TSSOP, SC-70-5, SOT-353"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "IC_LOGIC_SN74LVC1G80DCKR_D FF_INVERTED_1.65V~5.5V_SC-70-5_0_1"
+			(polyline
+				(pts
+					(xy 5.08 -7.62) (xy 4.318 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -2.54) (xy 4.318 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 -5.08) (xy 11.43 -5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 5.08 -1.524)
+				(end 10.16 -9.144)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "IC_LOGIC_SN74LVC1G80DCKR_D FF_INVERTED_1.65V~5.5V_SC-70-5_1_1"
+			(polyline
+				(pts
+					(xy 0 -17.78) (xy 15.24 -17.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 -8.128) (xy 5.842 -7.62) (xy 5.08 -7.112)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 0 0)
+				(end 15.24 -22.86)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "D FF"
+				(at 7.62 -5.334 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "SC-70-5"
+				(at 7.366 -21.336 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "SN74LVC1G86"
+				(at 7.62 -19.05 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 5.08)
+				(name "D"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -7.62 0)
+				(length 5.08)
+				(name "CLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -15.24 0)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 20.32 -5.08 180)
+				(length 5.08)
+				(name "~{Q}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -12.7 0)
+				(length 5.08)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "IC_MEM_W25Q64JVSSIQ_64MBIT_NOR_QSPI/SPI_8-SOIC"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14039,7 +14578,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm"
+		(property "Footprint" "_PCBLIB_Qcopter:SOIC-8_5.23x5.23mm_P1.27mm"
 			(at 3.556 16.764 0)
 			(effects
 				(font
@@ -14128,7 +14667,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.556 29.464 0)
 			(effects
 				(font
@@ -14214,7 +14753,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -7.62 0)
+				(at -5.08 -10.16 0)
 				(length 5.08)
 				(name "IO1"
 					(effects
@@ -14232,7 +14771,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -10.16 0)
+				(at -5.08 -12.7 0)
 				(length 5.08)
 				(name "IO2"
 					(effects
@@ -14268,7 +14807,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -5.08 0)
+				(at -5.08 -7.62 0)
 				(length 5.08)
 				(name "IO0"
 					(effects
@@ -14286,7 +14825,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -15.24 0)
+				(at -5.08 -5.08 0)
 				(length 5.08)
 				(name "CLK"
 					(effects
@@ -14304,7 +14843,7 @@
 				)
 			)
 			(pin passive line
-				(at -5.08 -12.7 0)
+				(at -5.08 -15.24 0)
 				(length 5.08)
 				(name "IO3"
 					(effects
@@ -14452,7 +14991,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -14722,8 +15261,8 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 2.54 30.48 0)
+		(property "SCH CHECK" "SCH (CHECKED)"
+			(at 2.54 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14732,7 +15271,7 @@
 			)
 		)
 		(property "PCB CHECk" "PCB (N/A)"
-			(at 2.54 27.94 0)
+			(at 2.54 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14750,16 +15289,8 @@
 			)
 		)
 		(symbol "IC_PMIC_MCP73811T-420I/OT_CHARGER_1C_SOT-23-5_0_0"
-			(text "	\nMCP73811T-420I/OT"
-				(at 7.62 -12.7 0)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
 			(text "SOT-23-5"
-				(at 7.62 -15.24 0)
+				(at 7.62 -16.256 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -14770,7 +15301,7 @@
 		(symbol "IC_PMIC_MCP73811T-420I/OT_CHARGER_1C_SOT-23-5_0_1"
 			(polyline
 				(pts
-					(xy 0 -11.43) (xy 15.24 -11.43)
+					(xy 0 -12.7) (xy 15.24 -12.7)
 				)
 				(stroke
 					(width 0)
@@ -14782,13 +15313,23 @@
 			)
 			(rectangle
 				(start 0 0)
-				(end 15.24 -16.51)
+				(end 15.24 -17.78)
 				(stroke
 					(width 0)
 					(type default)
 				)
 				(fill
 					(type background)
+				)
+			)
+		)
+		(symbol "IC_PMIC_MCP73811T-420I/OT_CHARGER_1C_SOT-23-5_1_0"
+			(text "	\nMCP73811T-420I/OT"
+				(at 7.62 -13.462 0)
+				(effects
+					(font
+						(size 0.889 0.889)
+					)
 				)
 			)
 		)
@@ -14996,7 +15537,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 30.48 0)
 			(effects
 				(font
@@ -15270,7 +15811,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 30.48 0)
 			(effects
 				(font
@@ -15544,7 +16085,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 30.48 0)
 			(effects
 				(font
@@ -15816,7 +16357,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 30.48 0)
 			(effects
 				(font
@@ -16049,7 +16590,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 29.21 0)
 			(effects
 				(font
@@ -17010,7 +17551,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -17325,7 +17866,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -17629,7 +18170,7 @@
 			(pin passive line
 				(at 25.4 -2.54 180)
 				(length 5.08)
-				(name "AUX_AD"
+				(name "AUX_DA"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -17955,7 +18496,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -18397,7 +18938,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -18780,7 +19321,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -18968,7 +19509,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 33.02 0)
 			(effects
 				(font
@@ -19234,7 +19775,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -19461,7 +20002,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -19637,7 +20178,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -19864,7 +20405,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -20130,7 +20671,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -20369,7 +20910,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -20557,7 +21098,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 31.75 0)
 			(effects
 				(font
@@ -20823,7 +21364,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -21011,7 +21552,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 31.75 0)
 			(effects
 				(font
@@ -21277,7 +21818,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -21504,7 +22045,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -21731,7 +22272,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -21958,7 +22499,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -22185,7 +22726,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -22301,9 +22842,682 @@
 			)
 		)
 	)
-	(symbol "MECH_FD"
+	(symbol "MECH_ANT_915MHz_PCB Trace RF_U.FL (UMCC)"
 		(exclude_from_sim no)
 		(in_bom yes)
+		(on_board no)
+		(property "Reference" "ANT"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ANT_915MHZ"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/webdocs/datasheets/pdf/en-us/2111400100_ANTENNAS.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "869MHz, 915MHz ISM, LoRa, LPWAN, Sigfox, Zigbee™ PCB Trace RF Antenna 868MHz ~ 870MHz, 902MHz ~ 928MHz 0.3dBi, 1dBi U.FL (UMCC), IPEX MHF1 Adhesive"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "U.FL (UMCC)"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "2111400100"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "WM25681-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/molex/2111400100/9953925"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "869MHz, 915MHz ISM, LoRa, LPWAN, Sigfox, Zigbee™ PCB Trace RF Antenna 868MHz ~ 870MHz, 902MHz ~ 928MHz 0.3dBi, 1dBi U.FL (UMCC), IPEX MHF1 Adhesive"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_ANT_915MHz_PCB Trace RF_U.FL (UMCC)_1_1"
+			(rectangle
+				(start 0 -0.762)
+				(end 0.762 -1.524)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 14.478 -0.508) (xy 5.842 -0.508) (xy 5.842 -1.27) (xy 14.478 -1.27) (xy 14.478 -2.032) (xy 5.842 -2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 0.762 -1.016)
+				(end 5.08 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 5.08 0)
+				(end 15.24 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+	)
+	(symbol "MECH_BATT_3.7VDC_2000mA_Lithium-Polymer_10x34x50 MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "BATT"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.7VDC_2000mA"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "103450 Rechargeable Battery 2 Pack 3.7V 2000mAh Lithium Polymer"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "103450"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/Rechargeable-Controller-CUH-ZCT1-Electronic-Bluetooth/dp/B0CG178SHB/ref=sr_1_27?crid=1BS21SRO6O608&dib=eyJ2IjoiMSJ9.4JOVIIi4X8LRcrvos_IHWjD8hpb3LZNE-44p5sNDIV65TNPTNILB_82gB1iVfS926JkLSUCF5ZEpxa5gjAdGHmW6Ju9UvL8o3w5xiYOK3n72wNCiT6GnGvA2NRtvpTgnEIBq0uEruzpjMWdKLd6_qU-SctwPeXqASYmIe_x0hXNwAQttp-m4Q2g6W0u1m_sS-Xt9uGgfHkSFLdSycUEmOMpvKr33vilhJIUwrGlZPl9AZ8S9FRXJ0XnQvUh97L4bpSbAD2FFHcJAAT5kG_7tV8h6CdST8ckrCsUQScMIXRE.p48PQJqu0Zw-6_qKXVY02RLQ2n0xYiMCSi-YdQEf6ZA&dib_tag=se&keywords=3.7v+battery&qid=1711572473&sprefix=3+7v+battery%2Caps%2C75&sr=8-27"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "103450 Rechargeable Battery 2 Pack 3.7V 2000mAh Lithium Polymer"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_BATT_3.7VDC_2000mA_Lithium-Polymer_10x34x50 MM_1_1"
+			(polyline
+				(pts
+					(xy 5.842 0) (xy 5.08 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.842 0.762) (xy 5.842 -0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.858 1.27) (xy 6.858 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 0) (xy 6.858 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 5.08 1.778)
+				(end 7.62 -1.778)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_DIODE_LED_BLUE_3.2V_20mA_470nm_THD-5MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "D"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BLUE_3.2V_470nm"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/katalog/datasheet/151051BS04000.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Blue 470nm LED Indication - Discrete 3.2V Radial"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "THD-5MM"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "151051BS04000"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Würth Elektronik"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "732-5015-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/151051BS04000/4490009"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Blue 470nm LED Indication - Discrete 3.2V Radial"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_DIODE_LED_BLUE_3.2V_20mA_470nm_THD-5MM_0_1"
+			(polyline
+				(pts
+					(xy 5.588 1.905) (xy 6.604 2.794)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.239 1.905) (xy 8.001 2.667)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 -1.27) (xy 7.62 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 5.08 1.27) (xy 5.08 -1.27) (xy 7.62 0) (xy 5.08 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 6.223 3.302) (xy 7.112 2.413) (xy 7.366 3.556) (xy 6.223 3.302)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.62 3.175) (xy 8.509 2.286) (xy 8.763 3.429) (xy 7.62 3.175)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+		)
+		(symbol "MECH_DIODE_LED_BLUE_3.2V_20mA_470nm_THD-5MM_1_1"
+			(pin free line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_FD"
+		(exclude_from_sim no)
+		(in_bom no)
 		(on_board yes)
 		(property "Reference" "FD"
 			(at 2.54 2.54 0)
@@ -22367,6 +23581,516 @@
 			(circle
 				(center 3.81 -3.81)
 				(radius 2.8398)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
+	(symbol "MECH_FRAME_RED_8080"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "MECH"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "FRAME_RED"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "QCopter Frame 3D Printed 80x80MM"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "8080"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "N/A"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "N/A"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "QCopter Frame 3D Printed 80x80MM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_FRAME_RED_8080_1_1"
+			(arc
+				(start 2.3839 -8.5517)
+				(mid 3.3728 -7.9371)
+				(end 3.81 -6.858)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 -10.16)
+				(radius 0.568)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 -10.16)
+				(radius 1.6064)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 -2.54)
+				(radius 0.568)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 2.54 -2.54)
+				(radius 1.6064)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 3.81 -6.35)
+				(mid 3.3944 -4.8388)
+				(end 2.032 -4.064)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 4.064 -2.032)
+				(mid 4.8144 -3.4897)
+				(end 6.35 -4.064)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 -9.144)
+				(mid 4.8879 -9.4273)
+				(end 4.064 -10.668)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 6.35 -6.604)
+				(radius 2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.35 -4.064)
+				(mid 7.8165 -3.606)
+				(end 8.5898 -2.2785)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 8.636 -10.668)
+				(mid 7.7411 -9.5339)
+				(end 6.35 -9.144)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 8.89 -6.35)
+				(mid 9.3056 -7.8612)
+				(end 10.668 -8.636)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 10.16 -10.16)
+				(radius 0.568)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 10.16 -10.16)
+				(radius 1.6064)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 10.16 -2.54)
+				(radius 0.568)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 10.16 -2.54)
+				(radius 1.6064)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 10.359 -4.1569)
+				(mid 9.1947 -4.9656)
+				(end 8.89 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
+	(symbol "MECH_HOLDER_LED 5MM_BLACK"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "MECH"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HOLDER_LED"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light Holder Shell Plastic Lamp Socket Diode Holder Shell Clip Bezel Mount 5mm LED Holders Panel Display Black"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "N/A"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/dp/B07QL8BWCM?psc=1&ref=ppx_yo2ov_dt_b_product_details"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Light Holder Shell Plastic Lamp Socket Diode Holder Shell Clip Bezel Mount 5mm LED Holders Panel Display Black"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_HOLDER_LED 5MM_BLACK_1_1"
+			(circle
+				(center 3.302 -3.302)
+				(radius 1.905)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center 3.302 -3.302)
+				(radius 2.7357)
+				(stroke
+					(width 0.254)
+					(type dash)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 3.302 -3.302)
+				(radius 3.175)
 				(stroke
 					(width 0)
 					(type default)
@@ -22488,7 +24212,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -22783,6 +24507,2097 @@
 			)
 		)
 	)
+	(symbol "MECH_MOTOR_CORELESS_DC_3.7V_45000 RPM_D07MM-H20MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "M"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MOTOR_CORELESS_DC3.7V_45000RPM"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DC 3.7V 720 720 mm Helicopter Coreless DC Motor Mini Great Torque 45000 RPM"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "0720"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/Helicopter-Coreless-Motor-Torque-Propeller/dp/B01HXSNSQO/ref=sr_1_7?crid=2GZRK6G38UMQQ&dib=eyJ2IjoiMSJ9.6AyO2ccmEqLRdU-RGgukZFUL8a-kmv4YkQWditDUQOJpaYKgdYr_30ZR6YcZskp2V2vMmg6AeLR-e1OydE6MrbYSjVkRF9OZgumksYo2M1-Bery224_ohW_0GohuYUtuCavXt4-dRaw44COXK4pTUg_QXHTcxYhrBe8Kd0TmTMZ7QgRxX4QgkOMh4vDXzxqxmi5-zlBI6uHoZyGhU00nZ1grwsvNTDHK0_L_B_IYABe1aCeXH2Q7EA1KGkz443PhP2qjHnfl3k49-6MWVoQBob06KvWZKlWRKpOsJA9tLZE.ZpNZav8ejF2jnxieNiHjrr75-nZjKk-0iZquuP3XNSA&dib_tag=se&keywords=coreless+motor&qid=1711570660&s=industrial&sprefix=coreless+motor%2Cindustrial%2C74&sr=1-7"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "DC 3.7V 720 720 mm Helicopter Coreless DC Motor Mini Great Torque 45000 RPM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_MOTOR_CORELESS_DC_3.7V_45000 RPM_D07MM-H20MM_1_1"
+			(circle
+				(center 6.35 0)
+				(radius 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(text "M"
+				(at 6.35 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_NUT_HEX_M3_STAINLESS STEEL_DIN934"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "MECH"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HEX_NUT_M3"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "M3 Hex Nuts - IMScrews 304 Stainless Steel DIN934 Hex Nuts Pack of 100"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "DIN934"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/M3-Hex-Nuts-IMScrews-Stainless/dp/B0CNRQ4GV2/ref=sr_1_12?crid=20T66ATZ1C8YE&dib=eyJ2IjoiMSJ9.PgsW9oLq0GbHh0HMnVQn5e07nI5rGBBr1IKWem4ve8bV9TLNkJVCUKpLhbECAagIwqlLhCZ2ZhPhRzz5v2tFzoRri9tbBziLAF0ipKP5X8TnT_nFGa6KIaB8Daz5zGhCMgybEir6sqD6cZe_ntgxQToQWH_xmSfrWtqMPgoxqWlzVPjbYziBbV3nH7LSisGiTOM-LofHzs6YwvFB7Aofs5cwOoRF7rK7wanZZRYKh0Hhu9u4eJb9_hDSGT_2pD8hwAisRw3c6zH_ndBSf5yDNuw0pJ2aNKm3iemDXM9PFgo.DK-kXxsB0UU4-PJ5Zxf3C18UmguE7bEG1poR9lzJWzc&dib_tag=se&keywords=Hex+nut+m3&qid=1711556227&sprefix=hex+nut+m3%2Caps%2C87&sr=8-12"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "M3 Hex Nuts - IMScrews 304 Stainless Steel DIN934 Hex Nuts Pack of 100"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_NUT_HEX_M3_STAINLESS STEEL_DIN934_1_1"
+			(polyline
+				(pts
+					(xy 2.54 0) (xy 5.08 0) (xy 7.62 -2.54) (xy 7.62 -5.08) (xy 5.08 -7.62) (xy 2.54 -7.62) (xy 0 -5.08)
+					(xy 0 -2.54) (xy 2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 3.81 -3.81)
+				(radius 2.4097)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
+	(symbol "MECH_PCB_6Layers_1.6MM_50x50"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "MECH"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PCB_6Layers_1.6MM"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "6Layers PCB_1.6MM_SM-GREEN_LEGEND-WHITE_50x50MM"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "50x50 MM"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "N/A"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "N/A"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "6Layers PCB_1.6MM_SM-GREEN_LEGEND-WHITE_50x50MM"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_PCB_6Layers_1.6MM_50x50_1_1"
+			(rectangle
+				(start 0 0)
+				(end 7.62 -7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(text "50x50"
+				(at 3.81 -2.794 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "6 Layers"
+				(at 3.81 -5.588 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_PROPELLER_CW-CCW_65MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "MECH"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PROPELLER_CW-CCW_65MM"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "RC Propellers 65mm CW CCW 2-Vane for 720 8520 Coreless Motor FPV Quadcopter Racer Drone Miniquads, Black Orange 4 Pairs"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "N/A"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/XYWHPGV-Propellers-Coreless-Quadcopter-Miniquads/dp/B0CQLT4QXM/ref=sr_1_49?dib=eyJ2IjoiMSJ9.nFFVyHp8aFDzN2nlDarcejHvsw2ElnQaoT5Wlidi1XrNHQ2Nw_bZJdirOHPf8rYkg_SAmaNCfHEjDAAKTWOL5A5kv-Ywfj8DF4jUyDDEME8I6Qs7BUnX2nWq1O7Q_ssgPJz6_EesTWYf_0oIemqBHH6AKPT-lgg1lcZXjwBBEOn836gJz4PrhQZTkYhUApKKGRq__dPVGT8aqGgMZXexwvCqZf0UureSaDdEufAv2ulWhYNgRAzRAxVq4YYE9UNWIHcZIyQ7XxX7eoBbmQc5OWgTbuNpXTMbTLt7qrMf2lw.IRylcAQcJakygQaDl3AZJAr5XmzhgGQRxMXpRIk6aME&dib_tag=se&keywords=0720+coreless+motor+propeller&qid=1711571090&sr=8-49"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" " RC Propellers 65mm CW CCW 2-Vane for 720 8520 Coreless Motor FPV Quadcopter Racer Drone Miniquads, Black Orange 4 Pairs"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_PROPELLER_CW-CCW_65MM_1_1"
+			(polyline
+				(pts
+					(xy 0 -3.556) (xy 0 -2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 10.16 -0.762) (xy 10.16 -1.778)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 4.064 -2.794)
+				(mid 1.8742 -2.3333)
+				(end 0 -3.556)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 -3.556)
+				(mid 7.9467 -3.6003)
+				(end 10.16 -1.778)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 5.08 -2.54)
+				(radius 0.508)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 5.08 -2.54)
+				(radius 1.0473)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 5.08 -1.524)
+				(mid 2.3362 -1.013)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.096 -2.032)
+				(mid 8.3639 -2.1518)
+				(end 10.16 -0.762)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
+	(symbol "MECH_SCREW_Philips_Steel_M3x0.5_10MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "SCR"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PHILLIPS_M3x0.5"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.amphenolaudio.com/wp-content/uploads/2016/10/52500016300112.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "M3x0.5 Pan Head Machine Screw Phillips Drive Steel"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "M3x0.5"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "52500016-400"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Amphenol Audio"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "889-52500016-400-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/amphenol-sine-systems-corp/52500016-400/10443354"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "M3x0.5 Pan Head Machine Screw Phillips Drive Steel"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_SCREW_Philips_Steel_M3x0.5_10MM_1_1"
+			(rectangle
+				(start -1.27 0.254)
+				(end 1.27 -0.254)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start -0.254 1.27)
+				(end 0.254 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(circle
+				(center 0 0)
+				(radius 1.7961)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+	)
+	(symbol "MECH_SEN_IMAGE_OV2640_1600x1200_24-FPC-0.5P"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "SEN"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OV2640-2MP"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.uctronics.com/download/OV2640_DS.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "OV2640 Color CMOS UXGA (2.0 MegaPixel) CAMERACHIP TM Sensor with OmniPixel2 Technology"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "24-FPC-0.5P"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "OV2640"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ArduCam"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/2PCS-OV2640-200W-Pixels-Module/dp/B0CS33Z1WN/ref=sr_1_2_sspa?crid=29H6TFJWFIXS1&dib=eyJ2IjoiMSJ9.e8KftBXN4yh9TMF4yHu5rO3WizhfEZ8fkocqLgX6z9Qvh_2V9Hf7-bax1QrR13DPjW8xJET_knn9uQNpQeoP8fEdYby12yCVp6NCnSCMdVg3RG1RyKfdXHtE0wcuqrtG91ZbIvqjVp0rBDHYxf1Ypl4tMoqhvJhzZBYgCxvR4U5Q-6VdEXoH3542M8BCvESaa6EBt2AaRS26Sr7kHqL--0Wx0sDCbfbzyseaSl5QRg7PvA6FGkrrIITSyYPJqivgMJWo3MMFqBbLbYYEetRHyo4K2fOQDxjbtPtzPXflNug.KKS36mG9HsUj4gLbEktt-vfxlfCY2vBHesUayDkSkJs&dib_tag=se&keywords=ov2640&qid=1711570131&s=industrial&sprefix=ov2640%2Cindustrial%2C81&sr=1-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "OV2640 Color CMOS UXGA (2.0 MegaPixel) CAMERACHIP TM Sensor with OmniPixel2 Technology"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_SEN_IMAGE_OV2640_1600x1200_24-FPC-0.5P_1_1"
+			(rectangle
+				(start 0 -8.89)
+				(end 5.08 -9.906)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.254 -8.89) (xy 0.254 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.508 -8.89) (xy 0.508 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -8.89) (xy 0.762 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 -8.89) (xy 1.016 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -8.89) (xy 1.27 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.524 -8.89) (xy 1.524 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 -8.89) (xy 1.778 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 -8.89) (xy 2.032 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.286 -8.89) (xy 2.286 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 -8.89) (xy 2.54 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.794 -8.89) (xy 2.794 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.048 -8.89) (xy 3.048 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.302 -8.89) (xy 3.302 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.556 -8.89) (xy 3.556 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.81 -8.89) (xy 3.81 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.064 -8.89) (xy 4.064 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.318 -8.89) (xy 4.318 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.572 -8.89) (xy 4.572 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 4.826 -8.89) (xy 4.826 -9.906)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 0 0)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start 1.778 -5.08)
+				(end 3.302 -8.89)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(circle
+				(center 2.54 -2.54)
+				(radius 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(text "OV2640"
+				(at 2.54 -0.762 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_SPST_PUSHBUTTON_1A/250VAC_M7"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "PB"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SPST-NO-1A/250VAC"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DMWD 12-Pack 1A 250VAC 7mm Mini Momentary Push Button Switch 2Pins with Pre-soldered Wire SPST Normal Open NO Micro Switch (6pcs Black+6pcs Red)"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "THD-M7"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/gp/product/B0BHCLHNKR/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "DMWD 12-Pack 1A 250VAC 7mm Mini Momentary Push Button Switch 2Pins with Pre-soldered Wire SPST Normal Open NO Micro Switch (6pcs Black+6pcs Red)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_SPST_PUSHBUTTON_1A/250VAC_M7_0_1"
+			(polyline
+				(pts
+					(xy 4.572 1.016) (xy 8.128 1.016)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 5.08 0)
+				(radius 0.3592)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 7.62 0)
+				(radius 0.3592)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "MECH_SPST_PUSHBUTTON_1A/250VAC_M7_1_1"
+			(rectangle
+				(start 5.334 2.286)
+				(end 7.366 1.016)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(pin free line
+				(at 0 0 0)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin free line
+				(at 12.7 0 180)
+				(length 5.08)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_STANDOFF_HEX_M3x0.5_MALE-FEMALE_BRASS_16MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "MECH"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STANDOFF_HEX_MF"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.assmann-wsw.com/uploads/datasheets/ASS_0912_HS.pdf"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Hex Standoff Threaded M3x0.5 Brass 0.315\" (8.00mm)"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "M3x0.5"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "V6621B"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Assmann WSW Components"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "AE10787-ND"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digikey"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.digikey.ca/en/products/detail/assmann-wsw-components/V6621B/3511465"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Hex Standoff Threaded M3x0.5 Brass 0.315\" (8.00mm)"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_STANDOFF_HEX_M3x0.5_MALE-FEMALE_BRASS_16MM_0_1"
+			(polyline
+				(pts
+					(xy 0.762 -5.842) (xy 0.762 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0.762 -1.524) (xy 0.762 -5.842)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 -5.842) (xy 1.778 -7.62)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.778 -1.524) (xy 1.778 -5.842)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -0.762) (xy 0.762 0) (xy 1.778 0) (xy 2.54 -0.762) (xy 1.778 -1.524) (xy 0.762 -1.524) (xy 0 -0.762)
+					(xy 0 -5.08) (xy 0.762 -5.842) (xy 1.778 -5.842) (xy 2.54 -5.08) (xy 2.54 -0.762)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0.698 -0.7676)
+				(mid 1.268 -1.1547)
+				(end 1.841 -0.7721)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0.762 -7.62)
+				(mid 1.27 -7.8304)
+				(end 1.778 -7.62)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0.762 -7.112)
+				(mid 1.2174 -7.4494)
+				(end 1.778 -7.366)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0.762 -6.604)
+				(mid 1.2174 -6.9414)
+				(end 1.778 -6.858)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0.762 -6.096)
+				(mid 1.2174 -6.4334)
+				(end 1.778 -6.35)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 1.8383 -0.7126)
+				(mid 1.271 -0.3278)
+				(end 0.687 -0.6868)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
+	(symbol "MECH_WIRE_20AWG_SILICON"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "WIRE"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "WIRE-20AWG"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "20awg Silicone Electrical Wire Cable"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "N/A"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/dp/B08QVKJPZP?ref=ppx_yo2ov_dt_b_product_details&th=1"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "20awg Silicone Electrical Wire Cable"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_WIRE_20AWG_SILICON_0_1"
+			(arc
+				(start 0.127 -6.985)
+				(mid 2.2499 -10.8401)
+				(end 6.477 -12.065)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.223 -13.081)
+				(mid 10.3321 -11.0633)
+				(end 11.811 -6.731)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 6.223 -0.381)
+				(mid 2.2101 -2.8849)
+				(end 1.143 -7.493)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 6.477 -6.731)
+				(radius 4.3255)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 6.477 -6.731)
+				(radius 5.2854)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 6.477 -6.731)
+				(radius 6.3652)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 11.811 -6.731)
+				(mid 9.9112 -3.4148)
+				(end 6.223 -2.413)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 12.827 -6.477)
+				(mid 10.5771 -2.5693)
+				(end 6.223 -1.397)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+	)
 	(symbol "RES_0R_1/16W_R0402"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22894,7 +26709,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -23085,7 +26900,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -23276,7 +27091,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -23467,7 +27282,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.302 26.67 0)
 			(effects
 				(font
@@ -23658,7 +27473,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -23849,7 +27664,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 29.972 0)
 			(effects
 				(font
@@ -24040,7 +27855,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 2.54 31.75 0)
 			(effects
 				(font
@@ -24361,7 +28176,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 31.496 0)
 			(effects
 				(font
@@ -24535,7 +28350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+		(property "Footprint" "_PCBLIB_Qcopter:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 3.81 20.32 0)
 			(effects
 				(font
@@ -24624,7 +28439,7 @@
 				(justify left)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 35.56 0)
 			(effects
 				(font
@@ -24798,7 +28613,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
+		(property "Footprint" "_PCBLIB_Qcopter:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 3.81 19.05 0)
 			(effects
 				(font
@@ -24848,7 +28663,7 @@
 				(hide yes)
 			)
 		)
-		(property "SCH CHECK" "SCH (N/A)"
+		(property "SCH CHECK" "SCH (CHECKED)"
 			(at 3.81 34.29 0)
 			(effects
 				(font
