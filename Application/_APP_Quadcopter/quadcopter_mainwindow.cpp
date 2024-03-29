@@ -34,14 +34,15 @@ Quadcopter_MainWindow::Quadcopter_MainWindow(QWidget *parent)
 
     qcopter.PixmapButtonOn.load("D:/Projects/STP/Quadcopter/Application/Resources/Textures/Circle_FilledGreen.png");
     qcopter.PixmapButtonOff.load("D:/Projects/STP/Quadcopter/Application/Resources/Textures/Circle_Empty.png");
-    qcopter.lockPanel = false;
+    qcopter.compasOnSpot.load("D:/Projects/STP/Quadcopter/Application/Resources/Icons/GeoPosLighting.png");
 
+    QuadcopterPanelInit();
     ClockInit();
     QuadcopterParamInit();
     qcopterGeneralTimer->start(500);
     qcopterButtonTimer->start(100); // 100 miliseconds
+    qcopterKeyboardTimer->start(1000);
 
-    DisablePanel();
     MQTTUpdateServerStatus(false);
 }
 
@@ -55,6 +56,12 @@ void Quadcopter_MainWindow::Quadcopter_MainWindow::keyPressEvent(QKeyEvent *inpu
     int tempKey = inputCmd->key();
 
     //qDebug() << tempKey;
+
+    //add a timeout here!!.....................................................
+    if(qcopter.keyboardTimeout == false)
+    {
+        return;
+    }
 
     if((tempKey == 'w') || (tempKey == 'W'))
     {
@@ -99,6 +106,7 @@ void Quadcopter_MainWindow::Quadcopter_MainWindow::keyPressEvent(QKeyEvent *inpu
         ButtonCameraShutter();
     }
 
+    qcopter.keyboardTimeout = false;
 
 }
 
@@ -314,27 +322,17 @@ void Quadcopter_MainWindow::AnimationButtonForward()
     {
     case 0:
         connect( qcopterButtonTimer, SIGNAL(timeout()), this, SLOT(AnimationButtonForward()));
-
-        ui->label_F11->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_F12->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_F13->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_F14->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_F15->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 1:
-        ui->label_F21->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F22->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F23->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F24->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_F25->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 2:
-        ui->label_F31->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F32->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F33->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_F34->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 3:
@@ -342,32 +340,23 @@ void Quadcopter_MainWindow::AnimationButtonForward()
         ui->label_F42->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F43->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_F11->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_F12->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_F13->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_F14->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_F15->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 4:
         ui->label_F51->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F52->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_F21->setPixmap(qcopter.PixmapButtonOff);
         ui->label_F22->setPixmap(qcopter.PixmapButtonOff);
         ui->label_F23->setPixmap(qcopter.PixmapButtonOff);
         ui->label_F24->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_F25->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 5:
         ui->label_F61->setPixmap(qcopter.PixmapButtonOn);
         ui->label_F62->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_F31->setPixmap(qcopter.PixmapButtonOff);
         ui->label_F32->setPixmap(qcopter.PixmapButtonOff);
         ui->label_F33->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_F34->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 6:
@@ -402,59 +391,40 @@ void Quadcopter_MainWindow::AnimationButtonReverse()
     case 0:
         connect( qcopterButtonTimer, SIGNAL(timeout()), this, SLOT(AnimationButtonReverse()));
 
-        ui->label_B11->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_B12->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_B13->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_B14->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_B15->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 1:
-        ui->label_B21->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B22->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B23->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B24->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_B25->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 2:
-        ui->label_B31->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B32->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B33->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_B34->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 3:
         ui->label_B41->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B42->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B43->setPixmap(qcopter.PixmapButtonOn);
-
-        ui->label_B11->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_B12->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_B13->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_B14->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_B15->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 4:
         ui->label_B51->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B52->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_B21->setPixmap(qcopter.PixmapButtonOff);
         ui->label_B22->setPixmap(qcopter.PixmapButtonOff);
         ui->label_B23->setPixmap(qcopter.PixmapButtonOff);
         ui->label_B24->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_B25->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 5:
         ui->label_B61->setPixmap(qcopter.PixmapButtonOn);
         ui->label_B62->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_B31->setPixmap(qcopter.PixmapButtonOff);
         ui->label_B32->setPixmap(qcopter.PixmapButtonOff);
         ui->label_B33->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_B34->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 6:
@@ -488,27 +458,17 @@ void Quadcopter_MainWindow::AnimationButtonLeft()
     {
     case 0:
         connect( qcopterButtonTimer, SIGNAL(timeout()), this, SLOT(AnimationButtonLeft()));
-
-        ui->label_L11->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_L12->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_L13->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_L14->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_L15->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 1:
-        ui->label_L21->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L22->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L23->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L24->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_L25->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 2:
-        ui->label_L31->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L32->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L33->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_L34->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 3:
@@ -516,32 +476,23 @@ void Quadcopter_MainWindow::AnimationButtonLeft()
         ui->label_L42->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L43->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_L11->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_L12->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_L13->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_L14->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_L15->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 4:
         ui->label_L51->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L52->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_L21->setPixmap(qcopter.PixmapButtonOff);
         ui->label_L22->setPixmap(qcopter.PixmapButtonOff);
         ui->label_L23->setPixmap(qcopter.PixmapButtonOff);
         ui->label_L24->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_L25->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 5:
         ui->label_L61->setPixmap(qcopter.PixmapButtonOn);
         ui->label_L62->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_L31->setPixmap(qcopter.PixmapButtonOff);
         ui->label_L32->setPixmap(qcopter.PixmapButtonOff);
         ui->label_L33->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_L34->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 6:
@@ -575,60 +526,40 @@ void Quadcopter_MainWindow::AnimationButtonRight()
     {
     case 0:
         connect( qcopterButtonTimer, SIGNAL(timeout()), this, SLOT(AnimationButtonRight()));
-
-        ui->label_R11->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_R12->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_R13->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_R14->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_R15->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 1:
-        ui->label_R21->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R22->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R23->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R24->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_R25->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 2:
-        ui->label_R31->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R32->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R33->setPixmap(qcopter.PixmapButtonOn);
-        ui->label_R34->setPixmap(qcopter.PixmapButtonOn);
         cnt++;
         break;
     case 3:
         ui->label_R41->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R42->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R43->setPixmap(qcopter.PixmapButtonOn);
-
-        ui->label_R11->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_R12->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_R13->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_R14->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_R15->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 4:
         ui->label_R51->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R52->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_R21->setPixmap(qcopter.PixmapButtonOff);
         ui->label_R22->setPixmap(qcopter.PixmapButtonOff);
         ui->label_R23->setPixmap(qcopter.PixmapButtonOff);
         ui->label_R24->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_R25->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 5:
         ui->label_R61->setPixmap(qcopter.PixmapButtonOn);
         ui->label_R62->setPixmap(qcopter.PixmapButtonOn);
 
-        ui->label_R31->setPixmap(qcopter.PixmapButtonOff);
         ui->label_R32->setPixmap(qcopter.PixmapButtonOff);
         ui->label_R33->setPixmap(qcopter.PixmapButtonOff);
-        ui->label_R34->setPixmap(qcopter.PixmapButtonOff);
         cnt++;
         break;
     case 6:
@@ -668,7 +599,7 @@ void Quadcopter_MainWindow::GeologicalPosition( int value )
 
 void Quadcopter_MainWindow::Throttle(int value)
 {
-    ui->lcdNumber_ThrottleValue->display(value);
+    ui->lcdNumber_ValueThrottleValue->display(value);
     ui->verticalSlider_Throttle->setValue(value);
 
     qcopter.jsonObjCommand["ELEVATE"] = value;
@@ -715,20 +646,132 @@ void Quadcopter_MainWindow::ButtonCameraShutter()
     qDebug() << "Shutter Camera has been pressed";
 }
 
+void Quadcopter_MainWindow::QuadcopterPanelInit()
+{
+    //init all the text fonts size and shape and color!
+    qcopter.generalLabelsFont.setPixelSize(14);
+
+    ui->label_MQTTServer->setFont(qcopter.generalLabelsFont);
+    ui->label_MQTTServer->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_StatusMQTTServer->setFont(qcopter.generalLabelsFont);
+    ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(200, 0, 50);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_ApplicationIP->setFont(qcopter.generalLabelsFont);
+    ui->label_ApplicationIP->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_ValueApplicationIPAddress->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueApplicationIPAddress->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_LoRaWANServer->setFont(qcopter.generalLabelsFont);
+    ui->label_LoRaWANServer->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_StatusLoRaWANServer->setFont(qcopter.generalLabelsFont);
+    ui->label_StatusLoRaWANServer->setStyleSheet("background-color: rgb(200, 0, 50);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+    ui->label_StatusLoRaWANServer->setText("DISCONNECTED");
+
+    ui->label_LoRaWANFrequency->setFont(qcopter.generalLabelsFont);
+    ui->label_LoRaWANFrequency->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_ValueLoRaWANFrequency->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueLoRaWANFrequency->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_ActiveDrone->setFont(qcopter.generalLabelsFont);
+    ui->label_ActiveDrone->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_ValueActiveDrone->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueActiveDrone->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_DroneType->setFont(qcopter.generalLabelsFont);
+    ui->label_DroneType->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_ValueDroneType->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueDroneType->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_Pressure->setFont(qcopter.generalLabelsFont);
+    ui->label_Pressure->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_Temperature->setFont(qcopter.generalLabelsFont);
+    ui->label_Temperature->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_Humedity->setFont(qcopter.generalLabelsFont);
+    ui->label_Humedity->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_Speed->setFont(qcopter.generalLabelsFont);
+    ui->label_Speed->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_Displacement->setFont(qcopter.generalLabelsFont);
+    ui->label_Displacement->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->label_Height->setFont(qcopter.generalLabelsFont);
+    ui->label_Height->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
+                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+
+    ui->plainTextEdit_LogPanel->setPlainText("Log panel --> \r\n");
+}
+
 void Quadcopter_MainWindow::UpdateDroneIndex(uint8_t index)
 {
     qcopter.generalLabelsFont.setPixelSize(14);
-    ui->label_DronesNumber->setFont(qcopter.generalLabelsFont);
-    ui->label_DronesNumber->setText(QString::number(index) + "/NA");
+    ui->label_ValueActiveDrone->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueActiveDrone->setText(QString::number(index) + "/99");
     qcopter.jsonObjStatus["QCOPTER"] = qcopter.index;
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
     qcopter.jsonObjCommand["QCOPTER"] = qcopter.index;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjStatus);
-}
-
-void Quadcopter_MainWindow::UpdateBatteryLevel(uint16_t value)
-{
-    ui->progressBar_BatteryCharge->setValue((value / QCOPTER_BATTERY_VOLTAGE) * 100);
 }
 
 void Quadcopter_MainWindow::QuadcopterParamInit()
@@ -760,12 +803,48 @@ void Quadcopter_MainWindow::QuadcopterParamInit()
     qDebug() << qcopter.jsonDocStatus;
     qDebug() << qcopter.jsonDocCommand;
 
+    temperature.value_max = 85;
+    temperature.value_min = 0;
+    temperature.value_upper_limit = 40;
+    temperature.value_lower_limit = 10;
+
+    humidity.value_max = 100;
+    humidity.value_min = 0;
+    humidity.value_upper_limit = 75;
+    humidity.value_lower_limit = 25;
+
+    pressure.value_max = 1100;
+    pressure.value_min = 300;
+    pressure.value_upper_limit = 900;
+    pressure.value_lower_limit = 500;
+
+    battery.value_max = 100;
+    battery.value_min = 0;
+    battery.value_upper_limit = 75;
+    battery.value_lower_limit = 25;
+
+    displacement.value_max = 500;
+    displacement.value_min = 0;
+    displacement.value_upper_limit = 350;
+    displacement.value_lower_limit = 100;
+
+    speed.value_max = 500;
+    speed.value_min = 0;
+    speed.value_upper_limit = 100;
+    speed.value_lower_limit = 20;
+
+    height.value_max = 400;
+    height.value_min = 0;
+    height.value_upper_limit = 300;
+    height.value_lower_limit = 20;
+
     QuadcopterParamUpdate( qcopter.jsonObjStatus );
 }
 
 void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
 {
 
+    //Check if the input param is coming from the correct drone (we'll check the index value)
     if(!inputObj.contains("QCOPTER"))
     {
         qDebug() << "The input status string doesn't contain quadcopter index value";
@@ -776,10 +855,7 @@ void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
         qDebug() << "We don't get status from this drone at the moment";
         return;
     }
-    else
-    {
-        UpdateDroneIndex(inputObj["QCOPTER"].toInt());
-    }
+
     if(inputObj.contains("PRESSURE"))
     {
         qcopter.jsonObjStatus["PRESSURE"] = inputObj["PRESSURE"];
@@ -815,14 +891,14 @@ void Quadcopter_MainWindow::QuadcopterParamUpdate(QJsonObject inputObj)
 
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
 
-    ui->lcdNumber_Temperature->display(qcopter.jsonObjStatus.value("TEMP").toInt());
-    ui->lcdNumber_Humedity->display(qcopter.jsonObjStatus.value("HUMEDITY").toInt());
-    ui->lcdNumber_Pressure->display(qcopter.jsonObjStatus.value("PRESSURE").toInt());
-    ui->lcdNumber_Speed->display(qcopter.jsonObjStatus.value("SPEED").toInt());
-    ui->lcdNumber_Displacement->display(qcopter.jsonObjStatus.value("DISPLACEMENT").toInt());
-    ui->lcdNumber_Height->display(qcopter.jsonObjStatus.value("HEIGHT").toInt());
-    ui->dial_GeologicalPosition->setValue(qcopter.jsonObjStatus.value("GEOPOS").toInt());
-    UpdateBatteryLevel(qcopter.jsonObjStatus.value("BATT").toInt());
+    UpdateValuePressure(qcopter.jsonObjStatus.value("PRESSURE").toInt());
+    UpdateValueTemperature(qcopter.jsonObjStatus.value("TEMP").toInt());
+    UpdateValueHumidity(qcopter.jsonObjStatus.value("HUMEDITY").toInt());
+    UpdateValueSpeed(qcopter.jsonObjStatus.value("SPEED").toInt());
+    UpdateValueDisplacement(qcopter.jsonObjStatus.value("DISPLACEMENT").toInt());
+    UpdateValueHeight(qcopter.jsonObjStatus.value("HEIGHT").toInt());
+    UpdateValueBattery(qcopter.jsonObjStatus.value("BATT").toInt());
+    UpdateGeoPos(qcopter.jsonObjStatus.value("GEOPOS").toInt());
 }
 
 void Quadcopter_MainWindow::ClockInit()
@@ -838,8 +914,170 @@ void Quadcopter_MainWindow::ClockUpdate()
 {
     qcopter.time = QDateTime::currentDateTime();
     ui->label_Time->setText(qcopter.time.toString("HH:mm:ss"));
+}
 
-    qcopter.lockPanel = false;
+void Quadcopter_MainWindow::KeyboardTimerUpdate()
+{
+    if(qcopter.lockPanel == false)
+    {
+        qcopter.keyboardTimeout = true;
+    }
+}
+
+void Quadcopter_MainWindow::UpdateValueTemperature(int value)
+{
+    if((value > temperature.value_max) && (value < temperature.value_min))
+    {
+        return;
+    }
+    else if(value >= temperature.value_upper_limit)
+    {
+        ui->lcdNumber_ValueTemperature->setStyleSheet("background-color: rgb(178, 10, 30);");
+    }
+    else if(value <= temperature.value_lower_limit)
+    {
+        ui->lcdNumber_ValueTemperature->setStyleSheet("background-color: rgb(37,111,255);");
+    }
+    else
+    {
+        ui->lcdNumber_ValueTemperature->setStyleSheet("background-color: rgb(253,253,150);");
+    }
+    ui->lcdNumber_ValueTemperature->display(value);
+}
+
+void Quadcopter_MainWindow::UpdateValueHumidity(int value)
+{
+    if((value > humidity.value_max) && (value < humidity.value_min))
+    {
+        return;
+    }
+    else if(value >= humidity.value_upper_limit)
+    {
+        ui->lcdNumber_ValueHumidity->setStyleSheet("background-color: rgb(37,111,255);");
+    }
+    else if(value <= humidity.value_lower_limit)
+    {
+        ui->lcdNumber_ValueHumidity->setStyleSheet("background-color: rgb(178, 10, 30);");
+    }
+    else
+    {
+        ui->lcdNumber_ValueHumidity->setStyleSheet("background-color: rgb(10,166,116);");
+    }
+    ui->lcdNumber_ValueHumidity->display(value);
+}
+
+void Quadcopter_MainWindow::UpdateValuePressure(int value)
+{
+    if((value > pressure.value_max) && (value < pressure.value_min))
+    {
+        return;
+    }
+    else if(value >= pressure.value_upper_limit)
+    {
+        ui->lcdNumber_ValuePressure->setStyleSheet("background-color: rgb(37,111,255);");
+    }
+    else if(value <= pressure.value_lower_limit)
+    {
+        ui->lcdNumber_ValuePressure->setStyleSheet("background-color: rgb(178, 10, 30);");
+    }
+    else
+    {
+        ui->lcdNumber_ValuePressure->setStyleSheet("background-color: rgb(255,223,0);");
+    }
+    ui->lcdNumber_ValuePressure->display(value);
+}
+
+void Quadcopter_MainWindow::UpdateValueBattery(int value)
+{
+    value = ((value * 100) / QCOPTER_BATTERY_VOLTAGE);
+    if((value > battery.value_max) && (value < battery.value_min))
+    {
+        return;
+    }
+    ui->progressBar_ValueBatteryCharge->setValue(value);
+}
+
+void Quadcopter_MainWindow::UpdateValueDisplacement(int value)
+{
+    if((value > displacement.value_max) && (value < displacement.value_min))
+    {
+        return;
+    }
+    else if(value >= displacement.value_upper_limit)
+    {
+        ui->lcdNumber_ValueDisplacement->setStyleSheet("background-color: rgb();");
+    }
+    else if(value <= displacement.value_lower_limit)
+    {
+        ui->lcdNumber_ValueDisplacement->setStyleSheet("background-color: rgb();");
+    }
+    else
+    {
+        ui->lcdNumber_ValueDisplacement->setStyleSheet("background-color: rgb();");
+    }
+    ui->lcdNumber_ValueDisplacement->display(value);
+}
+
+void Quadcopter_MainWindow::UpdateValueSpeed(int value)
+{
+    if((value > speed.value_max) && (value < speed.value_min))
+    {
+        return;
+    }
+    else if(value >= speed.value_upper_limit)
+    {
+        ui->lcdNumber_ValueSpeed->setStyleSheet("background-color: rgb(178, 10, 30);");
+    }
+    else if(value <= speed.value_lower_limit)
+    {
+        ui->lcdNumber_ValueSpeed->setStyleSheet("background-color: rgb(0,192,75);");
+    }
+    else
+    {
+        ui->lcdNumber_ValueSpeed->setStyleSheet("background-color: rgb(245,199,126);");
+    }
+    ui->lcdNumber_ValueSpeed->display(value);
+}
+
+void Quadcopter_MainWindow::UpdateValueHeight(int value)
+{
+    if((value > height.value_max) && (value < height.value_min))
+    {
+        return;
+    }
+    else if(value >= height.value_upper_limit)
+    {
+        ui->lcdNumber_ValueHeight->setStyleSheet("background-color: rgb(178, 10, 30);");
+    }
+    else if(value <= height.value_lower_limit)
+    {
+        ui->lcdNumber_ValueHeight->setStyleSheet("background-color: rgb(0,192,75);");
+    }
+    else
+    {
+        ui->lcdNumber_ValueHeight->setStyleSheet("background-color: rgb(245,199,126);");
+    }
+    ui->lcdNumber_ValueHeight->display(value);
+}
+
+void Quadcopter_MainWindow::UpdateGeoPos(int value)
+{
+    /*void MyWidget::rotateLabel()
+    {
+        QPixmap pixmap(*my_label->pixmap());
+        QTransform tr;
+        tr.rotate(90);
+        pixmap = pixmap.transformed(tr);
+        my_label->setPixmap(pixmap);
+    }*/ //use this method to rotate the picture...
+    if((value > 360) || (value < 0))
+    {
+        return;
+    }
+    //qcopter.compasOnSpot = qcopter.compasOnSpot.transformed(qcopter.compasTransform);
+    //ui->label_CompasOnSpot->setPixmap(qcopter.compasOnSpot);
+    ui->dial_GeologicalPosition->setValue(value);
+
 }
 
 void Quadcopter_MainWindow::ConnectFunctions()
@@ -862,6 +1100,7 @@ void Quadcopter_MainWindow::ConnectFunctions()
     connect(ui->pushButton_DroneSelectPrevious, SIGNAL(clicked(bool)), this, SLOT(DroneSelectPrevious()));
     connect(ui->pushButton_DroneCameraSnapshot, SIGNAL(clicked(bool)), this, SLOT(ButtonCameraShutter()));
     connect(qcopterGeneralTimer, SIGNAL(timeout()), this, SLOT(ClockUpdate()));
+    connect(qcopterKeyboardTimer, SIGNAL(timeout()), this, SLOT(KeyboardTimerUpdate()));
 
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgGeneral(QMqttMessage)), this, SLOT(MQTTReceivedMsgGeneral(QMqttMessage)));
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgStatus(QMqttMessage)), this, SLOT(MQTTReceivedMsgStatus(QMqttMessage)));
@@ -877,40 +1116,50 @@ void Quadcopter_MainWindow::EnablePanel()
     ui->pushButton_MoveReverse->setEnabled(true);
     ui->pushButton_MoveLeft->setEnabled(true);
     ui->pushButton_MoveRight->setEnabled(true);
-    ui->dial_GeologicalPosition->setEnabled(true);
     ui->verticalSlider_Throttle->setEnabled(true);
 
-    ui->lcdNumber_ThrottleValue->setEnabled(true);
-    ui->lcdNumber_Pressure->setEnabled(true);
-    ui->lcdNumber_Displacement->setEnabled(true);
-    ui->lcdNumber_Height->setEnabled(true);
-    ui->lcdNumber_Speed->setEnabled(true);
-    ui->lcdNumber_Temperature->setEnabled(true);
+    ui->dial_GeologicalPosition->setEnabled(true);
+    ui->label_CompassOff->setEnabled(true);
+    //ui->label_CompasOnSpot->setEnabled(true);
+    ui->label_CompasOnSpot->setHidden(true);
 
-    ui->label_DronesNumber->setEnabled(true);
+    ui->lcdNumber_ValueThrottleValue->setEnabled(true);
+    ui->lcdNumber_ValuePressure->setEnabled(true);
+    ui->lcdNumber_ValueDisplacement->setEnabled(true);
+    ui->lcdNumber_ValueHeight->setEnabled(true);
+    ui->lcdNumber_ValueSpeed->setEnabled(true);
+    ui->lcdNumber_ValueTemperature->setEnabled(true);
+
+    ui->label_ValueActiveDrone->setEnabled(true);
+
+    qcopter.lockPanel = false;
 }
 
 void Quadcopter_MainWindow::DisablePanel()
 {
     ui->pushButton_ConnectLoRaWAN->setDisabled(true);
-    //ui->pushButton_SaveLogFile->setDisabled(true);
-    ui->pushButton_SaveLogFile->setStyleSheet("border-radius: 10px;"
-                                              );
+    ui->pushButton_SaveLogFile->setDisabled(true);
+
     ui->pushButton_MoveForward->setDisabled(true);
     ui->pushButton_MoveReverse->setDisabled(true);
     ui->pushButton_MoveLeft->setDisabled(true);
     ui->pushButton_MoveRight->setDisabled(true);
-    ui->dial_GeologicalPosition->setDisabled(true);
     ui->verticalSlider_Throttle->setDisabled(true);
 
-    ui->lcdNumber_ThrottleValue->setDisabled(true);
-    ui->lcdNumber_Pressure->setDisabled(true);
-    ui->lcdNumber_Displacement->setDisabled(true);
-    ui->lcdNumber_Height->setDisabled(true);
-    ui->lcdNumber_Speed->setDisabled(true);
-    ui->lcdNumber_Temperature->setDisabled(true);
+    ui->dial_GeologicalPosition->setDisabled(true);
+    ui->label_CompassOff->setDisabled(true);
+    ui->label_CompasOnSpot->setHidden(true);
 
-    ui->label_DronesNumber->setDisabled(true);
+    ui->lcdNumber_ValueThrottleValue->setDisabled(true);
+    ui->lcdNumber_ValuePressure->setDisabled(true);
+    ui->lcdNumber_ValueDisplacement->setDisabled(true);
+    ui->lcdNumber_ValueHeight->setDisabled(true);
+    ui->lcdNumber_ValueSpeed->setDisabled(true);
+    ui->lcdNumber_ValueTemperature->setDisabled(true);
+
+    ui->label_ValueActiveDrone->setDisabled(true);
+
+    qcopter.lockPanel = true;
 }
 
 void Quadcopter_MainWindow::NoisyTVGifControl(bool cmd, uint8_t screenNumber)
