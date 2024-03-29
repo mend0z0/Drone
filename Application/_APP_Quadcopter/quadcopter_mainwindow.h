@@ -25,6 +25,8 @@
 #include <QTextCharFormat>
 #include <QPen>
 #include <QKeyEvent>
+#include <QTransform>
+#include <QPainter>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
@@ -70,13 +72,26 @@ private slots:
     void DroneSelectNext( void );
     void DroneSelectPrevious( void );
     void ButtonCameraShutter( void );
-    void UpdateDroneIndex( uint8_t index );
-    void UpdateBatteryLevel( uint16_t value );
 
+    void QuadcopterPanelInit( void );
     void QuadcopterParamInit( void );
-    void QuadcopterParamUpdate( QJsonObject inputObj );
     void ClockInit( void );
+
+    void UpdateValueTemperature( int value );
+    void UpdateValueHumidity( int value );
+    void UpdateValuePressure( int value );
+    void UpdateValueBattery( int value );
+    void UpdateValueDisplacement( int value );
+    void UpdateValueSpeed( int value );
+    void UpdateValueHeight( int value );
+    void UpdateGeoPos( int value );
+
+    void UpdateDroneIndex( uint8_t index );
+
     void ClockUpdate( void );
+    void KeyboardTimerUpdate( void );
+
+    void QuadcopterParamUpdate( QJsonObject inputObj );
 
 private:
     Ui::Quadcopter_MainWindow *ui;
@@ -88,6 +103,7 @@ private:
     QMovie  *lostConnectionGif = new QMovie(this);
     QTimer *qcopterGeneralTimer = new QTimer(this);
     QTimer *qcopterButtonTimer = new QTimer(this);
+    QTimer *qcopterKeyboardTimer = new QTimer(this);
 
     void ConnectFunctions( void );
     void DisconnectFunctions( void );
@@ -106,14 +122,32 @@ private:
         QFont generalLabelsFont;
         QPixmap PixmapButtonOn;
         QPixmap PixmapButtonOff;
+        QPixmap compasOnSpot;
+        QTransform compasTransform;
+        QPainter compasPainter;
         QTextCharFormat txtPanelFormatGeneral;
         QTextCharFormat txtPanelFormatStatus;
         QTextCharFormat txtPanelFormatCommand;
         QPen txtBrush;
         bool lockPanel;
+        bool keyboardTimeout;
         uint8_t index;
     }qcopter;
 
+    struct limitValues{
+        int value_max;
+        int value_min;
+        int value_upper_limit;
+        int value_lower_limit;
+    };
+
+    struct limitValues temperature;
+    struct limitValues humidity;
+    struct limitValues pressure;
+    struct limitValues battery;
+    struct limitValues displacement;
+    struct limitValues speed;
+    struct limitValues height;
 
 
 };
