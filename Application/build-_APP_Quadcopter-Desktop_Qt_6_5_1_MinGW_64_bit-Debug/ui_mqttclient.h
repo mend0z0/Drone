@@ -124,9 +124,9 @@ public:
 
         gridLayout_4->addWidget(pushButton_mqttCancel, 0, 2, 1, 1);
 
-        layoutWidget->raise();
+        layoutWidget1->raise();
         label_gif->raise();
-        layoutWidget->raise();
+        layoutWidget1->raise();
 
         retranslateUi(MQTTClient);
 
