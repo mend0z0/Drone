@@ -13,5 +13,7 @@
         <file>../Resources/Icons/Compass.png</file>
         <file>../Resources/Gifs/connectionLoading.gif</file>
         <file>../Resources/Gifs/LostConnection.gif</file>
+        <file>../Resources/Icons/GeoPosLighting.png</file>
+        <file>../Resources/Icons/GeoPosOff.png</file>
     </qresource>
 </RCC>
