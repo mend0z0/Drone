@@ -66,20 +66,28 @@ static constexpr auto qt_meta_stringdata_CLASSQuadcopter_MainWindowENDCLASS = Qt
     "DroneSelectNext",
     "DroneSelectPrevious",
     "ButtonCameraShutter",
+    "QuadcopterPanelInit",
+    "QuadcopterParamInit",
+    "ClockInit",
+    "UpdateValueTemperature",
+    "UpdateValueHumidity",
+    "UpdateValuePressure",
+    "UpdateValueBattery",
+    "UpdateValueDisplacement",
+    "UpdateValueSpeed",
+    "UpdateValueHeight",
+    "UpdateGeoPos",
     "UpdateDroneIndex",
     "uint8_t",
     "index",
-    "UpdateBatteryLevel",
-    "uint16_t",
-    "QuadcopterParamInit",
+    "ClockUpdate",
+    "KeyboardTimerUpdate",
     "QuadcopterParamUpdate",
-    "inputObj",
-    "ClockInit",
-    "ClockUpdate"
+    "inputObj"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSQuadcopter_MainWindowENDCLASS_t {
-    uint offsetsAndSizes[76];
+    uint offsetsAndSizes[92];
     char stringdata0[22];
     char stringdata1[12];
     char stringdata2[1];
@@ -108,16 +116,24 @@ struct qt_meta_stringdata_CLASSQuadcopter_MainWindowENDCLASS_t {
     char stringdata25[16];
     char stringdata26[20];
     char stringdata27[20];
-    char stringdata28[17];
-    char stringdata29[8];
-    char stringdata30[6];
-    char stringdata31[19];
-    char stringdata32[9];
+    char stringdata28[20];
+    char stringdata29[20];
+    char stringdata30[10];
+    char stringdata31[23];
+    char stringdata32[20];
     char stringdata33[20];
-    char stringdata34[22];
-    char stringdata35[9];
-    char stringdata36[10];
-    char stringdata37[12];
+    char stringdata34[19];
+    char stringdata35[24];
+    char stringdata36[17];
+    char stringdata37[18];
+    char stringdata38[13];
+    char stringdata39[17];
+    char stringdata40[8];
+    char stringdata41[6];
+    char stringdata42[12];
+    char stringdata43[20];
+    char stringdata44[22];
+    char stringdata45[9];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSQuadcopter_MainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -151,16 +167,24 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSQuadcopter_MainWindowENDCLASS_t
         QT_MOC_LITERAL(386, 15),  // "DroneSelectNext"
         QT_MOC_LITERAL(402, 19),  // "DroneSelectPrevious"
         QT_MOC_LITERAL(422, 19),  // "ButtonCameraShutter"
-        QT_MOC_LITERAL(442, 16),  // "UpdateDroneIndex"
-        QT_MOC_LITERAL(459, 7),  // "uint8_t"
-        QT_MOC_LITERAL(467, 5),  // "index"
-        QT_MOC_LITERAL(473, 18),  // "UpdateBatteryLevel"
-        QT_MOC_LITERAL(492, 8),  // "uint16_t"
-        QT_MOC_LITERAL(501, 19),  // "QuadcopterParamInit"
-        QT_MOC_LITERAL(521, 21),  // "QuadcopterParamUpdate"
-        QT_MOC_LITERAL(543, 8),  // "inputObj"
-        QT_MOC_LITERAL(552, 9),  // "ClockInit"
-        QT_MOC_LITERAL(562, 11)   // "ClockUpdate"
+        QT_MOC_LITERAL(442, 19),  // "QuadcopterPanelInit"
+        QT_MOC_LITERAL(462, 19),  // "QuadcopterParamInit"
+        QT_MOC_LITERAL(482, 9),  // "ClockInit"
+        QT_MOC_LITERAL(492, 22),  // "UpdateValueTemperature"
+        QT_MOC_LITERAL(515, 19),  // "UpdateValueHumidity"
+        QT_MOC_LITERAL(535, 19),  // "UpdateValuePressure"
+        QT_MOC_LITERAL(555, 18),  // "UpdateValueBattery"
+        QT_MOC_LITERAL(574, 23),  // "UpdateValueDisplacement"
+        QT_MOC_LITERAL(598, 16),  // "UpdateValueSpeed"
+        QT_MOC_LITERAL(615, 17),  // "UpdateValueHeight"
+        QT_MOC_LITERAL(633, 12),  // "UpdateGeoPos"
+        QT_MOC_LITERAL(646, 16),  // "UpdateDroneIndex"
+        QT_MOC_LITERAL(663, 7),  // "uint8_t"
+        QT_MOC_LITERAL(671, 5),  // "index"
+        QT_MOC_LITERAL(677, 11),  // "ClockUpdate"
+        QT_MOC_LITERAL(689, 19),  // "KeyboardTimerUpdate"
+        QT_MOC_LITERAL(709, 21),  // "QuadcopterParamUpdate"
+        QT_MOC_LITERAL(731, 8)   // "inputObj"
     },
     "Quadcopter_MainWindow",
     "MQTTConsole",
@@ -190,16 +214,24 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSQuadcopter_MainWindowENDCLASS_t
     "DroneSelectNext",
     "DroneSelectPrevious",
     "ButtonCameraShutter",
+    "QuadcopterPanelInit",
+    "QuadcopterParamInit",
+    "ClockInit",
+    "UpdateValueTemperature",
+    "UpdateValueHumidity",
+    "UpdateValuePressure",
+    "UpdateValueBattery",
+    "UpdateValueDisplacement",
+    "UpdateValueSpeed",
+    "UpdateValueHeight",
+    "UpdateGeoPos",
     "UpdateDroneIndex",
     "uint8_t",
     "index",
-    "UpdateBatteryLevel",
-    "uint16_t",
-    "QuadcopterParamInit",
+    "ClockUpdate",
+    "KeyboardTimerUpdate",
     "QuadcopterParamUpdate",
-    "inputObj",
-    "ClockInit",
-    "ClockUpdate"
+    "inputObj"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -211,7 +243,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSQuadcopter_MainWindowENDCLASS[] 
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      28,   14, // methods
+      37,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -219,34 +251,43 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSQuadcopter_MainWindowENDCLASS[] 
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  182,    2, 0x08,    1 /* Private */,
-       3,    1,  183,    2, 0x08,    2 /* Private */,
-       6,    1,  186,    2, 0x08,    4 /* Private */,
-       7,    1,  189,    2, 0x08,    6 /* Private */,
-       8,    1,  192,    2, 0x08,    8 /* Private */,
-       9,    1,  195,    2, 0x08,   10 /* Private */,
-      11,    0,  198,    2, 0x08,   12 /* Private */,
-      12,    0,  199,    2, 0x08,   13 /* Private */,
-      13,    0,  200,    2, 0x08,   14 /* Private */,
-      14,    0,  201,    2, 0x08,   15 /* Private */,
-      15,    0,  202,    2, 0x08,   16 /* Private */,
-      16,    0,  203,    2, 0x08,   17 /* Private */,
-      17,    0,  204,    2, 0x08,   18 /* Private */,
-      18,    0,  205,    2, 0x08,   19 /* Private */,
-      19,    0,  206,    2, 0x08,   20 /* Private */,
-      20,    0,  207,    2, 0x08,   21 /* Private */,
-      21,    0,  208,    2, 0x08,   22 /* Private */,
-      22,    1,  209,    2, 0x08,   23 /* Private */,
-      24,    1,  212,    2, 0x08,   25 /* Private */,
-      25,    0,  215,    2, 0x08,   27 /* Private */,
-      26,    0,  216,    2, 0x08,   28 /* Private */,
-      27,    0,  217,    2, 0x08,   29 /* Private */,
-      28,    1,  218,    2, 0x08,   30 /* Private */,
-      31,    1,  221,    2, 0x08,   32 /* Private */,
-      33,    0,  224,    2, 0x08,   34 /* Private */,
-      34,    1,  225,    2, 0x08,   35 /* Private */,
-      36,    0,  228,    2, 0x08,   37 /* Private */,
-      37,    0,  229,    2, 0x08,   38 /* Private */,
+       1,    0,  236,    2, 0x08,    1 /* Private */,
+       3,    1,  237,    2, 0x08,    2 /* Private */,
+       6,    1,  240,    2, 0x08,    4 /* Private */,
+       7,    1,  243,    2, 0x08,    6 /* Private */,
+       8,    1,  246,    2, 0x08,    8 /* Private */,
+       9,    1,  249,    2, 0x08,   10 /* Private */,
+      11,    0,  252,    2, 0x08,   12 /* Private */,
+      12,    0,  253,    2, 0x08,   13 /* Private */,
+      13,    0,  254,    2, 0x08,   14 /* Private */,
+      14,    0,  255,    2, 0x08,   15 /* Private */,
+      15,    0,  256,    2, 0x08,   16 /* Private */,
+      16,    0,  257,    2, 0x08,   17 /* Private */,
+      17,    0,  258,    2, 0x08,   18 /* Private */,
+      18,    0,  259,    2, 0x08,   19 /* Private */,
+      19,    0,  260,    2, 0x08,   20 /* Private */,
+      20,    0,  261,    2, 0x08,   21 /* Private */,
+      21,    0,  262,    2, 0x08,   22 /* Private */,
+      22,    1,  263,    2, 0x08,   23 /* Private */,
+      24,    1,  266,    2, 0x08,   25 /* Private */,
+      25,    0,  269,    2, 0x08,   27 /* Private */,
+      26,    0,  270,    2, 0x08,   28 /* Private */,
+      27,    0,  271,    2, 0x08,   29 /* Private */,
+      28,    0,  272,    2, 0x08,   30 /* Private */,
+      29,    0,  273,    2, 0x08,   31 /* Private */,
+      30,    0,  274,    2, 0x08,   32 /* Private */,
+      31,    1,  275,    2, 0x08,   33 /* Private */,
+      32,    1,  278,    2, 0x08,   35 /* Private */,
+      33,    1,  281,    2, 0x08,   37 /* Private */,
+      34,    1,  284,    2, 0x08,   39 /* Private */,
+      35,    1,  287,    2, 0x08,   41 /* Private */,
+      36,    1,  290,    2, 0x08,   43 /* Private */,
+      37,    1,  293,    2, 0x08,   45 /* Private */,
+      38,    1,  296,    2, 0x08,   47 /* Private */,
+      39,    1,  299,    2, 0x08,   49 /* Private */,
+      42,    0,  302,    2, 0x08,   51 /* Private */,
+      43,    0,  303,    2, 0x08,   52 /* Private */,
+      44,    1,  304,    2, 0x08,   53 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -271,12 +312,21 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSQuadcopter_MainWindowENDCLASS[] 
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 29,   30,
-    QMetaType::Void, 0x80000000 | 32,   23,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::QJsonObject,   35,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, QMetaType::Int,   23,
+    QMetaType::Void, 0x80000000 | 40,   41,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QJsonObject,   45,
 
        0        // eod
 };
@@ -341,21 +391,46 @@ Q_CONSTINIT const QMetaObject Quadcopter_MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'ButtonCameraShutter'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'QuadcopterPanelInit'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'QuadcopterParamInit'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'ClockInit'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'UpdateValueTemperature'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateValueHumidity'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateValuePressure'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateValueBattery'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateValueDisplacement'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateValueSpeed'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateValueHeight'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'UpdateGeoPos'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
         // method 'UpdateDroneIndex'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<uint8_t, std::false_type>,
-        // method 'UpdateBatteryLevel'
+        // method 'ClockUpdate'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<uint16_t, std::false_type>,
-        // method 'QuadcopterParamInit'
+        // method 'KeyboardTimerUpdate'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'QuadcopterParamUpdate'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<QJsonObject, std::false_type>,
-        // method 'ClockInit'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'ClockUpdate'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>
+        QtPrivate::TypeAndForceComplete<QJsonObject, std::false_type>
     >,
     nullptr
 } };
@@ -388,12 +463,21 @@ void Quadcopter_MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         case 19: _t->DroneSelectNext(); break;
         case 20: _t->DroneSelectPrevious(); break;
         case 21: _t->ButtonCameraShutter(); break;
-        case 22: _t->UpdateDroneIndex((*reinterpret_cast< std::add_pointer_t<uint8_t>>(_a[1]))); break;
-        case 23: _t->UpdateBatteryLevel((*reinterpret_cast< std::add_pointer_t<uint16_t>>(_a[1]))); break;
-        case 24: _t->QuadcopterParamInit(); break;
-        case 25: _t->QuadcopterParamUpdate((*reinterpret_cast< std::add_pointer_t<QJsonObject>>(_a[1]))); break;
-        case 26: _t->ClockInit(); break;
-        case 27: _t->ClockUpdate(); break;
+        case 22: _t->QuadcopterPanelInit(); break;
+        case 23: _t->QuadcopterParamInit(); break;
+        case 24: _t->ClockInit(); break;
+        case 25: _t->UpdateValueTemperature((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 26: _t->UpdateValueHumidity((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 27: _t->UpdateValuePressure((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 28: _t->UpdateValueBattery((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 29: _t->UpdateValueDisplacement((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 30: _t->UpdateValueSpeed((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 31: _t->UpdateValueHeight((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 32: _t->UpdateGeoPos((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 33: _t->UpdateDroneIndex((*reinterpret_cast< std::add_pointer_t<uint8_t>>(_a[1]))); break;
+        case 34: _t->ClockUpdate(); break;
+        case 35: _t->KeyboardTimerUpdate(); break;
+        case 36: _t->QuadcopterParamUpdate((*reinterpret_cast< std::add_pointer_t<QJsonObject>>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -450,13 +534,13 @@ int Quadcopter_MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 28)
+        if (_id < 37)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 28;
+        _id -= 37;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 28)
+        if (_id < 37)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 28;
+        _id -= 37;
     }
     return _id;
 }
