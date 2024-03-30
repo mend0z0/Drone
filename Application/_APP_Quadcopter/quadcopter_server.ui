@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>quadcopter_server</class>
+ <widget class="QDialog" name="quadcopter_server">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_Close">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>430</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>80</y>
+     <width>261</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="horizontalSpacing">
+       <number>18</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_mqttHostName">
+        <property name="text">
+         <string>Hostname: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_mqttHostName"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_2" columnstretch="0,0" columnminimumwidth="5,0">
+      <property name="horizontalSpacing">
+       <number>50</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>16</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_mqttPort">
+        <property name="text">
+         <string>Port: </string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_mqttPort"/>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="horizontalSpacing">
+       <number>20</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>7</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_mqttUsername">
+        <property name="text">
+         <string>Username:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_mqttUsername"/>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="horizontalSpacing">
+       <number>23</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_mqttPassword">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_mqttPassword">
+        <property name="text">
+         <string>Password:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_UDPConnection">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>381</y>
+     <width>261</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_mqttConnect_Disconnect">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>202</y>
+     <width>261</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_LoRaWANSetting">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>31</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(218, 218, 218);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;LoRaWAN Setting&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_UDPSetting">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>261</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(218, 218, 218);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;UDP Setting&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_MQTTSetting">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>31</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(218, 218, 218);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;MQTT Setting&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>25</x>
+     <y>311</y>
+     <width>261</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_9">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_5">
+      <property name="horizontalSpacing">
+       <number>20</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_UDPHostIP">
+        <property name="text">
+         <string>Host IP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_ValueUDPHostIP"/>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="gridLayout_6">
+      <property name="horizontalSpacing">
+       <number>33</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_UDPPort">
+        <property name="text">
+         <string>Port:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_ValueUDPPort"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_MQTTGif">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>80</y>
+     <width>110</width>
+     <height>110</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_UDPGif">
+   <property name="geometry">
+    <rect>
+     <x>114</x>
+     <y>307</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
