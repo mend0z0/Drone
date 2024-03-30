@@ -36,9 +36,7 @@ Quadcopter_MainWindow::Quadcopter_MainWindow(QWidget *parent)
     qcopter.PixmapButtonOff.load("D:/Projects/STP/Quadcopter/Application/Resources/Textures/Circle_Empty.png");
     qcopter.compasOnSpot.load("D:/Projects/STP/Quadcopter/Application/Resources/Icons/GeoPosLighting.png");
 
-    QuadcopterPanelInit();
-    ClockInit();
-    QuadcopterParamInit();
+
     qcopterGeneralTimer->start(500);
     qcopterButtonTimer->start(100); // 100 miliseconds
     qcopterKeyboardTimer->start(1000);
@@ -110,9 +108,9 @@ void Quadcopter_MainWindow::Quadcopter_MainWindow::keyPressEvent(QKeyEvent *inpu
 
 }
 
-void Quadcopter_MainWindow::MQTTConsole()
+void Quadcopter_MainWindow::ServerConsole()
 {
-    qcopterConsole->ObjectsInit();
+    qcopterConsole->ServerParamInit();
     qcopterConsole->setModal(true);
     qcopterConsole->exec();
 }
@@ -122,7 +120,7 @@ void Quadcopter_MainWindow::MQTTReceivedMsgGeneral(QMqttMessage msg)
     QString tempMsg;
     qcopter.time = QDateTime::currentDateTime();
 
-    qcopter.txtPanelFormatGeneral.setFont(QFont("Courier"));
+    qcopter.txtPanelFormatGeneral.setFont(QFont("Helvetica"));
     qcopter.txtPanelFormatGeneral.setFontLetterSpacing(fontLetterSpacing);
     qcopter.txtPanelFormatGeneral.setFontPointSize(fontPointSize);
     qcopter.txtBrush.setColor(QColor(255,255,255));
@@ -143,7 +141,7 @@ void Quadcopter_MainWindow::MQTTReceivedMsgStatus(QMqttMessage msg)
     QByteArray tempJsonDataInput = msg.payload();
     qcopter.time = QDateTime::currentDateTime();
 
-    qcopter.txtPanelFormatStatus.setFont(QFont("Courier"));
+    qcopter.txtPanelFormatStatus.setFont(QFont("Helvetica"));
     qcopter.txtPanelFormatStatus.setFontLetterSpacing(fontLetterSpacing);
     qcopter.txtPanelFormatStatus.setFontPointSize(fontPointSize);
     qcopter.txtBrush.setColor(QColor(74, 148, 0));
@@ -166,7 +164,7 @@ void Quadcopter_MainWindow::MQTTReceivedMsgCommand(QMqttMessage msg)
     QString tempMsg;
     qcopter.time = QDateTime::currentDateTime();
 
-    qcopter.txtPanelFormatCommand.setFont(QFont("Courier"));
+    qcopter.txtPanelFormatCommand.setFont(QFont("Helvetica"));
     qcopter.txtPanelFormatCommand.setFontLetterSpacing(fontLetterSpacing);
     qcopter.txtPanelFormatCommand.setFontPointSize(fontPointSize);
     qcopter.txtBrush.setColor(QColor(255,0,0));
@@ -202,10 +200,10 @@ void Quadcopter_MainWindow::MQTTUpdateServerStatus(bool status)
     if(status)
     {
         ui->label_StatusMQTTServer->setText("CONNECTED");
-        ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(0, 200, 0);"
+        ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(0, 200, 25);"
                                                   "border-radius: 10px;"
                                                   "alignment: center-aligned;"
-                                                  "padding: 6px;"
+                                                  "padding: 5px;"
                                                   "font: bold");
         EnablePanel();
     }
@@ -218,6 +216,52 @@ void Quadcopter_MainWindow::MQTTUpdateServerStatus(bool status)
                                                   "padding: 5px;"
                                                   "font: bold");
         DisablePanel();
+    }
+}
+
+void Quadcopter_MainWindow::UDPUpdateConnectionStatus(bool status)
+{
+    qcopter.generalLabelsFont.setPixelSize(14);
+    ui->label_StatusUDPConnection->setFont(qcopter.generalLabelsFont);
+    ui->label_StatusUDPConnection->setAlignment(Qt::AlignCenter);
+    if(status)
+    {
+        ui->label_StatusUDPConnection->setText("ENABLED");
+        ui->label_StatusUDPConnection->setStyleSheet("background-color: rgb(0, 200, 25);"
+                                                  "border-radius: 10px;"
+                                                  "padding: 5px;"
+                                                  "font: bold");
+    }
+    else
+    {
+        ui->label_StatusUDPConnection->setText("DISABLED");
+        ui->label_StatusUDPConnection->setStyleSheet("background-color: rgb(200, 0, 50);"
+                                                  "border-radius: 10px;"
+                                                  "padding: 5px;"
+                                                  "font: bold");
+    }
+}
+
+void Quadcopter_MainWindow::LoRaWANUpdateConnectionStatus(bool status)
+{
+    qcopter.generalLabelsFont.setPixelSize(14);
+    ui->label_StatusLoRaWANServer->setFont(qcopter.generalLabelsFont);
+    ui->label_StatusLoRaWANServer->setAlignment(Qt::AlignCenter);
+    if(status)
+    {
+        ui->label_StatusLoRaWANServer->setText("CONNECTED");
+        ui->label_StatusLoRaWANServer->setStyleSheet("background-color: rgb(0, 200, 25);"
+                                                     "border-radius: 10px;"
+                                                     "padding: 5px;"
+                                                     "font: bold");
+    }
+    else
+    {
+        ui->label_StatusLoRaWANServer->setText("DISCONNECTED");
+        ui->label_StatusLoRaWANServer->setStyleSheet("background-color: rgb(200, 0, 50);"
+                                                     "border-radius: 10px;"
+                                                     "padding: 5px;"
+                                                     "font: bold");
     }
 }
 
@@ -259,7 +303,7 @@ void Quadcopter_MainWindow::ButtonForward( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Forward has been pressed";
 
-    qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
+    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["FORWARD"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -275,7 +319,7 @@ void Quadcopter_MainWindow::ButtonReverse( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Reverse has been pressed";
 
-    qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
+    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["REVERSE"]=0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -291,7 +335,7 @@ void Quadcopter_MainWindow::ButtonLeft( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Left has been pressed";
 
-    qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
+    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["LEFT"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -307,7 +351,7 @@ void Quadcopter_MainWindow::ButtonRight( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Right has been pressed";
 
-    qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
+    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["RIGHT"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -594,12 +638,12 @@ void Quadcopter_MainWindow::GeologicalPosition( int value )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Compass Degree" << value;
 
-    qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
+    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
 }
 
 void Quadcopter_MainWindow::Throttle(int value)
 {
-    ui->lcdNumber_ValueThrottleValue->display(value);
+    ui->lcdNumber_ValueThrottle->display(value);
     ui->verticalSlider_Throttle->setValue(value);
 
     qcopter.jsonObjCommand["ELEVATE"] = value;
@@ -608,7 +652,7 @@ void Quadcopter_MainWindow::Throttle(int value)
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Height" << value << "cm";
 
-    qcopterConsole->mqttSendMsg(qcopter.jsonDocCommand.toJson());
+    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
 }
 
 void Quadcopter_MainWindow::DroneSelectNext()
@@ -646,6 +690,37 @@ void Quadcopter_MainWindow::ButtonCameraShutter()
     qDebug() << "Shutter Camera has been pressed";
 }
 
+void Quadcopter_MainWindow::DroneDisplayCamera(QByteArray *data, QHostAddress *host, quint16 *port)
+{
+    qDebug() << data;
+    UpdateDroneIPV4( host->toString());
+}
+
+void Quadcopter_MainWindow::SaveLogFile()
+{
+    QString defaultFileName = "../qcopter log - ";
+    qcopter.time = QDateTime::currentDateTime();
+    defaultFileName.append(qcopter.time.toString("dd.MM.yyyy - HH.mm.ss"));
+    QString filename = QFileDialog::getSaveFileName( this, tr("Save File"), defaultFileName, tr("Text Files(*.txt)"));
+
+    if(filename.isEmpty())
+    {
+        return;
+    }
+
+    QFile file(filename);
+    if(!file.open(QIODevice::WriteOnly))
+    {
+        QMessageBox::information(this, tr("Unable to open file"), file.errorString());
+        return;
+    }
+
+    QTextStream out(&file);
+
+    out << ui->plainTextEdit_LogPanel->toPlainText();
+    LogPanelInit();
+}
+
 void Quadcopter_MainWindow::QuadcopterPanelInit()
 {
     //init all the text fonts size and shape and color!
@@ -654,124 +729,128 @@ void Quadcopter_MainWindow::QuadcopterPanelInit()
     ui->label_MQTTServer->setFont(qcopter.generalLabelsFont);
     ui->label_MQTTServer->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
-
-    ui->label_StatusMQTTServer->setFont(qcopter.generalLabelsFont);
-    ui->label_StatusMQTTServer->setStyleSheet("background-color: rgb(200, 0, 50);"
+    
+    
+    ui->label_ApplicationIPV4->setFont(qcopter.generalLabelsFont);
+    ui->label_ApplicationIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
-
-    ui->label_ApplicationIP->setFont(qcopter.generalLabelsFont);
-    ui->label_ApplicationIP->setStyleSheet("background-color: rgb(232, 233, 235);"
+    
+    ui->label_ValueApplicationIPV4->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueApplicationIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
-
-    ui->label_ValueApplicationIPAddress->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueApplicationIPAddress->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "alignment: center-aligned;"
-                                              "padding: 5px;");
+    ui->label_ValueApplicationIPV4->setAlignment(Qt::AlignCenter);
+    ui->label_ValueApplicationIPV4->setText("---.---.---.---");
 
     ui->label_LoRaWANServer->setFont(qcopter.generalLabelsFont);
     ui->label_LoRaWANServer->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
-    ui->label_StatusLoRaWANServer->setFont(qcopter.generalLabelsFont);
-    ui->label_StatusLoRaWANServer->setStyleSheet("background-color: rgb(200, 0, 50);"
-                                              "border-radius: 10px;"
-                                              "alignment: center-aligned;"
-                                              "padding: 5px;");
-    ui->label_StatusLoRaWANServer->setText("DISCONNECTED");
+    LoRaWANUpdateConnectionStatus(false);
 
     ui->label_LoRaWANFrequency->setFont(qcopter.generalLabelsFont);
     ui->label_LoRaWANFrequency->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_ValueLoRaWANFrequency->setFont(qcopter.generalLabelsFont);
     ui->label_ValueLoRaWANFrequency->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
+                                              "padding: 5px;");
+    ui->label_ValueLoRaWANFrequency->setAlignment(Qt::AlignCenter);
+    ui->label_ValueLoRaWANFrequency->setText("---.-- MHz");
+
+    ui->label_UDPConnection->setFont(qcopter.generalLabelsFont);
+    ui->label_UDPConnection->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                                   "border-radius: 10px;"
+                                                   "padding: 5px;");
+
+    UDPUpdateConnectionStatus(false);
+
+    ui->label_DroneIndex->setFont(qcopter.generalLabelsFont);
+    ui->label_DroneIndex->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                              "border-radius: 10px;"
                                               "padding: 5px;");
 
-    ui->label_ActiveDrone->setFont(qcopter.generalLabelsFont);
-    ui->label_ActiveDrone->setStyleSheet("background-color: rgb(232, 233, 235);"
+    ui->label_ValueDroneIndex->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueDroneIndex->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
-                                              "padding: 5px;");
-
-    ui->label_ValueActiveDrone->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueActiveDrone->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_DroneType->setFont(qcopter.generalLabelsFont);
     ui->label_DroneType->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_ValueDroneType->setFont(qcopter.generalLabelsFont);
     ui->label_ValueDroneType->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
+
+    ui->label_DroneIPV4->setFont(qcopter.generalLabelsFont);
+    ui->label_DroneIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                            "border-radius: 10px;"
+                                            "padding: 5px;");
+
+    UpdateDroneIPV4("");
 
     ui->label_Pressure->setFont(qcopter.generalLabelsFont);
     ui->label_Pressure->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_Temperature->setFont(qcopter.generalLabelsFont);
     ui->label_Temperature->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_Humedity->setFont(qcopter.generalLabelsFont);
     ui->label_Humedity->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_Speed->setFont(qcopter.generalLabelsFont);
     ui->label_Speed->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_Displacement->setFont(qcopter.generalLabelsFont);
     ui->label_Displacement->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
     ui->label_Height->setFont(qcopter.generalLabelsFont);
     ui->label_Height->setStyleSheet("background-color: rgb(232, 233, 235);"
                                               "border-radius: 10px;"
-                                              "alignment: center-aligned;"
                                               "padding: 5px;");
 
-    ui->plainTextEdit_LogPanel->setPlainText("Log panel --> \r\n");
+    ui->verticalSlider_Throttle->setValue(0);
+    ui->lcdNumber_ValueThrottle->display(0);
+
+    LogPanelInit();
 }
 
 void Quadcopter_MainWindow::UpdateDroneIndex(uint8_t index)
 {
     qcopter.generalLabelsFont.setPixelSize(14);
-    ui->label_ValueActiveDrone->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueActiveDrone->setText(QString::number(index) + "/99");
+    ui->label_ValueDroneIndex->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueDroneIndex->setText(QString::number(index) + "/99");
     qcopter.jsonObjStatus["QCOPTER"] = qcopter.index;
     qcopter.jsonDocStatus.setObject(qcopter.jsonObjStatus);
     qcopter.jsonObjCommand["QCOPTER"] = qcopter.index;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjStatus);
+}
+
+void Quadcopter_MainWindow::UpdateDroneIPV4(QString ipv4)
+{
+    ui->label_ValueDroneIPV4->setFont(qcopter.generalLabelsFont);
+    ui->label_ValueDroneIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
+                                      "border-radius: 10px;"
+                                      "padding: 5px;");
+    ui->label_ValueDroneIPV4->setText(ipv4);
 }
 
 void Quadcopter_MainWindow::QuadcopterParamInit()
@@ -908,6 +987,22 @@ void Quadcopter_MainWindow::ClockInit()
     ui->label_Time->setAlignment(Qt::AlignCenter);
     qcopter.time = QDateTime::currentDateTime();
     ui->label_Time->setText(qcopter.time.toString("HH:mm:ss"));
+}
+
+void Quadcopter_MainWindow::LogPanelInit()
+{
+    ui->plainTextEdit_LogPanel->setReadOnly(true);
+    qcopter.time = QDateTime::currentDateTime();
+    QString tempString = "Log panel (" + qcopter.time.toString("dd/MM/yyyy - HH:mm:ss") + ") --> \r\n\n";
+    qcopter.txtPanelFormatGeneral.setFont(QFont("Helvetica"));
+    qcopter.txtPanelFormatGeneral.setFontLetterSpacing(fontLetterSpacing);
+    qcopter.txtPanelFormatGeneral.setFontPointSize(fontPointSize);
+    qcopter.txtBrush.setColor(QColor(0,0,0));
+    qcopter.txtPanelFormatGeneral.setTextOutline(qcopter.txtBrush);
+    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatGeneral);
+
+    ui->plainTextEdit_LogPanel->clear();
+    ui->plainTextEdit_LogPanel->appendPlainText(tempString);
 }
 
 void Quadcopter_MainWindow::ClockUpdate()
@@ -1082,7 +1177,9 @@ void Quadcopter_MainWindow::UpdateGeoPos(int value)
 
 void Quadcopter_MainWindow::ConnectFunctions()
 {
-    connect(ui->pushButton_ServerSetting, SIGNAL(clicked(bool)), this, SLOT(MQTTConsole()));
+    connect(ui->pushButton_ServerSetting, SIGNAL(clicked(bool)), this, SLOT(ServerConsole()));
+    connect(ui->pushButton_SaveLogFile, SIGNAL(clicked(bool)), this, SLOT(SaveLogFile()));
+    connect(qcopterConsole, SIGNAL(QCopter_ApplicationIPV4(QString)), ui->label_ValueApplicationIPV4, SLOT(setText(QString)));
 
     connect(ui->pushButton_MoveForward, SIGNAL(pressed()), this, SLOT(ButtonReadEnable()));
     connect(ui->pushButton_MoveReverse, SIGNAL(pressed()), this, SLOT(ButtonReadEnable()));
@@ -1106,6 +1203,9 @@ void Quadcopter_MainWindow::ConnectFunctions()
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgStatus(QMqttMessage)), this, SLOT(MQTTReceivedMsgStatus(QMqttMessage)));
     connect(qcopterConsole, SIGNAL(QCopter_NewMsgCommand(QMqttMessage)), this, SLOT(MQTTReceivedMsgCommand(QMqttMessage)));
     connect(qcopterConsole, SIGNAL(QCopter_MQTTServerStatus(bool)), this, SLOT(MQTTUpdateServerStatus(bool)));
+
+    connect(qcopterConsole, SIGNAL(QCopter_UDPUpdateState(bool)), this, SLOT(UDPUpdateConnectionStatus(bool)));
+    connect(qcopterConsole, SIGNAL(QCopter_UDPNewData(QByteArray*,QHostAddress*,quint16*)), this, SLOT(DroneDisplayCamera(QByteArray*,QHostAddress*,quint16*)));
 }
 
 void Quadcopter_MainWindow::EnablePanel()
@@ -1123,14 +1223,19 @@ void Quadcopter_MainWindow::EnablePanel()
     //ui->label_CompasOnSpot->setEnabled(true);
     ui->label_CompasOnSpot->setHidden(true);
 
-    ui->lcdNumber_ValueThrottleValue->setEnabled(true);
+    ui->lcdNumber_ValueThrottle->setEnabled(true);
     ui->lcdNumber_ValuePressure->setEnabled(true);
     ui->lcdNumber_ValueDisplacement->setEnabled(true);
     ui->lcdNumber_ValueHeight->setEnabled(true);
     ui->lcdNumber_ValueSpeed->setEnabled(true);
     ui->lcdNumber_ValueTemperature->setEnabled(true);
 
-    ui->label_ValueActiveDrone->setEnabled(true);
+    ui->label_ValueDroneIndex->setEnabled(true);
+    ui->label_ValueDroneType->setEnabled(true);
+
+    ui->pushButton_DroneCameraSnapshot->setEnabled(true);
+    ui->pushButton_DroneSelectNext->setEnabled(true);
+    ui->pushButton_DroneSelectPrevious->setEnabled(true);
 
     qcopter.lockPanel = false;
 }
@@ -1150,16 +1255,30 @@ void Quadcopter_MainWindow::DisablePanel()
     ui->label_CompassOff->setDisabled(true);
     ui->label_CompasOnSpot->setHidden(true);
 
-    ui->lcdNumber_ValueThrottleValue->setDisabled(true);
+    ui->lcdNumber_ValueThrottle->setDisabled(true);
     ui->lcdNumber_ValuePressure->setDisabled(true);
     ui->lcdNumber_ValueDisplacement->setDisabled(true);
     ui->lcdNumber_ValueHeight->setDisabled(true);
     ui->lcdNumber_ValueSpeed->setDisabled(true);
     ui->lcdNumber_ValueTemperature->setDisabled(true);
 
-    ui->label_ValueActiveDrone->setDisabled(true);
+    ui->label_ValueDroneIndex->setDisabled(true);
+    ui->label_ValueDroneType->setDisabled(true);
+
+    ui->pushButton_DroneCameraSnapshot->setDisabled(true);
+    ui->pushButton_DroneSelectNext->setDisabled(true);
+    ui->pushButton_DroneSelectPrevious->setDisabled(true);
+
+    InitFunctions();
 
     qcopter.lockPanel = true;
+}
+
+void Quadcopter_MainWindow::InitFunctions()
+{
+    QuadcopterPanelInit();
+    ClockInit();
+    QuadcopterParamInit();
 }
 
 void Quadcopter_MainWindow::NoisyTVGifControl(bool cmd, uint8_t screenNumber)
