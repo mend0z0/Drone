@@ -14,16 +14,16 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mqttclient.cpp \
-    quadcopter_mainwindow.cpp
+    quadcopter_mainwindow.cpp \
+    quadcopter_server.cpp
 
 HEADERS += \
-    mqttclient.h \
-    quadcopter_mainwindow.h
+    quadcopter_mainwindow.h \
+    quadcopter_server.h
 
 FORMS += \
-    mqttclient.ui \
-    quadcopter_mainwindow.ui
+    quadcopter_mainwindow.ui \
+    quadcopter_server.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
