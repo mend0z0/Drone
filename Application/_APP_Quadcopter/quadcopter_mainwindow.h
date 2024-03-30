@@ -12,7 +12,7 @@
 #include <QFont>
 #include <QPalette>
 #include <QColor>
-#include <mqttclient.h>
+#include <quadcopter_server.h>
 #include <QMovie>
 #include <QJsonObject>
 #include <QJsonDocument>
@@ -27,6 +27,8 @@
 #include <QKeyEvent>
 #include <QTransform>
 #include <QPainter>
+#include <QFileDevice>
+#include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
@@ -46,12 +48,17 @@ protected:
     void keyPressEvent(QKeyEvent *inputCmd);
 
 private slots:
-    void MQTTConsole(void);
+    void ServerConsole(void);
+
     void MQTTReceivedMsgGeneral(QMqttMessage msg);
     void MQTTReceivedMsgStatus(QMqttMessage msg);
     void MQTTReceivedMsgCommand(QMqttMessage msg);
     void MQTTSentMsg(QMqttMessage msg);
     void MQTTUpdateServerStatus( bool status );
+
+    void UDPUpdateConnectionStatus( bool status );
+
+    void LoRaWANUpdateConnectionStatus( bool status );
 
     void ButtonReadDisable( void );
     void ButtonReadEnable( void );
@@ -72,10 +79,14 @@ private slots:
     void DroneSelectNext( void );
     void DroneSelectPrevious( void );
     void ButtonCameraShutter( void );
+    void DroneDisplayCamera( QByteArray *data, QHostAddress *host = nullptr, quint16 *port = nullptr);
+
+    void SaveLogFile( void );
 
     void QuadcopterPanelInit( void );
     void QuadcopterParamInit( void );
     void ClockInit( void );
+    void LogPanelInit( void );
 
     void UpdateValueTemperature( int value );
     void UpdateValueHumidity( int value );
@@ -87,6 +98,7 @@ private slots:
     void UpdateGeoPos( int value );
 
     void UpdateDroneIndex( uint8_t index );
+    void UpdateDroneIPV4( QString ipv4 );
 
     void ClockUpdate( void );
     void KeyboardTimerUpdate( void );
@@ -97,9 +109,9 @@ private:
     Ui::Quadcopter_MainWindow *ui;
 
     const qreal fontPointSize = 8;
-    const qreal fontLetterSpacing = (fontPointSize * 12);
+    const qreal fontLetterSpacing = (fontPointSize * 16);
 
-    MQTTClient *qcopterConsole = new MQTTClient();
+    quadcopter_server *qcopterConsole = new quadcopter_server();
     QMovie  *lostConnectionGif = new QMovie(this);
     QTimer *qcopterGeneralTimer = new QTimer(this);
     QTimer *qcopterButtonTimer = new QTimer(this);
@@ -109,6 +121,7 @@ private:
     void DisconnectFunctions( void );
     void EnablePanel( void );
     void DisablePanel( void );
+    void InitFunctions( void );
 
     void NoisyTVGifControl( bool cmd, uint8_t screenNumber);
 
