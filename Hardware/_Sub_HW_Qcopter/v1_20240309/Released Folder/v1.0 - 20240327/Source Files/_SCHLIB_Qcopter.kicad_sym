@@ -14077,7 +14077,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "XOR (Exclusive OR) IC 1 Channel SC-70-5"
+		(property "Description" "Flip Flop 1 Element D-Type 1 Bit Positive Edge 5-TSSOP, SC-70-5, SOT-353"
 			(at 3.556 13.97 0)
 			(effects
 				(font
