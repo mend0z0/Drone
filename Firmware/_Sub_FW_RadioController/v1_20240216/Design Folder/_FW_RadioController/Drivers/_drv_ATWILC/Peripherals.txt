@@ -1,0 +1,7 @@
+RCC
+DMA
+GPIO
+
+SPI (Master)<-> DMA (Goes to ATWILC)
+
+I2C (Master)<-> DMA (Goes to ATWILC)

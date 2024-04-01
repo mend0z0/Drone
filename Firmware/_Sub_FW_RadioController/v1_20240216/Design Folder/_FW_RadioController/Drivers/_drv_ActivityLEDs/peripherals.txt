@@ -1,0 +1,3 @@
+RCC
+GPIO
+TIMx (3xPWM) <->  (Goes to the LEDs)

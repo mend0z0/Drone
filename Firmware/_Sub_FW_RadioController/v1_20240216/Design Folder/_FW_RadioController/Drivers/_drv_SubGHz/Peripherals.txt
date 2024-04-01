@@ -1,0 +1,7 @@
+PWR
+RCC
+GPIO
+
+Sub gigHx <-> DMA (Will be used for LoRaWAN)
+
+Not quite sure for how to init this part...!
