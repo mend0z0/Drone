@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPlainTextEdit" name="plainTextEdit">
+  <widget class="QPlainTextEdit" name="plainTextEdit_SerialInput">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -180,12 +180,12 @@
     <string>Parity:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_Connection">
    <property name="geometry">
     <rect>
      <x>460</x>
      <y>290</y>
-     <width>80</width>
+     <width>170</width>
      <height>30</height>
     </rect>
    </property>
@@ -193,7 +193,7 @@
     <string>Connect</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_Pause">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -206,7 +206,7 @@
     <string>Pause</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="pushButton_ClearInput">
    <property name="geometry">
     <rect>
      <x>550</x>
@@ -219,12 +219,12 @@
     <string>Clear</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="pushButton_Save">
    <property name="geometry">
     <rect>
      <x>460</x>
      <y>370</y>
-     <width>171</width>
+     <width>170</width>
      <height>30</height>
     </rect>
    </property>
@@ -232,7 +232,7 @@
     <string>Save</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="pushButton_SendCMD">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -245,7 +245,7 @@
     <string>Send CMD</string>
    </property>
   </widget>
-  <widget class="QPlainTextEdit" name="plainTextEdit_2">
+  <widget class="QPlainTextEdit" name="plainTextEdit_SerialCommand">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -253,6 +253,9 @@
      <width>440</width>
      <height>30</height>
     </rect>
+   </property>
+   <property name="whatsThis">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;Type your command&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_DEBUGModeConsole">
@@ -306,20 +309,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
-   <property name="geometry">
-    <rect>
-     <x>550</x>
-     <y>290</y>
-     <width>80</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Default</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="pushButton_ClearCMD">
    <property name="geometry">
     <rect>
      <x>550</x>
