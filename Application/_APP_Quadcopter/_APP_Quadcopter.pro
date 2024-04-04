@@ -13,15 +13,18 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    debug_console.cpp \
     main.cpp \
     quadcopter_mainwindow.cpp \
     quadcopter_server.cpp
 
 HEADERS += \
+    debug_console.h \
     quadcopter_mainwindow.h \
     quadcopter_server.h
 
 FORMS += \
+    debug_console.ui \
     quadcopter_mainwindow.ui \
     quadcopter_server.ui
 
