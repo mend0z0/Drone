@@ -11,6 +11,7 @@
 #include <QDateTime>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QTimer>
 
 namespace Ui {
 class debug_console;
@@ -32,9 +33,12 @@ public slots:
 
 private slots:
 
+    void ShowSerialPortErrors( QSerialPort::SerialPortError );
+
     void SerialPortDataRead( void );
 
-    void SetSerialPort( int index );
+    void CheckAvailabePorts( void );
+    void SetPortName(int index);
     void SetBaudRate( int index );
     void SetNBits( int index );
     void SetParity( int index );
@@ -53,9 +57,20 @@ private:
     Ui::debug_console *ui;
 
     QSerialPort *debugSerialPort = new QSerialPort(this);
+    QSerialPortInfo debugSerialPortInfo;
+    QMessageBox *debugModeMessageBox =  new QMessageBox( this );
+    QTimer *serialSpecUpdate = new QTimer(this);
 
     void DebugModeParamInit( void );
     void DebugModeConnectingFunctions( void );
+
+    struct{
+        QString portName;
+        qint32 baudrate;
+        QSerialPort::DataBits dataBits;
+        QSerialPort::StopBits stopBits;
+        QSerialPort::Parity parity;
+    }serial_spec;
 
 };
 

@@ -34,6 +34,11 @@
    </property>
    <item>
     <property name="text">
+     <string>1200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>2400</string>
     </property>
    </item>
@@ -59,12 +64,12 @@
    </item>
    <item>
     <property name="text">
-     <string>115200</string>
+     <string>57600</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>230400</string>
+     <string>115200</string>
     </property>
    </item>
   </widget>
@@ -79,17 +84,22 @@
    </property>
    <item>
     <property name="text">
+     <string>5 bits</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>6 bits</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>7 bits</string>
     </property>
    </item>
    <item>
     <property name="text">
      <string>8 bits</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>9 bits</string>
     </property>
    </item>
   </widget>
@@ -118,7 +128,7 @@
     </property>
    </item>
   </widget>
-  <widget class="QComboBox" name="comboBox_OptionsSerialPort">
+  <widget class="QComboBox" name="comboBox_OptionsPortName">
    <property name="geometry">
     <rect>
      <x>550</x>
@@ -128,7 +138,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLabel" name="label_SerialPort">
+  <widget class="QLabel" name="label_PortName">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -138,7 +148,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Serial port:</string>
+    <string>Port Name:</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_BaudRate">
@@ -173,7 +183,7 @@
      <x>460</x>
      <y>190</y>
      <width>63</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -284,7 +294,7 @@
     <string>Stop Bit:</string>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBox_StopBit">
+  <widget class="QComboBox" name="comboBox_OpetionsStopBit">
    <property name="geometry">
     <rect>
      <x>550</x>
@@ -300,12 +310,12 @@
    </item>
    <item>
     <property name="text">
-     <string>1.5 bit</string>
+     <string>2 bits</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>2 bits</string>
+     <string>1.5 bit</string>
     </property>
    </item>
   </widget>
