@@ -115,6 +115,18 @@ void Quadcopter_MainWindow::ServerConsole()
     qcopterConsole->exec();
 }
 
+void Quadcopter_MainWindow::FCTRLDebugConsole()
+{
+    fctrlDebugConsol->setModal(true);
+    fctrlDebugConsol->exec();
+}
+
+void Quadcopter_MainWindow::RCTRLDebugConsole()
+{
+    rctrlDebugConsol->setModal(true);
+    rctrlDebugConsol->exec();
+}
+
 void Quadcopter_MainWindow::MQTTReceivedMsgGeneral(QMqttMessage msg)
 {
     QString tempMsg;
@@ -1206,6 +1218,9 @@ void Quadcopter_MainWindow::ConnectFunctions()
 
     connect(qcopterConsole, SIGNAL(QCopter_UDPUpdateState(bool)), this, SLOT(UDPUpdateConnectionStatus(bool)));
     connect(qcopterConsole, SIGNAL(QCopter_UDPNewData(QByteArray*,QHostAddress*,quint16*)), this, SLOT(DroneDisplayCamera(QByteArray*,QHostAddress*,quint16*)));
+
+    connect(ui->pushButton_FCTRLDebugMode, SIGNAL(clicked(bool)), this, SLOT(FCTRLDebugConsole()));
+    connect(ui->pushButton_RCTRLDebugMode, SIGNAL(clicked(bool)), this, SLOT(RCTRLDebugConsole()));
 }
 
 void Quadcopter_MainWindow::EnablePanel()

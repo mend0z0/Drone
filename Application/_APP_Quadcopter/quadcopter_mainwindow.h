@@ -12,7 +12,6 @@
 #include <QFont>
 #include <QPalette>
 #include <QColor>
-#include <quadcopter_server.h>
 #include <QMovie>
 #include <QJsonObject>
 #include <QJsonDocument>
@@ -29,6 +28,9 @@
 #include <QPainter>
 #include <QFileDevice>
 #include <QFileDialog>
+
+#include <quadcopter_server.h>
+#include <debug_console.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
@@ -49,6 +51,8 @@ protected:
 
 private slots:
     void ServerConsole(void);
+    void FCTRLDebugConsole(void);
+    void RCTRLDebugConsole(void);
 
     void MQTTReceivedMsgGeneral(QMqttMessage msg);
     void MQTTReceivedMsgStatus(QMqttMessage msg);
@@ -112,6 +116,9 @@ private:
     const qreal fontLetterSpacing = (fontPointSize * 16);
 
     quadcopter_server *qcopterConsole = new quadcopter_server();
+    debug_console *fctrlDebugConsol = new debug_console();
+    debug_console *rctrlDebugConsol = new debug_console();
+
     QMovie  *lostConnectionGif = new QMovie(this);
     QTimer *qcopterGeneralTimer = new QTimer(this);
     QTimer *qcopterButtonTimer = new QTimer(this);

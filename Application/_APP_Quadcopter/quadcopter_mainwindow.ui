@@ -461,6 +461,9 @@ color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_Logo">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>1100</x>
@@ -1821,7 +1824,7 @@ color: rgb(255, 255, 255);</string>
         <widget class="QLCDNumber" name="lcdNumber_ValueHeight"/>
        </item>
        <item row="3" column="1">
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="pushButton_FCTRLDebugMode">
          <property name="text">
           <string>FCTLR DEBUG Mode</string>
          </property>
@@ -1992,7 +1995,7 @@ color: rgb(255, 255, 255);</string>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="pushButton_RCTRLDebugMode">
          <property name="text">
           <string>RCTLR DEBUG Mode</string>
          </property>
