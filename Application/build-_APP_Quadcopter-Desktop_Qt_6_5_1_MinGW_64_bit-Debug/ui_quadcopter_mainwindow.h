@@ -1,13 +1,11 @@
+#pragma once
 /********************************************************************************
-** Form generated from reading UI file 'quadcopter_mainwindow.ui'
+** Form generated from reading UI file ''
 **
 ** Created by: Qt User Interface Compiler version 6.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
-
-#ifndef UI_QUADCOPTER_MAINWINDOW_H
-#define UI_QUADCOPTER_MAINWINDOW_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -131,7 +129,7 @@ public:
     QLabel *label_Height;
     QLabel *label_Temperature;
     QLCDNumber *lcdNumber_ValueHeight;
-    QPushButton *pushButton_2;
+    QPushButton *pushButton_FCTRLDebugMode;
     QLabel *label_DroneType;
     QLabel *label_ValueDroneIndex;
     QLabel *label_DroneIndex;
@@ -152,7 +150,7 @@ public:
     QLabel *label_StatusUDPConnection;
     QLabel *label_MQTTServer;
     QPushButton *pushButton_ServerSetting;
-    QPushButton *pushButton;
+    QPushButton *pushButton_RCTRLDebugMode;
     QPlainTextEdit *plainTextEdit_LogPanel;
     QPushButton *pushButton_SaveLogFile;
     QSpacerItem *verticalSpacer;
@@ -298,6 +296,7 @@ public:
         graphicsView_Camera0->setFrameShadow(QFrame::Plain);
         label_Logo = new QLabel(centralwidget);
         label_Logo->setObjectName("label_Logo");
+        label_Logo->setEnabled(false);
         label_Logo->setGeometry(QRect(1100, 500, 41, 31));
         label_Logo->setStyleSheet(QString::fromUtf8(""));
         label_Logo->setPixmap(QPixmap(QString::fromUtf8(":/Resources/Logo/MEND0Z0 LOGO_simple.png")));
@@ -709,10 +708,10 @@ public:
 
         gridLayout->addWidget(lcdNumber_ValueHeight, 16, 1, 1, 1);
 
-        pushButton_2 = new QPushButton(layoutWidget);
-        pushButton_2->setObjectName("pushButton_2");
+        pushButton_FCTRLDebugMode = new QPushButton(layoutWidget);
+        pushButton_FCTRLDebugMode->setObjectName("pushButton_2");
 
-        gridLayout->addWidget(pushButton_2, 3, 1, 1, 1);
+        gridLayout->addWidget(pushButton_FCTRLDebugMode, 3, 1, 1, 1);
 
         label_DroneType = new QLabel(layoutWidget);
         label_DroneType->setObjectName("label_DroneType");
@@ -822,10 +821,10 @@ public:
 
         gridLayout_2->addWidget(pushButton_ServerSetting, 1, 0, 1, 1);
 
-        pushButton = new QPushButton(layoutWidget1);
-        pushButton->setObjectName("pushButton");
+        pushButton_RCTRLDebugMode = new QPushButton(layoutWidget1);
+        pushButton_RCTRLDebugMode->setObjectName("pushButton_RCTRLDebugMode");
 
-        gridLayout_2->addWidget(pushButton, 1, 1, 1, 1);
+        gridLayout_2->addWidget(pushButton_RCTRLDebugMode, 1, 1, 1, 1);
 
 
         gridLayout_3->addLayout(gridLayout_2, 3, 0, 1, 2);
@@ -857,7 +856,7 @@ public:
         gridLayout_3->addItem(verticalSpacer_2, 4, 0, 1, 2);
 
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
-        layoutWidget->raise();
+        layoutWidget1->raise();
         label_Camera5_2->raise();
         label_Camera4_2->raise();
         label_Camera3_2->raise();
@@ -880,7 +879,7 @@ public:
         graphicsView_Camera0->raise();
         pushButton_MoveReverse->raise();
         pushButton_MoveRight->raise();
-        layoutWidget->raise();
+        layoutWidget1->raise();
         pushButton_DroneSelectPrevious->raise();
         pushButton_DroneSelectNext->raise();
         label_Time->raise();
@@ -1035,7 +1034,7 @@ public:
         label_ValueDroneType->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">N/A</span></p></body></html>", nullptr));
         label_Height->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Height (cm)</span></p></body></html>", nullptr));
         label_Temperature->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Temperature ('C)</span></p></body></html>", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("Quadcopter_MainWindow", "FCTLR DEBUG Mode", nullptr));
+        pushButton_FCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "FCTLR DEBUG Mode", nullptr));
         label_DroneType->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Type</span></p></body></html>", nullptr));
         label_ValueDroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">0/99</span></p></body></html>", nullptr));
         label_DroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Index</span></p></body></html>", nullptr));
@@ -1052,7 +1051,7 @@ public:
         label_StatusUDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disabled</span></p></body></html>", nullptr));
         label_MQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">MQTT Server</span></p></body></html>", nullptr));
         pushButton_ServerSetting->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Server Setting", nullptr));
-        pushButton->setText(QCoreApplication::translate("Quadcopter_MainWindow", "RCTLR DEBUG Mode", nullptr));
+        pushButton_RCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "RCTLR DEBUG Mode", nullptr));
         plainTextEdit_LogPanel->setPlainText(QString());
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
     } // retranslateUi
@@ -1065,4 +1064,3 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_QUADCOPTER_MAINWINDOW_H

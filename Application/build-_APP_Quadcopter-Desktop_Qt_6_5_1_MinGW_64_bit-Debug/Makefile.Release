@@ -301,6 +301,28 @@ release/moc_debug_console.cpp: ../_APP_Quadcopter/debug_console.h \
 		C:/Qt/6.5.1/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.5.1/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.5.1/mingw_64/include/QtCore/qnativeinterface.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QByteArray \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QString \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QIODevice \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/QSerialPort \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qserialport.h \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qserialportglobal.h \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QDateTime \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QFileDialog \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qdir.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfile.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfiledevice.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfileinfo.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qmessagebox.h \
 		release/moc_predefs.h \
 		C:/Qt/6.5.1/mingw_64/bin/moc.exe
 	C:\Qt\6.5.1\mingw_64\bin\moc.exe $(DEFINES) --include D:/Projects/STP/Quadcopter/Application/build-_APP_Quadcopter-Desktop_Qt_6_5_1_MinGW_64_bit-Debug/release/moc_predefs.h -IC:/Qt/6.5.1/mingw_64/mkspecs/win32-g++ -ID:/Projects/STP/Quadcopter/Application/_APP_Quadcopter -IC:/Qt/6.5.1/mingw_64/include -IC:/Qt/6.5.1/mingw_64/include/QtMultimedia -IC:/Qt/6.5.1/mingw_64/include/QtWidgets -IC:/Qt/6.5.1/mingw_64/include/QtGui -IC:/Qt/6.5.1/mingw_64/include/QtSerialPort -IC:/Qt/6.5.1/mingw_64/include/QtMqtt -IC:/Qt/6.5.1/mingw_64/include/QtNetwork -IC:/Qt/6.5.1/mingw_64/include/QtCore -I. -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -IC:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -IC:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ..\_APP_Quadcopter\debug_console.h -o release\moc_debug_console.cpp
@@ -1033,7 +1055,86 @@ release/debug_console.o: ../_APP_Quadcopter/debug_console.cpp ../_APP_Quadcopter
 		C:/Qt/6.5.1/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.5.1/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.5.1/mingw_64/include/QtCore/qnativeinterface.h \
-		ui_debug_console.h
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QDebug \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QByteArray \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QString \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QIODevice \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/QSerialPort \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qserialport.h \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qserialportglobal.h \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qtserialportexports.h \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/QSerialPortInfo \
+		C:/Qt/6.5.1/mingw_64/include/QtSerialPort/qserialportinfo.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QDateTime \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qdatetime.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qcalendar.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qlocale.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QFileDialog \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qfiledialog.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qdir.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfile.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfiledevice.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfileinfo.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qmessagebox.h \
+		ui_debug_console.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/QVariant \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QApplication \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qapplication.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qcoreapplication.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qeventloop.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qcoreapplication_platform.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfuture.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfutureinterface.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qmutex.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qtsan_impl.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qresultstore.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qfuture_impl.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qthreadpool.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qthread.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qdeadlinetimer.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qelapsedtimer.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qrunnable.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qexception.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qpromise.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qguiapplication.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qinputmethod.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QComboBox \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qcombobox.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qstyleoption.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qvalidator.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qregularexpression.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qslider.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qabstractslider.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qstyle.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qtabbar.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qtabwidget.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qrubberband.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qframe.h \
+		C:/Qt/6.5.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QLabel \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qlabel.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qpicture.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qtextdocument.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QPlainTextEdit \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qplaintextedit.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qtextoption.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qtextcursor.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qtextformat.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qpen.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qtextlayout.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qglyphrun.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qrawfont.h \
+		C:/Qt/6.5.1/mingw_64/include/QtGui/qfontdatabase.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/QPushButton \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qpushbutton.h \
+		C:/Qt/6.5.1/mingw_64/include/QtWidgets/qabstractbutton.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\debug_console.o ..\_APP_Quadcopter\debug_console.cpp
 
 release/main.o: ../_APP_Quadcopter/main.cpp ../_APP_Quadcopter/quadcopter_mainwindow.h \
