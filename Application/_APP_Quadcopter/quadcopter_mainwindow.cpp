@@ -117,12 +117,18 @@ void Quadcopter_MainWindow::ServerConsole()
 
 void Quadcopter_MainWindow::FCTRLDebugConsole()
 {
+    fctrlDebugConsol->debugModeHeader.clear();
+    fctrlDebugConsol->debugModeHeader.append("Flight Controller Debug Console");
+    fctrlDebugConsol->DebugModeParamInit();
     fctrlDebugConsol->setModal(true);
     fctrlDebugConsol->exec();
 }
 
 void Quadcopter_MainWindow::RCTRLDebugConsole()
 {
+    rctrlDebugConsol->debugModeHeader.clear();
+    rctrlDebugConsol->debugModeHeader.append("Radio Controller Debug Console");
+    rctrlDebugConsol->DebugModeParamInit();
     rctrlDebugConsol->setModal(true);
     rctrlDebugConsol->exec();
 }

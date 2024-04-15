@@ -13,6 +13,7 @@
 #include <QMessageBox>
 #include <QTimer>
 #include <QSize>
+#include <QBrush>
 
 namespace Ui {
 class debug_console;
@@ -25,6 +26,8 @@ class debug_console : public QDialog
 public:
     explicit debug_console(QWidget *parent = nullptr);
     ~debug_console();
+    QString debugModeHeader = "DEBUG Mode Console";
+    void DebugModeParamInit( void );
 
 signals:
 
@@ -62,11 +65,12 @@ private:
     QMessageBox *debugModeMessageBox =  new QMessageBox( this );
     QTimer *serialSpecUpdate = new QTimer(this);
 
-    void DebugModeParamInit( void );
     void DebugModeConnectingFunctions( void );
+    void SerialPortReset( void );
 
     struct{
         QString portName;
+        int portIndexNumber;
         qint32 baudrate;
         QSerialPort::DataBits dataBits;
         QSerialPort::StopBits stopBits;

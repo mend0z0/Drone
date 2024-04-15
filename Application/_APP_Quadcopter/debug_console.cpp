@@ -10,7 +10,6 @@ debug_console::debug_console(QWidget *parent) :
     serialSpecUpdate->start(500);   // it'll check the available ports every 500 ms
     connect( serialSpecUpdate, SIGNAL(timeout()), this, SLOT(CheckAvailabePorts()));
 
-    DebugModeParamInit();
     DebugModeConnectingFunctions();
 }
 
@@ -31,24 +30,50 @@ void debug_console::ShowSerialPortErrors(QSerialPort::SerialPortError)
 
 void debug_console::SerialPortDataRead()
 {
+    QTextCharFormat inputDataFormat;
     QString inputData = QDateTime::currentDateTime().toString("HH.mm.ss.zzz") + " -> " + debugSerialPort->readAll();
-
+    inputDataFormat.setFontItalic(false);
+    ui->plainTextEdit_SerialInput->setCurrentCharFormat(inputDataFormat);
     ui->plainTextEdit_SerialInput->appendPlainText(inputData);
 }
 
 void debug_console::CheckAvailabePorts()
 {
     ui->comboBox_OptionsPortName->clear();
+    ui->comboBox_OptionsPortName->addItem("...");
     for(const QSerialPortInfo &portInfo : debugSerialPortInfo.availablePorts())
     {
-        ui->comboBox_OptionsPortName->addItem(portInfo.portName() + portInfo.description() + portInfo.serialNumber());
+        ui->comboBox_OptionsPortName->addItem(portInfo.portName());
     }
+    if(ui->comboBox_OptionsPortName->itemText(serial_spec.portIndexNumber) == serial_spec.portName){
+        ui->comboBox_OptionsPortName->setCurrentIndex(serial_spec.portIndexNumber);
+    }
+    else{
+        ui->comboBox_OptionsPortName->setCurrentIndex(0);
+        SerialPortReset();
+    }
+
 }
 
 void debug_console::SetPortName( int index )
 {
-    qDebug() << "Selected Port Name" << debugSerialPortInfo.availablePorts().at(index).portName();
-    serial_spec.portName = debugSerialPortInfo.availablePorts().at(index).portName();
+    if(index <= 0)
+    {
+        SerialPortReset();
+    }
+    else
+    {
+        index -= 1; //because we added 1 item before updating the list in comboBox
+        qDebug() << "Selected Port Name" << debugSerialPortInfo.availablePorts().at(index).portName();
+        serial_spec.portName = debugSerialPortInfo.availablePorts().at(index).portName();
+        serial_spec.portIndexNumber = index + 1;
+        ui->label_ValueSerialPortDescription->setText(debugSerialPortInfo.availablePorts().at(index).description());
+        ui->label_ValueSerialPortDescription->setToolTip(debugSerialPortInfo.availablePorts().at(index).description());
+        ui->label_ValueSerialPortManufacturer->setText(debugSerialPortInfo.availablePorts().at(index).manufacturer());
+        ui->label_ValueSerialPortProductID->setText(QString::number(debugSerialPortInfo.availablePorts().at(index).productIdentifier()));
+        ui->label_ValueSerialPortVendorID->setText(QString::number(debugSerialPortInfo.availablePorts().at(index).vendorIdentifier()));
+    }
+
 }
 
 void debug_console::SetBaudRate(int index)
@@ -160,9 +185,14 @@ void debug_console::SerialRxSave()
 
 void debug_console::SerialTxCMDSend()
 {
+    QTextCharFormat cmdFormat;
+
     QByteArray cmd = ui->plainTextEdit_SerialCommand->toPlainText().toUtf8();
     qDebug() << cmd;
     debugSerialPort->write(cmd);
+    cmdFormat.setFontItalic(true);
+    ui->plainTextEdit_SerialInput->setCurrentCharFormat(cmdFormat);
+    ui->plainTextEdit_SerialInput->appendPlainText(QDateTime::currentDateTime().toString("HH:mm:ss.zzz")+ " -> Sent: " + cmd);
 }
 
 void debug_console::SerialTxCMDClear()
@@ -172,6 +202,16 @@ void debug_console::SerialTxCMDClear()
 
 void debug_console::DebugModeParamInit()
 {
+    ui->label_DEBUGModeConsole->setText(debugModeHeader);
+    ui->label_DEBUGModeConsole->setAlignment(Qt::AlignCenter);
+    ui->label_DEBUGModeConsole->setStyleSheet("font: 20px;"
+                                              "font: bold;"
+                                              "border-radius: 5px;"
+                                              "padding: 5px;"
+                                              "alignment: center;"
+                                              "background-color: rgb(222, 223, 225);");
+
+
     serial_spec.labelSize.setWidth(80);
     serial_spec.labelSize.setHeight(25);
 
@@ -209,13 +249,16 @@ void debug_console::DebugModeParamInit()
                                      "border-radius: 5px;"
                                      "alignment: left-aligned;"
                                      "padding: 5px;");
+
+    ui->comboBox_OptionsPortName->setSizeAdjustPolicy(QComboBox::AdjustToContentsOnFirstShow);
+    serial_spec.portIndexNumber = 0;
 }
 
 void debug_console::DebugModeConnectingFunctions()
 {
     connect(ui->pushButton_Connection, SIGNAL(clicked(bool)), this, SLOT(SerialPortConnection()));
     connect(ui->pushButton_ClearInput, SIGNAL(clicked(bool)), this, SLOT(SerialRxClear()));
-    connect(ui->pushButton_Pause, SIGNAL(clicked(bool)), this, SLOT(SerialRxPause()));
+    //connect(ui->pushButton_Pause, SIGNAL(clicked(bool)), this, SLOT(SerialRxPause()));
     connect(ui->pushButton_Save, SIGNAL(clicked(bool)), this, SLOT(SerialRxSave()));
     connect(ui->pushButton_SendCMD, SIGNAL(clicked(bool)), this, SLOT(SerialTxCMDSend()));
     connect(ui->pushButton_ClearCMD, SIGNAL(clicked(bool)), this, SLOT(SerialTxCMDClear()));
@@ -228,4 +271,27 @@ void debug_console::DebugModeConnectingFunctions()
 
     connect(debugSerialPort, SIGNAL(errorOccurred(QSerialPort::SerialPortError)), this, SLOT(ShowSerialPortErrors( QSerialPort::SerialPortError )));
 
+}
+
+void debug_console::SerialPortReset()
+{
+    static bool resetFlag = true;
+
+    if(serial_spec.portIndexNumber != 0)
+    {
+        resetFlag = true;
+    }
+
+    if(resetFlag == true)
+    {
+        qDebug() << "Selected Port Name" << "";
+        serial_spec.portName = "";
+        serial_spec.portIndexNumber = 0;
+        ui->label_ValueSerialPortDescription->setText("N/A");
+        ui->label_ValueSerialPortManufacturer->setText("N/A" );
+        ui->label_ValueSerialPortProductID->setText("N/A");
+        ui->label_ValueSerialPortVendorID->setText("N/A");
+        debugSerialPort->disconnect();
+        resetFlag = false;
+    }
 }
