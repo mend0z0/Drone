@@ -172,31 +172,39 @@ void debug_console::SerialTxCMDClear()
 
 void debug_console::DebugModeParamInit()
 {
+    serial_spec.labelSize.setWidth(80);
+    serial_spec.labelSize.setHeight(25);
+
     ui->plainTextEdit_SerialInput->clear();
     ui->plainTextEdit_SerialInput->setReadOnly(true);
 
     ui->plainTextEdit_SerialCommand->clear();
 
+    ui->label_PortName->resize(serial_spec.labelSize);
     ui->label_PortName->setStyleSheet("background-color: rgb(212, 213, 215);"
                                         "border-radius: 5px;"
                                         "alignment: left-aligned;"
                                         "padding: 5px;");
 
+    ui->label_BaudRate->resize(serial_spec.labelSize);
     ui->label_BaudRate->setStyleSheet("background-color: rgb(212, 213, 215);"
                                       "border-radius: 5px;"
                                       "alignment: left-aligned;"
                                       "padding: 5px;");
 
+    ui->label_NBits->resize(serial_spec.labelSize);
     ui->label_NBits->setStyleSheet("background-color: rgb(212, 213, 215);"
                                    "border-radius: 5px;"
                                    "alignment: left-aligned;"
                                    "padding: 5px;");
 
+    ui->label_Parity->resize(serial_spec.labelSize);
     ui->label_Parity->setStyleSheet("background-color: rgb(212, 213, 215);"
                                     "border-radius: 5px;"
                                     "alignment: left-aligned;"
                                     "padding: 5px;");
 
+    ui->label_StopBit->resize(serial_spec.labelSize);
     ui->label_StopBit->setStyleSheet("background-color: rgb(212, 213, 215);"
                                      "border-radius: 5px;"
                                      "alignment: left-aligned;"

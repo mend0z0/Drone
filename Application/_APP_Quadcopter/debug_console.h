@@ -12,6 +12,7 @@
 #include <QFileDialog>
 #include <QMessageBox>
 #include <QTimer>
+#include <QSize>
 
 namespace Ui {
 class debug_console;
@@ -70,6 +71,7 @@ private:
         QSerialPort::DataBits dataBits;
         QSerialPort::StopBits stopBits;
         QSerialPort::Parity parity;
+        QSize labelSize;
     }serial_spec;
 
 };
