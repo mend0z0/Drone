@@ -24,8 +24,8 @@ Quadcopter application to-do list
     - 
     - 
     - 
-    - 
-    - 
+    - Add a tool button for LoRaWAN, MQTT, and UDP connection
+    - Add a connect disconnect button for LoRaWAN, MQTT, and UDP connection
     - 
     - 
     - 
