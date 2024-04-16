@@ -33,8 +33,8 @@ void debug_console::SerialPortDataRead()
     QTextCharFormat inputDataFormat;
     QString inputData = QDateTime::currentDateTime().toString("HH.mm.ss.zzz") + " -> " + debugSerialPort->readAll();
     inputDataFormat.setFontItalic(false);
-    ui->plainTextEdit_SerialInput->setCurrentCharFormat(inputDataFormat);
-    ui->plainTextEdit_SerialInput->appendPlainText(inputData);
+    ui->textBrowser_SerialInput->setCurrentCharFormat(inputDataFormat);
+    ui->textBrowser_SerialInput->append(inputData);
 }
 
 void debug_console::CheckAvailabePorts()
@@ -149,8 +149,8 @@ void debug_console::SerialPortConnection()
 
 void debug_console::SerialRxClear()
 {
-    ui->plainTextEdit_SerialInput->clear();
-    ui->plainTextEdit_SerialInput->appendPlainText("Debug input seriat data -->");
+    ui->textBrowser_SerialInput->clear();
+    ui->textBrowser_SerialInput->append("Debug input seriat data -->");
 }
 
 void debug_console::SerialRxPause()
@@ -178,7 +178,7 @@ void debug_console::SerialRxSave()
 
     QTextStream out(&file);
 
-    out << ui->plainTextEdit_SerialInput->toPlainText();
+    out << ui->textBrowser_SerialInput->toPlainText();
 
     SerialRxClear();
 }
@@ -191,8 +191,9 @@ void debug_console::SerialTxCMDSend()
     qDebug() << cmd;
     debugSerialPort->write(cmd);
     cmdFormat.setFontItalic(true);
-    ui->plainTextEdit_SerialInput->setCurrentCharFormat(cmdFormat);
-    ui->plainTextEdit_SerialInput->appendPlainText(QDateTime::currentDateTime().toString("HH:mm:ss.zzz")+ " -> Sent: " + cmd);
+    ui->textBrowser_SerialInput->setTextColor(Qt::green);
+    ui->textBrowser_SerialInput->setCurrentCharFormat(cmdFormat);
+    ui->textBrowser_SerialInput->append(QDateTime::currentDateTime().toString("HH:mm:ss.zzz")+ " -> Sent: " + cmd);
 }
 
 void debug_console::SerialTxCMDClear()
@@ -215,8 +216,8 @@ void debug_console::DebugModeParamInit()
     serial_spec.labelSize.setWidth(80);
     serial_spec.labelSize.setHeight(25);
 
-    ui->plainTextEdit_SerialInput->clear();
-    ui->plainTextEdit_SerialInput->setReadOnly(true);
+    ui->textBrowser_SerialInput->clear();
+    ui->textBrowser_SerialInput->setReadOnly(true);
 
     ui->plainTextEdit_SerialCommand->clear();
 

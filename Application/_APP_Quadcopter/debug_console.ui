@@ -13,25 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPlainTextEdit" name="plainTextEdit_SerialInput">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>60</y>
-     <width>440</width>
-     <height>341</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::Panel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Sunken</enum>
-   </property>
-   <property name="lineWidth">
-    <number>0</number>
-   </property>
-  </widget>
   <widget class="QComboBox" name="comboBox_OptionsBaudRate">
    <property name="geometry">
     <rect>
@@ -439,6 +420,16 @@
    </property>
    <property name="text">
     <string>N/A</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_SerialInput">
+   <property name="geometry">
+    <rect>
+     <x>193</x>
+     <y>64</y>
+     <width>441</width>
+     <height>331</height>
+    </rect>
    </property>
   </widget>
  </widget>
