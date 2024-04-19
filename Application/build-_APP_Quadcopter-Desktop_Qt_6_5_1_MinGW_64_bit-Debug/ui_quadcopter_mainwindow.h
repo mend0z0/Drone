@@ -17,11 +17,11 @@
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -140,23 +140,23 @@ public:
     QWidget *layoutWidget1;
     QGridLayout *gridLayout_3;
     QLabel *label_QuadcopterConsole;
-    QGridLayout *gridLayout_2;
-    QLabel *label_UDPConnection;
-    QLabel *label_MQTTServer;
-    QLabel *label_ApplicationIPV4;
-    QLabel *label_ValueLoRaWANFrequency;
-    QLabel *label_ValueApplicationIPV4;
-    QLabel *label_StatusUDPConnection;
-    QPushButton *pushButton_RCTRLDebugMode;
-    QLabel *label_StatusMQTTServer;
-    QPushButton *pushButton_ServerSetting;
-    QLabel *label_LoRaWANServer;
-    QLabel *label_StatusLoRaWANServer;
-    QLabel *label_LoRaWANFrequency;
-    QPlainTextEdit *plainTextEdit_LogPanel;
-    QPushButton *pushButton_SaveLogFile;
-    QSpacerItem *verticalSpacer;
     QSpacerItem *verticalSpacer_2;
+    QGridLayout *gridLayout_2;
+    QLabel *label_StatusUDPConnection;
+    QLabel *label_LoRaWANServer;
+    QPushButton *pushButton_ServerSetting;
+    QLabel *label_MQTTServer;
+    QLabel *label_StatusLoRaWANServer;
+    QLabel *label_ValueLoRaWANFrequency;
+    QPushButton *pushButton_RCTRLDebugMode;
+    QLabel *label_LoRaWANFrequency;
+    QLabel *label_StatusMQTTServer;
+    QLabel *label_ApplicationIPV4;
+    QLabel *label_UDPConnection;
+    QLabel *label_ValueApplicationIPV4;
+    QSpacerItem *verticalSpacer;
+    QPushButton *pushButton_SaveLogFile;
+    QTextEdit *textEdit_LogPanel;
 
     void setupUi(QMainWindow *Quadcopter_MainWindow)
     {
@@ -763,54 +763,16 @@ public:
 
         gridLayout_3->addWidget(label_QuadcopterConsole, 0, 0, 1, 2);
 
+        verticalSpacer_2 = new QSpacerItem(20, 13, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_3->addItem(verticalSpacer_2, 6, 0, 1, 2);
+
         gridLayout_2 = new QGridLayout();
         gridLayout_2->setObjectName("gridLayout_2");
-        label_UDPConnection = new QLabel(layoutWidget1);
-        label_UDPConnection->setObjectName("label_UDPConnection");
-
-        gridLayout_2->addWidget(label_UDPConnection, 5, 0, 1, 1);
-
-        label_MQTTServer = new QLabel(layoutWidget1);
-        label_MQTTServer->setObjectName("label_MQTTServer");
-        label_MQTTServer->setFont(font2);
-
-        gridLayout_2->addWidget(label_MQTTServer, 4, 0, 1, 1);
-
-        label_ApplicationIPV4 = new QLabel(layoutWidget1);
-        label_ApplicationIPV4->setObjectName("label_ApplicationIPV4");
-
-        gridLayout_2->addWidget(label_ApplicationIPV4, 6, 0, 1, 1);
-
-        label_ValueLoRaWANFrequency = new QLabel(layoutWidget1);
-        label_ValueLoRaWANFrequency->setObjectName("label_ValueLoRaWANFrequency");
-
-        gridLayout_2->addWidget(label_ValueLoRaWANFrequency, 3, 1, 1, 1);
-
-        label_ValueApplicationIPV4 = new QLabel(layoutWidget1);
-        label_ValueApplicationIPV4->setObjectName("label_ValueApplicationIPV4");
-
-        gridLayout_2->addWidget(label_ValueApplicationIPV4, 6, 1, 1, 1);
-
         label_StatusUDPConnection = new QLabel(layoutWidget1);
         label_StatusUDPConnection->setObjectName("label_StatusUDPConnection");
 
         gridLayout_2->addWidget(label_StatusUDPConnection, 5, 1, 1, 1);
-
-        pushButton_RCTRLDebugMode = new QPushButton(layoutWidget1);
-        pushButton_RCTRLDebugMode->setObjectName("pushButton_RCTRLDebugMode");
-
-        gridLayout_2->addWidget(pushButton_RCTRLDebugMode, 1, 1, 1, 1);
-
-        label_StatusMQTTServer = new QLabel(layoutWidget1);
-        label_StatusMQTTServer->setObjectName("label_StatusMQTTServer");
-
-        gridLayout_2->addWidget(label_StatusMQTTServer, 4, 1, 1, 1);
-
-        pushButton_ServerSetting = new QPushButton(layoutWidget1);
-        pushButton_ServerSetting->setObjectName("pushButton_ServerSetting");
-        pushButton_ServerSetting->setFont(font3);
-
-        gridLayout_2->addWidget(pushButton_ServerSetting, 1, 0, 1, 1);
 
         label_LoRaWANServer = new QLabel(layoutWidget1);
         label_LoRaWANServer->setObjectName("label_LoRaWANServer");
@@ -818,27 +780,64 @@ public:
 
         gridLayout_2->addWidget(label_LoRaWANServer, 2, 0, 1, 1);
 
+        pushButton_ServerSetting = new QPushButton(layoutWidget1);
+        pushButton_ServerSetting->setObjectName("pushButton_ServerSetting");
+        pushButton_ServerSetting->setFont(font3);
+
+        gridLayout_2->addWidget(pushButton_ServerSetting, 1, 0, 1, 1);
+
+        label_MQTTServer = new QLabel(layoutWidget1);
+        label_MQTTServer->setObjectName("label_MQTTServer");
+        label_MQTTServer->setFont(font2);
+
+        gridLayout_2->addWidget(label_MQTTServer, 4, 0, 1, 1);
+
         label_StatusLoRaWANServer = new QLabel(layoutWidget1);
         label_StatusLoRaWANServer->setObjectName("label_StatusLoRaWANServer");
 
         gridLayout_2->addWidget(label_StatusLoRaWANServer, 2, 1, 1, 1);
+
+        label_ValueLoRaWANFrequency = new QLabel(layoutWidget1);
+        label_ValueLoRaWANFrequency->setObjectName("label_ValueLoRaWANFrequency");
+
+        gridLayout_2->addWidget(label_ValueLoRaWANFrequency, 3, 1, 1, 1);
+
+        pushButton_RCTRLDebugMode = new QPushButton(layoutWidget1);
+        pushButton_RCTRLDebugMode->setObjectName("pushButton_RCTRLDebugMode");
+
+        gridLayout_2->addWidget(pushButton_RCTRLDebugMode, 1, 1, 1, 1);
 
         label_LoRaWANFrequency = new QLabel(layoutWidget1);
         label_LoRaWANFrequency->setObjectName("label_LoRaWANFrequency");
 
         gridLayout_2->addWidget(label_LoRaWANFrequency, 3, 0, 1, 1);
 
+        label_StatusMQTTServer = new QLabel(layoutWidget1);
+        label_StatusMQTTServer->setObjectName("label_StatusMQTTServer");
+
+        gridLayout_2->addWidget(label_StatusMQTTServer, 4, 1, 1, 1);
+
+        label_ApplicationIPV4 = new QLabel(layoutWidget1);
+        label_ApplicationIPV4->setObjectName("label_ApplicationIPV4");
+
+        gridLayout_2->addWidget(label_ApplicationIPV4, 6, 0, 1, 1);
+
+        label_UDPConnection = new QLabel(layoutWidget1);
+        label_UDPConnection->setObjectName("label_UDPConnection");
+
+        gridLayout_2->addWidget(label_UDPConnection, 5, 0, 1, 1);
+
+        label_ValueApplicationIPV4 = new QLabel(layoutWidget1);
+        label_ValueApplicationIPV4->setObjectName("label_ValueApplicationIPV4");
+
+        gridLayout_2->addWidget(label_ValueApplicationIPV4, 6, 1, 1, 1);
+
 
         gridLayout_3->addLayout(gridLayout_2, 3, 0, 1, 2);
 
-        plainTextEdit_LogPanel = new QPlainTextEdit(layoutWidget1);
-        plainTextEdit_LogPanel->setObjectName("plainTextEdit_LogPanel");
-        plainTextEdit_LogPanel->setStyleSheet(QString::fromUtf8("background-color: rgb(233, 233, 240);"));
-        plainTextEdit_LogPanel->setFrameShape(QFrame::StyledPanel);
-        plainTextEdit_LogPanel->setFrameShadow(QFrame::Sunken);
-        plainTextEdit_LogPanel->setTabChangesFocus(false);
+        verticalSpacer = new QSpacerItem(20, 13, QSizePolicy::Minimum, QSizePolicy::Fixed);
 
-        gridLayout_3->addWidget(plainTextEdit_LogPanel, 5, 0, 1, 2);
+        gridLayout_3->addItem(verticalSpacer, 1, 0, 1, 2);
 
         pushButton_SaveLogFile = new QPushButton(layoutWidget1);
         pushButton_SaveLogFile->setObjectName("pushButton_SaveLogFile");
@@ -847,15 +846,15 @@ public:
         font4.setPointSize(14);
         pushButton_SaveLogFile->setFont(font4);
 
-        gridLayout_3->addWidget(pushButton_SaveLogFile, 6, 0, 1, 2);
+        gridLayout_3->addWidget(pushButton_SaveLogFile, 7, 0, 1, 2);
 
-        verticalSpacer = new QSpacerItem(20, 13, QSizePolicy::Minimum, QSizePolicy::Fixed);
+        textEdit_LogPanel = new QTextEdit(layoutWidget1);
+        textEdit_LogPanel->setObjectName("textEdit_LogPanel");
+        textEdit_LogPanel->setStyleSheet(QString::fromUtf8("background-color: rgb(236, 236, 236);"));
+        textEdit_LogPanel->setFrameShape(QFrame::NoFrame);
+        textEdit_LogPanel->setFrameShadow(QFrame::Raised);
 
-        gridLayout_3->addItem(verticalSpacer, 1, 0, 1, 2);
-
-        verticalSpacer_2 = new QSpacerItem(20, 13, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        gridLayout_3->addItem(verticalSpacer_2, 4, 0, 1, 2);
+        gridLayout_3->addWidget(textEdit_LogPanel, 5, 0, 1, 1);
 
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
         layoutWidget1->raise();
@@ -1042,19 +1041,18 @@ public:
         label_DroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Index</span></p></body></html>", nullptr));
         pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Drone Setting", nullptr));
         label_QuadcopterConsole->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Drone - Console</span></p></body></html>", nullptr));
-        label_UDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">UDP Connection</span></p></body></html>", nullptr));
-        label_MQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">MQTT Server</span></p></body></html>", nullptr));
-        label_ApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Application IPV4</span></p></body></html>", nullptr));
-        label_ValueLoRaWANFrequency->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
-        label_ValueApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
         label_StatusUDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disabled</span></p></body></html>", nullptr));
-        pushButton_RCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "RCTLR DEBUG Mode", nullptr));
-        label_StatusMQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
-        pushButton_ServerSetting->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Server Setting", nullptr));
         label_LoRaWANServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">LoRaWAN Server</span></p></body></html>", nullptr));
+        pushButton_ServerSetting->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Server Setting", nullptr));
+        label_MQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">MQTT Server</span></p></body></html>", nullptr));
         label_StatusLoRaWANServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
+        label_ValueLoRaWANFrequency->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
+        pushButton_RCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "RCTLR DEBUG Mode", nullptr));
         label_LoRaWANFrequency->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">LoRaWAN Freq.</span></p></body></html>", nullptr));
-        plainTextEdit_LogPanel->setPlainText(QString());
+        label_StatusMQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
+        label_ApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Application IPV4</span></p></body></html>", nullptr));
+        label_UDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">UDP Connection</span></p></body></html>", nullptr));
+        label_ValueApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
     } // retranslateUi
 

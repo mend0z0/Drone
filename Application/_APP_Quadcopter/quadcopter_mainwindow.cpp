@@ -117,20 +117,45 @@ void Quadcopter_MainWindow::ServerConsole()
 
 void Quadcopter_MainWindow::FCTRLDebugConsole()
 {
-    fctrlDebugConsol->debugModeHeader.clear();
-    fctrlDebugConsol->debugModeHeader.append("Flight Controller Debug Console");
-    fctrlDebugConsol->DebugModeParamInit();
-    fctrlDebugConsol->setModal(true);
-    fctrlDebugConsol->exec();
+
+    if(fctrlDebugConsol->isVisible() == false)
+    {
+        fctrlDebugConsol->debugModeHeader.clear();
+        fctrlDebugConsol->debugModeHeader.append("Flight Controller Debug Console");
+        fctrlDebugConsol->DebugModeParamInit();
+        fctrlDebugConsol->setModal(false);
+        fctrlDebugConsol->adjustSize();
+        fctrlDebugConsol->activateWindow();
+        fctrlDebugConsol->show();
+        fctrlDebugConsol->raise();
+    }
+    else
+    {
+        fctrlDebugConsol->raise();
+        fctrlDebugConsol->adjustSize();
+        qDebug() << "FCTRLDebugConsole Window is already open..";
+    }
 }
 
 void Quadcopter_MainWindow::RCTRLDebugConsole()
 {
-    rctrlDebugConsol->debugModeHeader.clear();
-    rctrlDebugConsol->debugModeHeader.append("Radio Controller Debug Console");
-    rctrlDebugConsol->DebugModeParamInit();
-    rctrlDebugConsol->setModal(true);
-    rctrlDebugConsol->exec();
+    if(rctrlDebugConsol->isVisible() == false)
+    {
+        rctrlDebugConsol->debugModeHeader.clear();
+        rctrlDebugConsol->debugModeHeader.append("Radio Controller Debug Console");
+        rctrlDebugConsol->DebugModeParamInit();
+        rctrlDebugConsol->setModal(false);
+        rctrlDebugConsol->adjustSize();
+        rctrlDebugConsol->activateWindow();
+        rctrlDebugConsol->show();
+        rctrlDebugConsol->raise();
+    }
+    else
+    {
+        rctrlDebugConsol->adjustSize();
+        rctrlDebugConsol->raise();
+        qDebug() << "RCTRLDebugConsole Window is already open..";
+    }
 }
 
 void Quadcopter_MainWindow::MQTTReceivedMsgGeneral(QMqttMessage msg)

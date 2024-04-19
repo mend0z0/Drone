@@ -1,13 +1,11 @@
+#pragma once
 /********************************************************************************
-** Form generated from reading UI file 'debug_console.ui'
+** Form generated from reading UI file ''
 **
 ** Created by: Qt User Interface Compiler version 6.5.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
-
-#ifndef UI_DEBUG_CONSOLE_H
-#define UI_DEBUG_CONSOLE_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
@@ -16,13 +14,13 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_debug_console
 {
 public:
-    QPlainTextEdit *plainTextEdit_SerialInput;
     QComboBox *comboBox_OptionsBaudRate;
     QComboBox *comboBox_OptionsNBits;
     QComboBox *comboBox_OptionsParity;
@@ -48,18 +46,14 @@ public:
     QLabel *label_ValueSerialPortManufacturer;
     QLabel *label_ValueSerialPortProductID;
     QLabel *label_ValueSerialPortVendorID;
+    QTextEdit *textEdit_SerialInput;
+    QPushButton *pushButton_ConnectToMainWindow;
 
     void setupUi(QDialog *debug_console)
     {
         if (debug_console->objectName().isEmpty())
             debug_console->setObjectName("debug_console");
         debug_console->resize(640, 480);
-        plainTextEdit_SerialInput = new QPlainTextEdit(debug_console);
-        plainTextEdit_SerialInput->setObjectName("plainTextEdit_SerialInput");
-        plainTextEdit_SerialInput->setGeometry(QRect(190, 60, 440, 341));
-        plainTextEdit_SerialInput->setFrameShape(QFrame::Panel);
-        plainTextEdit_SerialInput->setFrameShadow(QFrame::Sunken);
-        plainTextEdit_SerialInput->setLineWidth(0);
         comboBox_OptionsBaudRate = new QComboBox(debug_console);
         comboBox_OptionsBaudRate->addItem(QString());
         comboBox_OptionsBaudRate->addItem(QString());
@@ -101,25 +95,25 @@ public:
         label_Parity->setGeometry(QRect(10, 240, 63, 21));
         pushButton_Connection = new QPushButton(debug_console);
         pushButton_Connection->setObjectName("pushButton_Connection");
-        pushButton_Connection->setGeometry(QRect(10, 330, 170, 30));
+        pushButton_Connection->setGeometry(QRect(10, 310, 171, 30));
         pushButton_ClearInput = new QPushButton(debug_console);
         pushButton_ClearInput->setObjectName("pushButton_ClearInput");
-        pushButton_ClearInput->setGeometry(QRect(10, 370, 80, 30));
+        pushButton_ClearInput->setGeometry(QRect(10, 350, 80, 30));
         pushButton_Save = new QPushButton(debug_console);
         pushButton_Save->setObjectName("pushButton_Save");
-        pushButton_Save->setGeometry(QRect(100, 370, 80, 30));
+        pushButton_Save->setGeometry(QRect(100, 350, 80, 30));
         pushButton_SendCMD = new QPushButton(debug_console);
         pushButton_SendCMD->setObjectName("pushButton_SendCMD");
-        pushButton_SendCMD->setGeometry(QRect(460, 430, 80, 30));
+        pushButton_SendCMD->setGeometry(QRect(460, 440, 80, 30));
         plainTextEdit_SerialCommand = new QPlainTextEdit(debug_console);
         plainTextEdit_SerialCommand->setObjectName("plainTextEdit_SerialCommand");
-        plainTextEdit_SerialCommand->setGeometry(QRect(10, 430, 440, 25));
+        plainTextEdit_SerialCommand->setGeometry(QRect(10, 440, 441, 25));
         plainTextEdit_SerialCommand->setFrameShape(QFrame::Panel);
         plainTextEdit_SerialCommand->setFrameShadow(QFrame::Raised);
         plainTextEdit_SerialCommand->setLineWidth(0);
         label_DEBUGModeConsole = new QLabel(debug_console);
         label_DEBUGModeConsole->setObjectName("label_DEBUGModeConsole");
-        label_DEBUGModeConsole->setGeometry(QRect(110, 10, 411, 40));
+        label_DEBUGModeConsole->setGeometry(QRect(100, 10, 410, 40));
         label_StopBit = new QLabel(debug_console);
         label_StopBit->setObjectName("label_StopBit");
         label_StopBit->setGeometry(QRect(10, 270, 63, 20));
@@ -131,7 +125,7 @@ public:
         comboBox_OpetionsStopBit->setGeometry(QRect(100, 270, 85, 25));
         pushButton_ClearCMD = new QPushButton(debug_console);
         pushButton_ClearCMD->setObjectName("pushButton_ClearCMD");
-        pushButton_ClearCMD->setGeometry(QRect(550, 430, 80, 30));
+        pushButton_ClearCMD->setGeometry(QRect(550, 440, 80, 30));
         label_SerialPortManufacturer = new QLabel(debug_console);
         label_SerialPortManufacturer->setObjectName("label_SerialPortManufacturer");
         label_SerialPortManufacturer->setGeometry(QRect(10, 110, 81, 20));
@@ -156,6 +150,12 @@ public:
         label_ValueSerialPortVendorID = new QLabel(debug_console);
         label_ValueSerialPortVendorID->setObjectName("label_ValueSerialPortVendorID");
         label_ValueSerialPortVendorID->setGeometry(QRect(100, 150, 81, 20));
+        textEdit_SerialInput = new QTextEdit(debug_console);
+        textEdit_SerialInput->setObjectName("textEdit_SerialInput");
+        textEdit_SerialInput->setGeometry(QRect(190, 60, 441, 361));
+        pushButton_ConnectToMainWindow = new QPushButton(debug_console);
+        pushButton_ConnectToMainWindow->setObjectName("pushButton_charReturn");
+        pushButton_ConnectToMainWindow->setGeometry(QRect(10, 390, 170, 30));
 
         retranslateUi(debug_console);
 
@@ -187,7 +187,7 @@ public:
         label_BaudRate->setText(QCoreApplication::translate("debug_console", "Baud rate:", nullptr));
         label_NBits->setText(QCoreApplication::translate("debug_console", "N-Bits", nullptr));
         label_Parity->setText(QCoreApplication::translate("debug_console", "Parity:", nullptr));
-        pushButton_Connection->setText(QCoreApplication::translate("debug_console", "Connect", nullptr));
+        pushButton_Connection->setText(QCoreApplication::translate("debug_console", "Connect To Serial Port", nullptr));
         pushButton_ClearInput->setText(QCoreApplication::translate("debug_console", "Clear", nullptr));
         pushButton_Save->setText(QCoreApplication::translate("debug_console", "Save", nullptr));
         pushButton_SendCMD->setText(QCoreApplication::translate("debug_console", "Send CMD", nullptr));
@@ -209,6 +209,7 @@ public:
         label_ValueSerialPortManufacturer->setText(QCoreApplication::translate("debug_console", "N/A", nullptr));
         label_ValueSerialPortProductID->setText(QCoreApplication::translate("debug_console", "N/A", nullptr));
         label_ValueSerialPortVendorID->setText(QCoreApplication::translate("debug_console", "N/A", nullptr));
+        pushButton_ConnectToMainWindow->setText(QCoreApplication::translate("debug_console", "Connected To Main Console", nullptr));
     } // retranslateUi
 
 };
@@ -219,4 +220,3 @@ namespace Ui {
 
 QT_END_NAMESPACE
 
-#endif // UI_DEBUG_CONSOLE_H

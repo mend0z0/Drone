@@ -30,8 +30,9 @@ public:
     void DebugModeParamInit( void );
 
 signals:
-
     void DebugPortConnectStatus( bool );
+    void SendDataToDebugConsole(QString data);
+    void SendDataToMainConsole(QString Data);
 
 public slots:
 
@@ -51,8 +52,10 @@ private slots:
     void SerialPortConnection( void );
 
     void SerialRxClear( void );
-    void SerialRxPause( void );
     void SerialRxSave( void );
+
+    void SerialDataFromMainWindow(QString data);
+    void ConnectMainWindowToDebugConsole();
 
     void SerialTxCMDSend( void );
     void SerialTxCMDClear( void );
@@ -77,6 +80,8 @@ private:
         QSerialPort::Parity parity;
         QSize labelSize;
     }serial_spec;
+
+    bool mainConsoleConnectionStatus = false;
 
 };
 

@@ -30,10 +30,17 @@ void debug_console::ShowSerialPortErrors(QSerialPort::SerialPortError)
 
 void debug_console::SerialPortDataRead()
 {
+    QString incomingData = debugSerialPort->readAll();
     QTextCharFormat inputDataFormat;
     inputDataFormat.setFontItalic(false);
     ui->textEdit_SerialInput->setCurrentCharFormat(inputDataFormat);
-    ui->textEdit_SerialInput->append(QDateTime::currentDateTime().toString("HH.mm.ss.zzz") + " -> " + debugSerialPort->readAll());
+    ui->textEdit_SerialInput->append(QDateTime::currentDateTime().toString("HH.mm.ss.zzz") + " -> " + incomingData);
+
+    if(mainConsoleConnectionStatus)
+    {
+        emit SendDataToMainConsole(incomingData);
+    }
+
 }
 
 void debug_console::CheckAvailabePorts()
@@ -152,11 +159,6 @@ void debug_console::SerialRxClear()
     ui->textEdit_SerialInput->append("Debug input seriat data -->");
 }
 
-void debug_console::SerialRxPause()
-{
-    return;
-}
-
 void debug_console::SerialRxSave()
 {
     QString defaultFileName = "../qcopter debug log - ";
@@ -180,6 +182,43 @@ void debug_console::SerialRxSave()
     out << ui->textEdit_SerialInput->toPlainText();
 
     SerialRxClear();
+}
+
+void debug_console::SerialDataFromMainWindow(QString data)
+{
+    QTextCharFormat dataTextFormat;
+
+    qDebug() << data;
+    debugSerialPort->write(data.toUtf8());
+    dataTextFormat.setFontItalic(true);
+    dataTextFormat.setUnderlineColor(QColor(20, 128, 20, 255));
+    ui->textEdit_SerialInput->setCurrentCharFormat(dataTextFormat);
+    ui->textEdit_SerialInput->setTextColor(QColor(20, 128, 20, 255));
+    ui->textEdit_SerialInput->append(QDateTime::currentDateTime().toString("HH:mm:ss.zzz")+ " -> Sent: " + data);
+}
+
+void debug_console::ConnectMainWindowToDebugConsole()
+{
+    if(mainConsoleConnectionStatus == false)
+    {
+        ui->pushButton_ConnectToMainWindow->setStyleSheet("background-color: rgb(0, 240, 20);"
+                                                          "border-radius: 7px;"
+                                                          "font-size: 12px;"
+                                                          "padding: 5px;");
+        ui->pushButton_ConnectToMainWindow->setText("Main Console Connected");
+        connect(this, SIGNAL(SendDataToDebugConsole(QString)), this, SLOT(SerialDataFromMainWindow(QString)));
+        mainConsoleConnectionStatus = true;
+    }
+    else
+    {
+        ui->pushButton_ConnectToMainWindow->setStyleSheet("background-color: rgb(240, 0, 20);"
+                                                          "border-radius: 7px;"
+                                                          "font-size: 12px;"
+                                                          "padding: 5px;");
+        ui->pushButton_ConnectToMainWindow->setText("Main Console Disconnected");
+        disconnect(this, SIGNAL(SendDataToDebugConsole(QString)), this, SLOT(SerialDataFromMainWindow(QString)));
+        mainConsoleConnectionStatus = false;
+    }
 }
 
 void debug_console::SerialTxCMDSend()
@@ -211,6 +250,11 @@ void debug_console::DebugModeParamInit()
                                               "alignment: center;"
                                               "background-color: rgb(222, 223, 225);");
 
+    ui->pushButton_ConnectToMainWindow->setStyleSheet("background-color: rgb(240, 0, 20);"
+                                                      "border-radius: 7px;"
+                                                      "font-size: 12px;"
+                                                      "padding: 5px;");
+    ui->pushButton_ConnectToMainWindow->setText("Main Console Disconnected");
 
     serial_spec.labelSize.setWidth(80);
     serial_spec.labelSize.setHeight(25);
@@ -258,8 +302,9 @@ void debug_console::DebugModeConnectingFunctions()
 {
     connect(ui->pushButton_Connection, SIGNAL(clicked(bool)), this, SLOT(SerialPortConnection()));
     connect(ui->pushButton_ClearInput, SIGNAL(clicked(bool)), this, SLOT(SerialRxClear()));
-    //connect(ui->pushButton_Pause, SIGNAL(clicked(bool)), this, SLOT(SerialRxPause()));
     connect(ui->pushButton_Save, SIGNAL(clicked(bool)), this, SLOT(SerialRxSave()));
+    connect(ui->pushButton_ConnectToMainWindow, SIGNAL(clicked(bool)), this, SLOT(ConnectMainWindowToDebugConsole()));
+
     connect(ui->pushButton_SendCMD, SIGNAL(clicked(bool)), this, SLOT(SerialTxCMDSend()));
     connect(ui->pushButton_ClearCMD, SIGNAL(clicked(bool)), this, SLOT(SerialTxCMDClear()));
 
