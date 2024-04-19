@@ -135,43 +135,22 @@ void Quadcopter_MainWindow::RCTRLDebugConsole()
 
 void Quadcopter_MainWindow::MQTTReceivedMsgGeneral(QMqttMessage msg)
 {
-    QString tempMsg;
-    qcopter.time = QDateTime::currentDateTime();
-
-    qcopter.txtPanelFormatGeneral.setFont(QFont("Helvetica"));
-    qcopter.txtPanelFormatGeneral.setFontLetterSpacing(fontLetterSpacing);
-    qcopter.txtPanelFormatGeneral.setFontPointSize(fontPointSize);
-    qcopter.txtBrush.setColor(QColor(255,255,255));
-    qcopter.txtPanelFormatGeneral.setTextOutline(qcopter.txtBrush);
-    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatGeneral);
-
-    tempMsg.append(qcopter.time.toString(   "yyyy-MM-dd HH:mm:ss") +
-                                            "\n[ Topic: " + msg.topic().name() +
-                                            ", QoS: " + QString::number(msg.qos()) +
-                                            " ]\n" + msg.payload());
-
-    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
+    ui->textEdit_LogPanel->setTextColor(QColor(0,0,0,255));
+    ui->textEdit_LogPanel->append(QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss") +
+                                  "\n[ Topic: " + msg.topic().name() +", QoS: " + QString::number(msg.qos()) + " ]\n" +
+                                  msg.payload()
+                                  );
 }
 
 void Quadcopter_MainWindow::MQTTReceivedMsgStatus(QMqttMessage msg)
 {
-    QString tempMsg;
     QByteArray tempJsonDataInput = msg.payload();
-    qcopter.time = QDateTime::currentDateTime();
 
-    qcopter.txtPanelFormatStatus.setFont(QFont("Helvetica"));
-    qcopter.txtPanelFormatStatus.setFontLetterSpacing(fontLetterSpacing);
-    qcopter.txtPanelFormatStatus.setFontPointSize(fontPointSize);
-    qcopter.txtBrush.setColor(QColor(74, 148, 0));
-    qcopter.txtPanelFormatStatus.setTextOutline(qcopter.txtBrush);
-    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatStatus);
-
-    tempMsg.append(qcopter.time.toString(   "yyyy-MM-dd HH:mm:ss") +
-                                            "\n[ Topic: " + msg.topic().name() +
-                                            ", QoS: " + QString::number(msg.qos()) +
-                                            " ]\n" + tempJsonDataInput);
-
-    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
+    ui->textEdit_LogPanel->setTextColor(QColor(0x1A,0xA7,0xEE,255));
+    ui->textEdit_LogPanel->append(QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss") +
+                                  "\n[ Topic: " + msg.topic().name() +", QoS: " + QString::number(msg.qos()) + " ]\n" +
+                                  msg.payload()
+                                  );
 
     qcopter.jsonDocStatus = QJsonDocument::fromJson(tempJsonDataInput);
     QuadcopterParamUpdate(qcopter.jsonDocStatus.object());
@@ -179,35 +158,20 @@ void Quadcopter_MainWindow::MQTTReceivedMsgStatus(QMqttMessage msg)
 
 void Quadcopter_MainWindow::MQTTReceivedMsgCommand(QMqttMessage msg)
 {
-    QString tempMsg;
-    qcopter.time = QDateTime::currentDateTime();
-
-    qcopter.txtPanelFormatCommand.setFont(QFont("Helvetica"));
-    qcopter.txtPanelFormatCommand.setFontLetterSpacing(fontLetterSpacing);
-    qcopter.txtPanelFormatCommand.setFontPointSize(fontPointSize);
-    qcopter.txtBrush.setColor(QColor(255,0,0));
-    qcopter.txtPanelFormatCommand.setTextOutline(qcopter.txtBrush);
-    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatCommand);
-
-    tempMsg.append(qcopter.time.toString(   "yyyy-MM-dd HH:mm:ss") +
-                                            "\n[ Topic: " + msg.topic().name() +
-                                            ", QoS: " + QString::number(msg.qos()) +
-                                            " ]\n" + msg.payload());
-
-    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
+    ui->textEdit_LogPanel->setTextColor(QColor(200,10,0,255));
+    ui->textEdit_LogPanel->append(QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss") +
+                                  "\n[ Topic: " + msg.topic().name() +", QoS: " + QString::number(msg.qos()) + " ]\n" +
+                                  msg.payload()
+                                  );
 }
 
 void Quadcopter_MainWindow::MQTTSentMsg(QMqttMessage msg)
 {
-    QString tempMsg;
-    QPalette mqttTxtPallete;
-    qcopter.time = QDateTime::currentDateTime();
-
-    mqttTxtPallete.setColor( foregroundRole(), QColor(255,0,0));
-    ui->plainTextEdit_LogPanel->setPalette(mqttTxtPallete);
-
-    tempMsg.append(qcopter.time.toString("yyyy-MM-dd HH:mm:ss") + "->[ Topic: " + msg.topic().name() + ", QoS: " + QString::number(msg.qos()) + " ]"+ ": " + msg.payload());
-    ui->plainTextEdit_LogPanel->appendPlainText(tempMsg);
+    ui->textEdit_LogPanel->setTextColor(QColor(200,10,0,255));
+    ui->textEdit_LogPanel->append(QDateTime::currentDateTime().toString("yyyy-MM-dd HH:mm:ss") +
+                                  "\n[ Topic: " + msg.topic().name() +", QoS: " + QString::number(msg.qos()) + " ]\n" +
+                                  msg.payload()
+                                  );
 }
 
 void Quadcopter_MainWindow::MQTTUpdateServerStatus(bool status)
@@ -735,7 +699,7 @@ void Quadcopter_MainWindow::SaveLogFile()
 
     QTextStream out(&file);
 
-    out << ui->plainTextEdit_LogPanel->toPlainText();
+    out << ui->textEdit_LogPanel->toPlainText();
     LogPanelInit();
 }
 
@@ -1009,18 +973,10 @@ void Quadcopter_MainWindow::ClockInit()
 
 void Quadcopter_MainWindow::LogPanelInit()
 {
-    ui->plainTextEdit_LogPanel->setReadOnly(true);
-    qcopter.time = QDateTime::currentDateTime();
-    QString tempString = "Log panel (" + qcopter.time.toString("dd/MM/yyyy - HH:mm:ss") + ") --> \r\n\n";
-    qcopter.txtPanelFormatGeneral.setFont(QFont("Helvetica"));
-    qcopter.txtPanelFormatGeneral.setFontLetterSpacing(fontLetterSpacing);
-    qcopter.txtPanelFormatGeneral.setFontPointSize(fontPointSize);
-    qcopter.txtBrush.setColor(QColor(0,0,0));
-    qcopter.txtPanelFormatGeneral.setTextOutline(qcopter.txtBrush);
-    ui->plainTextEdit_LogPanel->setCurrentCharFormat(qcopter.txtPanelFormatGeneral);
-
-    ui->plainTextEdit_LogPanel->clear();
-    ui->plainTextEdit_LogPanel->appendPlainText(tempString);
+    ui->textEdit_LogPanel->setReadOnly(true);
+    ui->textEdit_LogPanel->setTextColor(QColor(0,0,0,255));
+    ui->textEdit_LogPanel->clear();
+    ui->textEdit_LogPanel->append("Log panel (" + QDateTime::currentDateTime().toString("dd/MM/yyyy - HH:mm:ss") + ") --> \r\n\n");
 }
 
 void Quadcopter_MainWindow::ClockUpdate()

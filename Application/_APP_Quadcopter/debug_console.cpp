@@ -31,10 +31,9 @@ void debug_console::ShowSerialPortErrors(QSerialPort::SerialPortError)
 void debug_console::SerialPortDataRead()
 {
     QTextCharFormat inputDataFormat;
-    QString inputData = QDateTime::currentDateTime().toString("HH.mm.ss.zzz") + " -> " + debugSerialPort->readAll();
     inputDataFormat.setFontItalic(false);
-    ui->textBrowser_SerialInput->setCurrentCharFormat(inputDataFormat);
-    ui->textBrowser_SerialInput->append(inputData);
+    ui->textEdit_SerialInput->setCurrentCharFormat(inputDataFormat);
+    ui->textEdit_SerialInput->append(QDateTime::currentDateTime().toString("HH.mm.ss.zzz") + " -> " + debugSerialPort->readAll());
 }
 
 void debug_console::CheckAvailabePorts()
@@ -149,8 +148,8 @@ void debug_console::SerialPortConnection()
 
 void debug_console::SerialRxClear()
 {
-    ui->textBrowser_SerialInput->clear();
-    ui->textBrowser_SerialInput->append("Debug input seriat data -->");
+    ui->textEdit_SerialInput->clear();
+    ui->textEdit_SerialInput->append("Debug input seriat data -->");
 }
 
 void debug_console::SerialRxPause()
@@ -178,22 +177,22 @@ void debug_console::SerialRxSave()
 
     QTextStream out(&file);
 
-    out << ui->textBrowser_SerialInput->toPlainText();
+    out << ui->textEdit_SerialInput->toPlainText();
 
     SerialRxClear();
 }
 
 void debug_console::SerialTxCMDSend()
 {
-    QTextCharFormat cmdFormat;
+    QTextCharFormat cmdTextFormat;
 
     QByteArray cmd = ui->plainTextEdit_SerialCommand->toPlainText().toUtf8();
     qDebug() << cmd;
     debugSerialPort->write(cmd);
-    cmdFormat.setFontItalic(true);
-    ui->textBrowser_SerialInput->setTextColor(Qt::green);
-    ui->textBrowser_SerialInput->setCurrentCharFormat(cmdFormat);
-    ui->textBrowser_SerialInput->append(QDateTime::currentDateTime().toString("HH:mm:ss.zzz")+ " -> Sent: " + cmd);
+    cmdTextFormat.setFontItalic(true);
+    ui->textEdit_SerialInput->setCurrentCharFormat(cmdTextFormat);
+    ui->textEdit_SerialInput->setTextColor(QColor(20, 128, 20, 255));
+    ui->textEdit_SerialInput->append(QDateTime::currentDateTime().toString("HH:mm:ss.zzz")+ " -> Sent: " + cmd);
 }
 
 void debug_console::SerialTxCMDClear()
@@ -216,8 +215,8 @@ void debug_console::DebugModeParamInit()
     serial_spec.labelSize.setWidth(80);
     serial_spec.labelSize.setHeight(25);
 
-    ui->textBrowser_SerialInput->clear();
-    ui->textBrowser_SerialInput->setReadOnly(true);
+    ui->textEdit_SerialInput->clear();
+    ui->textEdit_SerialInput->setReadOnly(true);
 
     ui->plainTextEdit_SerialCommand->clear();
 

@@ -1899,48 +1899,24 @@ color: rgb(255, 255, 255);</string>
        </property>
       </widget>
      </item>
+     <item row="6" column="0" colspan="2">
+      <spacer name="verticalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>13</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
      <item row="3" column="0" colspan="2">
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_UDPConnection">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;UDP Connection&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_MQTTServer">
-         <property name="font">
-          <font>
-           <family>Calibri Light</family>
-          </font>
-         </property>
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;MQTT Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="label_ApplicationIPV4">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Application IPV4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLabel" name="label_ValueLoRaWANFrequency">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLabel" name="label_ValueApplicationIPV4">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
        <item row="5" column="1">
         <widget class="QLabel" name="label_StatusUDPConnection">
          <property name="text">
@@ -1948,17 +1924,15 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_RCTRLDebugMode">
-         <property name="text">
-          <string>RCTLR DEBUG Mode</string>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_LoRaWANServer">
+         <property name="font">
+          <font>
+           <family>Calibri Light</family>
+          </font>
          </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QLabel" name="label_StatusMQTTServer">
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;LoRaWAN Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -1975,15 +1949,15 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_LoRaWANServer">
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_MQTTServer">
          <property name="font">
           <font>
            <family>Calibri Light</family>
           </font>
          </property>
          <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;LoRaWAN Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;MQTT Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -1994,6 +1968,20 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="label_ValueLoRaWANFrequency">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="pushButton_RCTRLDebugMode">
+         <property name="text">
+          <string>RCTLR DEBUG Mode</string>
+         </property>
+        </widget>
+       </item>
        <item row="3" column="0">
         <widget class="QLabel" name="label_LoRaWANFrequency">
          <property name="text">
@@ -2001,39 +1989,35 @@ color: rgb(255, 255, 255);</string>
          </property>
         </widget>
        </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="label_StatusMQTTServer">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_ApplicationIPV4">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Application IPV4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_UDPConnection">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;UDP Connection&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="label_ValueApplicationIPV4">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
       </layout>
-     </item>
-     <item row="5" column="0" colspan="2">
-      <widget class="QPlainTextEdit" name="plainTextEdit_LogPanel">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(233, 233, 240);</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::StyledPanel</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Sunken</enum>
-       </property>
-       <property name="tabChangesFocus">
-        <bool>false</bool>
-       </property>
-       <property name="plainText">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0" colspan="2">
-      <widget class="QPushButton" name="pushButton_SaveLogFile">
-       <property name="font">
-        <font>
-         <family>Calibri Light</family>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Save Log File</string>
-       </property>
-      </widget>
      </item>
      <item row="1" column="0" colspan="2">
       <spacer name="verticalSpacer">
@@ -2051,21 +2035,31 @@ color: rgb(255, 255, 255);</string>
        </property>
       </spacer>
      </item>
-     <item row="4" column="0" colspan="2">
-      <spacer name="verticalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
+     <item row="7" column="0" colspan="2">
+      <widget class="QPushButton" name="pushButton_SaveLogFile">
+       <property name="font">
+        <font>
+         <family>Calibri Light</family>
+         <pointsize>14</pointsize>
+        </font>
        </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Fixed</enum>
+       <property name="text">
+        <string>Save Log File</string>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>13</height>
-        </size>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QTextEdit" name="textEdit_LogPanel">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(236, 236, 236);</string>
        </property>
-      </spacer>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
      </item>
     </layout>
    </widget>
