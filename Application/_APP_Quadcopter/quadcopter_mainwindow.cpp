@@ -197,6 +197,8 @@ void Quadcopter_MainWindow::MQTTSentMsg(QMqttMessage msg)
                                   "\n[ Topic: " + msg.topic().name() +", QoS: " + QString::number(msg.qos()) + " ]\n" +
                                   msg.payload()
                                   );
+
+
 }
 
 void Quadcopter_MainWindow::MQTTUpdateServerStatus(bool status)
@@ -310,7 +312,8 @@ void Quadcopter_MainWindow::ButtonForward( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Forward has been pressed";
 
-    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    //qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    QCopterSendData(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["FORWARD"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -326,7 +329,9 @@ void Quadcopter_MainWindow::ButtonReverse( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Reverse has been pressed";
 
-    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    //qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+
+    QCopterSendData(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["REVERSE"]=0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -342,7 +347,9 @@ void Quadcopter_MainWindow::ButtonLeft( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Left has been pressed";
 
-    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    //qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+
+    QCopterSendData(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["LEFT"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -358,7 +365,9 @@ void Quadcopter_MainWindow::ButtonRight( void )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Right has been pressed";
 
-    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    //qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+
+    QCopterSendData(qcopter.jsonDocCommand.toJson());
 
     qcopter.jsonObjCommand["RIGHT"] =0;
     qcopter.jsonDocCommand.setObject(qcopter.jsonObjCommand);
@@ -645,7 +654,8 @@ void Quadcopter_MainWindow::GeologicalPosition( int value )
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Compass Degree" << value;
 
-    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    //qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    QCopterSendData(qcopter.jsonDocCommand.toJson());
 }
 
 void Quadcopter_MainWindow::Throttle(int value)
@@ -659,7 +669,9 @@ void Quadcopter_MainWindow::Throttle(int value)
     //qDebug() << qcopter.jsonDocCommand;
     //qDebug() << "Height" << value << "cm";
 
-    qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+    //qcopterConsole->MQTTSendMsg(qcopter.jsonDocCommand.toJson());
+
+    QCopterSendData(qcopter.jsonDocCommand.toJson());
 }
 
 void Quadcopter_MainWindow::DroneSelectNext()
@@ -1392,5 +1404,13 @@ void Quadcopter_MainWindow::NoisyTVGifControl(bool cmd, uint8_t screenNumber)
     default:
         break;
     }
+}
+
+void Quadcopter_MainWindow::QCopterSendData(QString data)
+{
+    qcopterConsole->MQTTSendMsg(data.toUtf8());
+
+    emit rctrlDebugConsol->SendDataToDebugConsole(data);
+    emit fctrlDebugConsol->SendDataToDebugConsole(data);
 }
 

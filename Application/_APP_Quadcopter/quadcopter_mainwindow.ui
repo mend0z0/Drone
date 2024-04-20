@@ -76,7 +76,7 @@
     <property name="geometry">
      <rect>
       <x>478</x>
-      <y>443</y>
+      <y>453</y>
       <width>50</width>
       <height>50</height>
      </rect>
@@ -95,7 +95,7 @@
     <property name="geometry">
      <rect>
       <x>738</x>
-      <y>443</y>
+      <y>453</y>
       <width>50</width>
       <height>50</height>
      </rect>
@@ -117,7 +117,7 @@
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>30</y>
+      <y>40</y>
       <width>651</width>
       <height>480</height>
      </rect>
@@ -136,7 +136,7 @@
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>40</y>
+      <y>50</y>
       <width>120</width>
       <height>40</height>
      </rect>
@@ -161,7 +161,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>608</x>
-      <y>443</y>
+      <y>453</y>
       <width>50</width>
       <height>50</height>
      </rect>
@@ -180,7 +180,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>895</x>
-      <y>40</y>
+      <y>50</y>
       <width>40</width>
       <height>420</height>
      </rect>
@@ -211,7 +211,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1078</x>
-      <y>360</y>
+      <y>370</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -236,7 +236,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>964</x>
-      <y>474</y>
+      <y>484</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -261,7 +261,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1079</x>
-      <y>589</y>
+      <y>599</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -286,7 +286,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1194</x>
-      <y>475</y>
+      <y>485</y>
       <width>80</width>
       <height>80</height>
      </rect>
@@ -314,7 +314,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1044</x>
-      <y>450</y>
+      <y>460</y>
       <width>151</width>
       <height>131</height>
      </rect>
@@ -348,7 +348,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>700</x>
-      <y>570</y>
+      <y>580</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -370,7 +370,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>570</y>
+      <y>580</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -392,7 +392,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>570</y>
+      <y>580</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -417,7 +417,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>570</y>
+      <y>580</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -439,7 +439,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>570</y>
+      <y>580</y>
       <width>128</width>
       <height>96</height>
      </rect>
@@ -462,12 +462,12 @@ color: rgb(255, 255, 255);</string>
    </widget>
    <widget class="QLabel" name="label_Logo">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
       <x>1100</x>
-      <y>500</y>
+      <y>510</y>
       <width>41</width>
       <height>31</height>
      </rect>
@@ -489,7 +489,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>550</y>
+      <y>560</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -508,7 +508,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>550</y>
+      <y>560</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -524,7 +524,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>550</y>
+      <y>560</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -540,7 +540,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>700</x>
-      <y>550</y>
+      <y>560</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -556,7 +556,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>550</y>
+      <y>560</y>
       <width>128</width>
       <height>121</height>
      </rect>
@@ -572,7 +572,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1094</x>
-      <y>415</y>
+      <y>425</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -591,7 +591,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1134</x>
-      <y>415</y>
+      <y>425</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -610,7 +610,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1084</x>
-      <y>400</y>
+      <y>410</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -629,7 +629,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1104</x>
-      <y>400</y>
+      <y>410</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -648,7 +648,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1124</x>
-      <y>400</y>
+      <y>410</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -667,7 +667,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1144</x>
-      <y>400</y>
+      <y>410</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -686,7 +686,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1094</x>
-      <y>390</y>
+      <y>400</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -705,7 +705,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1114</x>
-      <y>390</y>
+      <y>400</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -724,7 +724,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1134</x>
-      <y>390</y>
+      <y>400</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -743,7 +743,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1104</x>
-      <y>380</y>
+      <y>390</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -762,7 +762,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1124</x>
-      <y>380</y>
+      <y>390</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -781,7 +781,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1114</x>
-      <y>370</y>
+      <y>380</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -800,7 +800,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1114</x>
-      <y>410</y>
+      <y>420</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -819,7 +819,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1114</x>
-      <y>650</y>
+      <y>660</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -838,7 +838,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1134</x>
-      <y>605</y>
+      <y>615</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -857,7 +857,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1084</x>
-      <y>620</y>
+      <y>630</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -876,7 +876,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1094</x>
-      <y>630</y>
+      <y>640</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -895,7 +895,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1144</x>
-      <y>620</y>
+      <y>630</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -914,7 +914,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1134</x>
-      <y>630</y>
+      <y>640</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -933,7 +933,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1104</x>
-      <y>640</y>
+      <y>650</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -952,7 +952,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1124</x>
-      <y>640</y>
+      <y>650</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -971,7 +971,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1114</x>
-      <y>630</y>
+      <y>640</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -990,7 +990,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1124</x>
-      <y>620</y>
+      <y>630</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1009,7 +1009,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1114</x>
-      <y>610</y>
+      <y>620</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1028,7 +1028,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1104</x>
-      <y>620</y>
+      <y>630</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1047,7 +1047,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1094</x>
-      <y>605</y>
+      <y>615</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1066,7 +1066,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1244</x>
-      <y>500</y>
+      <y>510</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1085,7 +1085,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1209</x>
-      <y>490</y>
+      <y>500</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1104,7 +1104,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1234</x>
-      <y>510</y>
+      <y>520</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1123,7 +1123,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1244</x>
-      <y>520</y>
+      <y>530</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1142,7 +1142,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1254</x>
-      <y>510</y>
+      <y>520</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1164,7 +1164,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1234</x>
-      <y>490</y>
+      <y>500</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1183,7 +1183,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1224</x>
-      <y>540</y>
+      <y>550</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1202,7 +1202,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1224</x>
-      <y>520</y>
+      <y>530</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1221,7 +1221,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1224</x>
-      <y>480</y>
+      <y>490</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1240,7 +1240,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1224</x>
-      <y>500</y>
+      <y>510</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1259,7 +1259,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1209</x>
-      <y>530</y>
+      <y>540</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1278,7 +1278,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1234</x>
-      <y>530</y>
+      <y>540</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1297,7 +1297,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1214</x>
-      <y>510</y>
+      <y>520</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1316,7 +1316,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1019</x>
-      <y>530</y>
+      <y>540</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1335,7 +1335,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1004</x>
-      <y>500</y>
+      <y>510</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1354,7 +1354,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>994</x>
-      <y>490</y>
+      <y>500</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1373,7 +1373,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>974</x>
-      <y>510</y>
+      <y>520</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1392,7 +1392,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1004</x>
-      <y>480</y>
+      <y>490</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1411,7 +1411,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>984</x>
-      <y>520</y>
+      <y>530</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1430,7 +1430,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1004</x>
-      <y>540</y>
+      <y>550</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1449,7 +1449,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>984</x>
-      <y>500</y>
+      <y>510</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1468,7 +1468,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1004</x>
-      <y>520</y>
+      <y>530</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1487,7 +1487,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>994</x>
-      <y>530</y>
+      <y>540</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1506,7 +1506,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>994</x>
-      <y>510</y>
+      <y>520</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1525,7 +1525,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1014</x>
-      <y>510</y>
+      <y>520</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1544,7 +1544,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1019</x>
-      <y>490</y>
+      <y>500</y>
       <width>10</width>
       <height>10</height>
      </rect>
@@ -1563,7 +1563,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1050</x>
-      <y>446</y>
+      <y>456</y>
       <width>140</width>
       <height>140</height>
      </rect>
@@ -1582,7 +1582,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>30</y>
+      <y>40</y>
       <width>651</width>
       <height>481</height>
      </rect>
@@ -1598,7 +1598,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>570</y>
+      <y>580</y>
       <width>124</width>
       <height>90</height>
      </rect>
@@ -1614,7 +1614,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>440</x>
-      <y>570</y>
+      <y>580</y>
       <width>124</width>
       <height>90</height>
      </rect>
@@ -1630,7 +1630,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>570</x>
-      <y>570</y>
+      <y>580</y>
       <width>124</width>
       <height>90</height>
      </rect>
@@ -1646,7 +1646,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>830</x>
-      <y>570</y>
+      <y>580</y>
       <width>124</width>
       <height>90</height>
      </rect>
@@ -1662,7 +1662,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>700</x>
-      <y>570</y>
+      <y>580</y>
       <width>124</width>
       <height>90</height>
      </rect>
@@ -1678,7 +1678,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>895</x>
-      <y>470</y>
+      <y>480</y>
       <width>40</width>
       <height>30</height>
      </rect>
@@ -1695,7 +1695,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>320</x>
-      <y>90</y>
+      <y>100</y>
       <width>120</width>
       <height>20</height>
      </rect>
@@ -1714,7 +1714,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>1048</x>
-      <y>446</y>
+      <y>456</y>
       <width>140</width>
       <height>140</height>
      </rect>
@@ -1733,7 +1733,7 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>975</x>
-      <y>30</y>
+      <y>40</y>
       <width>291</width>
       <height>321</height>
      </rect>
@@ -1879,191 +1879,351 @@ color: rgb(255, 255, 255);</string>
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>12</x>
-      <y>32</y>
-      <width>291</width>
-      <height>641</height>
+      <x>170</x>
+      <y>200</y>
+      <width>93</width>
+      <height>29</height>
      </rect>
     </property>
-    <layout class="QGridLayout" name="gridLayout_3">
-     <item row="0" column="0" colspan="2">
-      <widget class="QLabel" name="label_QuadcopterConsole">
-       <property name="frameShape">
-        <enum>QFrame::Box</enum>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Drone - Console&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0" colspan="2">
-      <spacer name="verticalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Fixed</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>13</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="3" column="0" colspan="2">
-      <layout class="QGridLayout" name="gridLayout_2">
-       <item row="5" column="1">
-        <widget class="QLabel" name="label_StatusUDPConnection">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disabled&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="label_LoRaWANServer">
-         <property name="font">
-          <font>
-           <family>Calibri Light</family>
-          </font>
-         </property>
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;LoRaWAN Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QPushButton" name="pushButton_ServerSetting">
-         <property name="font">
-          <font>
-           <family>Calibri Light</family>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Server Setting</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_MQTTServer">
-         <property name="font">
-          <font>
-           <family>Calibri Light</family>
-          </font>
-         </property>
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;MQTT Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QLabel" name="label_StatusLoRaWANServer">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="1">
-        <widget class="QLabel" name="label_ValueLoRaWANFrequency">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="pushButton_RCTRLDebugMode">
-         <property name="text">
-          <string>RCTLR DEBUG Mode</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_LoRaWANFrequency">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;LoRaWAN Freq.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QLabel" name="label_StatusMQTTServer">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="label_ApplicationIPV4">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Application IPV4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_UDPConnection">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;UDP Connection&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLabel" name="label_ValueApplicationIPV4">
-         <property name="text">
-          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item row="1" column="0" colspan="2">
-      <spacer name="verticalSpacer">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-       <property name="sizeType">
-        <enum>QSizePolicy::Fixed</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>20</width>
-         <height>13</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item row="7" column="0" colspan="2">
-      <widget class="QPushButton" name="pushButton_SaveLogFile">
-       <property name="font">
-        <font>
-         <family>Calibri Light</family>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Save Log File</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QTextEdit" name="textEdit_LogPanel">
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(236, 236, 236);</string>
-       </property>
-       <property name="frameShape">
-        <enum>QFrame::NoFrame</enum>
-       </property>
-       <property name="frameShadow">
-        <enum>QFrame::Raised</enum>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <property name="text">
+     <string>Disconnected</string>
+    </property>
    </widget>
-   <zorder>layoutWidget</zorder>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>240</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Disconnected</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>280</y>
+      <width>93</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Disconnected</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>280</y>
+      <width>24</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>240</y>
+      <width>24</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_3">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>200</y>
+      <width>24</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>135</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enable Panel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_QuadcopterConsole">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>271</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Drone - Console&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_SaveLogFile">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>650</y>
+      <width>275</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Save Log File</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit_LogPanel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>275</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(236, 236, 236);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_StatusUDPConnection">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>10</y>
+      <width>60</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disabled&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_LoRaWANServer">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>135</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;LoRaWAN Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_ServerSetting">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>0</y>
+      <width>98</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Server Setting</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MQTTServer">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>240</y>
+      <width>135</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri Light</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;MQTT Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_StatusLoRaWANServer">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>93</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_RCTRLDebugMode">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>80</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RCTL DEBUG Mode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ValueLoRaWANFrequency">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>120</y>
+      <width>121</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;LoRaWAN Freq.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_LoRaWANFrequency">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>135</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;LoRaWAN Freq.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_StatusMQTTServer">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>93</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Disconnected&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ApplicationIPV4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>135</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Application IPV4&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_UDPConnection">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>135</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;UDP Server&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ValueApplicationIPV4">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>160</y>
+      <width>93</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Application IPV4&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>160</y>
+      <width>24</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_QuadcopterConsole</zorder>
+   <zorder>pushButton_SaveLogFile</zorder>
+   <zorder>textEdit_LogPanel</zorder>
+   <zorder>label_StatusUDPConnection</zorder>
+   <zorder>label_LoRaWANServer</zorder>
+   <zorder>pushButton_ServerSetting</zorder>
+   <zorder>label_MQTTServer</zorder>
+   <zorder>label_StatusLoRaWANServer</zorder>
+   <zorder>pushButton_RCTRLDebugMode</zorder>
+   <zorder>label_ValueLoRaWANFrequency</zorder>
+   <zorder>label_LoRaWANFrequency</zorder>
+   <zorder>label_StatusMQTTServer</zorder>
+   <zorder>label_ApplicationIPV4</zorder>
+   <zorder>label_UDPConnection</zorder>
+   <zorder>label_ValueApplicationIPV4</zorder>
    <zorder>label_Camera5_2</zorder>
    <zorder>label_Camera4_2</zorder>
    <zorder>label_Camera3_2</zorder>
@@ -2149,6 +2309,14 @@ color: rgb(255, 255, 255);</string>
    <zorder>label_CompasOnSpot</zorder>
    <zorder>dial_GeologicalPosition</zorder>
    <zorder>label_Logo</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>toolButton</zorder>
+   <zorder>toolButton_2</zorder>
+   <zorder>toolButton_3</zorder>
+   <zorder>pushButton_4</zorder>
+   <zorder>toolButton_4</zorder>
   </widget>
  </widget>
  <resources>

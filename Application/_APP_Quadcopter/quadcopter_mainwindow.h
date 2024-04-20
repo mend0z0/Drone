@@ -28,6 +28,7 @@
 #include <QPainter>
 #include <QFileDevice>
 #include <QFileDialog>
+#include <QIcon>
 
 #include <quadcopter_server.h>
 #include <debug_console.h>
@@ -131,6 +132,8 @@ private:
     void InitFunctions( void );
 
     void NoisyTVGifControl( bool cmd, uint8_t screenNumber);
+
+    void QCopterSendData( QString data );
 
     struct{
         QDateTime time;
