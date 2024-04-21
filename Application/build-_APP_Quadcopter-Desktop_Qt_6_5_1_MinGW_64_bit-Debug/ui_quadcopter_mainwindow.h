@@ -10,7 +10,6 @@
 #define UI_QUADCOPTER_MAINWINDOW_H
 
 #include <QtCore/QVariant>
-#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDial>
 #include <QtWidgets/QGraphicsView>
@@ -835,8 +834,6 @@ public:
         toolButton_4 = new QToolButton(centralwidget);
         toolButton_4->setObjectName("toolButton_4");
         toolButton_4->setGeometry(QRect(270, 160, 24, 30));
-        QIcon icon(QIcon::fromTheme(QString::fromUtf8("accessories-calculator")));
-        toolButton_4->setIcon(icon);
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
         label_QuadcopterConsole->raise();
         pushButton_SaveLogFile->raise();
