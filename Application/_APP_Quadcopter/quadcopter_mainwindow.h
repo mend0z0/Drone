@@ -33,6 +33,8 @@
 #include <quadcopter_server.h>
 #include <debug_console.h>
 
+#define LABEL_GENERAL_FORMAT ("background-color: rgb(232, 233, 235);""border-radius: 10px;")
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Quadcopter_MainWindow; }
 QT_END_NAMESPACE

@@ -746,105 +746,61 @@ void Quadcopter_MainWindow::QuadcopterPanelInit()
     qcopter.generalLabelsFont.setPixelSize(14);
 
     ui->label_MQTTServer->setFont(qcopter.generalLabelsFont);
-    ui->label_MQTTServer->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_MQTTServer->setStyleSheet(LABEL_GENERAL_FORMAT);
     
     
     ui->label_ApplicationIPV4->setFont(qcopter.generalLabelsFont);
-    ui->label_ApplicationIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_ApplicationIPV4->setStyleSheet(LABEL_GENERAL_FORMAT);
     
     ui->label_ValueApplicationIPV4->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueApplicationIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_ValueApplicationIPV4->setStyleSheet(LABEL_GENERAL_FORMAT);
     ui->label_ValueApplicationIPV4->setAlignment(Qt::AlignCenter);
     ui->label_ValueApplicationIPV4->setText("---.---.---.---");
 
     ui->label_LoRaWANServer->setFont(qcopter.generalLabelsFont);
-    ui->label_LoRaWANServer->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_LoRaWANServer->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     LoRaWANUpdateConnectionStatus(false);
 
-    ui->label_LoRaWANFrequency->setFont(qcopter.generalLabelsFont);
-    ui->label_LoRaWANFrequency->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
-
-    ui->label_ValueLoRaWANFrequency->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueLoRaWANFrequency->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
-    ui->label_ValueLoRaWANFrequency->setAlignment(Qt::AlignCenter);
-    ui->label_ValueLoRaWANFrequency->setText("---.-- MHz");
-
     ui->label_UDPConnection->setFont(qcopter.generalLabelsFont);
-    ui->label_UDPConnection->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                                   "border-radius: 10px;"
-                                                   "padding: 5px;");
+    ui->label_UDPConnection->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     UDPUpdateConnectionStatus(false);
 
     ui->label_DroneIndex->setFont(qcopter.generalLabelsFont);
-    ui->label_DroneIndex->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_DroneIndex->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_ValueDroneIndex->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueDroneIndex->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_ValueDroneIndex->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_DroneType->setFont(qcopter.generalLabelsFont);
-    ui->label_DroneType->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_DroneType->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_ValueDroneType->setFont(qcopter.generalLabelsFont);
-    ui->label_ValueDroneType->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_ValueDroneType->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_DroneIPV4->setFont(qcopter.generalLabelsFont);
-    ui->label_DroneIPV4->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                            "border-radius: 10px;"
-                                            "padding: 5px;");
+    ui->label_DroneIPV4->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     UpdateDroneIPV4("");
 
     ui->label_Pressure->setFont(qcopter.generalLabelsFont);
-    ui->label_Pressure->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_Pressure->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_Temperature->setFont(qcopter.generalLabelsFont);
-    ui->label_Temperature->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_Temperature->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_Humedity->setFont(qcopter.generalLabelsFont);
-    ui->label_Humedity->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_Humedity->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_Speed->setFont(qcopter.generalLabelsFont);
-    ui->label_Speed->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_Speed->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_Displacement->setFont(qcopter.generalLabelsFont);
-    ui->label_Displacement->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_Displacement->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->label_Height->setFont(qcopter.generalLabelsFont);
-    ui->label_Height->setStyleSheet("background-color: rgb(232, 233, 235);"
-                                              "border-radius: 10px;"
-                                              "padding: 5px;");
+    ui->label_Height->setStyleSheet(LABEL_GENERAL_FORMAT);
 
     ui->verticalSlider_Throttle->setValue(0);
     ui->lcdNumber_ValueThrottle->display(0);

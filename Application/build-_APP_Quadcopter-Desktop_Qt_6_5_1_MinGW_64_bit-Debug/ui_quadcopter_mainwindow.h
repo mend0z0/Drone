@@ -13,7 +13,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDial>
 #include <QtWidgets/QGraphicsView>
-#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLCDNumber>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -114,29 +113,6 @@ public:
     QLCDNumber *lcdNumber_ValueThrottle;
     QProgressBar *progressBar_ValueBatteryCharge;
     QLabel *label_CompasOnSpot;
-    QWidget *layoutWidget;
-    QGridLayout *gridLayout_4;
-    QGridLayout *gridLayout;
-    QLabel *label_Humedity;
-    QLabel *label_Displacement;
-    QLabel *label_Speed;
-    QLabel *label_DroneIPV4;
-    QLCDNumber *lcdNumber_ValueDisplacement;
-    QLabel *label_ValueDroneIPV4;
-    QLabel *label_Pressure;
-    QLCDNumber *lcdNumber_ValueHumidity;
-    QLabel *label_ValueDroneType;
-    QLCDNumber *lcdNumber_ValuePressure;
-    QLCDNumber *lcdNumber_ValueSpeed;
-    QLabel *label_Height;
-    QLabel *label_Temperature;
-    QLCDNumber *lcdNumber_ValueHeight;
-    QPushButton *pushButton_FCTRLDebugMode;
-    QLabel *label_DroneType;
-    QLabel *label_ValueDroneIndex;
-    QLabel *label_DroneIndex;
-    QLCDNumber *lcdNumber_ValueTemperature;
-    QPushButton *pushButton_ConnectLoRaWAN;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
@@ -153,13 +129,32 @@ public:
     QLabel *label_MQTTServer;
     QLabel *label_StatusLoRaWANServer;
     QPushButton *pushButton_RCTRLDebugMode;
-    QLabel *label_ValueLoRaWANFrequency;
-    QLabel *label_LoRaWANFrequency;
     QLabel *label_StatusMQTTServer;
     QLabel *label_ApplicationIPV4;
     QLabel *label_UDPConnection;
     QLabel *label_ValueApplicationIPV4;
     QToolButton *toolButton_4;
+    QPushButton *pushButton_FCTRLDebugMode;
+    QPushButton *pushButton_LoRaWANSetting;
+    QLabel *label_Humedity;
+    QLabel *label_Speed;
+    QLabel *label_Displacement;
+    QLabel *label_DroneIPV4;
+    QLCDNumber *lcdNumber_ValueDisplacement;
+    QLabel *label_Pressure;
+    QLabel *label_ValueDroneIPV4;
+    QLabel *label_ValueDroneType;
+    QLCDNumber *lcdNumber_ValueHumidity;
+    QLCDNumber *lcdNumber_ValuePressure;
+    QLCDNumber *lcdNumber_ValueSpeed;
+    QLabel *label_Height;
+    QLabel *label_Temperature;
+    QLabel *label_DroneType;
+    QLCDNumber *lcdNumber_ValueHeight;
+    QLabel *label_DroneIndex;
+    QLabel *label_ValueDroneIndex;
+    QPushButton *pushButton_ConnectLoRaWAN;
+    QLCDNumber *lcdNumber_ValueTemperature;
 
     void setupUi(QMainWindow *Quadcopter_MainWindow)
     {
@@ -634,126 +629,6 @@ public:
         label_CompasOnSpot->setGeometry(QRect(1048, 456, 140, 140));
         label_CompasOnSpot->setPixmap(QPixmap(QString::fromUtf8(":/Resources/Icons/GeoPosLighting.png")));
         label_CompasOnSpot->setScaledContents(true);
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(975, 40, 291, 321));
-        gridLayout_4 = new QGridLayout(layoutWidget);
-        gridLayout_4->setObjectName("gridLayout_4");
-        gridLayout_4->setContentsMargins(0, 0, 0, 0);
-        gridLayout = new QGridLayout();
-        gridLayout->setObjectName("gridLayout");
-        label_Humedity = new QLabel(layoutWidget);
-        label_Humedity->setObjectName("label_Humedity");
-
-        gridLayout->addWidget(label_Humedity, 12, 0, 1, 1);
-
-        label_Displacement = new QLabel(layoutWidget);
-        label_Displacement->setObjectName("label_Displacement");
-
-        gridLayout->addWidget(label_Displacement, 8, 1, 1, 1);
-
-        label_Speed = new QLabel(layoutWidget);
-        label_Speed->setObjectName("label_Speed");
-
-        gridLayout->addWidget(label_Speed, 12, 1, 1, 1);
-
-        label_DroneIPV4 = new QLabel(layoutWidget);
-        label_DroneIPV4->setObjectName("label_DroneIPV4");
-
-        gridLayout->addWidget(label_DroneIPV4, 7, 0, 1, 1);
-
-        lcdNumber_ValueDisplacement = new QLCDNumber(layoutWidget);
-        lcdNumber_ValueDisplacement->setObjectName("lcdNumber_ValueDisplacement");
-        lcdNumber_ValueDisplacement->setSmallDecimalPoint(false);
-
-        gridLayout->addWidget(lcdNumber_ValueDisplacement, 10, 1, 1, 1);
-
-        label_ValueDroneIPV4 = new QLabel(layoutWidget);
-        label_ValueDroneIPV4->setObjectName("label_ValueDroneIPV4");
-
-        gridLayout->addWidget(label_ValueDroneIPV4, 7, 1, 1, 1);
-
-        label_Pressure = new QLabel(layoutWidget);
-        label_Pressure->setObjectName("label_Pressure");
-
-        gridLayout->addWidget(label_Pressure, 14, 0, 1, 1);
-
-        lcdNumber_ValueHumidity = new QLCDNumber(layoutWidget);
-        lcdNumber_ValueHumidity->setObjectName("lcdNumber_ValueHumidity");
-
-        gridLayout->addWidget(lcdNumber_ValueHumidity, 13, 0, 1, 1);
-
-        label_ValueDroneType = new QLabel(layoutWidget);
-        label_ValueDroneType->setObjectName("label_ValueDroneType");
-
-        gridLayout->addWidget(label_ValueDroneType, 6, 1, 1, 1);
-
-        lcdNumber_ValuePressure = new QLCDNumber(layoutWidget);
-        lcdNumber_ValuePressure->setObjectName("lcdNumber_ValuePressure");
-
-        gridLayout->addWidget(lcdNumber_ValuePressure, 16, 0, 1, 1);
-
-        lcdNumber_ValueSpeed = new QLCDNumber(layoutWidget);
-        lcdNumber_ValueSpeed->setObjectName("lcdNumber_ValueSpeed");
-
-        gridLayout->addWidget(lcdNumber_ValueSpeed, 13, 1, 1, 1);
-
-        label_Height = new QLabel(layoutWidget);
-        label_Height->setObjectName("label_Height");
-
-        gridLayout->addWidget(label_Height, 14, 1, 1, 1);
-
-        label_Temperature = new QLabel(layoutWidget);
-        label_Temperature->setObjectName("label_Temperature");
-
-        gridLayout->addWidget(label_Temperature, 8, 0, 1, 1);
-
-        lcdNumber_ValueHeight = new QLCDNumber(layoutWidget);
-        lcdNumber_ValueHeight->setObjectName("lcdNumber_ValueHeight");
-
-        gridLayout->addWidget(lcdNumber_ValueHeight, 16, 1, 1, 1);
-
-        pushButton_FCTRLDebugMode = new QPushButton(layoutWidget);
-        pushButton_FCTRLDebugMode->setObjectName("pushButton_FCTRLDebugMode");
-
-        gridLayout->addWidget(pushButton_FCTRLDebugMode, 3, 1, 1, 1);
-
-        label_DroneType = new QLabel(layoutWidget);
-        label_DroneType->setObjectName("label_DroneType");
-
-        gridLayout->addWidget(label_DroneType, 6, 0, 1, 1);
-
-        label_ValueDroneIndex = new QLabel(layoutWidget);
-        label_ValueDroneIndex->setObjectName("label_ValueDroneIndex");
-
-        gridLayout->addWidget(label_ValueDroneIndex, 5, 1, 1, 1);
-
-        label_DroneIndex = new QLabel(layoutWidget);
-        label_DroneIndex->setObjectName("label_DroneIndex");
-        QFont font2;
-        font2.setFamilies({QString::fromUtf8("Calibri Light")});
-        label_DroneIndex->setFont(font2);
-
-        gridLayout->addWidget(label_DroneIndex, 5, 0, 1, 1);
-
-        lcdNumber_ValueTemperature = new QLCDNumber(layoutWidget);
-        lcdNumber_ValueTemperature->setObjectName("lcdNumber_ValueTemperature");
-
-        gridLayout->addWidget(lcdNumber_ValueTemperature, 10, 0, 1, 1);
-
-        pushButton_ConnectLoRaWAN = new QPushButton(layoutWidget);
-        pushButton_ConnectLoRaWAN->setObjectName("pushButton_ConnectLoRaWAN");
-        QFont font3;
-        font3.setFamilies({QString::fromUtf8("Calibri Light")});
-        font3.setPointSize(12);
-        pushButton_ConnectLoRaWAN->setFont(font3);
-        pushButton_ConnectLoRaWAN->setStyleSheet(QString::fromUtf8(""));
-
-        gridLayout->addWidget(pushButton_ConnectLoRaWAN, 3, 0, 1, 1);
-
-
-        gridLayout_4->addLayout(gridLayout, 1, 0, 1, 1);
-
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(170, 200, 93, 29));
@@ -774,7 +649,7 @@ public:
         toolButton_3->setGeometry(QRect(270, 200, 24, 29));
         pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(20, 80, 135, 29));
+        pushButton_4->setGeometry(QRect(20, 80, 271, 31));
         label_QuadcopterConsole = new QLabel(centralwidget);
         label_QuadcopterConsole->setObjectName("label_QuadcopterConsole");
         label_QuadcopterConsole->setGeometry(QRect(20, 40, 271, 28));
@@ -782,10 +657,10 @@ public:
         pushButton_SaveLogFile = new QPushButton(centralwidget);
         pushButton_SaveLogFile->setObjectName("pushButton_SaveLogFile");
         pushButton_SaveLogFile->setGeometry(QRect(20, 650, 275, 31));
-        QFont font4;
-        font4.setFamilies({QString::fromUtf8("Calibri Light")});
-        font4.setPointSize(14);
-        pushButton_SaveLogFile->setFont(font4);
+        QFont font2;
+        font2.setFamilies({QString::fromUtf8("Calibri Light")});
+        font2.setPointSize(14);
+        pushButton_SaveLogFile->setFont(font2);
         textEdit_LogPanel = new QTextEdit(centralwidget);
         textEdit_LogPanel->setObjectName("textEdit_LogPanel");
         textEdit_LogPanel->setGeometry(QRect(20, 320, 275, 320));
@@ -798,27 +673,26 @@ public:
         label_LoRaWANServer = new QLabel(centralwidget);
         label_LoRaWANServer->setObjectName("label_LoRaWANServer");
         label_LoRaWANServer->setGeometry(QRect(20, 200, 135, 29));
-        label_LoRaWANServer->setFont(font2);
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Calibri Light")});
+        label_LoRaWANServer->setFont(font3);
         pushButton_ServerSetting = new QPushButton(centralwidget);
         pushButton_ServerSetting->setObjectName("pushButton_ServerSetting");
         pushButton_ServerSetting->setGeometry(QRect(640, 0, 98, 27));
-        pushButton_ServerSetting->setFont(font3);
+        QFont font4;
+        font4.setFamilies({QString::fromUtf8("Calibri Light")});
+        font4.setPointSize(12);
+        pushButton_ServerSetting->setFont(font4);
         label_MQTTServer = new QLabel(centralwidget);
         label_MQTTServer->setObjectName("label_MQTTServer");
         label_MQTTServer->setGeometry(QRect(20, 240, 135, 29));
-        label_MQTTServer->setFont(font2);
+        label_MQTTServer->setFont(font3);
         label_StatusLoRaWANServer = new QLabel(centralwidget);
         label_StatusLoRaWANServer->setObjectName("label_StatusLoRaWANServer");
         label_StatusLoRaWANServer->setGeometry(QRect(520, 10, 93, 21));
         pushButton_RCTRLDebugMode = new QPushButton(centralwidget);
         pushButton_RCTRLDebugMode->setObjectName("pushButton_RCTRLDebugMode");
-        pushButton_RCTRLDebugMode->setGeometry(QRect(170, 80, 121, 31));
-        label_ValueLoRaWANFrequency = new QLabel(centralwidget);
-        label_ValueLoRaWANFrequency->setObjectName("label_ValueLoRaWANFrequency");
-        label_ValueLoRaWANFrequency->setGeometry(QRect(170, 120, 121, 32));
-        label_LoRaWANFrequency = new QLabel(centralwidget);
-        label_LoRaWANFrequency->setObjectName("label_LoRaWANFrequency");
-        label_LoRaWANFrequency->setGeometry(QRect(20, 120, 135, 29));
+        pushButton_RCTRLDebugMode->setGeometry(QRect(20, 120, 135, 31));
         label_StatusMQTTServer = new QLabel(centralwidget);
         label_StatusMQTTServer->setObjectName("label_StatusMQTTServer");
         label_StatusMQTTServer->setGeometry(QRect(410, 10, 93, 21));
@@ -834,6 +708,73 @@ public:
         toolButton_4 = new QToolButton(centralwidget);
         toolButton_4->setObjectName("toolButton_4");
         toolButton_4->setGeometry(QRect(270, 160, 24, 30));
+        pushButton_FCTRLDebugMode = new QPushButton(centralwidget);
+        pushButton_FCTRLDebugMode->setObjectName("pushButton_FCTRLDebugMode");
+        pushButton_FCTRLDebugMode->setGeometry(QRect(160, 120, 135, 31));
+        pushButton_LoRaWANSetting = new QPushButton(centralwidget);
+        pushButton_LoRaWANSetting->setObjectName("pushButton_LoRaWANSetting");
+        pushButton_LoRaWANSetting->setGeometry(QRect(1130, 40, 131, 31));
+        label_Humedity = new QLabel(centralwidget);
+        label_Humedity->setObjectName("label_Humedity");
+        label_Humedity->setGeometry(QRect(980, 250, 131, 21));
+        label_Speed = new QLabel(centralwidget);
+        label_Speed->setObjectName("label_Speed");
+        label_Speed->setGeometry(QRect(1130, 250, 131, 25));
+        label_Displacement = new QLabel(centralwidget);
+        label_Displacement->setObjectName("label_Displacement");
+        label_Displacement->setGeometry(QRect(1130, 180, 131, 25));
+        label_DroneIPV4 = new QLabel(centralwidget);
+        label_DroneIPV4->setObjectName("label_DroneIPV4");
+        label_DroneIPV4->setGeometry(QRect(980, 140, 131, 25));
+        lcdNumber_ValueDisplacement = new QLCDNumber(centralwidget);
+        lcdNumber_ValueDisplacement->setObjectName("lcdNumber_ValueDisplacement");
+        lcdNumber_ValueDisplacement->setGeometry(QRect(1130, 220, 131, 25));
+        lcdNumber_ValueDisplacement->setSmallDecimalPoint(false);
+        label_Pressure = new QLabel(centralwidget);
+        label_Pressure->setObjectName("label_Pressure");
+        label_Pressure->setGeometry(QRect(980, 310, 131, 25));
+        label_ValueDroneIPV4 = new QLabel(centralwidget);
+        label_ValueDroneIPV4->setObjectName("label_ValueDroneIPV4");
+        label_ValueDroneIPV4->setGeometry(QRect(1130, 140, 131, 25));
+        label_ValueDroneType = new QLabel(centralwidget);
+        label_ValueDroneType->setObjectName("label_ValueDroneType");
+        label_ValueDroneType->setGeometry(QRect(1130, 110, 131, 25));
+        lcdNumber_ValueHumidity = new QLCDNumber(centralwidget);
+        lcdNumber_ValueHumidity->setObjectName("lcdNumber_ValueHumidity");
+        lcdNumber_ValueHumidity->setGeometry(QRect(980, 280, 131, 25));
+        lcdNumber_ValuePressure = new QLCDNumber(centralwidget);
+        lcdNumber_ValuePressure->setObjectName("lcdNumber_ValuePressure");
+        lcdNumber_ValuePressure->setGeometry(QRect(980, 340, 131, 25));
+        lcdNumber_ValueSpeed = new QLCDNumber(centralwidget);
+        lcdNumber_ValueSpeed->setObjectName("lcdNumber_ValueSpeed");
+        lcdNumber_ValueSpeed->setGeometry(QRect(1130, 280, 131, 25));
+        label_Height = new QLabel(centralwidget);
+        label_Height->setObjectName("label_Height");
+        label_Height->setGeometry(QRect(1130, 310, 131, 25));
+        label_Temperature = new QLabel(centralwidget);
+        label_Temperature->setObjectName("label_Temperature");
+        label_Temperature->setGeometry(QRect(980, 180, 131, 25));
+        label_DroneType = new QLabel(centralwidget);
+        label_DroneType->setObjectName("label_DroneType");
+        label_DroneType->setGeometry(QRect(980, 110, 131, 25));
+        lcdNumber_ValueHeight = new QLCDNumber(centralwidget);
+        lcdNumber_ValueHeight->setObjectName("lcdNumber_ValueHeight");
+        lcdNumber_ValueHeight->setGeometry(QRect(1130, 340, 131, 25));
+        label_DroneIndex = new QLabel(centralwidget);
+        label_DroneIndex->setObjectName("label_DroneIndex");
+        label_DroneIndex->setGeometry(QRect(980, 80, 131, 25));
+        label_DroneIndex->setFont(font3);
+        label_ValueDroneIndex = new QLabel(centralwidget);
+        label_ValueDroneIndex->setObjectName("label_ValueDroneIndex");
+        label_ValueDroneIndex->setGeometry(QRect(1130, 80, 131, 25));
+        pushButton_ConnectLoRaWAN = new QPushButton(centralwidget);
+        pushButton_ConnectLoRaWAN->setObjectName("pushButton_ConnectLoRaWAN");
+        pushButton_ConnectLoRaWAN->setGeometry(QRect(980, 40, 131, 31));
+        pushButton_ConnectLoRaWAN->setFont(font4);
+        pushButton_ConnectLoRaWAN->setStyleSheet(QString::fromUtf8(""));
+        lcdNumber_ValueTemperature = new QLCDNumber(centralwidget);
+        lcdNumber_ValueTemperature->setObjectName("lcdNumber_ValueTemperature");
+        lcdNumber_ValueTemperature->setGeometry(QRect(980, 220, 131, 25));
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
         label_QuadcopterConsole->raise();
         pushButton_SaveLogFile->raise();
@@ -844,8 +785,6 @@ public:
         label_MQTTServer->raise();
         label_StatusLoRaWANServer->raise();
         pushButton_RCTRLDebugMode->raise();
-        label_ValueLoRaWANFrequency->raise();
-        label_LoRaWANFrequency->raise();
         label_StatusMQTTServer->raise();
         label_ApplicationIPV4->raise();
         label_UDPConnection->raise();
@@ -872,7 +811,6 @@ public:
         graphicsView_Camera0->raise();
         pushButton_MoveReverse->raise();
         pushButton_MoveRight->raise();
-        layoutWidget->raise();
         pushButton_DroneSelectPrevious->raise();
         pushButton_DroneSelectNext->raise();
         label_Time->raise();
@@ -943,6 +881,7 @@ public:
         toolButton_3->raise();
         pushButton_4->raise();
         toolButton_4->raise();
+        pushButton_FCTRLDebugMode->raise();
 
         retranslateUi(Quadcopter_MainWindow);
 
@@ -1026,20 +965,6 @@ public:
         label_Camera5_2->setText(QString());
         label_Camera4_2->setText(QString());
         label_CompasOnSpot->setText(QString());
-        label_Humedity->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Humedity (%)</span></p></body></html>", nullptr));
-        label_Displacement->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Displacement (cm)</span></p></body></html>", nullptr));
-        label_Speed->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Speed (cm/s)</span></p></body></html>", nullptr));
-        label_DroneIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone IPV4</span></p></body></html>", nullptr));
-        label_ValueDroneIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
-        label_Pressure->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Pressure (hPa)</span></p></body></html>", nullptr));
-        label_ValueDroneType->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">N/A</span></p></body></html>", nullptr));
-        label_Height->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Height (cm)</span></p></body></html>", nullptr));
-        label_Temperature->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Temperature ('C)</span></p></body></html>", nullptr));
-        pushButton_FCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "FCTLR DEBUG Mode", nullptr));
-        label_DroneType->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Type</span></p></body></html>", nullptr));
-        label_ValueDroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">0/99</span></p></body></html>", nullptr));
-        label_DroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Index</span></p></body></html>", nullptr));
-        pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Drone Setting", nullptr));
         pushButton->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Disconnected", nullptr));
         pushButton_2->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Disconnected", nullptr));
         pushButton_3->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Disconnected", nullptr));
@@ -1050,18 +975,31 @@ public:
         label_QuadcopterConsole->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Drone - Console</span></p></body></html>", nullptr));
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
         label_StatusUDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disabled</span></p></body></html>", nullptr));
-        label_LoRaWANServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">LoRaWAN Server</span></p></body></html>", nullptr));
+        label_LoRaWANServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">LoRaWAN Server</span></p></body></html>", nullptr));
         pushButton_ServerSetting->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Server Setting", nullptr));
-        label_MQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">MQTT Server</span></p></body></html>", nullptr));
+        label_MQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">MQTT Server</span></p></body></html>", nullptr));
         label_StatusLoRaWANServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
         pushButton_RCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "RCTL DEBUG Mode", nullptr));
-        label_ValueLoRaWANFrequency->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p>LoRaWAN Freq.</p></body></html>", nullptr));
-        label_LoRaWANFrequency->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">LoRaWAN Freq.</span></p></body></html>", nullptr));
         label_StatusMQTTServer->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disconnected</span></p></body></html>", nullptr));
-        label_ApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Application IPV4</span></p></body></html>", nullptr));
-        label_UDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">UDP Server</span></p></body></html>", nullptr));
+        label_ApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">Network Connection</span></p></body></html>", nullptr));
+        label_UDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:700;\">UDP Server</span></p></body></html>", nullptr));
         label_ValueApplicationIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p>Application IPV4</p></body></html>", nullptr));
         toolButton_4->setText(QString());
+        pushButton_FCTRLDebugMode->setText(QCoreApplication::translate("Quadcopter_MainWindow", "FCTLR DEBUG Mode", nullptr));
+        pushButton_LoRaWANSetting->setText(QCoreApplication::translate("Quadcopter_MainWindow", "LoRaWAN Setting", nullptr));
+        label_Humedity->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Humedity (%)</span></p></body></html>", nullptr));
+        label_Speed->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Speed (cm/s)</span></p></body></html>", nullptr));
+        label_Displacement->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Displacement (cm)</span></p></body></html>", nullptr));
+        label_DroneIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone IPV4</span></p></body></html>", nullptr));
+        label_Pressure->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Pressure (hPa)</span></p></body></html>", nullptr));
+        label_ValueDroneIPV4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><br/></p></body></html>", nullptr));
+        label_ValueDroneType->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">N/A</span></p></body></html>", nullptr));
+        label_Height->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Height (cm)</span></p></body></html>", nullptr));
+        label_Temperature->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:12pt;\">Temperature ('C)</span></p></body></html>", nullptr));
+        label_DroneType->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Type</span></p></body></html>", nullptr));
+        label_DroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Drone Index</span></p></body></html>", nullptr));
+        label_ValueDroneIndex->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">0/99</span></p></body></html>", nullptr));
+        pushButton_ConnectLoRaWAN->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Drone Setting", nullptr));
     } // retranslateUi
 
 };
