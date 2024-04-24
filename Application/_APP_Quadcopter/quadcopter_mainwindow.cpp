@@ -108,6 +108,25 @@ void Quadcopter_MainWindow::Quadcopter_MainWindow::keyPressEvent(QKeyEvent *inpu
 
 }
 
+void Quadcopter_MainWindow::LoginPage()
+{
+    login_page->adjustSize();
+    login_page->setModal(true);
+    login_page->show();
+}
+
+void Quadcopter_MainWindow::LoginResult(bool result)
+{
+    if(result == true)
+    {
+        EnablePanel();
+    }
+    else
+    {
+        DisablePanel();
+    }
+}
+
 void Quadcopter_MainWindow::ServerConsole()
 {
     qcopterConsole->ServerParamInit();
@@ -1144,6 +1163,8 @@ void Quadcopter_MainWindow::UpdateGeoPos(int value)
 
 void Quadcopter_MainWindow::ConnectFunctions()
 {
+    connect(ui->pushButton_enablePanel, SIGNAL(clicked(bool)), this, SLOT(LoginPage()));
+    connect(login_page, SIGNAL(LoginPageCheckResult(bool)), this, SLOT(LoginResult(bool)));
     connect(ui->pushButton_ServerSetting, SIGNAL(clicked(bool)), this, SLOT(ServerConsole()));
     connect(ui->pushButton_SaveLogFile, SIGNAL(clicked(bool)), this, SLOT(SaveLogFile()));
     connect(qcopterConsole, SIGNAL(QCopter_ApplicationIPV4(QString)), ui->label_ValueApplicationIPV4, SLOT(setText(QString)));

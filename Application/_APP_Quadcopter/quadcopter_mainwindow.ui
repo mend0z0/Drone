@@ -1807,7 +1807,7 @@ color: rgb(255, 255, 255);</string>
      <string>...</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_4">
+   <widget class="QPushButton" name="pushButton_enablePanel">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -2026,11 +2026,21 @@ color: rgb(255, 255, 255);</string>
       <x>270</x>
       <y>160</y>
       <width>24</width>
-      <height>30</height>
+      <height>29</height>
      </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="Resources.qrc">
+      <normaloff>:/Resources/Icons/refresh-icon.png</normaloff>:/Resources/Icons/refresh-icon.png</iconset>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_FCTRLDebugMode">
@@ -2305,6 +2315,26 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
    </widget>
+   <zorder>pushButton_LoRaWANSetting</zorder>
+   <zorder>label_Humedity</zorder>
+   <zorder>label_Speed</zorder>
+   <zorder>label_Displacement</zorder>
+   <zorder>label_DroneIPV4</zorder>
+   <zorder>lcdNumber_ValueDisplacement</zorder>
+   <zorder>label_Pressure</zorder>
+   <zorder>label_ValueDroneIPV4</zorder>
+   <zorder>label_ValueDroneType</zorder>
+   <zorder>lcdNumber_ValueHumidity</zorder>
+   <zorder>lcdNumber_ValuePressure</zorder>
+   <zorder>lcdNumber_ValueSpeed</zorder>
+   <zorder>label_Height</zorder>
+   <zorder>label_Temperature</zorder>
+   <zorder>label_DroneType</zorder>
+   <zorder>lcdNumber_ValueHeight</zorder>
+   <zorder>label_DroneIndex</zorder>
+   <zorder>label_ValueDroneIndex</zorder>
+   <zorder>pushButton_ConnectLoRaWAN</zorder>
+   <zorder>lcdNumber_ValueTemperature</zorder>
    <zorder>label_QuadcopterConsole</zorder>
    <zorder>pushButton_SaveLogFile</zorder>
    <zorder>textEdit_LogPanel</zorder>
@@ -2340,7 +2370,6 @@ color: rgb(255, 255, 255);</string>
    <zorder>graphicsView_Camera0</zorder>
    <zorder>pushButton_MoveReverse</zorder>
    <zorder>pushButton_MoveRight</zorder>
-   <zorder>layoutWidget</zorder>
    <zorder>pushButton_DroneSelectPrevious</zorder>
    <zorder>pushButton_DroneSelectNext</zorder>
    <zorder>label_Time</zorder>
@@ -2409,7 +2438,7 @@ color: rgb(255, 255, 255);</string>
    <zorder>toolButton</zorder>
    <zorder>toolButton_2</zorder>
    <zorder>toolButton_3</zorder>
-   <zorder>pushButton_4</zorder>
+   <zorder>pushButton_enablePanel</zorder>
    <zorder>toolButton_4</zorder>
    <zorder>pushButton_FCTRLDebugMode</zorder>
   </widget>

@@ -30,6 +30,7 @@
 #include <QFileDialog>
 #include <QIcon>
 
+#include <quadcopter_login_page.h>
 #include <quadcopter_server.h>
 #include <debug_console.h>
 
@@ -53,6 +54,8 @@ protected:
     void keyPressEvent(QKeyEvent *inputCmd);
 
 private slots:
+    void LoginPage(void);
+    void LoginResult(bool result);
     void ServerConsole(void);
     void FCTRLDebugConsole(void);
     void RCTRLDebugConsole(void);
@@ -118,6 +121,7 @@ private:
     const qreal fontPointSize = 8;
     const qreal fontLetterSpacing = (fontPointSize * 16);
 
+    quadcopter_login_page *login_page = new quadcopter_login_page();
     quadcopter_server *qcopterConsole = new quadcopter_server();
     debug_console *fctrlDebugConsol = new debug_console();
     debug_console *rctrlDebugConsol = new debug_console();
