@@ -10,6 +10,7 @@
 #define UI_QUADCOPTER_MAINWINDOW_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDial>
 #include <QtWidgets/QGraphicsView>
@@ -119,7 +120,7 @@ public:
     QToolButton *toolButton;
     QToolButton *toolButton_2;
     QToolButton *toolButton_3;
-    QPushButton *pushButton_4;
+    QPushButton *pushButton_enablePanel;
     QLabel *label_QuadcopterConsole;
     QPushButton *pushButton_SaveLogFile;
     QTextEdit *textEdit_LogPanel;
@@ -647,9 +648,9 @@ public:
         toolButton_3 = new QToolButton(centralwidget);
         toolButton_3->setObjectName("toolButton_3");
         toolButton_3->setGeometry(QRect(270, 200, 24, 29));
-        pushButton_4 = new QPushButton(centralwidget);
-        pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(20, 80, 271, 31));
+        pushButton_enablePanel = new QPushButton(centralwidget);
+        pushButton_enablePanel->setObjectName("pushButton_enablePanel");
+        pushButton_enablePanel->setGeometry(QRect(20, 80, 271, 31));
         label_QuadcopterConsole = new QLabel(centralwidget);
         label_QuadcopterConsole->setObjectName("label_QuadcopterConsole");
         label_QuadcopterConsole->setGeometry(QRect(20, 40, 271, 28));
@@ -707,7 +708,12 @@ public:
         label_ValueApplicationIPV4->setGeometry(QRect(170, 160, 93, 32));
         toolButton_4 = new QToolButton(centralwidget);
         toolButton_4->setObjectName("toolButton_4");
-        toolButton_4->setGeometry(QRect(270, 160, 24, 30));
+        toolButton_4->setGeometry(QRect(270, 160, 24, 29));
+        toolButton_4->setAutoFillBackground(false);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/Resources/Icons/refresh-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_4->setIcon(icon);
+        toolButton_4->setAutoRaise(false);
         pushButton_FCTRLDebugMode = new QPushButton(centralwidget);
         pushButton_FCTRLDebugMode->setObjectName("pushButton_FCTRLDebugMode");
         pushButton_FCTRLDebugMode->setGeometry(QRect(160, 120, 135, 31));
@@ -776,6 +782,26 @@ public:
         lcdNumber_ValueTemperature->setObjectName("lcdNumber_ValueTemperature");
         lcdNumber_ValueTemperature->setGeometry(QRect(980, 220, 131, 25));
         Quadcopter_MainWindow->setCentralWidget(centralwidget);
+        pushButton_LoRaWANSetting->raise();
+        label_Humedity->raise();
+        label_Speed->raise();
+        label_Displacement->raise();
+        label_DroneIPV4->raise();
+        lcdNumber_ValueDisplacement->raise();
+        label_Pressure->raise();
+        label_ValueDroneIPV4->raise();
+        label_ValueDroneType->raise();
+        lcdNumber_ValueHumidity->raise();
+        lcdNumber_ValuePressure->raise();
+        lcdNumber_ValueSpeed->raise();
+        label_Height->raise();
+        label_Temperature->raise();
+        label_DroneType->raise();
+        lcdNumber_ValueHeight->raise();
+        label_DroneIndex->raise();
+        label_ValueDroneIndex->raise();
+        pushButton_ConnectLoRaWAN->raise();
+        lcdNumber_ValueTemperature->raise();
         label_QuadcopterConsole->raise();
         pushButton_SaveLogFile->raise();
         textEdit_LogPanel->raise();
@@ -879,7 +905,7 @@ public:
         toolButton->raise();
         toolButton_2->raise();
         toolButton_3->raise();
-        pushButton_4->raise();
+        pushButton_enablePanel->raise();
         toolButton_4->raise();
         pushButton_FCTRLDebugMode->raise();
 
@@ -971,7 +997,7 @@ public:
         toolButton->setText(QCoreApplication::translate("Quadcopter_MainWindow", "...", nullptr));
         toolButton_2->setText(QCoreApplication::translate("Quadcopter_MainWindow", "...", nullptr));
         toolButton_3->setText(QCoreApplication::translate("Quadcopter_MainWindow", "...", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Enable Panel", nullptr));
+        pushButton_enablePanel->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Enable Panel", nullptr));
         label_QuadcopterConsole->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:14pt; font-weight:700;\">Drone - Console</span></p></body></html>", nullptr));
         pushButton_SaveLogFile->setText(QCoreApplication::translate("Quadcopter_MainWindow", "Save Log File", nullptr));
         label_StatusUDPConnection->setText(QCoreApplication::translate("Quadcopter_MainWindow", "<html><head/><body><p><span style=\" font-size:12pt;\">Disabled</span></p></body></html>", nullptr));
