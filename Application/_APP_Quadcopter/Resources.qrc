@@ -15,5 +15,6 @@
         <file>../Resources/Gifs/LostConnection.gif</file>
         <file>../Resources/Icons/GeoPosLighting.png</file>
         <file>../Resources/Icons/GeoPosOff.png</file>
+        <file>../Resources/Icons/refresh-icon.png</file>
     </qresource>
 </RCC>
