@@ -15,16 +15,19 @@ CONFIG += c++17
 SOURCES += \
     debug_console.cpp \
     main.cpp \
+    quadcopter_login_page.cpp \
     quadcopter_mainwindow.cpp \
     quadcopter_server.cpp
 
 HEADERS += \
     debug_console.h \
+    quadcopter_login_page.h \
     quadcopter_mainwindow.h \
     quadcopter_server.h
 
 FORMS += \
     debug_console.ui \
+    quadcopter_login_page.ui \
     quadcopter_mainwindow.ui \
     quadcopter_server.ui
 
