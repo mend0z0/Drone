@@ -2,10 +2,10 @@
 ## Latest update
 
 ``
-Some mechanical and electronic components have been bought. Going to write the OS for Flight controller part...
+Working on the block diagrams...
 ``
 
-# Quadcopter
+# Drone
 
 Briefly, a quadcopter is a type of drone that consists of four motors and the idea is to fly remotely over the ground surface at a pre-determined distance. Our project goal is to acquire four motors that can carry and fly a chassis. The effort, in the first place, is to stabilize the chassis in the air. Also, In contrast to the traditional drone remote controller, the goal of this project is to control the drone with an application that is running on a PC/Raspberry Pi.
 
@@ -53,13 +53,8 @@ __Robotics__
 ### Application
 
 - **IDE:** Qt6
-- **Operating System:** Raspberry Pi OS (64-bit)
-- **Device:** Raspberry Pi 400
-
-### Mechanical
-
-- **CAD:** Solid Edge
-- **Manufacturing Method:** 3D Printing
+- **Operating System:** Windows (64-bit)
+- **Device:** Laptop
 
 ## Block Diagrams
 
@@ -67,9 +62,9 @@ __Robotics__
 
 ## Glamour Shots
 
-|![_ASMView_Top_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Bottom_Quadcopter_v1.0.svg)|![_MECH_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_MECH_Quadcopter_v1.0.svg)|![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_APP_Quadcopter_v1.0.svg)|
+|![_ASMView_Top_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Bottom_Quadcopter_v1.0.svg)|![_MECH_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![App Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|
 |:--:| :--:| :--:| :--: |
-| PCB Top View | PCB Bottom View | Frame View | Application View |
+| PCB Top View | PCB Bottom View | Application Screen | Complete Drone |
 
 ### Final Device
 
@@ -84,8 +79,6 @@ Not ready yet for demo...
 - [@Siavash Taher Parvar](https://www.linkedin.com/in/mend0z0)
 
 ## Support
-
-- [Support Link](https://github.com/sponsors/mend0z0)
 
 ![Logo](https://github.com/mend0z0/Quadcopter/blob/main/Logo.png)
 
