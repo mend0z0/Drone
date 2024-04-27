@@ -63,7 +63,7 @@ __Robotics__
 
 ## Block Diagrams
 
-![SystemDesign](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_SYS_QuadCopter_v1.0.svg)
+![SystemDesign](https://github.com/mend0z0/Quadcopter/blob/main/Document/Block%20Diagrams/_FBD_SYS_Drone_v1.0.svg)
 
 ## Glamour Shots
 
