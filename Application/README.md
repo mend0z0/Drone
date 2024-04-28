@@ -28,6 +28,15 @@ Quadcopter application to-do list
     - Add a connect disconnect button for LoRaWAN, MQTT, and UDP connection
     - 
     - 
+	Should be done by Apr 23rd
+    - 
+    - 
+    - If we were connected to network then open the network connection buttons active
+    - Showing an error if we were not connected to the network
+    - Correct the labels placement
+    - 
+    - 
+    - 
     - 
     - 
 - #### Important (List the works that efficient and optimized functionality of project depends on these tasks):
