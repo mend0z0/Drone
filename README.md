@@ -7,7 +7,7 @@ Working on the block diagrams...
 
 # Drone
 
-Briefly, a quadcopter is a type of drone that consists of four motors and the idea is to fly remotely over the ground surface at a pre-determined distance. Our project goal is to acquire four motors that can carry and fly a chassis. The effort, in the first place, is to stabilize the chassis in the air. Also, In contrast to the traditional drone remote controller, the goal of this project is to control the drone with an application that is running on a PC/Raspberry Pi.
+This project is supposed to be a foundation for different types of drones such as, quadcopter, tricopter, RC cars, Motorcycle, and so on...
 
 ## Category
 
@@ -25,8 +25,8 @@ __Robotics__
 
 ### Hardware
 
-#### DroneController (Flight & Radio Controller)
-- **MCU (Flight Controller):** STM32U575
+#### DroneController (Equilibrium & Radio Controller)
+- **MCU (Equilibrium Controller):** STM32U575
 - **MCU (Radio Controller):** STM32WLE5
 - **Connection:** SPI, I2C, UART, QSPI, DCMI, PWM
 - **PCB Layers:** 6Layers (Controlled Impedance)
@@ -40,7 +40,7 @@ __Robotics__
 
 ### Firmware
 
-#### DroneController (Flight & Radio Controller)
+#### DroneController (Equilibrium & Radio Controller)
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
