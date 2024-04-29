@@ -7,7 +7,7 @@ Working on the block diagrams...
 
 # Drone
 
-This project is supposed to be a foundation for different types of drones such as, Quadcopter, Tricopter, RC cars, Motorcycle, and so on...
+This project is supposed to be a foundation for different types of drones such as Quadcopter, Tricopter, RC cars, Motorcycle, and so on... . The outcome is with a single application we can connect, sync, and or process the collected data from different drones regardless of their type.
 
 ## Category
 
