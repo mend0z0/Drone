@@ -78,7 +78,6 @@ Not ready yet for demo...
 
 - [@Siavash Taher Parvar](https://www.linkedin.com/in/mend0z0)
 
-## Support
 
 ![Logo](https://github.com/mend0z0/Quadcopter/blob/main/Logo.png)
 
