@@ -16,31 +16,42 @@ __Robotics__
 ## Features
 
 - Mini size
-- VGA Camera
+- Camera
 - Long and short wireless connection
 - OTA Programming
 
 
-## Tech Stack
+## Technology
 
 ### Hardware
 
 #### DroneController (Equilibrium & Radio Controller)
 - **MCU (Equilibrium Controller):** STM32U575
 - **MCU (Radio Controller):** STM32WLE5
-- **Connection:** SPI, I2C, UART, QSPI, DCMI, PWM
+- **Connection:** SPI, I2C, UART, QSPI, PWM
 - **PCB Layers:** 6Layers (Controlled Impedance)
+- **CAD:** KiCAD
+
+#### Camera
+- **MCU:** 
+- **Connection:** SPI, I2C, MIPI, SDIO
+- **PCB Layers:** 4Layers (Controlled Impedance)
 - **CAD:** KiCAD
 
 #### LoRaWAN Gateway
 - **MCU:** STM32WLE5
 - **Connection:** UART, USB2.0
-- **PCB Layers:** 2Layer/s (None-controlled Impedance)
+- **PCB Layers:** 4Layer/s (None-controlled Impedance)
 - **CAD:** KiCAD
 
 ### Firmware
 
 #### DroneController (Equilibrium & Radio Controller)
+- **OS:** FreeRTOS
+- **Programming Language:** C Languagae
+- **IDE:** STM32CubeIDE
+
+#### Camera
 - **OS:** FreeRTOS
 - **Programming Language:** C Languagae
 - **IDE:** STM32CubeIDE
@@ -62,9 +73,9 @@ __Robotics__
 
 ## Glamour Shots
 
-|![_ASMView_Top_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Bottom_Quadcopter_v1.0.svg)|![_App_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![FULLDRONE_Screenshot](https://github.com/mend0z0/Drone/blob/main/Document/Glamour%20shots/_FULLDRONE_Quadcopter_v1.0.jpg)|
-|:--:| :--:| :--:| :--: |
-| PCB Top View | PCB Bottom View | Application Screen | Complete Drone |
+|![_ASMView_Top_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![_ASMView_Bottom_Quadcopter](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Bottom_Quadcopter_v1.0.svg)|![_App_Quadcopter_v1.0_](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![FULLDRONE_Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![FULLDRONE_Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|![FULLDRONE_Screenshot](https://github.com/mend0z0/Quadcopter/blob/main/Document/Glamour%20shots/_ASMView_Top_Quadcopter_v1.0.svg)|
+|:--:| :--:| :--:| :--: | :--:| :--: |
+| Drone PCB Top | Drone PCB Bottom | Camera PCB Top | Camera PCB Bottom | LoRaWAN Gateway PCB Top | LoRaWAN Gateway PCB Bottom |
 
 ### Final Device
 
