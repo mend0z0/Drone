@@ -33,7 +33,7 @@ __Robotics__
 - **CAD:** KiCAD
 
 #### Camera
-- **MCU:** 
+- **MCU:** ...
 - **Connection:** SPI, I2C, MIPI, SDIO
 - **PCB Layers:** 4Layers (Controlled Impedance)
 - **CAD:** KiCAD
