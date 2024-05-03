@@ -79,7 +79,7 @@ __Robotics__
 
 ### Final Device
 
-![_Quadcopter_](https://github.com/mend0z0)
+![_Final Device_](https://github.com/mend0z0)
 
 ## Demo
 
