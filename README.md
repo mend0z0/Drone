@@ -29,7 +29,7 @@ __Robotics__
 - **MCU (Equilibrium Controller):** STM32U575
 - **MCU (Radio Controller):** STM32WLE5
 - **Connection:** SPI, I2C, UART, QSPI, PWM
-- **PCB Layers:** 6Layers (Controlled Impedance)
+- **PCB Layers:** 4Layers (Controlled Impedance)
 - **CAD:** KiCAD
 
 #### Camera
@@ -41,7 +41,7 @@ __Robotics__
 #### LoRaWAN Gateway
 - **MCU:** STM32WLE5
 - **Connection:** UART, USB2.0
-- **PCB Layers:** 4Layer/s (None-controlled Impedance)
+- **PCB Layers:** 4Layer/s (Controlled Impedance)
 - **CAD:** KiCAD
 
 ### Firmware
