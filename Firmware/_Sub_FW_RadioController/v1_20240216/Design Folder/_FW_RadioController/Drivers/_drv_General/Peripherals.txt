@@ -1,7 +1,0 @@
-PWR 
-RCC
-WDT (This is the last peripheral)
-GPIO
-LED_INDC (TickTimer is its home)
-
-UART (TxRx) <-> (For debug mode)

@@ -1,7 +1,0 @@
-RCC
-GPIO
-DMA
-
-LPUART (TxRx) <-> DMA (Goes to FCTRL)
-
-SPI (Slave) <-> DMA (Goes to FCTRL)
