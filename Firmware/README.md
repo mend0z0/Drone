@@ -1,6 +1,6 @@
-## _SUB_FW_FlightController
+## _SUB_FW_EquilibriumController
 
-What is this firmware for?
+This firmware will perform any required control algorithm to keep the drone stable, also it'll read environmental sensors to find its global position (from GPS), local position (IMU), and different variables like temperature, humidity, and pressure.
 
 ### Specification
 
