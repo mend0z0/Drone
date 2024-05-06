@@ -1,0 +1,9 @@
+../_FW_Prj/App/_app_test (Testing the peripherals and the modules will be placed in this file and also the test routine)
+
+../_FW_Prj/Core/ISR (All the interrupt service routine functions go in this file)
+
+../_FW_Prj/Drivers/Driver name/_drv_peripheral (All the MCU peripherals init and API functions will go here)
+					_drv_module.. (We'll have as many as the numbner of modules we have from this file and the their API functions go here)
+
+../_FW_Prj/OS/FreeRTOS/..rtos.. (In case we added RTOS, its files would go to library sub-folder)
+main (In this file the main function will be here and the main routine (the diagram) will be executed here)
