@@ -1,0 +1,10 @@
+release/debug_console.o
+release/main.o
+release/quadcopter_login_page.o
+release/quadcopter_mainwindow.o
+release/quadcopter_server.o
+release/qrc_Resources.o
+release/moc_debug_console.o
+release/moc_quadcopter_login_page.o
+release/moc_quadcopter_mainwindow.o
+release/moc_quadcopter_server.o

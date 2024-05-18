@@ -1,0 +1,10 @@
+debug/debug_console.o
+debug/main.o
+debug/quadcopter_login_page.o
+debug/quadcopter_mainwindow.o
+debug/quadcopter_server.o
+debug/qrc_Resources.o
+debug/moc_debug_console.o
+debug/moc_quadcopter_login_page.o
+debug/moc_quadcopter_mainwindow.o
+debug/moc_quadcopter_server.o
