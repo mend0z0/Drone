@@ -15,12 +15,12 @@
       "zones": 0.6000000238418579
     },
     "selection_filter": {
-      "dimensions": true,
+      "dimensions": false,
       "footprints": false,
-      "graphics": true,
+      "graphics": false,
       "keepouts": false,
-      "lockedItems": true,
-      "otherItems": true,
+      "lockedItems": false,
+      "otherItems": false,
       "pads": false,
       "text": false,
       "tracks": false,

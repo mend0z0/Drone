@@ -518,6 +518,12 @@
         },
         {
           "group_by": false,
+          "label": "Part Number (Manufacturer)",
+          "name": "Part Number (Manufacturer)",
+          "show": true
+        },
+        {
+          "group_by": false,
           "label": "Part Number (Vendor)",
           "name": "Part Number (Vendor)",
           "show": true
@@ -596,12 +602,6 @@
         },
         {
           "group_by": false,
-          "label": "Part Number (Manufacturer)",
-          "name": "Part Number (Manufacturer)",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Purchase Link",
           "name": "Purchase Link",
           "show": true
@@ -623,7 +623,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Vendor"
+      "sort_field": "Part Number (Vendor)"
     },
     "connection_grid_size": 50.0,
     "drawing": {

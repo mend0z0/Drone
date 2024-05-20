@@ -6518,188 +6518,6 @@
 			)
 		)
 	)
-	(symbol "CONN_RECEPT_JST_1X2_VERT_1.25MM"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board no)
-		(property "Reference" "P"
-			(at 3.556 4.064 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RECEPT_JST_1X2_VERT"
-			(at 3.81 6.604 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 3.81 16.764 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "N/A"
-			(at 3.556 9.144 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "Micro 1.25mm JST 2 Pin Male and Female Connector Plug with 10cm Wire Cable"
-			(at 3.556 13.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Package" "1.25MM"
-			(at 3.81 35.306 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Part Number (Manufacturer)" "N/A"
-			(at 3.81 19.558 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "N/A"
-			(at 3.81 24.384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Part Number (Vendor)" "N/A"
-			(at 3.81 22.098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Amazon"
-			(at 3.81 26.924 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Purchase Link" "https://www.amazon.ca/Acogedor-Micro-1-25mm-Female-Connector/dp/B07GQY53ZQ/ref=sr_1_9?crid=1NV5TGA5CMQPN&dib=eyJ2IjoiMSJ9.k9eX2Yq-jxVNGACDedyqqqIfMp6tgs9WuuPS15zF67fnlKXKxxWglrNuOCMgIcAah-xVkigkmgy4n3xR8X8t-mzh4vF_AtsO5DbVi-AEG9P07FZrA_eSv3n8RMGW-d-UZpdILo60iF_A_YCyppCNjFp5KkZa_CNaz9nMvYiyQYFAX0UO_6DAMDhtADBAiu5UumKl1lNS2VRzsKU9eatyq02xXlt2jQlpMMDvpkPj-xHCiFBwUBO-HrH6ePFUR33J0_x6hjsUEVIHHvFVOwywVja_L8-lUP-7BDI3cVYNAqs.-A8s6a7Nwf-eWQBKZaKmsm55Y0rpCqFvn6F0GDg7Pf8&dib_tag=se&keywords=JST+Female&qid=1711578301&s=industrial&sprefix=jst+female%2Cindustrial%2C67&sr=1-9"
-			(at 3.556 11.684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "SCH CHECK" "SCH (N/A)"
-			(at 3.81 29.972 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "PCB CHECK" "PCB (N/A)"
-			(at 3.81 32.512 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "ki_keywords" "Micro 1.25mm JST 2 Pin Male and Female Connector Plug with 10cm Wire Cable"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "CONN_RECEPT_JST_1X2_VERT_1.25MM_1_1"
-			(rectangle
-				(start 0 0)
-				(end 2.54 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(rectangle
-				(start 0.762 -1.778)
-				(end 1.016 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start 1.524 -1.778)
-				(end 1.778 -2.54)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(text "1.25MM"
-				(at 1.27 -0.762 0)
-				(effects
-					(font
-						(size 0.381 0.381)
-					)
-				)
-			)
-		)
-	)
 	(symbol "CONN_RECEPT_RF_50R_6GHz_UMCC"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23259,6 +23077,188 @@
 						(font
 							(size 1.27 1.27)
 						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MECH_CONN_RECEPT_JST_1X2_VERT_1.25MM"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(property "Reference" "P"
+			(at 3.556 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "RECEPT_JST_1X2_VERT"
+			(at 3.81 6.604 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 3.81 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "N/A"
+			(at 3.556 9.144 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Micro 1.25mm JST 2 Pin Male and Female Connector Plug with 10cm Wire Cable"
+			(at 3.556 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Package" "1.25MM"
+			(at 3.81 35.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number (Manufacturer)" "N/A"
+			(at 3.81 19.558 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "N/A"
+			(at 3.81 24.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Part Number (Vendor)" "N/A"
+			(at 3.81 22.098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Amazon"
+			(at 3.81 26.924 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Purchase Link" "https://www.amazon.ca/Acogedor-Micro-1-25mm-Female-Connector/dp/B07GQY53ZQ/ref=sr_1_9?crid=1NV5TGA5CMQPN&dib=eyJ2IjoiMSJ9.k9eX2Yq-jxVNGACDedyqqqIfMp6tgs9WuuPS15zF67fnlKXKxxWglrNuOCMgIcAah-xVkigkmgy4n3xR8X8t-mzh4vF_AtsO5DbVi-AEG9P07FZrA_eSv3n8RMGW-d-UZpdILo60iF_A_YCyppCNjFp5KkZa_CNaz9nMvYiyQYFAX0UO_6DAMDhtADBAiu5UumKl1lNS2VRzsKU9eatyq02xXlt2jQlpMMDvpkPj-xHCiFBwUBO-HrH6ePFUR33J0_x6hjsUEVIHHvFVOwywVja_L8-lUP-7BDI3cVYNAqs.-A8s6a7Nwf-eWQBKZaKmsm55Y0rpCqFvn6F0GDg7Pf8&dib_tag=se&keywords=JST+Female&qid=1711578301&s=industrial&sprefix=jst+female%2Cindustrial%2C67&sr=1-9"
+			(at 3.556 11.684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "SCH CHECK" "SCH (N/A)"
+			(at 3.81 29.972 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "PCB CHECK" "PCB (N/A)"
+			(at 3.81 32.512 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ki_keywords" "Micro 1.25mm JST 2 Pin Male and Female Connector Plug with 10cm Wire Cable"
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MECH_CONN_RECEPT_JST_1X2_VERT_1.25MM_1_1"
+			(rectangle
+				(start 0 0)
+				(end 2.54 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start 0.762 -1.778)
+				(end 1.016 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(rectangle
+				(start 1.524 -1.778)
+				(end 1.778 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(text "1.25MM"
+				(at 1.27 -0.762 0)
+				(effects
+					(font
+						(size 0.381 0.381)
 					)
 				)
 			)
