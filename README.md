@@ -2,7 +2,7 @@
 ## Latest update
 
 ``
-Working on the block diagrams...
+Working on the firmware block diagrams...
 ``
 
 # Drone
