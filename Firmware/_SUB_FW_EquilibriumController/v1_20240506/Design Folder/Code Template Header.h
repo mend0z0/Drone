@@ -10,10 +10,11 @@
 *	Date:		2024/05/dd
 *	License:	Open-source
 *	******************************** Project Description *******************************************
-*	@Detailed Description:
+*	@Detailed Description: This controller is supposed to read environmental sensors such as temperature,
+*   humidity, pressure, 3-Axis gyroscope, 3-Axis accelerometer, 3-Axis compass, and GPS. Once the data is
+*   read, it'll be filtered and be used for equilibrium and navigation calculation.
 *
-*
-*	******************************** File Description *******************************************
+*	********************************  File Description  *******************************************
 *	@Detailed Description:
 *
 *
