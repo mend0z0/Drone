@@ -1,13 +1,13 @@
 /****************************************************************************************************
 *
-*   Project Name:
+*   Project Name:       Drone - Equilibrium Controller
 *   @Brief Description:
 *   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
 *	File Name:	xxxx.h
-*	Version:	xx
-*	Revision:	xx
-*	Date:		yyyy/mm/dd
+*	Version:	01
+*	Revision:	01
+*	Date:		2024/05/dd
 *	License:	Open-source
 *	******************************** Project Description *******************************************
 *	@Detailed Description:
@@ -19,14 +19,13 @@
 *
 *
 *	*********************************  Hardware Info  **********************************************
-*   Name:
-*   Version:
+*   Name:       _HW_EquilibriumController
+*   Version:    v1.0
 *	*********************************  Processor Info **********************************************
-*	Processor:                  x-Bits
-*	Clock Frequency:    00.00   MHz
-*	RAM Size:           00.00   MBytes
-*	Flash Size:         00.00   MBytes
-*	Cache Size:         00.00   MBytes
+*	Processor:          STM32U575 32-Bits
+*	Clock Frequency:    160.0	MHz
+*	RAM/SRAM Size:      0.784	MBytes
+*	Flash Size:         02.00	MBytes
 *	***********************************  Case Style  ***********************************************
 *	Local Variables = camelCase			Global Variables = g_camelCase
 *	Headers = SCREAMIN_SNAKE_CASE
