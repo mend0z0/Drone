@@ -1,6 +1,6 @@
 /****************************************************************************************************
 *
-*   Project Name:       Drone - Equilibrium Controller
+*   Project Name:       Drone - _SUB_FW_EquilibriumController
 *   @Brief Description:
 *   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
 *
@@ -10,16 +10,16 @@
 *	Date:		2024/05/dd
 *	License:	Open-source
 *	******************************** Project Description *******************************************
-*	@Detailed Description:
-*
-*
+*	@Detailed Description: This controller is supposed to read environmental sensors such as temperature,
+*   humidity, pressure, 3-Axis gyroscope, 3-Axis accelerometer, 3-Axis compass, and GPS. Once the data is
+*   read, it'll be filtered and be used for equilibrium calculation.
 *
 *	******************************** File Description *******************************************
 *	@Detailed Description:
 *
 *
 *	*********************************  Hardware Info  **********************************************
-*   Name:       _HW_EquilibriumController
+*   Name:       _SUB_HW_EquilibriumController
 *   Version:    v1.0
 *	*********************************  Processor Info **********************************************
 *	Processor:          STM32U575 32-Bits
