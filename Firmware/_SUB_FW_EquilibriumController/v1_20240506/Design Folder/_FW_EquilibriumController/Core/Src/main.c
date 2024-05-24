@@ -1,180 +1,157 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
+/****************************************************************************************************
+*
+*   Project Name:       Drone - _SUB_FW_EquilibriumController.main
+*   @Brief Description: This file is the main file of the project.
+*   File Status:	    DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*	File Name:	main.c
+*	Version:	01
+*	Revision:	01
+*	Date:		2024/05/23
+*	License:	Open-source
+*	******************************** Project Description *******************************************
+*	@Detailed Description: This controller is supposed to read environmental sensors such as temperature,
+*   humidity, pressure, 3-Axis gyroscope, 3-Axis accelerometer, 3-Axis compass, and GPS. Once the data is
+*   read, it'll be filtered and be used for equilibrium calculation.
+*
+*	******************************** File Description *******************************************
+*	@Detailed Description: This file contains the initializations, created and scheduled tasks functions.
+*
+*	*********************************  Hardware Info  **********************************************
+*   Name:       _SUB_HW_EquilibriumController
+*   Version:    v1.0
+*	*********************************  Processor Info **********************************************
+*	Processor:          STM32U575CIU6Q 32-Bits
+*	Clock Frequency:    160.0	MHz
+*	RAM/SRAM Size:      0.784	MBytes
+*	Flash Size:         02.00	MBytes
+*	***********************************  Case Style  ***********************************************
+*	Local Variables = camelCase			Global Variables = g_camelCase
+*	Headers = SCREAMIN_SNAKE_CASE
+*   Macros = SCREAMING_SNAKE_CASE
+*   Const Variables = SCREAMING_SNAKE_CASE
+*	Functions = PascalCase				Initialize Functions = _lower_case
+*	Struct = lower_case					Struct.members = camelCase
+*	Enum = lower_case					Enum Members = SNAKE_CASE
+*	Pointer Variables = p_camelCase
+*	*********************************** Contact Info ***********************************************
+*	Author:	Siavash Taher Parvar
+*	GitHub: github.com/Mend0z0
+****************************************************************************************************/
+
+/****************************************************************************************************
+****************************       HEADERS DECLARATION       ****************************************
+*****************************************************************************************************/
 #include "main.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+/****************************************************************************************************
+****************************   CONST VARIABLES DECLARATION    ***************************************
+*****************************************************************************************************/
 
-/* USER CODE END Includes */
+/****************************************************************************************************
+****************************   GLOB. VARIABLES DECLARATION    ***************************************
+*****************************************************************************************************/
 
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
+/****************************************************************************************************
+****************************        ISR DECLARATION           ***************************************
+*****************************************************************************************************/
 
-/* USER CODE END PTD */
+/****************************************************************************************************
+***********************     STATIC/LOCAL FUNCTIONS DECLARATION      *********************************
+*****************************************************************************************************/
 
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
+void LockGPIOs( void );
 
-/* USER CODE END PD */
 
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
+/****************************************************************************************************
+****************************         GLOBAL FUNTIONS         ****************************************
+*****************************************************************************************************/
 
-/* USER CODE END PM */
+/****************************************************************************************************
+****************************         STATIC FUNTIONS         ****************************************
+*****************************************************************************************************/
 
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
-void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
-
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+/****************************************************************************************************
+*   @Brief Description: The main function of the project.
+*   Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*	************************************************************************************************
+*	Function Name:			main()
+*	Function Scope:         Local(static)
+*	Function Parameters:	void
+*	Function Return Type:	int
+*	************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   Function Parameters Description: void
+*   Function Return Type Description: It'll always return 0.
+*	************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
+	LockGPIOs();
 
-  /* USER CODE END 1 */
+	while (1)
+	{
 
-  /* MCU Configuration--------------------------------------------------------*/
+	}
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
+	return 0;
 }
 
-/**
-  * @brief System Clock Configuration
-  * @retval None
-  */
-void SystemClock_Config(void)
+void LockGPIOs( void )
 {
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Configure the main internal regulator output voltage
-  */
-  if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE4) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
-  RCC_OscInitStruct.MSIState = RCC_MSI_ON;
-  RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_4;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2
-                              |RCC_CLOCKTYPE_PCLK3;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_MSI;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB3CLKDivider = RCC_HCLK_DIV1;
-
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
-  {
-    Error_Handler();
-  }
 }
 
-/* USER CODE BEGIN 4 */
+/***************************************************************************************************/
+/**********************************                             ************************************/
+/********************                     END OF THE CODE                         ******************/
+/**********************************                             ************************************/
+/***************************************************************************************************/
 
-/* USER CODE END 4 */
+/*                                   GLOBAL FUNCTION TEMPLATE                                      */
 
-/**
-  * @brief  This function is executed in case of error occurrence.
-  * @retval None
-  */
-void Error_Handler(void)
-{
-  /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
-  /* USER CODE END Error_Handler_Debug */
-}
+/****************************************************************************************************
+*   @Brief Description:
+*   Function Status: 	DRAFT   (DRAFT , PRILIMINARY, CHECKED, RELEASED)
+*
+*	************************************************************************************************
+*	Function Name:
+*	Function Scope:			Global
+*	Function Parameters:
+*	Function Return Type:
+*	************************************************************************************************
+*   Function Parameters Description:
+*   Function Return Type Description:
+*   Comments should be added in front of each line. (This line should be deleted)
+*	************************************************************************************************
+*	Revision History (Description, author, date: yyyy/mm/dd)
+*
+****************************************************************************************************/
 
-#ifdef  USE_FULL_ASSERT
-/**
-  * @brief  Reports the name of the source file and the source line number
-  *         where the assert_param error has occurred.
-  * @param  file: pointer to the source file name
-  * @param  line: assert_param error line source number
-  * @retval None
-  */
-void assert_failed(uint8_t *file, uint32_t line)
-{
-  /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
-     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
-  /* USER CODE END 6 */
-}
-#endif /* USE_FULL_ASSERT */
+/*                               STATIC/LOCAL FUNCTION TEMPLATE                                    */
+
+/****************************************************************************************************
+*   @Brief Description:
+*   Function Status: 	DRAFT   (DRAFT , PRELIMINARY, CHECKED, RELEASED)
+*
+*	************************************************************************************************
+*	Function Name:
+*	Function Scope:         Local(static)
+*	Function Parameters:
+*	Function Return Type:
+*	************************************************************************************************
+*	@Detailed Description: (Do numbering and tag the number to each part of code)
+*   Function Parameters Description:
+*   Function Return Type Description:
+*   Comments should be added in front of each line. (This line should be deleted)
+*	************************************************************************************************
+*	Revision History (Description (author, date: yyyy/mm/dd))
+*
+****************************************************************************************************/
+
+/************************************     END OF THE FILE      *************************************/
+
+
