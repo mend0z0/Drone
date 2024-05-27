@@ -429,6 +429,8 @@ void _init_LPTIM1( void )
 void _init_LPDMA1( void )
 {
 
+	LPDMA1_Channel0->CCR |= DMA_CCR_TCIE;		// transfer complete interrupt enable
+	LPDMA1_Channel0->CCR |= DMA_CCR_EN;			// write: enable channel, read: channel enabled
 }
 
 /***************************************************************************************************/
