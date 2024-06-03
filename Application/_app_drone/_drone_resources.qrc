@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/Gifs/connectionLoading.gif</file>
+        <file>resources/Gifs/LostConnection.gif</file>
+        <file>resources/Gifs/Noisey TV1.gif</file>
+        <file>resources/Gifs/Noisey TV2.gif</file>
+        <file>resources/Gifs/Noisey TV3.gif</file>
+        <file>resources/Gifs/Noisey TV4.gif</file>
+        <file>resources/Icons/CameraNext.png</file>
+        <file>resources/Icons/CameraPrevious.png</file>
+        <file>resources/Icons/CameraShutter.png</file>
+        <file>resources/Icons/Compass.png</file>
+        <file>resources/Icons/GeoPosLighting.png</file>
+        <file>resources/Icons/GeoPosLighting.svg</file>
+        <file>resources/Icons/GeoPosOff.png</file>
+        <file>resources/Icons/refresh-icon.png</file>
+        <file>resources/Icons/show-password.png</file>
+        <file>resources/Logo/MEND0Z0 LOGO_simple.png</file>
+        <file>resources/Textures/Circle_Empty.png</file>
+        <file>resources/Textures/Circle_Empty.svg</file>
+        <file>resources/Textures/Circle_FilledGreen.png</file>
+        <file>resources/Textures/Circle_FilledGreen.svg</file>
+        <file>resources/Textures/Disconnected Camera BG Picture.jpg</file>
+        <file>resources/Textures/steel texture.jpg</file>
+        <file>resources/Textures/steel texture_1.jpg</file>
+        <file>resources/Textures/steel texture_2.jpg</file>
+        <file>resources/Textures/TV noise.png</file>
+    </qresource>
+</RCC>
