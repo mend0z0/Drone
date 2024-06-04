@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>320</width>
-    <height>240</height>
+    <width>240</width>
+    <height>320</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,21 +16,21 @@
   <widget class="QPushButton" name="pushButton_login">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>190</y>
+     <x>70</x>
+     <y>230</y>
      <width>93</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>Log in</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_exit">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>190</y>
+     <x>70</x>
+     <y>270</y>
      <width>93</width>
      <height>29</height>
     </rect>
@@ -42,56 +42,74 @@
   <widget class="QLineEdit" name="lineEdit_username">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>90</y>
-     <width>113</width>
+     <x>50</x>
+     <y>110</y>
+     <width>171</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>User name / ID</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_password">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>130</y>
-     <width>113</width>
+     <x>50</x>
+     <y>150</y>
+     <width>171</width>
      <height>26</height>
     </rect>
+   </property>
+   <property name="text">
+    <string>Password</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_username">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>100</y>
-     <width>63</width>
-     <height>20</height>
+     <y>110</y>
+     <width>26</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="text">
-    <string>Username:</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="_drone_resources.qrc">:/resources/Icons/username icon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="label_password">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>140</y>
-     <width>63</width>
-     <height>20</height>
+     <y>150</y>
+     <width>26</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="text">
-    <string>Password:</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="_drone_resources.qrc">:/resources/Icons/Password icon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_showPassword">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>130</y>
-     <width>21</width>
-     <height>21</height>
+     <x>195</x>
+     <y>150</y>
+     <width>26</width>
+     <height>26</height>
     </rect>
    </property>
    <property name="text">
@@ -100,6 +118,19 @@
    <property name="icon">
     <iconset resource="_drone_resources.qrc">
      <normaloff>:/resources/Icons/show-password.png</normaloff>:/resources/Icons/show-password.png</iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_userLoginLbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;USER LOGIN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
  </widget>

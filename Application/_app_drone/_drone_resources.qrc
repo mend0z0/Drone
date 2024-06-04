@@ -25,5 +25,7 @@
         <file>resources/Textures/steel texture_1.jpg</file>
         <file>resources/Textures/steel texture_2.jpg</file>
         <file>resources/Textures/TV noise.png</file>
+        <file>resources/Icons/Password icon.png</file>
+        <file>resources/Icons/username icon.png</file>
     </qresource>
 </RCC>
