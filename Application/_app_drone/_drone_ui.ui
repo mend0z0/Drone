@@ -66,7 +66,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>put a lock &amp; unlock icon once it's been on then lock the setting and make the color green once it's off you can levae it unlock with red button, the lock button will go through login page to check whether access is allowed or not. the raw text will be visible through the setting enviorment...</string>
+    <string>put a lock &amp; unlock icon once it's been on then lock the setting and make the color green once it's off you can levae it unlock with red button, the lock button will go through login page to check whether access is allowed or not. the raw text will be visible through the setting enviorment... The switch will be green if the port is open, other than that it's orange, or if it's off it's gray. So it' has 3 states. 1 green means the port is open and it's in interactive mode, it's orange means the port is closed but it's in the interactive mode, and it's gray means it's not in interactive mode (port might be open or closed!)</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
