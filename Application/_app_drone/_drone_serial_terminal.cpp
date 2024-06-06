@@ -1,5 +1,5 @@
-#include "_drone_serialport.h"
-#include "ui__drone_serialport.h"
+#include "_drone_serial_terminal.h"
+#include "ui__drone_serial_terminal.h"
 
 _drone_serialport::_drone_serialport(QWidget *parent)
     : QDialog(parent)

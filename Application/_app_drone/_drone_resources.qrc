@@ -27,5 +27,6 @@
         <file>resources/Textures/TV noise.png</file>
         <file>resources/Icons/Password icon.png</file>
         <file>resources/Icons/username icon.png</file>
+        <file>ButtonsGallary.qml</file>
     </qresource>
 </RCC>

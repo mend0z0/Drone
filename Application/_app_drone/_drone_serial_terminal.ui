@@ -233,7 +233,20 @@
     </rect>
    </property>
    <property name="text">
-    <string>Run in BG</string>
+    <string>Interactive</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>370</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Check Conn...</string>
    </property>
   </widget>
  </widget>

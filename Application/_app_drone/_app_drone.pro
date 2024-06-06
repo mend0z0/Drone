@@ -14,14 +14,22 @@ CONFIG += c++17
 
 SOURCES += \
     _drone_login_page.cpp \
-    _drone_serialport.cpp \
+    _drone_mqtt_terminal.cpp \
+    _drone_serial_terminal.cpp \
+    _drone_udp_terminal.cpp \
+    _drone_ui.cpp \
+    _drone_wlr_terminal.cpp \
     main.cpp \
     _drone_main.cpp
 
 HEADERS += \
     _drone_login_page.h \
     _drone_main.h \
-    _drone_serialport.h
+    _drone_mqtt_terminal.h \
+    _drone_serial_terminal.h \
+    _drone_udp_terminal.h \
+    _drone_ui.h \
+    _drone_wlr_terminal.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -30,7 +38,11 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 FORMS += \
     _drone_login_page.ui \
-    _drone_serialport.ui
+    _drone_mqtt_terminal.ui \
+    _drone_serial_terminal.ui \
+    _drone_udp_terminal.ui \
+    _drone_ui.ui \
+    _drone_wlr_terminal.ui
 
 RESOURCES += \
     _drone_resources.qrc

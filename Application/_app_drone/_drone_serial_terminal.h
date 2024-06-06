@@ -1,5 +1,5 @@
-#ifndef _DRONE_SERIALPORT_H
-#define _DRONE_SERIALPORT_H
+#ifndef _DRONE_SERIAL_TERMINAL_H
+#define _DRONE_SERIAL_TERMINAL_H
 
 #include <QDialog>
 
@@ -19,4 +19,4 @@ private:
     Ui::_drone_serialport *ui;
 };
 
-#endif // _DRONE_SERIALPORT_H
+#endif // _DRONE_SERIAL_TERMINAL_H
