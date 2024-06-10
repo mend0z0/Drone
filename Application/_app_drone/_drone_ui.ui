@@ -16,8 +16,8 @@
   <widget class="QToolButton" name="toolButton">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>40</y>
+     <x>200</x>
+     <y>120</y>
      <width>24</width>
      <height>26</height>
     </rect>
@@ -29,8 +29,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>40</y>
+     <x>100</x>
+     <y>120</y>
      <width>93</width>
      <height>29</height>
     </rect>
@@ -42,8 +42,8 @@
   <widget class="QToolButton" name="toolButton_2">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>40</y>
+     <x>230</x>
+     <y>120</y>
      <width>24</width>
      <height>26</height>
     </rect>
@@ -75,8 +75,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>40</y>
+     <x>10</x>
+     <y>120</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -163,7 +163,7 @@
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>160</y>
+     <y>140</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -179,7 +179,7 @@
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>210</y>
+     <y>190</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -195,7 +195,7 @@
    <property name="geometry">
     <rect>
      <x>540</x>
-     <y>260</y>
+     <y>240</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -226,9 +226,9 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>60</y>
-     <width>51</width>
+     <x>540</x>
+     <y>290</y>
+     <width>81</width>
      <height>31</height>
     </rect>
    </property>
@@ -242,8 +242,8 @@
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>10</y>
+     <x>10</x>
+     <y>60</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -258,8 +258,8 @@
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>10</y>
+     <x>110</x>
+     <y>70</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -393,9 +393,9 @@
   <widget class="QLabel" name="label_13">
    <property name="geometry">
     <rect>
-     <x>540</x>
+     <x>510</x>
      <y>370</y>
-     <width>81</width>
+     <width>31</width>
      <height>31</height>
     </rect>
    </property>
@@ -409,8 +409,8 @@
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>60</y>
+     <x>550</x>
+     <y>370</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -419,7 +419,7 @@
     <string notr="true">background-color: rgb(170, 170, 127);</string>
    </property>
    <property name="text">
-    <string>Network...</string>
+    <string>Network..., packet loss and ....</string>
    </property>
   </widget>
   <widget class="QGraphicsView" name="graphicsView_2">
@@ -478,6 +478,218 @@
     <string>&lt;</string>
    </property>
   </widget>
+  <widget class="QToolButton" name="toolButton_3">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>24</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="_drone_resources.qrc">
+     <normaloff>:/resources/Icons/Password icon.png</normaloff>:/resources/Icons/Password icon.png</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_4">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>160</y>
+     <width>24</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Terminal name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_11">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>It's a switch</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_5">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>190</y>
+     <width>24</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="_drone_resources.qrc">
+     <normaloff>:/resources/Icons/Password icon.png</normaloff>:/resources/Icons/Password icon.png</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>190</y>
+     <width>24</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Terminal name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_12">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>190</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>It's a switch</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_7">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>220</y>
+     <width>24</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset resource="_drone_resources.qrc">
+     <normaloff>:/resources/Icons/Password icon.png</normaloff>:/resources/Icons/Password icon.png</iconset>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="toolButton_8">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>220</y>
+     <width>24</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Terminal name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_13">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>220</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>It's a switch</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_6</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_8</zorder>
+  <zorder>label_9</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>pushButton_8</zorder>
+  <zorder>label_10</zorder>
+  <zorder>label_11</zorder>
+  <zorder>label_12</zorder>
+  <zorder>lcdNumber</zorder>
+  <zorder>horizontalSlider</zorder>
+  <zorder>label_13</zorder>
+  <zorder>label_14</zorder>
+  <zorder>graphicsView_2</zorder>
+  <zorder>graphicsView_3</zorder>
+  <zorder>graphicsView_4</zorder>
+  <zorder>pushButton_9</zorder>
+  <zorder>pushButton_10</zorder>
+  <zorder>toolButton_2</zorder>
+  <zorder>toolButton</zorder>
+  <zorder>label_2</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>toolButton_3</zorder>
+  <zorder>toolButton_4</zorder>
+  <zorder>label_15</zorder>
+  <zorder>pushButton_11</zorder>
+  <zorder>toolButton_5</zorder>
+  <zorder>toolButton_6</zorder>
+  <zorder>label_16</zorder>
+  <zorder>pushButton_12</zorder>
+  <zorder>toolButton_7</zorder>
+  <zorder>toolButton_8</zorder>
+  <zorder>label_17</zorder>
+  <zorder>pushButton_13</zorder>
  </widget>
  <resources>
   <include location="_drone_resources.qrc"/>
