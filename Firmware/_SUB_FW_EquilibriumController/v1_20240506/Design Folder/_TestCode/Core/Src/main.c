@@ -1,3 +1,7 @@
+/*
+ * Discover the STM32U5, the new secure, high-performance, and ultra-low power STM32 microcontrollers that will revolutionize your design
+ */
+
 #include "main.h"
 #include "stm32u575xx.h"
 
@@ -5,8 +9,7 @@
 #define	COLOR_GREEN		2
 #define	COLOR_BLUE		3
 
-
-#define	MAX_CNT			300000
+#define	MAX_CNT			30000
 
 void LPUART1_IRQHandler( void )
 {
@@ -84,26 +87,24 @@ void _init_LEDs( void )
 {
 	RCC->AHB2ENR1 |= RCC_AHB2ENR1_GPIOBEN | RCC_AHB2ENR1_GPIOCEN | RCC_AHB2ENR1_GPIOGEN;
 
-	delay();
-
-	GPIOB->MODER |= GPIO_MODER_MODE7_0;		// BLUE
-	GPIOC->MODER |= GPIO_MODER_MODE7_0;		// GREEN
-	GPIOG->MODER |= GPIO_MODER_MODE2_0;		// RED
+	GPIOB->MODER &= ~GPIO_MODER_MODE7_1;		// BLUE
+	GPIOC->MODER &= ~GPIO_MODER_MODE7_1;		// GREEN
+	GPIOG->MODER &= ~GPIO_MODER_MODE2_1;		// RED
 }
 
 void BlinkLEDs( uint8_t color )
 {
 	if(color == COLOR_RED)
 	{
-		GPIOG->ODR |= GPIO_ODR_OD2;
+		GPIOG->ODR ^= GPIO_ODR_OD2;
 	}
 	else if(color == COLOR_GREEN)
 	{
-		GPIOC->ODR |= GPIO_ODR_OD7;
+		GPIOC->ODR ^= GPIO_ODR_OD7;
 	}
 	else if(color == COLOR_BLUE)
 	{
-		GPIOB->ODR |= GPIO_ODR_OD7;
+		GPIOB->ODR ^= GPIO_ODR_OD7;
 	}
 }
 
@@ -129,7 +130,7 @@ void _init_RCC( void )
 
 	RCC->PLL1CFGR |= RCC_PLL1CFGR_PLL1REN;		// 1: pll1_r_ck output enabled
 
-	RCC->PLL1DIVR = 0x03010278;	// 0000011: pll1_r_ck = vco1_ck / 4 and 0x078: PLL1N = 120 as a result the output frequency of PLL is 120MHz.
+	RCC->PLL1DIVR = 0x03010278;					// 0000011: pll1_r_ck = vco1_ck / 4 and 0x078: PLL1N = 120 as a result the output frequency of PLL is 120MHz.
 
 	RCC->CR |= RCC_CR_PLL1ON;					// 1: PLL1 ON
 
@@ -142,27 +143,62 @@ void _init_RCC( void )
 
 void _init_PWR( void )
 {
-	// by setting the IO2SV bit in the PWR_SVMCR register, once the VDDIO2 supply is present.
-	//Voltage scaling is selected through VOS[1:0] in PWR_VOSR
+	/*RCC->CR |= RCC_CR_MSISON;					// 1: MSIS (MSI system) oscillator on
 
-	//1.
-	//2.
-	//3.
-	//4.
-	//5. Adjust number of wait states according new frequency target in range P (LATENCY bits	in FLASH_ACR, and WSC bits in RAMCFG_MxCR).
+	while(!(RCC->CR & RCC_CR_MSISRDY))			// 1: MSIS (MSI system) oscillator ready
+	{
 
-	PWR->VOSR |= PWR_VOSR_VOS;					// Program VOS[1:0] to range P in PWR_VOSR
+	}
+	// 10: HSI16 clock selected as PLL1 clock entry,
+	// 11: PLL1 input (ref1_ck) clock range frequency between 8 and 16 MHz,
+	// 0001: division by 2,
+
+	RCC->PLL1CFGR |= RCC_PLL1CFGR_PLL1SRC_1 | RCC_PLL1CFGR_PLL1RGE | RCC_PLL1CFGR_PLL1MBOOST_0;
+
+	RCC->PLL1CFGR |= (RCC_PLL1CFGR_PLL1M_1 | RCC_PLL1CFGR_PLL1M_0);	// 0011: division by 4
+
+	RCC->PLL1CFGR |= RCC_PLL1CFGR_PLL1REN;		// 1: pll1_r_ck output enabled
+
+	RCC->PLL1DIVR = 0x03010278;					// 0000011: pll1_r_ck = vco1_ck / 4 and 0x078: PLL1N = 120 as a result the output frequency of PLL is 120MHz.
+
+	RCC->CR |= RCC_CR_HSION;					// 1: HSI16 oscillator on
+
+	while(!(RCC->CR & RCC_CR_HSIRDY));			// 1: HSI16 oscillator ready
+
+	//RCC->CFGR1 |= RCC_CFGR1_SW_0;				// 01: HSI16 selected as system clock
+
+	//PWR->CR3 |= PWR_CR3_REGSEL;					// 1: SMPS selected
+
+	//PWR->VOSR |= ;				// Set BOOSTEN in PWR_VOSR. This step can be done together with 	VOS programming
+	//while(!(PWR->VOSR & PWR_VOSR_BOOSTRDY));	// Wait until the BOOSTRDY flag is set in PWR_VOSR.
+
+	PWR->VOSR |= PWR_VOSR_VOS | PWR_VOSR_BOOSTEN;					// Program VOS[1:0] to range P in PWR_VOSR
 	while(!(PWR->VOSR & PWR_VOSR_VOSRDY));		// Wait until the VOSRDY flag is set in PWR_VOSR.
-	PWR->VOSR |= PWR_VOSR_BOOSTEN;				// Set BOOSTEN in PWR_VOSR. This step can be done together with 	VOS programming
-	while(!(PWR->VOSR & PWR_VOSR_BOOSTRDY));	// Wait until the BOOSTRDY flag is set in PWR_VOSR.
 
+	PWR->SVMCR |= PWR_SVMCR_PVDE | PWR_SVMCR_IO2VMEN;	// 1: PVD enabled, 1: VDDIO2 voltage monitor enabled
+
+	//Adjust number of wait states according new frequency target in range P (LATENCY bits in FLASH_ACR, and WSC bits in RAMCFG_MxCR).
+	FLASH->ACR |= FLASH_LATENCY_3;				// Three wait states:
+
+	RCC->PLL1CFGR |= (RCC_PLL1CFGR_PLL1M_1 | RCC_PLL1CFGR_PLL1M_0);	// 0011: division by 4
+
+	RCC->PLL1CFGR |= RCC_PLL1CFGR_PLL1REN;		// 1: pll1_r_ck output enabled
+
+	RCC->PLL1DIVR = 0x03010278;					// 0000011: pll1_r_ck = vco1_ck / 4 and 0x078: PLL1N = 120 as a result the output frequency of PLL is 120MHz.
+
+	RCC->CR |= RCC_CR_PLL1ON;					// 1: PLL1 ON
+
+	while(!(RCC->CR & RCC_CR_PLL1RDY));			// 1: PLL1 locked
+
+	//4 set the PLL1 as system clock
+	RCC->CFGR1 |= RCC_CFGR1_SW;					// 11: PLL pll1_r_ck used as system clock*/
 
 	/*
 	 * 	The following sequence must be done before using any I/O from PG[15:2]:
 			1. If VDDIO2 is independent from VDD:
 	*/
 
-	PWR->SVMCR |= PWR_SVMCR_IO2VMEN;					// Enable the IO2VM by setting IO2VM in PWR_SVMCR.
+	PWR->SVMCR |= PWR_SVMCR_IO2VMEN;				// Enable the IO2VM by setting IO2VM in PWR_SVMCR.
 	while(!(PWR->SVMSR & PWR_SVMSR_VDDIO2RDY));		// Wait until VDDIO2RDY is set in PWR_SVMSR.
 	PWR->SVMCR |= PWR_SVMCR_IO2SV;					// Set IO2SV in PWR_SVMCR to remove the VDDIO2 power isolation.
 
@@ -186,8 +222,10 @@ void _init_PWR( void )
 
 int main(void)
 {
-	_init_PWR();
-	_init_RCC();
+	FLASH->ACR |= FLASH_ACR_PRFTEN;
+
+	//_init_PWR();
+	//_init_RCC();
 	_init_LEDs();
 
 
