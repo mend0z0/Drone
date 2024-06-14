@@ -85,7 +85,12 @@ void _init_lpuart1( void )
 
 void _init_LEDs( void )
 {
+	uint32_t tempVar;
+
 	RCC->AHB2ENR1 |= RCC_AHB2ENR1_GPIOBEN | RCC_AHB2ENR1_GPIOCEN | RCC_AHB2ENR1_GPIOGEN;
+	tempVar = RCC->AHB2ENR1;
+
+	tempVar = 0;
 
 	GPIOB->MODER &= ~GPIO_MODER_MODE7_1;		// BLUE
 	GPIOC->MODER &= ~GPIO_MODER_MODE7_1;		// GREEN
@@ -122,22 +127,6 @@ void _init_RCC( void )
 	while(!(RCC->CR & RCC_CR_HSIRDY));			// 1: HSI16 oscillator ready
 
 	RCC->CFGR1 |= RCC_CFGR1_SW_0;				// 01: HSI16 selected as system clock
-
-
-	RCC->PLL1CFGR |= RCC_PLL1CFGR_PLL1SRC_1 | RCC_PLL1CFGR_PLL1RGE;	// 10: HSI16 clock selected as PLL1 clock entry
-
-	RCC->PLL1CFGR |= (RCC_PLL1CFGR_PLL1M_1 | RCC_PLL1CFGR_PLL1M_0);	// 0011: division by 4
-
-	RCC->PLL1CFGR |= RCC_PLL1CFGR_PLL1REN;		// 1: pll1_r_ck output enabled
-
-	RCC->PLL1DIVR = 0x03010278;					// 0000011: pll1_r_ck = vco1_ck / 4 and 0x078: PLL1N = 120 as a result the output frequency of PLL is 120MHz.
-
-	RCC->CR |= RCC_CR_PLL1ON;					// 1: PLL1 ON
-
-	while(!(RCC->CR & RCC_CR_PLL1RDY));			// 1: PLL1 locked
-
-	//4 set the PLL1 as system clock
-	RCC->CFGR1 |= RCC_CFGR1_SW;					// 11: PLL pll1_r_ck used as system clock
 
 }
 
@@ -225,7 +214,7 @@ int main(void)
 	FLASH->ACR |= FLASH_ACR_PRFTEN;
 
 	//_init_PWR();
-	//_init_RCC();
+	_init_RCC();
 	_init_LEDs();
 
 

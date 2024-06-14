@@ -1,0 +1,5 @@
+../Core/Src/stm32u5xx_hal_msp.c:64:6:HAL_MspInit	1
+../Core/Src/stm32u5xx_hal_msp.c:86:6:HAL_ADC_MspInit	3
+../Core/Src/stm32u5xx_hal_msp.c:130:6:HAL_ADC_MspDeInit	2
+../Core/Src/stm32u5xx_hal_msp.c:158:6:HAL_DAC_MspInit	3
+../Core/Src/stm32u5xx_hal_msp.c:203:6:HAL_DAC_MspDeInit	2
