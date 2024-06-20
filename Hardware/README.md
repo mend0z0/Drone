@@ -15,8 +15,8 @@ __Board Osc. Freq. :__
 __Working Voltage :__
 __Current Consumption :__
 __Board Dimensions :__ |
-![Latest Version_Top](https://github.com/mend0z0)|
-![Latest Version_Bottom](https://github.com/mend0z0)|
+|![Latest Version_Top](https://github.com/mend0z0)|
+|![Latest Version_Bottom](https://github.com/mend0z0)|
 
 ## Features
 
