@@ -3,6 +3,19 @@
 - What is this board? 
 - How will this board communicate?
 - Where would be located?
+
+## Features
+
+|Spec|Top View|Bottom View|
+|:---:|:---:|:---:|
+|__MCU :__
+__Inputs :__ 
+__Outputs :__ 
+__Board Osc. Freq. :__ 
+__Working Voltage :__
+__Current Consumption :__
+__Board Dimensions :__ |![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
+
 ## Features
 
 - __MCU :__ 
@@ -18,15 +31,3 @@
 ![Latest Version_Top](https://github.com/mend0z0)
 
 ![Latest Version_Bottom](https://github.com/mend0z0)
-
-## Features
-
-|:Spec|Top View|Bottom View|
-|:---:|:---:|:---:|
-|__MCU :__
-__Inputs :__ 
-__Outputs :__ 
-__Board Osc. Freq. :__ 
-__Working Voltage :__
-__Current Consumption :__
-__Board Dimensions :__ |![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
