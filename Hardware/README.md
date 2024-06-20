@@ -8,7 +8,7 @@
 
 |Specification|Top View|Bottom View|
 |:---|:---:|:---:|
-|<table><tbody><br>__MCU :__</br><br>__Inputs :__</br><br>__Outputs :__</br><br>__Board Osc. Freq. :__</br><br>__Working Voltage :__</br><br>__Current Consumption :__</br><br>__Board Dimensions :__</br></tbody></table>|![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
+|<table><tbody><tr><td>__MCU :__</td> <td>mcu value</td> </tr><br>__Inputs :__</br><br>__Outputs :__</br><br>__Board Osc. Freq. :__</br><br>__Working Voltage :__</br><br>__Current Consumption :__</br><br>__Board Dimensions :__</br></tbody></table>|![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
 
 ## Features
 
