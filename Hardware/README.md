@@ -19,8 +19,8 @@
 
 ![Latest Version_Bottom](https://github.com/mend0z0)
 
-||Features||
-|:---:|:---:|:---:|
-|:Spec:|:Top View:|:Bottom View:|
+## Features
+
+|Spec|Top View|Bottom View|
 |:---:|:---:|:---:|
 |- __MCU :__ - __Inputs :__ - __Outputs :__ - __Board Osc. Freq. :__ - __Working Voltage :__- __Current Consumption :__- __Board Dimensions :__ |![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
