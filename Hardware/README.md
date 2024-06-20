@@ -7,7 +7,7 @@
 ## Features
 
 |Spec|Top View|Bottom View|
-|:---:|:---:|:---:|
+|:---|:---:|:---:|
 |__MCU :__
 __Inputs :__ 
 __Outputs :__ 
