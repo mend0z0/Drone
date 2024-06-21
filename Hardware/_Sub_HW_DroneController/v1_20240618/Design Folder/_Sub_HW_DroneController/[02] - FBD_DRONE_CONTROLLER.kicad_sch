@@ -1,0 +1,122 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "dedfd423-4127-4b85-a626-9642be4051ee")
+	(paper "C")
+	(lib_symbols)
+	(sheet
+		(at 330.2 127)
+		(size 50.8 127)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1256c5bb-e8c7-4f91-bd93-9e8bceee916b")
+		(property "Sheetname" "FBD_RADIO_CONTROLLER"
+			(at 330.2 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0202] - FBD_RADIO_CONTROLLER.kicad_sch"
+			(at 330.2 254.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_DroneController"
+				(path "/4d22124a-a3fe-48e2-9e5e-0fff5a9447cc/a358895d-c191-425d-bcaa-0bda3b821399"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 254 127)
+		(size 50.8 127)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "20b3fc72-447d-4823-882b-0411179c70ff")
+		(property "Sheetname" "FBD_EQUILIBRIUM_CONTROLLER"
+			(at 254 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0201] - FBD_EQUILIBRIUM_CONTROLLER.kicad_sch"
+			(at 254 254.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_DroneController"
+				(path "/4d22124a-a3fe-48e2-9e5e-0fff5a9447cc/a358895d-c191-425d-bcaa-0bda3b821399"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 127)
+		(size 50.8 127)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "592e973c-eb95-4da9-9443-611abf070d97")
+		(property "Sheetname" "FBD_POWER_SUPPLY"
+			(at 177.8 126.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "[0203] - FBD_POWER_SUPPLY.kicad_sch"
+			(at 177.8 254.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "_Sub_HW_DroneController"
+				(path "/4d22124a-a3fe-48e2-9e5e-0fff5a9447cc/a358895d-c191-425d-bcaa-0bda3b821399"
+					(page "5")
+				)
+			)
+		)
+	)
+)

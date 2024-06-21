@@ -476,6 +476,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -576,6 +577,22 @@
     [
       "4d22124a-a3fe-48e2-9e5e-0fff5a9447cc",
       "Root"
+    ],
+    [
+      "a358895d-c191-425d-bcaa-0bda3b821399",
+      "FBD_DRONE_CONTROLLER"
+    ],
+    [
+      "20b3fc72-447d-4823-882b-0411179c70ff",
+      "FBD_EQUILIBRIUM_CONTROLLER"
+    ],
+    [
+      "1256c5bb-e8c7-4f91-bd93-9e8bceee916b",
+      "FBD_RADIO_CONTROLLER"
+    ],
+    [
+      "592e973c-eb95-4da9-9443-611abf070d97",
+      "FBD_POWER_SUPPLY"
     ]
   ],
   "text_variables": {}

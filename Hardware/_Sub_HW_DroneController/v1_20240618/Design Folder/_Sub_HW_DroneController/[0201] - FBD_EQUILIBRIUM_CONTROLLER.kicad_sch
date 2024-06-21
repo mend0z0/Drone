@@ -1,0 +1,468 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ec536e8b-8d67-495c-9743-763f3cf69f7b")
+	(paper "C")
+	(lib_symbols)
+	(polyline
+		(pts
+			(xy 254 171.45) (xy 241.3 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d381eaa-af7b-435d-bb0c-773bee46acd1")
+	)
+	(polyline
+		(pts
+			(xy 228.6 215.9) (xy 228.6 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b623b2-0893-4620-b6fc-5bfb12eb4724")
+	)
+	(polyline
+		(pts
+			(xy 279.4 171.45) (xy 292.1 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ab2cdf2-1ef4-44e4-bb23-0381a70db32b")
+	)
+	(polyline
+		(pts
+			(xy 215.9 177.8) (xy 254 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b056e46-459e-4564-8de2-54874c22c3bc")
+	)
+	(polyline
+		(pts
+			(xy 215.9 139.7) (xy 241.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4426a6e7-0f24-40ca-bae9-909f290a724c")
+	)
+	(polyline
+		(pts
+			(xy 266.7 190.5) (xy 266.7 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f7cf05-6af5-47b7-90dd-6c8d7e4a171c")
+	)
+	(polyline
+		(pts
+			(xy 292.1 139.7) (xy 317.5 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "637131b4-9146-4693-8442-6ca423e17b3c")
+	)
+	(polyline
+		(pts
+			(xy 292.1 215.9) (xy 317.5 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a02c641-fcbe-44a2-b07b-23dba13294ec")
+	)
+	(polyline
+		(pts
+			(xy 215.9 254) (xy 241.3 254)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b732c3c-d0b4-41b5-bb83-71d7537fe608")
+	)
+	(polyline
+		(pts
+			(xy 266.7 114.3) (xy 266.7 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75bbea84-653d-48b2-afe1-01787907e45b")
+	)
+	(polyline
+		(pts
+			(xy 241.3 187.96) (xy 254 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7991f44d-3147-4f0a-8401-55d612d20127")
+	)
+	(polyline
+		(pts
+			(xy 215.9 215.9) (xy 228.6 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a801bfa-40e6-44a8-a744-f6b2b282ff35")
+	)
+	(polyline
+		(pts
+			(xy 292.1 171.45) (xy 292.1 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8449aeb8-b9d6-4087-9404-fb2eaed1bce1")
+	)
+	(polyline
+		(pts
+			(xy 228.6 182.88) (xy 254 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f62ec35-c447-4383-8d71-6b569a0fe009")
+	)
+	(polyline
+		(pts
+			(xy 292.1 184.15) (xy 292.1 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a10038e6-63a9-4723-8b46-3092e66549a8")
+	)
+	(polyline
+		(pts
+			(xy 279.4 184.15) (xy 292.1 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a51d011d-1f98-4e5a-ba25-110ac597f6d9")
+	)
+	(polyline
+		(pts
+			(xy 279.4 177.8) (xy 317.5 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7311397-8fc8-4e77-8508-9b59664e64c4")
+	)
+	(polyline
+		(pts
+			(xy 241.3 171.45) (xy 241.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c02ccb9e-22ba-4ccc-a209-36265ad70b01")
+	)
+	(polyline
+		(pts
+			(xy 241.3 254) (xy 241.3 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15fd192-cb46-445e-96c5-aad76bfc4d72")
+	)
+	(text_box "MCU"
+		(exclude_from_sim no)
+		(at 254 165.1 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "0a1ffb67-5fa3-4392-88e7-3d029b6e8c88")
+	)
+	(text_box "RADIO CONTROLLER"
+		(exclude_from_sim no)
+		(at 254 88.9 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "3c9c79c8-c4c6-4319-9302-5cff9406ce15")
+	)
+	(text_box "CAMERA"
+		(exclude_from_sim no)
+		(at 317.5 203.2 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "56b1062c-0cca-4fea-b7c2-191a4a8fd673")
+	)
+	(text_box "ENV SENSOR"
+		(exclude_from_sim no)
+		(at 190.5 165.1 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "6786b5d4-0701-4f03-a206-bc1503e7ca4a")
+	)
+	(text_box "GPS"
+		(exclude_from_sim no)
+		(at 190.5 203.2 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "67e1e307-5634-4e11-8996-c25fad1f6a7e")
+	)
+	(text_box "MOTOR"
+		(exclude_from_sim no)
+		(at 317.5 165.1 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "7883a18c-35c7-4b2f-ab1f-9a364c7e449e")
+	)
+	(text_box "BATTERY"
+		(exclude_from_sim no)
+		(at 190.5 241.3 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "94b73ca7-90dd-4802-aa32-17952dc3a935")
+	)
+	(text_box "MEM"
+		(exclude_from_sim no)
+		(at 254 203.2 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "b9f0967a-a238-4b6d-b22d-3d135a1ece16")
+	)
+	(text_box "LED"
+		(exclude_from_sim no)
+		(at 317.5 127 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "e3a0a211-2900-48b4-89fa-f9019b84d111")
+	)
+	(text_box "IMU"
+		(exclude_from_sim no)
+		(at 190.5 127 0)
+		(size 25.4 25.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "f08eaaf9-2e3e-46d1-b065-73ef78ab0f2a")
+	)
+	(text "I2C_1"
+		(exclude_from_sim no)
+		(at 221.488 176.784 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "22352121-bb8a-4716-9684-a06722343c8d")
+	)
+	(text "ADC"
+		(exclude_from_sim no)
+		(at 222.504 252.984 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d5e93cc-ef8a-4d61-a7b9-e7227082c414")
+	)
+	(text "UART"
+		(exclude_from_sim no)
+		(at 263.906 141.986 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2f4f6d19-c30c-44db-b858-0100983a6e1e")
+	)
+	(text "I2C_1"
+		(exclude_from_sim no)
+		(at 221.234 138.684 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "445d3890-c703-452c-9a5d-ee13cf11af8a")
+	)
+	(text "PWM"
+		(exclude_from_sim no)
+		(at 284.734 177.038 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6e7feec8-f9e8-4fe1-b2c0-4bc5ec7ffb45")
+	)
+	(text "I2C_3"
+		(exclude_from_sim no)
+		(at 284.734 170.688 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "99948351-f8e2-49da-838b-c516de66222c")
+	)
+	(text "SPI"
+		(exclude_from_sim no)
+		(at 263.906 196.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "afb02fec-9795-4ccd-a177-57409fb51210")
+	)
+	(text "I2C_1"
+		(exclude_from_sim no)
+		(at 221.488 214.884 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f3a0e723-6842-4063-8067-460d71cdd6a2")
+	)
+	(text "PWM + I2C_2"
+		(exclude_from_sim no)
+		(at 286.512 183.134 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "fcd5ec53-1806-409c-956d-71f6c45eac88")
+	)
+)
