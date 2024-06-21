@@ -8,8 +8,6 @@ A brief description of this version history belongs to what project
 
 ### 3D View (Latest Release)
 
-#### _3DView_Top_vX.Y_YYYYMMDD
-![_3DView_Top_vX_YYYYMMDD](https://github.com/mend0z0)
-
-#### _3DView_Bottom_vX.Y_YYYYMMDD
-![_3DView_Bottom_vX_YYYYMMDD](https://github.com/mend0z0)
+|3DView_Top_vX.Y_YYYYMMDD|3DView_Bottom_vX.Y_YYYYMMDD|
+|:---:|:---:|
+|![_3DView_Top_vX_YYYYMMDD](https://github.com/mend0z0)|![_3DView_Bottom_vX_YYYYMMDD](https://github.com/mend0z0)|
