@@ -5153,3 +5153,33 @@ C Model Exception: C Model Status [Element _TestCode_STM32U575CIU6Q does not exi
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
 !SUBENTRY 1 org.eclipse.cdt.core 4 969 2024-06-26 12:55:28.621
 !MESSAGE Element _TestCode_STM32U575CIU6Q does not exist.
+!SESSION 2024-06-26 23:07:27.218 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-06-26 23:07:52.698
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-06-26 23:07:52.704
+!MESSAGE Log4j2 initialized with config file D:\Projects\STP\Drone\Firmware\_SUB_FW_EquilibriumController\v1_20240506\Design Folder\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-26 23:07:57.581
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-06-27 11:55:15.220 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-06-27 11:56:22.046
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-06-27 11:56:22.052
+!MESSAGE Log4j2 initialized with config file D:\Projects\STP\Drone\Firmware\_SUB_FW_EquilibriumController\v1_20240506\Design Folder\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-27 11:56:27.203
+!MESSAGE Started RMI Server, listening on port 41337

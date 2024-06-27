@@ -206,38 +206,37 @@ void SysTick_Handler(void)
   */
 void TIM2_IRQHandler(void)
 {
-
   /* USER CODE BEGIN TIM2_IRQn 0 */
 	if(TIM2->SR & TIM_SR_CC1IF)
 	{
-		TIM2->CCR1 += 5;
+		TIM2->CCR1 += 25;
 		if(TIM2->CCR1 == 100)
 		{
-			TIM2->CCR1 = 5;
+			TIM2->CCR1 = 25;
 		}
 	}
 	if(TIM2->SR & TIM_SR_CC2IF)
 	{
-		TIM2->CCR2 += 5;
+		TIM2->CCR2 += 10;
 		if(TIM2->CCR2 == 100)
 		{
-			TIM2->CCR2 = 5;
+			TIM2->CCR2 = 10;
 		}
 	}
 	if(TIM2->SR & TIM_SR_CC3IF)
 	{
-		TIM2->CCR3 += 5;
+		TIM2->CCR3 += 50;
 		if(TIM2->CCR3 == 100)
 		{
-			TIM2->CCR3 = 5;
+			TIM2->CCR3 = 50;
 		}
 	}
 	if(TIM2->SR & TIM_SR_CC4IF)
 	{
-		TIM2->CCR4 += 5;
+		TIM2->CCR4 += 20;
 		if(TIM2->CCR4 == 100)
 		{
-			TIM2->CCR4 = 5;
+			TIM2->CCR4 = 20;
 		}
 	}
   /* USER CODE END TIM2_IRQn 0 */

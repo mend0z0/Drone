@@ -50,9 +50,61 @@ LPTIM_HandleTypeDef hlptim1;
 
 UART_HandleTypeDef hlpuart1;
 
+SPI_HandleTypeDef hspi1;
+
 TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
+//  Image data for mEND0Z0LOGO_simple_fullCopy
+//
+
+const uint8_t mEND0Z0LOGO_simple_fullCopyBitmaps[] =
+{
+	0x00, 0x00, 0x38, 0x00, 0x07, 0x00, 0x00, 0x00, //                   ###                ###
+	0x00, 0x00, 0x48, 0x78, 0x05, 0x80, 0x00, 0x00, //                  #  #    ####        # ##
+	0x00, 0x00, 0x4C, 0x7E, 0x08, 0x80, 0x00, 0x00, //                  #  ##   ######     #   #
+	0x00, 0x00, 0x6F, 0x9E, 0xE7, 0x00, 0x00, 0x00, //                  ## #####  #### ###  ###
+	0x00, 0x00, 0x17, 0xE6, 0xCE, 0x00, 0x00, 0x00, //                    # ######  ## ##  ###
+	0x00, 0x00, 0x01, 0xF9, 0xCC, 0x00, 0x00, 0x00, //                        ######  ###  ##
+	0x00, 0x00, 0x00, 0x3F, 0xDC, 0x00, 0x00, 0x00, //                           ######## ###
+	0x00, 0x00, 0x0E, 0x0F, 0x9C, 0x00, 0x00, 0x00, //                     ###     #####  ###
+	0x00, 0x00, 0x1F, 0x81, 0x9A, 0x00, 0x00, 0x00, //                    ######      ##  ## #
+	0x00, 0x00, 0x07, 0xC0, 0x3B, 0x00, 0x00, 0x00, //                      #####        ### ##
+	0x00, 0x00, 0x1D, 0x80, 0x3F, 0x00, 0x00, 0x00, //                    ### ##         ######
+	0x00, 0x00, 0x1B, 0x80, 0x37, 0x00, 0x00, 0x00, //                    ## ###         ## ###
+	0x00, 0x00, 0x3B, 0x00, 0x76, 0x00, 0x00, 0x00, //                   ### ##         ### ##
+	0x00, 0x00, 0x3F, 0x00, 0x6E, 0x00, 0x00, 0x00, //                   ######         ## ###
+	0x00, 0x00, 0x37, 0x00, 0xE4, 0x00, 0x00, 0x00, //                   ## ###        ###  #
+	0x00, 0x00, 0x76, 0x40, 0xFC, 0x00, 0x00, 0x00, //                  ### ##  #      ######
+	0x00, 0x00, 0x0E, 0x78, 0x3C, 0x00, 0x00, 0x00, //                     ###  ####     ####
+	0x00, 0x00, 0x0C, 0x7E, 0x0C, 0x00, 0x00, 0x00, //                     ##   ######     ##
+	0x00, 0x00, 0x1C, 0xFF, 0xC0, 0x00, 0x00, 0x00, //                    ###  ##########
+	0x00, 0x00, 0x1C, 0xD3, 0xF0, 0x00, 0x00, 0x00, //                    ###  ## #  ######
+	0x00, 0x00, 0x39, 0xDC, 0xFF, 0x00, 0x00, 0x00, //                   ###  ### ###  ########
+	0x00, 0x00, 0x6C, 0xBF, 0x9C, 0x80, 0x00, 0x00, //                  ## ##  # #######  ###  #
+	0x00, 0x00, 0x44, 0x0F, 0x84, 0x80, 0x00, 0x00, //                  #   #      #####    #  #
+	0x00, 0x00, 0x38, 0x01, 0x07, 0x00, 0x00, 0x00, //                   ###          #     ###
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, //
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, //
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, //
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, //
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, //
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, //
+	0x00, 0x80, 0x00, 0x00, 0xC3, 0x00, 0x03, 0x00, //         #                       ##    ##              ##
+	0xC1, 0xC0, 0x00, 0x00, 0xCF, 0x80, 0x0F, 0xC0, // ##     ###                      ##  #####           ######
+	0xE3, 0xC0, 0x00, 0x00, 0xCD, 0xC0, 0x0C, 0xC0, // ###   ####                      ##  ## ###          ##  ##
+	0xF7, 0xC7, 0x9B, 0x87, 0xDC, 0xCF, 0xDC, 0xC0, // #### #####   ####  ## ###    ##### ###  ##  ###### ###  ##
+	0xFF, 0xDF, 0xDF, 0xCF, 0xDC, 0xCF, 0xDC, 0xC0, // ########## ####### #######  ###### ###  ##  ###### ###  ##
+	0xDD, 0xDD, 0xD8, 0xDC, 0xDC, 0xC3, 0x9C, 0xC0, // ## ### ### ### ### ##   ## ###  ## ###  ##    ###  ###  ##
+	0xC9, 0xDF, 0x98, 0xDD, 0xDC, 0xC6, 0x0C, 0xC0, // ##  #  ### ######  ##   ## ### ### ###  ##   ##     ##  ##
+	0xC1, 0xCF, 0x98, 0xCF, 0xCF, 0xCF, 0xCF, 0xC0, // ##     ###  #####  ##   ##  ######  ######  ######  ######
+	0xC0, 0xC7, 0x98, 0xC7, 0xC7, 0x8F, 0xC7, 0x80, // ##      ##   ####  ##   ##   #####   ####   ######   ####
+};
+
+// Bitmap sizes for mEND0Z0LOGO_simple_fullCopy
+const uint8_t mEND0Z0LOGO_simple_fullCopyWidthPages = 8;
+const uint8_t mEND0Z0LOGO_simple_fullCopyHeightPixels = 39;
+
 
 /* USER CODE END PV */
 
@@ -68,7 +120,10 @@ static void MX_LPTIM1_Init(void);
 static void MX_LPUART1_UART_Init(void);
 static void MX_TIM2_Init(void);
 static void MX_ICACHE_Init(void);
+static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
+
+static void _init_LCD( void );
 
 /* USER CODE END PFP */
 
@@ -117,6 +172,7 @@ int main(void)
   MX_LPUART1_UART_Init();
   MX_TIM2_Init();
   MX_ICACHE_Init();
+  MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
   HAL_LPTIM_Counter_Start_IT( &hlptim1);
 
@@ -129,10 +185,16 @@ int main(void)
 
   __HAL_I2C_ENABLE(&hi2c1);
 
+  __HAL_SPI_ENABLE(&hspi1);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  _init_LCD();
+
+
   while (1)
   {
 
@@ -531,6 +593,63 @@ static void MX_LPUART1_UART_Init(void)
 }
 
 /**
+  * @brief SPI1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_SPI1_Init(void)
+{
+
+  /* USER CODE BEGIN SPI1_Init 0 */
+
+  /* USER CODE END SPI1_Init 0 */
+
+  SPI_AutonomousModeConfTypeDef HAL_SPI_AutonomousMode_Cfg_Struct = {0};
+
+  /* USER CODE BEGIN SPI1_Init 1 */
+
+  /* USER CODE END SPI1_Init 1 */
+  /* SPI1 parameter configuration*/
+  hspi1.Instance = SPI1;
+  hspi1.Init.Mode = SPI_MODE_MASTER;
+  hspi1.Init.Direction = SPI_DIRECTION_2LINES_TXONLY;
+  hspi1.Init.DataSize = SPI_DATASIZE_8BIT;
+  hspi1.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi1.Init.CLKPhase = SPI_PHASE_1EDGE;
+  hspi1.Init.NSS = SPI_NSS_HARD_OUTPUT;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
+  hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
+  hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  hspi1.Init.CRCPolynomial = 0x7;
+  hspi1.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+  hspi1.Init.NSSPolarity = SPI_NSS_POLARITY_LOW;
+  hspi1.Init.FifoThreshold = SPI_FIFO_THRESHOLD_01DATA;
+  hspi1.Init.MasterSSIdleness = SPI_MASTER_SS_IDLENESS_00CYCLE;
+  hspi1.Init.MasterInterDataIdleness = SPI_MASTER_INTERDATA_IDLENESS_00CYCLE;
+  hspi1.Init.MasterReceiverAutoSusp = SPI_MASTER_RX_AUTOSUSP_DISABLE;
+  hspi1.Init.MasterKeepIOState = SPI_MASTER_KEEP_IO_STATE_DISABLE;
+  hspi1.Init.IOSwap = SPI_IO_SWAP_DISABLE;
+  hspi1.Init.ReadyMasterManagement = SPI_RDY_MASTER_MANAGEMENT_INTERNALLY;
+  hspi1.Init.ReadyPolarity = SPI_RDY_POLARITY_HIGH;
+  if (HAL_SPI_Init(&hspi1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  HAL_SPI_AutonomousMode_Cfg_Struct.TriggerState = SPI_AUTO_MODE_DISABLE;
+  HAL_SPI_AutonomousMode_Cfg_Struct.TriggerSelection = SPI_GRP1_GPDMA_CH0_TCF_TRG;
+  HAL_SPI_AutonomousMode_Cfg_Struct.TriggerPolarity = SPI_TRIG_POLARITY_RISING;
+  if (HAL_SPIEx_SetConfigAutonomousMode(&hspi1, &HAL_SPI_AutonomousMode_Cfg_Struct) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN SPI1_Init 2 */
+
+  /* USER CODE END SPI1_Init 2 */
+
+}
+
+/**
   * @brief TIM2 Initialization Function
   * @param None
   * @retval None
@@ -615,8 +734,12 @@ static void MX_GPIO_Init(void)
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6|GPIO_PIN_8, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOG, GPIO_PIN_2, GPIO_PIN_RESET);
@@ -626,6 +749,13 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : PA6 PA8 */
+  GPIO_InitStruct.Pin = GPIO_PIN_6|GPIO_PIN_8;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PG2 */
   GPIO_InitStruct.Pin = GPIO_PIN_2;
@@ -653,6 +783,34 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+static void _init_LCD( void )
+{
+	uint8_t tempVar = 0;
+	HAL_GPIO_WritePin( GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
+	for(uint32_t cnt = 0; cnt < 2000000; ++cnt);
+	HAL_GPIO_WritePin( GPIOA, GPIO_PIN_8, GPIO_PIN_SET);
+
+	HAL_GPIO_WritePin( GPIOA, GPIO_PIN_6, GPIO_PIN_RESET);
+	tempVar = 0x21;
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	tempVar = 0x90;
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	tempVar = 0x20;
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	tempVar = 0x0C;
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+
+	HAL_GPIO_WritePin( GPIOA, GPIO_PIN_6, GPIO_PIN_SET);
+
+	tempVar = 0x0F;
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+}
 
 /* USER CODE END 4 */
 

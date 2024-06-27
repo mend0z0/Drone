@@ -8,6 +8,6 @@
 ../Core/Src/stm32u5xx_it.c:173:6:PendSV_Handler	1
 ../Core/Src/stm32u5xx_it.c:186:6:SysTick_Handler	1
 ../Core/Src/stm32u5xx_it.c:207:6:TIM2_IRQHandler	9
-../Core/Src/stm32u5xx_it.c:252:6:I2C1_EV_IRQHandler	1
-../Core/Src/stm32u5xx_it.c:266:6:LPUART1_IRQHandler	1
-../Core/Src/stm32u5xx_it.c:280:6:LPTIM1_IRQHandler	6
+../Core/Src/stm32u5xx_it.c:251:6:I2C1_EV_IRQHandler	1
+../Core/Src/stm32u5xx_it.c:265:6:LPUART1_IRQHandler	1
+../Core/Src/stm32u5xx_it.c:279:6:LPTIM1_IRQHandler	6
