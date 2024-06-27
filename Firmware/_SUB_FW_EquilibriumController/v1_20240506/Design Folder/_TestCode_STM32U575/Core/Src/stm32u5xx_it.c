@@ -206,6 +206,7 @@ void SysTick_Handler(void)
   */
 void TIM2_IRQHandler(void)
 {
+
   /* USER CODE BEGIN TIM2_IRQn 0 */
 	if(TIM2->SR & TIM_SR_CC1IF)
 	{
@@ -242,7 +243,6 @@ void TIM2_IRQHandler(void)
   /* USER CODE END TIM2_IRQn 0 */
   HAL_TIM_IRQHandler(&htim2);
   /* USER CODE BEGIN TIM2_IRQn 1 */
-
   /* USER CODE END TIM2_IRQn 1 */
 }
 
@@ -307,6 +307,8 @@ void LPTIM1_IRQHandler(void)
 		break;
 	default:
 		ledNo = 0;
+		uint8_t data[] = "Hello World from STM32U575 bitches...\r\n";
+		HAL_UART_Transmit(&hlpuart1, data, sizeof(data), 100);
 		break;
 	}
   /* USER CODE END LPTIM1_IRQn 1 */

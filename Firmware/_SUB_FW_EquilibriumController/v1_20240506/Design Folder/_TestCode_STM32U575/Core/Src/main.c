@@ -84,7 +84,6 @@ static void MX_ICACHE_Init(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -120,16 +119,23 @@ int main(void)
   MX_ICACHE_Init();
   /* USER CODE BEGIN 2 */
   HAL_LPTIM_Counter_Start_IT( &hlptim1);
+
   HAL_TIM_PWM_Start_IT( &htim2, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start_IT( &htim2, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start_IT( &htim2, TIM_CHANNEL_3);
   HAL_TIM_PWM_Start_IT( &htim2, TIM_CHANNEL_4);
+
+  __HAL_UART_ENABLE(&hlpuart1);
+
+  __HAL_I2C_ENABLE(&hi2c1);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
