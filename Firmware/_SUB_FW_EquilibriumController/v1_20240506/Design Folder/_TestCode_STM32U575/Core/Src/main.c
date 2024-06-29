@@ -32,6 +32,14 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+#define	BMI160_CHIP_ID		0x00
+#define	BMI160_GYR_X_0_7	0x20
+#define	BMI160_GYR_X_8_15 	0x0D
+#define	BMI160_GYR_Y_0_7	0x0E
+#define	BMI160_GYR_Y_8_15 	0x0F
+#define	BMI160_GYR_Z_0_7	0x10
+#define	BMI160_GYR_Z_8_15 	0x11
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -105,6 +113,8 @@ const uint8_t mEND0Z0LOGO_simple_fullCopyBitmaps[] =
 const uint8_t mEND0Z0LOGO_simple_fullCopyWidthPages = 8;
 const uint8_t mEND0Z0LOGO_simple_fullCopyHeightPixels = 39;
 
+const uint8_t BMI160_I2C_ADDR = (0x69) << 1;
+
 
 /* USER CODE END PV */
 
@@ -124,6 +134,7 @@ static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 
 static void _init_LCD( void );
+static void _init_BMI160( void );
 
 /* USER CODE END PFP */
 
@@ -192,12 +203,11 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  _init_LCD();
-
 
   while (1)
   {
-
+	  _init_BMI160();
+	  for(uint32_t cnt = 0; cnt < 2000000; ++cnt);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -810,6 +820,76 @@ static void _init_LCD( void )
 	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
 	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
 	HAL_SPI_Transmit(&hspi1, &tempVar, 1, 10);
+}
+
+static void _init_BMI160( void )
+{
+	uint8_t readData = 0;
+	uint8_t readGyro[6];
+	uint8_t sendData[7] = "0x";
+	uint8_t i2c_addr = BMI160_I2C_ADDR;
+	uint8_t memAddr = BMI160_CHIP_ID;
+	HAL_I2C_Mem_Read( &hi2c1, i2c_addr, memAddr, 1, &readData, 1, 1);
+	sendData[2] = (readData/10) + '0';
+	sendData[3] = (readData%10) + '0';
+	sendData[4] = '\r';
+	sendData[5] = '\n';
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+
+	memAddr = BMI160_GYR_X_0_7;
+	HAL_I2C_Mem_Read( &hi2c1, i2c_addr, memAddr, 1, readGyro, 6, 1);
+	sendData[0] = '0';
+	sendData[1] = 'x';
+	sendData[2] = (readGyro[0]/10) + '0';
+	sendData[3] = (readGyro[0]%10) + '0';
+	sendData[4] = 0;
+	sendData[5] = 0;
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+	sendData[0] = (readGyro[1]/10) + '0';
+	sendData[1] = (readGyro[1]%10) + '0';
+	sendData[2] = '\r';
+	sendData[3] = '\n';
+	sendData[4] = 0;
+	sendData[5] = 0;
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+	sendData[0] = '0';
+	sendData[1] = 'x';
+	sendData[2] = (readGyro[2]/10) + '0';
+	sendData[3] = (readGyro[2]%10) + '0';
+	sendData[4] = 0;
+	sendData[5] = 0;
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+	sendData[0] = (readGyro[3]/10) + '0';
+	sendData[1] = (readGyro[3]%10) + '0';
+	sendData[2] = '\r';
+	sendData[3] = '\n';
+	sendData[4] = 0;
+	sendData[5] = 0;
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+	sendData[0] = '0';
+	sendData[1] = 'x';
+	sendData[2] = (readGyro[4]/10) + '0';
+	sendData[3] = (readGyro[4]%10) + '0';
+	sendData[4] = 0;
+	sendData[5] = 0;
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+	sendData[0] = (readGyro[5]/10) + '0';
+	sendData[1] = (readGyro[5]%10) + '0';
+	sendData[2] = '\r';
+	sendData[3] = '\n';
+	sendData[4] = 0;
+	sendData[5] = 0;
+	sendData[6] = 0;
+	HAL_UART_Transmit(&hlpuart1, sendData, sizeof(sendData), 100);
+
+
+
 }
 
 /* USER CODE END 4 */

@@ -5183,3 +5183,18 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-27 11:56:27.203
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2024-06-28 22:05:42.172 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-06-28 22:06:16.997
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-06-28 22:06:17.003
+!MESSAGE Log4j2 initialized with config file D:\Projects\STP\Drone\Firmware\_SUB_FW_EquilibriumController\v1_20240506\Design Folder\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-06-28 22:06:22.118
+!MESSAGE Started RMI Server, listening on port 41337

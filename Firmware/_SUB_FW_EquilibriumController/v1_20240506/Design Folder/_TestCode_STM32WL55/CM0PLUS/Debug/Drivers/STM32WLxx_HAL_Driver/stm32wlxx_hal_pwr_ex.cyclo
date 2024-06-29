@@ -1,0 +1,67 @@
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:705:22:LL_PWR_EnableSRAM2Retention	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:715:22:LL_PWR_DisableSRAM2Retention	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1272:22:LL_PWR_SetRadioBusyPolarity	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1420:22:LL_C2_PWR_SetRadioBusyTrigger	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1448:22:LL_C2_PWR_SetRadioIRQTrigger	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1482:22:LL_PWR_EnableBootC2	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1493:22:LL_PWR_DisableBootC2	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1721:22:LL_C2_PWR_EnableWPVD	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1731:22:LL_C2_PWR_DisableWPVD	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1752:22:LL_PWR_C2_EnableWakeUp_ILAC	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1763:22:LL_PWR_C2_DisableWakeUp_ILAC	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:1775:26:LL_PWR_C2_IsEnabledWakeUp_ILAC	2
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:362:22:LL_C2_EXTI_EnableIT_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:504:22:LL_C2_EXTI_DisableIT_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:846:22:LL_C2_EXTI_DisableEvent_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1011:22:LL_EXTI_EnableRisingTrig_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1072:22:LL_EXTI_DisableRisingTrig_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1186:22:LL_EXTI_EnableFallingTrig_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1244:22:LL_EXTI_DisableFallingTrig_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1446:26:LL_EXTI_ReadFlag_0_31	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1463:26:LL_EXTI_ReadFlag_32_63	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1496:22:LL_EXTI_ClearFlag_0_31	1
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:1513:22:LL_EXTI_ClearFlag_32_63	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:83:10:HAL_PWREx_GetVoltageRange	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:108:19:HAL_PWREx_ControlVoltageScaling	7
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:158:6:HAL_PWREx_EnableBatteryCharging	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:173:6:HAL_PWREx_DisableBatteryCharging	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:184:6:HAL_PWREx_EnableInternalWakeUpLine	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:197:6:HAL_PWREx_DisableInternalWakeUpLine	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:213:6:HAL_PWREx_SetRadioBusyPolarity	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:231:6:HAL_PWREx_SetRadioBusyTrigger	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:251:6:HAL_PWREx_SetRadioIRQTrigger	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:268:6:HAL_PWREx_EnableHOLDC2IT	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:277:6:HAL_PWREx_DisableHOLDC2IT	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:306:19:HAL_PWREx_EnableGPIOPullUp	7
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:354:19:HAL_PWREx_DisableGPIOPullUp	7
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:404:19:HAL_PWREx_EnableGPIOPullDown	7
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:452:19:HAL_PWREx_DisableGPIOPullDown	7
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:491:6:HAL_PWREx_EnablePullUpPullDownConfig	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:506:6:HAL_PWREx_DisablePullUpPullDownConfig	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:526:6:HAL_PWREx_HoldCore	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:541:6:HAL_PWREx_ReleaseCore	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:556:6:HAL_PWREx_EnableWakeUp_ILAC	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:566:6:HAL_PWREx_DisableWakeUp_ILAC	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:577:10:HAL_PWREx_IsEnabledWakeUp_ILAC	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:591:6:HAL_PWREx_EnableSRAMRetention	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:602:6:HAL_PWREx_DisableSRAMRetention	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:618:6:HAL_PWREx_EnableFlashPowerDown	2
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:653:6:HAL_PWREx_DisableFlashPowerDown	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:673:6:HAL_PWREx_EnableWPVD	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:686:6:HAL_PWREx_DisableWPVD	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:703:6:HAL_PWREx_EnableBORPVD_ULP	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:715:6:HAL_PWREx_DisableBORPVD_ULP	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:726:6:HAL_PWREx_EnablePVM3	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:735:6:HAL_PWREx_DisablePVM3	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:752:19:HAL_PWREx_ConfigPVM	5
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:808:6:HAL_PWREx_SetRadioEOL	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:823:6:HAL_PWREx_SMPS_SetMode	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:839:10:HAL_PWREx_SMPS_GetEffectiveMode	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:854:6:HAL_PWREx_EnableLowPowerRunMode	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:868:19:HAL_PWREx_DisableLowPowerRunMode	4
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:915:6:HAL_PWREx_EnterSTOP0Mode	2
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:974:6:HAL_PWREx_EnterSTOP1Mode	2
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:1033:6:HAL_PWREx_EnterSTOP2Mode	2
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:1078:6:HAL_PWREx_EnterSHUTDOWNMode	1
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:1113:6:HAL_PWREx_PVD_PVM_IRQHandler	3
+D:/Projects/STP/Drone/Firmware/_SUB_FW_EquilibriumController/v1_20240506/Design Folder/_TestCode_STM32WL55/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:1139:13:HAL_PWREx_PVM3Callback	1

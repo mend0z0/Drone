@@ -1,0 +1,8 @@
+1. Doing Each terminal Individually
+2. Creating an interface page as well
+3. Drone Config page
+4. Saving Log file of all the communication
+5. Using 10s code for checking terminal connectivity
+6. It'll connect through UI connection
+7. Check remember username for login page
+8. Keep tracking of logins :) it'll be fun

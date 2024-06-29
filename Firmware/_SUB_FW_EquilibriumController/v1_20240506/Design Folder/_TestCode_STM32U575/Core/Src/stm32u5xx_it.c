@@ -307,7 +307,7 @@ void LPTIM1_IRQHandler(void)
 	default:
 		ledNo = 0;
 		uint8_t data[] = "Hello World from STM32U575 bitches...\r\n";
-		HAL_UART_Transmit(&hlpuart1, data, sizeof(data), 100);
+		//HAL_UART_Transmit(&hlpuart1, data, sizeof(data), 100);
 		break;
 	}
   /* USER CODE END LPTIM1_IRQn 1 */
