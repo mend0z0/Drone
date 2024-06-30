@@ -1,4 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "_PCBLIB_Qcopter")(type "KiCad")(uri "${KIPRJMOD}/_PCBLIB_Qcopter.pretty")(options "")(descr ""))
+  (lib (name "_PCBLIB_Mini-Scoreboard")(type "KiCad")(uri "D:/Projects/STP/Scoreboard/Hardware/_Sub_HW_Mini-Scoreboard/v1_20240629/Design Folder/_HW_Mini-Scoreboard/_PCBLIB_Mini-Scoreboard.pretty")(options "")(descr ""))
 )
