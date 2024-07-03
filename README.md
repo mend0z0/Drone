@@ -26,7 +26,7 @@ __Robotics__
 
 |Specification|Drone PCB Top|Drone PCB Bottom|
 |:---|:---:|:---:|
-|<table><tbody><tr><td>__MCU :__</td> <td> STM32U575 </td></tr> <tr><td>__Connection :__</td> <td> SPI, I2C, UART, QSPI, PWM </td></tr> <tr><td>__PCB Layers :__</td> <td> 4Layers (Controlled Impedance) </td></tr> <tr><td>__Board Dimensions :__ </td> <td> VALUE </td></tr> <tr><td>__CAD :__</td> <td> KiCAD </td></tr></tbody></table><table><tbody><tr><td>__Programming Language :__</td> <td> CLan </td></tr> <tr><td>__OS :__</td> <td> FreeRTOS </td></tr> <tr><td>__IDE :__</td> <td> STM32CubeIDE </td></tr> </tbody></table>|![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
+|<table style="width:100%"><tbody><tr><td>__MCU :__</td> <td> STM32U575 </td></tr> <tr><td>__Connection :__</td> <td> SPI, I2C, UART, QSPI, PWM </td></tr> <tr><td>__PCB Layers :__</td> <td> 4Layers (Controlled Impedance) </td></tr> <tr><td>__Board Dimensions :__ </td> <td> VALUE </td></tr> <tr><td>__CAD :__</td> <td> KiCAD </td></tr></tbody></table><table><tbody><tr><td>__Programming Language :__</td> <td> CLan </td></tr> <tr><td>__OS :__</td> <td> FreeRTOS </td></tr> <tr><td>__IDE :__</td> <td> STM32CubeIDE </td></tr> </tbody></table>|![Latest Version_Top](https://github.com/mend0z0)|![Latest Version_Bottom](https://github.com/mend0z0)|
 
 
 
