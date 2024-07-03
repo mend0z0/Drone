@@ -23,7 +23,7 @@ __Robotics__
 
 ## Technology
 
-|Equilibrium Controller|
+||Equilibrium Controller||
 |::|::|::|
 |Specification|Equilibrium Controller PCB Top|Equilibrium Controller PCB Bottom|
 |:---|:---:|:---:|
